@@ -1,5 +1,4 @@
 {
-  "root": "apps/career-e2e",
   "sourceRoot": "apps/career-e2e/src",
   "projectType": "application",
   "targets": {

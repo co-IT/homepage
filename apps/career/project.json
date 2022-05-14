@@ -1,6 +1,5 @@
 {
   "projectType": "application",
-  "root": "apps/career",
   "sourceRoot": "apps/career/src",
   "prefix": "change-pioneers",
   "targets": {
@@ -82,7 +81,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/career"],
       "options": {
-        "jestConfig": "apps/career/jest.config.js",
+        "jestConfig": "apps/career/jest.config.ts",
         "passWithNoTests": true
       }
     }
