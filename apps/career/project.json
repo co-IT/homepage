@@ -1,0 +1,91 @@
+{
+  "projectType": "application",
+  "root": "apps/career",
+  "sourceRoot": "apps/career/src",
+  "prefix": "change-pioneers",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/career",
+        "index": "apps/career/src/index.html",
+        "main": "apps/career/src/main.ts",
+        "polyfills": "apps/career/src/polyfills.ts",
+        "tsConfig": "apps/career/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": ["apps/career/src/favicon.ico", "apps/career/src/assets"],
+        "styles": ["apps/career/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/career/src/environments/environment.ts",
+              "with": "apps/career/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "career:build:production"
+        },
+        "development": {
+          "browserTarget": "career:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "career:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/career/src/**/*.ts",
+          "apps/career/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/career"],
+      "options": {
+        "jestConfig": "apps/career/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
