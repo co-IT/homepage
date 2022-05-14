@@ -1,5 +1,5 @@
 {
-  "npmScope": "change-pioneers",
+  "npmScope": "cp",
   "affected": {
     "defaultBase": "main"
   },
@@ -18,12 +18,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "NDc2YWZkZTMtOThhYi00MjUxLTgyYzktNDAyNDczYjY1MDk2fHJlYWQtd3JpdGU="
       }
     }
