@@ -15,6 +15,9 @@
         "inlineStyleLanguage": "scss",
         "assets": ["apps/career/src/favicon.ico", "apps/career/src/assets"],
         "styles": ["apps/career/src/styles.scss"],
+        "stylePreprocessorOptions": {
+          "includePaths": ["libs/career/ui/src/themes"]
+        },
         "scripts": []
       },
       "configurations": {
