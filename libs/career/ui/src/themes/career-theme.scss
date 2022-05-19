@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
 :root {
-  --primary-color:  #feb81e;
   --primary-color-50: #fffbf4;
   --primary-color-100: #fff8e9;
   --primary-color-200: #ffedc7;
@@ -12,6 +11,8 @@
   --primary-color-700: #bf8a17;
   --primary-color-800: #986e12;
   --primary-color-900: #7c5a0f;
+
+  --primary-color:  var(--primary-color-500);
 }
 
 @media (prefers-color-scheme: light) {
@@ -30,4 +31,6 @@
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
