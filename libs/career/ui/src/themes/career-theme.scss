@@ -1,19 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
-
-:root {
-  --primary-color-50: #fffbf4;
-  --primary-color-100: #fff8e9;
-  --primary-color-200: #ffedc7;
-  --primary-color-300: #ffe3a5;
-  --primary-color-400: #fecd62;
-  --primary-color-500: #feb81e;
-  --primary-color-600: #e5a61b;
-  --primary-color-700: #bf8a17;
-  --primary-color-800: #986e12;
-  --primary-color-900: #7c5a0f;
-
-  --primary-color:  var(--primary-color-500);
-}
+@use 'core/style-reset';
+@use 'career/colors';
+@use 'career/typography';
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -30,7 +17,6 @@
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
 }
