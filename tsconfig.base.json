@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@cp/career/recruiting-process": [
+        "libs/career/recruiting-process/src/index.ts"
+      ],
       "@cp/career/ui": ["libs/career/ui/src/index.ts"]
     }
   },
