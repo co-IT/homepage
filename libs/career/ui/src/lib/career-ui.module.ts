@@ -6,7 +6,7 @@ import {
   browserTabSettingsDefault,
   BROWSER_TAB_SETTINGS,
 } from './page-title/browser-tab-title-settings.token';
-import { PageTitleComponent } from './page-title/title.component';
+import { PageTitleComponent } from './page-title/page-title.component';
 
 @NgModule({
   imports: [CommonModule],
@@ -14,7 +14,7 @@ import { PageTitleComponent } from './page-title/title.component';
   exports: [PageTitleComponent],
 })
 export class CareerUiModule {
-  static configure(configuration: {
+  static forRoot(configuration: {
     browserTab: BrowserTabSettings;
   }): ModuleWithProviders<CareerUiModule> {
     return {

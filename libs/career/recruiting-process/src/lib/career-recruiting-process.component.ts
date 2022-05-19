@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'cp-career-recruiting-process',
@@ -6,8 +6,4 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   styleUrls: ['./career-recruiting-process.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CareerRecruitingProcessComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-}
+export class CareerRecruitingProcessComponent {}
