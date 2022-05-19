@@ -7,11 +7,12 @@ import {
   BROWSER_TAB_SETTINGS,
 } from './page-title/browser-tab-title-settings.token';
 import { PageTitleComponent } from './page-title/page-title.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [PageTitleComponent],
-  exports: [PageTitleComponent],
+  declarations: [PageTitleComponent, TimelineComponent],
+  exports: [PageTitleComponent, TimelineComponent],
 })
 export class CareerUiModule {
   static forRoot(configuration: {
