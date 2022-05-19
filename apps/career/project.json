@@ -13,7 +13,15 @@
         "polyfills": "apps/career/src/polyfills.ts",
         "tsConfig": "apps/career/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/career/src/favicon.ico", "apps/career/src/assets"],
+        "assets": [
+          "apps/career/src/favicon.ico",
+          "apps/career/src/assets",
+          {
+            "input": "libs/career/i18n/src/assets",
+            "glob": "**/*",
+            "output": "assets"
+          }
+        ],
         "styles": ["apps/career/src/styles.scss"],
         "stylePreprocessorOptions": {
           "includePaths": ["libs/career/ui/src/themes"]

@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@cp/career/i18n": ["libs/career/i18n/src/index.ts"],
       "@cp/career/recruiting-process": [
         "libs/career/recruiting-process/src/index.ts"
       ],

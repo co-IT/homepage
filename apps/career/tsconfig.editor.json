@@ -1,6 +1,9 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["**/*.ts"],
+  "include": [
+    "**/*.ts",
+    "../../libs/career/i18n/src/lib/transloco-root.module.ts"
+  ],
   "compilerOptions": {
     "types": ["jest", "node"]
   },
