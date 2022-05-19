@@ -3,6 +3,7 @@
   "projects": {
     "career": "apps/career",
     "career-e2e": "apps/career-e2e",
+    "career-recruiting-process": "libs/career/recruiting-process",
     "career-ui": "libs/career/ui"
   }
 }
