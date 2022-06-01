@@ -1,6 +1,7 @@
 @use 'core/style-reset';
-@use 'career/colors';
-@use 'career/typography';
+@use 'core/colors';
+@use 'core/typography';
+@use 'core/layout';
 
 @media (prefers-color-scheme: light) {
   :root {
