@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/landing-page/src",
+  "prefix": "cp",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/landing-page"],
+      "options": {
+        "jestConfig": "libs/landing-page/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/landing-page/**/*.ts",
+          "libs/landing-page/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["feature"]
+}

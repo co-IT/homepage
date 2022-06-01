@@ -5,7 +5,12 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: '/recruiting-process',
+    redirectTo: '/welcome',
+  },
+  {
+    path: 'welcome',
+    loadChildren: () =>
+      import('@cp/landing-page').then((m) => m.LandingPageModule),
   },
   {
     path: 'recruiting-process',

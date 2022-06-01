@@ -5,6 +5,7 @@
     "career-recruiting-process": "libs/career/recruiting-process",
     "career-ui": "libs/career/ui",
     "homepage": "apps/homepage",
-    "homepage-e2e": "apps/homepage-e2e"
+    "homepage-e2e": "apps/homepage-e2e",
+    "landing-page": "libs/landing-page"
   }
 }
