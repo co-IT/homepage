@@ -8,7 +8,8 @@
   "files": ["src/main.ts", "src/polyfills.ts"],
   "include": [
     "src/**/*.d.ts",
-    "../../libs/career/recruiting-process/src/index.ts"
+    "../../libs/career/recruiting-process/src/index.ts",
+    "../../libs/landing-page/src/index.ts"
   ],
   "exclude": ["**/*.test.ts", "**/*.spec.ts", "jest.config.ts"]
 }
