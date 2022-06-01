@@ -1,10 +1,10 @@
 {
   "version": 2,
   "projects": {
-    "career": "apps/career",
-    "career-e2e": "apps/career-e2e",
     "career-i18n": "libs/career/i18n",
     "career-recruiting-process": "libs/career/recruiting-process",
-    "career-ui": "libs/career/ui"
+    "career-ui": "libs/career/ui",
+    "homepage": "apps/homepage",
+    "homepage-e2e": "apps/homepage-e2e"
   }
 }

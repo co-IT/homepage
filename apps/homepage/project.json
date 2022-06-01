@@ -1,28 +1,29 @@
 {
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "apps/career/src",
+  "sourceRoot": "apps/homepage/src",
   "prefix": "change-pioneers",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/career",
-        "index": "apps/career/src/index.html",
-        "main": "apps/career/src/main.ts",
-        "polyfills": "apps/career/src/polyfills.ts",
-        "tsConfig": "apps/career/tsconfig.app.json",
+        "outputPath": "dist/apps/homepage",
+        "index": "apps/homepage/src/index.html",
+        "main": "apps/homepage/src/main.ts",
+        "polyfills": "apps/homepage/src/polyfills.ts",
+        "tsConfig": "apps/homepage/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
-          "apps/career/src/favicon.ico",
-          "apps/career/src/assets",
+          "apps/homepage/src/favicon.ico",
+          "apps/homepage/src/assets",
           {
             "input": "libs/career/i18n/src/assets",
             "glob": "**/*",
             "output": "assets"
           }
         ],
-        "styles": ["apps/career/src/styles.scss"],
+        "styles": ["apps/homepage/src/styles.scss"],
         "stylePreprocessorOptions": {
           "includePaths": ["libs/career/ui/src/themes"]
         },
@@ -44,8 +45,8 @@
           ],
           "fileReplacements": [
             {
-              "replace": "apps/career/src/environments/environment.ts",
-              "with": "apps/career/src/environments/environment.prod.ts"
+              "replace": "apps/homepage/src/environments/environment.ts",
+              "with": "apps/homepage/src/environments/environment.prod.ts"
             }
           ],
           "outputHashing": "all"
@@ -65,10 +66,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "career:build:production"
+          "browserTarget": "homepage:build:production"
         },
         "development": {
-          "browserTarget": "career:build:development"
+          "browserTarget": "homepage:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -76,23 +77,23 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "career:build"
+        "browserTarget": "homepage:build"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "apps/career/src/**/*.ts",
-          "apps/career/src/**/*.html"
+          "apps/homepage/src/**/*.ts",
+          "apps/homepage/src/**/*.html"
         ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/career"],
+      "outputs": ["coverage/apps/homepage"],
       "options": {
-        "jestConfig": "apps/career/jest.config.ts",
+        "jestConfig": "apps/homepage/jest.config.ts",
         "passWithNoTests": true
       }
     }
