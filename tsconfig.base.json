@@ -19,8 +19,8 @@
       "@cp/career/recruiting-process": [
         "libs/career/recruiting-process/src/index.ts"
       ],
-      "@cp/career/ui": ["libs/career/ui/src/index.ts"],
-      "@cp/landing-page": ["libs/landing-page/src/index.ts"]
+      "@cp/landing-page": ["libs/landing-page/src/index.ts"],
+      "@cp/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

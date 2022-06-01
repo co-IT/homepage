@@ -25,7 +25,7 @@
         ],
         "styles": ["apps/homepage/src/styles.scss"],
         "stylePreprocessorOptions": {
-          "includePaths": ["libs/career/ui/src/themes"]
+          "includePaths": ["libs/ui/src/themes"]
         },
         "scripts": []
       },

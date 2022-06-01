@@ -15,12 +15,12 @@ import { TimelineComponent } from './timeline/timeline.component';
   declarations: [PageTitleComponent, TimelineComponent, TextInBoxComponent],
   exports: [PageTitleComponent, TextInBoxComponent, TimelineComponent],
 })
-export class CareerUiModule {
+export class UiModule {
   static forRoot(configuration: {
     browserTab: BrowserTabSettings;
-  }): ModuleWithProviders<CareerUiModule> {
+  }): ModuleWithProviders<UiModule> {
     return {
-      ngModule: CareerUiModule,
+      ngModule: UiModule,
       providers: [
         BrowserTabTitleSetter,
         {

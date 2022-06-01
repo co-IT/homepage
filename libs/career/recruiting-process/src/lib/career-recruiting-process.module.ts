@@ -2,13 +2,13 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CareerI18nModule } from '@cp/career/i18n';
-import { CareerUiModule } from '@cp/career/ui';
+import { UiModule } from '@cp/ui';
 import { CareerRecruitingProcessComponent } from './career-recruiting-process.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    CareerUiModule,
+    UiModule,
     CareerI18nModule,
 
     RouterModule.forChild([

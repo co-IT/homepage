@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CareerI18nModule } from '@cp/career/i18n';
-import { CareerUiModule } from '@cp/career/ui';
+import { UiModule } from '@cp/ui';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     CareerI18nModule.forRoot(),
-    CareerUiModule.forRoot({
+    UiModule.forRoot({
       browserTab: { titlePrefix: 'co-IT', titleSeparator: '-' },
     }),
     AppRoutingModule,
