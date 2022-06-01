@@ -1,23 +1,21 @@
 {
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
-  "sourceRoot": "libs/career/ui/src",
+  "sourceRoot": "libs/ui/src",
   "prefix": "cp",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/career/ui"],
+      "outputs": ["coverage/libs/ui"],
       "options": {
-        "jestConfig": "libs/career/ui/jest.config.ts",
+        "jestConfig": "libs/ui/jest.config.ts",
         "passWithNoTests": true
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": [
-          "libs/career/ui/**/*.ts",
-          "libs/career/ui/**/*.html"
-        ]
+        "lintFilePatterns": ["libs/ui/**/*.ts", "libs/ui/**/*.html"]
       }
     }
   },
