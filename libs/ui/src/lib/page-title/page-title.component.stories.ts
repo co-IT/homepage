@@ -1,4 +1,5 @@
 import { Meta, moduleMetadata, Story } from '@storybook/angular';
+import { UiModule } from '../ui.module';
 import { PageTitleComponent } from './page-title.component';
 
 export default {
@@ -6,7 +7,11 @@ export default {
   component: PageTitleComponent,
   decorators: [
     moduleMetadata({
-      imports: [],
+      imports: [
+        UiModule.forRoot({
+          browserTab: { titlePrefix: '', titleSeparator: '' },
+        }),
+      ],
     }),
   ],
 } as Meta<PageTitleComponent>;
