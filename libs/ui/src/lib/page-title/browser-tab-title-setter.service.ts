@@ -5,7 +5,7 @@ import {
   BROWSER_TAB_SETTINGS,
 } from './browser-tab-title-settings.token';
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class BrowserTabTitleSetter {
   private separator: string;
   private prefix: string;

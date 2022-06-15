@@ -9,6 +9,7 @@ import { BrowserTabTitleSetter } from './browser-tab-title-setter.service';
 
 @Component({
   selector: 'cp-page-title[title][subtitle]',
+  standalone: true,
   templateUrl: './page-title.component.html',
   styleUrls: ['./page-title.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

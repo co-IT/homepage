@@ -11,6 +11,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
  */
 @Component({
   selector: 'cp-timeline',
+  standalone: true,
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
