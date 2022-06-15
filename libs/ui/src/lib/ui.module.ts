@@ -8,11 +8,12 @@ import {
 } from './page-title/browser-tab-title-settings.token';
 import { PageTitleComponent } from './page-title/page-title.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   imports: [CommonModule],
-  declarations: [PageTitleComponent, TimelineComponent],
-  exports: [PageTitleComponent, TimelineComponent],
+  declarations: [PageTitleComponent, TimelineComponent, ArticleComponent],
+  exports: [PageTitleComponent, TimelineComponent, ArticleComponent],
 })
 export class UiModule {
   static forRoot(configuration: {
