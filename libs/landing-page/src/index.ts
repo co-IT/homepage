@@ -1,1 +1,1 @@
-export * from './lib/landing-page.module';
+export * from './lib/landing-page.routes';
