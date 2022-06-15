@@ -6,7 +6,7 @@ import {
   provideTranslocoConfig,
   provideTranslocoLoader,
 } from '@cp/career/i18n';
-import { configureCareerUI } from '@cp/career/ui';
+import { configureCareerUI } from '@cp/ui';
 import { TranslocoModule } from '@ngneat/transloco';
 import { MarkdownModule } from 'ngx-markdown';
 import { AppComponent } from './app/app.component';

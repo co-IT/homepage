@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ArticleComponent, PageTitleComponent } from '@cp/career/ui';
+import { ArticleComponent, PageTitleComponent } from '@cp/ui';
 import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
