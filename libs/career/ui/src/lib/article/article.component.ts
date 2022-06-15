@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { MarkdownModule } from 'ngx-markdown';
 
 @Component({
-  selector: 'cp-article[markdown]',
+  selector: 'cp-article[markdownSrc]',
   standalone: true,
   imports: [MarkdownModule],
   templateUrl: './article.component.html',

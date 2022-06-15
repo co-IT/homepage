@@ -8,6 +8,7 @@ import {
 } from '@cp/career/i18n';
 import { configureCareerUI } from '@cp/career/ui';
 import { TranslocoModule } from '@ngneat/transloco';
+import { MarkdownModule } from 'ngx-markdown';
 import { AppComponent } from './app/app.component';
 import { routes } from './app/app.routes';
 
@@ -28,6 +29,8 @@ bootstrapApplication(AppComponent, {
     provideTranslocoConfig,
 
     provideTranslocoLoader,
+
+    importProvidersFrom(MarkdownModule.forRoot()),
 
     configureCareerUI({
       browserTab: { titlePrefix: 'co-IT', titleSeparator: '-' },
