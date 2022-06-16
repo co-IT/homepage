@@ -3,21 +3,27 @@
 @use 'core/typography';
 @use 'core/layout';
 
-@media (prefers-color-scheme: light) {
+/*
+ * We are not ready for a dark theme, yet.
+ * Nevertheless, we keep it in mind by implementing dark themes anatomy in our
+ * css-Variables (see README.md)
+ */
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --text-color: var(--primary-color-50);
+//     --background-color: #151515;
+//     --surface: #1f1f1f;
+//   }
+// }
+
+// @media (prefers-color-scheme: light) {
   :root {
     --text-color: #151515;
     --background-color: var(--primary-color-50);
     --surface: #fff;
   }
-}
+// }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: var(--primary-color-50);
-    --background-color: #151515;
-    --surface: #1f1f1f;
-  }
-}
 
 body {
   background-color: var(--background-color);
