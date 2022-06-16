@@ -18,7 +18,7 @@
           "apps/homepage/src/favicon.ico",
           "apps/homepage/src/assets",
           {
-            "input": "libs/career/recruiting-process/src/assets",
+            "input": "libs/career/i18n/src/assets",
             "glob": "**/*",
             "output": "assets"
           }
