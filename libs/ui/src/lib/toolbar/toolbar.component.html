@@ -1,0 +1,5 @@
+<img [src]="logoSrc" [attr.alt]="logoAlt" />
+
+<a [routerLink]="route.path" *ngFor="let route of routesInternal">{{
+  route.text
+}}</a>
