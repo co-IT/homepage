@@ -26,6 +26,11 @@
             "input": "libs/landing-page/src/assets",
             "glob": "**/*",
             "output": "assets"
+          },
+          {
+            "input": "libs/career/recruiting-process/src/assets",
+            "glob": "**/*",
+            "output": "assets"
           }
         ],
         "styles": ["apps/homepage/src/styles.scss"],
