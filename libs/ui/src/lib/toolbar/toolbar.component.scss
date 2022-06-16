@@ -1,0 +1,22 @@
+:host {
+  display: grid;
+  grid-auto-flow: column;
+  padding: 0.5em;
+  background-color: var(--surface);
+  border-radius: var(--border-radius);
+}
+
+
+.toolbar__nav {
+  display: flex;
+  gap: 1em;
+}
+
+.toolbar__link {
+  color: var(--text-color);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

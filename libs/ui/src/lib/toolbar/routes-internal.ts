@@ -1,4 +1,4 @@
-export interface RoutesInternal {
+export interface RouteInternal {
   path: string;
   text: string;
 }
