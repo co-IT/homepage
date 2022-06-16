@@ -1,5 +1,12 @@
-<img [src]="logoSrc" [attr.alt]="logoAlt" />
+<ng-container *transloco="let t">
+  <img [src]="logoSrc" [attr.alt]="logoAlt" />
 
-<a [routerLink]="route.path" *ngFor="let route of routesInternal">{{
-  route.text
-}}</a>
+  <nav class="toolbar__nav">
+    <a
+      [routerLink]="route.path"
+      *ngFor="let route of routesInternal"
+      class="toolbar__link"
+      >{{ t(route.text) }}</a
+    >
+  </nav>
+</ng-container>

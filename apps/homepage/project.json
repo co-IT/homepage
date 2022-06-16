@@ -21,6 +21,11 @@
             "input": "libs/i18n/src/assets",
             "glob": "**/*",
             "output": "assets"
+          },
+          {
+            "input": "libs/landing-page/src/assets",
+            "glob": "**/*",
+            "output": "assets"
           }
         ],
         "styles": ["apps/homepage/src/styles.scss"],
