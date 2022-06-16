@@ -15,10 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@cp/career/i18n": ["libs/career/i18n/src/index.ts"],
       "@cp/career/recruiting-process": [
         "libs/career/recruiting-process/src/index.ts"
       ],
+      "@cp/i18n": ["libs/i18n/src/index.ts"],
       "@cp/landing-page": ["libs/landing-page/src/index.ts"],
       "@cp/ui": ["libs/ui/src/index.ts"]
     }

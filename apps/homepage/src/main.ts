@@ -2,10 +2,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { enableProdMode, importProvidersFrom } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import {
-  provideTranslocoConfig,
-  provideTranslocoLoader,
-} from '@cp/career/i18n';
+import { provideTranslocoConfig, provideTranslocoLoader } from '@cp/i18n';
 import { configureCareerUI } from '@cp/ui';
 import { TranslocoModule } from '@ngneat/transloco';
 import { MarkdownModule } from 'ngx-markdown';
