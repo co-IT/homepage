@@ -1,11 +1,6 @@
 import { Component } from '@angular/core';
-import {
-  HeaderComponent,
-  PageTitleComponent,
-  RouteInternal,
-  ToolbarComponent,
-} from '@cp/ui';
-import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
+import { HeaderComponent, PageTitleComponent, ToolbarComponent } from '@cp/ui';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   selector: 'cp-landing-page',
@@ -19,17 +14,4 @@ import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.scss'],
 })
-export class LandingPageComponent {
-  protected routesInternal: RouteInternal[] = [
-    {
-      path: '/welcome',
-      text: this.transloco.translate('navigation.welcome'),
-    },
-    {
-      path: '/recruiting-process',
-      text: this.transloco.translate('navigation.career'),
-    },
-  ];
-
-  constructor(private transloco: TranslocoService) {}
-}
+export class LandingPageComponent {}
