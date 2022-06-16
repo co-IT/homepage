@@ -1,10 +1,10 @@
 {
   "version": 2,
   "projects": {
-    "career-i18n": "libs/career/i18n",
     "career-recruiting-process": "libs/career/recruiting-process",
     "homepage": "apps/homepage",
     "homepage-e2e": "apps/homepage-e2e",
+    "i18n": "libs/i18n",
     "landing-page": "libs/landing-page",
     "ui": "libs/ui"
   },

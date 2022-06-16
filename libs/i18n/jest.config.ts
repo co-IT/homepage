@@ -1,7 +1,7 @@
 /* eslint-disable */
 export default {
-  displayName: 'career-i18n',
-  preset: '../../../jest.preset.js',
+  displayName: 'i18n',
+  preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../coverage/libs/career/i18n',
+  coverageDirectory: '../../coverage/libs/i18n',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },
