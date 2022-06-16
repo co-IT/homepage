@@ -1,11 +1,64 @@
-<ng-container *transloco="let translate">
-  <cp-article
-    [markdownSrc]="translate('recruiting-process.articles.our-promise.src')"
-  ></cp-article>
+<ng-container *transloco="let t">
+  <div class="flow flow--xl">
+    <section>
+      <div class="content">
+        <div class="columns columns-two">
+          <cp-article
+            [markdownSrc]="t('recruiting-process.articles.our-promise.src')"
+          >
+          </cp-article>
+          <img
+            src="/assets/images/co-it-family.png"
+            alt="Auf diesen Bild sind all unsere Kollegen zu sehen, Neuzugänge, wie auch langjährige Mitarbeiter*Innen."
+          />
+        </div>
+      </div>
+    </section>
 
-  <cp-article
-    [markdownSrc]="
-      translate('recruiting-process.articles.you-can-sit-with-us.src')
-    "
-  ></cp-article>
+    <section>
+      <div class="content">
+        <div class="columns columns-two">
+          <img
+            src="/assets/images/you-can-sit-with-us.svg"
+            alt="Auf diesen Bild sind all unsere Kollegen zu sehen, Neuzugänge, wie auch langjährige Mitarbeiter*Innen."
+          />
+          <cp-article
+            [markdownSrc]="
+              t('recruiting-process.articles.you-can-sit-with-us.src')
+            "
+          ></cp-article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="content">
+        <div class="columns columns-two">
+          <cp-article
+            [markdownSrc]="
+              t('recruiting-process.articles.ready-for-take-off.src')
+            "
+          ></cp-article>
+          <img
+            src="/assets/images/ready-for-take-off.svg"
+            alt="Eine Rakete hebt ab ins Weltall. Bist du auch Teil der mutigen Crew?"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="content | flow">
+        <div class="columns-auto">
+          <h2>{{ t(videos.why.heading) }}</h2>
+          <cp-video-tile
+            *ngFor="let video of videos.why.videos"
+            [label]="t('common.video-tile.label')"
+            [videoUrl]="t(video.url)"
+            [videoDescription]="t(video.description)"
+          ></cp-video-tile>
+        </div>
+      </div>
+    </section>
+  </div>
 </ng-container>

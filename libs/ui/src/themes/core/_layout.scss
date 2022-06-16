@@ -10,6 +10,14 @@
   }
 }
 
+
+@media only screen and (min-width: 90rem)
+{
+  :root {
+    --content-width: 90rem;
+  }
+}
+
 .content {
   margin-left: auto;
   margin-right: auto;
@@ -21,7 +29,10 @@
 .columns-auto {
   grid-gap: 2em 1.5em;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(9.5em,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(12em,1fr));
+
+  row-gap: 2em;
+  column-gap: 1.5em;
 }
 
 
@@ -30,6 +41,13 @@
   display: grid;
 }
 
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+.flow--xl {
+  --flow-space: calc(4em + 2vw);
+}
 
 @media only screen and (min-width: 48rem)
 {

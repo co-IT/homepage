@@ -1,0 +1,16 @@
+:host {
+  display: grid;
+  padding: 1em;
+  border-radius: var(--border-radius);
+  background-color: var(--surface);
+  height: 10em;
+}
+
+.video-tile__link {
+  display: flex;
+  gap: 1em;
+  align-self: end;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+}

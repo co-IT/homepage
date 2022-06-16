@@ -1,4 +1,5 @@
 {
+  "common.video-tile.label": "Zum Video",
   "navigation.welcome": "Willkommen",
   "navigation.career": "Karriere",
   "landing-page.page-title": "Inspire To Change",
@@ -9,5 +10,14 @@
   "recruiting-process.page-title": "Karriere",
   "recruiting-process.page-subtitle": "Arbeitszeit ist Lebenszeit",
   "recruiting-process.articles.our-promise.src": "/assets/articles/de/recruiting-process/000-our-promise.md",
-  "recruiting-process.articles.you-can-sit-with-us.src": "/assets/articles/de/recruiting-process/001-you-can-sit-with-us.md"
+  "recruiting-process.articles.you-can-sit-with-us.src": "/assets/articles/de/recruiting-process/001-you-can-sit-with-us.md",
+  "recruiting-process.articles.ready-for-take-off.src": "/assets/articles/de/recruiting-process/002-ready-for-take-off.md",
+  "recruiting-process.video.why.heading": "Warum wir unsere Arbeit lieben",
+  "recruiting-process.video.why.founding": "Das hat uns zur Firmengründung motiviert",
+  "recruiting-process.video.why.values": "Uns verbinden Werte",
+  "recruiting-process.video.why.orientation": "Das gibt uns Orientierung",
+  "recruiting-process.video.why.solutions": "Wir bieten Lösungen und beschreiten Wege",
+  "recruiting-process.video.why.change": "Wir wollen Veränderung, darum bieten wir Sicherheit",
+  "recruiting-process.video.why.understand-people": "Wir verstehen Menschen, also verstehen wir Unternehmen",
+  "recruiting-process.video.why.origin": "Wir sind Teil einer Unternehmensfamilie"
 }

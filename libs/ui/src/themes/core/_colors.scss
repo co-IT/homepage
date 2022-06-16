@@ -1,4 +1,5 @@
 :root {
+  --primary-color: var(--primary-color-500);
   --primary-color-50: #fffbf4;
   --primary-color-100: #fff8e9;
   --primary-color-200: #ffedc7;
@@ -9,6 +10,4 @@
   --primary-color-700: #bf8a17;
   --primary-color-800: #986e12;
   --primary-color-900: #7c5a0f;
-
-  --primary-color: var(--primary-color-500);
 }
