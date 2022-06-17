@@ -1,6 +1,13 @@
-<p>{{ videoDescription }}</p>
-
-<a *ngIf="videoUrl" [href]="videoUrl" target="_blank" class="video-tile__link">
-  <cp-video-play-button></cp-video-play-button>
-  {{ label }}
-</a>
+<div class="video-tile__brush"></div>
+<div class="video-tile__content">
+  <p>{{ videoDescription }}</p>
+  <a
+    *ngIf="videoUrl"
+    [href]="videoUrl"
+    target="_blank"
+    class="video-tile__link"
+  >
+    <cp-video-play-button></cp-video-play-button>
+    {{ label }}
+  </a>
+</div>
