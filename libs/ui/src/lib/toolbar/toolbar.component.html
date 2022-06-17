@@ -4,7 +4,7 @@
   <nav class="toolbar__nav">
     <a
       [routerLink]="route.path"
-      (click)="routeClicked.emit(route)"
+      (click)="routeChanged.emit(route)"
       *ngFor="let route of routesInternal"
       class="toolbar__link"
       >{{ t(route.text) }}</a
