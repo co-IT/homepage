@@ -19,5 +19,15 @@
   "recruiting-process.video.why.solutions": "Wir bieten Lösungen und beschreiten Wege",
   "recruiting-process.video.why.change": "Wir wollen Veränderung, darum bieten wir Sicherheit",
   "recruiting-process.video.why.understand-people": "Wir verstehen Menschen, also verstehen wir Unternehmen",
-  "recruiting-process.video.why.origin": "Wir sind Teil einer Unternehmensfamilie"
+  "recruiting-process.video.why.origin": "Wir sind Teil einer Unternehmensfamilie",
+  "footer.link.privacy.href": "http://e.co-it.eu/datenschutz",
+  "footer.link.privacy.label": "Datenschutz",
+  "footer.link.terms-of-use.href": "http://e.co-it.eu/agb",
+  "footer.link.terms-of-use.label": "AGB",
+  "footer.link.imprint.href": "http://e.co-it.eu/impressum",
+  "footer.link.imprint.label": "Impressum",
+  "footer.link.youtube.href": "http://e.co-it.eu/youtube",
+  "footer.link.youtube.label": "YouTube",
+  "footer.link.github.href": "http://e.co-it.eu/github",
+  "footer.link.github.label": "GitHub"
 }
