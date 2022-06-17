@@ -7,3 +7,4 @@ export * from './lib/timeline/timeline.component';
 export * from './lib/toolbar/routes-internal';
 export * from './lib/toolbar/toolbar.component';
 export * from './lib/video-tile/video-tile.component';
+export * from './lib/footer/footer.component';

@@ -1,0 +1,14 @@
+<ng-container *transloco="let t">
+  <div class="content">
+    <div class="links">
+      <a [href]="t('footer.link.privacy.href')" class="link" target="_blank">{{t('footer.link.privacy.label')}}</a>
+      <a [href]="t('footer.link.terms-of-use.href')" class="link" target="_blank">{{t('footer.link.terms-of-use.label')}}</a>
+      <a [href]="t('footer.link.imprint.href')" class="link" target="_blank">{{t('footer.link.imprint.label')}}</a>
+      <a [href]="t('footer.link.youtube.href')" class="link" target="_blank">{{t('footer.link.youtube.label')}}</a>
+      <a [href]="t('footer.link.github.href')" class="link" target="_blank">{{t('footer.link.github.label')}}</a>
+    </div>
+    <div class="logo">
+      <img [src]="logoSrc" [attr.alt]="logoAlt" />
+    </div>
+  </div>
+</ng-container>

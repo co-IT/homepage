@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import {
+  FooterComponent,
   HeaderComponent,
   PageTitleComponent,
   RouteInternal,
@@ -17,6 +18,7 @@ import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
     RouterModule,
     TranslocoModule,
     HeaderComponent,
+    FooterComponent,
     PageTitleComponent,
     ToolbarComponent,
   ],
