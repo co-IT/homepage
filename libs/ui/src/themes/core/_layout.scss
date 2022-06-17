@@ -31,6 +31,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(12em,1fr));
 
+  grid-auto-rows: 1fr;
+
   row-gap: 2em;
   column-gap: 1.5em;
 }
@@ -55,11 +57,14 @@
     grid-gap: 2em;
     grid-auto-columns: 1fr;
     grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
   }
 
   .columns-two {
     grid-auto-flow: row;
     grid-template-columns: 1fr 1fr;
+
   }
 }
 

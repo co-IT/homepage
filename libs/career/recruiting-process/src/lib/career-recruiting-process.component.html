@@ -33,8 +33,8 @@
 
     <section>
       <div class="content | flow">
+        <h2>{{ t(videos.why.heading) }}</h2>
         <div class="columns-auto">
-          <h2>{{ t(videos.why.heading) }}</h2>
           <cp-video-tile
             *ngFor="let video of videos.why.videos"
             [label]="t('common.video-tile.label')"
