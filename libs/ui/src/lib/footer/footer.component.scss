@@ -1,0 +1,27 @@
+:host {
+  padding: 1em 0;
+  margin-top: 4em;
+  background-color: var(--primary-color);
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  display: grid;
+  grid-column-gap: 2em;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(3, max-content);
+}
+
+.logo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.link {
+  color: var(--text-color);
+}

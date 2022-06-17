@@ -13,6 +13,11 @@
       [subtitle]="t(routeRecentlyClicked.subtitle)"
     ></cp-page-title>
   </cp-header>
-</ng-container>
 
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
+
+  <cp-footer
+    logoSrc="/assets/images/logo.svg"
+    [logoAlt]="t('landing-page.a11y.alternative-text')"
+  ></cp-footer>
+</ng-container>
