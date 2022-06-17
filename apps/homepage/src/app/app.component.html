@@ -4,7 +4,7 @@
       logoSrc="/assets/images/logo.svg"
       [logoAlt]="t('landing-page.a11y.alternative-text')"
       [routesInternal]="routesInternal"
-      (routeClicked)="routeRecentlyClicked = $event"
+      (routeChanged)="routeRecentlyClicked = $event"
     ></cp-toolbar>
 
     <cp-page-title
@@ -14,4 +14,5 @@
     ></cp-page-title>
   </cp-header>
 </ng-container>
+
 <router-outlet></router-outlet>
