@@ -22,19 +22,25 @@
             src="/assets/images/you-can-sit-with-us.svg"
             alt="Auf diesen Bild sind all unsere Kollegen zu sehen, Neuzugänge, wie auch langjährige Mitarbeiter*Innen."
           />
-          <cp-article
-            [markdownSrc]="
-              t('recruiting-process.articles.you-can-sit-with-us.src')
-            "
-          ></cp-article>
+          <div class="flow">
+            <cp-article
+              [markdownSrc]="
+                t('recruiting-process.articles.you-can-sit-with-us.src')
+              "
+            ></cp-article>
+            <cp-call-to-action
+              icon="mdi mdi-download"
+              text="Kurzvorstellung herunterladen"
+            ></cp-call-to-action>
+          </div>
         </div>
       </div>
     </section>
 
     <section>
       <div class="content | flow">
-        <h2>{{ t(videos.why.heading) }}</h2>
-        <div class="columns-auto">
+        <h2 class="">{{ t(videos.why.heading) }}</h2>
+        <div class="columns-auto flow--s">
           <cp-video-tile
             *ngFor="let video of videos.why.videos"
             [label]="t('common.video-tile.label')"
@@ -48,11 +54,17 @@
     <section>
       <div class="content">
         <div class="columns columns-two">
-          <cp-article
-            [markdownSrc]="
-              t('recruiting-process.articles.ready-for-take-off.src')
-            "
-          ></cp-article>
+          <div class="flow">
+            <cp-article
+              [markdownSrc]="
+                t('recruiting-process.articles.ready-for-take-off.src')
+              "
+            ></cp-article>
+            <cp-call-to-action
+              icon="mdi mdi-email"
+              text="Bewerbungsunterlagen einreichen"
+            ></cp-call-to-action>
+          </div>
           <img
             src="/assets/images/ready-for-take-off.svg"
             alt="Eine Rakete hebt ab ins Weltall. Bist du auch Teil der mutigen Crew?"
