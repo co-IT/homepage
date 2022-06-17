@@ -32,6 +32,20 @@
     </section>
 
     <section>
+      <div class="content | flow">
+        <div class="columns-auto">
+          <h2>{{ t(videos.why.heading) }}</h2>
+          <cp-video-tile
+            *ngFor="let video of videos.why.videos"
+            [label]="t('common.video-tile.label')"
+            [videoUrl]="t(video.url)"
+            [videoDescription]="t(video.description)"
+          ></cp-video-tile>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <div class="content">
         <div class="columns columns-two">
           <cp-article
@@ -43,20 +57,6 @@
             src="/assets/images/ready-for-take-off.svg"
             alt="Eine Rakete hebt ab ins Weltall. Bist du auch Teil der mutigen Crew?"
           />
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="content | flow">
-        <div class="columns-auto">
-          <h2>{{ t(videos.why.heading) }}</h2>
-          <cp-video-tile
-            *ngFor="let video of videos.why.videos"
-            [label]="t('common.video-tile.label')"
-            [videoUrl]="t(video.url)"
-            [videoDescription]="t(video.description)"
-          ></cp-video-tile>
         </div>
       </div>
     </section>
