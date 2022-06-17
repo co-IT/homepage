@@ -1,0 +1,16 @@
+button {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+  background-color: var(--primary-color);
+  border-radius: 16px;
+  border-color: transparent;
+  min-height: 50px;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+}
+
+i {
+  font-size: larger;
+}
