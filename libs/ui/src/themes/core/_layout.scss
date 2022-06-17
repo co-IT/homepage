@@ -51,6 +51,10 @@
   --flow-space: calc(4em + 2vw);
 }
 
+.flow--s {
+  --flow-space: 2em;
+}
+
 @media only screen and (min-width: 48rem)
 {
   .columns {

@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import {
   ArticleComponent,
+  CallToActionComponent,
   PageTitleComponent,
   VideoTileComponent,
 } from '@cp/ui';
@@ -13,6 +14,7 @@ import { TranslocoModule } from '@ngneat/transloco';
   imports: [
     CommonModule,
     TranslocoModule,
+    CallToActionComponent,
     PageTitleComponent,
     ArticleComponent,
     VideoTileComponent,

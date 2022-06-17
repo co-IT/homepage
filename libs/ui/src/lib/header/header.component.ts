@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CallToActionButtonComponent } from '../call-to-action-button/call-to-action-button.component';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'cp-header',

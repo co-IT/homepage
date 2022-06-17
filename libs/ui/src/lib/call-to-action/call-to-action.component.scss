@@ -1,0 +1,18 @@
+a {
+  display: inline-block;
+  background-color: var(--primary-color);
+  border-radius: 1em;
+  padding: 0.8em 1em;
+
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.call-to-action__content {
+  display: flex;
+  gap: 0.25em;
+}
+
+i {
+  font-size: larger;
+}
