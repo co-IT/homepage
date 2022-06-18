@@ -26,10 +26,10 @@
     "@mdi/font": "^6.7.96",
     "@ngneat/transloco": "4.1.0",
     "@nrwl/angular": "14.3.5",
-    "ngx-markdown": "^13.1.0",
-    "rxjs": "~7.4.0",
-    "tslib": "^2.0.0",
-    "zone.js": "~0.11.4"
+    "ngx-markdown": "14.0.0",
+    "rxjs": "7.5.5",
+    "tslib": "2.4.0",
+    "zone.js": "0.11.6"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "14.0.2",
