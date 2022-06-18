@@ -45,7 +45,37 @@
             *ngFor="let video of videos.why.videos"
             [label]="t('common.video-tile.label')"
             [videoUrl]="t(video.url)"
-            [videoDescription]="t(video.description)"
+            [videoDescription]="t(video.title)"
+          ></cp-video-tile>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="content | flow">
+        <h2 class="">{{ t(videos.how.heading) }}</h2>
+        <div class="columns-auto flow--s">
+          <cp-video-tile
+            *ngFor="let video of videos.how.videos"
+            appearance="orange"
+            [label]="t('common.video-tile.label')"
+            [videoUrl]="t(video.url)"
+            [videoDescription]="t(video.title)"
+          ></cp-video-tile>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="content | flow">
+        <h2 class="">{{ t(videos.what.heading) }}</h2>
+        <div class="columns-auto flow--s">
+          <cp-video-tile
+            *ngFor="let video of videos.what.videos"
+            appearance="green"
+            [label]="t('common.video-tile.label')"
+            [videoUrl]="t(video.url)"
+            [videoDescription]="t(video.title)"
           ></cp-video-tile>
         </div>
       </div>
