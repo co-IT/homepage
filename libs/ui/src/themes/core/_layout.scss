@@ -51,6 +51,10 @@
   --flow-space: calc(4em + 2vw);
 }
 
+.flow--m {
+  --flow-space: 1em;
+}
+
 .flow--s {
   --flow-space: 2em;
 }

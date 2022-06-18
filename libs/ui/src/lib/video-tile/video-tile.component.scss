@@ -6,12 +6,21 @@
   background-color: var(--surface);
   height: 100%;
 }
-
-
 .video-tile__brush {
-  background: var(--secondary);
   border-top-left-radius: var(--border-radius);
   border-bottom-left-radius: var(--border-radius);
+
+  &.blue {
+    background: var(--blue);
+  }
+
+  &.green {
+    background: var(--green);
+  }
+
+  &.orange {
+    background: var(--orange);
+  }
 }
 
 .video-tile__content {
@@ -28,3 +37,4 @@
   text-decoration: none;
   color: var(--text-color);
 }
+

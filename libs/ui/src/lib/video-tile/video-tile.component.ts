@@ -13,4 +13,6 @@ export class VideoTileComponent {
   @Input() label?: string;
   @Input() videoDescription?: string;
   @Input() videoUrl?: string;
+
+  @Input() appearance: 'blue' | 'green' | 'orange' = 'blue';
 }

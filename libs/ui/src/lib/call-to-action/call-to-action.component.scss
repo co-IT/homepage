@@ -1,8 +1,13 @@
+:host {
+  display: block;
+}
+
 a {
   display: inline-block;
   background-color: var(--primary-color);
   border-radius: 1em;
   padding: 0.8em 1em;
+
 
   color: var(--text-color);
   text-decoration: none;
