@@ -42,6 +42,12 @@ export class AppComponent {
       title: 'recruiting-process.page-title',
       subtitle: 'recruiting-process.page-subtitle',
     },
+    {
+      path: '/welcome/about',
+      text: this.transloco.translate('navigation.about'),
+      title: 'about.page-title',
+      subtitle: 'about.page-subtitle',
+    },
   ];
 
   constructor(private transloco: TranslocoService) {}
