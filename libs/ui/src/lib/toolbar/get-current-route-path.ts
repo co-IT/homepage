@@ -9,6 +9,6 @@ import { filter, map, Observable } from 'rxjs';
 export function getCurrentRoutePath(): Observable<string> {
   return inject(Router).events.pipe(
     filter((event): event is NavigationEnd => event instanceof NavigationEnd),
-    map((navigationEnd) => navigationEnd.url)
+    map((navigationEnd) => navigationEnd.urlAfterRedirects)
   );
 }
