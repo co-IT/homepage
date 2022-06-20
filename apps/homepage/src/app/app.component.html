@@ -1,17 +1,21 @@
 <ng-container *transloco="let t">
   <cp-header>
-    <cp-toolbar
-      logoSrc="/assets/images/logo.svg"
-      [logoAlt]="t('landing-page.a11y.alternative-text')"
-      [routesInternal]="routesInternal"
-      (routeChanged)="routeRecentlyClicked = $event"
-    ></cp-toolbar>
+    <div class="flow flow--m">
+      <cp-toolbar
+        class="content"
+        logoSrc="/assets/images/logo.svg"
+        [logoAlt]="t('landing-page.a11y.alternative-text')"
+        [routesInternal]="routesInternal"
+        (routeChanged)="routeRecentlyClicked = $event"
+      ></cp-toolbar>
 
-    <cp-page-title
-      *ngIf="routeRecentlyClicked"
-      [title]="t(routeRecentlyClicked.title)"
-      [subtitle]="t(routeRecentlyClicked.subtitle)"
-    ></cp-page-title>
+      <cp-page-title
+        class="content"
+        *ngIf="routeRecentlyClicked"
+        [title]="t(routeRecentlyClicked.title)"
+        [subtitle]="t(routeRecentlyClicked.subtitle)"
+      ></cp-page-title>
+    </div>
   </cp-header>
 
   <router-outlet></router-outlet>
