@@ -1,1 +1,13 @@
-<p>cinema works!</p>
+<ng-container *transloco="let t">
+  <div class="flow flow--xl">
+    <section>
+      <div *ngIf="videoId$ | async as videoId" class="content">
+        <youtube-player [videoId]="t(videoId)"></youtube-player>
+        <cp-article
+          [markdownSrc]="'/assets/articles/de/video-descriptions/' + videoId + '.md'"
+        >
+        </cp-article>
+      </div>
+    </section>
+  </div>
+</ng-container>

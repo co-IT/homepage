@@ -1,18 +1,19 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { VideoPlayButtonComponent } from '../video-play-button/video-play-button.component';
 
 @Component({
   selector: 'cp-video-tile',
   standalone: true,
-  imports: [CommonModule, VideoPlayButtonComponent],
+  imports: [CommonModule, VideoPlayButtonComponent, RouterModule],
   templateUrl: './video-tile.component.html',
   styleUrls: ['./video-tile.component.scss'],
 })
 export class VideoTileComponent {
   @Input() label?: string;
   @Input() videoDescription?: string;
-  @Input() videoUrl?: string;
+  @Input() videoId?: string;
 
   @Input() appearance: 'blue' | 'green' | 'orange' = 'blue';
 }

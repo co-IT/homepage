@@ -2,9 +2,8 @@
 <div class="video-tile__content">
   <p>{{ videoDescription }}</p>
   <a
-    *ngIf="videoUrl"
-    [href]="videoUrl"
-    target="_blank"
+    *ngIf="(videoId)"
+    [routerLink]="['./cinema', videoId]"
     class="video-tile__link"
   >
     <cp-video-play-button></cp-video-play-button>
