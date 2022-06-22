@@ -41,7 +41,7 @@ jobs:
         with:
           node-version: '16'
       - name: Cache node modules
-        id: cache-nodemodules
+        id: cache-node_modules
         uses: actions/cache@v2
         env:
           cache-name: cache-node-modules
@@ -54,7 +54,7 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
       - name: Install Dependencies
-        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
+        if: steps.cache-node_modules.outputs.cache-hit != 'true'
         run: npm ci
       - run: npx nx-cloud start-ci-run
       - run: npx nx affected --target=build --parallel --max-parallel=3
