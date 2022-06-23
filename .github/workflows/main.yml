@@ -22,6 +22,18 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '16'
+      - name: Restore Dependencies
+        id: cache-node_modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
       - run: npm ci
       - run: npx nx-cloud start-ci-run
       - run: npx nx affected --target=build --parallel --max-parallel=3
@@ -40,13 +52,12 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '16'
-      - name: Cache node modules
+      - name: Restore Dependencies
         id: cache-node_modules
         uses: actions/cache@v2
         env:
           cache-name: cache-node-modules
         with:
-          # caching node_modules
           path: node_modules
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
