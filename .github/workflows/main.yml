@@ -31,6 +31,11 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+      - name: set active subscription
+        uses: azure/CLI@v1
+        with:
+          inlineScript: /
+            az account set --subscription "Productive_Sites"
       - name: Azure deploy Static Website
         uses: azure/CLI@v1
         with:
