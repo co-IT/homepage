@@ -40,7 +40,7 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
-            az cdn endpoint purge --content-paths  "/*" --profile-name "coiteu" --name "coiteu-d2axe3aqbme0hzbx.z01.azurefd.net" --resource-group "coIteu"
+            az afd endpoint purge --content-paths  "/*" --profile-name "coiteu" --name "coiteu" --resource-group "coIteu"
       - name: Azure logout
         run: |
             az logout
