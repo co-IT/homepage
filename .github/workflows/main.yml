@@ -39,6 +39,25 @@ jobs:
       - run: npx nx affected --target=build --parallel --max-parallel=3
       - run: npx nx affected --target=test --parallel --max-parallel=2
       - run: npx nx-cloud stop-all-agents
+      - uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Azure deploy Static Website
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az storage blob upload-batch --overwrite --account-name coiteu --auth-mode key -d '$web' -s './dist/apps/homepage'
+      - name: Azure purge CDN endpoint
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az account set --subscription "Productive_Sites"
+            az afd endpoint purge --content-paths  "/*" --profile-name "coiteu" --endpoint-name "coiteu" --resource-group "coIteu"
+      - name: Azure logout
+        run: |
+            az logout
+        if: always()
   pr:
     runs-on: ubuntu-latest
     if: ${{ github.event_name == 'pull_request' }}
@@ -68,28 +87,9 @@ jobs:
         if: steps.cache-node_modules.outputs.cache-hit != 'true'
         run: npm ci
       - run: npx nx-cloud start-ci-run
-      - run: npx nx run homepage:build --skip-nx-cache
+      - run: npx nx affected --target=build --parallel --max-parallel=3
       - run: npx nx affected --target=test --parallel --max-parallel=2
       - run: npx nx-cloud stop-all-agents
-      - uses: azure/login@v1
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-      - name: Azure deploy Static Website
-        uses: azure/CLI@v1
-        with:
-          inlineScript: |
-            az storage blob upload-batch --overwrite --account-name coiteu --auth-mode key -d '$web' -s './dist/apps/homepage'
-      - name: Azure purge CDN endpoint
-        uses: azure/CLI@v1
-        with:
-          inlineScript: |
-            az account set --subscription "Productive_Sites"
-            az afd endpoint purge --content-paths  "/*" --profile-name "coiteu" --endpoint-name "coiteu" --resource-group "coIteu"
-      - name: Azure logout
-        run: |
-            az logout
-        if: always()
   agents:
     runs-on: ubuntu-latest
     name: Agent 1
