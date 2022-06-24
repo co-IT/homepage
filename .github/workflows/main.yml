@@ -75,11 +75,6 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: set active subscription
-        uses: azure/CLI@v1
-        with:
-          inlineScript: |
-            az account set --subscription "Productive_Sites"
       - name: Azure deploy Static Website
         uses: azure/CLI@v1
         with:
@@ -89,6 +84,7 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
+            az account set --subscription "Productive_Sites"
             az afd endpoint purge --content-paths  "/*" --profile-name "coiteu" --endpoint-name "coiteu" --resource-group "coIteu"
       - name: Azure logout
         run: |
