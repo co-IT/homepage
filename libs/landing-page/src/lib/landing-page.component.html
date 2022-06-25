@@ -3,12 +3,11 @@
     <section>
       <div class="content">
         <div class="columns columns-two">
-          <cp-article
-            [markdownSrc]="
-              t('landing-page.articles.take-advantage-of-change.src')
-            "
-          >
-          </cp-article>
+          <article>
+            <markdown
+              [src]="t('landing-page.articles.take-advantage-of-change.src')"
+            ></markdown>
+          </article>
           <img
             src="/assets/images/team-standing-at-desk.jpg"
             alt="Auf diesen Bild sind all unsere Kollegen zu sehen, Neuzugänge, wie auch langjährige Mitarbeiter*Innen."
@@ -24,8 +23,11 @@
             src="/assets/images/workshop-internal.jpg"
             alt="Auf diesen Bild sind all unsere Kollegen zu sehen, Neuzugänge, wie auch langjährige Mitarbeiter*Innen."
           />
-          <cp-article [markdownSrc]="t('landing-page.articles.team-setup.src')">
-          </cp-article>
+          <article>
+            <markdown
+              [src]="t('landing-page.articles.team-setup.src')"
+            ></markdown>
+          </article>
         </div>
       </div>
     </section>
@@ -33,8 +35,11 @@
     <section>
       <div class="content">
         <div class="columns columns-two">
-          <cp-article [markdownSrc]="t('landing-page.articles.team-dna.src')">
-          </cp-article>
+          <article>
+            <markdown
+              [src]="t('landing-page.articles.team-dna.src')"
+            ></markdown>
+          </article>
           <img
             src="/assets/images/tim-schneider.portrait.jpg"
             alt="Auf diesen Bild sind all unsere Kollegen zu sehen, Neuzugänge, wie auch langjährige Mitarbeiter*Innen."
@@ -47,14 +52,15 @@
       <div class="content">
         <div class="columns columns-two">
           <div class="text-box-solid">
-            <cp-article
-              [markdownSrc]="t('landing-page.articles.solutions.src')"
-            >
-            </cp-article>
+            <article>
+              <markdown
+                [src]="t('landing-page.articles.solutions.src')"
+              ></markdown>
+            </article>
           </div>
           <div class="text-box-solid">
-            <cp-article [markdownSrc]="t('landing-page.articles.career.src')">
-            </cp-article>
+            <article></article>
+            <markdown [src]="t('landing-page.articles.career.src')"></markdown>
           </div>
         </div>
       </div>
@@ -64,14 +70,18 @@
       <div class="content">
         <div class="columns columns-two">
           <div class="text-box-glass">
-            <cp-article [markdownSrc]="t('landing-page.articles.team-dna.src')">
-            </cp-article>
+            <article>
+              <markdown
+                [src]="t('landing-page.articles.team-dna.src')"
+              ></markdown>
+            </article>
           </div>
           <div class="text-box-glass">
-            <cp-article
-              [markdownSrc]="t('landing-page.articles.team-setup.src')"
-            >
-            </cp-article>
+            <article>
+              <markdown
+                [src]="t('landing-page.articles.team-setup.src')"
+              ></markdown>
+            </article>
           </div>
         </div>
       </div>

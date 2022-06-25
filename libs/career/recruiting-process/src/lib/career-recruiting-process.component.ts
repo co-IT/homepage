@@ -1,12 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import {
-  ArticleComponent,
-  CallToActionComponent,
-  PageTitleComponent,
-  VideoTileComponent,
-} from '@cp/ui';
+import { CallToActionComponent, VideoTileComponent } from '@cp/ui';
 import { TranslocoModule } from '@ngneat/transloco';
+import { MarkdownModule } from 'ngx-markdown';
 
 @Component({
   selector: 'cp-career-recruiting-process',
@@ -14,9 +10,8 @@ import { TranslocoModule } from '@ngneat/transloco';
   imports: [
     CommonModule,
     TranslocoModule,
+    MarkdownModule,
     CallToActionComponent,
-    PageTitleComponent,
-    ArticleComponent,
     VideoTileComponent,
   ],
   templateUrl: './career-recruiting-process.component.html',

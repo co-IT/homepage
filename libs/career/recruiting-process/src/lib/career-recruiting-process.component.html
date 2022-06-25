@@ -3,10 +3,11 @@
     <section>
       <div class="content">
         <div class="columns columns-two">
-          <cp-article
-            [markdownSrc]="t('recruiting-process.articles.our-promise.src')"
-          >
-          </cp-article>
+          <article>
+            <markdown
+              [src]="t('recruiting-process.articles.our-promise.src')"
+            ></markdown>
+          </article>
           <img
             src="/assets/images/co-it-family.png"
             alt="Auf diesen Bild sind all unsere Kollegen zu sehen, Neuzugänge, wie auch langjährige Mitarbeiter*Innen."
@@ -23,11 +24,11 @@
             alt="Auf diesen Bild sind all unsere Kollegen zu sehen, Neuzugänge, wie auch langjährige Mitarbeiter*Innen."
           />
           <div class="flow">
-            <cp-article
-              [markdownSrc]="
-                t('recruiting-process.articles.you-can-sit-with-us.src')
-              "
-            ></cp-article>
+            <article>
+              <markdown
+                [src]="t('recruiting-process.articles.you-can-sit-with-us.src')"
+              ></markdown>
+            </article>
             <cp-call-to-action
               icon="mdi mdi-download"
               text="Kurzvorstellung herunterladen"
@@ -85,11 +86,12 @@
       <div class="content">
         <div class="columns columns-two">
           <div class="flow">
-            <cp-article
-              [markdownSrc]="
-                t('recruiting-process.articles.ready-for-take-off.src')
-              "
-            ></cp-article>
+            <article>
+              <markdown
+                [src]="t('recruiting-process.articles.ready-for-take-off.src')"
+              ></markdown>
+            </article>
+
             <cp-call-to-action
               icon="mdi mdi-email"
               text="Bewerbungsunterlagen einreichen"

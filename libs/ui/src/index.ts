@@ -1,4 +1,3 @@
-export * from './lib/article/article.component';
 export * from './lib/call-to-action/call-to-action.component';
 export * from './lib/configure-career-ui.provider';
 export * from './lib/footer/footer.component';
