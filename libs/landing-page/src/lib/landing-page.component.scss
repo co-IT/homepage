@@ -4,3 +4,29 @@
   background-size: cover;
   background-position: center;
 }
+
+.image-with-gradient-blue-blue {
+  background-image: linear-gradient(180deg, #02024D 0%, rgba(2, 2, 77, 0.2) 13.02%, rgba(2, 2, 77, 0.2) 79.69%, #02024D 100%), url('../assets/images/team-standing-at-desk-gray.webp');
+  height: 56em;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-solid-blue-ocean {
+  background: var(--blue-ocean);
+  padding: 2em;
+  height: 40em;
+}
+
+.section-half-solid-blue-ocean {
+  background-image: linear-gradient(
+    to bottom,
+    var(--blue-ocean) 0%,
+    var(--blue-ocean) 50%,
+    var(--primary-color-50) 50%,
+    var(--primary-color-50) 100%,
+  );
+  background-repeat: repeat-x;
+  background-size: 50% auto;
+  height: 30em;
+}

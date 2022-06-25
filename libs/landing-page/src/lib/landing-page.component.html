@@ -1,97 +1,56 @@
 <ng-container *transloco="let t">
-  <div class="flow flow--xl">
-    <section class="image-with-gradient-orange-blue"></section>
-    <section>
-      <img
-        src="assets/images/team-standing-at-desk-gray.webp"
-        [attr.alt]="t('landing-page.image.team-standing-at-desk.alt')"
-      />
-    </section>
-    <section>
-      <div class="content">
-        <div class="columns columns-two">
+  <section class="image-with-gradient-orange-blue center-content">
+    <div class="content">
+      <div class="columns columns-two">
+        <h2 class="heading-hero text-white">
+          {{ t('landing-page.heading.partner') }}
+        </h2>
+        <article class="text-box-glass">
+          <markdown
+            [src]="t('landing-page.articles.team-setup.src')"
+          ></markdown>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-solid-blue-ocean center-content">
+    <div class="content flow flow--m text-white">
+      <h2 class="heading-hero">{{ t('landing-page.heading.game-changer') }}</h2>
+      <article class="text-size-m">
+        <markdown [src]="t('landing-page.articles.team-dna.src')"></markdown>
+      </article>
+    </div>
+  </section>
+
+  <section class="image-with-gradient-blue-blue center-content">
+    <div class="content">
+      <div class="columns columns-two">
+        <article class="text-box-glass">
+          <markdown [src]="t('landing-page.articles.team-dna.src')"></markdown>
+        </article>
+        <h2 class="heading-hero text-white">
+          {{ t('landing-page.heading.in-time-in-budget') }}
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-half-solid-blue-ocean center-content">
+    <div class="content">
+      <div class="columns columns-two">
+        <div class="text-box-solid">
           <article>
             <markdown
-              [src]="t('landing-page.articles.take-advantage-of-change.src')"
-            ></markdown>
-          </article>
-          <img
-            src="/assets/images/team-standing-at-desk.jpg"
-            alt="Auf diesen Bild sind all unsere Kollegen zu sehen, Neuzugänge, wie auch langjährige Mitarbeiter*Innen."
-          />
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="content">
-        <div class="columns columns-two">
-          <img
-            src="/assets/images/workshop-internal.jpg"
-            alt="Auf diesen Bild sind all unsere Kollegen zu sehen, Neuzugänge, wie auch langjährige Mitarbeiter*Innen."
-          />
-          <article>
-            <markdown
-              [src]="t('landing-page.articles.team-setup.src')"
+              [src]="t('landing-page.articles.solutions.src')"
             ></markdown>
           </article>
         </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="content">
-        <div class="columns columns-two">
-          <article>
-            <markdown
-              [src]="t('landing-page.articles.team-dna.src')"
-            ></markdown>
-          </article>
-          <img
-            src="/assets/images/tim-schneider.portrait.jpg"
-            alt="Auf diesen Bild sind all unsere Kollegen zu sehen, Neuzugänge, wie auch langjährige Mitarbeiter*Innen."
-          />
+        <div class="text-box-solid">
+          <article></article>
+          <markdown [src]="t('landing-page.articles.career.src')"></markdown>
         </div>
       </div>
-    </section>
-
-    <section>
-      <div class="content">
-        <div class="columns columns-two">
-          <div class="text-box-solid">
-            <article>
-              <markdown
-                [src]="t('landing-page.articles.solutions.src')"
-              ></markdown>
-            </article>
-          </div>
-          <div class="text-box-solid">
-            <article></article>
-            <markdown [src]="t('landing-page.articles.career.src')"></markdown>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section style="background: var(--blue-ocean); padding: 2em">
-      <div class="content">
-        <div class="columns columns-two">
-          <div class="text-box-glass">
-            <article>
-              <markdown
-                [src]="t('landing-page.articles.team-dna.src')"
-              ></markdown>
-            </article>
-          </div>
-          <div class="text-box-glass">
-            <article>
-              <markdown
-                [src]="t('landing-page.articles.team-setup.src')"
-              ></markdown>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </ng-container>
