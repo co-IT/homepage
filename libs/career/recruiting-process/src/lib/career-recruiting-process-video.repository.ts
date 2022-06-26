@@ -1,21 +1,5 @@
 import { Injectable } from '@angular/core';
 
-export interface Video {
-  id: string;
-  title: string;
-}
-
-export interface VideoCollection {
-  heading: string;
-  videos: Video[];
-}
-
-export interface RecruitingVideoCollection {
-  why: VideoCollection;
-  how: VideoCollection;
-  what: VideoCollection;
-}
-
 @Injectable({ providedIn: 'root' })
 export class CareerRecruitingProcessVideoRepository {
   videos = {

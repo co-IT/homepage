@@ -9,6 +9,7 @@ import {
 import { TranslocoModule } from '@ngneat/transloco';
 import { MarkdownModule } from 'ngx-markdown';
 import { CareerRecruitingProcessVideoRepository } from './career-recruiting-process-video.repository';
+import { RecruitingVideoCollection } from './recruiting-video-collection';
 
 @Component({
   selector: 'cp-career-recruiting-process',
