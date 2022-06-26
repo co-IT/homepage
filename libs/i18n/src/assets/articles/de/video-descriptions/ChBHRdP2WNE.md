@@ -1,5 +1,3 @@
-## Uns vereinen Werte
-
 Ein Wert ist etwas, das man bewertet! Davon gibt es natürlich vieles, aber wir haben für uns
 
 - die Kollegialität (Collegiality *),

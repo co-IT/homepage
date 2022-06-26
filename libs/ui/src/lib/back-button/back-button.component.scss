@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: white;
+color: var(--primary-color);
+box-shadow: 0.3em 0.3em 0.5em 0.1em rgba(153,153,153,0.79);
+cursor: pointer;
+}
