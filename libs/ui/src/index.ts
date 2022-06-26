@@ -1,4 +1,4 @@
-export * from './lib/article/article.component';
+export * from './lib/back-button/back-button.component';
 export * from './lib/call-to-action/call-to-action.component';
 export * from './lib/configure-career-ui.provider';
 export * from './lib/footer/footer.component';
@@ -8,4 +8,3 @@ export * from './lib/timeline/timeline.component';
 export * from './lib/toolbar/routes-internal';
 export * from './lib/toolbar/toolbar.component';
 export * from './lib/video-tile/video-tile.component';
-export * from './lib/back-button/back-button.component';
