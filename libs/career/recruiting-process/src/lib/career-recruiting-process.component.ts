@@ -28,7 +28,7 @@ import { CareerRecruitingProcessVideoRepository } from './career-recruiting-proc
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CareerRecruitingProcessComponent {
-  videos: any;
+  videos: RecruitingVideoCollection;
   constructor(repository: CareerRecruitingProcessVideoRepository) {
     this.videos = repository.videos;
   }
