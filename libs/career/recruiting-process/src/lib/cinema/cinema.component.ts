@@ -31,7 +31,8 @@ export class CinemaComponent implements OnInit {
     repository: CareerRecruitingProcessVideoRepository
   ) {
     this.video$ = activatedRoute.paramMap.pipe(
-      map((params: ParamMap) => params.get('videoId') || ''),
+      map((params: ParamMap) => params.get('videoId')),
+      filter((videoId): videoId is string => !!videoId),
       map((videoId) => repository.find(videoId))
     );
   }
