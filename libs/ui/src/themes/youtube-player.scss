@@ -1,0 +1,14 @@
+
+youtube-player {
+  display: block;
+  aspect-ratio: 16/9;
+
+  > iframe {
+    display: block;
+    width: 100%;
+    max-height: 100%;
+  }
+
+}
+
+
