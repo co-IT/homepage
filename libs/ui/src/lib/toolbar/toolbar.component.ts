@@ -31,7 +31,7 @@ export class ToolbarComponent implements OnInit {
     this.currentRoutePath$
       .pipe(
         map((path) =>
-          this.routesInternal?.find((route) => route.path === path)
+          this.routesInternal?.find((route) => path.includes(route.path))
         ),
         filter((route) => !!route),
         tap((route) => this.routeChanged.emit(route))

@@ -1,6 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { CallToActionComponent, VideoTileComponent } from '@cp/ui';
+import { RouterModule } from '@angular/router';
+import {
+  ArticleComponent,
+  CallToActionComponent,
+  PageTitleComponent,
+  VideoTileComponent,
+} from '@cp/ui';
 import { TranslocoModule } from '@ngneat/transloco';
 import { MarkdownModule } from 'ngx-markdown';
 
@@ -9,9 +15,12 @@ import { MarkdownModule } from 'ngx-markdown';
   standalone: true,
   imports: [
     CommonModule,
+    RouterModule,
     TranslocoModule,
     MarkdownModule,
     CallToActionComponent,
+ PageTitleComponent,
+    ArticleComponent,
     VideoTileComponent,
   ],
   templateUrl: './career-recruiting-process.component.html',
