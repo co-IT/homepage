@@ -1,10 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { map, Observable, of } from 'rxjs';
+import { filter, map, Observable, of } from 'rxjs';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { TranslocoModule } from '@ngneat/transloco';
 import { ArticleComponent } from '@cp/ui';
+import {
+  CareerRecruitingProcessVideoRepository,
+  RecruitingVideoCollection,
+  Video,
+} from '../career-recruiting-process-video.repository';
 
 @Component({
   selector: 'cp-cinema',
@@ -15,15 +20,20 @@ import { ArticleComponent } from '@cp/ui';
     TranslocoModule,
     ArticleComponent,
   ],
+  providers: [CareerRecruitingProcessVideoRepository],
   templateUrl: './cinema.component.html',
   styleUrls: ['./cinema.component.scss'],
 })
 export class CinemaComponent implements OnInit {
-  videoId$: Observable<string> = of('');
+  video$: Observable<Video | undefined> = of({ id: '', title: '' });
   apiLoaded = false;
-  constructor(activatedRoute: ActivatedRoute) {
-    this.videoId$ = activatedRoute.paramMap.pipe(
-      map((params: ParamMap) => params.get('videoId') || '')
+  constructor(
+    activatedRoute: ActivatedRoute,
+    repository: CareerRecruitingProcessVideoRepository
+  ) {
+    this.video$ = activatedRoute.paramMap.pipe(
+      map((params: ParamMap) => params.get('videoId') || ''),
+      map((videoId) => repository.find(videoId))
     );
   }
 
