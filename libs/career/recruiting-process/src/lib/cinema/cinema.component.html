@@ -1,10 +1,10 @@
 <ng-container *transloco="let t">
   <div class="flow flow--xl">
     <section>
-      <div *ngIf="videoId$ | async as videoId" class="content">
-        <youtube-player [videoId]="t(videoId)"></youtube-player>
+      <div *ngIf="video$ | async as video" class="content">
+        <youtube-player [videoId]="t(video.id)"></youtube-player>
         <cp-article
-          [markdownSrc]="'/assets/articles/de/video-descriptions/' + videoId + '.md'"
+          [markdownSrc]="'/assets/articles/de/video-descriptions/' + video.id + '.md'"
         >
         </cp-article>
       </div>
