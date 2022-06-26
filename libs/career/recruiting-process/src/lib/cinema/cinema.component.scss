@@ -2,4 +2,9 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  flex-direction: column;
+}
+
+section.video {
+  flex-direction: row;display: flex;
 }

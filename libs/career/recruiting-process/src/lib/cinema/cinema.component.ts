@@ -10,6 +10,7 @@ import {
   RecruitingVideoCollection,
   Video,
 } from '../career-recruiting-process-video.repository';
+import { CinemaHeaderComponent } from '../cinema-header/cinema-header.component';
 
 @Component({
   selector: 'cp-cinema',
@@ -19,6 +20,7 @@ import {
     YouTubePlayerModule,
     TranslocoModule,
     ArticleComponent,
+    CinemaHeaderComponent,
   ],
   providers: [CareerRecruitingProcessVideoRepository],
   templateUrl: './cinema.component.html',
