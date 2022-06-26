@@ -1,14 +1,12 @@
-import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { map, Observable, of } from 'rxjs';
 import { TranslocoModule } from '@ngneat/transloco';
-import {
-  CareerRecruitingProcessVideoRepository,
-  Video,
-} from '../career-recruiting-process-video.repository';
+import { filter, map, Observable, of } from 'rxjs';
+import { CareerRecruitingProcessVideoRepository } from '../career-recruiting-process-video.repository';
 import { CinemaHeaderComponent } from '../cinema-header/cinema-header.component';
 import { CinemaPlayerComponent } from '../cinema-player/cinema-player.component';
+import { Video } from '../video';
 
 @Component({
   selector: 'cp-cinema',
@@ -32,7 +30,7 @@ export class CinemaComponent implements OnInit {
   ) {
     this.video$ = activatedRoute.paramMap.pipe(
       map((params: ParamMap) => params.get('videoId')),
-      filter((videoId): videoId is string => !!videoId),
+      filter((videoId: string | null): videoId is string => !!videoId),
       map((videoId) => repository.find(videoId))
     );
   }

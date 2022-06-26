@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { BackButtonComponent } from '@cp/ui';
-import { Video } from '../career-recruiting-process-video.repository';
 
 @Component({
   selector: 'cp-cinema-header',

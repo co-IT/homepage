@@ -1,16 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'cp-back-button',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './back-button.component.html',
   styleUrls: ['./back-button.component.scss'],
 })
-export class BackButtonComponent {
-  @HostListener('click')
-  navigateBack() {
-    history.back();
-  }
-}
+export class BackButtonComponent {}
