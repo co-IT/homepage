@@ -1,0 +1,11 @@
+<div class="flow flow--xl">
+  <section class="video" *ngIf="video">
+    <div class="content | flow">
+      <youtube-player [height]="" [width]="" [videoId]="video.id"></youtube-player>
+      <cp-article
+        [markdownSrc]="'/assets/articles/de/video-descriptions/' + video.id + '.md'"
+      >
+      </cp-article>
+    </div>
+  </section>
+</div>

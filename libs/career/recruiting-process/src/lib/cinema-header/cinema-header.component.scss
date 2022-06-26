@@ -1,7 +1,11 @@
 :host {
   display: flex;
   margin-bottom: 1.5em;
-flex-direction: row;
-gap: 1em;
-align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
 }

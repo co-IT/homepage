@@ -1,26 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { filter, map, Observable, of } from 'rxjs';
-import { YouTubePlayerModule } from '@angular/youtube-player';
+import { map, Observable, of } from 'rxjs';
 import { TranslocoModule } from '@ngneat/transloco';
-import { ArticleComponent } from '@cp/ui';
 import {
   CareerRecruitingProcessVideoRepository,
-  RecruitingVideoCollection,
   Video,
 } from '../career-recruiting-process-video.repository';
 import { CinemaHeaderComponent } from '../cinema-header/cinema-header.component';
+import { CinemaPlayerComponent } from '../cinema-player/cinema-player.component';
 
 @Component({
   selector: 'cp-cinema',
   standalone: true,
   imports: [
     CommonModule,
-    YouTubePlayerModule,
     TranslocoModule,
-    ArticleComponent,
     CinemaHeaderComponent,
+    CinemaPlayerComponent,
   ],
   providers: [CareerRecruitingProcessVideoRepository],
   templateUrl: './cinema.component.html',

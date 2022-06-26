@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { BackButtonComponent } from '@cp/ui';
+import { Video } from '../career-recruiting-process-video.repository';
 
 @Component({
   selector: 'cp-cinema-header',
@@ -9,8 +10,4 @@ import { BackButtonComponent } from '@cp/ui';
   templateUrl: './cinema-header.component.html',
   styleUrls: ['./cinema-header.component.scss'],
 })
-export class CinemaHeaderComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-}
+export class CinemaHeaderComponent {}
