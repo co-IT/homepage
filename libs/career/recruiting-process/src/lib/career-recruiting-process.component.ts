@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import {
-  ArticleComponent,
   CallToActionComponent,
   PageTitleComponent,
   VideoTileComponent,
@@ -21,7 +20,6 @@ import { CareerRecruitingProcessVideoRepository } from './career-recruiting-proc
     MarkdownModule,
     CallToActionComponent,
     PageTitleComponent,
-    ArticleComponent,
     VideoTileComponent,
   ],
   providers: [CareerRecruitingProcessVideoRepository],
