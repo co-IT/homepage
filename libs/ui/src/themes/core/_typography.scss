@@ -21,9 +21,17 @@ h1 {
 }
 
 .heading-hero {
-  font-size: 6em;
+  font-size: 3em;
   line-height: 1em;
   font-weight: 700;
+}
+
+@media only screen and (min-width: 32rem)
+{
+  .heading-hero {
+    font-size: 6em;
+    line-height: 1em;
+  }
 }
 
 .text-white {
