@@ -1,15 +1,14 @@
-<div class="flow flow--xl">
-  <section class="video" *ngIf="video">
-    <div class="content | flow">
-      <youtube-player
-        [videoId]="video.id"
-      ></youtube-player>
-      <article>
-        <markdown
-          [src]="'/assets/articles/de/video-descriptions/' + video.id + '.md'"
-        >
-        </markdown>
-      </article>
-    </div>
-  </section>
-</div>
+<ng-container *ngIf="video">
+  <div class="flow flow--m">
+    <youtube-player
+      class="youtube-player"
+      [videoId]="video.id"
+    ></youtube-player>
+    <article class="youtube-player-width-adjustment">
+      <markdown
+        [src]="'/assets/articles/de/video-descriptions/' + video.id + '.md'"
+      >
+      </markdown>
+    </article>
+  </div>
+</ng-container>

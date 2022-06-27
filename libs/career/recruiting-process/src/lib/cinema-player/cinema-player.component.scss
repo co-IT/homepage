@@ -1,8 +1,22 @@
+$max-width: 740px;
+
 :host {
   display: block;
 }
 
-section.video {
-  flex-direction: row;
-  display: flex;
+::ng-deep .youtube-player {
+  display: block;
+  max-width: $max-width;
+  aspect-ratio: 16/9;
+
+  > iframe {
+    display: block;
+    width: 100%;
+    max-height: 100%;
+  }
+}
+
+
+.youtube-player-width-adjustment {
+  max-width: $max-width;
 }
