@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { TranslocoModule } from '@ngneat/transloco';
-import { filter, map, Observable, of } from 'rxjs';
+import { filter, map, Observable } from 'rxjs';
 import { CareerRecruitingProcessVideoRepository } from '../career-recruiting-process-video.repository';
 import { CinemaHeaderComponent } from '../cinema-header/cinema-header.component';
 import { CinemaPlayerComponent } from '../cinema-player/cinema-player.component';
@@ -22,8 +22,9 @@ import { Video } from '../video';
   styleUrls: ['./cinema.component.scss'],
 })
 export class CinemaComponent implements OnInit {
-  video$: Observable<Video | undefined> = of({ id: '', title: '' });
+  video$: Observable<Video | undefined>;
   apiLoaded = false;
+
   constructor(
     activatedRoute: ActivatedRoute,
     repository: CareerRecruitingProcessVideoRepository

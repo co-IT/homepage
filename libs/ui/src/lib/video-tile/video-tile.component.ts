@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { VideoPlayButtonComponent } from '../video-play-button/video-play-button.component';
+import { videoTileIcon } from './video-tile-icon';
 
 @Component({
   selector: 'cp-video-tile',
@@ -12,6 +13,8 @@ import { VideoPlayButtonComponent } from '../video-play-button/video-play-button
 })
 export class VideoTileComponent {
   @Input() label?: string;
+  @Input() icon?: videoTileIcon;
+
   @Input() videoDescription?: string;
   @Input() videoId?: string;
 
