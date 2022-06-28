@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95" height="96" viewBox="0 0 95 96">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rechteck_46" data-name="Rechteck 46" width="95" height="96" transform="translate(-0.342 -0.499)" fill="#8a8997"/>
+    </clipPath>
+  </defs>
+  <g id="sicherheit" transform="translate(0.342 0.499)">
+    <g id="Gruppe_26" data-name="Gruppe 26" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="Pfad_5" data-name="Pfad 5" d="M78.267,15.866a44.124,44.124,0,1,0,12.924,31.2,43.985,43.985,0,0,0-12.924-31.2M47.066,0a47.068,47.068,0,1,1-33.28,13.786A46.924,46.924,0,0,1,47.066,0" transform="translate(0.622 -0.006)" fill="#8a8997"/>
+      <path id="Pfad_6" data-name="Pfad 6" d="M61.1,25.365a25.271,25.271,0,1,0,7.4,17.87,25.2,25.2,0,0,0-7.4-17.87M43.235,15.02a28.222,28.222,0,1,1-19.95,8.266,28.115,28.115,0,0,1,19.95-8.266" transform="translate(4.453 3.826)" fill="#8a8997"/>
+      <path id="Pfad_7" data-name="Pfad 7" d="M28.164,3.575,31.415,20.22a26.7,26.7,0,0,1,16.934,0L51.6,3.575a41.78,41.78,0,0,0-23.435,0" transform="translate(7.806 0.478)" fill="#8a8997" fill-rule="evenodd"/>
+      <path id="Pfad_8" data-name="Pfad 8" d="M57.637,31.415a24.046,24.046,0,0,1,0,16.934L76.263,51.6a37.6,37.6,0,0,0,0-23.435Z" transform="translate(15.325 7.179)" fill="#8a8997" fill-rule="evenodd"/>
+      <path id="Pfad_9" data-name="Pfad 9" d="M48.349,57.637a24.046,24.046,0,0,1-16.934,0L28.164,76.263a37.6,37.6,0,0,0,23.435,0Z" transform="translate(7.806 14.697)" fill="#8a8997" fill-rule="evenodd"/>
+      <path id="Pfad_10" data-name="Pfad 10" d="M21.529,48.349a24.045,24.045,0,0,1,0-16.934L2.9,28.164A37.6,37.6,0,0,0,2.9,51.6Z" transform="translate(0.885 7.179)" fill="#8a8997" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

@@ -30,6 +30,7 @@ import { RecruitingVideoCollection } from './recruiting-video-collection';
 })
 export class CareerRecruitingProcessComponent {
   videos: RecruitingVideoCollection;
+
   constructor(repository: CareerRecruitingProcessVideoRepository) {
     this.videos = repository.videos;
   }
