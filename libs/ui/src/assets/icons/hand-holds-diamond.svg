@@ -1,0 +1,21 @@
+<svg id="werte" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95.644" height="75.838" viewBox="0 0 95.644 75.838">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rechteck_47" data-name="Rechteck 47" width="95.644" height="75.838" fill="#8a8997"/>
+    </clipPath>
+  </defs>
+  <path id="Pfad_11" data-name="Pfad 11" d="M63.411,0,71.7,7.787,77.874,0Z" transform="translate(-0.869 0)" fill="#8a8997"/>
+  <path id="Pfad_12" data-name="Pfad 12" d="M41.091,0l6.156,7.787L55.543,0Z" transform="translate(-0.563 0)" fill="#8a8997"/>
+  <path id="Pfad_13" data-name="Pfad 13" d="M51,8.51H67.934L59.458.559Z" transform="translate(-0.699 -0.007)" fill="#8a8997"/>
+  <path id="Pfad_14" data-name="Pfad 14" d="M32.09,11.652,55.226,38.043,45.9,11.652Z" transform="translate(-0.44 -0.159)" fill="#8a8997"/>
+  <path id="Pfad_15" data-name="Pfad 15" d="M69.552,11.652H49.3L59.45,40.374Z" transform="translate(-0.675 -0.159)" fill="#8a8997"/>
+  <path id="Pfad_16" data-name="Pfad 16" d="M31.758,8.511H43.879L37.614.59Z" transform="translate(-0.435 -0.008)" fill="#8a8997"/>
+  <path id="Pfad_17" data-name="Pfad 17" d="M72.93,11.652,63.637,38.043l23.1-26.391Z" transform="translate(-0.872 -0.159)" fill="#8a8997"/>
+  <path id="Pfad_18" data-name="Pfad 18" d="M75.106,8.511H87.228L81.367.606Z" transform="translate(-1.029 -0.008)" fill="#8a8997"/>
+  <g id="Gruppe_28" data-name="Gruppe 28" transform="translate(0 0)">
+    <g id="Gruppe_27" data-name="Gruppe 27" clip-path="url(#clip-path)">
+      <path id="Pfad_19" data-name="Pfad 19" d="M89.082,46.663,74.3,53.494A6.4,6.4,0,0,1,68,58.933l-21.741,0a1.5,1.5,0,1,1,0-2.99H68a3.419,3.419,0,0,0,3.406-3.286v-.119a4.91,4.91,0,0,0-4.917-4.916H55.251c-5.02-4.527-11.551-7.591-17.572-7.725-5.035-.119-9.624-.1-12.464-.062V65.283C31.522,68.87,46.151,76.729,52.5,76.371,65.144,75.655,93.539,55.2,93.539,55.2a4.816,4.816,0,0,0-4.457-8.533Z" transform="translate(-0.345 -0.546)" fill="#8a8997"/>
+      <path id="Pfad_20" data-name="Pfad 20" d="M14.032,66.6a3.094,3.094,0,1,1,3.094-3.094A3.1,3.1,0,0,1,14.032,66.6m5-33.95H2.824A2.83,2.83,0,0,0,0,35.476V67.769a2.833,2.833,0,0,0,2.824,2.825H19.037a2.833,2.833,0,0,0,2.824-2.825l0-32.293A2.814,2.814,0,0,0,19.037,32.652Z" transform="translate(0 -0.448)" fill="#8a8997"/>
+    </g>
+  </g>
+</svg>

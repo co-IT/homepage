@@ -2,11 +2,16 @@
 <div class="video-tile__content">
   <p>{{ videoDescription }}</p>
   <a
-    *ngIf="(videoId)"
+    *ngIf="videoId"
     [routerLink]="['./cinema', videoId]"
     class="video-tile__link"
   >
     <cp-video-play-button></cp-video-play-button>
     {{ label }}
   </a>
+  <img
+    *ngIf="icon"
+    [src]="'assets/icons/' + icon + '.svg'"
+    alt="icon for video tile"
+  />
 </div>
