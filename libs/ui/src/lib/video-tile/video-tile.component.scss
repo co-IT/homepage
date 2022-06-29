@@ -51,4 +51,6 @@
 .video-tile__icon {
   grid-area: c;
   align-self: end;
+  max-width: 4em;
+  justify-self: end;
 }
