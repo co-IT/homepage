@@ -40,44 +40,15 @@
       </div>
     </section>
 
-    <section>
+    <section
+      *ngFor="let videoCollection of videos | keyvalue: preserveOriginalOrder"
+    >
       <div class="content | flow">
-        <h2 class="">{{ t(videos.why.heading) }}</h2>
+        <h2 class="">{{ t(videoCollection.value.heading) }}</h2>
         <div class="columns-auto flow--s">
           <cp-video-tile
-            *ngFor="let video of videos.why.videos"
-            [label]="t('common.video-tile.label')"
-            [videoId]="video.id"
-            [icon]="video.icon"
-            [videoDescription]="t(video.title)"
-          ></cp-video-tile>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="content | flow">
-        <h2 class="">{{ t(videos.how.heading) }}</h2>
-        <div class="columns-auto flow--s">
-          <cp-video-tile
-            *ngFor="let video of videos.how.videos"
-            appearance="orange"
-            [label]="t('common.video-tile.label')"
-            [videoId]="video.id"
-            [icon]="video.icon"
-            [videoDescription]="t(video.title)"
-          ></cp-video-tile>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="content | flow">
-        <h2 class="">{{ t(videos.what.heading) }}</h2>
-        <div class="columns-auto flow--s">
-          <cp-video-tile
-            *ngFor="let video of videos.what.videos"
-            appearance="green"
+            *ngFor="let video of videoCollection.value.videos"
+            [appearance]="videoCollection.value.appearance"
             [label]="t('common.video-tile.label')"
             [videoId]="video.id"
             [icon]="video.icon"

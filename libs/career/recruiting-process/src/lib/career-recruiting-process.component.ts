@@ -9,7 +9,7 @@ import {
 import { TranslocoModule } from '@ngneat/transloco';
 import { MarkdownModule } from 'ngx-markdown';
 import { CareerRecruitingProcessVideoRepository } from './career-recruiting-process-video.repository';
-import { RecruitingVideoCollection } from './recruiting-video-collection';
+import { VideoCollectionGrouped } from './video-collection';
 
 @Component({
   selector: 'cp-career-recruiting-process',
@@ -29,9 +29,13 @@ import { RecruitingVideoCollection } from './recruiting-video-collection';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CareerRecruitingProcessComponent {
-  videos: RecruitingVideoCollection;
+  videos: VideoCollectionGrouped;
 
   constructor(repository: CareerRecruitingProcessVideoRepository) {
     this.videos = repository.videos;
+  }
+
+  protected preserveOriginalOrder() {
+    return 0;
   }
 }
