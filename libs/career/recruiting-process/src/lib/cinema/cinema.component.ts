@@ -3,10 +3,10 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { TranslocoModule } from '@ngneat/transloco';
 import { filter, map, Observable } from 'rxjs';
-import { CareerRecruitingProcessVideoRepository } from '../career-recruiting-process-video-repository.service';
 import { CinemaHeaderComponent } from '../cinema-header/cinema-header.component';
 import { CinemaPlayerComponent } from '../cinema-player/cinema-player.component';
 import { Video } from '../models';
+import { RecruitingProcessVideoRepository } from '../recruiting-process-video-repository.service';
 
 @Component({
   selector: 'cp-cinema',
@@ -17,7 +17,7 @@ import { Video } from '../models';
     CinemaHeaderComponent,
     CinemaPlayerComponent,
   ],
-  providers: [CareerRecruitingProcessVideoRepository],
+  providers: [RecruitingProcessVideoRepository],
   templateUrl: './cinema.component.html',
   styleUrls: ['./cinema.component.scss'],
 })
@@ -27,7 +27,7 @@ export class CinemaComponent implements OnInit {
 
   constructor(
     activatedRoute: ActivatedRoute,
-    repository: CareerRecruitingProcessVideoRepository
+    repository: RecruitingProcessVideoRepository
   ) {
     this.video$ = activatedRoute.paramMap.pipe(
       map((params: ParamMap) => params.get('videoId')),

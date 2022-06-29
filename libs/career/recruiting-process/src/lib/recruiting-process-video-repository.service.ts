@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { VideoCollectionGrouped } from './models';
 
 @Injectable({ providedIn: 'root' })
-export class CareerRecruitingProcessVideoRepository {
+export class RecruitingProcessVideoRepository {
   videos: VideoCollectionGrouped = {
     why: {
       heading: 'recruiting-process.video.why.heading',
