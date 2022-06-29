@@ -1,26 +1,20 @@
 :root {
-  --content-width: 100vw
+  --content-width: 100vw;
 }
 
-
-@media only screen and (min-width: 54rem)
-{
+@media only screen and (min-width: 54rem) {
   :root {
     --content-width: 54rem;
   }
 }
 
-
-@media only screen and (min-width: 90rem)
-{
+@media only screen and (min-width: 90rem) {
   :root {
     --content-width: 90rem;
   }
 }
 
-
-@media only screen and (min-width: 110rem)
-{
+@media only screen and (min-width: 110rem) {
   :root {
     --content-width: 110rem;
   }
@@ -30,14 +24,14 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 54em;
-  max-width: var(--content-width,54em);
+  max-width: var(--content-width, 54em);
   padding: 0 1em;
 }
 
 .columns-auto {
   grid-gap: 2em 1.5em;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(12em,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(12em, 18em));
 
   grid-auto-rows: 1fr;
 
@@ -45,15 +39,12 @@
   column-gap: 1.5em;
 }
 
-
 .columns {
   grid-gap: 2em;
   display: grid;
 }
 
-
-@media only screen and (min-width: 48rem)
-{
+@media only screen and (min-width: 48rem) {
   .columns {
     grid-gap: 2em;
     grid-auto-columns: 1fr;
@@ -66,7 +57,6 @@
     grid-auto-flow: row;
     grid-template-columns: 1fr 1fr;
     align-items: start;
-
   }
 }
 
