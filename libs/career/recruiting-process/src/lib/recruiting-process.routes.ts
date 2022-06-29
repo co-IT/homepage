@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { CareerRecruitingProcessComponent } from './career-recruiting-process.component';
 import { CinemaComponent } from './cinema/cinema.component';
+import { CareerRecruitingProcessComponent } from './recruiting-process.component';
 
 export const routes: Routes = [
   {

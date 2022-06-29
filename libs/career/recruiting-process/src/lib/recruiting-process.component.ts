@@ -8,11 +8,11 @@ import {
 } from '@cp/ui';
 import { TranslocoModule } from '@ngneat/transloco';
 import { MarkdownModule } from 'ngx-markdown';
-import { CareerRecruitingProcessVideoRepository } from './career-recruiting-process-video-repository.service';
 import { VideoCollectionGrouped } from './models';
+import { RecruitingProcessVideoRepository } from './recruiting-process-video-repository.service';
 
 @Component({
-  selector: 'cp-career-recruiting-process',
+  selector: 'cp-recruiting-process',
   standalone: true,
   imports: [
     CommonModule,
@@ -23,15 +23,15 @@ import { VideoCollectionGrouped } from './models';
     PageTitleComponent,
     VideoTileComponent,
   ],
-  providers: [CareerRecruitingProcessVideoRepository],
-  templateUrl: './career-recruiting-process.component.html',
-  styleUrls: ['./career-recruiting-process.component.scss'],
+  providers: [RecruitingProcessVideoRepository],
+  templateUrl: './recruiting-process.component.html',
+  styleUrls: ['./recruiting-process.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CareerRecruitingProcessComponent {
   videos: VideoCollectionGrouped;
 
-  constructor(repository: CareerRecruitingProcessVideoRepository) {
+  constructor(repository: RecruitingProcessVideoRepository) {
     this.videos = repository.videos;
   }
 

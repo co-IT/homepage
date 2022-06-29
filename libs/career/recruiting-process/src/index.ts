@@ -1,1 +1,1 @@
-export * from './lib/career-recruiting-process.routes';
+export * from './lib/recruiting-process.routes';
