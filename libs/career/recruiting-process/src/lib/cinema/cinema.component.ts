@@ -3,10 +3,10 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { TranslocoModule } from '@ngneat/transloco';
 import { filter, map, Observable } from 'rxjs';
-import { CareerRecruitingProcessVideoRepository } from '../career-recruiting-process-video.repository';
+import { CareerRecruitingProcessVideoRepository } from '../career-recruiting-process-video-repository.service';
 import { CinemaHeaderComponent } from '../cinema-header/cinema-header.component';
 import { CinemaPlayerComponent } from '../cinema-player/cinema-player.component';
-import { Video } from '../video';
+import { Video } from '../models';
 
 @Component({
   selector: 'cp-cinema',

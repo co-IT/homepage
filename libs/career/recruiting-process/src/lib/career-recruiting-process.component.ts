@@ -8,8 +8,8 @@ import {
 } from '@cp/ui';
 import { TranslocoModule } from '@ngneat/transloco';
 import { MarkdownModule } from 'ngx-markdown';
-import { CareerRecruitingProcessVideoRepository } from './career-recruiting-process-video.repository';
-import { VideoCollectionGrouped } from './video-collection';
+import { CareerRecruitingProcessVideoRepository } from './career-recruiting-process-video-repository.service';
+import { VideoCollectionGrouped } from './models';
 
 @Component({
   selector: 'cp-career-recruiting-process',
