@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import { RecruitingVideoCollection } from './recruiting-video-collection';
+import { VideoCollectionGrouped } from './video-collection';
 
 @Injectable({ providedIn: 'root' })
 export class CareerRecruitingProcessVideoRepository {
-  videos: RecruitingVideoCollection = {
+  videos: VideoCollectionGrouped = {
     why: {
       heading: 'recruiting-process.video.why.heading',
+      appearance: 'blue',
       videos: [
         {
           title: 'recruiting-process.video.why.founding',
@@ -46,6 +47,7 @@ export class CareerRecruitingProcessVideoRepository {
     },
     how: {
       heading: 'recruiting-process.video.how.heading',
+      appearance: 'green',
       videos: [
         {
           title: 'recruiting-process.video.how.your-development',
@@ -81,6 +83,7 @@ export class CareerRecruitingProcessVideoRepository {
     },
     what: {
       heading: 'recruiting-process.video.what.heading',
+      appearance: 'orange',
       videos: [
         {
           title: 'recruiting-process.video.what.salary-1',
@@ -107,10 +110,8 @@ export class CareerRecruitingProcessVideoRepository {
   };
 
   find(id: string) {
-    return [
-      ...this.videos.how.videos,
-      ...this.videos.what.videos,
-      ...this.videos.why.videos,
-    ].find((video) => video.id === id);
+    return Object.entries(this.videos)
+      .flatMap(([, value]) => value.videos)
+      .find((video) => video.id === id);
   }
 }
