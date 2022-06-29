@@ -8,15 +8,9 @@
   }
 }
 
-@media only screen and (min-width: 90rem) {
+@media only screen and (min-width: 70rem) {
   :root {
-    --content-width: 90rem;
-  }
-}
-
-@media only screen and (min-width: 110rem) {
-  :root {
-    --content-width: 110rem;
+    --content-width: 70rem;
   }
 }
 
