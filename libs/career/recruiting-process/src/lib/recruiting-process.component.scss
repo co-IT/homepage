@@ -1,0 +1,7 @@
+.recruiting-process__videos-section {
+  padding: 4em 0;
+
+  &:nth-child(2n + 1) {
+    background-color: var(--gray-lightest);
+  }
+}

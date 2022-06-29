@@ -1,12 +1,26 @@
 .image-with-gradient-orange-blue {
-  background-image: linear-gradient(180deg, #FEB81E 0%, rgba(234, 169, 27, 0.5) 20.1%, rgba(2, 2, 77, 0.5) 80.52%, #02024D 100%), url('../assets/images/team-workshop-gray.webp');
+  background-image: linear-gradient(
+      180deg,
+      #feb81e 0%,
+      rgba(234, 169, 27, 0.5) 20.1%,
+      rgba(2, 2, 77, 0.5) 80.52%,
+      #02024d 100%
+    ),
+    url('../assets/images/team-workshop-gray.webp');
   height: 56em;
   background-size: cover;
   background-position: center;
 }
 
 .image-with-gradient-blue-blue {
-  background-image: linear-gradient(180deg, #02024D 0%, rgba(2, 2, 77, 0.2) 13.02%, rgba(2, 2, 77, 0.2) 79.69%, #02024D 100%), url('../assets/images/team-standing-at-desk-gray.webp');
+  background-image: linear-gradient(
+      180deg,
+      #02024d 0%,
+      rgba(2, 2, 77, 0.2) 13.02%,
+      rgba(2, 2, 77, 0.2) 79.69%,
+      #02024d 100%
+    ),
+    url('../assets/images/team-standing-at-desk-gray.webp');
   height: 56em;
   background-size: cover;
   background-position: center;
@@ -23,8 +37,8 @@
     to bottom,
     var(--blue-ocean) 0%,
     var(--blue-ocean) 50%,
-    var(--primary-color-50) 50%,
-    var(--primary-color-50) 100%,
+    var(--white) 50%,
+    var(--white) 100%
   );
   background-repeat: repeat-x;
   background-size: 50% auto;
