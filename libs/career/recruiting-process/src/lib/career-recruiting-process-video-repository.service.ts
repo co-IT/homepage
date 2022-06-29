@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { VideoCollectionGrouped } from './video-collection';
+import { VideoCollectionGrouped } from './models';
 
 @Injectable({ providedIn: 'root' })
 export class CareerRecruitingProcessVideoRepository {

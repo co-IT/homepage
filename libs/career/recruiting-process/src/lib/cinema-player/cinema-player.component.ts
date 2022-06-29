@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { MarkdownModule } from 'ngx-markdown';
-import { Video } from '../video';
+import { Video } from '../models/video';
 
 @Component({
   selector: 'cp-cinema-player',
