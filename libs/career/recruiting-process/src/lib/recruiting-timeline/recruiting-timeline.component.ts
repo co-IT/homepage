@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { CallToActionComponent } from '@cp/ui';
 import { TranslocoModule } from '@ngneat/transloco';
-import { CallToActionComponent } from '../../../../../ui/src';
 import { RecruitingTimelineEntryComponent } from '../recruiting-timeline-entry/recruiting-timeline-entry.component';
 
 @Component({
