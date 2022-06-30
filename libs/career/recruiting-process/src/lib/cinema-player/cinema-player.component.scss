@@ -1,4 +1,4 @@
-$max-width: 740px;
+$player-width: calc(var(--content-width) - 2em);
 
 :host {
   display: block;
@@ -6,17 +6,17 @@ $max-width: 740px;
 
 ::ng-deep .youtube-player {
   display: block;
-  max-width: $max-width;
+  width: $player-width;
   aspect-ratio: 16/9;
 
   > iframe {
     display: block;
-    width: 100%;
-    max-height: 100%;
+    width: $player-width;
+    aspect-ratio: 16/9;
+    height: 100%;
   }
 }
 
-
 .youtube-player-width-adjustment {
-  max-width: $max-width;
+  max-width: $player-width;
 }
