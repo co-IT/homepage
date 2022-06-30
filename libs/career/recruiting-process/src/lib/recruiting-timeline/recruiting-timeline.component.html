@@ -1,0 +1,16 @@
+<ng-container *transloco="let t">
+  <div class="spacer--m"></div>
+  <div class="flow flow--m">
+    <div class="content | flow">
+  <h2>{{t('recruiting-process.timeline.header')}}</h2>
+  <div class="timeline">
+  <cp-recruiting-timeline-entry *ngFor="let entry of entries" [entry]="entry"></cp-recruiting-timeline-entry>
+  </div>
+  <cp-call-to-action
+              icon="mdi mdi-email"
+              text="Bewerbungsunterlagen einreichen"
+              href="mailto:bewerbung@co-IT.eu?subject=Ich bewerbe mich bei euch!"
+            ></cp-call-to-action>
+  </div>
+</div>
+</ng-container>

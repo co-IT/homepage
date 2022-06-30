@@ -10,6 +10,7 @@ import { TranslocoModule } from '@ngneat/transloco';
 import { MarkdownModule } from 'ngx-markdown';
 import { VideoCollectionGrouped } from './models';
 import { RecruitingProcessVideoRepository } from './recruiting-process-video-repository.service';
+import { RecruitingTimelineComponent } from './recruiting-timeline/recruiting-timeline.component';
 
 @Component({
   selector: 'cp-recruiting-process',
@@ -22,6 +23,7 @@ import { RecruitingProcessVideoRepository } from './recruiting-process-video-rep
     CallToActionComponent,
     PageTitleComponent,
     VideoTileComponent,
+    RecruitingTimelineComponent,
   ],
   providers: [RecruitingProcessVideoRepository],
   templateUrl: './recruiting-process.component.html',
