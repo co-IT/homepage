@@ -6,6 +6,9 @@
   border-radius: var(--border-radius);
 }
 
+.toolbar__logo {
+  align-self: center;
+}
 
 .toolbar__nav {
   display: flex;
