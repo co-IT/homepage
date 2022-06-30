@@ -23,4 +23,9 @@ export interface RouteInternal {
    * Indicates whether route is entry point of the app.
    */
   isStartPage?: boolean;
+
+  /**
+   * Path to an image that should mit displayed instead of the text
+   */
+  imgSrc?: string;
 }

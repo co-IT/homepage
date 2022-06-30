@@ -1,2 +1,8 @@
-<h1>{{ title }}</h1>
-<span>{{ subtitle }}</span>
+<ng-container *ngIf="imgSrc; else default">
+  <img [src]="imgSrc" class="page-title__image--center" />
+</ng-container>
+
+<ng-template #default>
+  <h1>{{ title }}</h1>
+  <span>{{ subtitle }}</span>
+</ng-template>

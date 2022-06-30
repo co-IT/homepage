@@ -1,6 +1,6 @@
 <ng-container *transloco="let t">
   <cp-header>
-    <div class="flow flow--m">
+    <div class="flow flow--xl">
       <cp-toolbar
         class="content"
         logoSrc="/assets/images/logo.svg"
@@ -14,6 +14,7 @@
         *ngIf="routeRecentlyClicked"
         [title]="t(routeRecentlyClicked.title)"
         [subtitle]="t(routeRecentlyClicked.subtitle)"
+        [imgSrc]="routeRecentlyClicked?.imgSrc"
       ></cp-page-title>
     </div>
   </cp-header>

@@ -35,6 +35,7 @@ export class AppComponent {
       title: 'landing-page.page-title',
       subtitle: 'landing-page.page-subtitle',
       isStartPage: true,
+      imgSrc: 'assets/images/logo-hero.svg',
     },
     {
       path: '/recruiting-process',

@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -10,6 +11,7 @@ import { BrowserTabTitleSetter } from './browser-tab-title-setter.service';
 @Component({
   selector: 'cp-page-title[title][subtitle]',
   standalone: true,
+  imports: [CommonModule],
   templateUrl: './page-title.component.html',
   styleUrls: ['./page-title.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -17,6 +19,8 @@ import { BrowserTabTitleSetter } from './browser-tab-title-setter.service';
 export class PageTitleComponent implements OnChanges {
   @Input() title = '';
   @Input() subtitle = '';
+
+  @Input() imgSrc: string | undefined;
 
   constructor(private browserTabTitleSetter: BrowserTabTitleSetter) {}
 
