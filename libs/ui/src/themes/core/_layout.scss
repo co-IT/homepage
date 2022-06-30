@@ -17,7 +17,6 @@
 .content {
   margin-left: auto;
   margin-right: auto;
-  max-width: 54em;
   max-width: var(--content-width, 54em);
   padding: 0 1em;
 }
@@ -31,6 +30,11 @@
 
   row-gap: 2em;
   column-gap: 1.5em;
+}
+
+.columns-auto--xl {
+  @extend .columns-auto;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 26em));
 }
 
 .columns {

@@ -1,4 +1,4 @@
-export type videoTileIcon =
+export type VideoTileIcon =
   | 'building'
   | 'compass'
   | 'family'

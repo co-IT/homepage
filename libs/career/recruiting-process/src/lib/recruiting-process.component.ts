@@ -8,9 +8,12 @@ import {
 } from '@cp/ui';
 import { TranslocoModule } from '@ngneat/transloco';
 import { MarkdownModule } from 'ngx-markdown';
-import { VideoCollectionGrouped } from './models';
+import { JobOffer, VideoCollectionGrouped } from './models';
 import { RecruitingProcessVideoRepository } from './recruiting-process-video-repository.service';
 import { RecruitingTimelineComponent } from './recruiting-timeline/recruiting-timeline.component';
+import { first, Observable } from 'rxjs';
+import { RecruiteeService } from './recruitee.service';
+import { JobOfferTileComponent } from '@cp/ui';
 
 @Component({
   selector: 'cp-recruiting-process',
@@ -24,6 +27,7 @@ import { RecruitingTimelineComponent } from './recruiting-timeline/recruiting-ti
     PageTitleComponent,
     VideoTileComponent,
     RecruitingTimelineComponent,
+    JobOfferTileComponent,
   ],
   providers: [RecruitingProcessVideoRepository],
   templateUrl: './recruiting-process.component.html',
@@ -32,9 +36,14 @@ import { RecruitingTimelineComponent } from './recruiting-timeline/recruiting-ti
 })
 export class CareerRecruitingProcessComponent {
   videos: VideoCollectionGrouped;
+  jobOffers$: Observable<JobOffer[]>;
 
-  constructor(repository: RecruitingProcessVideoRepository) {
+  constructor(
+    repository: RecruitingProcessVideoRepository,
+    private recruiteeService: RecruiteeService
+  ) {
     this.videos = repository.videos;
+    this.jobOffers$ = this.recruiteeService.getJobOffers().pipe(first());
   }
 
   protected preserveOriginalOrder() {
