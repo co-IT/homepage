@@ -1,18 +1,20 @@
-<div class="video-tile__accent-color" [ngClass]="appearance"></div>
-<div class="video-tile__content">
-  <p class="video-tile__text">{{ videoDescription }}</p>
-  <a
-    *ngIf="videoId"
-    [routerLink]="['./cinema', videoId]"
-    class="video-tile__play-button"
-  >
-    <cp-video-play-button></cp-video-play-button>
-    {{ label }}
-  </a>
-  <img
-    class="video-tile__icon"
-    *ngIf="icon"
-    [src]="'assets/icons/' + icon + '.svg'"
-    alt="icon for video tile"
-  />
-</div>
+<a
+  *ngIf="videoId"
+  [routerLink]="['./cinema', videoId]"
+  class="video-tile__link"
+>
+  <div class="video-tile__accent-color" [ngClass]="appearance"></div>
+  <div class="video-tile__content">
+    <p class="video-tile__text">{{ videoDescription }}</p>
+    <span class="video-tile__play-button">
+      <cp-video-play-button></cp-video-play-button>
+      {{ label }}
+    </span>
+    <img
+      class="video-tile__icon"
+      *ngIf="icon"
+      [src]="'assets/icons/' + icon + '.svg'"
+      alt="icon for video tile"
+    />
+  </div>
+</a>
