@@ -1,7 +1,7 @@
-import { videoTileIcon } from '@cp/ui';
+import { VideoTileIcon } from '@cp/ui';
 
 export interface Video {
   id: string;
-  icon: videoTileIcon;
+  icon: VideoTileIcon;
   title: string;
 }

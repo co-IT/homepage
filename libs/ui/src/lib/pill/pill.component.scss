@@ -1,0 +1,16 @@
+:host {
+  background-color: #0F0F0F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 0.25em 0.75em;
+  height: fit-content;
+}
+
+span {
+  font-size: x-small;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 1;
+}

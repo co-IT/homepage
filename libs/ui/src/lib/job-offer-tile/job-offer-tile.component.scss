@@ -1,0 +1,53 @@
+:host {
+  display: block;
+  border: 1px solid #CCCCCC;
+  border-radius: var(--border-radius);
+  padding: 1em 1.25em;
+}
+
+.job-offer__title {
+  line-height: 1;
+}
+
+.job-offer__container {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: max-content 1fr max-content;
+  grid-gap: 1em;
+  height: 100%;
+}
+
+.job-offer__content {
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+}
+
+.job-offer__content__location {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    white-space: nowrap;
+    line-height: 1;
+  }
+}
+
+.job-offer__button {
+  grid-column: 2;
+  grid-row: 1 / 4;
+  text-decoration: none;
+  background-color: #0F0F0F;
+  padding: 0.6em 1em;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: large;
+  height: fit-content;
+}
+
+.job-offer__tags {
+  display: flex;
+  gap: 0.5em;
+  min-height: 1em;
+}

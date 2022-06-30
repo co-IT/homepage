@@ -1,0 +1,16 @@
+<ng-container *transloco="let t">
+  <div class="job-offer__container">
+    <h3 *ngIf="title" class="job-offer__title">{{title}}</h3>
+    <div class="job-offer__content">
+      <div class="job-offer__content__location">
+        <span *ngIf="location">{{location}}</span>
+        <span *ngIf="city && country">{{city}}, {{country}}</span>
+      </div>
+    </div>
+    <div class="job-offer__tags">
+      <cp-pill *ngFor="let tag of tags" [text]="tag"></cp-pill>
+    </div>
+    <a *ngIf="url" [href]="url" class="job-offer__button"
+       target="_blank">{{t('recruiting-process.job-offers.details')}}</a>
+  </div>
+</ng-container>
