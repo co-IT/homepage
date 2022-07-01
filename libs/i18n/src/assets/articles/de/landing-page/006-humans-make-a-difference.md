@@ -1,0 +1,3 @@
+## Machen Menschen für Sie auch den
+
+Dank sorgfältig entwickelter Mitarbeiter und perfekt abgestimmter Teams erbringen wir für Sie kontinuierlich Top Leistungen auf Spitzenniveau. Unser eigener HR-Spezialist (Link: HR) sucht dafür minutiös Kandidaten (Link: Cultural Fit) aus, die gemeinhin als High Performer tituliert werden. Für uns sind sie geschätzte Kollegen, für Sie sind sie echte Game Changer (Link: Video mit Dennis K.).
