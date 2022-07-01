@@ -26,6 +26,20 @@
   background-position: center;
 }
 
+.image-with-gradient-blue-blue-garden {
+  background-image: linear-gradient(
+      180deg,
+      #02024d 0%,
+      rgba(2, 2, 77, 0.2) 13.02%,
+      rgba(2, 2, 77, 0.2) 79.69%,
+      #02024d 100%
+    ),
+    url('../assets/images/meeting-in-the-garden.webp');
+  height: 56em;
+  background-size: cover;
+  background-position: center;
+}
+
 .section-solid-blue-ocean {
   background: var(--blue-ocean);
   padding: 2em;
