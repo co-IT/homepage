@@ -19,23 +19,23 @@ import { RecruitingTimelineEntryComponent } from '../recruiting-timeline-entry/r
 export class RecruitingTimelineComponent {
   entries = [
     {
-      header: 'recruiting-process.timeline.documents.header',
+      header: 'recruiting-process.timeline.documents.heading',
       content: 'recruiting-process.timeline.documents.content',
     },
     {
-      header: 'recruiting-process.timeline.cultural-fit.header',
+      header: 'recruiting-process.timeline.cultural-fit.heading',
       content: 'recruiting-process.timeline.cultural-fit.content',
     },
     {
-      header: 'recruiting-process.timeline.meet.header',
+      header: 'recruiting-process.timeline.meet.heading',
       content: 'recruiting-process.timeline.meet.content',
     },
     {
-      header: 'recruiting-process.timeline.exam.header',
+      header: 'recruiting-process.timeline.exam.heading',
       content: 'recruiting-process.timeline.exam.content',
     },
     {
-      header: 'recruiting-process.timeline.contract.header',
+      header: 'recruiting-process.timeline.contract.heading',
       content: 'recruiting-process.timeline.contract.content',
     },
   ];
