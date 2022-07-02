@@ -1,1 +1,0 @@
-Unser Selbstverständnis geht deshalb weit über das einer Softwareschmiede und eines IT-Systemhauses hinaus: Wir verstehen uns als Vehikel, das Sie bei jedem Wetter und auf jedem Asphalt selbst auf langen Strecken zuverlässig ans Ziel bringt. Wir bieten Ihnen vollumfängliche Lösungen statt punktueller Leistungen.

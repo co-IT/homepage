@@ -1,3 +1,1 @@
-## Denken Sie auch in ganzheitlichen Lösungen?
-
 [Unser Selbstverständnis](/welcome/about) geht deshalb weit über das eines Softwareherstellers bzw. eines IT-Systemhauses hinaus: Wir verstehen uns als Vehikel, das Sie bei jedem Wetter und auf jedem Asphalt selbst auf langen Strecken zuverlässig ans Ziel bringt. Wir bieten Ihnen vollumfängliche Lösungen (Link: Lösungen) statt punktueller Leistungen.
