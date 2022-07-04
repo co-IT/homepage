@@ -25,6 +25,7 @@
     "@angular/router": "14.0.2",
     "@angular/youtube-player": "^14.0.2",
     "@mdi/font": "^6.7.96",
+    "@mdi/svg": "^6.9.96",
     "@ngneat/transloco": "4.1.0",
     "@nrwl/angular": "14.3.5",
     "ngx-markdown": "14.0.0",

@@ -35,6 +35,29 @@ h1 {
 
 .text-white {
   color: var(--white);
+
+  a {
+    color: var(--white);
+
+    /*
+     * Each link is suffixed with an arrow icon
+     * The icon needs to be copied to the assets folder.
+     * With Angular CLI wie can do this in the project.json.
+     *
+     * To color the link we use mask. (fill and color did not work with mdi-icons)
+     */
+    &::after {
+      content: '';
+      display: inline-block;
+      mask: url('/assets/icons/arrow-top-right-bold-outline.svg') no-repeat 100%
+        100%;
+      mask-size: cover;
+      background-color: var(--white);
+      width: 1em;
+      height: 1em;
+      margin: 0.5em 0 0 0;
+    }
+  }
 }
 
 .text-size-m {
@@ -91,5 +114,30 @@ h1 {
     line-height: 1.4em;
     color: var(--blue-ocean);
     max-width: 20em;
+  }
+
+  a {
+    color: var(--blue-ocean);
+
+    /*
+     * Each link is suffixed with an arrow icon
+     * The icon needs to be copied to the assets folder.
+     * With Angular CLI wie can do this in the project.json.
+     *
+     * To color the link we use mask. (fill and color did not work with mdi-icons)
+     */
+    &::after {
+      content: '';
+      display: inline-block;
+      background: url('/assets/icons/arrow-top-right-bold-outline.svg');
+      background-repeat: no-repeat;
+      width: 1em;
+      height: 1.3em;
+      margin: 0.5em 0 0 0.25em;
+      mask: url('/assets/icons/arrow-top-right-bold-outline.svg') no-repeat 100%
+        100%;
+      mask-size: cover;
+      background-color: var(--blue-ocean);
+    }
   }
 }

@@ -36,6 +36,11 @@
             "input": "libs/ui/src/assets",
             "glob": "**/*",
             "output": "assets"
+          },
+          {
+            "glob": "arrow-top-right-bold-outline.svg",
+            "input": "./node_modules/@mdi/svg/svg",
+            "output": "./assets/icons"
           }
         ],
         "styles": ["apps/homepage/src/styles.scss"],
