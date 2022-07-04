@@ -44,6 +44,11 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+      - name: Azure delete old Static Website
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az storage blob delete-batch --pattern '*' --account-name coiteu --auth-mode key -s '$web'
       - name: Azure deploy Static Website
         uses: azure/CLI@v1
         with:
