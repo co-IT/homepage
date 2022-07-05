@@ -1,6 +1,6 @@
 :host {
   display: block;
-  border: 1px solid #CCCCCC;
+  border: 1px solid var(--light-gray);
   border-radius: var(--border-radius);
   padding: 1em 1.25em;
 }
@@ -37,10 +37,10 @@
   grid-column: 2;
   grid-row: 1 / 4;
   text-decoration: none;
-  background-color: #0F0F0F;
+  background-color: var(--dark-gray);
   padding: 0.6em 1em;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: var(--white);
   font-weight: bold;
   font-size: large;
   height: fit-content;
