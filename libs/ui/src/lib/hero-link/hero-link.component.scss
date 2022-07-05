@@ -1,0 +1,89 @@
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+  transition: $property $duration $ease;
+}
+
+$background-color: var(--white);
+$foreground-color: var(--black);
+$font-size: 4em;
+$container-size: $font-size * 1.125;
+$icon-width: $container-size / 20;
+
+:host {
+  display: inline-block;
+  height: $container-size;
+}
+
+a {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  overflow: hidden;
+
+  &.link {
+    height: $container-size;
+
+    .circle {
+      @include transition();
+      position: relative;
+      display: block;
+      width: $container-size;
+      height: $container-size;
+      background-color: $background-color;
+      border-radius: $container-size;
+
+      .icon {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+
+        &.arrow {
+          @include transition();
+          left: $container-size / 3;
+          width: $container-size / 3.75;
+          height: $icon-width;
+
+          &::before {
+            position: absolute;
+            content: '';
+            top: -($container-size / 8 ) + $icon-width / 2;
+            width: $container-size / 4;
+            height: $container-size / 4;
+            border-top: $icon-width solid $foreground-color;
+            border-right: $icon-width solid $foreground-color;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+
+    .link-text {
+      @include transition();
+      display: inline-block;
+      position: relative;
+      top: -($container-size / 4.25 );
+      margin: 0 ($container-size / 7) 0 ($container-size / 3);
+      color: $background-color;
+      line-height: 1em;
+      font-size: $font-size;
+      white-space: nowrap;
+    }
+  }
+
+  &:hover {
+    .circle {
+      width: 100%;
+
+      .icon {
+        &.arrow {
+          background-color: $foreground-color;
+          transform: translate($container-size / 4, 0);
+        }
+      }
+    }
+
+    .link-text {
+      color: $foreground-color;
+    }
+  }
+}
