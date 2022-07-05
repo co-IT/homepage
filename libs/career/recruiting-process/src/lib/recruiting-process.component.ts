@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import {
   CallToActionComponent,
+  JobOfferTileComponent,
   PageTitleComponent,
   VideoTileComponent,
 } from '@cp/ui';
@@ -11,9 +12,8 @@ import { MarkdownModule } from 'ngx-markdown';
 import { JobOffer, VideoCollectionGrouped } from './models';
 import { RecruitingProcessVideoRepository } from './recruiting-process-video-repository.service';
 import { RecruitingTimelineComponent } from './recruiting-timeline/recruiting-timeline.component';
-import { first, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import { RecruiteeService } from './recruitee.service';
-import { JobOfferTileComponent } from '@cp/ui';
 
 @Component({
   selector: 'cp-recruiting-process',
@@ -43,7 +43,7 @@ export class CareerRecruitingProcessComponent {
     private recruiteeService: RecruiteeService
   ) {
     this.videos = repository.videos;
-    this.jobOffers$ = this.recruiteeService.getJobOffers().pipe(first());
+    this.jobOffers$ = this.recruiteeService.getJobOffers();
   }
 
   protected preserveOriginalOrder() {
