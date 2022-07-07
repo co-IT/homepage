@@ -22,6 +22,7 @@
       ],
       "@cp/i18n": ["libs/i18n/src/index.ts"],
       "@cp/landing-page": ["libs/landing-page/src/index.ts"],
+      "@cp/solutions": ["libs/solutions/src/index.ts"],
       "@cp/ui": ["libs/ui/src/index.ts"]
     }
   },

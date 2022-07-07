@@ -6,6 +6,32 @@
     "homepage-e2e": "apps/homepage-e2e",
     "i18n": "libs/i18n",
     "landing-page": "libs/landing-page",
+    "solutions": {
+      "projectType": "library",
+      "root": "libs/solutions",
+      "sourceRoot": "libs/solutions/src",
+      "prefix": "cp",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/solutions"],
+          "options": {
+            "jestConfig": "libs/solutions/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/solutions/**/*.ts",
+              "libs/solutions/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": ["feature"]
+    },
     "ui": "libs/ui"
   },
   "$schema": "./node_modules/nx/schemas/workspace-schema.json"
