@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+@mixin link__arrow--after($arrow-color) {
+  content: '';
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 1em;
+  height: 1em;
+  margin: 0 0.1em -0.2em 0;
+  -webkit-mask: url(/assets/icons/link-variant.svg) no-repeat 100% 100%;
+  mask: url(/assets/icons/link-variant.svg) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: $arrow-color;
+}
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -46,22 +59,14 @@ h1 {
      *
      * To color the link we use mask. (fill and color did not work with mdi-icons)
      */
-    &::after {
-      content: '';
-      display: inline-block;
-      mask: url('/assets/icons/arrow-top-right-bold-outline.svg') no-repeat 100%
-        100%;
-      mask-size: cover;
-      background-color: var(--white);
-      width: 1em;
-      height: 1em;
-      margin: 0.5em 0 0 0;
+    &::before {
+      @include link__arrow--after(var(--white));
     }
   }
 }
 
 .text-size-m {
-  font-size: 1.75em;
+  font-size: 1.6em;
   letter-spacing: 0.05em;
   line-height: 1.6em;
 }
@@ -110,7 +115,7 @@ h1 {
 
   p {
     padding: 1em;
-    font-size: 1.25em;
+    font-size: 1.6em;
     line-height: 1.4em;
     color: var(--blue-ocean);
     max-width: 20em;
@@ -126,18 +131,8 @@ h1 {
      *
      * To color the link we use mask. (fill and color did not work with mdi-icons)
      */
-    &::after {
-      content: '';
-      display: inline-block;
-      background: url('/assets/icons/arrow-top-right-bold-outline.svg');
-      background-repeat: no-repeat;
-      width: 1em;
-      height: 1.3em;
-      margin: 0.5em 0 0 0.25em;
-      mask: url('/assets/icons/arrow-top-right-bold-outline.svg') no-repeat 100%
-        100%;
-      mask-size: cover;
-      background-color: var(--blue-ocean);
+    &::before {
+      @include link__arrow--after(var(--blue-ocean));
     }
   }
 }
