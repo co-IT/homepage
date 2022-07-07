@@ -15,4 +15,8 @@ export const routes: Routes = [
     loadChildren: () =>
       import('@cp/career/recruiting-process').then((m) => m.routes),
   },
+  {
+    path: 'solutions',
+    loadChildren: () => import('@cp/solutions').then((m) => m.routes),
+  },
 ];

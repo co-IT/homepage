@@ -38,6 +38,12 @@ export class AppComponent {
       imgSrc: 'assets/images/logo-hero.svg',
     },
     {
+      path: '/solutions',
+      text: this.transloco.translate('navigation.solutions'),
+      title: 'solutions.page-title',
+      subtitle: 'solutions.page-subtitle',
+    },
+    {
       path: '/recruiting-process',
       text: this.transloco.translate('navigation.career'),
       title: 'recruiting-process.page-title',
