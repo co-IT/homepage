@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
-@mixin link__arrow--after($arrow-color) {
+@mixin link__arrow--pseudo($arrow-color) {
   content: '';
   display: inline-block;
   background-repeat: no-repeat;
@@ -60,7 +60,7 @@ h1 {
      * To color the link we use mask. (fill and color did not work with mdi-icons)
      */
     &::before {
-      @include link__arrow--after(var(--white));
+      @include link__arrow--pseudo(var(--white));
     }
   }
 }
@@ -132,7 +132,7 @@ h1 {
      * To color the link we use mask. (fill and color did not work with mdi-icons)
      */
     &::before {
-      @include link__arrow--after(var(--blue-ocean));
+      @include link__arrow--pseudo(var(--blue-ocean));
     }
   }
 }
