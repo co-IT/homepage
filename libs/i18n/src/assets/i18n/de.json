@@ -61,6 +61,16 @@
   "recruiting-process.job-offers.heading": "Stellenangebote",
   "recruiting-process.job-offers.details": "Job ansehen",
 
+  "about-page.intro": "Wir wünschen uns eine offene und ehrliche Zusammenarbeit. Uns ist es daher wichtig Ihnen transparent zu kommunizieren, was unsere Identität ausmacht, was uns motiviert für Sie unser Bestes zu geben und wie wir mit Ihnen gemeinsam Herausforderungen angehen wollen.",
+  "about-page.articles.change.src": "/assets/articles/de/about-page/009-change.md",
+  "about-page.articles.collaboration.src": "/assets/articles/de/about-page/008-collaboration.md",
+  "about-page.articles.fascination.src": "/assets/articles/de/about-page/010-fascination.md",
+  "about-page.quote": "\"Unsere Motivation ist es eine aufgeschlossene Welt zu schaffen, in der jeder mutig und zuversichtlich seine Herausforderungen meistert. Deshalb versprechen wir Veränderungen zu etwas Positivem zu machen, damit jeder Herausforderungen als Chance wahrnimmt, aktiv mitgestaltet, immer wieder neue Wege beschreitet und notwendige Risiken mutig eingeht.\"",
+  "about-page.images.change.alt": "Eine Frau packt ihre Sachen für einen Umzug.",
+  "about-page.images.collaboration.alt": "Drei Kolleg*innen kollaborieren vor einem Whiteboard.",
+  "about-page.images.fascination.alt": "Vier Kolleg*innen unterhalten sich in einer lustigen Runde.",
+  "about-page.images.team.alt": "Auf diesen Bild sind all unsere Kollegen zu sehen, Neuzugänge, wie auch langjährige Mitarbeiter*Innen.",
+
   "solutions.page-title": "Lösungen",
   "solutions.page-subtitle": "In Time - In Budget",
 
