@@ -1,49 +1,74 @@
 <ng-container *transloco="let t">
-  <section class="content">
-    <div class="columns columns-two">
-      <article class="text-boxed">
-        <h3 class="heading">Für Veränderungen begeistern</h3>
-        <p>
-          Das Meistern neuer Herausforderungen sehen wir als größte Hürde für
-          kleine und mittelständische Unternehmen . Deshalb wollen wir helfen
-          Veränderung als Chance wahrzunehmen und Erneuerungen zu etwas
-          Positivem machen. Uns prägen Werte wie Pflichtgefühl und
-          Kollegialität. Daher gehört der ehrliche und verbindliche Handschlag
-          für unsere Mitarbeiter auch in der digitalen Welt dazu.
-        </p>
-      </article>
-      <article class="text-boxed">
-        <h3 class="heading">Zusammen mehr erreichen</h3>
-        <p>
-          Wir haben den Anspruch Ihnen Spitzenleistungen zu bieten. Uns ist
-          bewusst, dass es dafür eine partnerschaftliche Zusammenarbeit auf
-          Augenhöhe braucht. Die Technologie kommt dabei zum Schluss. Zuerst
-          analysieren wir daher gemeinsam Ihre fachlichen Bedürfnisse und
-          unternehmensspezifischen Hintergrund. Erst im Anschluss bringen wir
-          unser technisches Tiefen- und prozessuales Breitenwissen ein, um Ihre
-          Geschäftsprozesse bestmöglich umzusetzen. Unsere Philosophie ist
-          darauf ausgerichtet Qualitätskriterien für modernes, effektives und
-          angenehmes Arbeiten umzusetzen, damit wir in einem kontinuierlichen
-          Verbesserungsprozess die Weichen sukzessive auf nachhaltige,
-          erfolgreiche Veränderung stellen . Regelmäßig bedarf es dafür nicht
-          nur das Wissen darüber, was funktioniert, sondern eben auch was nicht
-          funktioniert.
-        </p>
-      </article>
-      <article class="text-boxed">
-        <h3 class="heading">Uns prägt Faszination</h3>
-        <p>
-          Speziellen Wert legen wir deshalb auf die Auswahl unserer Mitarbeiter.
-          Wir wissen, dass Faszination und Leidenschaft zu Höchstleistungen
-          motivieren und wo diese sind, ist Kollegialität auch nicht weit. Die
-          gute Zusammenarbeit hat besondere Vorteile für Sie: Lösungen können
-          entlang der gesamten Wertschöpfungskette entwickelt werden. Der
-          Übergang von der Prozessanalyse über das Bereitstellen der
-          zuverlässigen Infrastruktur bis hin zur individuellen
-          Softwareentwicklung geschieht nahtlos und liefert Ihnen einen echten
-          Mehrwert.
-        </p>
-      </article>
-    </div>
-  </section>
+  <div class="spacer--xl"></div>
+
+  <div class="flow flow--xl">
+    <section>
+      <div class="content">
+        <div class="intro">{{t('about-page.intro')}}</div>
+      </div>
+    </section>
+    <section>
+      <div class="content">
+        <div class="columns columns-two">
+          <img
+            [alt]="t('about-page.images.change.alt')"
+            src="/assets/images/moving.svg"
+          />
+          <div class="flow">
+            <article>
+              <markdown
+                [src]="t('about-page.articles.change.src')"
+              ></markdown>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="content">
+        <div class="columns columns-two">
+          <div class="flow">
+            <article>
+              <markdown
+                [src]="t('about-page.articles.collaboration.src')"
+              ></markdown>
+            </article>
+          </div>
+          <img
+            [alt]="t('about-page.images.collaboration.alt')"
+            src="/assets/images/team-collaboration.svg"
+          />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="content">
+        <div class="columns columns-two">
+          <img
+            [alt]="t('about-page.images.fascination.alt')"
+            src="/assets/images/having-fun.svg"
+          />
+          <div class="flow">
+            <article>
+              <markdown
+                [src]="t('about-page.articles.fascination.src')"
+              ></markdown>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="content">
+        <div class="quote">{{t('about-page.quote')}}</div>
+      </div>
+    </section>
+    <section>
+      <div class="content">
+        <img
+          [alt]="t('about-page.images.team.alt')"
+          src="/assets/images/co-it-team.webp">
+      </div>
+    </section>
+  </div>
 </ng-container>
