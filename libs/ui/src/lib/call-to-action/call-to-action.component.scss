@@ -7,15 +7,18 @@ a {
   background-color: var(--primary-color);
   border-radius: 1em;
   padding: 0.8em 1em;
-
-
   color: var(--text-color);
   text-decoration: none;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .call-to-action__content {
   display: flex;
   gap: 0.25em;
+  justify-content: center;
 }
 
 i {

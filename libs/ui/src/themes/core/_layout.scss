@@ -56,6 +56,12 @@
     grid-template-columns: 1fr 1fr;
     align-items: start;
   }
+
+  .columns-three {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+  }
 }
 
 .center-content {
