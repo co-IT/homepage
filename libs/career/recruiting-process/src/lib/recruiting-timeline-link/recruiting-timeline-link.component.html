@@ -1,6 +1,4 @@
-<ng-container *transloco="let t">
-  <ng-container *ngIf="link">
-    <div class="circle"></div>
-    <a class="link" [href]="t(link.href)">{{ t(link.text) }}</a>
-  </ng-container>
+<ng-container *ngIf="value">
+  <div class="circle"></div>
+  <a class="link" [href]="value.href">{{ value.text }}</a>
 </ng-container>

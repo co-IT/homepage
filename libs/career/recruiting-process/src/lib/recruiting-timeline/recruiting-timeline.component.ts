@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { CallToActionComponent } from '@cp/ui';
-import { TranslocoModule } from '@ngneat/transloco';
-import { RecruitingTimelineEntryComponent } from '../recruiting-timeline-entry/recruiting-timeline-entry.component';
-import { TimelineEntry as TimelineItem } from '../recruiting-timeline-entry/time-line-entry.model';
+import { TranslateParams, TranslocoModule, TranslocoService } from '@ngneat/transloco';
 import { RecruitingTimelineLinkComponent } from '../recruiting-timeline-link/recruiting-timeline-link.component';
 import { TimelineLink } from '../recruiting-timeline-link/time-line-link.model';
+import { RecruitingTimelineParagraphComponent } from '../recruiting-timeline-paragraph/recruiting-timeline-paragraph.component';
+import { TimelineParagraph as TimelineItem } from '../recruiting-timeline-paragraph/time-line-paragraph.model';
 
 @Component({
   selector: 'cp-recruiting-timeline',
@@ -13,7 +13,7 @@ import { TimelineLink } from '../recruiting-timeline-link/time-line-link.model';
   imports: [
     CommonModule,
     TranslocoModule,
-    RecruitingTimelineEntryComponent,
+    RecruitingTimelineParagraphComponent,
     RecruitingTimelineLinkComponent,
     CallToActionComponent,
   ],
@@ -21,37 +21,43 @@ import { TimelineLink } from '../recruiting-timeline-link/time-line-link.model';
   styleUrls: ['./recruiting-timeline.component.scss'],
 })
 export class RecruitingTimelineComponent {
-  entries: TimelineItem[] = [
+  constructor(private transloco: TranslocoService) { }
+
+  paragraphs: TimelineItem[] = [
     {
-      heading: 'recruiting-process.process.1.heading',
-      text: 'recruiting-process.process.1.text',
+      heading: this.t('recruiting-process.process.1.heading'),
+      text: this.t('recruiting-process.process.1.text'),
     },
     {
-      heading: 'recruiting-process.process.2.heading',
-      text: 'recruiting-process.process.2.text',
+      heading: this.t('recruiting-process.process.2.heading'),
+      text: this.t('recruiting-process.process.2.text'),
     },
     {
-      heading: 'recruiting-process.process.3.heading',
-      text: 'recruiting-process.process.3.text',
+      heading: this.t('recruiting-process.process.3.heading'),
+      text: this.t('recruiting-process.process.3.text'),
     },
     {
-      heading: 'recruiting-process.process.4.heading',
-      text: 'recruiting-process.process.4.text',
+      heading: this.t('recruiting-process.process.4.heading'),
+      text: this.t('recruiting-process.process.4.text'),
     },
     {
-      heading: 'recruiting-process.process.5.heading',
-      text: 'recruiting-process.process.5.text',
+      heading: this.t('recruiting-process.process.5.heading'),
+      text: this.t('recruiting-process.process.5.text'),
     },
     {
-      heading: 'recruiting-process.process.6.heading',
-      text: 'recruiting-process.process.6.text',
+      heading: this.t('recruiting-process.process.6.heading'),
+      text: this.t('recruiting-process.process.6.text'),
     }
   ];
 
   moreInformationLink: TimelineLink = {
-    href: 'recruiting-process.process.link.href',
-    text: 'recruiting-process.process.link.text',
+    href: this.t('recruiting-process.process.link.href'),
+    text: this.t('recruiting-process.process.link.text'),
 
+  }
+
+  private t(key: TranslateParams) {
+    return this.transloco.translate(key);
   }
 }
 
