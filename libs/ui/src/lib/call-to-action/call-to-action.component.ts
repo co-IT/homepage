@@ -10,4 +10,5 @@ export class CallToActionComponent {
   @Input() icon?: string;
   @Input() text?: string;
   @Input() href?: string;
+  @Input() fullWidth = false;
 }
