@@ -1,5 +1,5 @@
 
-export interface TimelineEntry {
+export interface TimelineParagraph {
   heading: string;
   text: string;
 }
