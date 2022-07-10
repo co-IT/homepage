@@ -7,8 +7,6 @@ export * from './lib/hero-link/hero-link.component';
 export * from './lib/job-offer-tile/job-offer-tile.component';
 export * from './lib/page-title/page-title.component';
 export * from './lib/pill/pill.component';
-export * from './lib/timeline-link/timeline-link.component';
-export * from './lib/timeline-link/timeline-link.model';
 export * from './lib/timeline-paragraph/timeline-paragraph.component';
 export * from './lib/timeline-paragraph/timeline-paragraph.model';
 export * from './lib/toolbar/routes-internal';

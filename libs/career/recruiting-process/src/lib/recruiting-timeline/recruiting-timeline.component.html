@@ -9,14 +9,12 @@
           *ngFor="let paragraph of paragraphs"
           [value]="paragraph"
         ></cp-timeline-paragraph>
-
-        <cp-timeline-link [value]="moreInformationLink"></cp-timeline-link>
       </div>
 
       <cp-call-to-action
         icon="mdi mdi-email"
-        text="Bewerbungsunterlagen einreichen"
-        href="mailto:bewerbung@co-IT.eu?subject=Ich bewerbe mich bei euch!"
+        [text]="t('recruiting-process.process.link.text')"
+        [href]="t('recruiting-process.process.link.href')"
       ></cp-call-to-action>
     </div>
   </div>
