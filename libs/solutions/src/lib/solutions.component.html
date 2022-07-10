@@ -1,1 +1,29 @@
-<p>solutions works!</p>
+<ng-container *transloco="let t">
+  <div class="spacer--xl"></div>
+
+  <div class="flow flow--xl">
+    <section>
+      <div class="content">
+        <markdown
+          [src]="t('solutions.articles.intro.src')"
+        ></markdown>
+      </div>
+    </section>
+    <section>
+      <div class="content">
+        <div class="columns columns-two">
+          <div class="flow">
+            <article>
+              <markdown
+                [src]="t('solutions.articles.werkstatt-nxt.src')"
+              ></markdown>
+            </article>
+          </div>
+          <youtube-player videoId="QVArEtvAGsk"></youtube-player>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="spacer--xl"></div>
+</ng-container>

@@ -76,7 +76,9 @@
   "about-page.images.team.alt": "Auf diesen Bild sind all unsere Kollegen zu sehen, Neuzugänge, wie auch langjährige Mitarbeiter*Innen.",
 
   "solutions.page-title": "Lösungen",
-  "solutions.page-subtitle": "In Time - In Budget",
+  "solutions.page-subtitle": "vollumfänglich statt punktuell",
+  "solutions.articles.intro.src": "/assets/articles/de/solutions/011-solutions-intro.md",
+  "solutions.articles.werkstatt-nxt.src": "/assets/articles/de/solutions/012-solutions-werkstatt-nxt.md",
 
   "contact.page-title": "Kontakt",
   "contact.page-subtitle": "Wählen Sie den für Sie passenden Kanal",
