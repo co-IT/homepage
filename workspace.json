@@ -15,9 +15,7 @@
       "targets": {
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/solutions"
-          ],
+          "outputs": ["coverage/libs/solutions"],
           "options": {
             "jestConfig": "libs/solutions/jest.config.ts",
             "passWithNoTests": true
@@ -33,9 +31,7 @@
           }
         }
       },
-      "tags": [
-        "feature"
-      ]
+      "tags": ["feature"]
     },
     "ui": "libs/ui"
   },
