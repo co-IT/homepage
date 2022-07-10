@@ -1,11 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { CallToActionComponent } from '@cp/ui';
+import { CallToActionComponent, TimelineLink, TimelineLinkComponent, TimelineParagraph, TimelineParagraphComponent } from '@cp/ui';
 import { TranslateParams, TranslocoModule, TranslocoService } from '@ngneat/transloco';
-import { RecruitingTimelineLinkComponent } from '../recruiting-timeline-link/recruiting-timeline-link.component';
-import { TimelineLink } from '../recruiting-timeline-link/time-line-link.model';
-import { RecruitingTimelineParagraphComponent } from '../recruiting-timeline-paragraph/recruiting-timeline-paragraph.component';
-import { TimelineParagraph as TimelineItem } from '../recruiting-timeline-paragraph/time-line-paragraph.model';
 
 @Component({
   selector: 'cp-recruiting-timeline',
@@ -13,8 +9,8 @@ import { TimelineParagraph as TimelineItem } from '../recruiting-timeline-paragr
   imports: [
     CommonModule,
     TranslocoModule,
-    RecruitingTimelineParagraphComponent,
-    RecruitingTimelineLinkComponent,
+    TimelineParagraphComponent,
+    TimelineLinkComponent,
     CallToActionComponent,
   ],
   standalone: true,
@@ -23,7 +19,7 @@ import { TimelineParagraph as TimelineItem } from '../recruiting-timeline-paragr
 export class RecruitingTimelineComponent {
   constructor(private transloco: TranslocoService) { }
 
-  paragraphs: TimelineItem[] = [
+  paragraphs: TimelineParagraph[] = [
     {
       heading: this.t('recruiting-process.process.1.heading'),
       text: this.t('recruiting-process.process.1.text'),

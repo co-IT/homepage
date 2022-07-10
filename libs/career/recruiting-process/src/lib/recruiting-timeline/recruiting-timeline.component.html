@@ -5,14 +5,12 @@
       <h2>{{ t('recruiting-process.timeline.heading') }}</h2>
 
       <div class="timeline">
-        <cp-recruiting-timeline-paragraph
+        <cp-timeline-paragraph
           *ngFor="let paragraph of paragraphs"
           [value]="paragraph"
-        ></cp-recruiting-timeline-paragraph>
+        ></cp-timeline-paragraph>
 
-        <cp-recruiting-timeline-link
-          [value]="moreInformationLink"
-        ></cp-recruiting-timeline-link>
+        <cp-timeline-link [value]="moreInformationLink"></cp-timeline-link>
       </div>
 
       <cp-call-to-action
