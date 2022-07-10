@@ -1,1 +1,1 @@
-export * from './lib/sites.module';
+export * from './lib/sites.routes';
