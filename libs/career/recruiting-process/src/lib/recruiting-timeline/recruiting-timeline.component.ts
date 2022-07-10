@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { CallToActionComponent, TimelineLink, TimelineLinkComponent, TimelineParagraph, TimelineParagraphComponent } from '@cp/ui';
+import { CallToActionComponent, TimelineParagraph, TimelineParagraphComponent } from '@cp/ui';
 import { TranslateParams, TranslocoModule, TranslocoService } from '@ngneat/transloco';
 
 @Component({
@@ -10,7 +10,6 @@ import { TranslateParams, TranslocoModule, TranslocoService } from '@ngneat/tran
     CommonModule,
     TranslocoModule,
     TimelineParagraphComponent,
-    TimelineLinkComponent,
     CallToActionComponent,
   ],
   standalone: true,
@@ -46,11 +45,6 @@ export class RecruitingTimelineComponent {
     }
   ];
 
-  moreInformationLink: TimelineLink = {
-    href: this.t('recruiting-process.process.link.href'),
-    text: this.t('recruiting-process.process.link.text'),
-
-  }
 
   private t(key: TranslateParams) {
     return this.transloco.translate(key);
