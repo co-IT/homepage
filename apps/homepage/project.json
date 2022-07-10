@@ -45,7 +45,7 @@
         ],
         "styles": ["apps/homepage/src/styles.scss"],
         "stylePreprocessorOptions": {
-          "includePaths": ["libs/ui/src/themes"]
+          "includePaths": ["libs/ui/src/themes", "libs/ui/src/themes/core"]
         },
         "scripts": ["node_modules/marked/marked.min.js"]
       },

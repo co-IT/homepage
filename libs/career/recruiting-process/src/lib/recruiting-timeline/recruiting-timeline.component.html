@@ -8,6 +8,9 @@
           *ngFor="let entry of entries"
           [entry]="entry"
         ></cp-recruiting-timeline-entry>
+        <cp-recruiting-timeline-link
+          [link]="moreInformationLink"
+        ></cp-recruiting-timeline-link>
       </div>
       <cp-call-to-action
         icon="mdi mdi-email"

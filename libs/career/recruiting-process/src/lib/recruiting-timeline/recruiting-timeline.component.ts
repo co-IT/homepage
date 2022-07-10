@@ -3,7 +3,9 @@ import { Component } from '@angular/core';
 import { CallToActionComponent } from '@cp/ui';
 import { TranslocoModule } from '@ngneat/transloco';
 import { RecruitingTimelineEntryComponent } from '../recruiting-timeline-entry/recruiting-timeline-entry.component';
-import { TimelineEntry as TimelineItem } from './time-line-entry.model';
+import { TimelineEntry as TimelineItem } from '../recruiting-timeline-entry/time-line-entry.model';
+import { RecruitingTimelineLinkComponent } from '../recruiting-timeline-link/recruiting-timeline-link.component';
+import { TimelineLink } from '../recruiting-timeline-link/time-line-link.model';
 
 @Component({
   selector: 'cp-recruiting-timeline',
@@ -12,6 +14,7 @@ import { TimelineEntry as TimelineItem } from './time-line-entry.model';
     CommonModule,
     TranslocoModule,
     RecruitingTimelineEntryComponent,
+    RecruitingTimelineLinkComponent,
     CallToActionComponent,
   ],
   standalone: true,
@@ -20,26 +23,36 @@ import { TimelineEntry as TimelineItem } from './time-line-entry.model';
 export class RecruitingTimelineComponent {
   entries: TimelineItem[] = [
     {
-      heading: 'recruiting-process.timeline.documents.heading',
-      text: 'recruiting-process.timeline.documents.content',
+      heading: 'recruiting-process.process.1.heading',
+      text: 'recruiting-process.process.1.text',
     },
     {
-      heading: 'recruiting-process.timeline.cultural-fit.heading',
-      text: 'recruiting-process.timeline.cultural-fit.content',
+      heading: 'recruiting-process.process.2.heading',
+      text: 'recruiting-process.process.2.text',
     },
     {
-      heading: 'recruiting-process.timeline.meet.heading',
-      text: 'recruiting-process.timeline.meet.content',
+      heading: 'recruiting-process.process.3.heading',
+      text: 'recruiting-process.process.3.text',
     },
     {
-      heading: 'recruiting-process.timeline.exam.heading',
-      text: 'recruiting-process.timeline.exam.content',
+      heading: 'recruiting-process.process.4.heading',
+      text: 'recruiting-process.process.4.text',
     },
     {
-      heading: 'recruiting-process.timeline.contract.heading',
-      text: 'recruiting-process.timeline.contract.content',
+      heading: 'recruiting-process.process.5.heading',
+      text: 'recruiting-process.process.5.text',
     },
+    {
+      heading: 'recruiting-process.process.6.heading',
+      text: 'recruiting-process.process.6.text',
+    }
   ];
+
+  moreInformationLink: TimelineLink = {
+    href: 'recruiting-process.process.link.href',
+    text: 'recruiting-process.process.link.text',
+
+  }
 }
 
 
