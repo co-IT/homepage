@@ -44,13 +44,19 @@ export class AppComponent {
       subtitle: 'solutions.page-subtitle',
     },
     {
+      path: '/premium',
+      text: this.transloco.translate('navigation.premium'),
+      title: 'premium.page-title',
+      subtitle: 'premium.page-subtitle',
+    },
+    {
       path: '/recruiting-process',
       text: this.transloco.translate('navigation.career'),
       title: 'recruiting-process.page-title',
       subtitle: 'recruiting-process.page-subtitle',
     },
     {
-      path: '/welcome/about',
+      path: '/about',
       text: this.transloco.translate('navigation.about'),
       title: 'about.page-title',
       subtitle: 'about.page-subtitle',

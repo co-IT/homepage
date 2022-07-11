@@ -23,7 +23,7 @@
             "output": "assets"
           },
           {
-            "input": "libs/landing-page/src/assets",
+            "input": "libs/sites/src/assets",
             "glob": "**/*",
             "output": "assets"
           },
