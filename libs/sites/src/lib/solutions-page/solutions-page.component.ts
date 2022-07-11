@@ -8,10 +8,10 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
   selector: 'cp-solutions',
   standalone: true,
   imports: [CommonModule, YouTubePlayerModule, MarkdownModule, TranslocoModule],
-  templateUrl: './solutions.component.html',
-  styleUrls: ['./solutions.component.scss'],
+  templateUrl: './solutions-page.component.html',
+  styleUrls: ['./solutions-page.component.scss'],
 })
-export class SolutionsComponent implements OnInit {
+export class SolutionsPageComponent implements OnInit {
   private apiLoaded = false;
 
   ngOnInit(): void {
