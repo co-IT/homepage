@@ -2,10 +2,6 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: 'welcome',
-    loadChildren: () => import('@cp/landing-page').then((m) => m.routes),
-  },
-  {
     path: 'recruiting-process',
     loadChildren: () =>
       import('@cp/career/recruiting-process').then((m) => m.routes),

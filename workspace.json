@@ -5,7 +5,6 @@
     "homepage": "apps/homepage",
     "homepage-e2e": "apps/homepage-e2e",
     "i18n": "libs/i18n",
-    "landing-page": "libs/landing-page",
     "sites": "libs/sites",
     "ui": "libs/ui"
   },
