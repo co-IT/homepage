@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component } from '@angular/core';
+import { tap } from 'rxjs/operators';
+import { NavigationService } from '../navigation/navigation.service';
 
 @Component({
   selector: 'cp-navigation-button',
@@ -9,12 +11,15 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./navigation-button.component.scss'],
 })
 export class NavigationButtonComponent {
-  @Input() isOpen = false;
-  @Output() navigationToggle = new EventEmitter<boolean>();
+  isOpen = false;
 
-  isNavigationOpen = false;
-  toggleNavigation() {
-    this.isNavigationOpen = !this.isNavigationOpen;
-    this.navigationToggle.emit(this.isNavigationOpen);
+  constructor(public navigationService: NavigationService) {
+    navigationService.isOpen$
+      .pipe(tap((isOpen) => (this.isOpen = isOpen)))
+      .subscribe();
+  }
+
+  toggleNavigation(isOpen: boolean) {
+    this.navigationService.setNavigationState(isOpen);
   }
 }

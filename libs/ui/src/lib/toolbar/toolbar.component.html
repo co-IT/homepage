@@ -1,6 +1,11 @@
 <ng-container *transloco="let t">
   <div class="content">
-  <img [src]="logoSrc" [attr.alt]="logoAlt" class="toolbar__logo" />
-  <cp-navigation-button (navigationToggle)="toggleNavigation($event)" ></cp-navigation-button>
-</div>
+    <img [src]="logoSrc" [attr.alt]="logoAlt" class="toolbar__logo" />
+    <div class="toolbar__nav">
+      <cp-toolbar-icon  *ngFor="let toolbarIcon of toolbarIcons" [toolbarIcon]="toolbarIcon" >{{toolbarIcon.text}}</cp-toolbar-icon>
+    <cp-navigation-button
+
+    ></cp-navigation-button>
+  </div>
+  </div>
 </ng-container>

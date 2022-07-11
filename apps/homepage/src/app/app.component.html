@@ -2,13 +2,13 @@
   <cp-header [class.header--background-primary]="routeRecentlyClicked?.imgSrc">
     <div class="flow flow--xl">
       <cp-toolbar
-        (navigationToggled)="isNavigationOpen = $event"
+
         logoSrc="/assets/images/logo.svg"
         [logoAlt]="t('landing-page.a11y.alternative-text')"
         [routesInternal]="routesInternal"
         (routeChanged)="routeRecentlyClicked = $event"
       ></cp-toolbar>
-      <cp-navigation [class.is-open]="isNavigationOpen" [routesInternal]="routesInternal"></cp-navigation>
+      <cp-navigation  [routesInternal]="routesInternal"></cp-navigation>
       <cp-page-title
         class="content"
         *ngIf="routeRecentlyClicked"

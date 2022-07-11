@@ -5,11 +5,11 @@ import { TranslocoModule } from '@ngneat/transloco';
 import { filter, map, tap } from 'rxjs/operators';
 import { getCurrentRoutePath } from '../toolbar/get-current-route-path';
 import { RouteInternal } from '../toolbar/routes-internal';
+import { NavigationService } from './navigation.service';
 
 @Component({
   selector: 'cp-navigation',
   standalone: true,
-
   imports: [CommonModule, RouterModule, TranslocoModule],
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss'],
@@ -20,10 +20,20 @@ export class NavigationComponent implements OnInit {
   @Input() isOpen = false;
   @Output() routeChanged = new EventEmitter<RouteInternal>();
 
+  isNavigationOpen$;
+
+  constructor(navigationService: NavigationService) {
+    this.isNavigationOpen$ = navigationService.isOpen$;
+  }
+
   ngOnInit(): void {
     this.emitCurrentRoute();
   }
 
+  routerLinkClick(route: RouteInternal) {
+    this.routeChanged.emit(route);
+    this.isNavigationOpen$.next(false);
+  }
   emitCurrentRoute() {
     this.currentRoutePath$
       .pipe(
