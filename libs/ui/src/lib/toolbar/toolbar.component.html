@@ -10,4 +10,5 @@
       >{{ t(route.text) }}</a
     >
   </nav>
+  <cp-navigation-button [class.is-open]="isNavigationOpen" (click)="toggleNavigation()" ></cp-navigation-button>
 </ng-container>
