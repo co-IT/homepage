@@ -4,16 +4,15 @@ import { RouterModule } from '@angular/router';
 import {
   CallToActionComponent,
   JobOfferTileComponent,
-  PageTitleComponent,
   VideoTileComponent,
 } from '@cp/ui';
 import { TranslocoModule } from '@ngneat/transloco';
 import { MarkdownModule } from 'ngx-markdown';
+import { Observable } from 'rxjs';
 import { JobOffer, VideoCollectionGrouped } from './models';
+import { RecruiteeService } from './recruitee.service';
 import { RecruitingProcessVideoRepository } from './recruiting-process-video-repository.service';
 import { RecruitingTimelineComponent } from './recruiting-timeline/recruiting-timeline.component';
-import { Observable } from 'rxjs';
-import { RecruiteeService } from './recruitee.service';
 
 @Component({
   selector: 'cp-recruiting-process',
@@ -24,7 +23,6 @@ import { RecruiteeService } from './recruitee.service';
     TranslocoModule,
     MarkdownModule,
     CallToActionComponent,
-    PageTitleComponent,
     VideoTileComponent,
     RecruitingTimelineComponent,
     JobOfferTileComponent,

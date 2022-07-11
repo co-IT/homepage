@@ -1,21 +1,23 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslocoModule } from '@ngneat/transloco';
-import { filter, map, tap } from 'rxjs';
-import { getCurrentRoutePath } from './get-current-route-path';
+import { NavigationButtonComponent } from '../navigation-button/navigation-button.component';
 import { RouteInternal } from './routes-internal';
 
 @Component({
   selector: 'cp-toolbar',
   standalone: true,
-  imports: [CommonModule, RouterModule, TranslocoModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    TranslocoModule,
+    NavigationButtonComponent,
+  ],
   templateUrl: './toolbar.component.html',
   styleUrls: ['./toolbar.component.scss'],
 })
-export class ToolbarComponent implements OnInit {
-  private currentRoutePath$ = getCurrentRoutePath();
-
+export class ToolbarComponent {
   @Input() logoSrc?: string;
   @Input() logoAlt?: string;
 
@@ -23,19 +25,9 @@ export class ToolbarComponent implements OnInit {
 
   @Output() routeChanged = new EventEmitter<RouteInternal>();
 
-  ngOnInit(): void {
-    this.emitCurrentRoute();
-  }
+  isNavigationOpen = false;
 
-  emitCurrentRoute() {
-    this.currentRoutePath$
-      .pipe(
-        map((path) =>
-          this.routesInternal?.find((route) => path.includes(route.path))
-        ),
-        filter((route) => !!route),
-        tap((route) => this.routeChanged.emit(route))
-      )
-      .subscribe();
+  toggleNavigation() {
+    this.isNavigationOpen = !this.isNavigationOpen;
   }
 }

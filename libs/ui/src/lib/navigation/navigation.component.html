@@ -1,0 +1,11 @@
+<ng-container *transloco="let t">
+<nav class="toolbar__nav">
+  <a
+    [routerLink]="route.path"
+    (click)="routeChanged.emit(route)"
+    *ngFor="let route of routesInternal"
+    class="toolbar__link"
+    >{{ t(route.text) }}</a
+  >
+</nav>
+</ng-container>
