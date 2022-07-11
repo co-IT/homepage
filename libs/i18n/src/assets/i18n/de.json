@@ -79,10 +79,10 @@
   "solutions.page-subtitle": "In Time - In Budget",
 
   "contact.page-title": "Kontakt",
-  "contact.page-subtitle": "Wir freuen uns auf Ihre Nachricht",
-  "contact.channel.scheduler.heading": "Persönlicher Termin",
+  "contact.page-subtitle": "Wählen Sie den für Sie passenden Kanal",
+  "contact.channel.scheduler.heading": "Termin vereinbaren",
   "contact.channel.scheduler.description": "Suchen Sie sich einen passenden Termin aus und reservieren Sie diesen direkt.",
-  "contact.channel.scheduler.action": "Termin vereinbaren",
+  "contact.channel.scheduler.action": "Buchen",
   "contact.channel.scheduler.href": "https://calendly.com/uli-armbruster/videokonferenz-30min",
   "contact.channel.phone.heading": "Rufen Sie uns an",
   "contact.channel.phone.description": "Gerne können Sie uns auf unserer zentralen Durchwahl anrufen und optional auch eine Nachricht hinterlassen.",
