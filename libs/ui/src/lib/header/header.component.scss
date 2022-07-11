@@ -1,7 +1,8 @@
 :host {
   display: block;
-
-  /*background-color: var(--primary-color);*/
+  &.header--background-primary {
+    background-color: var(--primary-color);
+  }
 }
 
 .header__container {
