@@ -5,6 +5,7 @@
   "navigation.about": "Über uns",
   "navigation.solutions": "Lösungen",
   "navigation.contact": "Kontakt",
+  "navigation.premium": "Premium",
 
   "landing-page.page-title": "Inspire To Change",
   "landing-page.page-subtitle": "Willkommen bei der co-IT.eu GmbH",
@@ -106,6 +107,8 @@
   "contact.location.achern.maps-url": "https://goo.gl/maps/PKdhKoBCgPyFEFsC8",
   "contact.location.show-on-maps": "Auf Google Maps anzeigen",
 
+  "premium.page-title": "Auf den Punkt abgestimmt",
+  "premium.page-subtitle": "Wählen Sie den für Sie passenden Kanal",
 
   "footer.link.privacy.href": "http://e.co-it.eu/datenschutz",
   "footer.link.privacy.label": "Datenschutz",
