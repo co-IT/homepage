@@ -9,6 +9,7 @@ import { RouteInternal } from '../toolbar/routes-internal';
 @Component({
   selector: 'cp-navigation',
   standalone: true,
+
   imports: [CommonModule, RouterModule, TranslocoModule],
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss'],
@@ -16,7 +17,7 @@ import { RouteInternal } from '../toolbar/routes-internal';
 export class NavigationComponent implements OnInit {
   private currentRoutePath$ = getCurrentRoutePath();
   @Input() routesInternal?: RouteInternal[];
-
+  @Input() isOpen = false;
   @Output() routeChanged = new EventEmitter<RouteInternal>();
 
   ngOnInit(): void {

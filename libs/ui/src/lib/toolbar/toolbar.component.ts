@@ -25,9 +25,9 @@ export class ToolbarComponent {
 
   @Output() routeChanged = new EventEmitter<RouteInternal>();
 
-  isNavigationOpen = false;
+  @Output() navigationToggled = new EventEmitter<boolean>();
 
-  toggleNavigation() {
-    this.isNavigationOpen = !this.isNavigationOpen;
+  toggleNavigation(event: boolean) {
+    this.navigationToggled.emit(event);
   }
 }

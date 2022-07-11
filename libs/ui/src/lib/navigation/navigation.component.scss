@@ -1,0 +1,35 @@
+:host{
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-color: #0A0A0A;
+  margin: unset;
+  padding-bottom: 2em;
+
+  &.is-open {
+    display: block;
+  }
+}
+
+nav {
+display: flex;
+padding-top: 1em;
+flex-direction: column;
+color: white ;
+font-weight: bold;
+font-size: 1.2em;
+a {
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 0.2em;
+  color: white !important;
+  width: fit-content;
+  box-sizing: border-box;
+  font-size: 0.8em;
+
+  &.active {
+    border-bottom: 2px solid var(--primary-color);
+  }
+}
+}

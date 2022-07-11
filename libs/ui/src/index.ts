@@ -1,5 +1,6 @@
 export * from './lib/back-button/back-button.component';
 export * from './lib/call-to-action/call-to-action.component';
+export * from './lib/card/card.component';
 export * from './lib/configure-career-ui.provider';
 export * from './lib/footer/footer.component';
 export * from './lib/header/header.component';

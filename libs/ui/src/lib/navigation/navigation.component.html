@@ -1,6 +1,10 @@
 <ng-container *transloco="let t">
+  <div class="content">
 <nav class="toolbar__nav">
+  Menü:
   <a
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}"
     [routerLink]="route.path"
     (click)="routeChanged.emit(route)"
     *ngFor="let route of routesInternal"
@@ -8,4 +12,5 @@
     >{{ t(route.text) }}</a
   >
 </nav>
+</div>
 </ng-container>

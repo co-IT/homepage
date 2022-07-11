@@ -1,9 +1,13 @@
 :host {
-  display: grid;
-  grid-auto-flow: column;
+ display: block;
   padding: 0.5em;
   background-color: var(--primary-color);
 
+}
+
+.content {
+  display: grid;
+  grid-auto-flow: column;
 }
 
 .toolbar__logo {
