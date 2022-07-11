@@ -1,5 +1,6 @@
-<div class="burger" (click)="toggleNavigation()" [class.is-open]="isNavigationOpen">
+<div class="burger" (click)="toggleNavigation(!isOpen)" [class.is-open]="isOpen">
 <div class="bar"></div>
 <div class="bar"></div>
 <div class="bar"></div>
 </div>
+

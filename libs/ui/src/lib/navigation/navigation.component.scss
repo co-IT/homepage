@@ -1,9 +1,13 @@
-:host{
+
+.navigation {
   display: none;
   position: absolute;
   width: 100%;
   z-index: 1;
   background-color: #0A0A0A;
+  background-image: url('/assets/images/navigation-background.svg');
+  background-repeat: no-repeat;
+  background-position: right;
   margin: unset;
   padding-bottom: 2em;
 
@@ -20,16 +24,29 @@ color: white ;
 font-weight: bold;
 font-size: 1.2em;
 a {
+  position: relative;
   text-decoration: none;
-  font-weight: bold;
   margin-top: 0.2em;
   color: white !important;
   width: fit-content;
   box-sizing: border-box;
-  font-size: 0.8em;
-
+  font-size: 0.9em;
+  line-height: 1em;
+  padding-bottom: 0.5em;
+  font-weight: normal;
+  &:first-of-type {
+    padding-top: 0.8em;
+  }
+  .router-link-status {
+    position:absolute;
+    height: 2px;
+    width: 100%;
+  }
   &.active {
-    border-bottom: 2px solid var(--primary-color);
+    .router-link-status {
+      background-color: var(--primary-color);
+    }
+
   }
 }
 }

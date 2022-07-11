@@ -10,20 +10,9 @@
   grid-auto-flow: column;
 }
 
-.toolbar__logo {
-  align-self: center;
-}
-
 .toolbar__nav {
   display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
   gap: 1em;
-}
-
-.toolbar__link {
-  color: var(--text-color);
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }

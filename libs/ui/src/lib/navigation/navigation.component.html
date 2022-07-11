@@ -1,16 +1,20 @@
 <ng-container *transloco="let t">
-  <div class="content">
-<nav class="toolbar__nav">
-  Menü:
-  <a
-    routerLinkActive="active"
-    [routerLinkActiveOptions]="{exact: true}"
-    [routerLink]="route.path"
-    (click)="routeChanged.emit(route)"
-    *ngFor="let route of routesInternal"
-    class="toolbar__link"
-    >{{ t(route.text) }}</a
-  >
-</nav>
+  <div class="navigation" [class.is-open]="isNavigationOpen$ | async">
+  <div class="content" >
+    <nav class="toolbar__nav">
+      <h3>Menü:</h3>
+      <a
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        [routerLink]="route.path"
+        (click)="routerLinkClick(route) "
+        *ngFor="let route of routesInternal"
+        class="toolbar__link"
+      >
+        <div>{{ t(route.text) }}</div>
+        <div class="router-link-status"></div>
+      </a>
+    </nav>
+  </div>
 </div>
 </ng-container>

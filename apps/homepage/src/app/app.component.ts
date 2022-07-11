@@ -29,7 +29,6 @@ import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
 })
 export class AppComponent {
   protected routeRecentlyClicked?: RouteInternal;
-  protected isNavigationOpen = false;
 
   protected routesInternal: RouteInternal[] = [
     {
