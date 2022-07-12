@@ -1,11 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslocoModule } from '@ngneat/transloco';
 import { NavigationButtonComponent } from '../navigation-button/navigation-button.component';
 import { ToolbarIcon } from '../toolbar-icon/toolbar-icon';
 import { ToolbarIconComponent } from '../toolbar-icon/toolbar-icon.component';
-import { RouteInternal } from './routes-internal';
 
 @Component({
   selector: 'cp-toolbar',
@@ -23,10 +22,6 @@ import { RouteInternal } from './routes-internal';
 export class ToolbarComponent {
   @Input() logoSrc?: string;
   @Input() logoAlt?: string;
-
-  @Input() routesInternal?: RouteInternal[];
-
-  @Output() routeChanged = new EventEmitter<RouteInternal>();
 
   toolbarIcons: ToolbarIcon[] = [
     {
