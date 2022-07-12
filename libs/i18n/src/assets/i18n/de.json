@@ -1,11 +1,11 @@
 {
   "common.video-tile.label": "Zum Video",
   "navigation.start": "Start",
-  "navigation.career": "Karriere",
-  "navigation.about": "Über uns",
-  "navigation.solutions": "Lösungen",
-  "navigation.contact": "Kontakt",
-  "navigation.premium": "Premium",
+  "navigation.career": "{{recruiting-process.page-title}}",
+  "navigation.about": "{{about.page-title}}",
+  "navigation.solutions": "{{solutions.page-title}}",
+  "navigation.contact": "{{contact.page-title}}",
+  "navigation.premium": "{{premium.page-title}}",
 
   "landing-page.page-title": "Inspire To Change",
   "landing-page.page-subtitle": "Willkommen bei der co-IT.eu GmbH",
@@ -21,7 +21,7 @@
 
   "landing-page.image.team-standing-at-desk.alt": "Auf diesen Bild sind all unsere Kollegen zu sehen, Neuzugänge, wie auch langjährige Mitarbeiter*Innen.",
   "landing-page.image.team-workshop.alt": "Um einen Tisch sitzt das Team und tauscht sich über aktuelle Webtechnologien aus",
-  "recruiting-process.page-title": "Karriere",
+  "recruiting-process.page-title": "Geprägt durch Menschen",
   "recruiting-process.page-subtitle": "Arbeitszeit ist Lebenszeit",
   "recruiting-process.articles.our-promise.src": "/assets/articles/de/recruiting-process/000-our-promise.md",
   "recruiting-process.articles.you-can-sit-with-us.src": "/assets/articles/de/recruiting-process/001-you-can-sit-with-us.md",
@@ -64,7 +64,7 @@
   "recruiting-process.job-offers.heading": "Stellenangebote",
   "recruiting-process.job-offers.details": "Job ansehen",
 
-  "about.page-title": "Über uns",
+  "about.page-title": "Motiviert von Werten",
   "about.page-subtitle": "Werte leben",
   "about-page.intro": "Wir wünschen uns eine offene und ehrliche Zusammenarbeit. Uns ist es daher wichtig Ihnen transparent zu kommunizieren, was unsere Identität ausmacht, was uns motiviert für Sie unser Bestes zu geben und wie wir mit Ihnen gemeinsam Herausforderungen angehen wollen.",
   "about-page.articles.change.src": "/assets/articles/de/about-page/009-change.md",
@@ -76,7 +76,7 @@
   "about-page.images.fascination.alt": "Vier Kolleg*innen unterhalten sich in einer lustigen Runde.",
   "about-page.images.team.alt": "Auf diesen Bild sind all unsere Kollegen zu sehen, Neuzugänge, wie auch langjährige Mitarbeiter*Innen.",
 
-  "solutions.page-title": "Lösungen",
+  "solutions.page-title": "Alles aus einer Hand",
   "solutions.page-subtitle": "vollumfänglich statt punktuell",
   "solutions.articles.intro.src": "/assets/articles/de/solutions/011-solutions-intro.md",
   "solutions.articles.werkstatt-nxt.src": "/assets/articles/de/solutions/012-solutions-werkstatt-nxt.md",
