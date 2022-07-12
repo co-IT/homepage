@@ -7,6 +7,7 @@ import { CinemaHeaderComponent } from '../cinema-header/cinema-header.component'
 import { CinemaPlayerComponent } from '../cinema-player/cinema-player.component';
 import { Video } from '../models';
 import { RecruitingProcessVideoRepository } from '../recruiting-process-video-repository.service';
+import { YoutubeService } from '@cp/ui';
 
 @Component({
   selector: 'cp-cinema',
@@ -23,11 +24,11 @@ import { RecruitingProcessVideoRepository } from '../recruiting-process-video-re
 })
 export class CinemaComponent implements OnInit {
   video$: Observable<Video | undefined>;
-  apiLoaded = false;
 
   constructor(
     activatedRoute: ActivatedRoute,
-    repository: RecruitingProcessVideoRepository
+    repository: RecruitingProcessVideoRepository,
+    private youtubeService: YoutubeService
   ) {
     this.video$ = activatedRoute.paramMap.pipe(
       map((params: ParamMap) => params.get('videoId')),
@@ -37,13 +38,6 @@ export class CinemaComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (!this.apiLoaded) {
-      // This code loads the IFrame Player API code asynchronously, according to the instructions at
-      // https://developers.google.com/youtube/iframe_api_reference#Getting_Started
-      const tag = document.createElement('script');
-      tag.src = 'https://www.youtube.com/iframe_api';
-      document.body.appendChild(tag);
-      this.apiLoaded = true;
-    }
+    this.youtubeService.loadIFrameApi();
   }
 }

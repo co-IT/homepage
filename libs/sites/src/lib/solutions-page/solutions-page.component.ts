@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MarkdownModule } from 'ngx-markdown';
 import { TranslocoModule } from '@ngneat/transloco';
 import { YouTubePlayerModule } from '@angular/youtube-player';
+import { YoutubeService } from '@cp/ui';
 
 @Component({
   selector: 'cp-solutions',
@@ -12,16 +13,9 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
   styleUrls: ['./solutions-page.component.scss'],
 })
 export class SolutionsPageComponent implements OnInit {
-  private apiLoaded = false;
+  constructor(private youtubeService: YoutubeService) {}
 
   ngOnInit(): void {
-    if (!this.apiLoaded) {
-      // This code loads the IFrame Player API code asynchronously, according to the instructions at
-      // https://developers.google.com/youtube/iframe_api_reference#Getting_Started
-      const tag = document.createElement('script');
-      tag.src = 'https://www.youtube.com/iframe_api';
-      document.body.appendChild(tag);
-      this.apiLoaded = true;
-    }
+    this.youtubeService.loadIFrameApi();
   }
 }

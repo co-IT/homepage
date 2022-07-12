@@ -17,3 +17,4 @@ export * from './lib/job-offer-tile/job-offer-tile.component';
 export * from './lib/pill/pill.component';
 export * from './lib/hero-link/hero-link.component';
 export * from './lib/card/card.component';
+export * from './lib/youtube.service';
