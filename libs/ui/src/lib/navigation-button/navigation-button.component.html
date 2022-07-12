@@ -1,9 +1,9 @@
 <ng-container *transloco="let t">
-<div class="burger"  [class.is-open]="isOpen" (click)="toggleNavigation(!isOpen)">
-<div class="bar"></div>
-<div class="bar"></div>
-<div class="bar"></div>
-</div>
-<div class="menu" (click)="toggleNavigation(!isOpen)">{{t('navigation.button.text')}}</div>
+  <div (click)="toggleNavigation()" [class.is-open]="isOpen" class="burger">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <div (click)="toggleNavigation()" class="menu">{{t('navigation.button.text')}}</div>
 </ng-container>
 
