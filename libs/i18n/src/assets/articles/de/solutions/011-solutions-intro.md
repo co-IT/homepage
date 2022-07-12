@@ -4,7 +4,7 @@ Puzzleteile am Ende regelmäßig nicht zusammen und ihre Dienstleister reichen d
 nächsten weiter?
 
 Dann können wir Ihnen als Lösungsanbieter helfen:
-[Wir wählen unsere Mitarbeiter sorgfältig aus](https://e.co-it.eu/recruiting/process)
+<a href="https://e.co-it.eu/recruiting/process" target="_blank">Wir wählen unsere Mitarbeiter sorgfältig aus</a>
 und [stimmen alle Fähigkeiten punktuell aufeinander ab](/premium), sodass Sie
 bei uns die folgende Kompetenzen aus einer Hand bekommen:
 
