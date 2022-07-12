@@ -1,0 +1,6 @@
+<ng-container *ngIf="toolbarIconLink as link">
+<a [href]="link.href" [target]="link.target || '_self'">
+  <i [class]="getIconClass(link.icon)"></i>
+  <ng-content></ng-content>
+</a>
+</ng-container>

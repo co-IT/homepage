@@ -2,7 +2,7 @@
   <div class="content">
     <a routerLink="/"><img [src]="logoSrc" [attr.alt]="logoAlt" class="toolbar__logo" /></a>
     <div class="toolbar__nav">
-      <cp-toolbar-icon  *ngFor="let toolbarIcon of toolbarIcons" [toolbarIcon]="toolbarIcon" >{{toolbarIcon.text}}</cp-toolbar-icon>
+      <cp-toolbar-icon  *ngFor="let toolbarIconLink of toolbarIconLinks" [toolbarIconLink]="toolbarIconLink" >{{toolbarIconLink.text}}</cp-toolbar-icon>
     <cp-navigation-button
 
     ></cp-navigation-button>

@@ -23,7 +23,7 @@ export class NavigationComponent implements OnInit {
 
   isNavigationOpen$;
 
-  constructor(public navigationService: NavigationService) {
+  constructor(private navigationService: NavigationService) {
     this.isNavigationOpen$ = navigationService.isOpen$.asObservable();
   }
 

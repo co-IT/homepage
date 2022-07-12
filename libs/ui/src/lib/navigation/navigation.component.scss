@@ -1,18 +1,23 @@
 
 .navigation {
-  display: none;
+  display: block;
+  overflow: hidden;
+  max-height: 0px;
   position: absolute;
   width: 100%;
   z-index: 1;
-  background-color: #0A0A0A;
+  background-color: var(--dark-gray);
   background-image: url('/assets/images/navigation-background.svg');
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
   margin: unset;
-  padding-bottom: 2em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: max-height 0.2s ease-out;
 
   &.is-open {
-    display: block;
+    max-height: 500px;
+    transition: max-height 0.2s ease-in;
   }
 }
 
@@ -23,6 +28,9 @@ flex-direction: column;
 color: white ;
 font-weight: bold;
 font-size: 1.2em;
+>:last-child {
+  margin-bottom: 2em;
+}
 a {
   position: relative;
   text-decoration: none;
@@ -30,8 +38,8 @@ a {
   color: white !important;
   width: fit-content;
   box-sizing: border-box;
-  font-size: 0.9em;
-  line-height: 1em;
+  font-size: 1.5em;
+  line-height: 1.5em;
   padding-bottom: 0.5em;
   font-weight: normal;
   &:first-of-type {
@@ -43,11 +51,13 @@ a {
   .router-link-status {
     position:absolute;
     height: 2px;
-    width: 100%;
+    width: 0px;
+    background-color: var(--primary-color);
   }
+
   &.active {
     .router-link-status {
-      background-color: var(--primary-color);
+      width: 100%;
     }
 
   }

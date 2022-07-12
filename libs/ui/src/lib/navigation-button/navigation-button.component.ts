@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslocoModule } from '@ngneat/transloco';
 import { tap } from 'rxjs/operators';
 import { NavigationService } from '../navigation/navigation.service';
@@ -11,11 +11,13 @@ import { NavigationService } from '../navigation/navigation.service';
   imports: [CommonModule, TranslocoModule],
   styleUrls: ['./navigation-button.component.scss'],
 })
-export class NavigationButtonComponent {
+export class NavigationButtonComponent implements OnInit {
   isOpen = false;
 
-  constructor(public navigationService: NavigationService) {
-    navigationService.isOpen$
+  constructor(private navigationService: NavigationService) {}
+
+  ngOnInit() {
+    this.navigationService.isOpen$
       .pipe(tap((isOpen) => (this.isOpen = isOpen)))
       .subscribe();
   }
