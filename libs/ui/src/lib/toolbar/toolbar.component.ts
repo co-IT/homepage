@@ -34,7 +34,7 @@ export class ToolbarComponent {
     },
     {
       icon: 'mdi-map',
-      href: 'https://www.google.com/maps/place/co-IT.eu+GmbH/@49.005146,8.39661,15z/data=!4m5!3m4!1s0x0:0x2ccc0a1e2f9cab01!8m2!3d49.005146!4d8.39661',
+      href: 'https://g.page/communicativeIT?share',
       target: '_blank',
     },
   ];
