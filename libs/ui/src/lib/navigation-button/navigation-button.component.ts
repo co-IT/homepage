@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslocoModule } from '@ngneat/transloco';
 import { tap } from 'rxjs/operators';
 import { NavigationService } from '../navigation/navigation.service';
 
@@ -7,7 +8,7 @@ import { NavigationService } from '../navigation/navigation.service';
   selector: 'cp-navigation-button',
   templateUrl: './navigation-button.component.html',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslocoModule],
   styleUrls: ['./navigation-button.component.scss'],
 })
 export class NavigationButtonComponent {
