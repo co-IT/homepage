@@ -12,7 +12,6 @@ import { BrowserTabTitleSetter } from './browser-tab-title-setter.service';
   selector: 'cp-page-title[title][subtitle]',
   standalone: true,
   imports: [CommonModule],
-  host: { '[class.page-title__primary-backgrund]': 'imgSrc' },
   templateUrl: './page-title.component.html',
   styleUrls: ['./page-title.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
