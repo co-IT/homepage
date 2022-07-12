@@ -1,0 +1,64 @@
+.image-with-gradient-orange-blue {
+  background-image: linear-gradient(
+      180deg,
+      #feb81e 0%,
+      rgba(234, 169, 27, 0.5) 20.1%,
+      rgba(2, 2, 77, 0.5) 80.52%,
+      #02024d 100%
+  ),
+  url('../../assets/images/team-workshop-gray.webp');
+  height: 56em;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-with-gradient-blue-blue {
+  background-image: linear-gradient(
+      180deg,
+      #02024d 0%,
+      rgba(2, 2, 77, 0.3) 20.1%,
+      rgba(2, 2, 77, 0.3) 80.52%,
+      #02024d 100%
+  ),
+  url('../../assets/images/team-standing-at-desk-gray.webp');
+  height: 56em;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-with-gradient-blue-blue-garden {
+  background-image: linear-gradient(
+      180deg,
+      #02024d 0%,
+      rgba(2, 2, 77, 0.3) 20.1%,
+      rgba(2, 2, 77, 0.3) 80.52%,
+      #02024d 100%
+  ),
+  url('../../assets/images/meeting-in-the-garden.webp');
+  height: 56em;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-solid-blue-ocean {
+  background: var(--blue-ocean);
+  padding: 2em;
+  min-height: 40em;
+}
+
+.section-half-solid-blue-ocean {
+  background-image: linear-gradient(
+      to bottom,
+      var(--blue-ocean) 0%,
+      var(--blue-ocean) 50%,
+      var(--white) 50%,
+      var(--white) 100%
+  );
+  background-repeat: repeat-x;
+  background-size: 50% auto;
+  min-height: 30em;
+}
+
+cp-hero-link{
+  justify-self: start;
+}

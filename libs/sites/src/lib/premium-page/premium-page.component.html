@@ -1,3 +1,44 @@
 <ng-container *transloco="let t">
+  <section class="image-with-gradient-orange-blue center-content">
+    <div class="content">
+      <div class="columns columns-two">
+        <h2 class="heading-hero text-white">
+          {{ t('premium-page.articles.tshaped.heading') }}
+        </h2>
+        <article class="text-box-glass">
+          <markdown
+            [src]="t('premium-page.articles.tshaped.src')"
+          ></markdown>
+        </article>
+      </div>
+    </div>
+  </section>
 
+  <section class="section-solid-blue-ocean center-content">
+    <div class="content flow flow--m text-white">
+      <h2 class="heading-hero">
+        {{ t('premium-page.articles.softskills.heading') }}
+      </h2>
+      <article class="text-size-m">
+        <markdown
+          [src]="t('premium-page.articles.softskills.src')"
+        ></markdown>
+      </article>
+    </div>
+  </section>
+
+  <section class="image-with-gradient-blue-blue center-content">
+    <div class="content">
+      <div class="columns columns-two">
+        <h2 class="heading-hero text-white">
+          {{ t('premium-page.articles.understand-business.heading') }}
+        </h2>
+        <article class="text-box-glass">
+          <markdown
+            [src]="t('premium-page.articles.understand-business.src')"
+          ></markdown>
+        </article>
+      </div>
+    </div>
+  </section>
 </ng-container>
