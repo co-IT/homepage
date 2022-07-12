@@ -1,6 +1,6 @@
 <ng-container *transloco="let t">
   <div class="content">
-    <img [src]="logoSrc" [attr.alt]="logoAlt" class="toolbar__logo" />
+    <a routerLink="/"><img [src]="logoSrc" [attr.alt]="logoAlt" class="toolbar__logo" /></a>
     <div class="toolbar__nav">
       <cp-toolbar-icon  *ngFor="let toolbarIcon of toolbarIcons" [toolbarIcon]="toolbarIcon" >{{toolbarIcon.text}}</cp-toolbar-icon>
     <cp-navigation-button

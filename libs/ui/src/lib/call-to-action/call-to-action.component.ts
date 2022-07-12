@@ -11,4 +11,5 @@ export class CallToActionComponent {
   @Input() text?: string;
   @Input() href?: string;
   @Input() fullWidth = false;
+  @Input() target?: string = '_blank';
 }

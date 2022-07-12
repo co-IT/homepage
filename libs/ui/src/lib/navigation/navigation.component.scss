@@ -37,6 +37,9 @@ a {
   &:first-of-type {
     padding-top: 0.8em;
   }
+  &:last-of-type {
+    margin-bottom: 2em;
+  }
   .router-link-status {
     position:absolute;
     height: 2px;

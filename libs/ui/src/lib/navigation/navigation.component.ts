@@ -3,6 +3,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslocoModule } from '@ngneat/transloco';
 import { filter, map, tap } from 'rxjs/operators';
+import { CallToActionComponent } from '../call-to-action/call-to-action.component';
 import { getCurrentRoutePath } from '../toolbar/get-current-route-path';
 import { RouteInternal } from '../toolbar/routes-internal';
 import { NavigationService } from './navigation.service';
@@ -10,7 +11,7 @@ import { NavigationService } from './navigation.service';
 @Component({
   selector: 'cp-navigation',
   standalone: true,
-  imports: [CommonModule, RouterModule, TranslocoModule],
+  imports: [CommonModule, RouterModule, TranslocoModule, CallToActionComponent],
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss'],
 })
@@ -22,8 +23,8 @@ export class NavigationComponent implements OnInit {
 
   isNavigationOpen$;
 
-  constructor(navigationService: NavigationService) {
-    this.isNavigationOpen$ = navigationService.isOpen$;
+  constructor(public navigationService: NavigationService) {
+    this.isNavigationOpen$ = navigationService.isOpen$.asObservable();
   }
 
   ngOnInit(): void {
@@ -32,7 +33,7 @@ export class NavigationComponent implements OnInit {
 
   routerLinkClick(route: RouteInternal) {
     this.routeChanged.emit(route);
-    this.isNavigationOpen$.next(false);
+    this.navigationService.setNavigationState(false);
   }
   emitCurrentRoute() {
     this.currentRoutePath$
