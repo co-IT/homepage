@@ -52,6 +52,7 @@ export class AppComponent {
       text: this.transloco.translate('navigation.premium'),
       title: 'premium.page-title',
       subtitle: 'premium.page-subtitle',
+      displayType: 'link',
     },
     {
       path: '/recruiting-process',
