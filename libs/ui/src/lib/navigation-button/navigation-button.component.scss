@@ -2,33 +2,36 @@
   display: grid;
   height: 28px;
   align-items: center;
-  transition: 0.3s;
-
+  transition: 0.3s ease-in-out;
   cursor: pointer;
 
-
-  .burger {height: 100%;
+  .burger {
+    height: 100%;
     background-color: black;
     width: 32px;
     grid-row: 1;
     position: relative;
-  padding-top: 4px;
-  border-radius: 5px;
-  &.is-open {
-    .bar {
-      &:nth-of-type(1) {
-        transform: translateY(6px) rotate(45deg);
-      }
-      &:nth-of-type(2) {
-        opacity: 0;
-      }
-      &:nth-of-type(3) {
-        transform: translateY(-6px) rotate(-45deg);
+    padding-top: 4px;
+    border-radius: 5px;
+
+    &.is-open {
+      .bar {
+        &:nth-of-type(1) {
+          transform: translateY(6px) rotate(45deg);
+        }
+
+        &:nth-of-type(2) {
+          opacity: 0;
+        }
+
+        &:nth-of-type(3) {
+          transform: translateY(-6px) rotate(-45deg);
+        }
       }
     }
   }
 }
-}
+
 .bar {
   height: 3px;
   width: 20px;
@@ -37,12 +40,15 @@
   position: relative;
   background-color: var(--primary-color);
   transition: 0.4s;
+
   &:nth-of-type(1) {
     animation: rotateR 1.5s cubic-bezier(0.5, 0.2, 0.2, 1);
   }
+
   &:nth-of-type(2) {
     animation: fade 1.5s cubic-bezier(0.1, 0.8, 0.1, 1);
   }
+
   &:nth-of-type(3) {
     animation: rotateL 1.5s cubic-bezier(0.5, 0.2, 0.2, 1);
   }
@@ -52,7 +58,6 @@
   grid-row: 1;
   margin: auto 0;
   text-align: center;
-  height: 10px;
   padding-left: 5px;
   height: 100%;
   font-weight: bolder;
