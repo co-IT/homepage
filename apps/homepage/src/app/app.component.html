@@ -1,5 +1,5 @@
 <ng-container *transloco="let t">
-  <cp-header [class.header--background-primary]="routeRecentlyClicked?.imgSrc">
+  <cp-header [class.header--background-primary]="routeRecentlyClicked?.imgSrc || routeRecentlyClicked?.hasTitlePrimaryBackground">
     <div class="flow flow--xl">
       <cp-toolbar
         logoSrc="/assets/images/logo.svg"
