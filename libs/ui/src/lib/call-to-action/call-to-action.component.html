@@ -1,6 +1,15 @@
-<a [href]="href" [class.full-width]="fullWidth" [target]="target">
+<a *ngIf="href; else internalLink" [href]="href"  [class.full-width]="fullWidth" [target]="target">
   <div class="call-to-action__content">
     <i [class]="icon + ' mdi-24px'"></i>
     <span>{{ text }}</span>
   </div>
 </a>
+
+<ng-template #internalLink>
+  <a [routerLink]="internalRouterLink" [class.full-width]="fullWidth">
+    <div class="call-to-action__content">
+      <i [class]="icon + ' mdi-24px'"></i>
+      <span>{{ text }}</span>
+    </div>
+  </a>
+</ng-template>

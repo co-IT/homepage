@@ -28,4 +28,9 @@ export interface RouteInternal {
    * Path to an image that should mit displayed instead of the text
    */
   imgSrc?: string;
+
+  /**
+   * How the entry is represented in the navigation
+   */
+  displayType: string;
 }

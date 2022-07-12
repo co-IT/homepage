@@ -3,18 +3,20 @@
   <div class="content" >
     <nav class="toolbar__nav">
       <h2>Menü</h2>
+      <ng-container *ngFor="let route of routesInternal">
       <a
         routerLinkActive="active"
         [routerLinkActiveOptions]="{ exact: true }"
         [routerLink]="route.path"
-        (click)="routerLinkClick(route) "
-        *ngFor="let route of routesInternal"
+        (click)="routerLinkClick(route)"
+        *ngIf="route.displayType=== 'link'"
         class="toolbar__link"
       >
         <div>{{ t(route.text) }}</div>
         <div class="router-link-status"></div>
       </a>
-      <cp-call-to-action [text]="t('navigation.contact.call-to-action')" target="_self" class="small gradient" [routerLink]="['contact']"></cp-call-to-action>
+      <cp-call-to-action *ngIf="route.displayType==='button'" (click)="routerLinkClick(route) " [text]="t('navigation.contact.call-to-action')" target="_self" class="small gradient" [internalRouterLink]="['/','contact']"></cp-call-to-action>
+    </ng-container>
     </nav>
   </div>
 </div>

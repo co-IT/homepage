@@ -38,12 +38,14 @@ export class AppComponent {
       subtitle: 'landing-page.page-subtitle',
       isStartPage: true,
       imgSrc: 'assets/images/logo-hero.svg',
+      displayType: 'link',
     },
     {
       path: '/solutions',
       text: this.transloco.translate('navigation.solutions'),
       title: 'solutions.page-title',
       subtitle: 'solutions.page-subtitle',
+      displayType: 'link',
     },
     {
       path: '/premium',
@@ -56,12 +58,21 @@ export class AppComponent {
       text: this.transloco.translate('navigation.career'),
       title: 'recruiting-process.page-title',
       subtitle: 'recruiting-process.page-subtitle',
+      displayType: 'link',
     },
     {
       path: '/about',
       text: this.transloco.translate('navigation.about'),
       title: 'about.page-title',
       subtitle: 'about.page-subtitle',
+      displayType: 'link',
+    },
+    {
+      path: '/contact',
+      text: this.transloco.translate('navigation.contact'),
+      title: 'contact.page-title',
+      subtitle: 'contact.page-subtitle',
+      displayType: 'button',
     },
   ];
 

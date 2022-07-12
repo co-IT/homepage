@@ -31,7 +31,7 @@ export class NavigationComponent implements OnInit {
     this.emitCurrentRoute();
   }
 
-  routerLinkClick(route: RouteInternal) {
+  routerLinkClick(route: RouteInternal | undefined) {
     this.routeChanged.emit(route);
     this.navigationService.setNavigationState(false);
   }
