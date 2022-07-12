@@ -63,12 +63,6 @@ export class AppComponent {
       title: 'about.page-title',
       subtitle: 'about.page-subtitle',
     },
-    {
-      path: '/contact',
-      text: this.transloco.translate('navigation.contact'),
-      title: 'contact.page-title',
-      subtitle: 'contact.page-subtitle',
-    },
   ];
 
   constructor(private transloco: TranslocoService) {}

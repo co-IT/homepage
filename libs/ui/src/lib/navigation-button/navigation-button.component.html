@@ -1,5 +1,5 @@
-<ng-container *transloco="let t" (click)="toggleNavigation(!isOpen)">
-<div class="burger"  [class.is-open]="isOpen">
+<ng-container *transloco="let t">
+<div class="burger"  [class.is-open]="isOpen" (click)="toggleNavigation(!isOpen)">
 <div class="bar"></div>
 <div class="bar"></div>
 <div class="bar"></div>
