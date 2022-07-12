@@ -53,6 +53,7 @@ export class AppComponent {
       title: 'premium.page-title',
       subtitle: 'premium.page-subtitle',
       displayType: 'link',
+      hasTitlePrimaryBackground: true,
     },
     {
       path: '/recruiting-process',

@@ -33,4 +33,9 @@ export interface RouteInternal {
    * How the entry is represented in the navigation
    */
   displayType: string;
+
+  /**
+   * use the primary color for title background
+   */
+  hasTitlePrimaryBackground?: boolean;
 }
