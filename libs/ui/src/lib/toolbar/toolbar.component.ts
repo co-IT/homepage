@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { TranslocoModule } from '@ngneat/transloco';
+import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
 import { NavigationButtonComponent } from '../navigation-button/navigation-button.component';
 import { ToolbarIconLink } from '../toolbar-icon/toolbar-icon-link';
 import { ToolbarIconLinkComponent } from '../toolbar-icon/toolbar-icon-link.component';
@@ -23,10 +23,12 @@ export class ToolbarComponent {
   @Input() logoSrc?: string;
   @Input() logoAlt?: string;
 
+  constructor(private transloco: TranslocoService) {}
+
   toolbarIconLinks: ToolbarIconLink[] = [
     {
       icon: 'mdi-phone',
-      href: 'tel:+4921935163052',
+      href: this.transloco.translate('contact.channel.phone.href'),
     },
     {
       icon: 'mdi-email-outline',
@@ -34,7 +36,7 @@ export class ToolbarComponent {
     },
     {
       icon: 'mdi-map',
-      href: 'https://g.page/communicativeIT?share',
+      href: this.transloco.translate('contact.location.karlsruhe.maps-url'),
       target: '_blank',
     },
   ];
