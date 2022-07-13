@@ -1,7 +1,7 @@
 <ng-container *transloco="let t">
   <div class="first-line">
     <i *ngIf="icon" [class]="icon"></i>
-    <div *ngIf="textKey" class="text" [innerHTML]="t(textKey)"></div>
+    <div *ngIf="text" class="text" [innerHTML]="text"></div>
   </div>
-  <div class="emphasized" [innerHTML]="t(emphasizedTextKey)"></div>
+  <div *ngIf="emphasizedText" class="emphasized" [innerHTML]="emphasizedText"></div>
 </ng-container>
