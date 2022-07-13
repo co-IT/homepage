@@ -1,29 +1,32 @@
 <ng-container *transloco="let t">
-  <div class="spacer--xl"></div>
-
   <div class="flow flow--xl">
     <section>
       <div class="content">
-        <markdown
-          [src]="t('solutions.articles.intro.src')"
-        ></markdown>
-      </div>
-    </section>
-    <section>
-      <div class="content">
         <div class="columns columns-two">
-          <div class="flow">
-            <article>
-              <markdown
-                [src]="t('solutions.articles.werkstatt-nxt.src')"
-              ></markdown>
-            </article>
-          </div>
-          <youtube-player videoId="QVArEtvAGsk"></youtube-player>
+          <article>
+            <markdown [src]="t('solutions.articles.intro.src')"></markdown>
+          </article>
+          <img src="/assets/images/experts.svg" />
         </div>
       </div>
     </section>
   </div>
-
+  <div class="spacer--xl"></div>
+  <div class="flow flow--xl">
+    <section class="solutions-page__example-video-section">
+      <div class="content">
+        <div class="columns columns-two">
+        <div class="solutions-page__example-video-player">
+          <youtube-player class="youtube-player" videoId="QVArEtvAGsk"></youtube-player>
+          </div>
+          <article>
+            <markdown
+              [src]="t('solutions.articles.werkstatt-nxt.src')"
+            ></markdown>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
   <div class="spacer--xl"></div>
 </ng-container>
