@@ -1,64 +1,61 @@
+@use "sass:math";
+
+$buttonSize: 1.5em;
+$animationDuration: 0.3s;
+
 :host {
-  display: grid;
-  height: 28px;
+  display: flex;
+  gap: 0.5em;
   align-items: center;
-  transition: 0.3s ease-in-out;
   cursor: pointer;
+}
 
-  .burger {
-    height: 100%;
-    background-color: black;
-    width: 32px;
-    grid-row: 1;
-    position: relative;
-    padding-top: 4px;
-    border-radius: 5px;
+.burger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: math.div($buttonSize, 12);
+  height: $buttonSize;
+  width: $buttonSize;
 
-    &.is-open {
-      .bar {
-        &:nth-of-type(1) {
-          transform: translateY(6px) rotate(45deg);
-        }
+  &.is-open {
+    .bar {
+      &:nth-of-type(1) {
+        transform: translateY($buttonSize * 0.155) rotate(45deg);
+      }
 
-        &:nth-of-type(2) {
-          opacity: 0;
-        }
+      &:nth-of-type(2) {
+        opacity: 0;
+      }
 
-        &:nth-of-type(3) {
-          transform: translateY(-6px) rotate(-45deg);
-        }
+      &:nth-of-type(3) {
+        transform: translateY(-$buttonSize * 0.155) rotate(-45deg);
       }
     }
   }
 }
 
 .bar {
-  height: 3px;
-  width: 20px;
-  display: block;
-  margin: 3px auto;
-  position: relative;
-  background-color: var(--primary-color);
-  transition: 0.4s;
+  height: $buttonSize * 0.075;
+  width: $buttonSize * 0.75;
+  background-color: var(--black);
+  transition: $animationDuration;
 
   &:nth-of-type(1) {
-    animation: rotateR 1.5s cubic-bezier(0.5, 0.2, 0.2, 1);
+    animation: rotateR $animationDuration ease-in-out;
   }
 
   &:nth-of-type(2) {
-    animation: fade 1.5s cubic-bezier(0.1, 0.8, 0.1, 1);
+    animation: fade $animationDuration ease-in-out;
   }
 
   &:nth-of-type(3) {
-    animation: rotateL 1.5s cubic-bezier(0.5, 0.2, 0.2, 1);
+    animation: rotateL $animationDuration ease-in-out;
   }
 }
 
 .menu {
-  grid-row: 1;
-  margin: auto 0;
-  text-align: center;
-  padding-left: 5px;
-  height: 100%;
+  font-size: 1.5em;
   font-weight: bolder;
 }

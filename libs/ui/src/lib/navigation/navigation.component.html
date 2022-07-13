@@ -1,23 +1,33 @@
 <ng-container *transloco="let t">
-  <div class="navigation" [class.is-open]="isNavigationOpen$ | async">
-  <div class="content" >
-    <nav class="toolbar__nav">
-      <h2>Menü</h2>
-      <ng-container *ngFor="let route of routesInternal">
-      <a
-        routerLinkActive="active"
-        [routerLinkActiveOptions]="{ exact: true }"
-        [routerLink]="route.path"
-        (click)="routerLinkClick(route)"
-        *ngIf="route.displayType=== 'link'"
-        class="toolbar__link"
-      >
-        <div>{{ t(route.text) }}</div>
-        <div class="router-link-status"></div>
-      </a>
-      <cp-call-to-action *ngIf="route.displayType==='button'" (click)="routerLinkClick(route) " [text]="t('navigation.contact.call-to-action')" target="_self" class="small gradient" [internalRouterLink]="['/','contact']"></cp-call-to-action>
-    </ng-container>
-    </nav>
+  <div [class.is-open]="isNavigationOpen$ | async" class="navigation">
+    <div class="content">
+      <nav class="toolbar__nav">
+        <ng-container *ngFor="let route of routesInternal">
+          <a
+            (click)="routerLinkClick(route)"
+            *ngIf="route.displayType=== 'link'"
+            [routerLinkActiveOptions]="{ exact: true }"
+            [routerLink]="route.path"
+            class="toolbar__link"
+            routerLinkActive="active"
+          >
+            <div>{{ t(route.text) }}</div>
+            <div class="router-link-status"></div>
+          </a>
+          <cp-call-to-action
+            (click)="routerLinkClick(route) "
+            *ngIf="route.displayType==='button'"
+            [internalRouterLink]="['/','contact']"
+            [text]="t('navigation.contact.call-to-action')"
+            class="small gradient"
+            target="_self">
+          </cp-call-to-action>
+        </ng-container>
+      </nav>
+      <div class="hotkey-hint">
+        <i class="mdi mdi-lightbulb"></i>
+        <span [innerHTML]="t('navigation.hotkey-hint')"></span>
+      </div>
+    </div>
   </div>
-</div>
 </ng-container>

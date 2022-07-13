@@ -7,11 +7,21 @@
 
 .content {
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-column-gap: 2em;
 }
 
 .toolbar__nav {
   display: flex;
   justify-content: flex-end;
   gap: 1em;
+}
+
+.toolbar__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.toolbar__button {
+  display: flex;
 }
