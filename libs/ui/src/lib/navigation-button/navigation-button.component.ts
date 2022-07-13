@@ -2,9 +2,9 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { HotkeysModule, HotkeysService } from '@ngneat/hotkeys';
 import { TranslocoModule } from '@ngneat/transloco';
+import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { tap } from 'rxjs/operators';
 import { NavigationService } from '../navigation/navigation.service';
-import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 
 @UntilDestroy()
 @Component({
@@ -20,7 +20,7 @@ export class NavigationButtonComponent implements OnInit {
   constructor(
     private navigationService: NavigationService,
     private hotkeys: HotkeysService
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.navigationService.isOpen$
@@ -31,7 +31,7 @@ export class NavigationButtonComponent implements OnInit {
       .subscribe();
 
     this.hotkeys
-      .addShortcut({ keys: 'meta.k' })
+      .addShortcut({ keys: 'control.k' })
       .pipe(
         tap(() => this.toggleNavigation()),
         untilDestroyed(this)
