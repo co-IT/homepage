@@ -1,22 +1,4 @@
-$player-width: calc(var(--content-width) - 2em);
-
 :host {
   display: block;
-}
-
-::ng-deep .youtube-player {
-  display: block;
-  width: $player-width;
-  aspect-ratio: 16/9;
-
-  > iframe {
-    display: block;
-    width: $player-width;
-    aspect-ratio: 16/9;
-    height: 100%;
-  }
-}
-
-.youtube-player-width-adjustment {
-  max-width: $player-width;
+  --youtube-player-width: calc(var(--content-width) - 2em);
 }

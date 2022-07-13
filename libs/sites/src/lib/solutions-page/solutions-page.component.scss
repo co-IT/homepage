@@ -1,5 +1,3 @@
-$player-width: calc(100% - 4em);
-
 section {
   padding: 4em 0;
 }
@@ -11,25 +9,7 @@ section {
 .solutions-page__example-video-player {
   display: flex;
   justify-content: flex-end;
-  min-height: 20em;
+
   width: 100%;
-}
-
-::ng-deep .youtube-player {
-  display: flex;
-  width: $player-width;
-  aspect-ratio: 16/9;
-  justify-content: flex-end;
-
-  > iframe {
-    display: block;
-    width: $player-width;
-    aspect-ratio: 16/9;
-    height: 100%;
-    align-self: right;
-  }
-}
-
-.youtube-player-width-adjustment {
-  max-width: $player-width;
+  --youtube-player-width: calc(100% - 2em);
 }
