@@ -20,7 +20,7 @@ export class NavigationButtonComponent implements OnInit {
   constructor(
     private navigationService: NavigationService,
     private hotkeys: HotkeysService
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.navigationService.isOpen$
@@ -31,7 +31,7 @@ export class NavigationButtonComponent implements OnInit {
       .subscribe();
 
     this.hotkeys
-      .addShortcut({ keys: 'control.k' })
+      .addShortcut({ keys: 'control.k', description: 'menu' })
       .pipe(
         tap(() => this.toggleNavigation()),
         untilDestroyed(this)

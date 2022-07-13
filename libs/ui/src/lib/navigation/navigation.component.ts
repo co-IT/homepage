@@ -7,7 +7,10 @@ import { CallToActionComponent } from '../call-to-action/call-to-action.componen
 import { getCurrentRoutePath } from '../toolbar/get-current-route-path';
 import { RouteInternal } from '../toolbar/routes-internal';
 import { NavigationService } from './navigation.service';
+import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+import { Hotkey, HotkeysModule, HotkeysService } from '@ngneat/hotkeys';
 
+@UntilDestroy()
 @Component({
   selector: 'cp-navigation',
   standalone: true,
@@ -16,12 +19,11 @@ import { NavigationService } from './navigation.service';
   styleUrls: ['./navigation.component.scss'],
 })
 export class NavigationComponent implements OnInit {
-  private currentRoutePath$ = getCurrentRoutePath();
   @Input() routesInternal?: RouteInternal[];
   @Input() isOpen = false;
   @Output() routeChanged = new EventEmitter<RouteInternal>();
-
   isNavigationOpen$;
+  private currentRoutePath$ = getCurrentRoutePath();
 
   constructor(private navigationService: NavigationService) {
     this.isNavigationOpen$ = navigationService.isOpen$.asObservable();
@@ -35,6 +37,7 @@ export class NavigationComponent implements OnInit {
     this.routeChanged.emit(route);
     this.navigationService.setNavigationState(false);
   }
+
   emitCurrentRoute() {
     this.currentRoutePath$
       .pipe(
@@ -42,7 +45,8 @@ export class NavigationComponent implements OnInit {
           this.routesInternal?.find((route) => path.includes(route.path))
         ),
         filter((route) => !!route),
-        tap((route) => this.routeChanged.emit(route))
+        tap((route) => this.routeChanged.emit(route)),
+        untilDestroyed(this)
       )
       .subscribe();
   }

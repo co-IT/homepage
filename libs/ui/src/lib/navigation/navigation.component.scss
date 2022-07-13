@@ -1,57 +1,44 @@
 .navigation {
-  display: block;
   overflow: hidden;
+  color: var(--white);
   max-height: 0;
   position: absolute;
   width: 100%;
   z-index: 1;
   background-color: var(--dark-gray);
   background-image: url('/assets/images/navigation-background.svg');
-  background-size: contain;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: right;
-  margin: unset;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   transition: max-height 0.3s ease-in-out;
 
   &.is-open {
-    max-height: 500px;
+    max-height: 100%;
   }
 }
 
 nav {
   display: flex;
-  padding-top: 1em;
+  margin: 2em 0;
+  gap: 1.25em;
   flex-direction: column;
-  color: white;
 
   > :last-child {
-    margin-bottom: 2em;
+    margin-top: 0.75em;
   }
 
   a {
     position: relative;
     text-decoration: none;
-    margin-top: 0.2em;
     color: var(--white);
     width: fit-content;
-    box-sizing: border-box;
     font-size: 1.5em;
     line-height: 1.0em;
-    padding-bottom: 0.5em;
-    font-weight: normal;
-
-    &:first-of-type {
-      padding-top: 0.8em;
-    }
-
-    &:last-of-type {
-      margin-bottom: 2em;
-    }
 
     .router-link-status {
       position: absolute;
-      height: 2px;
+      height: 0.125em;
       width: 0;
       background-color: var(--primary-color);
       transition: width 0.2s ease-in-out;
@@ -69,5 +56,21 @@ nav {
         width: 100%;
       }
     }
+  }
+}
+
+.hotkey-hint {
+  display: flex;
+  gap: 0.25em;
+  font-size: small;
+  margin-bottom: 0.5em;
+  color: var(--text-muted);
+
+  i {
+    color: var(--primary-color);
+  }
+
+  ::ng-deep kbd {
+    font-weight: 700;
   }
 }
