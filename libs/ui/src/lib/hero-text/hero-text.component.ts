@@ -10,10 +10,7 @@ import { TranslocoModule } from '@ngneat/transloco';
   styleUrls: ['./hero-text.component.scss'],
 })
 export class HeroTextComponent {
-  /**
-   * pass transloco i18n keys as *keys
-   */
-  @Input() textKey: string = '';
-  @Input() emphasizedTextKey: string = '';
+  @Input() text: string = '';
+  @Input() emphasizedText: string = '';
   @Input() icon: string = '';
 }
