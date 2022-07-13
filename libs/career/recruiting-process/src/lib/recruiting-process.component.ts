@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import {
   CallToActionComponent,
+  HeroTextComponent,
   JobOfferTileComponent,
   VideoTileComponent,
 } from '@cp/ui';
@@ -18,14 +19,18 @@ import { RecruitingTimelineComponent } from './recruiting-timeline/recruiting-ti
   selector: 'cp-recruiting-process',
   standalone: true,
   imports: [
+    CallToActionComponent,
+    CallToActionComponent,
     CommonModule,
+    HeroTextComponent,
+    HeroTextComponent,
+    JobOfferTileComponent,
+    MarkdownModule,
+    RecruitingTimelineComponent,
     RouterModule,
     TranslocoModule,
-    MarkdownModule,
-    CallToActionComponent,
     VideoTileComponent,
-    RecruitingTimelineComponent,
-    JobOfferTileComponent,
+    VideoTileComponent,
   ],
   providers: [RecruitingProcessVideoRepository],
   templateUrl: './recruiting-process.component.html',
