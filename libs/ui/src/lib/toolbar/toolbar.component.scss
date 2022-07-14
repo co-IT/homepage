@@ -8,7 +8,7 @@
 .content {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
-  grid-column-gap: 2em;
+  grid-column-gap: 3em;
 }
 
 .toolbar__nav {
@@ -24,4 +24,14 @@
 
 .toolbar__button {
   display: flex;
+}
+
+@media only screen and (max-width: 54rem){
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .toolbar__logo {
+    display: none;
+  }
 }
