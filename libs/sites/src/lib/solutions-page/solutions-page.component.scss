@@ -1,5 +1,10 @@
+@import 'layout';
 section {
   padding: 4em 0;
+}
+
+.content img {
+  @include hide-on-small-screen
 }
 
 .solutions-page__example-video-section {
