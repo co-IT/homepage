@@ -1,0 +1,17 @@
+button {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+
+  border: 1px solid var(--black);
+  border-radius: var(--border-radius);
+  background-color: var(--white);
+  transition: all 0.2s;
+  cursor: pointer;
+  color: var(--black);
+
+  &:hover {
+    background-color: var(--black);
+    color: var(--white);
+  }
+}
