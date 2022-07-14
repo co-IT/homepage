@@ -1,1 +1,1 @@
-Wir unterstützen Sie nachhaltig bei der gesamten [Wertschöpfung](/solutions), indem wir Ihnen helfen Herausforderungen zu meistern, Chancen wahrzunehmen und Ihre Ideen auf die Straße zu bringen.
+Text: Dann bringen wir Ihre Ideen auf die Straße, ebenen Ihnen neue Wege und schaffen gemeinsam nachhaltige Werte. Mutige Veränderungen sind unsere Leidenschaft.
