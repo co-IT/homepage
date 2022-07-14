@@ -56,7 +56,7 @@ export class AppComponent {
       hasTitlePrimaryBackground: true,
     },
     {
-      path: '/recruiting-process',
+      path: '/career',
       text: this.transloco.translate('navigation.career'),
       title: 'recruiting-process.page-title',
       subtitle: 'recruiting-process.page-subtitle',
