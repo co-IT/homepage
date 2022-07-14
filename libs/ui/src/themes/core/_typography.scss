@@ -104,6 +104,14 @@ h1 {
   }
 }
 
+@media only screen and (min-width: 48rem) {
+  .text-box-glass {
+    p {
+      max-width: 20em;
+    }
+  }
+}
+
 .text-box-glass {
   border-radius: 8px;
   background: linear-gradient(
@@ -119,7 +127,7 @@ h1 {
     font-size: 1.6em;
     line-height: 1.4em;
     color: var(--blue-ocean);
-    max-width: 20em;
+    max-width: 48em;
   }
 
   a {
