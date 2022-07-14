@@ -1,5 +1,10 @@
+@import 'layout';
 :host {
   display: block;
+}
+
+.content img {
+  @include hide-on-small-screen
 }
 
 .quote {

@@ -1,3 +1,9 @@
+@import 'layout';
+
+.content img {
+  @include hide-on-small-screen
+}
+
 .recruiting-process__globe-image {
   max-width: 30em;
 }
