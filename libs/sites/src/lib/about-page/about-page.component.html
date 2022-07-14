@@ -4,21 +4,20 @@
   <div class="flow flow--xl">
     <section>
       <div class="content">
-        <div class="intro">{{t('about-page.intro')}}</div>
+        <div class="intro">{{ t('about-page.intro') }}</div>
       </div>
     </section>
     <section>
       <div class="content">
         <div class="columns columns-two">
           <img
+            class="hide-on-small-screen"
             [alt]="t('about-page.images.change.alt')"
             src="/assets/images/moving.svg"
           />
           <div class="flow">
             <article>
-              <markdown
-                [src]="t('about-page.articles.change.src')"
-              ></markdown>
+              <markdown [src]="t('about-page.articles.change.src')"></markdown>
             </article>
           </div>
         </div>
@@ -35,6 +34,7 @@
             </article>
           </div>
           <img
+            class="hide-on-small-screen"
             [alt]="t('about-page.images.collaboration.alt')"
             src="/assets/images/team-collaboration.svg"
           />
@@ -45,6 +45,7 @@
       <div class="content">
         <div class="columns columns-two">
           <img
+            class="hide-on-small-screen"
             [alt]="t('about-page.images.fascination.alt')"
             src="/assets/images/having-fun.svg"
           />
@@ -60,14 +61,16 @@
     </section>
     <section>
       <div class="content">
-        <div class="quote">{{t('about-page.quote')}}</div>
+        <div class="quote">{{ t('about-page.quote') }}</div>
       </div>
     </section>
     <section>
       <div class="content">
         <img
+          class="hide-on-small-screen"
           [alt]="t('about-page.images.team.alt')"
-          src="/assets/images/co-it-team.webp">
+          src="/assets/images/co-it-team.webp"
+        />
       </div>
     </section>
   </div>
