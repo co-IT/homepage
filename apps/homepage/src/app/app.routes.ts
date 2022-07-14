@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: 'recruiting-process',
+    path: 'career',
     loadChildren: () =>
       import('@cp/career/recruiting-process').then((m) => m.routes),
   },
