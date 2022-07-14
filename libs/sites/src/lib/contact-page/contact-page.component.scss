@@ -1,3 +1,5 @@
+@import 'layout';
+
 .alternate-section {
   background-color: var(--gray-lightest);
   padding: 4em 0;
@@ -26,6 +28,7 @@ iframe {
   width: 100%;
   border: none;
   border-radius: 0.5em;
+  @include hide-on-small-screen;
 }
 
 @media only screen and (min-width: 54rem) {

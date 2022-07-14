@@ -14,6 +14,16 @@
   }
 }
 
+$mobile-size: 48rem;
+
+@mixin hide-on-small-screen {
+  display: none;
+
+  @media only screen and (min-width: $mobile-size) {
+    display: block;
+  }
+}
+
 .content {
   margin-left: auto;
   margin-right: auto;
