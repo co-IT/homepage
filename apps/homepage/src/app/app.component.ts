@@ -32,7 +32,7 @@ export class AppComponent {
 
   protected routesInternal: RouteInternal[] = [
     {
-      path: '/welcome',
+      path: '/start',
       text: this.transloco.translate('navigation.start'),
       title: 'landing-page.page-title',
       subtitle: 'landing-page.page-subtitle',
