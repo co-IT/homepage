@@ -2,16 +2,16 @@
   display: block;
 
   &.small {
-a {
-  padding: 0.4em 1em;
-  border-radius: 0.4em;
-}
+    a {
+      padding: 0.4em 1em;
+      border-radius: 0.4em;
+    }
 
-&.gradient {
-  a {
-    background-image: radial-gradient(24.9% 183.28% at 52.66% 0%, #FFC648 0%, #FFAF00 100%);
-  }
-}
+    &.gradient {
+      a {
+        background-image: radial-gradient(24.9% 183.28% at 52.66% 0%, #FFC648 0%, #FFAF00 100%);
+      }
+    }
   }
 }
 
