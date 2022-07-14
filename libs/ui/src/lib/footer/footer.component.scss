@@ -10,10 +10,10 @@
 }
 
 .links {
-  display: grid;
-  grid-column-gap: 2em;
-  grid-auto-flow: column;
-  grid-template-rows: repeat(3, max-content);
+  display: flex;
+  gap: 1em;
+  align-items: center;
+
 }
 
 .logo {
@@ -23,4 +23,11 @@
 
 .link {
   color: var(--text-color);
+}
+
+
+.icon {
+  color: var(--dark-gray);
+  max-width: 3em;
+  width: 100%;
 }
