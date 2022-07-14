@@ -7,6 +7,7 @@ import {
   NavigationComponent,
   PageTitleComponent,
   RouteInternal,
+  ScrollToTopButtonComponent,
   ToolbarComponent,
 } from '@cp/ui';
 import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
@@ -23,6 +24,7 @@ import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
     FooterComponent,
     PageTitleComponent,
     ToolbarComponent,
+    ScrollToTopButtonComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
