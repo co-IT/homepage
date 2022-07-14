@@ -2,6 +2,7 @@
   padding: 1em 0;
   background-color: var(--primary-color);
   width: 100%;
+  position: relative;
 }
 
 .content {
@@ -13,7 +14,6 @@
   display: flex;
   gap: 1em;
   align-items: center;
-
 }
 
 .logo {
@@ -25,9 +25,18 @@
   color: var(--text-color);
 }
 
-
 .icon {
   color: var(--dark-gray);
   max-width: 3em;
   width: 100%;
+}
+
+.triangle {
+  position: absolute;
+  top: -1em;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100vw 1em 0px;
+  border-color: transparent transparent var(--primary-color) transparent;
 }
