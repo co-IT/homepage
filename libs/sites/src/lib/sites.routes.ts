@@ -1,12 +1,12 @@
 import { Routes } from '@angular/router';
-import { ContactPageComponent } from './contact-page/contact-page.component';
-import { SolutionsPageComponent } from './solutions-page/solutions-page.component';
-import { PremiumPageComponent } from './premium-page/premium-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { PremiumPageComponent } from './premium-page/premium-page.component';
+import { SolutionsPageComponent } from './solutions-page/solutions-page.component';
 
 export const routes: Routes = [
-  { path: 'welcome', pathMatch: 'full', component: LandingPageComponent },
+  { path: 'start', pathMatch: 'full', component: LandingPageComponent },
   {
     path: 'contact',
     component: ContactPageComponent,
@@ -25,6 +25,6 @@ export const routes: Routes = [
   { path: 'about', pathMatch: 'full', component: AboutPageComponent },
   {
     path: '**',
-    redirectTo: '/welcome',
+    redirectTo: '/start',
   },
 ];
