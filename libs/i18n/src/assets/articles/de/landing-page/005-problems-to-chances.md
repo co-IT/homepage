@@ -1,1 +1,1 @@
-Text: Dann bringen wir Ihre Ideen auf die Straße, ebenen Ihnen neue Wege und schaffen gemeinsam nachhaltige Werte. Veränderungen zu etwas Positivem zu machen ist [unsere Leidenschaft][/about].
+Text: Dann bringen wir Ihre Ideen auf die Straße, ebenen Ihnen neue Wege und schaffen gemeinsam nachhaltige Werte. Veränderungen zu etwas Positivem zu machen ist [unsere Leidenschaft](/about).
