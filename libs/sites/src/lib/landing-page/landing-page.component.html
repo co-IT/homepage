@@ -30,9 +30,12 @@
   <section class="image-with-gradient-blue-blue center-content">
     <div class="content">
       <div class="columns columns-two">
-        <h2 class="heading-hero text-white">
-          {{ t('landing-page.articles.full-service.heading') }}
-        </h2>
+        <div class="flow | flow--m">
+          <h2 class="heading-hero text-white">
+            {{ t('landing-page.articles.full-service.heading') }}
+          </h2>
+          <cp-hero-link text="Lösung anfragen" url="/contact"></cp-hero-link>
+        </div>
         <article class="text-box-glass">
           <markdown
             [src]="t('landing-page.articles.full-service.src')"

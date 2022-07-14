@@ -1,14 +1,18 @@
-@use "sass:math";
+@use 'sass:math';
 
-@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+@mixin transition(
+  $property: all,
+  $duration: 0.45s,
+  $ease: cubic-bezier(0.65, 0, 0.076, 1)
+) {
   transition: $property $duration $ease;
 }
 
 $background-color: var(--white);
 $foreground-color: var(--black);
-$font-size: 4em;
-$container-size: $font-size * 1.125;
-$icon-width: math.div($container-size, 20);
+$font-size: 2em;
+$container-size: $font-size * 1.5;
+$icon-width: math.div($container-size, 25);
 
 :host {
   display: inline-block;
@@ -48,7 +52,7 @@ a {
           &::before {
             position: absolute;
             content: '';
-            top: -(math.div($container-size, 8 )) + math.div($icon-width, 2);
+            top: -(math.div($container-size, 8)) + math.div($icon-width, 2);
             width: math.div($container-size, 4);
             height: math.div($container-size, 4);
             border-top: $icon-width solid $foreground-color;
@@ -63,8 +67,9 @@ a {
       @include transition();
       display: inline-block;
       position: relative;
-      top: -(math.div($container-size, 4.25 ));
-      margin: 0 math.div($container-size, 7) 0 math.div($container-size, 3);
+      top: -1.25em;
+      margin-left: 1.8em;
+      margin-right: 0.8em;
       color: $background-color;
       line-height: 1em;
       font-size: $font-size;
