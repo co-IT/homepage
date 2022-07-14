@@ -41,11 +41,6 @@ $mobile-size: 48rem;
   justify-content: center;
 }
 
-.columns-auto--xl {
-  @extend .columns-auto;
-  grid-template-columns: repeat(auto-fit, minmax(20em, 26em));
-}
-
 .columns {
   grid-gap: 2em;
   display: grid;
@@ -78,6 +73,10 @@ $mobile-size: 48rem;
   }
 }
 
+.columns-auto--xl {
+  @extend .columns-auto;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 26em));
+}
 
 .center-content {
   display: grid;
