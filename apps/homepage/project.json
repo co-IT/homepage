@@ -28,11 +28,6 @@
             "output": "assets"
           },
           {
-            "input": "libs/career/recruiting-process/src/assets",
-            "glob": "**/*",
-            "output": "assets"
-          },
-          {
             "input": "libs/ui/src/assets",
             "glob": "**/*",
             "output": "assets"

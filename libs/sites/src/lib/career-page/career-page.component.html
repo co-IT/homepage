@@ -12,7 +12,7 @@
           <div class="flow">
             <article>
               <markdown
-                [src]="t('recruiting-process.articles.you-can-sit-with-us.src')"
+                [src]="t('career.articles.you-can-sit-with-us.src')"
               ></markdown>
             </article>
             <cp-call-to-action
@@ -30,11 +30,11 @@
         <div class="columns columns-two">
           <article>
             <markdown
-              [src]="t('recruiting-process.articles.our-promise.src')"
+              [src]="t('career.articles.our-promise.src')"
             ></markdown>
           </article>
           <img
-            class="recruiting-process__globe-image"
+            class="career__globe-image"
             src="/assets/images/connected-world.svg"
             alt="Globe with a few flight routes showing that the world is connected"
           />
@@ -45,7 +45,7 @@
     <div class="flow flow--xl">
       <section
         *ngFor="let videoCollection of videos | keyvalue: preserveOriginalOrder"
-        class="recruiting-process__videos-section"
+        class="career__videos-section"
       >
         <div class="content | flow">
           <h2 class="">{{ t(videoCollection.value.heading) }}</h2>
@@ -64,11 +64,11 @@
     </div>
 
 
-    <section class="recruiting-process__hero-text-section">
+    <section class="career__hero-text-section">
       <div class="content | flow">
         <cp-hero-text
-          [emphasizedText]="t('recruiting-process.we-are-ready.emphasized-text')"
-          [text]="t('recruiting-process.we-are-ready.text')"
+          [emphasizedText]="t('career.we-are-ready.emphasized-text')"
+          [text]="t('career.we-are-ready.text')"
           icon="mdi mdi-exclamation"
         ></cp-hero-text>
       </div>
@@ -76,10 +76,10 @@
 
     <section>
       <div class="content">
-        <div class="columns columns-two recruiting-process__proceed-section">
+        <div class="columns columns-two career__proceed-section">
           <img
             src="/assets/images/proceed.svg"
-            [alt]="t('recruiting-process.timeline.svg.alt')"
+            [alt]="t('career.timeline.svg.alt')"
           />
           <cp-recruiting-timeline></cp-recruiting-timeline>
         </div>
@@ -88,7 +88,7 @@
 
     <section>
       <div class="content | flow">
-        <h2>{{ t('recruiting-process.job-offers.heading') }}</h2>
+        <h2>{{ t('career.job-offers.heading') }}</h2>
         <div class="columns-auto--xl flow--s">
           <ng-container *ngIf="jobOffers$ | async as jobOffers">
             <cp-job-offer-tile
