@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
-@mixin link__chain--pseudo($arrow-color) {
+@mixin link__chain--pseudo {
   content: '';
   display: inline-block;
   background-repeat: no-repeat;
@@ -11,7 +11,7 @@
   mask: url(/assets/icons/link-variant.svg) no-repeat 100% 100%;
   -webkit-mask-size: cover;
   mask-size: cover;
-  background-color: $arrow-color;
+  background-color: currentColor;
 }
 
 body {
@@ -53,17 +53,6 @@ h1 {
 
   a {
     color: var(--white);
-
-    /*
-     * Each link is suffixed with a chain icon
-     * The icon needs to be copied to the assets folder.
-     * With Angular CLI wie can do this in the project.json.
-     *
-     * To color the link we use mask. (fill and color did not work with mdi-icons)
-     */
-    &::before {
-      @include link__chain--pseudo(var(--white));
-    }
   }
 }
 
@@ -138,7 +127,7 @@ h1 {
 }
 
 /*
-   * Each link in markdown content is suffixed with an arrow icon
+   * Each link in markdown content is suffixed with a chain icon
    * The icon needs to be copied to the assets folder.
    * With Angular CLI wie can do this in the project.json.
    *
@@ -146,5 +135,5 @@ h1 {
    */
 
 markdown a::before {
-  @include link__chain--pseudo(var(--blue-ocean));
+  @include link__chain--pseudo;
 }
