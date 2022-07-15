@@ -10,6 +10,4 @@ Schau dir auch unsere Playlist https://e.co-IT.eu/das-macht-uns-aus mit Inhalten
 👉 Wir bieten Lösungen beschreiten Wege \
 👉 Wir wollen Veränderung, darum bieten wir dir Sicherheit \
 👉 Wir verstehen Menschen, also verstehen wir Unternehmen \
-👉 Wir sind Teil einer Unternehmensfamilie \
-
-an.
+👉 Wir sind Teil einer Unternehmensfamilie an.

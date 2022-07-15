@@ -22,5 +22,4 @@ Schau dir auch unsere anderen Playlist an:
 👉 Erreiche mit uns gemeinsam die ganz großen Ziele \
 👉 Erlebe moderne, menschenzentrierte Führung \
 👉 Schaffe nutzerorientierte Prozesse mit uns \
-👉 Tausche dich in unserem Netzwerk aus \
-an.
+👉 Tausche dich in unserem Netzwerk aus an.

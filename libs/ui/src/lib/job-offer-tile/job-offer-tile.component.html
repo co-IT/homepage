@@ -10,7 +10,12 @@
     <div class="job-offer__tags">
       <cp-pill *ngFor="let tag of tags" [text]="tag"></cp-pill>
     </div>
-    <a *ngIf="url" [href]="url" class="job-offer__button"
-       target="_blank">{{t('career.job-offers.details')}}</a>
+    <cp-call-to-action
+      *ngIf="url"
+      [href]="url"
+      [icon]="'mdi mdi-magnify'"
+      [text]="t('career.job-offers.details')"
+      class="job-offer__button">
+    </cp-call-to-action>
   </div>
 </ng-container>
