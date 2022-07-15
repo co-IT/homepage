@@ -40,3 +40,7 @@ body {
   color: var(--text-color);
   min-height: 100%;
 }
+
+::selection {
+  background: var(--primary-color);
+}
