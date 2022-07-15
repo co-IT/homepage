@@ -22,3 +22,9 @@
 .recruiting-process__hero-text-section {
   padding: 2em 0;
 }
+
+@media only screen and (max-width: 54rem){
+  .recruiting-process__hero-text-section {
+    display: none;
+  }
+}
