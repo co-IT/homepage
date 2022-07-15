@@ -41,14 +41,13 @@
   color: var(--text-color);
 }
 
-
 .triangle {
   position: absolute;
-  top: -2.5em;
+  top: -1em;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 0 2.5em 100vw;
+  border-width: 0 0 1em 100vw;
   border-color: transparent transparent var(--primary-color) transparent;
 }
 
@@ -56,5 +55,10 @@
   .content {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .triangle {
+    top: -2.5em;
+    border-width: 0 0 2.5em 100vw;
   }
 }

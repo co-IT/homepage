@@ -1,9 +1,10 @@
 <ng-container *transloco="let t">
-  <div class="spacer--xl"></div>
+  <div class="spacer"></div>
   <ng-container *ngIf="video$ | async as video">
     <div class="content | flow flow--m">
       <cp-cinema-header>{{ t(video.title) }}</cp-cinema-header>
       <cp-cinema-player [video]="video"></cp-cinema-player>
     </div>
   </ng-container>
+  <div class="spacer--xl"></div>
 </ng-container>
