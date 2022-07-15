@@ -7,7 +7,7 @@
       #02024d 100%
     ),
     url('../../assets/images/team-workshop-gray.webp');
-  height: 56em;
+  min-height: 32em;
   background-size: cover;
   background-position: center;
 }
@@ -21,7 +21,7 @@
       #02024d 100%
     ),
     url('../../assets/images/team-standing-at-desk-gray.webp');
-  min-height: 56em;
+  min-height: 32em;
   background-size: cover;
   background-position: center;
 }
@@ -35,7 +35,7 @@
       #02024d 100%
     ),
     url('../../assets/images/meeting-in-the-garden.webp');
-  min-height: 56em;
+  min-height: 32em;
   background-size: cover;
   background-position: center;
 }
@@ -43,7 +43,7 @@
 .section-solid-blue-ocean {
   background: var(--blue-ocean);
   padding: 2em;
-  min-height: 40em;
+  min-height: 24em;
 }
 
 .section-half-solid-blue-ocean {
@@ -61,4 +61,17 @@
 
 cp-hero-link{
   justify-self: start;
+}
+
+@media only screen and (min-width: 54rem) {
+  .image-with-gradient-orange-blue,
+  .image-with-gradient-blue-blue,
+  .image-with-gradient-blue-blue-garden
+  {
+    min-height: 56em;
+  }
+
+  .section-solid-blue-ocean{
+    min-height: 40em;
+  }
 }
