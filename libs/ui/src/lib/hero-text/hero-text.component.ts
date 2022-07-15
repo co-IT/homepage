@@ -10,7 +10,7 @@ import { TranslocoModule } from '@ngneat/transloco';
   styleUrls: ['./hero-text.component.scss'],
 })
 export class HeroTextComponent {
-  @Input() text: string = '';
-  @Input() emphasizedText: string = '';
-  @Input() icon: string = '';
+  @Input() text = '';
+  @Input() emphasizedText = '';
+  @Input() icon = '';
 }
