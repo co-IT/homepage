@@ -1,4 +1,4 @@
-import { Video } from './video';
+import { Video } from '../../cinema-page/models';
 
 export interface VideoCollectionGrouped {
   [key: string]: VideoCollection;

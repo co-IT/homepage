@@ -12,11 +12,11 @@ import { MarkdownModule } from 'ngx-markdown';
 import { Observable } from 'rxjs';
 import { JobOffer, VideoCollectionGrouped } from './models';
 import { RecruiteeService } from './recruitee.service';
-import { RecruitingProcessVideoRepository } from './recruiting-process-video-repository.service';
+import { CareerVideoRepository } from './career-video-repository.service';
 import { RecruitingTimelineComponent } from './recruiting-timeline/recruiting-timeline.component';
 
 @Component({
-  selector: 'cp-recruiting-process',
+  selector: 'cp-career-page',
   standalone: true,
   imports: [
     CallToActionComponent,
@@ -32,24 +32,24 @@ import { RecruitingTimelineComponent } from './recruiting-timeline/recruiting-ti
     VideoTileComponent,
     VideoTileComponent,
   ],
-  providers: [RecruitingProcessVideoRepository],
-  templateUrl: './recruiting-process.component.html',
-  styleUrls: ['./recruiting-process.component.scss'],
+  providers: [CareerVideoRepository],
+  templateUrl: './career-page.component.html',
+  styleUrls: ['./career-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CareerRecruitingProcessComponent {
+export class CareerPageComponent {
   videos: VideoCollectionGrouped;
   jobOffers$: Observable<JobOffer[]>;
 
   constructor(
-    repository: RecruitingProcessVideoRepository,
+    repository: CareerVideoRepository,
     private recruiteeService: RecruiteeService
   ) {
     this.videos = repository.videos;
     this.jobOffers$ = this.recruiteeService.getJobOffers();
   }
 
-  protected preserveOriginalOrder() {
+  preserveOriginalOrder() {
     return 0;
   }
 }
