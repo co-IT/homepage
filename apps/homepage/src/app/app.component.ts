@@ -60,8 +60,8 @@ export class AppComponent {
     {
       path: '/career',
       text: this.transloco.translate('navigation.career'),
-      title: 'recruiting-process.page-title',
-      subtitle: 'recruiting-process.page-subtitle',
+      title: 'career.page-title',
+      subtitle: 'career.page-subtitle',
       displayType: 'link',
     },
     {
