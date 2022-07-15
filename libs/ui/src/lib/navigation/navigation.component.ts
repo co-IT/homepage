@@ -2,13 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslocoModule } from '@ngneat/transloco';
-import { filter, map, tap } from 'rxjs/operators';
+import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+import { filter, map, shareReplay, tap } from 'rxjs/operators';
 import { CallToActionComponent } from '../call-to-action/call-to-action.component';
 import { getCurrentRoutePath } from '../toolbar/get-current-route-path';
 import { RouteInternal } from '../toolbar/routes-internal';
 import { NavigationService } from './navigation.service';
-import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
-import { Hotkey, HotkeysModule, HotkeysService } from '@ngneat/hotkeys';
 
 @UntilDestroy()
 @Component({
@@ -20,13 +19,14 @@ import { Hotkey, HotkeysModule, HotkeysService } from '@ngneat/hotkeys';
 })
 export class NavigationComponent implements OnInit {
   @Input() routesInternal?: RouteInternal[];
-  @Input() isOpen = false;
   @Output() routeChanged = new EventEmitter<RouteInternal>();
   isNavigationOpen$;
   private currentRoutePath$ = getCurrentRoutePath();
 
   constructor(private navigationService: NavigationService) {
-    this.isNavigationOpen$ = navigationService.isOpen$.asObservable();
+    this.isNavigationOpen$ = navigationService.isOpen$
+      .asObservable()
+      .pipe(shareReplay(), untilDestroyed(this));
   }
 
   ngOnInit(): void {
@@ -35,7 +35,7 @@ export class NavigationComponent implements OnInit {
 
   routerLinkClick(route: RouteInternal | undefined) {
     this.routeChanged.emit(route);
-    this.navigationService.setNavigationState(false);
+    this.close();
   }
 
   emitCurrentRoute() {
@@ -49,5 +49,9 @@ export class NavigationComponent implements OnInit {
         untilDestroyed(this)
       )
       .subscribe();
+  }
+
+  close() {
+    this.navigationService.setNavigationState(false);
   }
 }
