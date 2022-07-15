@@ -20,7 +20,14 @@
 .icon-links {
   display: flex;
   gap: 1em;
+  justify-content: center;
   align-items: center;
+
+  i {
+    font-size: 2.5em;
+    color: var(--dark-gray);
+    line-height: 1em;
+  }
 }
 
 .logo {
@@ -32,11 +39,6 @@
   color: var(--text-color);
 }
 
-.icon {
-  color: var(--dark-gray);
-  max-width: 3em;
-  width: 100%;
-}
 
 .triangle {
   position: absolute;
