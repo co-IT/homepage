@@ -14,7 +14,7 @@
   }
 }
 
-$mobile-size: 48rem;
+$mobile-size: 54rem;
 
 @mixin hide-on-small-screen {
   display: none;
@@ -46,7 +46,7 @@ $mobile-size: 48rem;
   display: grid;
 }
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 70rem) {
   .columns {
     grid-gap: 5em;
     grid-auto-columns: 1fr;
