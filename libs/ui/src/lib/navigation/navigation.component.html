@@ -1,11 +1,16 @@
 <ng-container *transloco="let t">
+  <div
+    [class.is-open]="isNavigationOpen$ | async"
+    class="backdrop"
+    (click)="close()"
+  ></div>
   <div [class.is-open]="isNavigationOpen$ | async" class="navigation">
     <div class="content">
       <nav class="toolbar__nav">
         <ng-container *ngFor="let route of routesInternal">
           <a
             (click)="routerLinkClick(route)"
-            *ngIf="route.displayType=== 'link'"
+            *ngIf="route.displayType === 'link'"
             [routerLinkActiveOptions]="{ exact: true }"
             [routerLink]="route.path"
             class="toolbar__link"
@@ -15,12 +20,13 @@
             <div class="router-link-status"></div>
           </a>
           <cp-call-to-action
-            (click)="routerLinkClick(route) "
-            *ngIf="route.displayType==='button'"
-            [internalRouterLink]="['/','contact']"
+            (click)="routerLinkClick(route)"
+            *ngIf="route.displayType === 'button'"
+            [internalRouterLink]="['/', 'contact']"
             [text]="t('navigation.contact.call-to-action')"
             class="small gradient"
-            target="_self">
+            target="_self"
+          >
           </cp-call-to-action>
         </ng-container>
       </nav>
