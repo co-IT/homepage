@@ -8,7 +8,9 @@
 
 .content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
 }
 
 .links {
@@ -48,4 +50,11 @@
   border-style: solid;
   border-width: 0 0 2.5em 100vw;
   border-color: transparent transparent var(--primary-color) transparent;
+}
+
+@media only screen and (min-width: 54rem) {
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
