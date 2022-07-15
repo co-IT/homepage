@@ -7,7 +7,11 @@
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "build:all": "nx run-many --all --target=build",
+    "test": "nx test",
+    "test:all": "nx run-many --all --target=test",
+    "lint": "nx lint",
+    "lint:all": "nx run-many --all --target=lint"
   },
   "engines": {
     "node": "^16",
