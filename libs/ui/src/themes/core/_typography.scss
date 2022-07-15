@@ -50,6 +50,7 @@ h1 {
 }
 
 .text-size-m {
+  font-size: 1.2em;
   letter-spacing: 0.05em;
   line-height: 1.2em;
 }
@@ -113,7 +114,6 @@ h1 {
 @media only screen and (min-width: 54rem) {
   .text-box-glass {
     p {
-      max-width: 20em;
       font-size: 1.6em;
     }
   }
