@@ -4,6 +4,8 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PremiumPageComponent } from './premium-page/premium-page.component';
 import { SolutionsPageComponent } from './solutions-page/solutions-page.component';
+import { CareerPageComponent } from './career-page/career-page.component';
+import { CinemaPageComponent } from './cinema-page/cinema-page.component';
 
 export const routes: Routes = [
   { path: 'start', pathMatch: 'full', component: LandingPageComponent },
@@ -21,6 +23,15 @@ export const routes: Routes = [
     path: 'premium',
     component: PremiumPageComponent,
     pathMatch: 'full',
+  },
+  {
+    path: 'career',
+    component: CareerPageComponent,
+    pathMatch: 'full',
+  },
+  {
+    path: 'cinema/:videoId',
+    component: CinemaPageComponent,
   },
   { path: 'about', pathMatch: 'full', component: AboutPageComponent },
   {
