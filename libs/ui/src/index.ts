@@ -18,3 +18,4 @@ export * from './lib/video-tile/video-tile-icon';
 export * from './lib/video-tile/video-tile.component';
 export * from './lib/youtube.service';
 export * from './lib/scroll-to-top-button/scroll-to-top-button.component';
+export * from './lib/markdown/markdown.component';

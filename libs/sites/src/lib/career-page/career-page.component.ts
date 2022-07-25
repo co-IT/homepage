@@ -5,10 +5,10 @@ import {
   CallToActionComponent,
   HeroTextComponent,
   JobOfferTileComponent,
+  MarkdownComponent,
   VideoTileComponent,
 } from '@cp/ui';
 import { TranslocoModule } from '@ngneat/transloco';
-import { MarkdownModule } from 'ngx-markdown';
 import { Observable } from 'rxjs';
 import { JobOffer, VideoCollectionGrouped } from './models';
 import { RecruiteeService } from './recruitee.service';
@@ -25,7 +25,7 @@ import { RecruitingTimelineComponent } from './recruiting-timeline/recruiting-ti
     HeroTextComponent,
     HeroTextComponent,
     JobOfferTileComponent,
-    MarkdownModule,
+    MarkdownComponent,
     RecruitingTimelineComponent,
     RouterModule,
     TranslocoModule,
