@@ -5,10 +5,7 @@
       [videoId]="video.id"
     ></youtube-player>
     <article class="youtube-player-width-adjustment">
-      <markdown
-        [src]="'/assets/articles/de/video-descriptions/' + video.id + '.md'"
-      >
-      </markdown>
+      <cp-markdown [src]="'/assets/articles/de/video-descriptions/' + video.id + '.md'"></cp-markdown>
     </article>
   </div>
 </ng-container>

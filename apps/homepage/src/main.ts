@@ -1,7 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { enableProdMode, importProvidersFrom } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { provideTranslocoConfig, provideTranslocoLoader } from '@cp/i18n';
 import { configureCareerUI } from '@cp/ui';
 import { TranslocoModule } from '@ngneat/transloco';
@@ -15,7 +15,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 if (environment.production) {
   enableProdMode();
 }
-
 bootstrapApplication(AppComponent, {
   providers: [
     importProvidersFrom(BrowserAnimationsModule),

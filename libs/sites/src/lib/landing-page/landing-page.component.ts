@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { TranslocoModule } from '@ngneat/transloco';
-import { MarkdownModule } from 'ngx-markdown';
-import { CallToActionComponent, HeroLinkComponent } from '@cp/ui';
+import { HeroLinkComponent, MarkdownComponent } from '@cp/ui';
 
 @Component({
   selector: 'cp-landing-page',
   standalone: true,
-  imports: [TranslocoModule, MarkdownModule, HeroLinkComponent],
+  imports: [TranslocoModule, MarkdownComponent, HeroLinkComponent],
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.scss'],
 })
