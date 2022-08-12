@@ -59,7 +59,7 @@ jobs:
         with:
           inlineScript: |
             az account set --subscription "Productive_Sites"
-            az afd endpoint purge --content-paths  "/*" --profile-name "coiteu" --endpoint-name "coiteu" --resource-group "coIteu"
+            az afd endpoint purge --content-paths  "/*" --profile-name "coiteu" --endpoint-name "coiteu" --resource-group "coIteu" --domains "co-it.eu"
       - name: Azure logout
         run: |
             az logout
