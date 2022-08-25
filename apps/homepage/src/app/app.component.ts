@@ -78,6 +78,13 @@ export class AppComponent {
       subtitle: 'contact.page-subtitle',
       displayType: 'button',
     },
+    {
+      path: '/privacy',
+      text: this.transloco.translate('navigation.contact'),
+      title: 'privacy-page.title',
+      subtitle: '',
+      displayType: 'footer-link',
+    },
   ];
 
   constructor(private transloco: TranslocoService) {}

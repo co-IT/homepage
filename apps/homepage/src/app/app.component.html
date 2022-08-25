@@ -21,6 +21,8 @@
   <cp-footer
     logoSrc="/assets/images/logo.svg"
     [logoAlt]="t('landing-page.a11y.alternative-text')"
+    [routesInternal]="routesInternal"
+    (routeChanged)="routeRecentlyClicked = $event"
   ></cp-footer>
   <cp-scroll-to-top-button></cp-scroll-to-top-button>
 </ng-container>
