@@ -4,7 +4,7 @@
     <div class="links">
 
       <a *ngFor="let route of footerRoutes" (click)="routerLinkClick(route)" [routerLink]="[route.path]" class="link" target="_blank">{{
-        route.text
+        t(route.text)
       }}</a>
       <a
         [href]="t('footer.link.terms-of-use.href')"

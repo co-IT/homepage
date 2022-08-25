@@ -80,7 +80,7 @@ export class AppComponent {
     },
     {
       path: '/privacy',
-      text: this.transloco.translate('navigation.contact'),
+      text: this.transloco.translate('navigation.privacy'),
       title: 'privacy-page.title',
       subtitle: '',
       displayType: 'footer-link',
