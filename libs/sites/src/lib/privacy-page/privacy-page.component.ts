@@ -15,18 +15,18 @@ import { filter } from 'rxjs/operators';
 })
 @UntilDestroy()
 export class PrivacyPageComponent implements OnInit {
-  articles: { index: string; name: string }[] = [
-    { index: '018', name: 'designation' },
-    { index: '019', name: 'call-website' },
-    { index: '020', name: 'contact' },
-    { index: '021', name: 'advertisement' },
-    { index: '022', name: 'cookies' },
-    { index: '022', name: 'transfer' },
-    { index: '022', name: 'changes' },
-    { index: '022', name: 'subject-rights' },
-    { index: '022', name: 'questions' },
-    { index: '022', name: 'encryption' },
-    { index: '022', name: 'youtube' },
+  articles: string[] = [
+    'designation',
+    'call-website',
+    'contact',
+    'advertisement',
+    'cookies',
+    'transfer',
+    'changes',
+    'subject-rights',
+    'questions',
+    'encryption',
+    'youtube',
   ];
 
   constructor(

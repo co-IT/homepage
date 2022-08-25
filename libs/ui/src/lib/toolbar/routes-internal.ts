@@ -32,7 +32,7 @@ export interface RouteInternal {
   /**
    * How the entry is represented in the navigation
    */
-  displayType: string;
+  displayType: 'link' | 'button' | 'footer-link';
 
   /**
    * use the primary color for title background

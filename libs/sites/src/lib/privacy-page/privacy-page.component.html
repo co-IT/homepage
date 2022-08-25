@@ -1,15 +1,14 @@
 <ng-container *transloco="let t">
   <div class="spacer--xl"></div>
   <div class="flow flow--xl">
-
     <section>
       <div class="content">
         <div class="flow">
           <article>
             <ul>
               <li *ngFor="let article of articles">
-                <a [routerLink]="['.']" [fragment]="article.name">{{
-                  getHeading(article.name)
+                <a [routerLink]="['.']" [fragment]="article">{{
+                  getHeading(article)
                 }}</a>
               </li>
             </ul>
@@ -17,12 +16,12 @@
         </div>
       </div>
     </section>
-    <section *ngFor="let article of articles" [id]="article.name">
+    <section *ngFor="let article of articles" [id]="article">
       <div class="content">
         <div class="flow">
           <article>
             <cp-markdown
-              [src]="getFilePath(article.name)"
+              [src]="getFilePath(article)"
             ></cp-markdown>
           </article>
         </div>
