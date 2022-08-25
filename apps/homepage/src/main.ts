@@ -1,7 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { enableProdMode, importProvidersFrom } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { Router, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { provideTranslocoConfig, provideTranslocoLoader } from '@cp/i18n';
 import { configureCareerUI } from '@cp/ui';
 import { TranslocoModule } from '@ngneat/transloco';
@@ -9,8 +9,8 @@ import { MarkdownModule } from 'ngx-markdown';
 import { AppComponent } from './app/app.component';
 import { routes } from './app/app.routes';
 
-import { environment } from './environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { environment } from './environments/environment';
 
 if (environment.production) {
   enableProdMode();

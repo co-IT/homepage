@@ -2,8 +2,9 @@
   <div class="triangle"></div>
   <div class="content">
     <div class="links">
-      <a [href]="t('footer.link.privacy.href')" class="link" target="_blank">{{
-        t('footer.link.privacy.label')
+
+      <a *ngFor="let route of footerRoutes" (click)="routerLinkClick(route)" [routerLink]="[route.path]" class="link" target="_blank">{{
+        route.text
       }}</a>
       <a
         [href]="t('footer.link.terms-of-use.href')"

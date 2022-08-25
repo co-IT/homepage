@@ -1,0 +1,33 @@
+<ng-container *transloco="let t">
+  <div class="spacer--xl"></div>
+  <div class="flow flow--xl">
+
+    <section>
+      <div class="content">
+        <div class="flow">
+          <article>
+            <ul>
+              <li *ngFor="let article of articles">
+                <a [routerLink]="['.']" [fragment]="article.name">{{
+                  getHeading(article.name)
+                }}</a>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section *ngFor="let article of articles" [id]="article.name">
+      <div class="content">
+        <div class="flow">
+          <article>
+            <cp-markdown
+              [src]="getFilePath(article.name)"
+            ></cp-markdown>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="spacer--xl"></div>
+</ng-container>
