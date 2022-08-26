@@ -3,7 +3,7 @@
   <div class="content">
     <div class="links">
 
-      <a *ngFor="let route of footerRoutes" (click)="routerLinkClick(route)" [routerLink]="[route.path]" class="link" target="_blank">{{
+      <a *ngFor="let route of footerRoutes" (click)="routerLinkClick(route)" [routerLink]="[route.path]" class="link">{{
         t(route.text)
       }}</a>
       <a
