@@ -3,6 +3,7 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { CareerPageComponent } from './career-page/career-page.component';
 import { CinemaPageComponent } from './cinema-page/cinema-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { ImprintPageComponent } from './imprint-page/imprint-page.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PremiumPageComponent } from './premium-page/premium-page.component';
 import { PrivacyPageComponent } from './privacy-page/privacy-page.component';
@@ -36,6 +37,7 @@ export const routes: Routes = [
   },
   { path: 'about', pathMatch: 'full', component: AboutPageComponent },
   { path: 'privacy', pathMatch: 'full', component: PrivacyPageComponent },
+  { path: 'imprint', pathMatch: 'full', component: ImprintPageComponent },
   {
     path: '**',
     redirectTo: '/start',

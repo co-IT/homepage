@@ -10,6 +10,7 @@
   "navigation.premium": "{{premium.page-title}}",
   "navigation.contact.call-to-action": "Kontakt aufnehmen",
   "navigation.privacy": "Datenschutz",
+  "navigation.imprint": "Impressum",
   "navigation.hotkey-hint": "PRO-TIPP: Menü öffnen/schließen mit <kbd>STRG + K</kbd>.",
 
   "landing-page.page-title": "Inspire To Change",
@@ -146,10 +147,11 @@
   "privacy-page.youtube.heading": "11. YouTube",
   "privacy-page.youtube.src": "/assets/articles/de/privacy-page/028-youtube.md",
 
+  "imprint-page.text": "/assets/articles/de/imprint-page/029-imprint.md",
+  "imprint-page.title": "Impressum",
+
   "footer.link.terms-of-use.href": "http://e.co-it.eu/agb",
   "footer.link.terms-of-use.label": "AGB",
-  "footer.link.imprint.href": "http://e.co-it.eu/impressum",
-  "footer.link.imprint.label": "Impressum",
   "footer.link.youtube.href": "http://e.co-it.eu/youtube",
   "footer.link.youtube.label": "YouTube",
   "footer.link.github.href": "http://e.co-it.eu/github",

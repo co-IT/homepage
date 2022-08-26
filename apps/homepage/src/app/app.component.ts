@@ -85,6 +85,13 @@ export class AppComponent {
       subtitle: '',
       displayType: 'footer-link',
     },
+    {
+      path: '/imprint',
+      text: this.transloco.translate('navigation.imprint'),
+      title: 'imprint-page.title',
+      subtitle: '',
+      displayType: 'footer-link',
+    },
   ];
 
   constructor(private transloco: TranslocoService) {}
