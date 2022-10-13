@@ -1,4 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/assets/fonts/source-sans-pro/light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/assets/fonts/source-sans-pro/regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/assets/fonts/source-sans-pro/semi-bold.ttf') format('truetype');
+  font-weight: 600;
+}
 
 @mixin link__chain--pseudo {
   content: '';
@@ -91,9 +107,9 @@ h1 {
 .text-box-glass {
   border-radius: var(--border-radius);
   background: linear-gradient(
-      124.23deg,
-      rgba(255, 255, 255, 0.68) 33.92%,
-      rgba(255, 255, 255, 0.48) 95.25%
+    124.23deg,
+    rgba(255, 255, 255, 0.68) 33.92%,
+    rgba(255, 255, 255, 0.48) 95.25%
   );
   box-shadow: var(--box-shadow);
   backdrop-filter: blur(10px);
