@@ -1,7 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { enableProdMode, importProvidersFrom } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
+import { provideRouter } from '@angular/router';
 import { provideTranslocoConfig, provideTranslocoLoader } from '@cp/i18n';
 import { configureCareerUI } from '@cp/ui';
 import { TranslocoModule } from '@ngneat/transloco';
@@ -21,7 +21,7 @@ bootstrapApplication(AppComponent, {
 
     importProvidersFrom(HttpClientModule),
 
-    importProvidersFrom(RouterModule.forRoot(routes)),
+    provideRouter(routes),
 
     importProvidersFrom(TranslocoModule),
 
