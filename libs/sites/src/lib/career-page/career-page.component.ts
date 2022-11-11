@@ -1,12 +1,13 @@
 import { AsyncPipe, KeyValuePipe, NgFor, NgIf } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 import {
   CallToActionComponent,
   HeroTextComponent,
   JobOfferTileComponent,
   MarkdownComponent,
-  VideoTileComponent
+  VideoTileComponent,
+  YoutubeService
 } from '@cp/ui';
 import { TranslocoModule } from '@ngneat/transloco';
 import { Observable } from 'rxjs';
@@ -23,7 +24,7 @@ import { RecruitingTimelineComponent } from './recruiting-timeline/recruiting-ti
     NgFor,
     AsyncPipe,
     KeyValuePipe,
-    RouterLink,
+    YouTubePlayerModule,
     CallToActionComponent,
     HeroTextComponent,
     JobOfferTileComponent,
@@ -37,19 +38,25 @@ import { RecruitingTimelineComponent } from './recruiting-timeline/recruiting-ti
   styleUrls: ['./career-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CareerPageComponent {
+export class CareerPageComponent implements OnInit {
   videos: VideoCollectionGrouped;
   jobOffers$: Observable<JobOffer[]>;
 
   constructor(
+    private readonly youtubeService: YoutubeService,
     repository: CareerVideoRepository,
-    private recruiteeService: RecruiteeService
+    private readonly recruiteeService: RecruiteeService
   ) {
     this.videos = repository.videos;
     this.jobOffers$ = this.recruiteeService.getJobOffers();
+  }
+
+  ngOnInit(): void {
+    this.youtubeService.loadIFrameApi();
   }
 
   preserveOriginalOrder() {
     return 0;
   }
 }
+
