@@ -5,6 +5,9 @@
 /tmp
 /out-tsc
 
+# NX
+migrations.json
+
 # dependencies
 node_modules
 
