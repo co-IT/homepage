@@ -43,10 +43,10 @@
   display: flex;
   gap: 0.5em;
   min-height: 1em;
-  grid-column: 1
+  grid-column: 1;
 }
 
-@media only screen and(min-width: 29em) {
+@media only screen and (min-width: 29em) {
   .job-offer__container {
     grid-template-columns: 1fr max-content;
     grid-template-rows: max-content 1fr max-content;
