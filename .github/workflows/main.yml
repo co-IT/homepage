@@ -62,7 +62,7 @@ jobs:
             az afd endpoint purge --content-paths  "/*" --profile-name "coiteu" --endpoint-name "coiteu" --resource-group "coIteu" --domains "co-it.eu"
       - name: Azure logout
         run: |
-            az logout
+          az logout
         if: always()
   pr:
     runs-on: ubuntu-latest
@@ -102,12 +102,12 @@ jobs:
     timeout-minutes: 60
     strategy:
       matrix:
-        agent: [ 1, 2, 3 ]
+        agent: [1, 2, 3]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: '16'
-      - run: npm install
+          node-version: '18'
+      - run: npm ci
       - name: Start Nx Agent ${{ matrix.agent }}
         run: npx nx-cloud start-agent
