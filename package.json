@@ -1,6 +1,6 @@
 {
   "name": "change-pioneers",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "nx",
@@ -12,10 +12,6 @@
     "test:all": "nx run-many --all --target=test",
     "lint": "nx lint",
     "lint:all": "nx run-many --all --target=lint"
-  },
-  "engines": {
-    "node": "^16",
-    "npm": "^8"
   },
   "private": true,
   "dependencies": {
@@ -35,7 +31,7 @@
     "@ngneat/until-destroy": "9.2.2",
     "@nrwl/angular": "15.0.13",
     "ngx-markdown": "^13.1.0",
-    "rxjs": "~7.5.0",
+    "rxjs": "7.5.7",
     "tslib": "2.4.0",
     "zone.js": "0.11.6"
   },
@@ -44,7 +40,7 @@
     "@angular-eslint/eslint-plugin": "14.0.4",
     "@angular-eslint/eslint-plugin-template": "14.0.4",
     "@angular-eslint/template-parser": "14.0.4",
-    "@angular/cli": "~14.2.0",
+    "@angular/cli": "14.2.9",
     "@angular/compiler-cli": "14.2.10",
     "@angular/language-service": "14.2.10",
     "@nrwl/cli": "15.0.13",
@@ -58,7 +54,7 @@
     "@types/node": "16.11.7",
     "@typescript-eslint/eslint-plugin": "5.42.1",
     "@typescript-eslint/parser": "5.42.1",
-    "cypress": "^9.1.0",
+    "cypress": "10.11.0",
     "eslint": "8.15.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-cypress": "^2.10.3",
