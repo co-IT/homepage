@@ -9,6 +9,7 @@
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
+        "allowedCommonJsDependencies": ["flat"],
         "outputPath": "dist/apps/homepage",
         "index": "apps/homepage/src/index.html",
         "main": "apps/homepage/src/main.ts",
