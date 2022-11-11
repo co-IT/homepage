@@ -1,35 +1,35 @@
-import { CommonModule } from '@angular/common';
+import { AsyncPipe, KeyValuePipe, NgFor, NgIf } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import {
   CallToActionComponent,
   HeroTextComponent,
   JobOfferTileComponent,
   MarkdownComponent,
-  VideoTileComponent,
+  VideoTileComponent
 } from '@cp/ui';
 import { TranslocoModule } from '@ngneat/transloco';
 import { Observable } from 'rxjs';
+import { CareerVideoRepository } from './career-video-repository.service';
 import { JobOffer, VideoCollectionGrouped } from './models';
 import { RecruiteeService } from './recruitee.service';
-import { CareerVideoRepository } from './career-video-repository.service';
 import { RecruitingTimelineComponent } from './recruiting-timeline/recruiting-timeline.component';
 
 @Component({
   selector: 'cp-career-page',
   standalone: true,
   imports: [
+    NgIf,
+    NgFor,
+    AsyncPipe,
+    KeyValuePipe,
+    RouterLink,
     CallToActionComponent,
-    CallToActionComponent,
-    CommonModule,
-    HeroTextComponent,
     HeroTextComponent,
     JobOfferTileComponent,
     MarkdownComponent,
     RecruitingTimelineComponent,
-    RouterModule,
     TranslocoModule,
-    VideoTileComponent,
     VideoTileComponent,
   ],
   providers: [CareerVideoRepository],

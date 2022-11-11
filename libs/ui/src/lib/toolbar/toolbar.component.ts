@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { NgFor } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
@@ -10,7 +10,7 @@ import { ToolbarIconLinkComponent } from '../toolbar-icon/toolbar-icon-link.comp
   selector: 'cp-toolbar',
   standalone: true,
   imports: [
-    CommonModule,
+    NgFor,
     RouterModule,
     TranslocoModule,
     NavigationButtonComponent,
@@ -23,7 +23,7 @@ export class ToolbarComponent {
   @Input() logoSrc?: string;
   @Input() logoAlt?: string;
 
-  constructor(private transloco: TranslocoService) {}
+  constructor(private transloco: TranslocoService) { }
 
   toolbarIconLinks: ToolbarIconLink[] = [
     {

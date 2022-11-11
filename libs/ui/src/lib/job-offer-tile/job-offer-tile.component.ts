@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { TranslocoModule } from '@ngneat/transloco';
 import { CallToActionComponent } from '../call-to-action/call-to-action.component';
@@ -8,7 +8,8 @@ import { PillComponent } from '../pill/pill.component';
   selector: 'cp-job-offer-tile',
   standalone: true,
   imports: [
-    CommonModule,
+    NgIf,
+    NgFor,
     TranslocoModule,
     CallToActionComponent,
     PillComponent,

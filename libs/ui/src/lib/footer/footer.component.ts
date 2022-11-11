@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { NgFor } from '@angular/common';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslocoModule } from '@ngneat/transloco';
@@ -10,7 +10,7 @@ import { RouteInternal } from '../toolbar/routes-internal';
 @Component({
   selector: 'cp-footer',
   standalone: true,
-  imports: [CommonModule, TranslocoModule, RouterModule],
+  imports: [NgFor, RouterModule, TranslocoModule,],
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
 })

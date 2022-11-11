@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { HotkeysModule, HotkeysService } from '@ngneat/hotkeys';
 import { TranslocoModule } from '@ngneat/transloco';
@@ -11,7 +10,7 @@ import { NavigationService } from '../navigation/navigation.service';
   selector: 'cp-navigation-button',
   templateUrl: './navigation-button.component.html',
   standalone: true,
-  imports: [CommonModule, TranslocoModule, HotkeysModule],
+  imports: [TranslocoModule, HotkeysModule],
   styleUrls: ['./navigation-button.component.scss'],
 })
 export class NavigationButtonComponent implements OnInit {
@@ -20,7 +19,7 @@ export class NavigationButtonComponent implements OnInit {
   constructor(
     private navigationService: NavigationService,
     private hotkeys: HotkeysService
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.navigationService.isOpen$

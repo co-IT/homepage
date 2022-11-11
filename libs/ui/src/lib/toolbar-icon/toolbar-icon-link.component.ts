@@ -1,13 +1,12 @@
-import { CommonModule } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { ToolbarIconLink } from './toolbar-icon-link';
 
 @Component({
-  selector: 'cp-toolbar-icon',
-  templateUrl: './toolbar-icon-link.component.html',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  selector: 'cp-toolbar-icon',
+  imports: [NgIf],
+  templateUrl: './toolbar-icon-link.component.html',
   styleUrls: ['./toolbar-icon-link.component.scss'],
 })
 export class ToolbarIconLinkComponent {

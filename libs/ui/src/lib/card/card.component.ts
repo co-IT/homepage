@@ -1,11 +1,11 @@
+import { NgIf } from '@angular/common';
 import { Component, HostBinding, Input } from '@angular/core';
 import { CallToActionComponent } from '../call-to-action/call-to-action.component';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'cp-card',
   standalone: true,
-  imports: [CommonModule, CallToActionComponent],
+  imports: [NgIf, CallToActionComponent],
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss'],
 })

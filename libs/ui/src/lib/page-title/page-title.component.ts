@@ -1,17 +1,17 @@
-import { CommonModule } from '@angular/common';
+import { NgIf } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
   Input,
   OnChanges,
-  SimpleChanges,
+  SimpleChanges
 } from '@angular/core';
 import { BrowserTabTitleSetter } from './browser-tab-title-setter.service';
 
 @Component({
   selector: 'cp-page-title[title][subtitle]',
   standalone: true,
-  imports: [CommonModule],
+  imports: [NgIf],
   templateUrl: './page-title.component.html',
   styleUrls: ['./page-title.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -22,7 +22,7 @@ export class PageTitleComponent implements OnChanges {
 
   @Input() imgSrc: string | undefined;
 
-  constructor(private browserTabTitleSetter: BrowserTabTitleSetter) {}
+  constructor(private browserTabTitleSetter: BrowserTabTitleSetter) { }
 
   ngOnChanges(changes: SimpleChanges): void {
     this.updateTitleInBrowser(changes['title'].currentValue);

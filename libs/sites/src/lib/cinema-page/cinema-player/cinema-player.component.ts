@@ -1,15 +1,15 @@
-import { CommonModule } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 import { YouTubePlayerModule } from '@angular/youtube-player';
-import { Video } from '../models';
 import { MarkdownComponent } from '@cp/ui';
+import { Video } from '../models';
 
 @Component({
   selector: 'cp-cinema-player',
   templateUrl: './cinema-player.component.html',
   standalone: true,
-  imports: [CommonModule, YouTubePlayerModule, MarkdownComponent],
+  imports: [NgIf, YouTubePlayerModule, MarkdownComponent],
   styleUrls: ['./cinema-player.component.scss'],
 })
 export class CinemaPlayerComponent {
