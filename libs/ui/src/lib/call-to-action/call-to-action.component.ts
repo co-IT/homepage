@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'cp-call-to-action',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [NgIf, RouterModule, RouterModule],
   templateUrl: './call-to-action.component.html',
   styleUrls: ['./call-to-action.component.scss'],
 })

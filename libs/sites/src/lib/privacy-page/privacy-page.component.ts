@@ -1,4 +1,4 @@
-import { CommonModule, ViewportScroller } from '@angular/common';
+import { NgFor, ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { MarkdownComponent } from '@cp/ui';
@@ -9,7 +9,7 @@ import { filter } from 'rxjs/operators';
 @Component({
   selector: 'cp-privacy-page',
   standalone: true,
-  imports: [CommonModule, MarkdownComponent, TranslocoModule, RouterModule],
+  imports: [NgFor, MarkdownComponent, TranslocoModule, RouterModule],
   templateUrl: './privacy-page.component.html',
   styleUrls: ['./privacy-page.component.scss'],
 })
@@ -33,7 +33,7 @@ export class PrivacyPageComponent implements OnInit {
     private route: ActivatedRoute,
     private viewportScroller: ViewportScroller,
     private translocoService: TranslocoService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.route.fragment

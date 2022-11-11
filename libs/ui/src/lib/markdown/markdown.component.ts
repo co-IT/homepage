@@ -1,18 +1,18 @@
+import { NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MarkdownModule } from 'ngx-markdown';
 import { Router } from '@angular/router';
+import { MarkdownModule } from 'ngx-markdown';
 
 @Component({
   selector: 'cp-markdown',
   standalone: true,
-  imports: [CommonModule, MarkdownModule],
+  imports: [NgIf, MarkdownModule],
   templateUrl: './markdown.component.html',
 })
 export class MarkdownComponent {
   @Input() src: string | undefined;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   async handleClick(event: MouseEvent) {
     const target = event.target;

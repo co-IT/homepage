@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import {
@@ -8,7 +8,7 @@ import {
   PageTitleComponent,
   RouteInternal,
   ScrollToTopButtonComponent,
-  ToolbarComponent,
+  ToolbarComponent
 } from '@cp/ui';
 import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
 
@@ -16,7 +16,7 @@ import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
   selector: 'cp-root',
   standalone: true,
   imports: [
-    CommonModule,
+    NgIf,
     RouterModule,
     TranslocoModule,
     HeaderComponent,
@@ -94,5 +94,5 @@ export class AppComponent {
     },
   ];
 
-  constructor(private transloco: TranslocoService) {}
+  constructor(private transloco: TranslocoService) { }
 }

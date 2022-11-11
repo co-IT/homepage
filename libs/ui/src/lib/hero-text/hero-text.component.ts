@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   selector: 'cp-hero-text',
   standalone: true,
-  imports: [CommonModule, TranslocoModule],
+  imports: [NgIf, TranslocoModule],
   templateUrl: './hero-text.component.html',
   styleUrls: ['./hero-text.component.scss'],
 })

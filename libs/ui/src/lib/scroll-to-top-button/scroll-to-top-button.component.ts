@@ -1,11 +1,11 @@
-import { Component, HostListener } from '@angular/core';
-import { CommonModule, ViewportScroller } from '@angular/common';
 import { animate, style, transition, trigger } from '@angular/animations';
+import { NgIf, ViewportScroller } from '@angular/common';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'cp-scroll-to-top-button',
   standalone: true,
-  imports: [CommonModule],
+  imports: [NgIf],
   templateUrl: './scroll-to-top-button.component.html',
   styleUrls: ['./scroll-to-top-button.component.scss'],
   animations: [
@@ -23,7 +23,7 @@ import { animate, style, transition, trigger } from '@angular/animations';
 export class ScrollToTopButtonComponent {
   showButton = false;
 
-  constructor(private scroller: ViewportScroller) {}
+  constructor(private scroller: ViewportScroller) { }
 
   @HostListener('window:scroll', ['$event']) onScroll() {
     this.showButton = window.scrollY > 550;

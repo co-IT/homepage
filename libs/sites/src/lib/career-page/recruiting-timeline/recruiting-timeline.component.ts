@@ -1,21 +1,23 @@
-import { CommonModule } from '@angular/common';
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+
 import {
   CallToActionComponent,
   TimelineParagraph,
-  TimelineParagraphComponent,
+  TimelineParagraphComponent
 } from '@cp/ui';
+
 import {
   TranslateParams,
   TranslocoModule,
-  TranslocoService,
+  TranslocoService
 } from '@ngneat/transloco';
 
 @Component({
   selector: 'cp-recruiting-timeline',
   templateUrl: './recruiting-timeline.component.html',
   imports: [
-    CommonModule,
+    NgFor,
     TranslocoModule,
     TimelineParagraphComponent,
     CallToActionComponent,
@@ -24,7 +26,7 @@ import {
   styleUrls: ['./recruiting-timeline.component.scss'],
 })
 export class RecruitingTimelineComponent {
-  constructor(private transloco: TranslocoService) {}
+  constructor(private transloco: TranslocoService) { }
 
   paragraphs: TimelineParagraph[] = [
     {

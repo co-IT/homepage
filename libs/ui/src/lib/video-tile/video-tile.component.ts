@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { NgClass, NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { VideoPlayButtonComponent } from '../video-play-button/video-play-button.component';
@@ -7,7 +7,7 @@ import { VideoTileIcon } from './video-tile-icon';
 @Component({
   selector: 'cp-video-tile',
   standalone: true,
-  imports: [CommonModule, VideoPlayButtonComponent, RouterModule],
+  imports: [NgIf, NgClass, RouterModule, VideoPlayButtonComponent],
   templateUrl: './video-tile.component.html',
   styleUrls: ['./video-tile.component.scss'],
 })

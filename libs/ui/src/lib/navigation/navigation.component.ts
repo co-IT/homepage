@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslocoModule } from '@ngneat/transloco';
@@ -13,7 +13,7 @@ import { NavigationService } from './navigation.service';
 @Component({
   selector: 'cp-navigation',
   standalone: true,
-  imports: [CommonModule, RouterModule, TranslocoModule, CallToActionComponent],
+  imports: [NgIf, NgFor, AsyncPipe, RouterModule, TranslocoModule, CallToActionComponent],
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss'],
 })
