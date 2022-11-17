@@ -28,8 +28,10 @@
 
   "career.page-title": "Geprägt durch Menschen",
   "career.page-subtitle": "Arbeitszeit ist Lebenszeit",
-  "career.articles.our-promise.src": "/assets/articles/de/career-page/000-our-promise.md",
-  "career.articles.you-can-sit-with-us.src": "/assets/articles/de/career-page/001-you-can-sit-with-us.md",
+  "career.articles.make-your-profession-your-vocation.src": "/assets/articles/de/career-page/000-make-your-profession-your-vocation.md",
+  "career.articles.collegiality.src": "/assets/articles/de/career-page/001-collegiality.md",
+  "career.articles.are-you-crazy.src": "/assets/articles/de/career-page/002-are-you-crazy.md",
+  "career.articles.flat-hierarchies.src": "/assets/articles/de/career-page/003-flat-hierarchies.md",
   "career.timeline.svg.alt": "Ein Mann steht vor einem riesigen Smart-Phone und berührt eine Schaltfläche",
   "career.timeline.heading": "So geht's weiter",
   "recruiting.process.1.heading": "Cultural Fit",
