@@ -13,7 +13,9 @@
           <div class="flow">
             <article>
               <cp-markdown
-                [src]="t('career.articles.you-can-sit-with-us.src')"
+                [src]="
+                  t('career.articles.make-your-profession-your-vocation.src')
+                "
               ></cp-markdown>
             </article>
             <cp-call-to-action
@@ -31,7 +33,41 @@
         <div class="columns columns-two align-center">
           <article>
             <cp-markdown
-              [src]="t('career.articles.our-promise.src')"
+              [src]="t('career.articles.collegiality.src')"
+            ></cp-markdown>
+          </article>
+          <img
+            class="career__globe-image"
+            src="/assets/images/connected-world.svg"
+            alt="Globe with a few flight routes showing that the world is connected"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="content">
+        <div class="columns columns-two align-center">
+          <img
+            class="career__globe-image"
+            src="/assets/images/connected-world.svg"
+            alt="Globe with a few flight routes showing that the world is connected"
+          />
+          <article>
+            <cp-markdown
+              [src]="t('career.articles.are-you-crazy.src')"
+            ></cp-markdown>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="content">
+        <div class="columns columns-two align-center">
+          <article>
+            <cp-markdown
+              [src]="t('career.articles.flat-hierarchies.src')"
             ></cp-markdown>
           </article>
           <img
