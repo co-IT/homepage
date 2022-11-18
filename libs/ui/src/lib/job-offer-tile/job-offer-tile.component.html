@@ -1,10 +1,9 @@
 <ng-container *transloco="let t">
   <div class="job-offer__container">
-    <h3 *ngIf="title" class="job-offer__title">{{title}}</h3>
+    <h3 *ngIf="title" class="job-offer__title">{{ title }}</h3>
     <div class="job-offer__content">
       <div class="job-offer__content__location">
-        <span *ngIf="location">{{location}}</span>
-        <span *ngIf="city && country">{{city}}, {{country}}</span>
+        <span *ngIf="location">{{ location }}</span>
       </div>
     </div>
     <div class="job-offer__tags">
@@ -15,7 +14,8 @@
       [href]="url"
       [icon]="'mdi mdi-magnify'"
       [text]="t('career.job-offers.details')"
-      class="job-offer__button">
+      class="job-offer__button"
+    >
     </cp-call-to-action>
   </div>
 </ng-container>
