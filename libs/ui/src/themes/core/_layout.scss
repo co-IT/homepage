@@ -86,6 +86,11 @@
   align-items: center;
 }
 
+.align-top {
+  display: grid;
+  align-items: start;
+}
+
 .flow > * + * {
   margin-top: var(--flow-space, 1em);
 }
