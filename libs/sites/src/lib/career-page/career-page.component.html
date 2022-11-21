@@ -93,7 +93,7 @@
         class="career__videos-section"
       >
         <div class="content | flow">
-          <h2 class="">{{ t(videoCollection.value.heading) }}</h2>
+          <h2>{{ t(videoCollection.value.heading) }}</h2>
           <div class="columns-auto flow--s">
             <cp-video-tile
               *ngFor="let video of videoCollection.value.videos"
@@ -107,18 +107,20 @@
         </div>
       </section>
     </div>
+    <hr class="divider content" />
     <section>
       <div class="content">
-        <div class="columns columns-two align-top">
+        <div class="columns columns-two align-center">
+          <cp-recruiting-timeline></cp-recruiting-timeline>
           <img
             src="/assets/images/proceed.svg"
             [alt]="t('career.timeline.svg.alt')"
+            class="hide-on-small-screen"
           />
-          <cp-recruiting-timeline></cp-recruiting-timeline>
         </div>
       </div>
     </section>
-
+    <hr class="divider content" />
     <section>
       <div class="content | flow">
         <h2>{{ t('career.job-offers.heading') }}</h2>

@@ -1,11 +1,7 @@
 @import 'layout';
 
-.content img {
-  @include hide-on-small-screen
-}
-
 .career__videos-section {
-  padding: 4em 0;
+  padding: 1em 0;
 
   &:nth-child(2n + 1) {
     background-color: var(--gray-lightest);
@@ -19,6 +15,12 @@
 @media only screen and (max-width: 54rem){
   .career__hero-text-section {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 70rem){
+  .columns-two img {
+    grid-row: 2;
   }
 }
 
