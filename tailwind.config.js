@@ -1,8 +1,22 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors');
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
-    extend: {},
+    colors: {
+      primary: '#FFC138',
+      blue: '#02024D',
+      black: colors.black
+    }
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addBase, theme }) => {
+      addBase({
+        html: { color: theme('colors.blue') }
+      });
+    })
+  ]
 };
