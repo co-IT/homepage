@@ -1,6 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { Link } from '@builder.io/qwik-city';
+import { Heading } from '../components/heading/heading';
 import { LinkCallToAction } from '../components/link-call-to-action/link-call-to-action';
 
 export default component$(() => {
@@ -10,6 +11,10 @@ export default component$(() => {
         Welcome to Qwik <span class="lightning">⚡️</span>
         <LinkCallToAction href="flower">Mehr erfahren</LinkCallToAction>
       </h1>
+      <Heading>
+        <span q:slot="primary">Denken Sie auch in</span>
+        <span q:slot="accent">ganzheitlichen Lösungen?</span>
+      </Heading>
 
       <ul>
         <li>

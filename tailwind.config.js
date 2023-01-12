@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     colors: {
       primary: '#FFC138',
+      accent: '#11E07D',
       blue: '#02024D',
       black: colors.black
     }
