@@ -3,10 +3,11 @@ import { component$, Slot } from '@builder.io/qwik';
 export const Heading = component$(() => {
   return (
     <h2>
-      <span class="text-blue">
+      <span class="text-blue font-bold text-4xl">
         <Slot name="primary"></Slot>
       </span>
-      <span class="text-accent">
+      <br />
+      <span class="text-accent font-bold text-4xl">
         <Slot name="accent"></Slot>
       </span>
     </h2>

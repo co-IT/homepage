@@ -7,11 +7,10 @@ export interface LinkCallToActionProps {
 
 export const LinkCallToAction = component$((props: LinkCallToActionProps) => {
   return (
-    <Link
-      href={props.href}
-      class="bg-primary text-black font-semibold rounded-sm pl-8 pr-8 pt-2 pb-2"
-    >
-      <Slot />
+    <Link href={props.href}>
+      <span class="inline-block bg-primary text-black font-semibold rounded-sm pl-8 pr-8 pt-2 pb-2">
+        <Slot />
+      </span>
     </Link>
   );
 });
