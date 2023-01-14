@@ -13,14 +13,14 @@ import { component$, Slot } from '@builder.io/qwik';
  */
 export const ArticleTriad = component$(() => {
   return (
-    <article class="grid grid-cols-8">
-      <div class="z-20 row-span-full col-start-1 col-span-4 p-14 shadow-md  self-center bg-white">
+    <article class="grid auto-rows-min md:grid-cols-8 md:grid-rows-1">
+      <div class="z-20 row-start-3 -translate-y-28 mx-3 pt-10 pb-10 pr-5 pl-5 grid-flow-row md:-translate-y-0 md:row-span-full md:col-start-1 md:col-span-4 md:p-14 shadow-md  self-center bg-white">
         <Slot name="article"></Slot>
       </div>
-      <div class="z-10 row-span-full col-start-4 col-span-4 ">
+      <div class="z-10 row-start-1 md:row-span-full md:col-start-4 md:col-span-4">
         <Slot name="image"></Slot>
       </div>
-      <div class="z-0 row-span-full col-start-7 xl:col-start-6  self-end translate-y-10 w-48 md:h-[32rem] h-[40rem] bg-primary"></div>
+      <div class="z-0 row-start-2 md:row-span-full md:col-start-7 xl:col-start-6 md:self-end md:translate-y-10 h-4 md:w-48 md:h-[32rem] xl:h-[40rem] bg-primary"></div>
     </article>
   );
 });

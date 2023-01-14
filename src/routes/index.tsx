@@ -8,7 +8,7 @@ export default component$(() => {
   return (
     <div class="container mx-auto">
       <ArticleTriad>
-        <section q:slot="article">
+        <section q:slot="article" class="flex flex-col space-y-4">
           <Heading>
             <span q:slot="primary">Denken Sie auch in</span>
             <span q:slot="accent">ganzheitlichen Lösungen?</span>
