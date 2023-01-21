@@ -68,5 +68,21 @@ export const head: DocumentHead = {
       name: 'description',
       content: 'Qwik site description'
     }
-  ]
+  ],
+  frontmatter: {
+    header: {
+      type: 'banner',
+      backgroundImage: {
+        source: '/img/flip-chart-action.jpg',
+        alt: 'Two men writing on a flip chart'
+      },
+      headingSegments: [
+        { type: 'white', text: 'Sie wollen' },
+        { type: 'accent', text: 'Herausforderungen als Chancen' },
+        { type: 'white', text: 'nutzen?' }
+      ],
+      teaser:
+        'Dann bringen wir Ihre Ideen auf die Straße, ebenen Ihnen neue Wege und schaffen gemeinsam nachhaltige Werte. Unsere Leidenschaft ist es Veränderungen zu etwas Positivem zu machen.'
+    }
+  }
 };

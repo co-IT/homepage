@@ -1,12 +1,15 @@
 import { component$, Slot } from '@builder.io/qwik';
+import { useDocumentHead } from '@builder.io/qwik-city';
 import Header from '../components/header/header';
 
 export default component$(() => {
+  const documentHead = useDocumentHead();
   return (
     <>
       <main>
         <Header />
         <section>
+          <div>{JSON.stringify(documentHead)}</div>
           <Slot />
         </section>
       </main>
