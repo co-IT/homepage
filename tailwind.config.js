@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     colors: {
       primary: '#FFC138',
+      secondary: '#02024D',
       accent: '#11E07D',
-      blue: '#02024D',
       black: colors.black,
       white: colors.white
     }
@@ -17,7 +17,7 @@ module.exports = {
   plugins: [
     plugin(({ addBase, theme }) => {
       addBase({
-        html: { color: theme('colors.blue') }
+        html: { color: theme('colors.secondary') }
       });
     })
   ]
