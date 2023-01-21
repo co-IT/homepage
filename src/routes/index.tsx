@@ -8,7 +8,7 @@ import { LinkCallToAction } from '../components/link-call-to-action/link-call-to
 
 export default component$(() => {
   return (
-    <div class="container mx-auto flex flex-col space-y-96">
+    <div class="container mx-auto flex flex-col space-y-32">
       <ContentOverlapPortrait
         image={{
           source: '/img/landing-page/developers-tablet.jpg',

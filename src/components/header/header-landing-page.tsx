@@ -6,11 +6,11 @@ import type { HeaderProps } from './header.props';
 export default component$((props: HeaderProps) => {
   return (
     <header
-      class="bg-cover bg-no-repeat bg-right-top p-8"
+      class="bg-cover bg-no-repeat bg-right-top "
       style={`background-image: linear-gradient(0deg, rgba(2, 2, 52, 0.6), rgba(2, 2, 52, 0.6)), url("${props.backgroundImage.source}");`}
     >
-      <section class="flex flex-col space-y-10">
-        <h1 class="text-center">
+      <section class="flex flex-col space-y-10 ">
+        <h1 class="text-center break-words font-bold text-2xl p-8">
           {props.headingSegments.map(headingSegment => (
             <>
               {headingSegment.type === 'white' ? (
@@ -23,8 +23,8 @@ export default component$((props: HeaderProps) => {
           ))}
         </h1>
 
-        <div class="mx-auto max-w-5xl">
-          <p class="leading-10 text-white font-semibold text-center text-lg tracking-wider [text-shadow:0_4px_8px_rgba(0,0,0,0.8)]">
+        <div class="mx-auto max-w-5xl bg-secondary md:bg-opacity-0 p-8">
+          <p class="leading-10 text-white font-semibold text-center text-lg tracking-wider md:[text-shadow:0_4px_8px_rgba(0,0,0,0.8)]">
             {props.teaser}
           </p>
         </div>
