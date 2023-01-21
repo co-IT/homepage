@@ -71,9 +71,9 @@ export const head: DocumentHead = {
   ],
   frontmatter: {
     header: {
-      type: 'banner',
+      type: 'landing-page',
       backgroundImage: {
-        source: '/img/flip-chart-action.jpg',
+        source: '/img/landing-page/flip-chart-action.jpg',
         alt: 'Two men writing on a flip chart'
       },
       headingSegments: [
