@@ -26,7 +26,11 @@ export const ContentOverlapPortrait = component$(
           <Slot name="article"></Slot>
         </div>
         <div class="z-10 row-start-1 md:row-span-full md:col-start-5 md:col-span-3">
-          <img src={props.image.source} alt={props.image.alternateText} />
+          <img
+            class="shadow-xl"
+            src={props.image.source}
+            alt={props.image.alternateText}
+          />
         </div>
         <div class="z-0 row-start-2 md:row-span-full md:col-start-7 xl:col-start-7 md:self-end md:translate-y-10 h-4 md:w-48 md:h-[32rem] xl:h-[40rem] bg-primary"></div>
       </article>
