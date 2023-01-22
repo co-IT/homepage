@@ -6,9 +6,10 @@ import type { HeaderProps } from './header.props';
 export default component$((props: HeaderProps) => {
   return (
     <header
-      class="bg-cover bg-no-repeat bg-right-top "
+      class="grid grid-rows-2 bg-cover bg-no-repeat bg-right-top "
       style={`background-image: linear-gradient(0deg, rgba(2, 2, 52, 0.6), rgba(2, 2, 52, 0.6)), url("${props.backgroundImage.source}");`}
     >
+      <section></section>
       <section class="flex flex-col space-y-10 ">
         <h1 class="text-center break-words font-bold text-2xl p-8">
           {props.headingSegments.map(headingSegment => (
