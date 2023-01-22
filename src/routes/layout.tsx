@@ -1,8 +1,8 @@
 import { component$, Slot } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { useDocumentHead } from '@builder.io/qwik-city';
-import Header from '../components/header/header';
-import type { HeaderProps } from '../components/header/header.props';
+import type { HeaderProps } from '../components/header';
+import { Header } from '../components/header';
 
 export default component$(() => {
   const documentHead = useDocumentHead();
