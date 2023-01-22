@@ -39,7 +39,7 @@ jobs:
         run: pnpm install
 
       - name: 🛠️ Build app
-        run: npm run build
+        run: npm run build --prod
 
       - name: 🆙 Upload artifact
         uses: actions/upload-pages-artifact@v1
