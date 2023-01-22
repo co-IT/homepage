@@ -22,7 +22,7 @@ jobs:
         run: pnpm install --prod
 
       - name: Build app
-        run: npm run build.full
+        run: npm run build
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
