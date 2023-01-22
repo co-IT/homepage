@@ -33,7 +33,7 @@ export default component$((props: HeaderProps) => {
           </h1>
 
           <div class=" bg-secondary md:bg-opacity-0">
-            <p class="leading-10 mx-auto max-w-3xl text-white font-semibold text-lg tracking-wider md:leading-12 md:text-xl md:[text-shadow:0_4px_8px_rgba(0,0,0,0.8)]">
+            <p class="text-lg leading-10 mx-auto max-w-3xl text-white font-semibold  tracking-wider md:text-xl md:leading-10 md:[text-shadow:0_4px_8px_rgba(0,0,0,0.8)]">
               {props.teaser}
             </p>
           </div>
