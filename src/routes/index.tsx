@@ -11,7 +11,7 @@ export default component$(() => {
     <div class="container mx-auto flex flex-col space-y-32">
       <ContentOverlapPortrait
         image={{
-          source: '/img/landing-page/developers-tablet.jpg',
+          source: '/img/landing-page/developers-tablet.avif',
           alternateText: '2 Developers checking an App on a tablet'
         }}
       >
@@ -32,7 +32,7 @@ export default component$(() => {
 
       <ContentOverlapLandscape
         image={{
-          source: '/img/landing-page/cooking-session.jpg',
+          source: '/img/landing-page/cooking-session.avif',
           alternateText: 'Our team cooking a delicious meal'
         }}
       >
@@ -73,7 +73,7 @@ export const head: DocumentHead = {
     header: {
       type: 'landing-page',
       backgroundImage: {
-        source: '/img/landing-page/flip-chart-action.jpg',
+        source: '/img/landing-page/flip-chart-action.avif',
         alt: 'Two men writing on a flip chart'
       },
       headingSegments: [
