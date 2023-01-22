@@ -13,7 +13,7 @@ jobs:
       - name: '📦 Setup pnpm'
         uses: pnpm/action-setup@v2
         with:
-          version: 6.0.2
+          version: 7.25.0
 
       - name: 🚚 Get latest code
         uses: actions/checkout@v2.5.0
