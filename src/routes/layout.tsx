@@ -1,4 +1,5 @@
 import { component$, Slot } from '@builder.io/qwik';
+import type { DocumentHead } from '@builder.io/qwik-city';
 import { useDocumentHead } from '@builder.io/qwik-city';
 import Header from '../components/header/header';
 import type { HeaderProps } from '../components/header/header.props';
@@ -26,3 +27,12 @@ export default component$(() => {
     </>
   );
 });
+
+export const head: DocumentHead = {
+  meta: [
+    {
+      name: 'robots',
+      content: 'noindex, nofollow'
+    }
+  ]
+};
