@@ -18,7 +18,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Node.js for use with actions
+      - name: 👷‍♂️ Setup Node.js for use with actions
         uses: actions/setup-node@v1
         with:
           node-version: 16
@@ -30,14 +30,17 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v2.5.0
 
-      - name: Clean install dependencies
+      - name: 💿 Clean install dependencies
         run: pnpm install
 
-      - name: Build app
+      - name: 🛠️ Build app
         run: npm run build
 
-      - name: deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: 🆙 Upload artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          path: './dist'
+
+      - name: 🚢 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
