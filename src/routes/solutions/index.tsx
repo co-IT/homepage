@@ -18,8 +18,8 @@ export const head: DocumentHead = {
       type: 'content-page',
       configuration: {
         backgroundImage: {
-          source: '/img/career/header.avif',
-          alt: 'Three team members enjoying engineering.'
+          source: '/img/solutions/header.avif',
+          alt: 'Two team mates checking an App on the tablet.'
         },
         heading: 'Alles aus einer Hand',
         headingAccent: 'Vollumfänglich statt punktuell'

@@ -1,10 +1,14 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
-import { ContentOverlapLandscape } from '../components/content-overlap/content-overlap-landscape';
-import { ContentOverlapPortrait } from '../components/content-overlap/content-overlap-portrait';
-import HeadingSegmentAccent from '../components/heading-segment/heading-segment-accent';
-import HeadingSegmentSecondary from '../components/heading-segment/heading-segment-secondary';
-import { LinkCallToAction } from '../components/link-call-to-action/link-call-to-action';
+import {
+  ContentOverlapLandscape,
+  ContentOverlapPortrait
+} from '~/components/content-overlap';
+import {
+  HeadingSegmentAccent,
+  HeadingSegmentSecondary
+} from '~/components/heading-segment';
+import { LinkCallToAction } from '~/components/link-call-to-action';
 
 export default component$(() => {
   return (

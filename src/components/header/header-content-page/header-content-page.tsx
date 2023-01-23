@@ -1,5 +1,5 @@
 import { component$ } from '@builder.io/qwik';
-import HeadingSegmentWhite from '../../heading-segment/heading-segment-white';
+import { HeadingSegmentWhite } from '../../heading-segment';
 import type { HeaderContentPageProps } from './header-content-page.props';
 
 export default component$((props: HeaderContentPageProps) => {

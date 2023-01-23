@@ -1,10 +1,12 @@
 import { component$ } from '@builder.io/qwik';
-import HeadingSegmentAccent from '../heading-segment/heading-segment-accent';
-import HeadingSegmentWhite from '../heading-segment/heading-segment-white';
-import type { HeaderProps } from './header.props';
-import { MenuIcon } from '../icons/menu-icon';
+import {
+  HeadingSegmentAccent,
+  HeadingSegmentWhite
+} from '../../heading-segment';
+import { MenuIcon } from '../../icons/menu-icon';
+import type { HeaderLandingPageProps } from './header-landing-page.props';
 
-export default component$((props: HeaderProps) => {
+export default component$((props: HeaderLandingPageProps) => {
   return (
     <header
       class="bg-cover bg-no-repeat bg-right-top py-16"
