@@ -1,4 +1,4 @@
-import { component$, Slot } from "@builder.io/qwik";
+import { component$, Slot } from '@builder.io/qwik';
 
 interface ContentOverlapLandscapeProps {
   image: {
@@ -22,7 +22,7 @@ export const ContentOverlapLandscape = component$(
   (props: ContentOverlapLandscapeProps) => {
     return (
       <article class="grid auto-rows-min md:grid-cols-8 md:grid-rows-1">
-        <div class="z-20 row-start-3 -translate-y-28 md:translate-y-60 xl:-translate-x-20 mx-3 pt-10 pb-10 pr-5 pl-5 md:row-span-full md:col-start-3 md:col-span-6 md:p-14 shadow-md  self-center bg-white">
+        <div class="z-20 row-start-3 -translate-y-28 drop-shadow-2xl md:translate-y-60 xl:-translate-x-20 mx-3 pt-10 pb-10 pr-5 pl-5 md:row-span-full md:col-start-3 md:col-span-6 md:p-14  self-center bg-white">
           <Slot name="article"></Slot>
         </div>
         <div class="z-10 row-start-1 md:row-span-full md:col-start-3 md:col-span-6 md:-translate-x-8 xl:-translate-x-28">
