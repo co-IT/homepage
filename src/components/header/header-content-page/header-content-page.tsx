@@ -3,7 +3,7 @@ import { HeadingSegmentWhite } from '../../heading-segment';
 import { Logo } from '../../logo/logo';
 import type { HeaderContentPageProps } from './header-content-page.props';
 
-export default component$((props: HeaderContentPageProps) => {
+export const HeaderContentPage = component$((props: HeaderContentPageProps) => {
   return (
     <header
       class="bg-cover bg-no-repeat bg-right-top py-16"

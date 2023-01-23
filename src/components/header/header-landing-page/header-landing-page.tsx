@@ -4,10 +4,10 @@ import {
   HeadingSegmentWhite
 } from '../../heading-segment';
 import { MenuIcon } from '../../icons';
-import { Logo } from '../../logo/logo';
+import { Logo } from '../../logo';
 import type { HeaderLandingPageProps } from './header-landing-page.props';
 
-export default component$((props: HeaderLandingPageProps) => {
+export const HeaderLandingPage = component$((props: HeaderLandingPageProps) => {
   return (
     <header
       class="bg-cover bg-no-repeat bg-right-top py-16"
