@@ -3,6 +3,7 @@ import type { DocumentHead } from '@builder.io/qwik-city';
 import { useDocumentHead } from '@builder.io/qwik-city';
 import type { HeaderProps } from '../components/header';
 import { Header } from '../components/header';
+import { Footer } from '~/components/footer';
 
 export default component$(() => {
   const documentHead = useDocumentHead();
@@ -18,12 +19,8 @@ export default component$(() => {
         <section>
           <Slot />
         </section>
+        <Footer />
       </main>
-      <footer>
-        <a href="https://www.builder.io/" target="_blank">
-          Made with ♡ by Builder.io
-        </a>
-      </footer>
     </>
   );
 });
