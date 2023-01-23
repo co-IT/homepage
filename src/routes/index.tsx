@@ -1,22 +1,22 @@
-import { component$ } from '@builder.io/qwik';
-import type { DocumentHead } from '@builder.io/qwik-city';
+import { component$ } from "@builder.io/qwik";
+import type { DocumentHead } from "@builder.io/qwik-city";
 import {
   ContentOverlapLandscape,
-  ContentOverlapPortrait
-} from '~/components/content-overlap';
+  ContentOverlapPortrait,
+} from "~/components/content-overlap";
 import {
   HeadingSegmentAccent,
-  HeadingSegmentSecondary
-} from '~/components/heading-segment';
-import { LinkCallToAction } from '~/components/link-call-to-action';
+  HeadingSegmentSecondary,
+} from "~/components/heading-segment";
+import { LinkCallToAction } from "~/components/link-call-to-action";
 
 export default component$(() => {
   return (
     <>
       <ContentOverlapPortrait
         image={{
-          source: '/img/landing-page/developers-tablet.avif',
-          alternateText: '2 Developers checking an App on a tablet'
+          source: "/img/landing-page/developers-tablet.avif",
+          alternateText: "2 Developers checking an App on a tablet",
         }}
       >
         <section q:slot="article" class="flex flex-col space-y-4">
@@ -36,8 +36,8 @@ export default component$(() => {
 
       <ContentOverlapLandscape
         image={{
-          source: '/img/landing-page/cooking-session.avif',
-          alternateText: 'Our team cooking a delicious meal'
+          source: "/img/landing-page/cooking-session.avif",
+          alternateText: "Our team cooking a delicious meal",
         }}
       >
         <section q:slot="article" class="flex flex-col space-y-4">
@@ -66,29 +66,29 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'co-IT - Inspire to Change',
+  title: "co-IT - Inspire to Change",
   meta: [
     {
-      name: 'description',
-      content: 'Qwik site description'
-    }
+      name: "description",
+      content: "Qwik site description",
+    },
   ],
   frontmatter: {
     header: {
-      type: 'landing-page',
+      type: "landing-page",
       configuration: {
         backgroundImage: {
-          source: '/img/landing-page/header.avif',
-          alt: 'Two men writing on a flip chart'
+          source: "/img/landing-page/header.avif",
+          alt: "Two men writing on a flip chart",
         },
         headingSegments: [
-          { type: 'white', text: 'Sie wollen' },
-          { type: 'accent', text: 'Herausforderungen als Chancen' },
-          { type: 'white', text: 'nutzen?' }
+          { type: "white", text: "Sie wollen" },
+          { type: "accent", text: "Herausforderungen als Chancen" },
+          { type: "white", text: "nutzen?" },
         ],
         teaser:
-          'Dann bringen wir Ihre Ideen auf die Straße, ebenen Ihnen neue Wege und schaffen gemeinsam nachhaltige Werte. Unsere Leidenschaft ist es Veränderungen zu etwas Positivem zu machen.'
-      }
-    }
-  }
+          "Dann bringen wir Ihre Ideen auf die Straße, ebenen Ihnen neue Wege und schaffen gemeinsam nachhaltige Werte. Unsere Leidenschaft ist es Veränderungen zu etwas Positivem zu machen.",
+      },
+    },
+  },
 };

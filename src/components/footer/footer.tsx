@@ -1,28 +1,28 @@
-import { component$ } from '@builder.io/qwik';
-import { GithubIcon, MapIcon, YoutubeIcon } from '../icons';
+import { component$ } from "@builder.io/qwik";
+import { GithubIcon, MapIcon, YoutubeIcon } from "../icons";
 
 export const Footer = component$(() => {
   const links = [
     {
-      textFirstLine: 'Lösungen',
-      textSecondLine: 'Alles aus einer Hand',
-      path: '/solutions'
+      textFirstLine: "Lösungen",
+      textSecondLine: "Alles aus einer Hand",
+      path: "/solutions",
     },
     {
-      textFirstLine: 'Qualität',
-      textSecondLine: 'Auf den Punk abgestimmt',
-      path: '/quality'
+      textFirstLine: "Qualität",
+      textSecondLine: "Auf den Punk abgestimmt",
+      path: "/quality",
     },
     {
-      textFirstLine: 'Karriere',
-      textSecondLine: 'Geprägt durch Menschen',
-      path: '/career'
+      textFirstLine: "Karriere",
+      textSecondLine: "Geprägt durch Menschen",
+      path: "/career",
     },
     {
-      textFirstLine: 'Über uns',
-      textSecondLine: 'Motiviert von Werten',
-      path: '/about'
-    }
+      textFirstLine: "Über uns",
+      textSecondLine: "Motiviert von Werten",
+      path: "/about",
+    },
   ];
 
   return (
@@ -38,7 +38,7 @@ export const Footer = component$(() => {
             />
           </div>
 
-          {links.map(link => (
+          {links.map((link) => (
             <a href={link.path} class="w-2/12">
               <div class="flex flex-col gap-y-2">
                 <div class="text-base font-bold text-white leading-7">

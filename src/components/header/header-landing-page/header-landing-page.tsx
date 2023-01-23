@@ -1,10 +1,10 @@
-import { component$ } from '@builder.io/qwik';
+import { component$ } from "@builder.io/qwik";
 import {
   HeadingSegmentAccent,
-  HeadingSegmentWhite
-} from '../../heading-segment';
-import { MenuIcon } from '../../icons/menu-icon';
-import type { HeaderLandingPageProps } from './header-landing-page.props';
+  HeadingSegmentWhite,
+} from "../../heading-segment";
+import { MenuIcon } from "../../icons/menu-icon";
+import type { HeaderLandingPageProps } from "./header-landing-page.props";
 
 export default component$((props: HeaderLandingPageProps) => {
   return (
@@ -30,9 +30,9 @@ export default component$((props: HeaderLandingPageProps) => {
         </section>
         <section class="flex flex-col space-y-10 pb-16">
           <h1 class="break-words font-bold text-2xl md:text-6xl">
-            {props.headingSegments.map(headingSegment => (
+            {props.headingSegments.map((headingSegment) => (
               <>
-                {headingSegment.type === 'white' ? (
+                {headingSegment.type === "white" ? (
                   <HeadingSegmentWhite text={headingSegment.text} />
                 ) : (
                   <HeadingSegmentAccent text={headingSegment.text} />
