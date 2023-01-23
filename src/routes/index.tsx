@@ -16,7 +16,7 @@ export default component$(() => {
         }}
       >
         <section q:slot="article" class="flex flex-col space-y-4">
-          <h2>
+          <h2 class="font-bold text-4xl">
             <HeadingSegmentSecondary text="Denken Sie auch in" />
             &nbsp;
             <HeadingSegmentAccent text="ganzheitlichen Lösungen?" />
@@ -37,7 +37,7 @@ export default component$(() => {
         }}
       >
         <section q:slot="article" class="flex flex-col space-y-4">
-          <h2>
+          <h2 class="font-bold text-4xl">
             <HeadingSegmentSecondary text="Machen" />
             &nbsp;
             <HeadingSegmentAccent text="Menschen" />
