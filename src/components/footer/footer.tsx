@@ -1,5 +1,7 @@
 import { component$ } from '@builder.io/qwik';
+import { Link } from '@builder.io/qwik-city';
 import { GithubIcon, MapIcon, YoutubeIcon } from '../icons';
+import { Logo } from '../logo/logo';
 
 export const Footer = component$(() => {
   const links = [
@@ -30,16 +32,11 @@ export const Footer = component$(() => {
       <div class="relative w-full bg-secondary pt-12 pb-32 mt-48 container flex flex-col">
         <div class="flex flex-row">
           <div class="w-4/12 flex justify-end mr-24">
-            <img
-              width="173"
-              height="69"
-              src="/img/logo.svg"
-              alt="co-IT.eu orange Logo - Inspire to Change"
-            />
+            <Logo />
           </div>
 
           {links.map(link => (
-            <a href={link.path} class="w-2/12">
+            <Link href={link.path} class="w-2/12">
               <div class="flex flex-col gap-y-2">
                 <div class="text-base font-bold text-white leading-7">
                   {link.textFirstLine}
@@ -48,7 +45,7 @@ export const Footer = component$(() => {
                   {link.textSecondLine}
                 </div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
 

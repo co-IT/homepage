@@ -4,6 +4,7 @@ import {
   HeadingSegmentWhite
 } from '../../heading-segment';
 import { MenuIcon } from '../../icons';
+import { Logo } from '../../logo/logo';
 import type { HeaderLandingPageProps } from './header-landing-page.props';
 
 export default component$((props: HeaderLandingPageProps) => {
@@ -14,12 +15,13 @@ export default component$((props: HeaderLandingPageProps) => {
     >
       <div class="container mx-auto grid grid-rows-2 place-content-center text-center space-y-32">
         <section class="flex justify-between h-fit">
-          <img
+          <Logo></Logo>
+          {/* <img
             width="173"
             height="69"
             src="/img/logo.svg"
             alt="co-IT.eu orange Logo - Inspire to Change"
-          />
+          /> */}
 
           <div class="flex flex-row gap-x-4 my-auto cursor-pointer hover:opacity-75">
             <MenuIcon />

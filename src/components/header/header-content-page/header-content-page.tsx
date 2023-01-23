@@ -1,6 +1,7 @@
-import { component$ } from "@builder.io/qwik";
-import { HeadingSegmentWhite } from "../../heading-segment";
-import type { HeaderContentPageProps } from "./header-content-page.props";
+import { component$ } from '@builder.io/qwik';
+import { HeadingSegmentWhite } from '../../heading-segment';
+import { Logo } from '../../logo/logo';
+import type { HeaderContentPageProps } from './header-content-page.props';
 
 export default component$((props: HeaderContentPageProps) => {
   return (
@@ -10,12 +11,7 @@ export default component$((props: HeaderContentPageProps) => {
     >
       <div class="container mx-auto grid grid-rows-2 place-content-center sm:place-content-stretch text-center space-y-32">
         <section>
-          <img
-            width="173"
-            height="69"
-            src="/img/logo.svg"
-            alt="co-IT.eu orange Logo - Inspire to Change"
-          />
+          <Logo />
         </section>
         <section class="flex flex-col space-y-10 pb-16">
           <small class="text-accent font-bold text-sm">
