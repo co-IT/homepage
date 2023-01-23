@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
-import { GithubIcon } from "../icons/GithubIcon";
-import { MapIcon } from "../icons/MapIcon";
-import { YoutubeIcon } from "../icons/YoutubeIcon";
+import { GithubIcon } from "../icons/gitub-icon";
+import { MapIcon } from "../icons/map-icon";
+import { YoutubeIcon } from "../icons/youtube-icon";
 
 export const Footer = component$(() => {
   return (
@@ -11,33 +11,33 @@ export const Footer = component$(() => {
           <div class="w-4/12 flex justify-end mr-24">
             <img width="173" height="69" src="/img/logo.svg" alt="co-IT.eu orange Logo - Inspire to Change" />
           </div>
+
           <div class="w-2/12">
             <div class="flex flex-col gap-y-2">
               <div class="text-base font-bold text-white leading-7">Lösungen</div>
               <div class="text-sm font-semibold text-white leading-6">Alles aus einer Hand</div>
             </div>
-            <div></div>
           </div>
+
           <div class="w-2/12">
             <div class="flex flex-col gap-y-2">
               <div class="text-base font-bold text-white leading-7">Qualität</div>
               <div class="text-sm font-semibold text-white leading-6">Auf den Punkt abgestimmt</div>
             </div>
-            <div></div>
           </div>
+
           <div class="w-2/12">
             <div class="flex flex-col gap-y-2">
               <div class="text-base font-bold text-white leading-7">Karriere</div>
               <div class="text-sm font-semibold text-white leading-6">Geprägt durch Menschen</div>
             </div>
-            <div></div>
           </div>
+
           <div class="w-2/12">
             <div class="flex flex-col gap-y-2">
               <div class="text-base font-bold text-white leading-7">Über uns</div>
               <div class="text-sm font-semibold text-white leading-6">Motiviert von Werten</div>
             </div>
-            <div></div>
           </div>
         </div>
 
@@ -85,7 +85,7 @@ export const Footer = component$(() => {
         </div>
       </div>
 
-      <div class="bg-[#ffc138] py-5 mt-48 flex justify-center">
+      <div class="bg-primary py-5 mt-48 flex justify-center">
         <span class="text-xs text-black font-normal opacity-40">
           © 2022 - co-IT GmbH   -  Datenschutz    Impressum   AGB
         </span>

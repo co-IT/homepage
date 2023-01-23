@@ -7,7 +7,6 @@ import { Footer } from '~/components/footer';
 
 export default component$(() => {
   const documentHead = useDocumentHead();
-  // TODO: Improve type-safety
   const headerProps: HeaderProps = {
     ...documentHead.frontmatter.header
   } as HeaderProps;
