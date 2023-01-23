@@ -4,6 +4,13 @@ import { MapIcon } from "../icons/map-icon";
 import { YoutubeIcon } from "../icons/youtube-icon";
 
 export const Footer = component$(() => {
+  const links = [
+    {  textFirstLine: 'Lösungen', textSecondLine: 'Alles aus einer Hand', path: 'solutions'},
+    {  textFirstLine: 'Qualtät', textSecondLine: 'Auf den Punk abgestimmt', path: 'quality'},
+    {  textFirstLine: 'Karriere', textSecondLine: 'Geprägt durch Menschen', path: 'career'},
+    {  textFirstLine: 'Über uns', textSecondLine: 'Motiviert von Werten', path: 'about'},
+  ]
+
   return (
     <>
       <div class="relative w-full bg-secondary pt-12 pb-32 mt-48 container flex flex-col">
@@ -12,33 +19,14 @@ export const Footer = component$(() => {
             <img width="173" height="69" src="/img/logo.svg" alt="co-IT.eu orange Logo - Inspire to Change" />
           </div>
 
-          <div class="w-2/12">
-            <div class="flex flex-col gap-y-2">
-              <div class="text-base font-bold text-white leading-7">Lösungen</div>
-              <div class="text-sm font-semibold text-white leading-6">Alles aus einer Hand</div>
-            </div>
-          </div>
-
-          <div class="w-2/12">
-            <div class="flex flex-col gap-y-2">
-              <div class="text-base font-bold text-white leading-7">Qualität</div>
-              <div class="text-sm font-semibold text-white leading-6">Auf den Punkt abgestimmt</div>
-            </div>
-          </div>
-
-          <div class="w-2/12">
-            <div class="flex flex-col gap-y-2">
-              <div class="text-base font-bold text-white leading-7">Karriere</div>
-              <div class="text-sm font-semibold text-white leading-6">Geprägt durch Menschen</div>
-            </div>
-          </div>
-
-          <div class="w-2/12">
-            <div class="flex flex-col gap-y-2">
-              <div class="text-base font-bold text-white leading-7">Über uns</div>
-              <div class="text-sm font-semibold text-white leading-6">Motiviert von Werten</div>
-            </div>
-          </div>
+          {links.map(link =>
+            <a href={link.path} class="w-2/12">
+              <div class="flex flex-col gap-y-2">
+                <div class="text-base font-bold text-white leading-7">{link.textFirstLine}</div>
+                <div class="text-sm font-semibold text-white leading-6">{link.textSecondLine}</div>
+              </div>
+            </a>
+          )}
         </div>
 
         <div class="flex justify-end flex-row gap-x-5 absolute right-14 top-40">
@@ -91,5 +79,5 @@ export const Footer = component$(() => {
         </span>
       </div>
     </>
-  );
+  )
 });
