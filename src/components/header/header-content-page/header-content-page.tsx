@@ -1,4 +1,5 @@
 import { component$ } from '@builder.io/qwik';
+import HeadingSegmentWhite from '../../heading-segment/heading-segment-white';
 import type { HeaderContentPageProps } from './header-content-page.props';
 
 export default component$((props: HeaderContentPageProps) => {
@@ -7,8 +8,8 @@ export default component$((props: HeaderContentPageProps) => {
       class="bg-cover bg-no-repeat bg-right-top py-16"
       style={`background-image: linear-gradient(0deg, rgba(2, 2, 52, 0.6), rgba(2, 2, 52, 0.6)), url("${props.backgroundImage.source}");`}
     >
-      <div class="container mx-auto grid grid-rows-2 place-content-center text-center space-y-32">
-        <section class="">
+      <div class="container mx-auto grid grid-rows-2 place-content-center sm:place-content-stretch text-center space-y-32">
+        <section>
           <img
             width="173"
             height="69"
@@ -17,9 +18,11 @@ export default component$((props: HeaderContentPageProps) => {
           />
         </section>
         <section class="flex flex-col space-y-10 pb-16">
-          <small class="text-accent">{props.headingAccent}</small>
+          <small class="text-accent font-bold text-sm">
+            {props.headingAccent}
+          </small>
           <h1 class="break-words font-bold text-2xl md:text-6xl">
-            {props.heading}
+            <HeadingSegmentWhite text={props.heading} />
           </h1>
 
           {props.teaser && (
