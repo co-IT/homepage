@@ -73,7 +73,7 @@ export const head: DocumentHead = {
     header: {
       type: 'landing-page',
       backgroundImage: {
-        source: '/img/landing-page/flip-chart-action.avif',
+        source: '/img/landing-page/header.avif',
         alt: 'Two men writing on a flip chart'
       },
       headingSegments: [
