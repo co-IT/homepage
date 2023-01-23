@@ -1,10 +1,8 @@
-import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import { component$ } from '@builder.io/qwik';
+import type { DocumentHead } from '@builder.io/qwik-city';
 
 export default component$(() => {
-  return (
-    <></>
-  )
+  return <></>;
 });
 
 export const head: DocumentHead = {
@@ -17,18 +15,17 @@ export const head: DocumentHead = {
   ],
   frontmatter: {
     header: {
-      type: 'landing-page',
-      backgroundImage: {
-        source: '/img/landing-page/flip-chart-action.avif',
-        alt: 'Two men writing on a flip chart'
-      },
-      headingSegments: [
-        { type: 'white', text: 'Sie wollen' },
-        { type: 'accent', text: 'Herausforderungen als Chancen' },
-        { type: 'white', text: 'nutzen?' }
-      ],
-      teaser:
-        'Dann bringen wir Ihre Ideen auf die Straße, ebenen Ihnen neue Wege und schaffen gemeinsam nachhaltige Werte. Unsere Leidenschaft ist es Veränderungen zu etwas Positivem zu machen.'
+      type: 'content-page',
+      configuration: {
+        backgroundImage: {
+          source: '/img/career/header.avif',
+          alt: 'Three team members enjoying engineering.'
+        },
+        heading: 'Geprägt durch Menschen',
+        headingAccent: 'Arbeitszeit ist Lebenszeit',
+        teaser:
+          'Wir wünschen uns eine offene und ehrliche Zusammenarbeit. Uns ist es daher wichtig Ihnen transparent zu kommunizieren, was unsere Identität ausmacht, was uns motiviert für Sie unser Bestes zu geben und wie wir mit Ihnen gemeinsam Herausforderungen angehen wollen.'
+      }
     }
   }
 };

@@ -21,8 +21,8 @@ export const head: DocumentHead = {
           source: '/img/about/header.avif',
           alt: 'Three team members enjoying engineering.'
         },
-        heading: 'Alles aus einer Hand',
-        headingAccent: 'Vollumfänglich statt punktuell'
+        heading: 'Motiviert von Werten',
+        headingAccent: 'Mut, Kollegialität, Hingabe'
       }
     }
   }
