@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
-export default component$(() => {
+export const NormalButton = component$(() => {
   return (
     <></>
   )
