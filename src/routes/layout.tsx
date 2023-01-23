@@ -13,8 +13,8 @@ export default component$(() => {
 
   return (
     <>
+      <Header {...headerProps} />
       <main class="container mx-auto flex flex-col space-y-32">
-        <Header {...headerProps} />
         <section>
           <Slot />
         </section>
