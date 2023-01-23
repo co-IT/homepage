@@ -3,7 +3,7 @@ import {
   HeadingSegmentAccent,
   HeadingSegmentWhite
 } from '../../heading-segment';
-import { MenuIcon } from '../../icons/menu-icon';
+import { MenuIcon } from '../../icons';
 import type { HeaderLandingPageProps } from './header-landing-page.props';
 
 export default component$((props: HeaderLandingPageProps) => {
