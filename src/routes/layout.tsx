@@ -19,8 +19,8 @@ export default component$(() => {
         <section>
           <Slot />
         </section>
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 });
