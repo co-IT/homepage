@@ -5,3 +5,7 @@ export * from "./youtube-icon";
 export * from "./calendar-icon";
 export * from "./phone-icon";
 export * from "./mail-icon";
+export * from "./blue-arrow-icon";
+export * from "./blue-mail-icon";
+export * from "./blue-phone-icon";
+export * from "./blue-map-icon";

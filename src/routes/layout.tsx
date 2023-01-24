@@ -4,6 +4,7 @@ import { useDocumentHead } from '@builder.io/qwik-city';
 import { Footer } from '~/components/footer';
 import type { HeaderProps } from '~/components/header';
 import { Header } from '~/components/header';
+import { QuickDialButton } from '~/components/buttons';
 
 export default component$(() => {
   const documentHead = useDocumentHead();
@@ -14,6 +15,7 @@ export default component$(() => {
   return (
     <>
       <Header {...headerProps} />
+      <QuickDialButton />
       <main>
         <Slot />
       </main>
