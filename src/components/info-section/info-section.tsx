@@ -1,8 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { NormalButton } from "../buttons/normal-button";
-import { MailIcon } from "../icons";
-import { CalendarIcon } from "../icons/calendar-icon";
-import { PhoneIcon } from "../icons/phone-icon";
+import { MailIcon, CalendarIcon, PhoneIcon } from '../icons';
 
 export const InfoSection = component$(() => {
   return (
