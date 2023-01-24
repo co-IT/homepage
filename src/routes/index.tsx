@@ -10,6 +10,7 @@ import {
 } from '~/components/heading-segment';
 import { LinkCallToAction } from '~/components/link-call-to-action';
 import { SectionArea } from '../components/section-area';
+import { InfoSection } from '~/components/info-section';
 
 export default component$(() => {
   return (
@@ -65,6 +66,10 @@ export default component$(() => {
             <LinkCallToAction href="/quality">Mehr erfahren</LinkCallToAction>
           </section>
         </ContentOverlapLandscape>
+      </SectionArea>
+
+      <SectionArea backgroundColor="white">
+        <InfoSection />
       </SectionArea>
     </>
   );
