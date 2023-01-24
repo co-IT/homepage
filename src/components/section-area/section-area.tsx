@@ -13,7 +13,7 @@ export const SectionArea = component$((props: SectionAreaProps) => {
       : 'white';
 
   return (
-    <section class={`${backgroundColor} py-28`}>
+    <section class={`${backgroundColor} first:pt-12 md:py-28`}>
       <Slot></Slot>
     </section>
   );

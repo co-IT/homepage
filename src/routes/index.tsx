@@ -22,7 +22,7 @@ export default component$(() => {
           }}
         >
           <section q:slot="article" class="flex flex-col space-y-4">
-            <h2 class="font-bold text-4xl">
+            <h2 class="font-bold text-xl md:text-4xl">
               <HeadingSegmentSecondary text="Denken Sie auch in" />
               &nbsp;
               <HeadingSegmentAccent text="ganzheitlichen Lösungen?" />
@@ -32,7 +32,7 @@ export default component$(() => {
               und schaffen gemeinsam nachhaltige Werte. Unsere Leidenschaft ist
               es Veränderungen zu etwas Positivem zu machen.
             </p>
-            <LinkCallToAction href="/">Mehr erfahren</LinkCallToAction>
+            <LinkCallToAction href="/about">Mehr erfahren</LinkCallToAction>
           </section>
         </ContentOverlapPortrait>
       </SectionArea>
@@ -45,7 +45,7 @@ export default component$(() => {
           }}
         >
           <section q:slot="article" class="flex flex-col space-y-4">
-            <h2 class="font-bold text-4xl">
+            <h2 class="font-bold text-xl md:text-4xl">
               <HeadingSegmentSecondary text="Machen" />
               &nbsp;
               <HeadingSegmentAccent text="Menschen" />
@@ -62,7 +62,7 @@ export default component$(() => {
               unserer Team-zentrierten Lösungsmentalität halten und entwickeln
               wir unsere Mitarbeiter.
             </p>
-            <LinkCallToAction href="/">Mehr erfahren</LinkCallToAction>
+            <LinkCallToAction href="/quality">Mehr erfahren</LinkCallToAction>
           </section>
         </ContentOverlapLandscape>
       </SectionArea>
