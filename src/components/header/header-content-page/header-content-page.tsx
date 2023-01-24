@@ -1,17 +1,25 @@
 import { component$ } from '@builder.io/qwik';
 import { HeadingSegmentWhite } from '../../heading-segment';
+import { MenuIcon } from '../../icons';
 import { Logo } from '../../logo/logo';
 import type { HeaderContentPageProps } from './header-content-page.props';
 
 export const HeaderContentPage = component$((props: HeaderContentPageProps) => {
   return (
     <header
-      class="bg-cover bg-no-repeat bg-right-top py-16"
+      class="bg-cover bg-no-repeat md:bg-right-top"
       style={`background-image: linear-gradient(0deg, rgba(2, 2, 52, 0.6), rgba(2, 2, 52, 0.6)), url("${props.backgroundImage.source}");`}
     >
-      <div class="container mx-auto grid grid-rows-2 place-content-center sm:place-content-stretch text-center space-y-32">
-        <section>
+      <div class="container mx-auto grid grid-rows-2 md:place-content-center text-center ">
+        <section class="flex justify-center md:justify-between pt-6 h-fit">
           <Logo />
+
+          <div class="hidden md:block flex-row gap-x-4 my-auto cursor-pointer hover:opacity-75">
+            <MenuIcon />
+            <span class="text-2xl text-white font-bold leading-7 my-auto">
+              Menu
+            </span>
+          </div>
         </section>
         <section class="flex flex-col space-y-10 pb-16">
           <small class="text-accent font-bold text-sm">
