@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { InfoSection } from "~/components/info-section";
+import { MapSection } from "~/components/map-section";
 import { SectionArea } from "~/components/section-area";
 
 export default component$(() => {
@@ -8,6 +9,10 @@ export default component$(() => {
     <>
       <SectionArea backgroundColor="white">
         <InfoSection />
+      </SectionArea>
+
+      <SectionArea backgroundColor="white">
+        <MapSection />
       </SectionArea>
     </>
   );
