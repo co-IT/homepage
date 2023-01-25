@@ -19,9 +19,6 @@ export const HeaderLandingPage = component$((props: HeaderLandingPageProps) => {
 
           <div class="hidden md:block flex-row gap-x-4 my-auto cursor-pointer hover:opacity-75">
             <MenuIcon />
-            <span class="text-2xl text-white font-bold leading-7 my-auto">
-              Menu
-            </span>
           </div>
         </section>
         <section class="flex flex-col items-center space-y-10">
