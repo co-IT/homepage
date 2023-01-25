@@ -29,14 +29,14 @@ export const Footer = component$(() => {
 
   return (
     <>
-      <div class="relative w-full bg-secondary pt-12 pb-32 mt-48 container flex flex-col">
-        <div class="flex flex-row">
-          <div class="w-4/12 flex justify-end mr-24">
+      <div class="relative w-full bg-secondary pt-12 pb-16 lg:pb-32 mt-48 container flex flex-col">
+        <div class="flex flex-col lg:flex-row">
+          <div class="w-full lg:w-4/12 flex justify-center mb-14 lg:mb-0 lg:justify-end lg:mr-24">
             <Logo />
           </div>
 
           {links.map(link => (
-            <Link href={link.path} class="w-2/12">
+            <Link href={link.path} class="w-full text-center mb-5 lg:mb-0 lg:w-2/12">
               <div class="flex flex-col gap-y-2">
                 <div class="text-base font-bold text-white leading-7">
                   {link.textFirstLine}
@@ -49,7 +49,7 @@ export const Footer = component$(() => {
           ))}
         </div>
 
-        <div class="flex justify-end flex-row gap-x-5 absolute right-14 top-40">
+        <div class="flex justify-end flex-col gap-y-6 px-16 lg:px-0 lg:flex-row lg:gap-x-5 lg:absolute right-14 top-40">
           <div class="bg-white px-10 py-9 flex flex-col gap-y-7 shadow-lg">
             <div class="text-lg font-bold leading-5 text-secondary">
               co-IT.eu GmbH
@@ -103,7 +103,7 @@ export const Footer = component$(() => {
         </div>
       </div>
 
-      <div class="bg-primary py-5 mt-48 flex justify-center">
+      <div class="bg-primary py-5 lg:mt-48 flex justify-center">
         <span class="text-xs text-black font-normal opacity-40">
           © 2022 - co-IT GmbH - Datenschutz Impressum AGB
         </span>
