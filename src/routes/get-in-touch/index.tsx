@@ -1,8 +1,16 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { InfoSection } from "~/components/info-section";
+import { SectionArea } from "~/components/section-area";
 
 export default component$(() => {
-  return <></>;
+  return (
+    <>
+      <SectionArea backgroundColor="white">
+        <InfoSection />
+      </SectionArea>
+    </>
+  );
 });
 
 export const head: DocumentHead = {
