@@ -1,2 +1,2 @@
 export * from "./normal-button";
-export * from "./quick-dial-button";
+export * from "./quick-dial-buttons";

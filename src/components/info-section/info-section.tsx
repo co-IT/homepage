@@ -1,8 +1,12 @@
-import { component$ } from "@builder.io/qwik";
+import { $, component$ } from "@builder.io/qwik";
 import { NormalButton } from "../buttons/normal-button";
 import { MailIcon, CalendarIcon, PhoneIcon } from '../icons';
 
 export const InfoSection = component$(() => {
+  const handleSchedule = $(() => {});
+  const handleService = $(() => {});
+  const handleMail = $(() => {});
+
   return (
     <>
       <div class="container w-full mx-auto flex flex-col gap-y-28">
@@ -20,7 +24,7 @@ export const InfoSection = component$(() => {
               </div>
             </div>
 
-            <NormalButton title="Termin vereinabren" />
+            <NormalButton title="Termin vereinabren" click={() => handleSchedule()} />
           </div>
 
           <div class="w-full flex flex-col gap-y-7 items-center">
@@ -32,7 +36,7 @@ export const InfoSection = component$(() => {
               </div>
             </div>
 
-            <NormalButton title="Anrufen" />
+            <NormalButton title="Anrufen" click={() => handleService()} />
           </div>
 
           <div class="w-full flex flex-col gap-y-7 items-center">
@@ -44,7 +48,7 @@ export const InfoSection = component$(() => {
               </div>
             </div>
 
-            <NormalButton title="Schreiben" />
+            <NormalButton title="Schreiben" click={() => handleMail()} />
           </div>
         </div>
       </div>

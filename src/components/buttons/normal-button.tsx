@@ -1,7 +1,8 @@
 import { component$ } from "@builder.io/qwik";
 
 interface ButtonProps {
-  title: string
+  title: string;
+  click: () => void;
 }
 
 export const NormalButton = component$((props: ButtonProps) => {
