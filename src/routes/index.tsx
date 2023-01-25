@@ -8,9 +8,9 @@ import {
   HeadingSegmentAccent,
   HeadingSegmentSecondary
 } from '~/components/heading-segment';
+import { InfoSection } from '~/components/info-section';
 import { LinkCallToAction } from '~/components/link-call-to-action';
 import { SectionArea } from '../components/section-area';
-import { InfoSection } from '~/components/info-section';
 
 export default component$(() => {
   return (

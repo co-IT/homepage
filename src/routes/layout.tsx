@@ -1,10 +1,10 @@
 import { component$, Slot } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { useDocumentHead } from '@builder.io/qwik-city';
+import { QuickDialButtons } from '~/components/buttons';
 import { Footer } from '~/components/footer';
 import type { HeaderProps } from '~/components/header';
 import { Header } from '~/components/header';
-import { QuickDialButtons } from '~/components/buttons';
 
 export default component$(() => {
   const documentHead = useDocumentHead();

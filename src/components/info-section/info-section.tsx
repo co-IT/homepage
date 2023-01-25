@@ -1,11 +1,10 @@
-import { $, component$ } from "@builder.io/qwik";
-import { NormalButton } from "../buttons/normal-button";
-import { MailIcon, CalendarIcon, PhoneIcon } from '../icons';
+import { component$ } from '@builder.io/qwik';
+import { CalendarIcon, MailIcon, PhoneIcon } from '../icons';
 
 export const InfoSection = component$(() => {
-  const handleSchedule = $(() => {});
-  const handleService = $(() => {});
-  const handleMail = $(() => {});
+  // const handleSchedule = $(() => {});
+  // const handleService = $(() => {});
+  // const handleMail = $(() => {});
 
   return (
     <>
@@ -20,11 +19,12 @@ export const InfoSection = component$(() => {
               <CalendarIcon />
 
               <div class="text-xl text-black font-semibold leading-8 min-h-[150px] text-center tracking-wider">
-                Reservieren Sie direkt den für Sie passenden Termin bei uns vor Ort oder ganz bequem online.
+                Reservieren Sie direkt den für Sie passenden Termin bei uns vor
+                Ort oder ganz bequem online.
               </div>
             </div>
 
-            <NormalButton title="Termin vereinabren" click={() => handleSchedule()} />
+            {/* <NormalButton title="Termin vereinabren" click={() => handleSchedule()} /> */}
           </div>
 
           <div class="w-full flex flex-col gap-y-7 items-center">
@@ -32,11 +32,12 @@ export const InfoSection = component$(() => {
               <PhoneIcon />
 
               <div class="text-xl text-black font-semibold leading-8 min-h-[150px] text-center tracking-wider">
-                Gerne können Sie auf unserer zentralen Durchwahl anrufen und optional eine Nachricht hinterlassen.
+                Gerne können Sie auf unserer zentralen Durchwahl anrufen und
+                optional eine Nachricht hinterlassen.
               </div>
             </div>
 
-            <NormalButton title="Anrufen" click={() => handleService()} />
+            {/* <NormalButton title="Anrufen" click={() => handleService()} /> */}
           </div>
 
           <div class="w-full flex flex-col gap-y-7 items-center">
@@ -48,10 +49,10 @@ export const InfoSection = component$(() => {
               </div>
             </div>
 
-            <NormalButton title="Schreiben" click={() => handleMail()} />
+            {/* <NormalButton title="Schreiben" click={() => handleMail()} /> */}
           </div>
         </div>
       </div>
     </>
-  )
+  );
 });
