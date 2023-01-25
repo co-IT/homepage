@@ -1,7 +1,11 @@
-import { component$ } from "@builder.io/qwik";
+import { $, component$ } from "@builder.io/qwik";
 import { BlueArrowIcon, BlueMailIcon, BluePhoneIcon, BlueMapIcon } from "../icons";
 
 export const QuickDialButton = component$(() => {
+  const moveTo = $(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
   return (
     <>
       <div class="flex-col gap-y-4 fixed right-0 top-2/4 hidden md:flex">
@@ -17,7 +21,7 @@ export const QuickDialButton = component$(() => {
           </a>
         </div>
 
-        <div class="bg-primary p-2 rounded-tl-lg rounded-bl-lg cursor-pointer">
+        <div class="bg-primary p-2 rounded-tl-lg rounded-bl-lg cursor-pointer" onClick$={() => moveTo()}>
           <BlueArrowIcon />
         </div>
       </div>
