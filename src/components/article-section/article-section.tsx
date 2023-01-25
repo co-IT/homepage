@@ -27,7 +27,7 @@ export const ArticleSection = component$(() => {
   ];
   return (
     <div class="w-full container mx-auto flex flex-col gap-y-20">
-      {articles.map(article => (
+      {articles.map((article, key) => (
         <div>
           <ArticleCard
             direction={article.direction}
@@ -35,6 +35,7 @@ export const ArticleSection = component$(() => {
             text={article.text}
             imageSource={article.imageSource}
             imageAlternateText={article.imageAlternateText}
+            key={key}
           />
           <hr class="mt-20" />
         </div>

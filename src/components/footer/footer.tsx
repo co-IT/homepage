@@ -35,8 +35,8 @@ export const Footer = component$(() => {
             <Logo />
           </div>
 
-          {links.map(link => (
-            <Link href={link.path} class="w-full text-center mb-5 lg:mb-0 lg:w-2/12">
+          {links.map((link, key) => (
+            <Link href={link.path} class="w-full text-center mb-5 lg:mb-0 lg:w-2/12" key={key}>
               <div class="flex flex-col gap-y-2">
                 <div class="text-base font-bold text-white leading-7">
                   {link.textFirstLine}
