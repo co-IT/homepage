@@ -6,11 +6,11 @@ export const InfoSection = component$(() => {
   return (
     <>
       <div class="container w-full mx-auto flex flex-col gap-y-28">
-        <div class="flex justify-center text-4xl font-bold leading-[48px] text-secondary">
+        <div class="flex justify-center text-center text-4xl font-bold leading-[48px] text-secondary">
           Wir haben Ihr Interesse geweckt?
         </div>
 
-        <div class="flex flex-row gap-x-16">
+        <div class="flex flex-col gap-y-16 px-6 sm:flex-row sm:gap-x-16">
           <div class="w-full flex flex-col gap-y-7 items-center">
             <div class="flex flex-col gap-y-10 items-center">
               <CalendarIcon />
