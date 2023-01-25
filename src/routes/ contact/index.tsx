@@ -1,14 +1,14 @@
-import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
-import { InfoSection } from "~/components/info-section";
-import { MapSection } from "~/components/map-section";
-import { SectionArea } from "~/components/section-area";
+import { component$ } from '@builder.io/qwik';
+import type { DocumentHead } from '@builder.io/qwik-city';
+import { ContactPossibilitiesGrid } from '~/components/contact-possibilities-grid';
+import { MapSection } from '~/components/map-section';
+import { SectionArea } from '~/components/section-area';
 
 export default component$(() => {
   return (
     <>
       <SectionArea backgroundColor="white">
-        <InfoSection />
+        <ContactPossibilitiesGrid />
       </SectionArea>
 
       <SectionArea backgroundColor="white">

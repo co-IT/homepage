@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
+import { ContactPossibilitiesGrid } from '~/components/contact-possibilities-grid';
 import {
   ContentOverlapLandscape,
   ContentOverlapPortrait
@@ -8,7 +9,6 @@ import {
   HeadingSegmentAccent,
   HeadingSegmentSecondary
 } from '~/components/heading-segment';
-import { InfoSection } from '~/components/info-section';
 import { LinkCallToAction } from '~/components/link-call-to-action';
 import { SectionArea } from '../components/section-area';
 
@@ -69,7 +69,7 @@ export default component$(() => {
       </SectionArea>
 
       <SectionArea backgroundColor="white">
-        <InfoSection />
+        <ContactPossibilitiesGrid />
       </SectionArea>
     </>
   );
