@@ -10,7 +10,7 @@ export const HeaderContentPage = component$((props: HeaderContentPageProps) => {
       class="bg-cover bg-no-repeat md:bg-right-top"
       style={`background-image: linear-gradient(0deg, rgba(2, 2, 52, 0.6), rgba(2, 2, 52, 0.6)), url("${props.backgroundImage.source}");`}
     >
-      <div class="container mx-auto grid grid-rows-2 md:place-content-center text-center ">
+      <div class="container mx-auto grid grid-rows-2">
         <section class="flex justify-center md:justify-between pt-6 h-fit">
           <Logo />
 
@@ -18,11 +18,11 @@ export const HeaderContentPage = component$((props: HeaderContentPageProps) => {
             <MenuIcon />
           </div>
         </section>
-        <section class="flex flex-col space-y-10 pb-16">
-          <small class="text-accent font-bold text-sm">
+        <section class="flex flex-col space-y-10 pb-16 text-center">
+          <small class="text-accent  font-bold text-sm">
             {props.headingAccent}
           </small>
-          <h1 class="break-words font-bold text-2xl md:text-6xl">
+          <h1 class="font-bold text-2xl md:text-6xl">
             <HeadingSegmentWhite text={props.heading} />
           </h1>
 

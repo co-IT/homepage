@@ -13,7 +13,7 @@ export const HeaderLandingPage = component$((props: HeaderLandingPageProps) => {
       class="bg-cover bg-no-repeat md:bg-right-top"
       style={`background-image: linear-gradient(0deg, rgba(2, 2, 52, 0.6), rgba(2, 2, 52, 0.6)), url("${props.backgroundImage.source}");`}
     >
-      <div class="container mx-auto grid grid-rows-2 md:place-content-center text-center ">
+      <div class="container mx-auto grid grid-rows-2">
         <section class="flex justify-center md:justify-between pt-6 h-fit">
           <Logo></Logo>
 
@@ -21,8 +21,8 @@ export const HeaderLandingPage = component$((props: HeaderLandingPageProps) => {
             <MenuIcon />
           </div>
         </section>
-        <section class="flex flex-col items-center space-y-10">
-          <h1 class="font-bold text-2xl md:text-6xl">
+        <section class="flex flex-col items-center space-y-10 text-center">
+          <h1 class="font-bold  text-2xl md:text-6xl">
             {props.headingSegments.map(headingSegment => (
               <>
                 {headingSegment.type === 'white' ? (
