@@ -26,7 +26,7 @@ export const ArticleSection = component$(() => {
     }
   ];
   return (
-    <div class="w-full container mx-auto flex flex-col gap-y-20">
+    <div class="w-full container mx-auto flex flex-col gap-y-10 lg:gap-y-20">
       {articles.map((article, key) => (
         <div>
           <ArticleCard
@@ -37,7 +37,7 @@ export const ArticleSection = component$(() => {
             imageAlternateText={article.imageAlternateText}
             key={key}
           />
-          <hr class="mt-20" />
+          <hr class="mt-10 lg:mt-20" />
         </div>
       ))}
     </div>
