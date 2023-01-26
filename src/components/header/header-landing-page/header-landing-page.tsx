@@ -10,7 +10,7 @@ import type { HeaderLandingPageProps } from './header-landing-page.props';
 export const HeaderLandingPage = component$((props: HeaderLandingPageProps) => {
   return (
     <header
-      class="bg-cover bg-no-repeat md:bg-right-top"
+      class="bg-cover bg-no-repeat md:bg-right-top relative"
       style={`background-image: linear-gradient(0deg, rgba(2, 2, 52, 0.6), rgba(2, 2, 52, 0.6)), url("${props.backgroundImage.source}");`}
     >
       <div class="container mx-auto grid grid-rows-2">
