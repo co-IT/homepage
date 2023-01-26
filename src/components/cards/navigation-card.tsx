@@ -22,7 +22,7 @@ export const NavigationCard = component$((props: NavigationCardProps) => {
 
       <div class="h-0.5 w-4 bg-black" />
 
-      <div class="text-lg text-secondary font-semibold leading-5">
+      <div class="text-lg text-secondary font-semibold leading-5 text-center">
         {props.text}
       </div>
     </a>

@@ -39,8 +39,8 @@ export const Navigation = component$(() => {
           </div>
         </div>
 
-        <div class="flex flex-col gap-y-14">
-          <div class="flex flex-row gap-x-10">
+        <div class="flex flex-col gap-y-20 lg:gap-y-14">
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10 px-7 lg:px-0">
             {NavigationCardItems.map((cardItem, key) => (
               <NavigationCard title={cardItem.title} link={cardItem.link} text={cardItem.text} key={key} />
             ))}
