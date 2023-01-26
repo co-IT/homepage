@@ -29,9 +29,9 @@ export const Navigation = component$(() => {
   return (
     <div class="w-full bg-primary pt-16 pb-24 absolute top-0 z-10 shadow-xl">
       <div class="container mx-auto flex flex-col gap-y-20">
-        <div class="flex justify-between">
-          <img src="/img/navigation/logo.svg" alt="logo" />
-          <div class="flex flex-row gap-x-2 my-auto cursor-pointer hover:opacity-75">
+        <div class="flex justify-between flex-col lg:flex-row">
+          <img src="/img/navigation/logo.svg" alt="logo" class="w-32 lg:w-44 h-fit mx-auto lg:mx-0" />
+          <div class="flex-row gap-x-2 my-auto cursor-pointer hover:opacity-75 hidden lg:flex">
             <WhiteCloseIcon />
             <div class="text-lg text-white font-bold leading-5 my-auto">
               Schließen
