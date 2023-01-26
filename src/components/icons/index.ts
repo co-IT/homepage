@@ -9,3 +9,4 @@ export * from "./blue-arrow-icon";
 export * from "./blue-mail-icon";
 export * from "./blue-phone-icon";
 export * from "./blue-map-icon";
+export * from "./yellow-close-icon";
