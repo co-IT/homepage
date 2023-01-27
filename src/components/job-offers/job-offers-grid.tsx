@@ -1,10 +1,6 @@
 import { component$ } from '@builder.io/qwik';
-import type { JobOfferCompact } from '../../routes/career/model';
 import { LinkCallToAction } from '../link-call-to-action';
-
-interface JobOffersGridProps {
-  jobOffers: JobOfferCompact[];
-}
+import type { JobOffersGridProps } from './job-offers-grid.props';
 
 export const JobOffersGrid = component$((props: JobOffersGridProps) => {
   return (

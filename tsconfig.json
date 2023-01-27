@@ -21,6 +21,9 @@
       "~/*": ["./src/*"]
     }
   },
-  "files": ["./.eslintrc.cjs"],
+  "files": [
+    "./.eslintrc.cjs",
+    "src/components/job-offers/job-offers-grid.props.ts"
+  ],
   "include": ["src"]
 }
