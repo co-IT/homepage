@@ -14,7 +14,7 @@ export const NavigationCard = component$((props: NavigationCardProps) => {
   return (
     <Link
       href={props.link}
-      class={ path === props.link + '/' ? "w-full bg-white rounded-xl px-4 py-10 flex flex-col gap-y-6 items-center hover:opacity-100" : "w-full bg-primary rounded-xl px-4 py-10 flex flex-col gap-y-6 items-center hover:bg-white" }
+      class={ path === props.link + '/' ? "w-full bg-white rounded-xl px-4 py-10 flex flex-col gap-y-6 items-center hover:opacity-100" : "w-full bg-[#ffcd61] rounded-xl px-4 py-10 flex flex-col gap-y-6 items-center hover:bg-white" }
     >
       <div class="text-lg text-secondary font-bold leading-5">
         {props.title}
