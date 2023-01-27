@@ -48,7 +48,7 @@ export const Navigation = component$(() => {
           </div>
 
           <div class="flex justify-center">
-            <a href="/contact" class="bg-secondary hover:opacity-75 text-white font-bold text-lg w-fit px-14 py-[18px] rounded">
+            <a href="/contact" class="bg-secondary hover:opacity-75 text-white font-bold text-lg w-fit px-14 py-5 rounded">
               Kontakt aufnehmen
             </a>
           </div>

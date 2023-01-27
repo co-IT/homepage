@@ -17,7 +17,7 @@ export const ArticleCard = component$((props: ArticleCardProps) => {
           <div class="w-full flex flex-col gap-y-5">
             <div class="flex flex-col gap-y-4">
               <div class="w-10 h-1 bg-accent mx-auto lg:mx-0" />
-              <div class="text-[28px] lg:text-[40px] text-secondary font-bold leading-8 lg:leading-[50px] text-center lg:text-left px-6 lg:px-0">
+              <div class="text-3xl lg:text-4xl text-secondary font-bold leading-8 lg:leading-10 text-center lg:text-left px-6 lg:px-0">
                 {props.heading}
               </div>
               <div class="w-full mt-4 lg:hidden">
@@ -43,7 +43,7 @@ export const ArticleCard = component$((props: ArticleCardProps) => {
           <div class="w-full flex flex-col gap-y-5">
             <div class="flex flex-col gap-y-4">
               <div class="w-10 h-1 bg-accent mx-auto lg:mx-0" />
-              <div class="text-[28px] lg:text-[40px] text-secondary font-bold leading-8 lg:leading-[50px] text-center lg:text-left px-6 lg:px-0">
+              <div class="text-3xl lg:text-4xl text-secondary font-bold leading-8 lg:leading-10 text-center lg:text-left px-6 lg:px-0">
                 {props.heading}
               </div>
               <div class="w-full mt-4 lg:hidden">

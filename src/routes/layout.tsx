@@ -16,7 +16,7 @@ export default component$(() => {
   return (
     <>
       <Header {...headerProps} />
-      {/* <Navigation /> */}
+        <Navigation />
       <QuickDialButtons />
       <main>
         <Slot />
