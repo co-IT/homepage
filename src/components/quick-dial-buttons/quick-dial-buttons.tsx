@@ -17,7 +17,7 @@ export const QuickDialButtons = component$(() => {
         <div class="flex flex-col">
           <a
             href="tel:+49721935163052"
-            target="_blank"
+            target="_self"
             class="bg-primary p-3 rounded-tl-lg cursor-pointer"
           >
             <BluePhoneIcon />
