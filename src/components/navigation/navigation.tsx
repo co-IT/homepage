@@ -65,7 +65,7 @@ export const Navigation = component$(() => {
           <div class="flex flex-row gap-x-5">
             <a
               href="tel:+49721935163052"
-              target="_blank"
+              target="_self"
               class="w-14 h-14 bg-white rounded-full shadow-lg relative"
             >
               <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4">
