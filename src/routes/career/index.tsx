@@ -1,6 +1,10 @@
 import { component$, Resource } from '@builder.io/qwik';
 import type { DocumentHead, RequestHandler } from '@builder.io/qwik-city';
 import { useEndpoint } from '@builder.io/qwik-city';
+import {
+  JobOffersFallbackMessage,
+  JobOffersGrid
+} from '~/components/job-offers';
 import type { JobOfferCompact } from './model';
 import { createJobOffersFromRecruitee } from './model-helper';
 
@@ -26,22 +30,8 @@ export default component$(() => {
     <>
       <Resource
         value={jobOffers}
-        onResolved={jobOffers => (
-          <>
-            {jobOffers.map(jobOffer => (
-              <div>{jobOffer.title}</div>
-            ))}
-          </>
-        )}
-        onRejected={() => (
-          <p>
-            Please check our Job-Offers
-            <a href="https://karriere.co-it.eu" target="_blank">
-              here
-            </a>
-            .
-          </p>
-        )}
+        onResolved={jobOffers => <JobOffersGrid jobOffers={jobOffers} />}
+        onRejected={() => <JobOffersFallbackMessage />}
       ></Resource>
     </>
   );
