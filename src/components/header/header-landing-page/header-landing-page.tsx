@@ -1,4 +1,5 @@
-import { component$ } from '@builder.io/qwik';
+import { $, component$, useContext } from '@builder.io/qwik';
+import { MenuContext } from '~/components/common';
 import {
   HeadingSegmentAccent,
   HeadingSegmentWhite
@@ -6,8 +7,14 @@ import {
 import { MenuIcon } from '../../icons';
 import { Logo } from '../../logo';
 import type { HeaderLandingPageProps } from './header-landing-page.props';
+import type { MenuStateType } from '~/components/common';
 
 export const HeaderLandingPage = component$((props: HeaderLandingPageProps) => {
+  const menuState = useContext<MenuStateType>(MenuContext);
+  const openMenu = $(() => {
+    menuState.isOpen = true;
+  });
+
   return (
     <header
       class="bg-cover bg-no-repeat md:bg-right-top relative"
@@ -17,7 +24,7 @@ export const HeaderLandingPage = component$((props: HeaderLandingPageProps) => {
         <section class="flex justify-center md:justify-between pt-6 h-fit">
           <Logo></Logo>
 
-          <div class="hidden md:block flex-row gap-x-4 my-auto cursor-pointer hover:opacity-75">
+          <div class="hidden md:block flex-row gap-x-4 my-auto cursor-pointer hover:opacity-75" onClick$={() => openMenu()}>
             <MenuIcon />
           </div>
         </section>
