@@ -1,23 +1,28 @@
-import type { JobOffer } from '../model';
-import type { JobOfferRecruiteeDto } from '../model/job-offer-recruitee.dto';
+import type {
+  JobOfferCompact,
+  RecruiteeJobOfferDto,
+  RecruiteeResponseDto
+} from '../model';
 
 export function createJobOffersFromRecruitee(
-  jobOffersRecruitee: JobOfferRecruiteeDto[] | undefined | null
-): JobOffer[] {
-  if (!jobOffersRecruitee || !Array.isArray(jobOffersRecruitee)) {
+  recruiteeResponse: RecruiteeResponseDto | undefined | null
+): JobOfferCompact[] {
+  const recruiteeJobOffers = recruiteeResponse?.offers;
+
+  if (!areJobOffers(recruiteeJobOffers)) {
     return [];
   }
 
-  return jobOffersRecruitee.map(jobOfferRecruitee => ({
-    id: jobOfferRecruitee.id,
-    title: jobOfferRecruitee.title,
-    description: jobOfferRecruitee.description,
-    city: jobOfferRecruitee.city,
-    country: jobOfferRecruitee.country,
-    applyUrl: jobOfferRecruitee.careers_apply_url,
-    offerUrl: jobOfferRecruitee.careers_url,
-    tags: jobOfferRecruitee.tags,
-    location: jobOfferRecruitee.location,
-    isRemote: jobOfferRecruitee.remote
+  return recruiteeJobOffers.map(recruiteeJobOffer => ({
+    title: recruiteeJobOffer.title,
+    offerUrl: recruiteeJobOffer.careers_url,
+    tags: recruiteeJobOffer.tags,
+    location: recruiteeJobOffer.location
   }));
+}
+
+function areJobOffers(
+  candidate: RecruiteeJobOfferDto[] | undefined | null
+): candidate is RecruiteeJobOfferDto[] {
+  return !!candidate && Array.isArray(candidate);
 }

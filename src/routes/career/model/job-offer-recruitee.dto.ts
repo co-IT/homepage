@@ -1,10 +1,10 @@
 /*
  *
- * Represents information coming from
+ * Represents offers coming from
  * https://coiteugmbh.recruitee.com/api/offers
  *
  */
-export interface JobOfferRecruiteeDto {
+export interface RecruiteeJobOfferDto {
   description: string;
   country_code: string;
   tags: string[];

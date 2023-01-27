@@ -1,12 +1,6 @@
-export interface JobOffer {
-  id: number;
+export interface JobOfferCompact {
   title: string;
-  description: string;
-  city: string;
-  country: string;
-  applyUrl: string;
   offerUrl: string;
   tags: string[];
   location: string;
-  isRemote: boolean;
 }

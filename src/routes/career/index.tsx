@@ -1,23 +1,26 @@
 import { component$, Resource } from '@builder.io/qwik';
 import type { DocumentHead, RequestHandler } from '@builder.io/qwik-city';
 import { useEndpoint } from '@builder.io/qwik-city';
-import type { JobOffer } from './model';
+import type { JobOfferCompact } from './model';
 import { createJobOffersFromRecruitee } from './model-helper';
 
-export const onGet: RequestHandler<JobOffer[]> = async () => {
+export const onGet: RequestHandler<JobOfferCompact[]> = async () => {
   const response = await fetch('https://coiteugmbh.recruitee.com/api/offers');
 
   if (!response.ok) {
     throw new Error('Bad response fetching job offers from Recruitee.');
   }
 
-  const jobOffersFromRecruitee = await response.json();
+  const recruiteeResponse = await response.json();
 
-  return createJobOffersFromRecruitee(jobOffersFromRecruitee);
+  const h = createJobOffersFromRecruitee(recruiteeResponse);
+  console.log(h);
+
+  return h;
 };
 
 export default component$(() => {
-  const jobOffers = useEndpoint<JobOffer[]>();
+  const jobOffers = useEndpoint<JobOfferCompact[]>();
 
   return (
     <>
