@@ -15,7 +15,7 @@ export const JobOffersGrid = component$((props: JobOffersGridProps) => {
           </div>
 
           <p>{jobOffer.location}</p>
-          {jobOffer.tags.map(tag => (
+          {jobOffer.tags?.map(tag => (
             <span>{tag}</span>
           ))}
         </article>
