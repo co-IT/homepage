@@ -1,18 +1,23 @@
-import { component$, useStyles$, useContextProvider, useStore } from "@builder.io/qwik";
+import {
+  component$,
+  useContextProvider,
+  useStore,
+  useStyles$
+} from '@builder.io/qwik';
 import {
   QwikCityProvider,
   RouterOutlet,
-  ServiceWorkerRegister,
-} from "@builder.io/qwik-city";
-import { RouterHead } from "./components/router-head/router-head";
-import { MenuContext } from "./components/common";
-import type { MenuStateType } from "./components/common";
-import globalStyles from "./global.css?inline";
+  ServiceWorkerRegister
+} from '@builder.io/qwik-city';
+import type { NavigationState } from './components/navigation/navigation.context';
+import { NavigationContext } from './components/navigation/navigation.context';
+import { RouterHead } from './components/router-head/router-head';
+import globalStyles from './global.css?inline';
 
 export default component$(() => {
   useStyles$(globalStyles);
-  const menuState = useStore<MenuStateType>({ isOpen: false });
-  useContextProvider(MenuContext, menuState);
+  const menuState = useStore<NavigationState>({ isOpen: false });
+  useContextProvider(NavigationContext, menuState);
 
   return (
     <QwikCityProvider>
