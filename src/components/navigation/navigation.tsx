@@ -1,9 +1,6 @@
 import { $, component$, useContext } from '@builder.io/qwik';
 import { useNavigate } from '@builder.io/qwik-city';
-import type { NavigationLink } from '../cards';
-import { NavigationCard } from '../cards';
-import type { MenuStateType } from '../common';
-import { MenuContext } from '../common';
+import { NavigationLinkCard } from '../cards';
 import {
   BlueMailIcon,
   BlueMapIcon,
@@ -11,6 +8,9 @@ import {
   YellowCloseIcon
 } from '../icons';
 import { WhiteCloseIcon } from '../icons/white-close-icon';
+import type { NavigationLink } from './model';
+import type { NavigationState } from './navigation.context';
+import { NavigationContext } from './navigation.context';
 
 export const Navigation = component$(() => {
   const navigationLinks: NavigationLink[] = [
@@ -36,20 +36,20 @@ export const Navigation = component$(() => {
     }
   ];
 
-  const menuState = useContext<MenuStateType>(MenuContext);
+  const navigation = useContext<NavigationState>(NavigationContext);
   const navigate = useNavigate();
 
   const closeMenu = $(() => {
-    menuState.isOpen = false;
+    navigation.isOpen = false;
   });
 
   const goto$ = $((link: NavigationLink) => {
-    menuState.isOpen = false;
+    navigation.isOpen = false;
     navigate(link.path);
   });
 
   return (
-    <div class="w-full bg-primary pt-12 lg:pt-16 pb-12 lg:pb-24 absolute top-0 z-10 shadow-xl">
+    <div class="w-full bg-primary pt-12 lg:pt-16 pb-12 lg:pb-24 absolute top-0 z-20 shadow-xl">
       <div class="container mx-auto flex flex-col gap-y-14 lg:gap-y-20">
         <div class="flex justify-between flex-col lg:flex-row">
           <img
@@ -71,7 +71,7 @@ export const Navigation = component$(() => {
         <div class="flex flex-col gap-y-14">
           <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10 px-7 lg:px-0">
             {navigationLinks.map((navigationLink, key) => (
-              <NavigationCard
+              <NavigationLinkCard
                 link={navigationLink}
                 onLinkClick$={link => goto$(link)}
                 key={key}

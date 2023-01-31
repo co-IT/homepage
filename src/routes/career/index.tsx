@@ -71,16 +71,6 @@ export default component$(() => {
   );
 });
 
-// export const onGet: RequestHandler<JobOfferCompact[]> = async () => {
-//   return fetch('https://coiteugmbh.recruitee.com/api/offers')
-//     .then(response =>
-//       response.ok
-//         ? response.json()
-//         : Promise.reject('Bad response fetching job offers from Recruitee.')
-//     )
-//     .then(json => createJobOffersFromRecruitee(json));
-// };
-
 export const head: DocumentHead = {
   title: 'co-IT - Inspire to Change',
   meta: [

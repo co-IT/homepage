@@ -1,13 +1,13 @@
 import { $, component$, useContext } from '@builder.io/qwik';
-import { MenuContext } from '~/components/common';
+import type { NavigationState } from '~/components/navigation/navigation.context';
+import { NavigationContext } from '~/components/navigation/navigation.context';
 import { HeadingSegmentWhite } from '../../heading-segment';
 import { MenuIcon } from '../../icons';
 import { Logo } from '../../logo/logo';
 import type { HeaderContentPageProps } from './header-content-page.props';
-import type { MenuStateType } from '~/components/common';
 
 export const HeaderContentPage = component$((props: HeaderContentPageProps) => {
-  const menuState = useContext<MenuStateType>(MenuContext);
+  const menuState = useContext<NavigationState>(NavigationContext);
   const openMenu = $(() => {
     menuState.isOpen = true;
   });
@@ -21,7 +21,10 @@ export const HeaderContentPage = component$((props: HeaderContentPageProps) => {
         <section class="flex justify-center md:justify-between pt-6 h-fit">
           <Logo />
 
-          <div class="hidden md:block flex-row gap-x-4 my-auto cursor-pointer hover:opacity-75" onClick$={() => openMenu()}>
+          <div
+            class="hidden md:block flex-row gap-x-4 my-auto cursor-pointer hover:opacity-75"
+            onClick$={() => openMenu()}
+          >
             <MenuIcon />
           </div>
         </section>

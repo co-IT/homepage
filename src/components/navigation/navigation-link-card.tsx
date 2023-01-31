@@ -1,19 +1,14 @@
 import type { PropFunction } from '@builder.io/qwik';
 import { component$ } from '@builder.io/qwik';
 import { useLocation } from '@builder.io/qwik-city';
-
-export interface NavigationLink {
-  heading: string;
-  text: string;
-  path: string;
-}
+import type { NavigationLink } from './model';
 
 interface NavigationCardProps {
   link: NavigationLink;
   onLinkClick$?: PropFunction<(link: NavigationLink) => void>;
 }
 
-export const NavigationCard = component$((props: NavigationCardProps) => {
+export const NavigationLinkCard = component$((props: NavigationCardProps) => {
   const location = useLocation();
   const path = location.pathname;
 

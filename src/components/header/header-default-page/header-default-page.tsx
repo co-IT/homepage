@@ -1,13 +1,13 @@
 import { $, component$, useContext } from '@builder.io/qwik';
-import type { MenuStateType } from '~/components/common';
-import { MenuContext } from '~/components/common';
+import type { NavigationState } from '~/components/navigation/navigation.context';
+import { NavigationContext } from '~/components/navigation/navigation.context';
 import { HeadingSegmentWhite } from '../../heading-segment';
 import { MenuIcon } from '../../icons';
 import { Logo } from '../../logo/logo';
 import type { HeaderDefaultPageProps } from './header-default-page.props';
 
 export const HeaderDefaultPage = component$((props: HeaderDefaultPageProps) => {
-  const menuState = useContext<MenuStateType>(MenuContext);
+  const menuState = useContext<NavigationState>(NavigationContext);
   const openMenu = $(() => {
     menuState.isOpen = true;
   });

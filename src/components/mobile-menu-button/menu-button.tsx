@@ -1,18 +1,23 @@
-import { $, component$, useContext } from "@builder.io/qwik";
-import { MenuContext } from '~/components/common';
-import { WhiteMenuIcon } from "../icons";
-import type { MenuStateType } from '~/components/common';
+import { $, component$, useContext } from '@builder.io/qwik';
+import type { NavigationState } from '~/components/navigation/navigation.context';
+import { NavigationContext } from '~/components/navigation/navigation.context';
+import { WhiteMenuIcon } from '../icons';
 
 export const MobileMenuButton = component$(() => {
-  const menuState = useContext<MenuStateType>(MenuContext);
+  const menuState = useContext<NavigationState>(NavigationContext);
   const openMenu = $(() => {
     menuState.isOpen = true;
   });
   return (
     <>
-      {!menuState.isOpen && <div class="p-4 rounded-full bg-primary cursor-pointer right-6 bottom-4 z-50 shadow-md w-fit fixed sm:hidden hover:opacity-75" onClick$={() => openMenu()}>
-        <WhiteMenuIcon />
-        </div>}
+      {!menuState.isOpen && (
+        <div
+          class="p-4 rounded-full bg-primary cursor-pointer right-6 bottom-4 z-50 shadow-md w-fit fixed sm:hidden hover:opacity-75"
+          onClick$={() => openMenu()}
+        >
+          <WhiteMenuIcon />
+        </div>
+      )}
     </>
-  )
+  );
 });

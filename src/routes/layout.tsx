@@ -1,20 +1,20 @@
 import { component$, Slot, useContext } from '@builder.io/qwik';
+import type { DocumentHead } from '@builder.io/qwik-city';
 import { useDocumentHead } from '@builder.io/qwik-city';
-import { MenuContext } from '~/components/common';
 import { Footer } from '~/components/footer';
+import type { HeaderProps } from '~/components/header';
 import { Header } from '~/components/header';
 import { Navigation } from '~/components/navigation';
+import type { NavigationState } from '~/components/navigation/navigation.context';
+import { NavigationContext } from '~/components/navigation/navigation.context';
 import { QuickDialButtons } from '~/components/quick-dial-buttons';
-import type { HeaderProps } from '~/components/header';
-import type { MenuStateType } from '~/components/common';
-import type { DocumentHead } from '@builder.io/qwik-city';
 
 export default component$(() => {
   const documentHead = useDocumentHead();
   const headerProps: HeaderProps = {
     ...documentHead.frontmatter.header
   } as HeaderProps;
-  const menuState = useContext<MenuStateType>(MenuContext);
+  const menuState = useContext<NavigationState>(NavigationContext);
 
   return (
     <>
