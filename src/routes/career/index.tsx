@@ -1,17 +1,24 @@
-import { component$, Resource } from '@builder.io/qwik';
-import type { DocumentHead, RequestHandler } from '@builder.io/qwik-city';
-import { useEndpoint } from '@builder.io/qwik-city';
+import { component$, Resource, useResource$ } from '@builder.io/qwik';
+import type { DocumentHead } from '@builder.io/qwik-city';
+import {} from '@builder.io/qwik-city';
 import {
   JobOffersFallbackMessage,
   JobOffersGrid
 } from '~/components/job-offers';
 import type { YouTubeVideo } from '~/components/youtube';
 import { YouTubeVideoGrid } from '~/components/youtube';
-import type { JobOfferCompact } from './model';
 import { createJobOffersFromRecruitee } from './model-helper';
 
 export default component$(() => {
-  const jobOffers = useEndpoint<JobOfferCompact[]>();
+  const jobOffers = useResource$(() => {
+    return fetch('https://coiteugmbh.recruitee.com/api/offers')
+      .then(response =>
+        response.ok
+          ? response.json()
+          : Promise.reject('Bad response fetching job offers from Recruitee.')
+      )
+      .then(json => createJobOffersFromRecruitee(json));
+  });
 
   const youtubeVideos: YouTubeVideo[] = [
     {
@@ -25,28 +32,28 @@ export default component$(() => {
       description: 'Lorem Ipsum'
     },
     {
-      title: 'career.video.why.orientation',
       id: 'n26k-IpzZAY',
+      title: 'career.video.why.orientation',
       description: 'Lorem Ipsum'
     },
     {
-      title: 'career.video.why.solutions',
       id: '7trxOOr9Oys',
+      title: 'career.video.why.solutions',
       description: 'Lorem Ipsum'
     },
     {
-      title: 'career.video.why.change',
       id: 'v9KlP83Y73I',
+      title: 'career.video.why.change',
       description: 'Lorem Ipsum'
     },
     {
-      title: 'career.video.why.understand-people',
       id: 'kQBu_XUbRpQ',
+      title: 'career.video.why.understand-people',
       description: 'Lorem Ipsum'
     },
     {
-      title: 'career.video.why.origin',
       id: 'DE65AUyFI6E',
+      title: 'career.video.why.origin',
       description: 'Lorem Ipsum'
     }
   ];
@@ -64,15 +71,15 @@ export default component$(() => {
   );
 });
 
-export const onGet: RequestHandler<JobOfferCompact[]> = async () => {
-  return fetch('https://coiteugmbh.recruitee.com/api/offers')
-    .then(response =>
-      response.ok
-        ? response.json()
-        : Promise.reject('Bad response fetching job offers from Recruitee.')
-    )
-    .then(json => createJobOffersFromRecruitee(json));
-};
+// export const onGet: RequestHandler<JobOfferCompact[]> = async () => {
+//   return fetch('https://coiteugmbh.recruitee.com/api/offers')
+//     .then(response =>
+//       response.ok
+//         ? response.json()
+//         : Promise.reject('Bad response fetching job offers from Recruitee.')
+//     )
+//     .then(json => createJobOffersFromRecruitee(json));
+// };
 
 export const head: DocumentHead = {
   title: 'co-IT - Inspire to Change',
