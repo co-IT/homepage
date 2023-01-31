@@ -1,7 +1,8 @@
 import { component$ } from '@builder.io/qwik';
 import { MobileMenuButton } from '../mobile-menu-button';
-import { HeaderContentPage } from './header-content-page/header-content-page';
-import { HeaderLandingPage } from './header-landing-page/header-landing-page';
+import { HeaderContentPage } from './header-content-page';
+import { HeaderDefaultPage } from './header-default-page';
+import { HeaderLandingPage } from './header-landing-page';
 import type { HeaderProps } from './header.props';
 
 export const Header = component$((props: HeaderProps) => {
@@ -12,7 +13,7 @@ export const Header = component$((props: HeaderProps) => {
       ) : props.type === 'content-page' ? (
         <HeaderContentPage {...props.configuration} />
       ) : (
-        <div>unknown header type</div>
+        <HeaderDefaultPage {...props.configuration} />
       )}
       <MobileMenuButton />
     </>
