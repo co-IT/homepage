@@ -8,7 +8,18 @@ module.exports = {
   theme: {
     colors: {
       primary: '#FFC138',
-      secondary: '#02024D',
+      secondary: {
+        50: '#e5eeff',
+        100: '#d0e0ff',
+        200: '#abc4ff',
+        300: '#799cff',
+        400: '#4562ff',
+        500: '#1c2aff',
+        600: '#0001ff',
+        700: '#0004ff',
+        800: '#0004dd',
+        900: '#02024d'
+      },
       accent: '#11E07D',
       surface: '#D9D9D9',
       black: colors.black,

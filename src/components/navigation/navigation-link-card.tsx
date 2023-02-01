@@ -21,13 +21,13 @@ export const NavigationLinkCard = component$((props: NavigationCardProps) => {
       }
       onClick$={() => props.onLinkClick$?.(props.link)}
     >
-      <h2 class="text-lg text-secondary font-bold leading-5">
+      <h2 class='text-lg text-secondary-900 font-bold leading-5'>
         {props.link.heading}
       </h2>
 
-      <div class="h-0.5 w-4 bg-black" />
+      <div class='h-0.5 w-4 bg-black' />
 
-      <p class="text-lg text-secondary font-semibold leading-5 text-center">
+      <p class='text-lg text-secondary-900 font-semibold leading-5 text-center'>
         {props.link.text}
       </p>
     </div>
