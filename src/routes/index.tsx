@@ -10,6 +10,7 @@ import {
   HeadingSegmentSecondary
 } from '~/components/heading-segment';
 import { LinkCallToAction } from '~/components/link-call-to-action';
+import { RealizeContentSwitchSection } from '~/components/realize-content-switch-section';
 import { SectionArea } from '../components/section-area';
 
 export default component$(() => {
@@ -66,6 +67,10 @@ export default component$(() => {
             <LinkCallToAction href="/quality">Mehr erfahren</LinkCallToAction>
           </section>
         </ContentOverlapLandscape>
+      </SectionArea>
+
+      <SectionArea backgroundColor="white">
+        <RealizeContentSwitchSection />
       </SectionArea>
 
       <SectionArea backgroundColor="white">
