@@ -5,13 +5,13 @@ import {
   ContentOverlapLandscape,
   ContentOverlapPortrait
 } from '~/components/content-overlap';
+import { ContentSwitch } from '~/components/content-switch';
 import {
   HeadingSegmentAccent,
   HeadingSegmentSecondary
 } from '~/components/heading-segment';
 import { LinkCallToAction } from '~/components/link-call-to-action';
-import { ContentSwitch } from '~/components/realize-content-switch-section';
-import { SectionArea } from '../components/section-area';
+import { SectionArea } from '~/components/section-area';
 
 export default component$(() => {
   return (
