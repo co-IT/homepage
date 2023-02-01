@@ -47,7 +47,7 @@ export const Navigation = component$(() => {
   });
 
   return (
-    <div class='w-full bg-primary pt-12 lg:pt-16 pb-12 lg:pb-24 fixed top-0 z-30 shadow-xl'>
+    <div class='w-full bg-primary pt-12 lg:pt-16 pb-12 lg:pb-24 fixed top-0 z-40 shadow-xl'>
       <div class='container mx-auto flex flex-col gap-y-14 lg:gap-y-20'>
         <div class='flex justify-between flex-col lg:flex-row'>
           <img

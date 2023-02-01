@@ -13,7 +13,7 @@ export const QuickDialButtons = component$(() => {
 
   return (
     <>
-      <div class='z-40 flex-col gap-y-4 fixed right-0 top-2/4 hidden md:flex'>
+      <div class='z-30 flex-col gap-y-4 fixed right-0 top-2/4 hidden md:flex'>
         <div class='flex flex-col'>
           <a
             href='tel:+49721935163052'
