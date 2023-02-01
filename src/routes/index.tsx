@@ -10,7 +10,7 @@ import {
   HeadingSegmentSecondary
 } from '~/components/heading-segment';
 import { LinkCallToAction } from '~/components/link-call-to-action';
-import { RealizeContentSwitchSection } from '~/components/realize-content-switch-section';
+import { ContentSwitch } from '~/components/realize-content-switch-section';
 import { SectionArea } from '../components/section-area';
 
 export default component$(() => {
@@ -70,7 +70,7 @@ export default component$(() => {
       </SectionArea>
 
       <SectionArea backgroundColor="white">
-        <RealizeContentSwitchSection />
+        <ContentSwitch />
       </SectionArea>
 
       <SectionArea backgroundColor="white">
