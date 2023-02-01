@@ -56,7 +56,7 @@ export const Navigation = component$(() => {
             class='w-32 lg:w-44 h-fit mx-auto lg:mx-0'
           />
           <div
-            class='flex-row gap-x-2 my-auto cursor-pointer hover:opacity-75 hidden lg:flex'
+            class='flex-row gap-x-2 my-auto cursor-pointer hover:opacity-75 hidden md:flex'
             onClick$={() => closeMenu()}
           >
             <WhiteCloseIcon />
