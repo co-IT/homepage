@@ -20,7 +20,8 @@
     "preinstall": "npx only-allow pnpm",
     "preview": "qwik build preview && vite preview --open",
     "start": "vite --open --mode ssr",
-    "qwik": "qwik"
+    "qwik": "qwik",
+    "img.avif": "npx avif --input='./public/img/**/**.jpg'"
   },
   "devDependencies": {
     "@builder.io/qwik": "0.16.2",
