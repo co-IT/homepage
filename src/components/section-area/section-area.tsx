@@ -1,7 +1,7 @@
 import { component$, Slot } from '@builder.io/qwik';
 
 export interface SectionAreaProps {
-  backgroundColor: 'white' | 'gray';
+  backgroundColor?: 'white' | 'gray';
 }
 
 export const SectionArea = component$((props: SectionAreaProps) => {
@@ -10,7 +10,7 @@ export const SectionArea = component$((props: SectionAreaProps) => {
       ? 'bg-white'
       : props.backgroundColor === 'gray'
       ? 'bg-gray-50'
-      : 'white';
+      : 'bg-white';
 
   return (
     <section class={`${backgroundColor} first:pt-24 md:py-28`}>

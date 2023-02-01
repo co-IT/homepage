@@ -16,47 +16,47 @@ import { SectionArea } from '../components/section-area';
 export default component$(() => {
   return (
     <>
-      <SectionArea backgroundColor="white">
+      <SectionArea backgroundColor='white'>
         <ContentOverlapPortrait
           image={{
             source: '/img/landing-page/developers-tablet.avif',
             alternateText: '2 Developers checking an App on a tablet'
           }}
         >
-          <section q:slot="article" class="flex flex-col space-y-4">
-            <h2 class="font-bold text-xl md:text-4xl">
-              <HeadingSegmentSecondary text="Denken Sie auch in" />
+          <section q:slot='article' class='flex flex-col space-y-4'>
+            <h2 class='font-bold text-xl md:text-4xl'>
+              <HeadingSegmentSecondary text='Denken Sie auch in' />
               &nbsp;
-              <HeadingSegmentAccent text="ganzheitlichen Lösungen?" />
+              <HeadingSegmentAccent text='ganzheitlichen Lösungen?' />
             </h2>
-            <p class="leading-7">
+            <p class='leading-7'>
               Dann bringen wir Ihre Ideen auf die Straße, ebenen Ihnen neue Wege
               und schaffen gemeinsam nachhaltige Werte. Unsere Leidenschaft ist
               es Veränderungen zu etwas Positivem zu machen.
             </p>
-            <LinkCallToAction href="/about">Mehr erfahren</LinkCallToAction>
+            <LinkCallToAction href='/about'>Mehr erfahren</LinkCallToAction>
           </section>
         </ContentOverlapPortrait>
       </SectionArea>
 
-      <SectionArea backgroundColor="gray">
+      <SectionArea>
         <ContentOverlapLandscape
           image={{
             source: '/img/landing-page/cooking-session.avif',
             alternateText: 'Our team cooking a delicious meal'
           }}
         >
-          <section q:slot="article" class="flex flex-col space-y-4">
-            <h2 class="font-bold text-xl md:text-4xl">
-              <HeadingSegmentSecondary text="Machen" />
+          <section q:slot='article' class='flex flex-col space-y-4'>
+            <h2 class='font-bold text-xl md:text-4xl'>
+              <HeadingSegmentSecondary text='Machen' />
               &nbsp;
-              <HeadingSegmentAccent text="Menschen" />
+              <HeadingSegmentAccent text='Menschen' />
               &nbsp;
-              <HeadingSegmentSecondary text="für Sie auch den" />
+              <HeadingSegmentSecondary text='für Sie auch den' />
               &nbsp;
-              <HeadingSegmentAccent text="Unterschied?" />
+              <HeadingSegmentAccent text='Unterschied?' />
             </h2>
-            <p class="leading-7">
+            <p class='leading-7'>
               Dann haben wir für Sie echte Game Changer in unseren Reihen.
               Motiviert durch den Fachkräftemangel, rekrutieren wir mit eigenen
               HR-Spezialisten und qualitätsgetriebenem Auswahlprozess unsere
@@ -64,16 +64,16 @@ export default component$(() => {
               unserer Team-zentrierten Lösungsmentalität halten und entwickeln
               wir unsere Mitarbeiter.
             </p>
-            <LinkCallToAction href="/quality">Mehr erfahren</LinkCallToAction>
+            <LinkCallToAction href='/quality'>Mehr erfahren</LinkCallToAction>
           </section>
         </ContentOverlapLandscape>
       </SectionArea>
 
-      <SectionArea backgroundColor="white">
+      <SectionArea backgroundColor='white'>
         <ContentSwitch />
       </SectionArea>
 
-      <SectionArea backgroundColor="white">
+      <SectionArea backgroundColor='white'>
         <ContactPossibilitiesGrid />
       </SectionArea>
     </>
