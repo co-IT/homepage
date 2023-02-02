@@ -11,4 +11,7 @@ export * from "./blue-phone-icon";
 export * from "./blue-map-icon";
 export * from "./yellow-close-icon";
 export * from "./white-menu-icon";
+export * from "./white-video-player-icon";
+export * from "./black-close-icon";
 export * from "./yellow-right-arrow-icon";
+export * from "./blue-circle-arrow-icon";

@@ -5,6 +5,7 @@ import {
   JobOffersFallbackMessage,
   JobOffersGrid
 } from '~/components/job-offers';
+import { SectionArea } from '~/components/section-area';
 import type { YouTubeVideo } from '~/components/youtube';
 import { YouTubeVideoGrid } from '~/components/youtube';
 import { createJobOffersFromRecruitee } from './model-helper';
@@ -23,50 +24,53 @@ export default component$(() => {
   const youtubeVideos: YouTubeVideo[] = [
     {
       id: 'IZIduzPH9oU',
-      title: 'Warum wir gegründet haben.',
-      description: 'Lorem Ipsum'
+      title: 'Wir sind Teil einer Unternehmenfamilie',
+      description: 'Lorem Ipsum',
+      thumb: '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/entwickle-dich-mit-uns-weiter.avif'
     },
     {
-      title: 'career.video.why.values',
+      title: 'Finde Kameraden in unserer kollegialen Kultur',
       id: 'ChBHRdP2WNE',
-      description: 'Lorem Ipsum'
+      description: 'Lorem Ipsum',
+      thumb: '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/erlebe-moderne-menschenzentrierte-führung.avif'
     },
     {
       id: 'n26k-IpzZAY',
-      title: 'career.video.why.orientation',
-      description: 'Lorem Ipsum'
+      title: 'Erreiche mit uns gemeinsam die ganz großen Ziele',
+      description: 'Lorem Ipsum',
+      thumb: '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/erreiche-mit-uns-gemeinsam-die-ganz-grossen-ziele.avif'
     },
     {
       id: '7trxOOr9Oys',
-      title: 'career.video.why.solutions',
-      description: 'Lorem Ipsum'
+      title: 'Erlebe moderne, menschenzentrierte Führung',
+      description: 'Lorem Ipsum',
+      thumb: '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/finde-kameraden-in-unserer-kollegialen-kultur.avif'
     },
     {
       id: 'v9KlP83Y73I',
-      title: 'career.video.why.change',
-      description: 'Lorem Ipsum'
+      title: 'Schaffe nutzerorientierte Prozesse mit uns',
+      description: 'Lorem Ipsum',
+      thumb: '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/schaffe-nutzerorientierte-prozesse.avif'
     },
     {
       id: 'kQBu_XUbRpQ',
-      title: 'career.video.why.understand-people',
-      description: 'Lorem Ipsum'
-    },
-    {
-      id: 'DE65AUyFI6E',
-      title: 'career.video.why.origin',
-      description: 'Lorem Ipsum'
+      title: 'Tausche dich in unserem Netzwerk aus',
+      description: 'Lorem Ipsum',
+      thumb: '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/tausche-dich-in-unserem-netzwerk-aus.avif'
     }
   ];
 
   return (
     <>
-      <YouTubeVideoGrid videos={youtubeVideos} />
-      <hr />
+      <SectionArea backgroundColor='white'>
+        <YouTubeVideoGrid videos={youtubeVideos} />
+      </SectionArea>
+
       <Resource
         value={jobOffers}
         onResolved={jobOffers => <JobOffersGrid jobOffers={jobOffers} />}
         onRejected={() => <JobOffersFallbackMessage />}
-      ></Resource>
+      />
     </>
   );
 });
