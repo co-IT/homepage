@@ -1,4 +1,5 @@
 import { component$ } from '@builder.io/qwik';
+import { HeadingArticle } from '../heading-article';
 
 interface ArticleCardProps {
   direction: 'left' | 'right';
@@ -16,10 +17,7 @@ export const ArticleCard = component$((props: ArticleCardProps) => {
         <div class='lg:px-10 flex flex-col lg:flex-row gap-x-12'>
           <div class='w-full flex flex-col gap-y-5'>
             <div class='flex flex-col gap-y-4'>
-              <div class='w-10 h-1 bg-accent mx-auto lg:mx-0' />
-              <div class='text-3xl lg:text-4xl text-secondary-900 font-bold leading-8 lg:leading-10 text-center lg:text-left px-6 lg:px-0'>
-                {props.heading}
-              </div>
+              <HeadingArticle text={props.heading} />
               <div class='w-full mt-4 lg:hidden'>
                 <img src={props.imageSource} alt={props.imageAlternateText} />
               </div>

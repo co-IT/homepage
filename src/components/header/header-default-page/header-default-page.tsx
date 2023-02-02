@@ -13,7 +13,7 @@ export const HeaderDefaultPage = component$((props: HeaderDefaultPageProps) => {
   });
 
   return (
-    <header class='bg-secondary-900'>
+    <header class='bg-secondary-900 mb-8'>
       <div class='container mx-auto grid grid-rows-3'>
         <section class='flex justify-center md:justify-between pt-6 h-fit'>
           <Logo />
