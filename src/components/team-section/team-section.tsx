@@ -3,8 +3,8 @@ import { LinkCallToAction } from '../link-call-to-action';
 
 export const TeamSection = component$(() => {
   return (
-    <div class='flex flex-col px-8 lg:px-0'>
-      <div class='text-center text-2xl lg:text-3xl font-normal text-black leading-10 max-w-5xl mx-auto'>
+    <div class='flex flex-col'>
+      <div class='text-center px-8 text-2xl lg:text-3xl font-normal text-black leading-10 max-w-5xl mx-auto'>
         "Unsere Motivation ist es eine{' '}
         <span class='font-semibold text-secondary-900'>
           aufgeschlossene Welt
