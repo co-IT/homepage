@@ -70,7 +70,9 @@ export const Footer = component$(() => {
 
             <div class='bg-secondary-900 text-lg font-semibold leading-5 text-white px-4 py-2 rounded flex flex-row gap-x-2'>
               <MapIcon />
-              <span>Zu Google Maps</span>
+              <a href='https://g.page/communicativeIT?share' target='_blank'>
+                Zu Google Maps
+              </a>
             </div>
           </div>
 
@@ -90,7 +92,9 @@ export const Footer = component$(() => {
 
             <div class='bg-secondary-900 text-lg font-semibold leading-5 text-white px-4 py-2 rounded flex flex-row gap-x-2'>
               <MapIcon />
-              <span>Zu Google Maps</span>
+              <a href='https://goo.gl/maps/PKdhKoBCgPyFEFsC8' target='_blank'>
+                Zu Google Maps
+              </a>
             </div>
           </div>
 
@@ -100,8 +104,12 @@ export const Footer = component$(() => {
             </div>
 
             <div class='flex flex-row gap-x-7'>
-              <YoutubeIcon />
-              <GithubIcon />
+              <a href='http://e.co-it.eu/youtube' target='_blank'>
+                <YoutubeIcon />
+              </a>
+              <a href='http://e.co-it.eu/github' target='_blank'>
+                <GithubIcon />
+              </a>
             </div>
           </div>
         </div>
