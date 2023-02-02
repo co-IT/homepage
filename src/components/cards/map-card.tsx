@@ -1,11 +1,18 @@
 import { component$ } from '@builder.io/qwik';
 import { MapIcon } from '../icons';
 
-export const MapCard = component$(() => {
+interface MapProps {
+  map: string
+  address1: string
+  address2: string
+}
+
+export const MapCard = component$((props: MapProps) => {
   return (
     <>
       <div class='w-full flex flex-row justify-end'>
-        <div class='w-5/6 bg-primary h-64 relative'>
+        <div class="relative w-5/6 bg-primary h-64">
+          <img src={props.map} alt="map" class="w-full h-64 object-full" />
           <div class='absolute bg-white px-10 py-9 flex flex-col gap-y-7 shadow-xl -left-[16%] -top-[12%]'>
             <div class='text-lg font-bold leading-5 text-secondary-900'>
               co-IT.eu GmbH
@@ -13,10 +20,10 @@ export const MapCard = component$(() => {
 
             <div class='flex flex-col gap-y-1'>
               <div class='text-lg font-normal leading-5 text-secondary-900'>
-                Kriegsstr. 39
+                {props.address1}
               </div>
               <div class='text-lg font-normal leading-5 text-secondary-900'>
-                76133 Karlsruhe
+                {props.address2}
               </div>
             </div>
 
