@@ -13,7 +13,9 @@ export const SectionArea = component$((props: SectionAreaProps) => {
       : 'bg-white';
 
   return (
-    <section class={`${backgroundColor} first:pt-24 md:py-28`}>
+    <section
+      class={`container mx-auto ${backgroundColor} first:pt-24 md:py-28`}
+    >
       <Slot></Slot>
     </section>
   );

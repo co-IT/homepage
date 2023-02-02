@@ -21,7 +21,7 @@ export default component$(() => {
       <Header {...headerProps} />
       {menuState.isOpen && <Navigation />}
       <QuickDialButtons />
-      <main class='container mx-auto'>
+      <main>
         <Slot />
       </main>
       <Footer />
