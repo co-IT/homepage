@@ -7,7 +7,7 @@ import {
 } from '~/components/content-overlap';
 import { ContentSwitch } from '~/components/content-switch';
 import {
-  HeadingSegmentAccent,
+  HeadingSegmentAccentDark,
   HeadingSegmentSecondary
 } from '~/components/heading-segment';
 import { LinkCallToAction } from '~/components/link-call-to-action';
@@ -27,7 +27,7 @@ export default component$(() => {
             <h2 class='font-bold text-xl md:text-4xl'>
               <HeadingSegmentSecondary text='Denken Sie auch in' />
               &nbsp;
-              <HeadingSegmentAccent text='ganzheitlichen Lösungen?' />
+              <HeadingSegmentAccentDark text='ganzheitlichen Lösungen?' />
             </h2>
             <p class='leading-7'>
               Dann bringen wir Ihre Ideen auf die Straße, ebenen Ihnen neue Wege
@@ -50,11 +50,11 @@ export default component$(() => {
             <h2 class='font-bold text-xl md:text-4xl'>
               <HeadingSegmentSecondary text='Machen' />
               &nbsp;
-              <HeadingSegmentAccent text='Menschen' />
+              <HeadingSegmentAccentDark text='Menschen' />
               &nbsp;
               <HeadingSegmentSecondary text='für Sie auch den' />
               &nbsp;
-              <HeadingSegmentAccent text='Unterschied?' />
+              <HeadingSegmentAccentDark text='Unterschied?' />
             </h2>
             <p class='leading-7'>
               Dann haben wir für Sie echte Game Changer in unseren Reihen.

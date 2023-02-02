@@ -21,6 +21,7 @@ module.exports = {
         900: '#02024d'
       },
       accent: '#11E07D',
+      'accent-dark': '#058547',
       surface: '#D9D9D9',
       black: colors.black,
       gray: colors.gray,
