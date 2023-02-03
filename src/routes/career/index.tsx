@@ -8,6 +8,12 @@ import {
 import { SectionArea } from '~/components/section-area';
 import type { YouTubeVideo } from '~/components/youtube';
 import { YouTubeVideoGrid } from '~/components/youtube';
+import { ContactPossibilitiesGrid } from '../../components/contact-possibilities-grid';
+import { VideoOverlapLandscape } from '../../components/content-overlap';
+import { HeadingSegmentSecondary } from '../../components/heading-segment';
+import { MobilePhone } from '../../components/icons/mobile-phone';
+import { LinkCallToAction } from '../../components/link-call-to-action';
+import { Timeline } from '../../components/timeline/timeline';
 import { createJobOffersFromRecruitee } from './model-helper';
 
 export default component$(() => {
@@ -21,57 +27,151 @@ export default component$(() => {
       .then(json => createJobOffersFromRecruitee(json));
   });
 
+  const recruitingProcessTimeLine = [
+    {
+      heading: 'Cultural Fit',
+      text: 'Fordere lediglich mit Namen und Mailadresse unseren Fragebogen an.'
+    },
+    {
+      heading: 'Bewerbungsunterlagen',
+      text: 'Sofern deine und unsere Werte und Wünsche zusammenpassen, fordern wir deine Unterlagen an.'
+    },
+    {
+      heading: 'Kennenlernen',
+      text: 'Machen deine Unterlagen Lust auf mehr, findet direkt ein Termin mit der Geschäftsführung statt.'
+    },
+    {
+      heading: 'Fachliche Prüfung',
+      text: 'Es folgen Termine zur fachlichen Eignungsprüfung. Bei Entwicklern sind das z.B. Programmieraufgaben.'
+    },
+    {
+      heading: 'Eignungstest und Potenzialanalyse',
+      text: 'Wissenschaftlich fundierte und objektive Verfahren geben dir Sicherheit.'
+    },
+    {
+      heading: 'Vertragsgespräch',
+      text: 'Mit den Informationen aus den vorherigen zwei Schritten bieten wir ein hoffentlich zufriedenstellendes Gesamtpaket an.'
+    }
+  ];
+
   const youtubeVideos: YouTubeVideo[] = [
     {
       id: 'IZIduzPH9oU',
       title: 'Wir sind Teil einer Unternehmenfamilie',
       description: 'Lorem Ipsum',
-      thumb: '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/entwickle-dich-mit-uns-weiter.avif'
+      thumb:
+        '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/entwickle-dich-mit-uns-weiter.avif'
     },
     {
       title: 'Finde Kameraden in unserer kollegialen Kultur',
       id: 'ChBHRdP2WNE',
       description: 'Lorem Ipsum',
-      thumb: '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/erlebe-moderne-menschenzentrierte-führung.avif'
+      thumb:
+        '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/erlebe-moderne-menschenzentrierte-führung.avif'
     },
     {
       id: 'n26k-IpzZAY',
       title: 'Erreiche mit uns gemeinsam die ganz großen Ziele',
       description: 'Lorem Ipsum',
-      thumb: '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/erreiche-mit-uns-gemeinsam-die-ganz-grossen-ziele.avif'
+      thumb:
+        '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/erreiche-mit-uns-gemeinsam-die-ganz-grossen-ziele.avif'
     },
     {
       id: '7trxOOr9Oys',
       title: 'Erlebe moderne, menschenzentrierte Führung',
       description: 'Lorem Ipsum',
-      thumb: '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/finde-kameraden-in-unserer-kollegialen-kultur.avif'
+      thumb:
+        '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/finde-kameraden-in-unserer-kollegialen-kultur.avif'
     },
     {
       id: 'v9KlP83Y73I',
       title: 'Schaffe nutzerorientierte Prozesse mit uns',
       description: 'Lorem Ipsum',
-      thumb: '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/schaffe-nutzerorientierte-prozesse.avif'
+      thumb:
+        '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/schaffe-nutzerorientierte-prozesse.avif'
     },
     {
       id: 'kQBu_XUbRpQ',
       title: 'Tausche dich in unserem Netzwerk aus',
       description: 'Lorem Ipsum',
-      thumb: '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/tausche-dich-in-unserem-netzwerk-aus.avif'
+      thumb:
+        '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/tausche-dich-in-unserem-netzwerk-aus.avif'
     }
   ];
 
   return (
-    <>
-      <SectionArea backgroundColor='white'>
+    <section class='space-y-12'>
+      <SectionArea>
+        <VideoOverlapLandscape youTubeVideoId='fpPjn58ONrI'>
+          <section class='flex flex-col space-y-4'>
+            <h2 class='font-bold text-xl md:text-4xl'>
+              <HeadingSegmentSecondary text='Wir geben dir Halt' />
+            </h2>
+            <p class='leading-7'>
+              Beschäftigung kommt von beschäftigt - und das ist zweifelslos
+              jeder. Beruf kommt hingegen von Berufung und eine Berufung kann
+              dir so viel mehr bieten: Gleichgesinnte statt Arbeitskollegen,
+              Weiterentwicklung statt Komfortzone, Rückhalt statt Wegducken. Wir
+              verstehen Arbeitszeit als Lebenszeit, die wir nutzen wollen, um
+              Reibung und Bewegung zu erzeugen. Wirf einen Blick in unsere
+              Kurzvorstellung und nimm dir eine Minute für unser Video oben.
+              Sprechen dich unsere Ideen an? Dann kannst du am Ende der Seite
+              deine Bewerbung starten, indem du unseren Cultural Fit Fragebogen
+              anforderst.
+            </p>
+            <LinkCallToAction
+              href='https://e.co-it.eu/recruiting/kurzvorstellung'
+              target='_blank'
+            >
+              Kurzvorstellung herunterladen
+            </LinkCallToAction>
+          </section>
+        </VideoOverlapLandscape>
+      </SectionArea>
+
+      <SectionArea>
         <YouTubeVideoGrid videos={youtubeVideos} />
       </SectionArea>
 
-      <Resource
-        value={jobOffers}
-        onResolved={jobOffers => <JobOffersGrid jobOffers={jobOffers} />}
-        onRejected={() => <JobOffersFallbackMessage />}
-      />
-    </>
+      <SectionArea>
+        <div class='flex flex-col items-center gap-y-4 mb-14'>
+          <div class='bg-accent w-10 h-1' />
+
+          <h2 class='text-secondary-900 text-4xl text-secondary font-bold leading-10'>
+            So geht's weiter
+          </h2>
+        </div>
+
+        <div class='grid grid-flow-col gap-28 items-center'>
+          <section class='hidden md:block'>
+            <MobilePhone />
+          </section>
+          <section class='space-y-8'>
+            <Timeline items={recruitingProcessTimeLine} />
+            <div class='text-center md:text-left'>
+              <LinkCallToAction
+                href='https://e.co-it.eu/recruiting/process'
+                target='_blank'
+              >
+                Mehr zum Bewerbungsverfahren
+              </LinkCallToAction>
+            </div>
+          </section>
+        </div>
+      </SectionArea>
+
+      <SectionArea>
+        <Resource
+          value={jobOffers}
+          onResolved={jobOffers => <JobOffersGrid jobOffers={jobOffers} />}
+          onRejected={() => <JobOffersFallbackMessage />}
+        />
+      </SectionArea>
+
+      <SectionArea>
+        <ContactPossibilitiesGrid />
+      </SectionArea>
+    </section>
   );
 });
 

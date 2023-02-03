@@ -5,6 +5,9 @@ const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
+  corePlugins: {
+    container: false
+  },
   theme: {
     colors: {
       primary: '#FFC138',
@@ -33,6 +36,25 @@ module.exports = {
       addBase({
         html: { color: theme('colors.secondary-900') }
       });
-    })
+    }),
+    plugin(({ addComponents }) =>
+      addComponents({
+        '.container': {
+          maxWidth: '100%',
+          '@screen sm': {
+            maxWidth: '640px'
+          },
+          '@screen md': {
+            maxWidth: '768px'
+          },
+          '@screen lg': {
+            maxWidth: '944px'
+          },
+          '@screen xl': {
+            maxWidth: '944px'
+          }
+        }
+      })
+    )
   ]
 };
