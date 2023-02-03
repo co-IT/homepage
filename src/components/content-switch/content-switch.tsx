@@ -31,44 +31,47 @@ export const ContentSwitch = component$(() => {
   ];
 
   return (
-    <div class='flex flex-col gap-y-0 lg:gap-y-14 container mx-auto'>
-      {links.map((link, key) => (
-        <Link
-          href={link.path}
-          key={key}
-          class={
-            key % 2 === 0
-              ? 'flex flex-row justify-start z-0'
-              : 'flex flex-row justify-end z-0'
-          }
-        >
-          <div class='w-full lg:w-6/12 relative bg-secondary-900'>
-            <img
-              src={link.image}
-              loading='lazy'
-              alt='content'
-              class='h-72 w-full opacity-50 object-cover hidden lg:block'
-            />
-
-            <div
-              class={
-                key % 2 === 0
-                  ? 'bg-white p-6 lg:p-10 lg:absolute lg:top-[30%] lg:left-[70%] w-full shadow-2xl text-base lg:text-2xl font-bold leading-7 flex justify-between'
-                  : 'bg-white p-6 lg:p-10 lg:absolute lg:top-[30%] lg:right-[70%] w-full shadow-2xl text-base lg:text-2xl font-bold leading-7 flex justify-between'
-              }
-            >
-              <div class='my-auto'>
-                {link.textFirstLine} |{' '}
-                <span class='font-semibold'>{link.textSecondLine}</span>
-              </div>
-
-              <div>
-                <YellowRightArrowIcon />
+    <>
+      <h2 class='font-bold text-xl md:text-4xl mb-28 text-center'>
+        Das könnte Sie auch interessieren
+      </h2>
+      <div class='flex flex-col gap-y-0 lg:gap-y-14 container mx-auto'>
+        {links.map((link, key) => (
+          <Link
+            href={link.path}
+            key={key}
+            class={
+              key % 2 === 0
+                ? 'flex flex-row justify-start z-0'
+                : 'flex flex-row justify-end z-0'
+            }
+          >
+            <div class='w-full lg:w-6/12 relative bg-secondary-900'>
+              <img
+                src={link.image}
+                loading='lazy'
+                alt='content'
+                class='h-72 w-full opacity-50 object-cover hidden lg:block'
+              />
+              <div
+                class={
+                  key % 2 === 0
+                    ? 'bg-white p-6 lg:p-10 lg:absolute lg:top-[30%] lg:left-[70%] w-full shadow-2xl text-base lg:text-2xl font-bold leading-7 flex justify-between'
+                    : 'bg-white p-6 lg:p-10 lg:absolute lg:top-[30%] lg:right-[70%] w-full shadow-2xl text-base lg:text-2xl font-bold leading-7 flex justify-between'
+                }
+              >
+                <div class='my-auto'>
+                  {link.textFirstLine} |{' '}
+                  <span class='font-semibold'>{link.textSecondLine}</span>
+                </div>
+                <div>
+                  <YellowRightArrowIcon />
+                </div>
               </div>
             </div>
-          </div>
-        </Link>
-      ))}
-    </div>
+          </Link>
+        ))}
+      </div>
+    </>
   );
 });

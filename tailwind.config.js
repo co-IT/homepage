@@ -34,7 +34,7 @@ module.exports = {
   plugins: [
     plugin(({ addBase, theme }) => {
       addBase({
-        html: { color: theme('colors.secondary-900') }
+        html: { color: theme('colors.secondary.900') }
       });
     }),
     plugin(({ addComponents }) =>
@@ -51,7 +51,7 @@ module.exports = {
             maxWidth: '944px'
           },
           '@screen xl': {
-            maxWidth: '944px'
+            maxWidth: '1280px'
           }
         }
       })

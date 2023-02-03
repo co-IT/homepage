@@ -1,7 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { ArticleSection } from '~/components/article-section';
-import { ContactPossibilitiesGrid } from '~/components/contact-possibilities-grid';
 import { SectionArea } from '~/components/section-area';
 import { TeamSection } from '~/components/team-section';
 
@@ -13,10 +12,6 @@ export default component$(() => {
       </SectionArea>
 
       <TeamSection />
-
-      <SectionArea>
-        <ContactPossibilitiesGrid />
-      </SectionArea>
     </>
   );
 });

@@ -7,11 +7,11 @@ import { SectionArea } from '~/components/section-area';
 export default component$(() => {
   return (
     <>
-      <SectionArea backgroundColor="white">
+      <SectionArea backgroundColor='white'>
         <ContactPossibilitiesGrid />
       </SectionArea>
 
-      <SectionArea backgroundColor="white">
+      <SectionArea backgroundColor='white'>
         <MapSection />
       </SectionArea>
     </>
@@ -32,6 +32,9 @@ export const head: DocumentHead = {
       configuration: {
         heading: 'Kontakt aufnehmen'
       }
+    },
+    footer: {
+      disableContactPossibilitiesGrid: true
     }
   }
 };

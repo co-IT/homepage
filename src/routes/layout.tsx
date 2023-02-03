@@ -8,6 +8,9 @@ import { Navigation } from '~/components/navigation';
 import type { NavigationState } from '~/components/navigation/navigation.context';
 import { NavigationContext } from '~/components/navigation/navigation.context';
 import { QuickDialButtons } from '~/components/quick-dial-buttons';
+import { ContactPossibilitiesGrid } from '../components/contact-possibilities-grid';
+import { ContentSwitch } from '../components/content-switch';
+import { SectionArea } from '../components/section-area';
 
 export default component$(() => {
   const documentHead = useDocumentHead();
@@ -23,7 +26,17 @@ export default component$(() => {
       <QuickDialButtons />
       <main>
         <Slot />
+
+        <SectionArea>
+          <ContentSwitch />
+        </SectionArea>
+
+        <SectionArea>
+          {!documentHead.frontmatter?.footer
+            ?.disableContactPossibilitiesGrid && <ContactPossibilitiesGrid />}
+        </SectionArea>
       </main>
+
       <Footer />
     </>
   );

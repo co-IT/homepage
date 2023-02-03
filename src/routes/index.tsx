@@ -1,14 +1,12 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
-import { ContactPossibilitiesGrid } from '~/components/contact-possibilities-grid';
 import {
   ContentOverlapLandscape,
   ContentOverlapPortrait
 } from '~/components/content-overlap';
-import { ContentSwitch } from '~/components/content-switch';
 import {
-  HeadingSegmentAccentDark,
-  HeadingSegmentSecondary
+  HeadingSegmentSecondary,
+  HeadingSegmentSecondary800
 } from '~/components/heading-segment';
 import { LinkCallToAction } from '~/components/link-call-to-action';
 import { SectionArea } from '~/components/section-area';
@@ -27,9 +25,9 @@ export default component$(() => {
             <h2 class='font-bold text-xl md:text-4xl'>
               <HeadingSegmentSecondary text='Denken Sie auch in' />
               &nbsp;
-              <HeadingSegmentAccentDark text='ganzheitlichen Lösungen?' />
+              <HeadingSegmentSecondary800 text='ganzheitlichen Lösungen?' />
             </h2>
-            <p class='leading-7'>
+            <p class='leading-7 pb-4'>
               Dann bringen wir Ihre Ideen auf die Straße, ebenen Ihnen neue Wege
               und schaffen gemeinsam nachhaltige Werte. Unsere Leidenschaft ist
               es Veränderungen zu etwas Positivem zu machen.
@@ -39,7 +37,7 @@ export default component$(() => {
         </ContentOverlapPortrait>
       </SectionArea>
 
-      <SectionArea>
+      <SectionArea backgroundColor='gray' class='pb-10'>
         <ContentOverlapLandscape
           image={{
             source: '/img/landing-page/cooking-session.avif',
@@ -50,13 +48,13 @@ export default component$(() => {
             <h2 class='font-bold text-xl md:text-4xl'>
               <HeadingSegmentSecondary text='Machen' />
               &nbsp;
-              <HeadingSegmentAccentDark text='Menschen' />
+              <HeadingSegmentSecondary800 text='Menschen' />
               &nbsp;
               <HeadingSegmentSecondary text='für Sie auch den' />
               &nbsp;
-              <HeadingSegmentAccentDark text='Unterschied?' />
+              <HeadingSegmentSecondary800 text='Unterschied?' />
             </h2>
-            <p class='leading-7'>
+            <p class='leading-7 pb-4'>
               Dann haben wir für Sie echte Game Changer in unseren Reihen.
               Motiviert durch den Fachkräftemangel, rekrutieren wir mit eigenen
               HR-Spezialisten und qualitätsgetriebenem Auswahlprozess unsere
@@ -67,14 +65,6 @@ export default component$(() => {
             <LinkCallToAction href='/quality'>Mehr erfahren</LinkCallToAction>
           </section>
         </ContentOverlapLandscape>
-      </SectionArea>
-
-      <SectionArea backgroundColor='white'>
-        <ContentSwitch />
-      </SectionArea>
-
-      <SectionArea backgroundColor='white'>
-        <ContactPossibilitiesGrid />
       </SectionArea>
     </>
   );

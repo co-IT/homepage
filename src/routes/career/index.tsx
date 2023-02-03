@@ -8,7 +8,6 @@ import {
 import { SectionArea } from '~/components/section-area';
 import type { YouTubeVideo } from '~/components/youtube';
 import { YouTubeVideoGrid } from '~/components/youtube';
-import { ContactPossibilitiesGrid } from '../../components/contact-possibilities-grid';
 import { VideoOverlapLandscape } from '../../components/content-overlap';
 import { HeadingSegmentSecondary } from '../../components/heading-segment';
 import { MobilePhone } from '../../components/icons/mobile-phone';
@@ -166,10 +165,6 @@ export default component$(() => {
           onResolved={jobOffers => <JobOffersGrid jobOffers={jobOffers} />}
           onRejected={() => <JobOffersFallbackMessage />}
         />
-      </SectionArea>
-
-      <SectionArea>
-        <ContactPossibilitiesGrid />
       </SectionArea>
     </section>
   );
