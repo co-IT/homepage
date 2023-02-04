@@ -2,7 +2,8 @@ import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import {
   ContentOverlapLandscape,
-  ContentOverlapPortrait
+  ContentOverlapPortrait,
+  VideoOverlapLandscape
 } from '~/components/content-overlap';
 import {
   HeadingSegmentSecondary,
@@ -14,7 +15,7 @@ import { SectionArea } from '~/components/section-area';
 export default component$(() => {
   return (
     <>
-      <SectionArea backgroundColor='white'>
+      <SectionArea>
         <ContentOverlapPortrait
           image={{
             source: '/img/landing-page/developers-tablet.avif',
@@ -37,7 +38,7 @@ export default component$(() => {
         </ContentOverlapPortrait>
       </SectionArea>
 
-      <SectionArea backgroundColor='gray' class='pb-10'>
+      <SectionArea backgroundColor='gray'>
         <ContentOverlapLandscape
           image={{
             source: '/img/landing-page/cooking-session.avif',
@@ -66,6 +67,36 @@ export default component$(() => {
           </section>
         </ContentOverlapLandscape>
       </SectionArea>
+
+      {/** TODO: Currently spacing is hard since the *Overlap-Components have content that breaks the DOM-flow
+       *         We need to find a way optimizing this in order to not having to handle special cases.
+       */}
+      <div class='mb-28'></div>
+
+      <VideoOverlapLandscape youTubeVideoId='fpPjn58ONrI'>
+        <section class='flex flex-col space-y-4'>
+          <h2 class='font-bold text-xl md:text-4xl'>
+            <HeadingSegmentSecondary text='Wir geben dir Halt' />
+          </h2>
+          <p class='leading-7'>
+            Beschäftigung kommt von beschäftigt - und das ist zweifelslos jeder.
+            Beruf kommt hingegen von Berufung und eine Berufung kann dir so viel
+            mehr bieten: Gleichgesinnte statt Arbeitskollegen, Weiterentwicklung
+            statt Komfortzone, Rückhalt statt Wegducken. Wir verstehen
+            Arbeitszeit als Lebenszeit, die wir nutzen wollen, um Reibung und
+            Bewegung zu erzeugen. Wirf einen Blick in unsere Kurzvorstellung und
+            nimm dir eine Minute für unser Video oben. Sprechen dich unsere
+            Ideen an? Dann kannst du am Ende der Seite deine Bewerbung starten,
+            indem du unseren Cultural Fit Fragebogen anforderst.
+          </p>
+          <LinkCallToAction
+            href='https://e.co-it.eu/recruiting/kurzvorstellung'
+            target='_blank'
+          >
+            Kurzvorstellung herunterladen
+          </LinkCallToAction>
+        </section>
+      </VideoOverlapLandscape>
     </>
   );
 });

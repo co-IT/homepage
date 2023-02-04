@@ -101,7 +101,7 @@ export default component$(() => {
   return (
     <section class='space-y-12'>
       <SectionArea>
-        <VideoOverlapLandscape youTubeVideoId='fpPjn58ONrI'>
+        <VideoOverlapLandscape youTubeVideoId='STUlI6toSTA'>
           <section class='flex flex-col space-y-4'>
             <h2 class='font-bold text-xl md:text-4xl'>
               <HeadingSegmentSecondary text='Wir geben dir Halt' />
