@@ -18,7 +18,7 @@ export default component$(() => {
       <SectionArea>
         <ContentOverlapPortrait
           image={{
-            source: '/img/landing-page/developers-tablet.avif',
+            source: '/img/landing-page/developers-tablet.webp',
             alternateText: '2 Developers checking an App on a tablet'
           }}
         >
@@ -41,7 +41,7 @@ export default component$(() => {
       <SectionArea backgroundColor='gray'>
         <ContentOverlapLandscape
           image={{
-            source: '/img/landing-page/cooking-session.avif',
+            source: '/img/landing-page/cooking-session.webp',
             alternateText: 'Our team cooking a delicious meal'
           }}
         >
@@ -71,7 +71,7 @@ export default component$(() => {
       {/** TODO: Currently spacing is hard since the *Overlap-Components have content that breaks the DOM-flow
        *         We need to find a way optimizing this in order to not having to handle special cases.
        */}
-      <div class='mb-28'></div>
+      <div class='mb-48'></div>
 
       <VideoOverlapLandscape youTubeVideoId='fpPjn58ONrI'>
         <section class='flex flex-col space-y-4'>
@@ -117,7 +117,7 @@ export const head: DocumentHead = {
       type: 'landing-page',
       configuration: {
         backgroundImage: {
-          source: '/img/landing-page/header.avif',
+          source: '/img/landing-page/header.webp',
           alt: 'Two men writing on a flip chart'
         },
         headingSegments: [

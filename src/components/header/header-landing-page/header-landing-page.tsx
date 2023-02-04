@@ -17,7 +17,7 @@ export const HeaderLandingPage = component$((props: HeaderLandingPageProps) => {
 
   return (
     <header
-      class='bg-cover bg-no-repeat md:bg-right-top relative'
+      class='bg-cover bg-no-repeat md:bg-right-top'
       style={`background-image: linear-gradient(0deg, rgba(2, 2, 52, 0.6), rgba(2, 2, 52, 0.6)), url("${props.backgroundImage.source}");`}
     >
       <div class='container mx-auto grid grid-rows-2'>
@@ -32,7 +32,7 @@ export const HeaderLandingPage = component$((props: HeaderLandingPageProps) => {
           </div>
         </section>
         <section class='flex flex-col items-center space-y-10 text-center'>
-          <h1 class='font-bold  text-2xl md:text-6xl'>
+          <h1 class='font-bold text-2xl md:text-6xl'>
             {props.headingSegments.map(headingSegment => (
               <>
                 {headingSegment.type === 'white' ? (

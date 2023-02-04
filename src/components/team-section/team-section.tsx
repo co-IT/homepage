@@ -44,7 +44,7 @@ export const TeamSection = component$(() => {
         <img
           class='mx-auto'
           loading='lazy'
-          src='/img/about/team.avif'
+          src='/img/about/team.webp'
           alt='Picture showing the whole team at co-IT'
         />
       </div>

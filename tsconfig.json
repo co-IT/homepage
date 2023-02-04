@@ -21,6 +21,9 @@
       "~/*": ["./src/*"]
     }
   },
-  "files": ["./.eslintrc.cjs"],
+  "files": [
+    "./.eslintrc.cjs",
+    "src/components/article-section/model/article.tsx"
+  ],
   "include": ["src"]
 }

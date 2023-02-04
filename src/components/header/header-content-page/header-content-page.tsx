@@ -28,17 +28,15 @@ export const HeaderContentPage = component$((props: HeaderContentPageProps) => {
             <MenuIcon />
           </div>
         </section>
-        <section class='flex flex-col space-y-10 pb-16 text-center'>
-          <small class='text-accent  font-bold text-sm'>
-            {props.headingAccent}
-          </small>
+        <section class='flex flex-col space-y-10 text-center'>
+          <p class='text-md text-accent font-bold'>{props.headingAccent}</p>
           <h1 class='font-bold text-2xl md:text-6xl'>
             <HeadingSegmentWhite text={props.heading} />
           </h1>
 
           {props.teaser && (
             <div class=' bg-secondary-900 md:bg-opacity-0'>
-              <p class='text-lg leading-10 mx-auto max-w-3xl text-white font-semibold  tracking-wider md:text-xl md:leading-10 md:[text-shadow:0_4px_8px_rgba(0,0,0,0.8)]'>
+              <p class='text-lg leading-8 tracking-wider max-w-3xl text-white p-8 md:font-semibold md:text-xl md:leading-10 md:[text-shadow:0_4px_8px_rgba(0,0,0,0.8)]'>
                 {props.teaser}
               </p>
             </div>

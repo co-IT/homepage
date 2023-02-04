@@ -12,7 +12,7 @@ export const MobileMenuButton = component$(() => {
     <>
       {!menuState.isOpen && (
         <div
-          class="p-4 rounded-full bg-primary cursor-pointer right-6 bottom-4 z-50 shadow-md w-fit fixed sm:hidden hover:opacity-75"
+          class='p-4 rounded-full bg-primary cursor-pointer right-6 bottom-12 z-50 shadow-md w-fit fixed sm:hidden hover:opacity-75'
           onClick$={() => openMenu()}
         >
           <WhiteMenuIcon />

@@ -1,5 +1,5 @@
 import { $, component$, useContext } from '@builder.io/qwik';
-import { useNavigate } from '@builder.io/qwik-city';
+import { Link, useNavigate } from '@builder.io/qwik-city';
 import { NavigationLinkCard } from '../cards';
 import {
   BlueMailIcon,
@@ -50,11 +50,13 @@ export const Navigation = component$(() => {
     <div class='w-full bg-primary pt-12 lg:pt-16 pb-12 lg:pb-24 fixed top-0 z-40 shadow-xl'>
       <div class='container mx-auto flex flex-col gap-y-14 lg:gap-y-20'>
         <div class='flex justify-between flex-col lg:flex-row'>
-          <img
-            src='/img/navigation/logo.svg'
-            alt='logo'
-            class='w-32 lg:w-44 h-fit mx-auto lg:mx-0'
-          />
+          <Link href='/'>
+            <img
+              src='/img/navigation/logo.svg'
+              alt='logo'
+              class='w-32 lg:w-44 h-fit mx-auto lg:mx-0'
+            />
+          </Link>
           <div
             class='flex-row gap-x-2 my-auto cursor-pointer hover:opacity-75 hidden md:flex'
             onClick$={() => closeMenu()}
