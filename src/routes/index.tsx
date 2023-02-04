@@ -76,7 +76,10 @@ export default component$(() => {
       <VideoOverlapLandscape youTubeVideoId='fpPjn58ONrI'>
         <section class='flex flex-col space-y-4'>
           <h2 class='font-bold text-xl md:text-4xl'>
-            <HeadingSegmentSecondary text='Wir geben dir Halt' />
+            <HeadingSegmentSecondary text='Wir geben dir' />
+            &nbsp;
+            <HeadingSegmentSecondary800 text='Halt' />
+            <HeadingSegmentSecondary text='.' />
           </h2>
           <p class='leading-7'>
             Beschäftigung kommt von beschäftigt - und das ist zweifelslos jeder.

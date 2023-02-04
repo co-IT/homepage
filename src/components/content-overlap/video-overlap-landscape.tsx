@@ -8,7 +8,7 @@ export const VideoOverlapLandscape = component$(
           <Slot></Slot>
         </div>
         <iframe
-          class='z-20 aspect-video w-full row-start-1 -translate-y-8 md:row-start-2 md:col-start-3 md:col-span-6 md:-translate-x-8 xl:-translate-x-28'
+          class='z-20 w-full aspect-video row-start-1 -translate-y-8 md:row-start-2 md:col-start-3 md:col-span-6 md:-translate-x-8 xl:-translate-x-28'
           src={`https://www.youtube.com/embed/${props.youTubeVideoId}`}
         ></iframe>
         <div class='z-0 row-start-2 bg-primary -translate-y-1/2 lg:-translate-y-1/3 md:col-start-2 md:col-span-2 md:self-end h-36 md:w-48 md:h-[32rem] xl:h-[40rem]'></div>
