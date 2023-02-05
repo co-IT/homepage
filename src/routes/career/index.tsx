@@ -11,10 +11,14 @@ import {
 import { LinkCallToAction } from '~/components/link-call-to-action';
 import { SectionArea } from '~/components/section-area';
 import { Timeline } from '~/components/timeline/timeline';
-import type { YouTubeVideo } from '~/components/youtube';
 import { YouTubeVideoGrid } from '~/components/youtube';
 import { ArticleSection } from '../../components/article-section';
 import { createJobOffersFromRecruitee } from './model-helper';
+import {
+  videosWarumWirUnsereArbeitLieben,
+  videosWasWirDirBieten,
+  videosWieWirArbeiten
+} from './resource';
 
 export default component$(() => {
   const jobOffers = jobOffersLoader.use();
@@ -85,51 +89,6 @@ export default component$(() => {
     }
   ];
 
-  const youtubeVideos: YouTubeVideo[] = [
-    {
-      id: 'IZIduzPH9oU',
-      title: 'Wir sind Teil einer Unternehmenfamilie',
-      description: 'Lorem Ipsum',
-      thumb:
-        '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/entwickle-dich-mit-uns-weiter.webp'
-    },
-    {
-      title: 'Finde Kameraden in unserer kollegialen Kultur',
-      id: 'ChBHRdP2WNE',
-      description: 'Lorem Ipsum',
-      thumb:
-        '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/erlebe-moderne-menschenzentrierte-fuehrung.webp'
-    },
-    {
-      id: 'n26k-IpzZAY',
-      title: 'Erreiche mit uns gemeinsam die ganz großen Ziele',
-      description: 'Lorem Ipsum',
-      thumb:
-        '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/erreiche-mit-uns-gemeinsam-die-ganz-grossen-ziele.webp'
-    },
-    {
-      id: '7trxOOr9Oys',
-      title: 'Erlebe moderne, menschenzentrierte Führung',
-      description: 'Lorem Ipsum',
-      thumb:
-        '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/finde-kameraden-in-unserer-kollegialen-kultur.webp'
-    },
-    {
-      id: 'v9KlP83Y73I',
-      title: 'Schaffe nutzerorientierte Prozesse mit uns',
-      description: 'Lorem Ipsum',
-      thumb:
-        '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/schaffe-nutzerorientierte-prozesse.webp'
-    },
-    {
-      id: 'kQBu_XUbRpQ',
-      title: 'Tausche dich in unserem Netzwerk aus',
-      description: 'Lorem Ipsum',
-      thumb:
-        '/img/career/video-thumbnails/wie-wir-zusammen-arbeiten/tausche-dich-in-unserem-netzwerk-aus.webp'
-    }
-  ];
-
   return (
     <>
       <SectionArea>
@@ -164,8 +123,29 @@ export default component$(() => {
       <hr class='container mx-auto mt-10 lg:mt-20' />
 
       <SectionArea>
-        <YouTubeVideoGrid videos={youtubeVideos} />
+        <div class='mb-4 w-10 bg-accent h-1 mx-auto'></div>
+        <h2 class='text-center text-4xl text-secondary font-bold mb-14'>
+          Warum wir unsere Arbeit lieben
+        </h2>
+        <YouTubeVideoGrid videos={videosWarumWirUnsereArbeitLieben} />
       </SectionArea>
+
+      <SectionArea>
+        <div class='mb-4 w-10 bg-accent h-1 mx-auto'></div>
+        <h2 class='text-center text-4xl text-secondary font-bold mb-14'>
+          Wie wir zusammenarbeiten
+        </h2>
+        <YouTubeVideoGrid videos={videosWieWirArbeiten} />
+      </SectionArea>
+
+      <SectionArea>
+        <div class='mb-4 w-10 bg-accent h-1 mx-auto'></div>
+        <h2 class='text-center text-4xl text-secondary font-bold mb-14'>
+          Was wir dir bieten
+        </h2>
+        <YouTubeVideoGrid videos={videosWasWirDirBieten} />
+      </SectionArea>
+
       <SectionArea>
         <div class='flex flex-col items-center gap-y-4 mb-14'>
           <div class='bg-accent w-10 h-1' />

@@ -15,13 +15,13 @@ export const SectionArea = component$((props: SectionAreaProps) => {
   return (
     <>
       {appearance === 'bg-gray-100' ? (
-        <section class={`${appearance} md:py-24`}>
+        <section class={`${appearance} py-12 md:py-24`}>
           <div class='container mx-auto'>
             <Slot></Slot>
           </div>
         </section>
       ) : (
-        <section class={`container mx-auto ${appearance} md:py-24`}>
+        <section class={`container mx-auto ${appearance} py-12 md:py-24`}>
           <Slot></Slot>
         </section>
       )}
