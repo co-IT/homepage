@@ -74,10 +74,7 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
           </div>
         </div>
       </div>
-      <dialog
-        ref={dialogRef}
-        class='m-0 h-screen w-screen rounded-xl md:m-auto md:w-3/4'
-      >
+      <dialog ref={dialogRef} class='m-0 h-screen w-screen md:m-auto '>
         <div class='flex h-full flex-col sm:justify-between '>
           <div class='mb-5 flex w-full justify-end'>
             <div class='cursor-pointer' onClick$={() => closeVideoDialog$()}>
@@ -97,9 +94,34 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
             class='mb-5 aspect-video max-h-96'
           />
 
-          {/* <div class='text-sm font-medium text-secondary leading-6 mb-4 opacity-80'>
+          <p class='text-secondary mb-4  max-h-28 overflow-y-auto whitespace-pre text-sm font-medium leading-6 opacity-80'>
             {videoDialog.videoPlaying.description}
-          </div> */}
+            <br />
+            <br />
+            Das erwartet euch also als neue Mitarbeiter, wenn ihr bei uns
+            einsteigt: Ihr könnt unser Unternehmen mitgestalten.
+            <br />
+            <br />
+            💡 Das erwartet dich, wenn du bei uns anfängst: Du kannst unser
+            Unternehmen mitgestalten <br />
+            <br />
+            🤝 Schau dir auch unsere Playlist&nbsp;
+            <a
+              href='https://e.co-IT.eu/das-macht-uns-aus'
+              target='_blank'
+              class='underline'
+            >
+              https://e.co-IT.eu/das-macht-uns-aus
+            </a>
+            &nbsp;mit Inhalten zu <br />
+            👉 Das hat uns zur Firmengründung motiviert <br />
+            👉 Uns vereinen Werte <br />
+            👉 Das gibt uns Orientierung <br />
+            👉 Wir bieten Lösungen beschreiten Wege <br />
+            👉 Wir wollen Veränderung, darum bieten wir dir Sicherheit <br />
+            👉 Wir verstehen Menschen, also verstehen wir Unternehmen <br />
+            👉 Wir sind Teil einer Unternehmensfamilie an.
+          </p>
 
           <div class='flex justify-between border-t border-b border-gray-200 py-5 px-8'>
             <button
