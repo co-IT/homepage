@@ -17,11 +17,11 @@ export const JobOffersGrid = component$((props: JobOffersGridProps) => {
         {props.jobOffers.map(jobOffer => (
           <div class='flex min-w-fit flex-col gap-y-4 rounded-xl border border-gray-300 p-6'>
             <div class='flex w-full justify-between gap-x-4'>
-              <div class='text-secondary w-8/12 text-2xl font-bold'>
+              <p class='text-secondary break-all text-2xl font-bold'>
                 {jobOffer.title}
-              </div>
+              </p>
 
-              <div class='flex h-fit w-4/12 justify-end'>
+              <div class='h-fit '>
                 <LinkCallToAction href={jobOffer.offerUrl} target='_blank'>
                   Job ansehen
                 </LinkCallToAction>

@@ -1,6 +1,8 @@
 import { component$, Resource } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { loader$ } from '@builder.io/qwik-city';
+import { ArticleSection } from '~/components/article-section';
+import type { Article } from '~/components/article-section/model';
 import { VideoOverlapLandscape } from '~/components/content-overlap';
 import { HeadingSegmentSecondary } from '~/components/heading-segment';
 import { MobilePhone } from '~/components/icons/mobile-phone';
@@ -12,7 +14,6 @@ import { LinkCallToAction } from '~/components/link-call-to-action';
 import { SectionArea } from '~/components/section-area';
 import { Timeline } from '~/components/timeline/timeline';
 import { YouTubeVideoGrid } from '~/components/youtube';
-import { ArticleSection } from '../../components/article-section';
 import { createJobOffersFromRecruitee } from './model-helper';
 import {
   videosWarumWirUnsereArbeitLieben,
