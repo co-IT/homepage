@@ -16,6 +16,15 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
 
   const openVideoDialog$ = $((youTubeVideo: YouTubeVideo) => {
     videoDialog.videoPlaying = youTubeVideo;
+
+    const videoIndex = props.videos.findIndex(
+      video => youTubeVideo.id === video.id
+    );
+
+    videoDialog.videoPlayingHasPredecessor = videoIndex > 0 ? true : false;
+    videoDialog.videoPlayingHasSuccessor =
+      videoIndex < props.videos.length - 1 ? true : false;
+
     dialogRef.value?.showModal();
   });
 
