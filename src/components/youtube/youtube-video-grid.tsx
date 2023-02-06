@@ -1,12 +1,9 @@
 import { $, component$, useSignal, useStore } from '@builder.io/qwik';
-import {
-  BlackCloseIcon,
-  BlueCircleArrowIcon,
-  WhiteVideoPlayerIcon
-} from '../icons';
+import { BlackCloseIcon, BlueCircleArrowIcon } from '../icons';
 import type { YouTubeVideo } from './model';
 import type { YouTubeVideoDialogState } from './youtube-vide-dialog.state';
 import type { YouTubeVideoGridProps } from './youtube-video-grid.props';
+import { YouTubeVideoTile } from './youtube-video-tile';
 
 export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
   const videoDialog = useStore<YouTubeVideoDialogState>({
@@ -68,24 +65,10 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
         <div class='flex flex-col gap-y-14 px-8 lg:px-0'>
           <div class='grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3'>
             {props.videos.map(video => (
-              <div class='flex flex-col'>
-                <div
-                  class='relative h-44 w-full cursor-pointer rounded-tl-xl rounded-tr-xl'
-                  onClick$={() => openVideoDialog$(video)}
-                >
-                  <img
-                    class='bg-secondary relative h-44 w-full rounded-tl-xl rounded-tr-xl object-cover'
-                    src={video.thumb}
-                    alt='img'
-                  />
-                  <div class='absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 hover:opacity-75'>
-                    <WhiteVideoPlayerIcon />
-                  </div>
-                </div>
-                <div class='text-secondary h-28 rounded-bl-xl rounded-br-xl bg-primary px-6 py-4 text-2xl font-bold leading-6'>
-                  {video.title}
-                </div>
-              </div>
+              <YouTubeVideoTile
+                video={video}
+                onTileClicked$={videoClicked => openVideoDialog$(videoClicked)}
+              />
             ))}
           </div>
         </div>
