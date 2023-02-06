@@ -173,6 +173,13 @@ export default component$(() => {
         </div>
       </SectionArea>
       <SectionArea>
+        <div class='mb-14 flex flex-col items-center gap-y-4'>
+          <div class='h-1 w-10 bg-accent' />
+
+          <h2 class='text-secondary text-4xl font-bold leading-10 text-secondary-900'>
+            Unsere offenen Stellen
+          </h2>
+        </div>
         <Resource
           value={jobOffers}
           onResolved={jobOffers => <JobOffersGrid jobOffers={jobOffers} />}
