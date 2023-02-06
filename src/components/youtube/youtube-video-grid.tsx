@@ -64,10 +64,11 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
       <div class='container mx-auto'>
         <div class='flex flex-col gap-y-14 px-8 lg:px-0'>
           <div class='grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3'>
-            {props.videos.map(video => (
+            {props.videos.map((video, index) => (
               <YouTubeVideoTile
                 video={video}
                 onTileClicked$={videoClicked => openVideoDialog$(videoClicked)}
+                key={index}
               />
             ))}
           </div>
