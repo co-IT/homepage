@@ -103,7 +103,7 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
             class='mb-5 aspect-video max-h-96'
           />
 
-          <p class='text-secondary mb-4  max-h-28 overflow-y-auto whitespace-pre text-sm font-medium leading-6 opacity-80'>
+          <p class='text-secondary container mb-4 max-h-28 overflow-y-scroll text-sm font-medium leading-6 opacity-80'>
             {videoDialog.videoPlaying.description}
           </p>
 
