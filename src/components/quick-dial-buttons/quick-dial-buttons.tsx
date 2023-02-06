@@ -13,33 +13,33 @@ export const QuickDialButtons = component$(() => {
 
   return (
     <>
-      <div class='z-30 flex-col gap-y-4 fixed right-0 top-2/4 hidden md:flex'>
+      <div class='fixed right-0 top-2/4 z-30 hidden flex-col gap-y-4 md:flex'>
         <div class='flex flex-col'>
           <a
             href='tel:+49721935163052'
             target='_self'
-            class='bg-primary p-3 rounded-tl-lg cursor-pointer'
+            class='cursor-pointer rounded-tl-lg bg-primary p-3'
           >
             <BluePhoneIcon />
           </a>
           <a
             href='mailto:info@co-IT.eu'
             target='_blank'
-            class='bg-primary p-3 cursor-pointer'
+            class='cursor-pointer bg-primary p-3'
           >
             <BlueMailIcon />
           </a>
           <a
             href='https://g.page/communicativeIT?share'
             target='_blank'
-            class='bg-primary p-3 rounded-bl-lg cursor-pointer'
+            class='cursor-pointer rounded-bl-lg bg-primary p-3'
           >
             <BlueMapIcon />
           </a>
         </div>
 
         <div
-          class='bg-primary p-2 rounded-tl-lg rounded-bl-lg cursor-pointer'
+          class='cursor-pointer rounded-tl-lg rounded-bl-lg bg-primary p-2'
           onClick$={() => scrollToTopOfThePage()}
         >
           <BlueArrowIcon />

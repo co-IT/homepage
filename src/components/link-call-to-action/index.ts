@@ -1,1 +1,1 @@
-export * from "./link-call-to-action";
+export * from './link-call-to-action';

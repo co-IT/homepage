@@ -97,17 +97,18 @@ export default component$(() => {
 
       <VideoOverlapLandscape youTubeVideoId='STUlI6toSTA'>
         <section class='flex flex-col space-y-4'>
-          <h2 class='font-bold text-xl md:text-4xl'>
+          <h2 class='text-xl font-bold md:text-4xl'>
             <HeadingSegmentSecondary text='Erlebe Arbeiten ganz anders' />
           </h2>
           <p class='leading-7'>
-            Gleichgesinnte statt Arbeitskollegen, Weiterentwicklung
-            statt Komfortzone, Rückhalt geben statt wegzuducken: Wir verstehen
-            Arbeitszeit als Lebenszeit! Wir wollen unsere Zeit nutzen, um Reibung und
-            Bewegung zu erzeugen. Wirf einen Blick in unsere Kurzvorstellung und
-            nimm dir einen Moment für unser Video. Sprechen dich unsere
-            Ansätze an? Dann kannst du am Ende der Seite deine Bewerbung starten,
-            indem du unseren Cultural Fit Fragebogen anforderst.
+            Gleichgesinnte statt Arbeitskollegen, Weiterentwicklung statt
+            Komfortzone, Rückhalt geben statt wegzuducken: Wir verstehen
+            Arbeitszeit als Lebenszeit! Wir wollen unsere Zeit nutzen, um
+            Reibung und Bewegung zu erzeugen. Wirf einen Blick in unsere
+            Kurzvorstellung und nimm dir einen Moment für unser Video. Sprechen
+            dich unsere Ansätze an? Dann kannst du am Ende der Seite deine
+            Bewerbung starten, indem du unseren Cultural Fit Fragebogen
+            anforderst.
           </p>
           <LinkCallToAction
             href='https://e.co-it.eu/recruiting/kurzvorstellung'
@@ -121,39 +122,39 @@ export default component$(() => {
       <hr class='container mx-auto mt-10 lg:mt-20' />
 
       <SectionArea>
-        <div class='mb-4 w-10 bg-accent h-1 mx-auto'></div>
-        <h2 class='text-center text-4xl text-secondary font-bold mb-14'>
+        <div class='mx-auto mb-4 h-1 w-10 bg-accent'></div>
+        <h2 class='text-secondary mb-14 text-center text-4xl font-bold'>
           Warum wir unsere Arbeit lieben
         </h2>
         <YouTubeVideoGrid videos={videosWarumWirUnsereArbeitLieben} />
       </SectionArea>
 
       <SectionArea>
-        <div class='mb-4 w-10 bg-accent h-1 mx-auto'></div>
-        <h2 class='text-center text-4xl text-secondary font-bold mb-14'>
+        <div class='mx-auto mb-4 h-1 w-10 bg-accent'></div>
+        <h2 class='text-secondary mb-14 text-center text-4xl font-bold'>
           Wie wir zusammenarbeiten
         </h2>
         <YouTubeVideoGrid videos={videosWieWirArbeiten} />
       </SectionArea>
 
       <SectionArea>
-        <div class='mb-4 w-10 bg-accent h-1 mx-auto'></div>
-        <h2 class='text-center text-4xl text-secondary font-bold mb-14'>
+        <div class='mx-auto mb-4 h-1 w-10 bg-accent'></div>
+        <h2 class='text-secondary mb-14 text-center text-4xl font-bold'>
           Was wir dir bieten
         </h2>
         <YouTubeVideoGrid videos={videosWasWirDirBieten} />
       </SectionArea>
 
       <SectionArea>
-        <div class='flex flex-col items-center gap-y-4 mb-14'>
-          <div class='bg-accent w-10 h-1' />
+        <div class='mb-14 flex flex-col items-center gap-y-4'>
+          <div class='h-1 w-10 bg-accent' />
 
-          <h2 class='text-secondary-900 text-4xl text-secondary font-bold leading-10'>
+          <h2 class='text-secondary text-4xl font-bold leading-10 text-secondary-900'>
             So geht's weiter
           </h2>
         </div>
 
-        <div class='grid grid-flow-col gap-28 items-center'>
+        <div class='grid grid-flow-col items-center gap-28'>
           <section class='hidden md:block'>
             <MobilePhone />
           </section>

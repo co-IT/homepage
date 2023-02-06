@@ -1,2 +1,2 @@
-export * from "./header";
-export * from "./header.props";
+export * from './header';
+export * from './header.props';

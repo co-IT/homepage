@@ -23,15 +23,16 @@ export default component$(() => {
           }}
         >
           <section q:slot='article' class='flex flex-col space-y-4'>
-            <h2 class='font-bold text-xl md:text-4xl'>
+            <h2 class='text-xl font-bold md:text-4xl'>
               <HeadingSegmentSecondary text='Denken Sie auch in' />
               &nbsp;
               <HeadingSegmentSecondary800 text='ganzheitlichen Lösungen?' />
             </h2>
-            <p class='leading-7 pb-4'>
-              Dann sind unsere eingespielten Teams aus High Performern genau das Richtige für Sie
-              Unser Selbstverständnis geht weit über das eines Softwareherstellers oder eines IT-Systemhauses hinaus:
-              Wir bieten Ihnen vollumfängliche Lösungen statt punktueller Einzelleistungen.
+            <p class='pb-4 leading-7'>
+              Dann sind unsere eingespielten Teams aus High Performern genau das
+              Richtige für Sie Unser Selbstverständnis geht weit über das eines
+              Softwareherstellers oder eines IT-Systemhauses hinaus: Wir bieten
+              Ihnen vollumfängliche Lösungen statt punktueller Einzelleistungen.
             </p>
             <LinkCallToAction href='/about'>Lösung anfragen</LinkCallToAction>
           </section>
@@ -45,25 +46,25 @@ export default component$(() => {
 
       <VideoOverlapLandscape youTubeVideoId='fpPjn58ONrI'>
         <section class='flex flex-col space-y-4'>
-            <h2 class='font-bold text-xl md:text-4xl'>
-              <HeadingSegmentSecondary text='Machen' />
-              &nbsp;
-              <HeadingSegmentSecondary800 text='Menschen' />
-              &nbsp;
-              <HeadingSegmentSecondary text='für Sie auch den' />
-              &nbsp;
-              <HeadingSegmentSecondary800 text='Unterschied?' />
-            </h2>
-            <p class='leading-7 pb-4'>
-              Dann haben wir für Sie echte Game Changer in unseren Reihen.
-              Motiviert durch den Fachkräftemangel, rekrutieren wir mit eigenen
-              HR-Spezialisten und qualitätsgetriebenem Auswahlprozess unsere
-              Talente. Dank unserer Werteorientierten Unternehmenskultur und
-              unserer Team-zentrierten Lösungsmentalität halten und entwickeln
-              wir unsere Mitarbeiter.
-            </p>
-            <LinkCallToAction href='/quality'>Mehr erfahren</LinkCallToAction>
-          </section>
+          <h2 class='text-xl font-bold md:text-4xl'>
+            <HeadingSegmentSecondary text='Machen' />
+            &nbsp;
+            <HeadingSegmentSecondary800 text='Menschen' />
+            &nbsp;
+            <HeadingSegmentSecondary text='für Sie auch den' />
+            &nbsp;
+            <HeadingSegmentSecondary800 text='Unterschied?' />
+          </h2>
+          <p class='pb-4 leading-7'>
+            Dann haben wir für Sie echte Game Changer in unseren Reihen.
+            Motiviert durch den Fachkräftemangel, rekrutieren wir mit eigenen
+            HR-Spezialisten und qualitätsgetriebenem Auswahlprozess unsere
+            Talente. Dank unserer Werteorientierten Unternehmenskultur und
+            unserer Team-zentrierten Lösungsmentalität halten und entwickeln wir
+            unsere Mitarbeiter.
+          </p>
+          <LinkCallToAction href='/quality'>Mehr erfahren</LinkCallToAction>
+        </section>
       </VideoOverlapLandscape>
     </>
   );

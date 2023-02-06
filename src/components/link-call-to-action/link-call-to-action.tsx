@@ -5,7 +5,7 @@ import { Link } from '@builder.io/qwik-city';
 type LinkCallToActionProps = QwikIntrinsicElements['a'];
 
 export const linkContent = (
-  <span class='text-secondary-900  bg-primary px-7 py-2.5 hover:opacity-75 w-fit rounded cursor-pointer text-lg font-semibold leading-5 '>
+  <span class='w-fit  cursor-pointer rounded bg-primary px-7 py-2.5 text-lg font-semibold leading-5 text-secondary-900 hover:opacity-75 '>
     <Slot />
   </span>
 );

@@ -10,42 +10,42 @@ export const ArticleCard = component$((props: ArticleCardProps) => {
   return (
     <>
       {props.article.direction == 'right' ? (
-        <div class='lg:px-10 flex flex-col lg:flex-row gap-x-12'>
-          <div class='w-full flex flex-col gap-y-5'>
+        <div class='flex flex-col gap-x-12 lg:flex-row lg:px-10'>
+          <div class='flex w-full flex-col gap-y-5'>
             <div class='flex flex-col gap-y-4'>
               <HeadingArticle text={props.article.heading} />
-              <div class='w-full mt-4 lg:hidden'>
+              <div class='mt-4 w-full lg:hidden'>
                 <img {...props.article.image} loading='lazy' />
               </div>
             </div>
 
-            <p class='text-base text-black whitespace-pre-line font-normal leading-7 opacity-80 tracking-normal text-left px-10 lg:px-0'>
+            <p class='whitespace-pre-line px-10 text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 lg:px-0'>
               {props.article.text}
             </p>
           </div>
 
-          <div class='w-full hidden lg:block'>
+          <div class='hidden w-full lg:block'>
             <img {...props.article.image} loading='lazy' />
           </div>
         </div>
       ) : (
-        <div class='lg:px-10 flex flex-col lg:flex-row gap-x-12'>
-          <div class='w-full hidden lg:block'>
+        <div class='flex flex-col gap-x-12 lg:flex-row lg:px-10'>
+          <div class='hidden w-full lg:block'>
             <img {...props.article.image} loading='lazy' />
           </div>
 
-          <div class='w-full flex flex-col gap-y-5'>
+          <div class='flex w-full flex-col gap-y-5'>
             <div class='flex flex-col gap-y-4'>
-              <div class='w-10 h-1 bg-accent mx-auto lg:mx-0' />
-              <div class='text-3xl lg:text-4xl text-secondary-900 font-bold leading-8 lg:leading-10 text-center lg:text-left px-6 lg:px-0'>
+              <div class='mx-auto h-1 w-10 bg-accent lg:mx-0' />
+              <div class='px-6 text-center text-3xl font-bold leading-8 text-secondary-900 lg:px-0 lg:text-left lg:text-4xl lg:leading-10'>
                 {props.article.heading}
               </div>
-              <div class='w-full mt-4 lg:hidden'>
+              <div class='mt-4 w-full lg:hidden'>
                 <img {...props.article.image} loading='lazy' />
               </div>
             </div>
 
-            <p class='text-base text-black whitespace-pre-line font-normal leading-7 opacity-80 tracking-normal text-left px-10 lg:px-0'>
+            <p class='whitespace-pre-line px-10 text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 lg:px-0'>
               {props.article.text}
             </p>
           </div>

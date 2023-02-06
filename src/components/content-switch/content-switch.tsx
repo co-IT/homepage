@@ -32,7 +32,7 @@ export const ContentSwitch = component$(() => {
 
   return (
     <>
-      <h2 class='font-bold text-xl md:text-4xl mb-4 md:mb-28 text-center'>
+      <h2 class='mb-4 text-center text-xl font-bold md:mb-28 md:text-4xl'>
         Das könnte Sie auch interessieren
       </h2>
       <div class='flex flex-col gap-y-0 lg:gap-y-14'>
@@ -42,19 +42,19 @@ export const ContentSwitch = component$(() => {
             key={key}
             class={`z-0 flex flex-row ${key % 2 !== 0 ? 'justify-end' : ''}`}
           >
-            <div class='lg:w-6/12 relative '>
+            <div class='relative lg:w-6/12 '>
               <div class='bg-secondary-900'>
                 <img
                   src={link.image}
                   loading='lazy'
                   alt='content'
-                  class='h-72 w-full opacity-50 object-cover hidden md:block'
+                  class='hidden h-72 w-full object-cover opacity-50 md:block'
                 />
               </div>
               <div
                 class={`${
                   key % 2 === 0 ? 'lg:left-[70%]' : 'lg:right-[70%]'
-                } bg-white p-6 lg:p-10 lg:absolute lg:top-[30%]  w-full mb-5 shadow-2xl text-base lg:text-2xl font-bold leading-7 flex justify-between 
+                } mb-5 flex w-full justify-between bg-white  p-6 text-base font-bold leading-7 shadow-2xl lg:absolute lg:top-[30%] lg:p-10 lg:text-2xl 
                 `}
               >
                 <div class='my-auto'>

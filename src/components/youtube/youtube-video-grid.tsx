@@ -66,15 +66,15 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
     <>
       <div class='container mx-auto'>
         <div class='flex flex-col gap-y-14 px-8 lg:px-0'>
-          <div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7'>
+          <div class='grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3'>
             {props.videos.map(video => (
               <div class='flex flex-col'>
                 <div
-                  class='w-full rounded-tl-xl rounded-tr-xl h-44 relative cursor-pointer'
+                  class='relative h-44 w-full cursor-pointer rounded-tl-xl rounded-tr-xl'
                   onClick$={() => openVideoDialog$(video)}
                 >
                   <img
-                    class='w-full rounded-tl-xl rounded-tr-xl h-44 bg-secondary relative object-cover'
+                    class='bg-secondary relative h-44 w-full rounded-tl-xl rounded-tr-xl object-cover'
                     src={video.thumb}
                     alt='img'
                   />
@@ -82,7 +82,7 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
                     <WhiteVideoPlayerIcon />
                   </div>
                 </div>
-                <div class='rounded-bl-xl rounded-br-xl bg-primary px-6 py-4 text-2xl font-bold text-secondary leading-6 h-28'>
+                <div class='text-secondary h-28 rounded-bl-xl rounded-br-xl bg-primary px-6 py-4 text-2xl font-bold leading-6'>
                   {video.title}
                 </div>
               </div>
@@ -92,46 +92,46 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
       </div>
       <dialog
         ref={dialogRef}
-        class='w-screen h-screen m-0 md:m-auto md:w-3/4 rounded-xl'
+        class='m-0 h-screen w-screen rounded-xl md:m-auto md:w-3/4'
       >
-        <div class='flex flex-col sm:justify-between h-full '>
-          <div class='w-full flex justify-end mb-5'>
+        <div class='flex h-full flex-col sm:justify-between '>
+          <div class='mb-5 flex w-full justify-end'>
             <div class='cursor-pointer' onClick$={() => closeVideoDialog$()}>
               <BlackCloseIcon />
             </div>
           </div>
 
-          <div class='flex flex-col gap-y-4 mb-8'>
-            <div class='bg-accent w-10 h-1'></div>
-            <div class='text-4xl text-secondary-900 font-bold leading-10'>
+          <div class='mb-8 flex flex-col gap-y-4'>
+            <div class='h-1 w-10 bg-accent'></div>
+            <div class='text-4xl font-bold leading-10 text-secondary-900'>
               {videoDialog.videoPlaying.title}
             </div>
           </div>
 
           <iframe
             src={`https://www.youtube.com/embed/${videoDialog.videoPlaying.id}`}
-            class='aspect-video max-h-96 mb-5'
+            class='mb-5 aspect-video max-h-96'
           />
 
           {/* <div class='text-sm font-medium text-secondary leading-6 mb-4 opacity-80'>
             {videoDialog.videoPlaying.description}
           </div> */}
 
-          <div class='flex justify-between py-5 px-8 border-t border-b border-gray-200'>
+          <div class='flex justify-between border-t border-b border-gray-200 py-5 px-8'>
             <button
               onClick$={() => showPreviousVideo$()}
               disabled={!videoDialog.videoPlayingHasPredecessor}
-              class='flex flex-row gap-x-5 cursor-pointer hover:opacity-75 disabled:opacity-50'
+              class='flex cursor-pointer flex-row gap-x-5 hover:opacity-75 disabled:opacity-50'
             >
               <div class='rotate-180'>
                 <BlueCircleArrowIcon />
               </div>
 
-              <div class='flex flex-col gap-y-1 my-auto'>
-                <div class='text-lg text-secondary-900 font-normal leading-4 hidden'>
+              <div class='my-auto flex flex-col gap-y-1'>
+                <div class='hidden text-lg font-normal leading-4 text-secondary-900'>
                   Zum nächsten Thema
                 </div>
-                <div class='text-lg text-secondary-900 font-bold leading-5'>
+                <div class='text-lg font-bold leading-5 text-secondary-900'>
                   Previous
                 </div>
               </div>
@@ -140,13 +140,13 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
             <button
               onClick$={() => showNextVideo$()}
               disabled={!videoDialog.videoPlayingHasSuccessor}
-              class='flex flex-row gap-x-5 cursor-pointer hover:opacity-75 disabled:opacity-50'
+              class='flex cursor-pointer flex-row gap-x-5 hover:opacity-75 disabled:opacity-50'
             >
-              <div class='flex flex-col gap-y-1 my-auto'>
-                <div class='text-lg text-secondary-900 font-normal leading-4 hidden'>
+              <div class='my-auto flex flex-col gap-y-1'>
+                <div class='hidden text-lg font-normal leading-4 text-secondary-900'>
                   Zum nächsten Thema
                 </div>
-                <div class={`text-lg text-secondary-900 font-bold leading-5`}>
+                <div class={`text-lg font-bold leading-5 text-secondary-900`}>
                   Next
                 </div>
               </div>

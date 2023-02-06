@@ -1,1 +1,1 @@
-export * from "./team-section";
+export * from './team-section';

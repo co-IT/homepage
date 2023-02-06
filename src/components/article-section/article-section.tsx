@@ -8,7 +8,7 @@ export interface ArticleSectionProps {
 
 export const ArticleSection = component$((props: ArticleSectionProps) => {
   return (
-    <div class='w-full container mx-auto flex flex-col gap-y-10 lg:gap-y-20'>
+    <div class='container mx-auto flex w-full flex-col gap-y-10 lg:gap-y-20'>
       {props.articles.map((article, key) => (
         <>
           <ArticleCard article={article} key={key} />

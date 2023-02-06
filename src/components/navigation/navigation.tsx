@@ -47,29 +47,29 @@ export const Navigation = component$(() => {
   });
 
   return (
-    <div class='w-full bg-primary pt-12 lg:pt-16 pb-12 lg:pb-24 fixed top-0 z-40 shadow-xl'>
+    <div class='fixed top-0 z-40 w-full bg-primary pt-12 pb-12 shadow-xl lg:pt-16 lg:pb-24'>
       <div class='container mx-auto flex flex-col gap-y-14 lg:gap-y-20'>
-        <div class='flex justify-between flex-col lg:flex-row'>
+        <div class='flex flex-col justify-between lg:flex-row'>
           <Link href='/'>
             <img
               src='/img/navigation/logo.svg'
               alt='logo'
-              class='w-32 lg:w-44 h-fit mx-auto lg:mx-0'
+              class='mx-auto h-fit w-32 lg:mx-0 lg:w-44'
             />
           </Link>
           <div
-            class='flex-row gap-x-2 my-auto cursor-pointer hover:opacity-75 hidden md:flex'
+            class='my-auto hidden cursor-pointer flex-row gap-x-2 hover:opacity-75 md:flex'
             onClick$={() => closeMenu()}
           >
             <WhiteCloseIcon />
-            <div class='text-lg text-white font-bold leading-5 my-auto'>
+            <div class='my-auto text-lg font-bold leading-5 text-white'>
               Schließen
             </div>
           </div>
         </div>
 
         <div class='flex flex-col gap-y-14'>
-          <div class='grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10 px-7 lg:px-0'>
+          <div class='grid grid-cols-2 gap-5 px-7 lg:grid-cols-4 lg:gap-10 lg:px-0'>
             {navigationLinks.map((navigationLink, key) => (
               <NavigationLinkCard
                 link={navigationLink}
@@ -82,19 +82,19 @@ export const Navigation = component$(() => {
           <div class='flex justify-center'>
             <a
               href='/contact'
-              class='bg-secondary-900 hover:bg-white hover:text-secondary-900 text-white font-bold text-lg w-fit px-14 py-5 rounded'
+              class='w-fit rounded bg-secondary-900 px-14 py-5 text-lg font-bold text-white hover:bg-white hover:text-secondary-900'
             >
               Kontakt aufnehmen
             </a>
           </div>
         </div>
 
-        <div class='flex lg:hidden flex-row justify-between px-10'>
+        <div class='flex flex-row justify-between px-10 lg:hidden'>
           <div class='flex flex-row gap-x-5'>
             <a
               href='tel:+49721935163052'
               target='_self'
-              class='w-14 h-14 bg-white rounded-full shadow-lg relative'
+              class='relative h-14 w-14 rounded-full bg-white shadow-lg'
             >
               <div class='absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4'>
                 <BluePhoneIcon />
@@ -103,7 +103,7 @@ export const Navigation = component$(() => {
             <a
               href='mailto:info@co-IT.eu'
               target='_blank'
-              class='w-14 h-14 bg-white rounded-full shadow-lg relative'
+              class='relative h-14 w-14 rounded-full bg-white shadow-lg'
             >
               <div class='absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4'>
                 <BlueMailIcon />
@@ -112,7 +112,7 @@ export const Navigation = component$(() => {
             <a
               href='https://g.page/communicativeIT?share'
               target='_blank'
-              class='w-14 h-14 bg-white rounded-full shadow-lg relative'
+              class='relative h-14 w-14 rounded-full bg-white shadow-lg'
             >
               <div class='absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4'>
                 <BlueMapIcon />
@@ -121,7 +121,7 @@ export const Navigation = component$(() => {
           </div>
 
           <div
-            class='w-14 h-14 bg-white rounded-full shadow-lg relative'
+            class='relative h-14 w-14 rounded-full bg-white shadow-lg'
             onClick$={() => closeMenu()}
           >
             <div class='absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4'>

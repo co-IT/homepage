@@ -33,7 +33,7 @@ Strategie- und Unternehmensberatung`
       <SectionArea backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='QVArEtvAGsk'>
           <section class='flex flex-col space-y-4'>
-            <h2 class='font-bold text-xl md:text-4xl'>
+            <h2 class='text-xl font-bold md:text-4xl'>
               <HeadingSegmentSecondary text='Eine Idee auf die Straße gebracht' />
             </h2>
             <p class='leading-7'>

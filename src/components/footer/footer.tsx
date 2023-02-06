@@ -29,23 +29,23 @@ export const Footer = component$(() => {
 
   return (
     <>
-      <div class='relative w-full bg-secondary-900 pt-12 pb-16 lg:pb-32 mt-48 container flex flex-col'>
+      <div class='container relative mt-48 flex w-full flex-col bg-secondary-900 pt-12 pb-16 lg:pb-32'>
         <div class='flex flex-col lg:flex-row'>
-          <div class='w-full lg:w-4/12 flex justify-center mb-14 lg:mb-0 lg:justify-end lg:mr-24'>
+          <div class='mb-14 flex w-full justify-center lg:mb-0 lg:mr-24 lg:w-4/12 lg:justify-end'>
             <Logo />
           </div>
 
           {links.map((link, key) => (
             <Link
               href={link.path}
-              class='w-full text-center mb-5 lg:mb-0 lg:w-2/12'
+              class='mb-5 w-full text-center lg:mb-0 lg:w-2/12'
               key={key}
             >
               <div class='flex flex-col gap-y-2'>
-                <div class='text-base font-bold text-white leading-7'>
+                <div class='text-base font-bold leading-7 text-white'>
                   {link.textFirstLine}
                 </div>
-                <div class='text-sm font-semibold text-white leading-6'>
+                <div class='text-sm font-semibold leading-6 text-white'>
                   {link.textSecondLine}
                 </div>
               </div>
@@ -53,8 +53,8 @@ export const Footer = component$(() => {
           ))}
         </div>
 
-        <div class='flex justify-end flex-col gap-y-6 px-16 lg:px-0 lg:flex-row lg:gap-x-5 lg:absolute right-14 top-40'>
-          <div class='bg-white px-10 py-9 flex flex-col gap-y-7 shadow-lg'>
+        <div class='right-14 top-40 flex flex-col justify-end gap-y-6 px-16 lg:absolute lg:flex-row lg:gap-x-5 lg:px-0'>
+          <div class='flex flex-col gap-y-7 bg-white px-10 py-9 shadow-lg'>
             <div class='text-lg font-bold leading-5 text-secondary-900'>
               co-IT.eu GmbH
             </div>
@@ -68,7 +68,7 @@ export const Footer = component$(() => {
               </div>
             </div>
 
-            <div class='bg-secondary-900 text-lg font-semibold leading-5 text-white px-4 py-2 rounded flex flex-row gap-x-2'>
+            <div class='flex flex-row gap-x-2 rounded bg-secondary-900 px-4 py-2 text-lg font-semibold leading-5 text-white'>
               <MapIcon />
               <a href='https://g.page/communicativeIT?share' target='_blank'>
                 Zu Google Maps
@@ -76,7 +76,7 @@ export const Footer = component$(() => {
             </div>
           </div>
 
-          <div class='bg-white px-10 py-9 flex flex-col gap-y-7 shadow-lg'>
+          <div class='flex flex-col gap-y-7 bg-white px-10 py-9 shadow-lg'>
             <div class='text-lg font-bold leading-5 text-secondary-900'>
               co-IT.eu GmbH
             </div>
@@ -90,7 +90,7 @@ export const Footer = component$(() => {
               </div>
             </div>
 
-            <div class='bg-secondary-900 text-lg font-semibold leading-5 text-white px-4 py-2 rounded flex flex-row gap-x-2'>
+            <div class='flex flex-row gap-x-2 rounded bg-secondary-900 px-4 py-2 text-lg font-semibold leading-5 text-white'>
               <MapIcon />
               <a href='https://goo.gl/maps/PKdhKoBCgPyFEFsC8' target='_blank'>
                 Zu Google Maps
@@ -98,7 +98,7 @@ export const Footer = component$(() => {
             </div>
           </div>
 
-          <div class='bg-white px-10 py-9 flex flex-col gap-y-7 shadow-lg'>
+          <div class='flex flex-col gap-y-7 bg-white px-10 py-9 shadow-lg'>
             <div class='text-lg font-bold leading-5 text-secondary-900'>
               Weitere co-IT Kanäle
             </div>
@@ -115,7 +115,7 @@ export const Footer = component$(() => {
         </div>
       </div>
 
-      <div class='bg-primary py-5 lg:mt-48 flex justify-center text-xs text-black font-normal'>
+      <div class='flex justify-center bg-primary py-5 text-xs font-normal text-black lg:mt-48'>
         <span>© 2023 - co-IT GmbH -</span>
         <a href='/privacy'>Datenschutz</a>&nbsp;
         <a href='/imprint'>Impressum</a>&nbsp;

@@ -7,8 +7,8 @@ export interface HeadingArticleProps {
 export const HeadingArticle = component$((props: HeadingArticleProps) => {
   return (
     <>
-      <div class='w-10 h-1 bg-accent mx-auto lg:mx-0 mb-3' />
-      <h2 class='text-3xl lg:text-4xl mb-5 text-secondary-900 font-bold leading-8 lg:leading-10 text-center lg:text-left px-6 lg:px-0'>
+      <div class='mx-auto mb-3 h-1 w-10 bg-accent lg:mx-0' />
+      <h2 class='mb-5 px-6 text-center text-3xl font-bold leading-8 text-secondary-900 lg:px-0 lg:text-left lg:text-4xl lg:leading-10'>
         {props.text}
       </h2>
     </>

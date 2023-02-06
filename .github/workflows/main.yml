@@ -2,7 +2,7 @@ name: 🚀 Deploy website on push
 
 on:
   push:
-    branches: ["main"]
+    branches: ['main']
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -12,7 +12,7 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: true
 
 jobs:
@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16
-      - name: "📦 Setup pnpm"
+      - name: '📦 Setup pnpm'
         uses: pnpm/action-setup@v2
         with:
           version: 7.25.0
@@ -44,7 +44,7 @@ jobs:
       - name: 🆙 Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: "./dist"
+          path: './dist'
 
       - name: 🚢 Deploy to GitHub Pages
         id: deployment

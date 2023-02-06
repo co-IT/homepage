@@ -4,7 +4,7 @@ import { LinkCallToAction } from '../link-call-to-action';
 export const TeamSection = component$(() => {
   return (
     <div class='flex flex-col'>
-      <div class='text-center px-8 text-2xl lg:text-3xl font-normal text-black leading-10 max-w-5xl mx-auto'>
+      <div class='mx-auto max-w-5xl px-8 text-center text-2xl font-normal leading-10 text-black lg:text-3xl'>
         "Unsere Motivation ist es eine{' '}
         <span class='font-semibold text-secondary-900'>
           aufgeschlossene Welt
@@ -34,7 +34,7 @@ export const TeamSection = component$(() => {
         ."
       </div>
 
-      <div class='flex justify-center my-12'>
+      <div class='my-12 flex justify-center'>
         <LinkCallToAction href='http://karriere.co-it.eu/' target='_blank'>
           Jetzt bewerben
         </LinkCallToAction>

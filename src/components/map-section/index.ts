@@ -1,1 +1,1 @@
-export * from "./map-section";
+export * from './map-section';

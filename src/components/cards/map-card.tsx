@@ -11,12 +11,12 @@ interface MapProps {
 export const MapCard = component$((props: MapProps) => {
   return (
     <>
-      <div class='w-full flex flex-row justify-center'>
+      <div class='flex w-full flex-row justify-center'>
         <div class='relative '>
           <a href={props.googleMapsLink} target='_blank'>
             <img src={props.map} alt='map' class='h-64' />
           </a>
-          <div class='absolute bg-white px-10 py-9 flex flex-col gap-y-7 shadow-xl -left-[16%] -top-[12%]'>
+          <div class='absolute -left-[16%] -top-[12%] flex flex-col gap-y-7 bg-white px-10 py-9 shadow-xl'>
             <div class='text-lg font-bold leading-5 text-secondary-900'>
               co-IT.eu GmbH
             </div>
@@ -30,7 +30,7 @@ export const MapCard = component$((props: MapProps) => {
               </div>
             </div>
 
-            <div class='bg-secondary-900 text-lg font-semibold leading-5 text-white px-4 py-2 rounded flex flex-row gap-x-2'>
+            <div class='flex flex-row gap-x-2 rounded bg-secondary-900 px-4 py-2 text-lg font-semibold leading-5 text-white'>
               <MapIcon />
               <a href={props.googleMapsLink} target='_blank'>
                 Zu Google Maps

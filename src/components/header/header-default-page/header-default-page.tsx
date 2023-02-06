@@ -13,13 +13,13 @@ export const HeaderDefaultPage = component$((props: HeaderDefaultPageProps) => {
   });
 
   return (
-    <header class='bg-secondary-900 mb-8'>
+    <header class='mb-8 bg-secondary-900'>
       <div class='container mx-auto grid grid-rows-3'>
-        <section class='flex justify-center md:justify-between pt-6 h-fit'>
+        <section class='flex h-fit justify-center pt-6 md:justify-between'>
           <Logo />
 
           <div
-            class='hidden md:block flex-row gap-x-4 my-auto cursor-pointer hover:opacity-75'
+            class='my-auto hidden cursor-pointer flex-row gap-x-4 hover:opacity-75 md:block'
             onClick$={() => openMenu()}
           >
             <MenuIcon />
@@ -27,7 +27,7 @@ export const HeaderDefaultPage = component$((props: HeaderDefaultPageProps) => {
         </section>
         <section></section>
         <section class='flex flex-col space-y-10 pb-16 text-center'>
-          <h1 class='font-bold text-2xl md:text-5xl'>
+          <h1 class='text-2xl font-bold md:text-5xl'>
             <HeadingSegmentWhite text={props.heading} />
           </h1>
         </section>
