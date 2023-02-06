@@ -96,31 +96,6 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
 
           <p class='text-secondary mb-4  max-h-28 overflow-y-auto whitespace-pre text-sm font-medium leading-6 opacity-80'>
             {videoDialog.videoPlaying.description}
-            <br />
-            <br />
-            Das erwartet euch also als neue Mitarbeiter, wenn ihr bei uns
-            einsteigt: Ihr könnt unser Unternehmen mitgestalten.
-            <br />
-            <br />
-            💡 Das erwartet dich, wenn du bei uns anfängst: Du kannst unser
-            Unternehmen mitgestalten <br />
-            <br />
-            🤝 Schau dir auch unsere Playlist&nbsp;
-            <a
-              href='https://e.co-IT.eu/das-macht-uns-aus'
-              target='_blank'
-              class='underline'
-            >
-              https://e.co-IT.eu/das-macht-uns-aus
-            </a>
-            &nbsp;mit Inhalten zu <br />
-            👉 Das hat uns zur Firmengründung motiviert <br />
-            👉 Uns vereinen Werte <br />
-            👉 Das gibt uns Orientierung <br />
-            👉 Wir bieten Lösungen beschreiten Wege <br />
-            👉 Wir wollen Veränderung, darum bieten wir dir Sicherheit <br />
-            👉 Wir verstehen Menschen, also verstehen wir Unternehmen <br />
-            👉 Wir sind Teil einer Unternehmensfamilie an.
           </p>
 
           <div class='flex justify-between border-t border-b border-gray-200 py-5 px-8'>
