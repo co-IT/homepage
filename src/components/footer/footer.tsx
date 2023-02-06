@@ -116,7 +116,7 @@ export const Footer = component$(() => {
       </div>
 
       <div class='bg-primary py-5 lg:mt-48 flex justify-center text-xs text-black font-normal'>
-        <span>© 2022 - co-IT GmbH -</span>
+        <span>© 2023 - co-IT GmbH -</span>
         <a href='/privacy'>Datenschutz</a>&nbsp;
         <a href='/imprint'>Impressum</a>&nbsp;
         <a href='http://e.co-it.eu/agb' target='_blank'>

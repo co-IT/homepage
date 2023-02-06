@@ -98,17 +98,15 @@ export default component$(() => {
       <VideoOverlapLandscape youTubeVideoId='STUlI6toSTA'>
         <section class='flex flex-col space-y-4'>
           <h2 class='font-bold text-xl md:text-4xl'>
-            <HeadingSegmentSecondary text='Wir geben dir Halt' />
+            <HeadingSegmentSecondary text='Erlebe Arbeiten ganz anders' />
           </h2>
           <p class='leading-7'>
-            Beschäftigung kommt von beschäftigt - und das ist zweifelslos jeder.
-            Beruf kommt hingegen von Berufung und eine Berufung kann dir so viel
-            mehr bieten: Gleichgesinnte statt Arbeitskollegen, Weiterentwicklung
-            statt Komfortzone, Rückhalt statt Wegducken. Wir verstehen
-            Arbeitszeit als Lebenszeit, die wir nutzen wollen, um Reibung und
+            Gleichgesinnte statt Arbeitskollegen, Weiterentwicklung
+            statt Komfortzone, Rückhalt geben statt wegzuducken: Wir verstehen
+            Arbeitszeit als Lebenszeit! Wir wollen unsere Zeit nutzen, um Reibung und
             Bewegung zu erzeugen. Wirf einen Blick in unsere Kurzvorstellung und
-            nimm dir eine Minute für unser Video oben. Sprechen dich unsere
-            Ideen an? Dann kannst du am Ende der Seite deine Bewerbung starten,
+            nimm dir einen Moment für unser Video. Sprechen dich unsere
+            Ansätze an? Dann kannst du am Ende der Seite deine Bewerbung starten,
             indem du unseren Cultural Fit Fragebogen anforderst.
           </p>
           <LinkCallToAction
@@ -202,7 +200,7 @@ export const head: DocumentHead = {
         heading: 'Geprägt durch Menschen',
         headingAccent: 'Arbeitszeit ist Lebenszeit',
         teaser:
-          'Wir wünschen uns eine offene und ehrliche Zusammenarbeit. Uns ist es daher wichtig Ihnen transparent zu kommunizieren, was unsere Identität ausmacht, was uns motiviert für Sie unser Bestes zu geben und wie wir mit Ihnen gemeinsam Herausforderungen angehen wollen.'
+          'Beschäftigung kommt von beschäftigt - und das ist zweifelslos jeder. Beruf kommt hingegen von Berufung und eine Berufung kann dir so viel mehr bieten. Lies weiter und erfahre mehr.'
       }
     }
   }

@@ -29,23 +29,22 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='ganzheitlichen Lösungen?' />
             </h2>
             <p class='leading-7 pb-4'>
-              Dann bringen wir Ihre Ideen auf die Straße, ebenen Ihnen neue Wege
-              und schaffen gemeinsam nachhaltige Werte. Unsere Leidenschaft ist
-              es Veränderungen zu etwas Positivem zu machen.
+              Dann sind unsere eingespielten Teams aus High Performern genau das Richtige für Sie
+              Unser Selbstverständnis geht weit über das eines Softwareherstellers oder eines IT-Systemhauses hinaus:
+              Wir bieten Ihnen vollumfängliche Lösungen statt punktueller Einzelleistungen.
             </p>
-            <LinkCallToAction href='/about'>Mehr erfahren</LinkCallToAction>
+            <LinkCallToAction href='/about'>Lösung anfragen</LinkCallToAction>
           </section>
         </ContentOverlapPortrait>
       </SectionArea>
 
-      <SectionArea backgroundColor='gray'>
-        <ContentOverlapLandscape
-          image={{
-            source: '/img/landing-page/cooking-session.webp',
-            alternateText: 'Our team cooking a delicious meal'
-          }}
-        >
-          <section q:slot='article' class='flex flex-col space-y-4'>
+      {/** TODO: Currently spacing is hard since the *Overlap-Components have content that breaks the DOM-flow
+       *         We need to find a way optimizing this in order to not having to handle special cases.
+       */}
+      <div class='mb-48'></div>
+
+      <VideoOverlapLandscape youTubeVideoId='fpPjn58ONrI'>
+        <section class='flex flex-col space-y-4'>
             <h2 class='font-bold text-xl md:text-4xl'>
               <HeadingSegmentSecondary text='Machen' />
               &nbsp;
@@ -65,40 +64,6 @@ export default component$(() => {
             </p>
             <LinkCallToAction href='/quality'>Mehr erfahren</LinkCallToAction>
           </section>
-        </ContentOverlapLandscape>
-      </SectionArea>
-
-      {/** TODO: Currently spacing is hard since the *Overlap-Components have content that breaks the DOM-flow
-       *         We need to find a way optimizing this in order to not having to handle special cases.
-       */}
-      <div class='mb-48'></div>
-
-      <VideoOverlapLandscape youTubeVideoId='fpPjn58ONrI'>
-        <section class='flex flex-col space-y-4'>
-          <h2 class='font-bold text-xl md:text-4xl'>
-            <HeadingSegmentSecondary text='Wir geben dir' />
-            &nbsp;
-            <HeadingSegmentSecondary800 text='Halt' />
-            <HeadingSegmentSecondary text='.' />
-          </h2>
-          <p class='leading-7'>
-            Beschäftigung kommt von beschäftigt - und das ist zweifelslos jeder.
-            Beruf kommt hingegen von Berufung und eine Berufung kann dir so viel
-            mehr bieten: Gleichgesinnte statt Arbeitskollegen, Weiterentwicklung
-            statt Komfortzone, Rückhalt statt Wegducken. Wir verstehen
-            Arbeitszeit als Lebenszeit, die wir nutzen wollen, um Reibung und
-            Bewegung zu erzeugen. Wirf einen Blick in unsere Kurzvorstellung und
-            nimm dir eine Minute für unser Video oben. Sprechen dich unsere
-            Ideen an? Dann kannst du am Ende der Seite deine Bewerbung starten,
-            indem du unseren Cultural Fit Fragebogen anforderst.
-          </p>
-          <LinkCallToAction
-            href='https://e.co-it.eu/recruiting/kurzvorstellung'
-            target='_blank'
-          >
-            Kurzvorstellung herunterladen
-          </LinkCallToAction>
-        </section>
       </VideoOverlapLandscape>
     </>
   );
@@ -126,7 +91,7 @@ export const head: DocumentHead = {
           { type: 'white', text: 'nutzen?' }
         ],
         teaser:
-          'Dann bringen wir Ihre Ideen auf die Straße, ebenen Ihnen neue Wege und schaffen gemeinsam nachhaltige Werte. Unsere Leidenschaft ist es Veränderungen zu etwas Positivem zu machen.'
+          'Nutzen Sie dazu unseren ganzheitlichen Ansatz aus Unternehmensberatung, individueller Softwareentwicklung und vollumfänglichen IT-Service-Management. Damit bringen wir Ihre Ideen auf die Straße.'
       }
     }
   }
