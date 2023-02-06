@@ -1,0 +1,26 @@
+name: 🚀 Deploy website on push
+
+on: pull_request
+
+jobs:
+  check:
+    name: 🕵️‍♂️ Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: 👷‍♂️ Setup Node.js for use with actions
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - name: '📦 Setup pnpm'
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7.25.0
+
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2.5.0
+
+      - name: 💿 Clean install dependencies
+        run: pnpm install
+
+      - name: 🛠️ Build app
+        run: npm run build --prod
