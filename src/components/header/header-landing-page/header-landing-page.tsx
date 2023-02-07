@@ -1,6 +1,4 @@
-import { $, component$, useContext } from '@builder.io/qwik';
-import type { NavigationState } from '~/components/navigation/navigation.context';
-import { NavigationContext } from '~/components/navigation/navigation.context';
+import { component$ } from '@builder.io/qwik';
 import {
   HeadingSegmentAccent,
   HeadingSegmentWhite
@@ -8,11 +6,6 @@ import {
 import type { HeaderLandingPageProps } from './header-landing-page.props';
 
 export const HeaderLandingPage = component$((props: HeaderLandingPageProps) => {
-  const menuState = useContext<NavigationState>(NavigationContext);
-  const openMenu = $(() => {
-    menuState.isOpen = true;
-  });
-
   return (
     <>
       <h1 class='text-2xl font-bold md:text-6xl'>
