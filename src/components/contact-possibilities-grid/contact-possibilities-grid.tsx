@@ -9,8 +9,8 @@ export const ContactPossibilitiesGrid = component$(() => {
         Wir haben Ihr Interesse geweckt?
       </h2>
 
-      <div class='container mx-auto '>
-        <div class='flex flex-col gap-y-20 md:flex-row md:gap-x-16  '>
+      <div class='container mx-auto'>
+        <div class='flex flex-col gap-y-20 p-4 sm:p-0 md:flex-row md:gap-x-16  '>
           <div class='flex w-full flex-col items-center gap-y-4'>
             <CalendarIcon />
 
