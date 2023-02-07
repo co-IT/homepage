@@ -18,7 +18,7 @@ export const HeaderContentPage = component$((props: HeaderContentPageProps) => {
       style={`background-image: linear-gradient(0deg, rgba(2, 2, 52, 0.6), rgba(2, 2, 52, 0.6)), url("${props.backgroundImage.source}");`}
     >
       <div class='container mx-auto grid gap-36'>
-        <section class='flex h-fit pt-6 md:justify-between md:px-6'>
+        <section class='flex h-fit justify-center pt-6 md:justify-between md:px-6'>
           <Logo />
 
           <div
