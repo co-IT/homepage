@@ -21,7 +21,7 @@ export const HeaderLandingPage = component$((props: HeaderLandingPageProps) => {
       style={`background-image: linear-gradient(0deg, rgba(2, 2, 52, 0.6), rgba(2, 2, 52, 0.6)), url("${props.backgroundImage.source}");`}
     >
       <div class='container mx-auto grid gap-36'>
-        <section class='flex h-fit justify-center pt-6 md:justify-between'>
+        <section class='flex h-fit justify-center pt-6 md:justify-between md:px-6'>
           <Logo></Logo>
 
           <div
