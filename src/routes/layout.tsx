@@ -22,7 +22,8 @@ export default component$(() => {
   return (
     <>
       <Header {...headerProps} />
-      {menuState.isOpen && <Navigation />}
+      <Navigation open={menuState.isOpen} />
+
       <QuickDialButtons />
       <main>
         <Slot />

@@ -12,7 +12,7 @@ import type { NavigationLink } from './model';
 import type { NavigationState } from './navigation.context';
 import { NavigationContext } from './navigation.context';
 
-export const Navigation = component$(() => {
+export const Navigation = component$((props: { open: boolean }) => {
   const navigationLinks: NavigationLink[] = [
     {
       heading: 'Lösungen',
@@ -47,7 +47,11 @@ export const Navigation = component$(() => {
   });
 
   return (
-    <div class='fixed top-0 z-40 w-full bg-primary pt-12 pb-12 shadow-xl lg:pt-16 lg:pb-24'>
+    <div
+      class={`${
+        props.open ? 'block' : 'hidden'
+      } fixed top-0 z-40 w-full bg-primary pt-12 pb-12 shadow-xl lg:pt-16 lg:pb-24`}
+    >
       <div class='container mx-auto flex flex-col gap-y-10 lg:gap-y-20'>
         <div class='flex flex-col justify-between lg:flex-row'>
           <Link href='/'>
