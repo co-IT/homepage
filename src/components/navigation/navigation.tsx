@@ -69,7 +69,7 @@ export const Navigation = component$(() => {
         </div>
 
         <div class='flex flex-col gap-y-14'>
-          <div class='grid grid-cols-2 gap-5 px-7 lg:grid-cols-4 lg:gap-10 lg:px-0'>
+          <div class='container mx-auto grid grid-cols-2 gap-5 px-7 lg:grid-cols-4 lg:gap-10 lg:px-0'>
             {navigationLinks.map((navigationLink, key) => (
               <NavigationLinkCard
                 link={navigationLink}
