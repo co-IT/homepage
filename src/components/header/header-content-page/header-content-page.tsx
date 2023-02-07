@@ -41,6 +41,8 @@ export const HeaderContentPage = component$((props: HeaderContentPageProps) => {
               </p>
             </div>
           )}
+
+          {!props.teaser && <div class='mb-8'></div>}
         </section>
       </div>
     </header>
