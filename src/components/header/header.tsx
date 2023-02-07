@@ -20,10 +20,10 @@ export const Header = component$((props: HeaderProps) => {
 
   return (
     <header
-      class='bg-secondary-900 bg-cover bg-no-repeat sm:max-h-max md:bg-right-top'
+      class='bg-secondary-900 bg-cover bg-no-repeat sm:max-h-max md:bg-right-top lg:h-[75vh]'
       style={headerBackgrundImage}
     >
-      <div class='container mx-auto grid gap-36'>
+      <div class='container mx-auto grid gap-36 lg:h-full'>
         <section class='flex h-fit justify-center pt-6 md:justify-between md:px-6'>
           <Logo></Logo>
 
@@ -34,7 +34,7 @@ export const Header = component$((props: HeaderProps) => {
             <MenuIcon />
           </div>
         </section>
-        <section class='flex flex-col items-center space-y-10 text-center'>
+        <section class='flex flex-col items-center space-y-10 text-center lg:mb-12 lg:self-end'>
           {props.type === 'landing-page' ? (
             <HeaderLandingPage {...props.configuration} />
           ) : props.type === 'content-page' ? (
