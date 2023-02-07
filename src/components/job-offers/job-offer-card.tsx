@@ -9,9 +9,7 @@ export interface JobOfferCardProps {
 export const JobOfferCard = component$((props: JobOfferCardProps) => {
   return (
     <div class='grid grid-cols-2 gap-y-4 rounded-xl border border-gray-300 p-6'>
-      <h2 class='text-secondary break-all text-2xl font-bold'>
-        {props.jobOffer.title}
-      </h2>
+      <h2 class='text-secondary text-2xl font-bold'>{props.jobOffer.title}</h2>
 
       <LinkCallToAction
         href={props.jobOffer.offerUrl}
