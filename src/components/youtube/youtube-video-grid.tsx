@@ -1,5 +1,12 @@
-import { $, component$, useSignal, useStore } from '@builder.io/qwik';
+import {
+  $,
+  component$,
+  useClientEffect$,
+  useSignal,
+  useStore
+} from '@builder.io/qwik';
 import { BlackCloseIcon, BlueCircleArrowIcon } from '../icons';
+import { Markdown } from '../markdown';
 import type { YouTubeVideo } from './model';
 import type { YouTubeVideoDialogState } from './youtube-vide-dialog.state';
 import type { YouTubeVideoGridProps } from './youtube-video-grid.props';
@@ -9,7 +16,26 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
   const videoDialog = useStore<YouTubeVideoDialogState>({
     videoPlayingHasPredecessor: false,
     videoPlayingHasSuccessor: props.videos.length > 1,
-    videoPlaying: props.videos[0]
+    videoPlaying: props.videos[0],
+    videoPlayingDescriptionMarkdown: ''
+  });
+
+  useClientEffect$(({ track }) => {
+    track(() => videoDialog.videoPlaying);
+
+    fetch(
+      `${location.protocol}//${location.host}/markdown/youtube-video-descriptions/${videoDialog.videoPlaying.id}.md`
+    )
+      .then(response =>
+        response.ok
+          ? response.text()
+          : Promise.reject(
+              `Bad response fetching YouTube Video Description ${videoDialog.videoPlaying.id}.`
+            )
+      )
+      .then(
+        markdown => (videoDialog.videoPlayingDescriptionMarkdown = markdown)
+      );
   });
 
   const dialogRef = useSignal<HTMLDialogElement>();
@@ -103,9 +129,10 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
             class='mb-5 aspect-video'
           />
 
-          <p class='text-secondary container mb-4 text-sm font-medium leading-6 opacity-80'>
-            {videoDialog.videoPlaying.description}
-          </p>
+          <Markdown
+            markdown={videoDialog.videoPlayingDescriptionMarkdown}
+            class='text-secondary container mb-4 text-sm font-medium leading-6 opacity-80'
+          />
 
           <div class='flex justify-between border-t border-b border-gray-200 py-5 px-8'>
             <button

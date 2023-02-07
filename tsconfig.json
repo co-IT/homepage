@@ -23,7 +23,8 @@
   },
   "files": [
     "./.eslintrc.cjs",
-    "src/components/article-section/model/article.tsx"
+    "src/components/article-section/model/article.tsx",
+    "src/components/markdown/markdown-props.tsx"
   ],
   "include": ["src"]
 }
