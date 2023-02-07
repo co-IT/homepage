@@ -1,11 +1,9 @@
-import type { PropFunction } from '@builder.io/qwik';
 import { component$ } from '@builder.io/qwik';
 import { useLocation } from '@builder.io/qwik-city';
 import type { NavigationLink } from './model';
 
 interface NavigationCardProps {
   link: NavigationLink;
-  onLinkClick$?: PropFunction<(link: NavigationLink) => void>;
 }
 
 export const NavigationLinkCard = component$((props: NavigationCardProps) => {
@@ -13,13 +11,13 @@ export const NavigationLinkCard = component$((props: NavigationCardProps) => {
   const path = location.pathname;
 
   return (
-    <div
+    <a
+      href={props.link.path}
       class={`${
         path === props.link.path + '/'
           ? ' bg-white hover:opacity-100'
           : 'bg-[#ffcd61] hover:bg-white'
       } grid aspect-square w-full cursor-pointer content-center justify-center gap-y-4 rounded-xl p-2 text-center`}
-      onClick$={() => props.onLinkClick$?.(props.link)}
     >
       <h2 class='font-bold text-secondary-900 md:text-lg'>
         {props.link.heading}
@@ -30,6 +28,6 @@ export const NavigationLinkCard = component$((props: NavigationCardProps) => {
       <p class='font-semibold text-secondary-900 md:text-lg'>
         {props.link.text}
       </p>
-    </div>
+    </a>
   );
 });

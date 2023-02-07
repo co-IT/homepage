@@ -1,5 +1,5 @@
 import { $, component$, useContext } from '@builder.io/qwik';
-import { Link, useNavigate } from '@builder.io/qwik-city';
+import { Link } from '@builder.io/qwik-city';
 import { NavigationLinkCard } from '../cards';
 import {
   BlueMailIcon,
@@ -37,14 +37,8 @@ export const Navigation = component$((props: { open: boolean }) => {
   ];
 
   const navigation = useContext<NavigationState>(NavigationContext);
-  const navigate = useNavigate();
 
-  const closeMenu = $(() => (navigation.isOpen = false));
-
-  const goto$ = $((link: NavigationLink) => {
-    navigation.isOpen = false;
-    navigate(link.path);
-  });
+  const closeMenu$ = $(() => (navigation.isOpen = false));
 
   return (
     <div
@@ -63,7 +57,7 @@ export const Navigation = component$((props: { open: boolean }) => {
           </Link>
           <div
             class='my-auto hidden cursor-pointer flex-row gap-x-2 hover:opacity-75 md:flex'
-            onClick$={() => closeMenu()}
+            onClick$={() => closeMenu$()}
           >
             <WhiteCloseIcon />
             <div class='my-auto text-lg font-bold leading-5 text-white'>
@@ -77,7 +71,7 @@ export const Navigation = component$((props: { open: boolean }) => {
             {navigationLinks.map((navigationLink, key) => (
               <NavigationLinkCard
                 link={navigationLink}
-                onLinkClick$={link => goto$(link)}
+                onLinkClick$={() => closeMenu$()}
                 key={key}
               />
             ))}
@@ -126,7 +120,7 @@ export const Navigation = component$((props: { open: boolean }) => {
 
           <div
             class='relative h-14 w-14 rounded-full bg-white shadow-lg'
-            onClick$={() => closeMenu()}
+            onClick$={() => closeMenu$()}
           >
             <div class='absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4'>
               <YellowCloseIcon />
