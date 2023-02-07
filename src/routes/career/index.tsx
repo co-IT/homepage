@@ -96,7 +96,10 @@ export default component$(() => {
         <ArticleSection articles={articles} />
       </SectionArea>
 
-      <VideoOverlapLandscape youTubeVideoId='STUlI6toSTA'>
+      <VideoOverlapLandscape
+        youTubeVideoId='STUlI6toSTA'
+        class='container mx-auto'
+      >
         <section class='flex flex-col space-y-4'>
           <h2 class='text-xl font-bold md:text-4xl'>
             <HeadingSegmentSecondary text='Erlebe Arbeiten ganz anders' />

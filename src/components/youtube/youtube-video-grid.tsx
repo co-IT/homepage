@@ -126,7 +126,7 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
 
           <iframe
             src={`https://www.youtube.com/embed/${videoDialog.videoPlaying.id}`}
-            class='mb-5 aspect-video'
+            class='mb-5 aspect-video border-0'
           />
 
           <Markdown

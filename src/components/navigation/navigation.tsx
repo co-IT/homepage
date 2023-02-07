@@ -1,5 +1,4 @@
 import { $, component$, useContext } from '@builder.io/qwik';
-import { Link } from '@builder.io/qwik-city';
 import { NavigationLinkCard } from '../cards';
 import {
   BlueMailIcon,
@@ -44,17 +43,17 @@ export const Navigation = component$((props: { open: boolean }) => {
     <div
       class={`${
         props.open ? 'block' : 'hidden'
-      } fixed top-0 z-40 w-full bg-primary pt-12 pb-12 shadow-xl lg:pt-16 lg:pb-24`}
+      } fixed top-0 z-40 w-full bg-primary pt-6 pb-12 shadow-xl lg:pb-24`}
     >
       <div class='container mx-auto flex flex-col gap-y-10 lg:gap-y-20'>
         <div class='flex flex-col justify-between lg:flex-row'>
-          <Link href='/'>
+          <a href='/'>
             <img
               src='/img/navigation/logo.svg'
               alt='logo'
               class='mx-auto h-fit w-32 lg:mx-0 lg:w-44'
             />
-          </Link>
+          </a>
           <div
             class='my-auto hidden cursor-pointer flex-row gap-x-2 hover:opacity-75 md:flex'
             onClick$={() => closeMenu$()}

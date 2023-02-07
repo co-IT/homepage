@@ -43,7 +43,10 @@ export default component$(() => {
        */}
       <div class='md:mb-48'></div>
 
-      <VideoOverlapLandscape youTubeVideoId='fpPjn58ONrI'>
+      <VideoOverlapLandscape
+        youTubeVideoId='fpPjn58ONrI'
+        class='container mx-auto'
+      >
         <section class='flex flex-col space-y-4'>
           <h2 class='text-xl font-bold md:text-4xl'>
             <HeadingSegmentSecondary text='Machen' />
