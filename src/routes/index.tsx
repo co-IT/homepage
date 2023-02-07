@@ -41,7 +41,7 @@ export default component$(() => {
       {/** TODO: Currently spacing is hard since the *Overlap-Components have content that breaks the DOM-flow
        *         We need to find a way optimizing this in order to not having to handle special cases.
        */}
-      <div class='mb-48'></div>
+      <div class=' md:mb-48'></div>
 
       <VideoOverlapLandscape youTubeVideoId='fpPjn58ONrI'>
         <section class='flex flex-col space-y-4'>
