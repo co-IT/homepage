@@ -5,7 +5,9 @@ import type { HeaderContentPageProps } from './header-content-page.props';
 export const HeaderContentPage = component$((props: HeaderContentPageProps) => {
   return (
     <>
-      <p class='text-md font-bold text-accent'>{props.headingAccent}</p>
+      <p class='text-md font-bold text-primary lg:text-xl'>
+        {props.headingAccent}
+      </p>
       <h1 class='text-2xl font-bold md:text-6xl'>
         <HeadingSegmentWhite text={props.heading} />
       </h1>

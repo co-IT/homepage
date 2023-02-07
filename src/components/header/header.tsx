@@ -20,7 +20,7 @@ export const Header = component$((props: HeaderProps) => {
 
   return (
     <header
-      class='bg-secondary-900 bg-cover bg-no-repeat sm:max-h-max md:bg-right-top lg:h-[75vh]'
+      class='bg-secondary-900 bg-cover bg-no-repeat sm:max-h-max md:bg-right-top lg:h-[90vh]'
       style={headerBackgrundImage}
     >
       <div class='container mx-auto grid gap-36 lg:h-full'>

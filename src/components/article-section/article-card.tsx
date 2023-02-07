@@ -36,7 +36,7 @@ export const ArticleCard = component$((props: ArticleCardProps) => {
 
           <div class='flex w-full flex-col gap-y-5'>
             <div class='flex flex-col gap-y-4'>
-              <div class='mx-auto h-1 w-10 bg-accent lg:mx-0' />
+              <div class='mx-auto h-1 w-10 bg-primary lg:mx-0' />
               <div class='px-6 text-center text-3xl font-bold leading-8 text-secondary-900 lg:px-0 lg:text-left lg:text-4xl lg:leading-10'>
                 {props.article.heading}
               </div>

@@ -126,7 +126,7 @@ export default component$(() => {
       <hr class='container mx-auto mt-10 lg:mt-20' />
 
       <SectionArea>
-        <div class='mx-auto mb-4 h-1 w-10 bg-accent'></div>
+        <div class='mx-auto mb-4 h-1 w-10 bg-primary'></div>
         <h2 class='text-secondary mb-14 text-center text-4xl font-bold'>
           Warum wir unsere Arbeit lieben
         </h2>
@@ -134,7 +134,7 @@ export default component$(() => {
       </SectionArea>
 
       <SectionArea>
-        <div class='mx-auto mb-4 h-1 w-10 bg-accent'></div>
+        <div class='mx-auto mb-4 h-1 w-10 bg-primary'></div>
         <h2 class='text-secondary mb-14 text-center text-4xl font-bold'>
           Wie wir zusammenarbeiten
         </h2>
@@ -142,7 +142,7 @@ export default component$(() => {
       </SectionArea>
 
       <SectionArea>
-        <div class='mx-auto mb-4 h-1 w-10 bg-accent'></div>
+        <div class='mx-auto mb-4 h-1 w-10 bg-primary'></div>
         <h2 class='text-secondary mb-14 text-center text-4xl font-bold'>
           Was wir dir bieten
         </h2>
@@ -151,7 +151,7 @@ export default component$(() => {
 
       <SectionArea>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
-          <div class='h-1 w-10 bg-accent' />
+          <div class='h-1 w-10 bg-primary' />
 
           <h2 class='text-secondary text-4xl font-bold leading-10 text-secondary-900'>
             So geht's weiter
@@ -177,7 +177,7 @@ export default component$(() => {
       </SectionArea>
       <SectionArea>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
-          <div class='h-1 w-10 bg-accent' />
+          <div class='h-1 w-10 bg-primary' />
 
           <h2 class='text-secondary text-4xl font-bold leading-10 text-secondary-900'>
             Unsere offenen Stellen

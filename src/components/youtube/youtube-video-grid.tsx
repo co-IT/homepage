@@ -118,7 +118,7 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
           </div>
 
           <div class='mb-8 flex flex-col gap-y-4'>
-            <div class='h-1 w-10 bg-accent'></div>
+            <div class='h-1 w-10 bg-primary'></div>
             <div class='text-4xl font-bold leading-10 text-secondary-900'>
               {videoDialog.videoPlaying.title}
             </div>
