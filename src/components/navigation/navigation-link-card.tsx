@@ -14,18 +14,20 @@ export const NavigationLinkCard = component$((props: NavigationCardProps) => {
 
   return (
     <div
-      class={
-        `${path === props.link.path + '/' ? ' bg-white hover:opacity-100' : 'bg-[#ffcd61] hover:bg-white'}  flex flex-col w-full cursor-pointer items-center gap-y-4 rounded-xl p-2`
-      }
+      class={`${
+        path === props.link.path + '/'
+          ? ' bg-white hover:opacity-100'
+          : 'bg-[#ffcd61] hover:bg-white'
+      } grid aspect-square w-full cursor-pointer content-center justify-center gap-y-4 rounded-xl p-2 text-center`}
       onClick$={() => props.onLinkClick$?.(props.link)}
     >
-      <h2 class=' md:text-lg font-bold text-secondary-900'>
+      <h2 class='font-bold text-secondary-900 md:text-lg'>
         {props.link.heading}
       </h2>
 
-      <i class='block mx-auto h-[1px] w-9 bg-black' />
+      <i class='mx-auto block h-[1px] w-9 bg-black' />
 
-      <p class='text-center  md:text-lg font-semibold text-secondary-900'>
+      <p class='font-semibold text-secondary-900 md:text-lg'>
         {props.link.text}
       </p>
     </div>
