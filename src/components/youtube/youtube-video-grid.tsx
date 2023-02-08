@@ -2,8 +2,9 @@ import { $, component$, useClientEffect$, useStore } from '@builder.io/qwik';
 import { BlackCloseIcon, BlueCircleArrowIcon } from '../icons';
 import { Markdown } from '../markdown';
 import type { YouTubeVideo } from './model';
-import type { YouTubeVideoDialogState } from './youtube-vide-dialog.state';
+import type { YouTubeVideoDialogState } from './youtube-video-dialog.state';
 import type { YouTubeVideoGridProps } from './youtube-video-grid.props';
+import { YoutubeVideoPlayerEmbedded } from './youtube-video-player-embedded';
 import { YouTubeVideoTile } from './youtube-video-tile';
 
 export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
@@ -133,9 +134,8 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
             style='grid-template-columns 1fr; grid-template-rows: auto 1fr '
           >
             <div class='bg-black '>
-              <iframe
-                src={`https://www.youtube.com/embed/${videoDialog.videoPlaying.id}`}
-                class='mx-auto mb-5 aspect-video border-0 md:h-[500px] md:w-[1000px]'
+              <YoutubeVideoPlayerEmbedded
+                youTubeVideoId={videoDialog.videoPlaying.id}
               />
             </div>
 
