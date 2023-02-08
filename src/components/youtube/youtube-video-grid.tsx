@@ -136,6 +136,7 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
             <div class='bg-black '>
               <YoutubeVideoPlayerEmbedded
                 youTubeVideoId={videoDialog.videoPlaying.id}
+                class='md:h-[500px] md:w-[1000px]'
               />
             </div>
 

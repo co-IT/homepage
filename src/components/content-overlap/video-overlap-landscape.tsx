@@ -15,6 +15,7 @@ export const VideoOverlapLandscape = component$(
           <div class='z-20 row-start-1 aspect-video w-full -translate-y-8 border-0 md:col-span-6 md:col-start-3 md:row-start-2 md:-translate-x-8 xl:-translate-x-28'>
             <YoutubeVideoPlayerEmbedded
               youTubeVideoId={youTubeVideoId}
+              class='w-full'
             ></YoutubeVideoPlayerEmbedded>
           </div>
           <div class='z-0 row-start-2 h-36 -translate-y-1/2 bg-primary md:col-span-2 md:col-start-2 md:h-[32rem] md:w-48 md:self-end lg:-translate-y-1/3 xl:h-[40rem]'></div>
