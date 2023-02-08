@@ -1,10 +1,4 @@
-import {
-  $,
-  component$,
-  useClientEffect$,
-  useSignal,
-  useStore
-} from '@builder.io/qwik';
+import { $, component$, useClientEffect$, useStore } from '@builder.io/qwik';
 import { BlackCloseIcon, BlueCircleArrowIcon } from '../icons';
 import { Markdown } from '../markdown';
 import type { YouTubeVideo } from './model';
@@ -14,6 +8,7 @@ import { YouTubeVideoTile } from './youtube-video-tile';
 
 export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
   const videoDialog = useStore<YouTubeVideoDialogState>({
+    open: false,
     videoPlayingHasPredecessor: false,
     videoPlayingHasSuccessor: props.videos.length > 1,
     videoPlaying: props.videos[0],
@@ -38,7 +33,17 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
       );
   });
 
-  const dialogRef = useSignal<HTMLDialogElement>();
+  useClientEffect$(({ track }) => {
+    track(() => videoDialog.open);
+
+    const [body] = document.getElementsByTagName('body');
+
+    if (videoDialog.open) {
+      body.style.overflow = 'hidden';
+    } else {
+      body.style.overflow = 'auto';
+    }
+  });
 
   const openVideoDialog$ = $((youTubeVideo: YouTubeVideo) => {
     videoDialog.videoPlaying = youTubeVideo;
@@ -51,12 +56,10 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
     videoDialog.videoPlayingHasSuccessor =
       videoIndex < props.videos.length - 1 ? true : false;
 
-    dialogRef.value?.showModal();
+    videoDialog.open = true;
   });
 
-  const closeVideoDialog$ = $(() => {
-    dialogRef.value?.close();
-  });
+  const closeVideoDialog$ = $(() => (videoDialog.open = false));
 
   const showPreviousVideo$ = $(() => {
     const previousVideoIndex =
@@ -109,32 +112,40 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
           </div>
         </div>
       </div>
-      <dialog ref={dialogRef} class='m-0 h-screen w-screen md:m-auto '>
-        <div class='flex h-full flex-col sm:justify-between '>
-          <div class='mb-5 flex w-full justify-end'>
-            <div class='cursor-pointer' onClick$={() => closeVideoDialog$()}>
+      <div
+        class={`${
+          videoDialog.open ? 'fixed' : 'hidden'
+        } top-0 bottom-0 left-0 right-0 z-50 m-0 h-screen w-screen bg-white md:m-auto`}
+      >
+        <div class='grid h-screen' style='grid-template-rows: auto 1fr auto'>
+          <header class='flex items-center justify-between bg-black px-8 pb-8 pt-14'>
+            <h2 class='text:md font-bold text-white md:text-4xl'>
+              <i class='mb-2 block h-[4px] w-10 bg-primary' />
+              <span>{videoDialog.videoPlaying.title}</span>
+            </h2>
+            <i class='cursor-pointer' onClick$={() => closeVideoDialog$()}>
               <BlackCloseIcon />
+            </i>
+          </header>
+
+          <main
+            class='grid space-y-8 overflow-hidden'
+            style='grid-template-columns 1fr; grid-template-rows: auto 1fr '
+          >
+            <div class='bg-black '>
+              <iframe
+                src={`https://www.youtube.com/embed/${videoDialog.videoPlaying.id}`}
+                class='mx-auto mb-5 aspect-video border-0 md:h-[500px] md:w-[1000px]'
+              />
             </div>
-          </div>
 
-          <div class='mb-8 flex flex-col gap-y-4'>
-            <div class='h-1 w-10 bg-primary'></div>
-            <div class='text-4xl font-bold leading-10 text-secondary-900'>
-              {videoDialog.videoPlaying.title}
-            </div>
-          </div>
+            <Markdown
+              markdown={videoDialog.videoPlayingDescriptionMarkdown}
+              class='text-secondary container mx-auto overflow-y-auto px-4 text-sm font-medium leading-6 md:w-[900px]'
+            />
+          </main>
 
-          <iframe
-            src={`https://www.youtube.com/embed/${videoDialog.videoPlaying.id}`}
-            class='mb-5 aspect-video border-0'
-          />
-
-          <Markdown
-            markdown={videoDialog.videoPlayingDescriptionMarkdown}
-            class='text-secondary container mb-4 text-sm font-medium leading-6 opacity-80'
-          />
-
-          <div class='flex justify-between border-t border-b border-gray-200 py-5 px-8'>
+          <footer class='container mx-auto flex justify-between border-t border-b border-gray-200 py-5 px-8 md:w-[1000px]'>
             <button
               onClick$={() => showPreviousVideo$()}
               disabled={!videoDialog.videoPlayingHasPredecessor}
@@ -145,11 +156,8 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
               </div>
 
               <div class='my-auto flex flex-col gap-y-1'>
-                <div class='hidden text-lg font-normal leading-4 text-secondary-900'>
-                  Zum nächsten Thema
-                </div>
-                <div class='text-lg font-bold leading-5 text-secondary-900'>
-                  Previous
+                <div class='hidden text-lg font-normal leading-4 text-secondary-900 sm:block'>
+                  Zum vorigen Thema
                 </div>
               </div>
             </button>
@@ -160,19 +168,16 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
               class='flex cursor-pointer flex-row gap-x-5 hover:opacity-75 disabled:opacity-50'
             >
               <div class='my-auto flex flex-col gap-y-1'>
-                <div class='hidden text-lg font-normal leading-4 text-secondary-900'>
+                <div class='hidden text-lg font-normal leading-4 text-secondary-900 sm:block'>
                   Zum nächsten Thema
-                </div>
-                <div class={`text-lg font-bold leading-5 text-secondary-900`}>
-                  Next
                 </div>
               </div>
 
               <BlueCircleArrowIcon />
             </button>
-          </div>
+          </footer>
         </div>
-      </dialog>
+      </div>
     </>
   );
 });
