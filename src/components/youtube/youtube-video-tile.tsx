@@ -26,7 +26,7 @@ export const YouTubeVideoTile = component$((props: YouTubeVideoTileProps) => {
           <WhiteVideoPlayerIcon />
         </div>
       </div>
-      <div class='text-secondary h-28 rounded-bl-xl rounded-br-xl bg-primary px-6 py-4 text-2xl font-bold leading-6'>
+      <div class='text-secondary h-28 rounded-bl-xl rounded-br-xl bg-primary px-6 py-4 text-xl font-bold leading-6'>
         {props.video.title}
       </div>
     </div>
