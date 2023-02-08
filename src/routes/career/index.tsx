@@ -195,12 +195,7 @@ export default component$(() => {
 
 export const head: DocumentHead = {
   title: 'co-IT - Inspire to Change',
-  meta: [
-    {
-      name: 'description',
-      content: 'Qwik site description'
-    }
-  ],
+
   frontmatter: {
     header: {
       type: 'content-page',
