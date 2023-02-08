@@ -78,7 +78,7 @@ export default component$(() => {
     },
     {
       heading: 'Fachliche Prüfung',
-      text: 'Es folgen Termine zur fachlichen Eignungsprüfung. Bei Entwicklern sind das z. B. Programmieraufgaben.'
+      text: 'Es folgen Termine zur fachlichen Eignungsprüfung. Bei Entwicklern sind das z.&nbsp;B. Programmieraufgaben.'
     },
     {
       heading: 'Eignungstest und Potenzialanalyse',

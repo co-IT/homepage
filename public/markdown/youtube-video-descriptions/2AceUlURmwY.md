@@ -1,6 +1,6 @@
 In diesem Video erläutere ich dir in meiner typisch ausschweifenden Art unseren Arbeitsvertrag und einige Hintergründe, warum wir bestimmte Klauseln genau auf diese Art ausgestalten.
 
-❔ Was hat Urlaub z. B. mit der Systemtheorie zu tun? \
+❔ Was hat Urlaub z.&nbsp;B. mit der Systemtheorie zu tun? \
 ❔ Wieso kommen wir zu unserem Gehaltsangebot? \
 ❔ Wie kannst du mit Mobileoffice Steuern sparen? \
 
