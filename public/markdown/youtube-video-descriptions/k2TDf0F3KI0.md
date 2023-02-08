@@ -1,6 +1,6 @@
 In diesem Video erklären Gregor und Uli, warum es keine mittlere Führungsebene gibt. Spoileralarm: Wir treffen Entscheidungen dort, wo die Kompetenz liegt.
 
-💡 Das erwartet dich, wenn du bei uns anfängst: Du kannst selbst Entscheidungen treffen!  🤝
+💡 Das erwartet dich, wenn du bei uns anfängst: Du kannst selbst Entscheidungen treffen! 🤝
 
 Schau dir auch unsere Playlist https://e.co-IT.eu/das-macht-uns-aus mit Inhalten zu
 
