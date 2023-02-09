@@ -1,52 +1,58 @@
-name: 🚀 Deploy website on push
+name: 🚀 Production Deployment to https://co-IT.eu
 
 on:
   push:
     branches: ['main']
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow one concurrent deployment
-concurrency:
-  group: 'pages'
-  cancel-in-progress: true
-
 jobs:
   deploy:
     name: 🎉 Deploy
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
         uses: actions/checkout@v3
 
-      - name: 👷‍♂️ Setup Node.js for use with actions
+      - name: 👷‍♂️ Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - name: '📦 Setup pnpm'
+      - name: 📦 Setup pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 7.25.0
 
-      - name: 💿 Clean install dependencies
+      - name: 💿 Install dependencies
         run: pnpm install
 
       - name: 🛠️ Build app
         run: npm run build --prod
 
-      - name: 🆙 Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: 🔑 Azure Login
+        uses: azure/login@v1
         with:
-          path: './dist'
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: 🚢 Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+      - name: 🚮 Azure delete old Static Website
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az storage blob delete-batch --pattern '*' --account-name coiteu --auth-mode key -s '$web'
+      
+      - name: 🚢 Deploy to Azure Static Website
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az storage blob upload-batch --overwrite --account-name coiteu --auth-mode key -d '$web' -s './dist'
+      
+      - name: 🧹 Azure purge CDN
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az account set --subscription "Productive_Sites"
+            az afd endpoint purge --content-paths  "/*" --profile-name "coiteu" --endpoint-name "coiteu" --resource-group "coIteu" --domains "co-it.eu"
+      
+      - name: 🚪 Azure logout
+        run: |
+          az logout
+        if: always()
