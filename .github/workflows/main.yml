@@ -1,113 +1,52 @@
-name: CI
+name: 🚀 Deploy website on push
+
 on:
   push:
-    branches:
-      - main
-  pull_request:
+    branches: ['main']
 
-env:
-  NX_CLOUD_DISTRIBUTED_EXECUTION: true
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
 
 jobs:
-  main:
+  deploy:
+    name: 🎉 Deploy
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    if: ${{ github.event_name != 'pull_request' }}
     steps:
-      - uses: actions/checkout@v2
-        name: Checkout [main]
-        with:
-          fetch-depth: 0
-      - name: Derive appropriate SHAs for base and head for `nx affected` commands
-        uses: nrwl/nx-set-shas@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '16'
-      - name: Restore Dependencies
-        id: cache-node_modules
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-      - run: npm ci
-      - run: npx nx-cloud start-ci-run
-      - run: npx nx affected --target=build --parallel --max-parallel=3
-      - run: npx nx affected --target=test --parallel --max-parallel=2
-      - run: npx nx-cloud stop-all-agents
-      - name: Azure Login
-        uses: azure/login@v1
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
 
-      - name: Azure delete old Static Website
-        uses: azure/CLI@v1
+      - name: 👷‍♂️ Setup Node.js for use with actions
+        uses: actions/setup-node@v3
         with:
-          inlineScript: |
-            az storage blob delete-batch --pattern '*' --account-name coiteu --auth-mode key -s '$web'
-      - name: Azure deploy Static Website
-        uses: azure/CLI@v1
+          node-version: 18
+
+      - name: '📦 Setup pnpm'
+        uses: pnpm/action-setup@v2
         with:
-          inlineScript: |
-            az storage blob upload-batch --overwrite --account-name coiteu --auth-mode key -d '$web' -s './dist/apps/homepage'
-      - name: Azure purge CDN endpoint
-        uses: azure/CLI@v1
+          version: 7.25.0
+
+      - name: 💿 Clean install dependencies
+        run: pnpm install
+
+      - name: 🛠️ Build app
+        run: npm run build --prod
+
+      - name: 🆙 Upload artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          inlineScript: |
-            az account set --subscription "Productive_Sites"
-            az afd endpoint purge --content-paths  "/*" --profile-name "coiteu" --endpoint-name "coiteu" --resource-group "coIteu" --domains "co-it.eu"
-      - name: Azure logout
-        run: |
-          az logout
-        if: always()
-  pr:
-    runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'pull_request' }}
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.pull_request.head.ref }}
-          fetch-depth: 0
-      - name: Derive appropriate SHAs for base and head for `nx affected` commands
-        uses: nrwl/nx-set-shas@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '16'
-      - name: Restore Dependencies
-        id: cache-node_modules
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-      - name: Install Dependencies
-        if: steps.cache-node_modules.outputs.cache-hit != 'true'
-        run: npm ci
-      - run: npx nx-cloud start-ci-run
-      - run: npx nx affected --target=build --parallel --max-parallel=3
-      - run: npx nx affected --target=test --parallel --max-parallel=2
-      - run: npx nx-cloud stop-all-agents
-  agents:
-    runs-on: ubuntu-latest
-    name: Agent 1
-    timeout-minutes: 60
-    strategy:
-      matrix:
-        agent: [1, 2, 3]
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '16'
-      - run: npm ci
-      - name: Start Nx Agent ${{ matrix.agent }}
-        run: npx nx-cloud start-agent
+          path: './dist'
+
+      - name: 🚢 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
