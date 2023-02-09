@@ -1,2 +1,0 @@
-## 4. Datenverarbeitung zu Werbezwecken
-Soweit Sie mit uns einen Vertrag abgeschlossen haben, führen wir Sie als Bestandskunden. In diesem Fall verarbeiten wir Ihre postalischen Kontaktdaten außerhalb des Vorliegens einer konkreten Einwilligung, um Ihnen auf diesem Wege Informationen über neue Produkte und Dienstleistungen zukommen zu lassen. Ihre E-Mail-Adresse verarbeiten wir, um Ihnen außerhalb des Vorliegens einer konkreten Einwilligung Informationen für eigene, ähnliche Produkte zukommen zu lassen.

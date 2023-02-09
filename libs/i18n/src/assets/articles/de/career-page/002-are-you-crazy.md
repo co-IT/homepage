@@ -1,3 +1,0 @@
-## Bist du wahnsinnig?
-
-Wir sind es! Warum sonst treffen wir uns auf Teneriffa zum Angeln und auf Mallorca zum Kochen? Weshalb gibt es bei uns keine starren Budgets für Fortbildung, sondern ganzjährige, von dir ausgewählte Coachings? Wieso hat jeder freie Einsicht in unsere Geschäftszahlen? Warum werden darin 3D Drucker, Drohne und Hochseeangeln gelistet? Was bewegt uns dazu, auch in eine bereits abgeschlossene Lösung noch einen Funken mehr Energie zu stecken? Entweder sind wir verrückt oder der Rest der Welt ist es. Beides ist möglich - und beides könnte der Grund dafür sein, dass du so gut zu uns passt. Es gibt nur einen Weg, es herauszufinden: Bewirb dich und werde ein Teil unseres Teams!

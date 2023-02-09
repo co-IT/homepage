@@ -1,3 +1,0 @@
-## Entdecke Kollegialität statt Stillstand
-
-Menschen fühlen sich in Komfortzonen wohl, weil damit das Ausmaß an Veränderung reduziert wird. Die Dinge, die wir bereits kennen und können, empfinden wir als beruhigend und sicher. Doch die Welt um uns herum dreht sich weiter und der vermeintlich sichere Hafen wird zum Rückschritt. In unserem Team haben wir die Erfahrung gemacht, dass unser kollegiales Umfeld das beste und einzige Sicherheitsnetz ist, das wir brauchen. Dieses Netz fängt uns bei Rückschlägen auf, motiviert uns auf Durststrecken und sorgt dafür, dass wir auch schwierige Aufgaben mutig bewältigen. Also: Raus aus der Komfortzone und melde dich bei uns!

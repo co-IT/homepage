@@ -1,3 +1,0 @@
-## Übernimm Führung in hierarchielosen Netzwerken
-
-Bei uns gibt es keine Hierarchien, keine disziplinarischen Führungsrollen und keine Abteilungssilos. Stattdessen setzen wir auf eine Kombination aus fluiden Netzwerken, empathischer Kommunikation, situativ-lateraler Führung und individuellen Soft Skill Coachings. Die Unternehmenskultur stellt die Leitplanken bereit, die wir brauchen, um eine gemeinsame Strategie zu entwickeln. Da ist es auch nichts Ungewöhnliches, dass uns ein linguistischer Psychologe besucht, um uns in wertschätzender Kommunikation zu schulen. Interessiert dich das? Erfahre mehr darüber in [einem Gespräch](tel:+49721935163054) mit uns.
