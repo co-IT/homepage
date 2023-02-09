@@ -9,7 +9,7 @@ export default component$(() => {
     {
       direction: 'right',
       heading: 'Wir meistern Komplexität im Team',
-      text: 'Unsere T-Shaped Professionals flankieren ihr Tiefenwissen mit ausgewähltem Breitenwissen. Diesen Gedanken haben wir auf Unternehmensebene konsquent weitergedacht, indem wir gezielt Kompetenzen einzelner Mitarbeiter aufeinander abstimmen. Beispielsweise bleibt ein Haus, bei dem lediglich die Eingangstür, nicht aber die Fenster verschlossen sind, unsicher. Darum haben wir sowohl im IT-Serivce-Management als auch in der Softwareentwicklung zertifizierte Sicherheitsexperten.',
+      text: 'Unsere T-Shaped Professionals flankieren ihr Tiefenwissen mit ausgewähltem Breitenwissen. Diesen Gedanken haben wir auf Unternehmensebene konsquent weitergedacht, indem wir gezielt Kompetenzen einzelner Mitarbeiter aufeinander abstimmen. Beispielsweise bleibt ein Haus, bei dem lediglich die Eingangstür, nicht aber die Fenster verschlossen sind, unsicher. Darum haben wir sowohl im IT-Service-Management als auch in der Softwareentwicklung zertifizierte Sicherheitsexperten.',
       image: {
         src: '/img/about/flip-chart-session.webp',
         alt: 'Two colleagues working on the flip chart'
@@ -27,7 +27,7 @@ export default component$(() => {
     {
       direction: 'right',
       heading: 'Wir legen den Finger in die Wunde',
-      text: 'Um das Business zu verstehen, müssen wir Menschen verstehen! Wenn beispielsweise eine Software für das Wissensmanagement - wie ein Unternehmenswiki - eingeführt werden soll, stellen wir die Frage nach der Bereitschaft der Angestellten ihr wertvolles Wissen zu teilen. Hierfür sind sichere Arbeitsplätze und eine echte Vertrauenskultur Voraussetzung.',
+      text: 'Um das Business zu verstehen, müssen wir Menschen verstehen! Wenn beispielsweise eine Software für das Wissensmanagement - wie ein Unternehmenswiki - eingeführt werden soll, stellen wir die Frage nach der Bereitschaft der Angestellten Ihr wertvolles Wissen zu teilen. Hierfür sind sichere Arbeitsplätze und eine echte Vertrauenskultur Voraussetzung.',
       image: {
         src: '/img/about/team-up.webp',
         alt: 'Two colleagues checking the state of their work.'

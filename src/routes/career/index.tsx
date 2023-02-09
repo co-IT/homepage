@@ -31,8 +31,8 @@ export default component$(() => {
         src: '/img/career/it-fascination.webp',
         alt: 'Two colleagues learning to together'
       },
-      heading: 'Mach deinen Beruf zur Berufung',
-      text: 'Wir arbeiten, weil das Arbeiten selbst etwas Befriedigendes ist und weil das, was dabei herauskommt, für uns sinnvoll ist. Damit das funktioniert, sucht sich bei uns jeder seine Kunden und Projekte selbst aus. Du willst Routineaufgaben für deine Kollegen automatisieren, um Tempo und Effizienz zu steigern? Sehr gern! Du möchtest lieber an unseren eigenen Produkten mitwirken, um neue Geschäftsfelder zu erschließen? Dann bring deine Ideen ein! Dich reizt vor allem die Abwechslung? Dann unterstütze parallel mehrere Kunden in unterschiedlichen Branchen! Was in allen Fällen gleich bleibt: Du darfst deine Talente ausschöpfen und eigene Vorstellungen realisieren. Wenn das zu deinen Zielen passt, dann bewirb dich bei uns.'
+      heading: 'Mach Deinen Beruf zur Berufung',
+      text: 'Wir arbeiten, weil das Arbeiten selbst etwas Befriedigendes ist und weil das, was dabei herauskommt, für uns sinnvoll ist. Damit das funktioniert, sucht sich bei uns jeder seine Kunden und Projekte selbst aus. Du willst Routineaufgaben für Deine Kollegen automatisieren, um Tempo und Effizienz zu steigern? Sehr gern! Du möchtest lieber an unseren eigenen Produkten mitwirken, um neue Geschäftsfelder zu erschließen? Dann bring Deine Ideen ein! Dich reizt vor allem die Abwechslung? Dann unterstütze parallel mehrere Kunden in unterschiedlichen Branchen! Was in allen Fällen gleich bleibt: Du darfst Deine Talente ausschöpfen und eigene Vorstellungen realisieren. Wenn das zu Deinen Zielen passt, dann bewirb dich bei uns.'
     },
     {
       direction: 'left',
@@ -58,8 +58,8 @@ export default component$(() => {
         src: '/img/career/espresso.webp',
         alt: 'The team taking a break enjoying fresh brewed espresso.'
       },
-      heading: 'Bist du wahnsinnig?',
-      text: 'Wir sind es! Warum sonst treffen wir uns auf Teneriffa zum Angeln und auf Mallorca zum Kochen? Weshalb gibt es bei uns keine starren Budgets für Fortbildung, sondern ganzjährige, von dir ausgewählte Coachings? Wieso hat jeder freie Einsicht in unsere Geschäftszahlen? Warum werden darin 3D Drucker, Drohne und Hochseeangeln gelistet? Was bewegt uns dazu, auch in eine bereits abgeschlossene Lösung noch einen Funken mehr Energie zu stecken? Entweder sind wir verrückt oder der Rest der Welt ist es. Beides ist möglich - und beides könnte der Grund dafür sein, dass du so gut zu uns passt. Es gibt nur einen Weg, es herauszufinden: Bewirb dich und werde ein Teil unseres Teams!'
+      heading: 'Bist Du wahnsinnig?',
+      text: 'Wir sind es! Warum sonst treffen wir uns auf Teneriffa zum Angeln und auf Mallorca zum Kochen? Weshalb gibt es bei uns keine starren Budgets für Fortbildung, sondern ganzjährige, von Dir ausgewählte Coachings? Wieso hat jeder freie Einsicht in unsere Geschäftszahlen? Warum werden darin 3D Drucker, Drohne und Hochseeangeln gelistet? Was bewegt uns dazu, auch in eine bereits abgeschlossene Lösung noch einen Funken mehr Energie zu stecken? Entweder sind wir verrückt oder der Rest der Welt ist es. Beides ist möglich - und beides könnte der Grund dafür sein, dass Du so gut zu uns passt. Es gibt nur einen Weg, es herauszufinden: Bewirb dich und werde ein Teil unseres Teams!'
     }
   ];
 
@@ -70,19 +70,19 @@ export default component$(() => {
     },
     {
       heading: 'Bewerbungsunterlagen',
-      text: 'Sofern deine und unsere Werte und Wünsche zusammenpassen, fordern wir deine Unterlagen an.'
+      text: 'Sofern Deine und unsere Werte und Wünsche zusammenpassen, fordern wir Deine Unterlagen an.'
     },
     {
       heading: 'Kennenlernen',
-      text: 'Machen deine Unterlagen Lust auf mehr, findet direkt ein Termin mit der Geschäftsführung statt.'
+      text: 'Machen Deine Unterlagen Lust auf mehr, findet direkt ein Termin mit der Geschäftsführung statt.'
     },
     {
       heading: 'Fachliche Prüfung',
-      text: 'Es folgen Termine zur fachlichen Eignungsprüfung. Bei Entwicklern sind das z.&nbsp;B. Programmieraufgaben.'
+      text: 'Es folgen Termine zur fachlichen Eignungsprüfung. Bei Entwicklern sind das z.B. Programmieraufgaben.'
     },
     {
       heading: 'Eignungstest und Potenzialanalyse',
-      text: 'Wissenschaftlich fundierte und objektive Verfahren geben dir Sicherheit.'
+      text: 'Wissenschaftlich fundierte und objektive Verfahren geben Dir Sicherheit.'
     },
     {
       heading: 'Vertragsgespräch',
@@ -109,9 +109,9 @@ export default component$(() => {
             Komfortzone, Rückhalt geben statt wegzuducken: Wir verstehen
             Arbeitszeit als Lebenszeit! Wir wollen unsere Zeit nutzen, um
             Reibung und Bewegung zu erzeugen. Wirf einen Blick in unsere
-            Kurzvorstellung und nimm dir einen Moment für unser Video. Sprechen
-            dich unsere Ansätze an? Dann kannst du am Ende der Seite deine
-            Bewerbung starten, indem du unseren Cultural Fit Fragebogen
+            Kurzvorstellung und nimm Dir einen Moment für unser Video. Sprechen
+            dich unsere Ansätze an? Dann kannst Du am Ende der Seite Deine
+            Bewerbung starten, indem Du unseren Cultural Fit Fragebogen
             anforderst.
           </p>
           <LinkCallToAction
@@ -144,7 +144,7 @@ export default component$(() => {
       <SectionArea>
         <div class='mx-auto mb-4 h-1 w-10 bg-primary'></div>
         <h2 class='text-secondary mb-14 text-center text-4xl font-bold'>
-          Was wir dir bieten
+          Was wir Dir bieten
         </h2>
         <YouTubeVideoGrid videos={videosWasWirDirBieten} />
       </SectionArea>
@@ -207,7 +207,7 @@ export const head: DocumentHead = {
         heading: 'Geprägt durch Menschen',
         headingAccent: 'Arbeitszeit ist Lebenszeit',
         teaser:
-          'Beschäftigung kommt von beschäftigt - und das ist zweifelslos jeder. Beruf kommt hingegen von Berufung und eine Berufung kann dir so viel mehr bieten. Lies weiter und erfahre mehr.'
+          'Beschäftigung kommt von beschäftigt - und das ist zweifelslos jeder. Beruf kommt hingegen von Berufung und eine Berufung kann Dir so viel mehr bieten. Lies weiter und erfahre mehr.'
       }
     }
   }

@@ -28,8 +28,8 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='ganzheitlichen Lösungen?' />
             </h2>
             <p class='pb-4 leading-7'>
-              Dann sind unsere eingespielten Teams aus High Performern genau das
-              Richtige für Sie Unser Selbstverständnis geht weit über das eines
+              Dann sind unsere eingespielten Teams aus "High Performern" genau das
+              Richtige für Sie. Unser Selbstverständnis geht weit über das eines
               Softwareherstellers oder eines IT-Systemhauses hinaus: Wir bieten
               Ihnen vollumfängliche Lösungen statt punktueller Einzelleistungen.
             </p>
@@ -61,8 +61,8 @@ export default component$(() => {
             Dann haben wir für Sie echte Game Changer in unseren Reihen.
             Motiviert durch den Fachkräftemangel, rekrutieren wir mit eigenen
             HR-Spezialisten und qualitätsgetriebenem Auswahlprozess unsere
-            Talente. Dank unserer Werteorientierten Unternehmenskultur und
-            unserer Team-zentrierten Lösungsmentalität halten und entwickeln wir
+            Talente. Dank unserer werteorientierten Unternehmenskultur und
+            unserer teamzentrierten Lösungsmentalität halten und entwickeln wir
             unsere Mitarbeiter.
           </p>
           <LinkCallToAction href='/quality'>Mehr erfahren</LinkCallToAction>
@@ -89,7 +89,7 @@ export const head: DocumentHead = {
           { type: 'white', text: 'nutzen?' }
         ],
         teaser:
-          'Nutzen Sie dazu unseren ganzheitlichen Ansatz aus Unternehmensberatung, individueller Softwareentwicklung und vollumfänglichen IT-Service-Management. Damit bringen wir Ihre Ideen auf die Straße.'
+          'Nutzen Sie dazu unseren ganzheitlichen Ansatz aus Unternehmensberatung, individueller Softwareentwicklung und vollumfänglichem IT-Service-Management. Damit bringen wir Ihre Ideen auf die Straße.'
       }
     }
   }

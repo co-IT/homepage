@@ -18,7 +18,7 @@ export default component$(() => {
               alt: 'Drawing of a network of three people'
             },
             heading: 'Kennen Sie das auch?',
-            text: `Sie beziehen unterschiedliche Leistungen von unterschiedlichen Dienstleistern? Ist es für Sie eine Herausforderung alle zu koordinieren, Informationen weiterzutragen und selbst das Puzzle aus vielen Stücken zusammenzusetzen? Passen die Puzzleteile am Ende regelmäßig nicht zusammen und ihre Dienstleister reichen den schwarzen Peter lediglich an den nächsten weiter? Dann können wir Ihnen als Lösungsanbieter helfen:
+            text: `Sie beziehen unterschiedliche Leistungen von unterschiedlichen Dienstleistern? Ist es für Sie eine Herausforderung alle zu koordinieren, Informationen weiterzutragen und selbst das Puzzle aus vielen Stücken zusammenzusetzen? Passen die Puzzleteile am Ende regelmäßig nicht zusammen und Ihre Dienstleister reichen den schwarzen Peter lediglich an den nächsten weiter? Dann können wir Ihnen als Lösungsanbieter helfen:
 
           Wir wählen unsere Mitarbeiter sorgfältig aus und stimmen alle Fähigkeiten punktuell aufeinander ab, sodass Sie bei uns die folgende Kompetenzen aus einer Hand bekommen:
 
@@ -38,7 +38,7 @@ Strategie- und Unternehmensberatung`
             </h2>
             <p class='leading-7'>
               Wie arbeitet die Werkstatt von morgen? Mobil am und unterm Auto?
-              Was wünschen sich die Kunden dieser Werkstätte? Soll der nächste
+              Was wünschen sich die Kunden dieser Werkstätten? Soll der nächste
               freie Reifenwechseltermin sofort reserviert werden können? Wie
               unterscheiden sich die Bedarfe von PKW und NFZ? Bei unserem
               Partner, der Werbas GmbH, durften wir unsere Lösungskompetenz
