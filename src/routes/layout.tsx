@@ -44,10 +44,5 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  meta: [
-    {
-      name: 'robots',
-      content: 'noindex, nofollow'
-    }
-  ]
+  meta: []
 };
