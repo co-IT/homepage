@@ -30,9 +30,10 @@ export const YoutubeVideoPlayerEmbedded = component$(
           src={`https://www.youtube-nocookie.com/embed/${props.youTubeVideoId}`}
           class={`mx-auto mb-5 aspect-video border-0 ${props.class}`}
         />
-
         <div
-          class={`absolute left-0 top-0 mx-auto mb-5 grid aspect-video h-full w-full place-items-center content-center gap-y-6 border-0 bg-black/30 text-white backdrop-blur-md`}
+          class={`${
+            hasVisitorAgreedToYouTubeTermsOfUse.value ? 'hidden' : ''
+          } absolute left-0 top-0 mx-auto mb-5 grid aspect-video h-full w-full place-items-center content-center gap-y-6 border-0 bg-black/30 text-white backdrop-blur-md`}
         >
           <p class='mb-4 px-6 text-center font-bold'>
             Durch das Abspielen von Videos stimmen Sie den{' '}
