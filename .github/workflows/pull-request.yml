@@ -1,4 +1,4 @@
-name: 🚀 Deploy website on push
+name: 👩🏻‍💻 Pull Request
 
 on: pull_request
 
