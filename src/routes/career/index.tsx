@@ -1,6 +1,12 @@
 import { component$, Resource } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { loader$ } from '@builder.io/qwik-city';
+import { readFile } from 'node:fs/promises';
+import rehypeSanitize from 'rehype-sanitize';
+import rehypeStringify from 'rehype-stringify';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import { unified } from 'unified';
 import { ArticleSection } from '~/components/article-section';
 import type { Article } from '~/components/article-section/model';
 import { VideoOverlapLandscape } from '~/components/content-overlap';
@@ -21,7 +27,34 @@ import {
   videosWieWirArbeiten
 } from './resource';
 
+export function fetchVideoDescriptionAsHTML(videoId: string): Promise<string> {
+  return readFile(`markdown/youtube-video-descriptions/${videoId}.md`, {
+    encoding: 'utf-8'
+  })
+    .then(markdown =>
+      unified()
+        .use(remarkParse)
+        .use(remarkRehype)
+        .use(rehypeSanitize)
+        .use(rehypeStringify)
+        .process(markdown)
+    )
+    .then(htmlFile => String(htmlFile));
+}
+
+export const videoDescriptionsLoader = loader$(() => {
+  const videoDescriptionFetches = ['2AceUlURmwY'].map(videoId =>
+    fetchVideoDescriptionAsHTML(videoId)
+  );
+
+  return Promise.all(videoDescriptionFetches);
+});
+
 export default component$(() => {
+  const youTubeVideoDescriptions = videoDescriptionsLoader.use();
+
+  console.log(youTubeVideoDescriptions.value);
+
   const jobOffers = jobOffersLoader.use();
 
   const articles: Article[] = [
