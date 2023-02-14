@@ -1,6 +1,6 @@
-# co-IT.github.io
+# homepage
 
-Official website of [co-IT.eu](https://co-IT.eu) GmbH.
+> The Official homepage of [co-IT.eu](https://co-IT.eu) GmbH.
 
 ## Prerequisites
 
