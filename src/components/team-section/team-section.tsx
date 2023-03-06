@@ -40,14 +40,12 @@ export const TeamSection = component$(() => {
         </LinkCallToAction>
       </div>
 
-      <div class='bg-gradient-to-t from-gray-800 to-white'>
-        <img
-          class='mx-auto'
-          loading='lazy'
-          src='/img/about/team.webp'
-          alt='Picture showing the whole team at co-IT'
-        />
-      </div>
+      <img
+        class='mx-auto'
+        loading='lazy'
+        src='/img/about/team.webp'
+        alt='Picture showing the whole team at co-IT'
+      />
     </div>
   );
 });
