@@ -60,7 +60,7 @@ export const head: DocumentHead = {
       type: 'content-page',
       configuration: {
         backgroundImage: {
-          source: '/img/career/header.webp',
+          source: '/img/quality/header.webp',
           alt: 'Three team members enjoying engineering.'
         },
         heading: 'Auf den Punkt abgestimmt',
