@@ -46,7 +46,7 @@ export default component$(() => {
     {
       direction: 'right',
       image: {
-        src: '/img/career/retrospective.webp',
+        src: '/img/career/woman-controlling-a-boat.webp',
         alt: 'A team of three having a discussion about what they have achieved.'
       },
       heading: 'Übernimm Führung in hierarchielosen Netzwerken',
