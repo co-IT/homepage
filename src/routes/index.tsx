@@ -17,7 +17,8 @@ export default component$(() => {
       <SectionArea>
         <ContentOverlapPortrait
           image={{
-            source: '/img/landing-page/developers-tablet.webp',
+            source:
+              '/img/landing-page/developers-reviewing-an-app-on-the-tablet.webp',
             alternateText: '2 Developers checking an App on a tablet'
           }}
         >
@@ -28,10 +29,11 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='ganzheitlichen Lösungen?' />
             </h2>
             <p class='pb-4 leading-7'>
-              Dann sind unsere eingespielten Teams aus "High Performern" genau das
-              Richtige für Sie. Unser Selbstverständnis geht weit über das eines
-              Softwareherstellers oder eines IT-Systemhauses hinaus: Wir bieten
-              Ihnen vollumfängliche Lösungen statt punktueller Einzelleistungen.
+              Dann sind unsere eingespielten Teams aus "High Performern" genau
+              das Richtige für Sie. Unser Selbstverständnis geht weit über das
+              eines Softwareherstellers oder eines IT-Systemhauses hinaus: Wir
+              bieten Ihnen vollumfängliche Lösungen statt punktueller
+              Einzelleistungen.
             </p>
             <LinkCallToAction href='/about'>Lösung anfragen</LinkCallToAction>
           </section>

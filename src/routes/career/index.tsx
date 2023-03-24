@@ -55,7 +55,7 @@ export default component$(() => {
     {
       direction: 'left',
       image: {
-        src: '/img/career/espresso.webp',
+        src: '/img/career/man-climging-a-wall.webp',
         alt: 'The team taking a break enjoying fresh brewed espresso.'
       },
       heading: 'Bist Du wahnsinnig?',
