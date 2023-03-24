@@ -29,7 +29,7 @@ export default component$(() => {
       heading: 'Wir legen den Finger in die Wunde',
       text: 'Um das Business zu verstehen, müssen wir Menschen verstehen! Wenn beispielsweise eine Software für das Wissensmanagement - wie ein Unternehmenswiki - eingeführt werden soll, stellen wir die Frage nach der Bereitschaft der Angestellten Ihr wertvolles Wissen zu teilen. Hierfür sind sichere Arbeitsplätze und eine echte Vertrauenskultur Voraussetzung.',
       image: {
-        src: '/img/about/team-up.webp',
+        src: '/img/quality/two-men-standing-in-front-of-a-monitor.webp',
         alt: 'Two colleagues checking the state of their work.'
       }
     },
@@ -38,7 +38,7 @@ export default component$(() => {
       heading: 'Wir wollen Probleme durchdringen',
       text: 'Veränderung braucht Orientierung, Orientierung braucht Richtung und Richtung braucht ein Ziel. Darum treten wir gerne einen Schritt zurück und hinterfragen technische Wünsche. Ist es tatsächlich der Hammer, den ein Kunde braucht, oder ist es der Nagel in der Wand, um das Bild aufzuhängen?',
       image: {
-        src: '/img/about/it-fascination.webp',
+        src: '/img/quality/on-man-looking-over-the-sea.webp',
         alt: 'A team of two learning together'
       }
     }
