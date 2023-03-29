@@ -9,7 +9,7 @@ export default component$(() => {
     {
       direction: 'right',
       heading: 'Wir meistern Komplexität im Team',
-      text: 'Unsere T-Shaped Professionals flankieren ihr Tiefenwissen mit ausgewähltem Breitenwissen. Diesen Gedanken haben wir auf Unternehmensebene konsquent weitergedacht, indem wir gezielt Kompetenzen einzelner Mitarbeiter aufeinander abstimmen. Beispielsweise bleibt ein Haus, bei dem lediglich die Eingangstür, nicht aber die Fenster verschlossen sind, unsicher. Darum haben wir sowohl im IT-Service-Management als auch in der Softwareentwicklung zertifizierte Sicherheitsexperten.',
+      text: 'Unsere T-Shaped Professionals flankieren ihr Tiefenwissen mit ausgewähltem Breitenwissen. Diesen Gedanken haben wir auf Unternehmensebene konsequent weitergedacht, indem wir gezielt Kompetenzen einzelner Mitarbeiter aufeinander abstimmen. Beispielsweise bleibt ein Haus, bei dem lediglich die Eingangstür, nicht aber die Fenster verschlossen sind, unsicher. Darum haben wir sowohl im IT-Service-Management als auch in der Softwareentwicklung zertifizierte Sicherheitsexperten.',
       image: {
         src: '/img/about/flip-chart-session.webp',
         alt: 'Two colleagues working on the flip chart'
