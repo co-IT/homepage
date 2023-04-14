@@ -59,7 +59,7 @@ Strategie- und Unternehmensberatung`
 });
 
 export const head: DocumentHead = {
-  title: 'co-IT - Inspire to Change',
+  title: 'co-IT - Lösungen',
 
   frontmatter: {
     header: {
