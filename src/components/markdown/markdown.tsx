@@ -1,5 +1,5 @@
 import type { QwikIntrinsicElements } from '@builder.io/qwik';
-import { component$, useClientEffect$, useStore } from '@builder.io/qwik';
+import { component$, useStore, useVisibleTask$ } from '@builder.io/qwik';
 
 import rehypeSanitize from 'rehype-sanitize';
 import rehypeStringify from 'rehype-stringify';
@@ -14,7 +14,7 @@ export const Markdown = component$(
 
     const store = useStore({ html: '', markdown });
 
-    useClientEffect$(({ track }) => {
+    useVisibleTask$(({ track }) => {
       track(() => props.markdown);
 
       unified()

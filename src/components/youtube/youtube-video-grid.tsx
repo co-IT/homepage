@@ -1,4 +1,4 @@
-import { $, component$, useClientEffect$, useStore } from '@builder.io/qwik';
+import { $, component$, useStore, useVisibleTask$ } from '@builder.io/qwik';
 import { BlackCloseIcon, BlueCircleArrowIcon } from '../icons';
 import { Markdown } from '../markdown';
 import type { YouTubeVideo } from './model';
@@ -16,7 +16,7 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
     videoPlayingDescriptionMarkdown: ''
   });
 
-  useClientEffect$(({ track }) => {
+  useVisibleTask$(({ track }) => {
     track(() => videoDialog.videoPlaying);
 
     fetch(
@@ -34,7 +34,7 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
       );
   });
 
-  useClientEffect$(({ track }) => {
+  useVisibleTask$(({ track }) => {
     track(() => videoDialog.open);
 
     const [body] = document.getElementsByTagName('body');

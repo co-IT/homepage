@@ -1,6 +1,6 @@
 import { component$, Resource } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
-import { loader$ } from '@builder.io/qwik-city';
+import { routeLoader$ } from '@builder.io/qwik-city';
 import { ArticleSection } from '~/components/article-section';
 import type { Article } from '~/components/article-section/model';
 import { VideoOverlapLandscape } from '~/components/content-overlap';
@@ -22,7 +22,7 @@ import {
 } from './resource';
 
 export default component$(() => {
-  const jobOffers = jobOffersLoader.use();
+  const jobOffers = jobOffersLoader();
 
   const articles: Article[] = [
     {
@@ -213,7 +213,7 @@ export const head: DocumentHead = {
   }
 };
 
-export const jobOffersLoader = loader$(async () => {
+export const jobOffersLoader = routeLoader$(async () => {
   const response = await fetch('https://coiteugmbh.recruitee.com/api/offers');
 
   const json = await (response.ok
