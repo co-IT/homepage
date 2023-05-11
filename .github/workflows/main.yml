@@ -28,7 +28,7 @@ jobs:
         run: pnpm install
 
       - name: 🛠️ Build app
-        run: npm run build --prod
+        run: pnpm build --prod
 
       - name: 🔑 Azure Login
         uses: azure/login@v1
@@ -40,20 +40,20 @@ jobs:
         with:
           inlineScript: |
             az storage blob delete-batch --pattern '*' --account-name coiteu --auth-mode key -s '$web'
-      
+
       - name: 🚢 Deploy to Azure Static Website
         uses: azure/CLI@v1
         with:
           inlineScript: |
             az storage blob upload-batch --overwrite --account-name coiteu --auth-mode key -d '$web' -s './dist'
-      
+
       - name: 🧹 Azure purge CDN
         uses: azure/CLI@v1
         with:
           inlineScript: |
             az account set --subscription "Productive_Sites"
             az afd endpoint purge --content-paths  "/*" --profile-name "coiteu" --endpoint-name "coiteu" --resource-group "coIteu" --domains "co-it.eu"
-      
+
       - name: 🚪 Azure logout
         run: |
           az logout
