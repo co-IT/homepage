@@ -12,7 +12,7 @@ export const Footer = component$(() => {
     },
     {
       textFirstLine: 'Qualität',
-      textSecondLine: 'Auf den Punk abgestimmt',
+      textSecondLine: 'Auf den Punkt abgestimmt',
       path: '/quality'
     },
     {
