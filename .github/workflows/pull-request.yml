@@ -28,3 +28,6 @@ jobs:
 
       - name: 🛠️ Build app
         run: pnpm build --prod
+
+      - name: 🔍 Lint app
+        run: pnpm lint
