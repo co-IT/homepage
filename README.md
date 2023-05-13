@@ -15,3 +15,9 @@
 - Start the Dev-Server `npm start`
   - The browser will start automatically
 - Congratulations, you are ready to code 👩‍💻.
+
+## Static Site Generator (Node.js)
+
+```
+pnpm build.server
+```
