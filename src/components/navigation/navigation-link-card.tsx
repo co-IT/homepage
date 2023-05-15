@@ -8,7 +8,7 @@ interface NavigationCardProps {
 
 export const NavigationLinkCard = component$((props: NavigationCardProps) => {
   const location = useLocation();
-  const path = location.pathname;
+  const path = location.url.pathname;
 
   return (
     <a

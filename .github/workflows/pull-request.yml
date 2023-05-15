@@ -1,6 +1,8 @@
 name: 👩🏻‍💻 Pull Request
 
-on: pull_request
+on:
+  workflow_dispatch:
+  pull_request:
 
 jobs:
   check:
@@ -10,18 +12,19 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v3
 
-      - name: 👷‍♂️ Setup Node.js for use with actions
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-
       - name: '📦 Setup pnpm'
         uses: pnpm/action-setup@v2
         with:
           version: 7.25.0
 
+      - name: 👷‍♂️ Setup Node.js for use with actions
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'pnpm'
+
       - name: 💿 Clean install dependencies
         run: pnpm install
 
       - name: 🛠️ Build app
-        run: npm run build --prod
+        run: pnpm build --prod
