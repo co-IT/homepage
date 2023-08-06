@@ -1,4 +1,5 @@
-import { $, component$, useContext } from '@builder.io/qwik';
+
+import ImgLogo from '~/media/img/navigation/logo.svg?jsx';import { $, component$, useContext } from '@builder.io/qwik';
 import { NavigationLinkCard } from '../cards';
 import {
   BlueMailIcon,
@@ -48,8 +49,7 @@ export const Navigation = component$((props: { open: boolean }) => {
       <div class='container mx-auto flex flex-col gap-y-10 lg:gap-y-20'>
         <div class='flex flex-col justify-between lg:flex-row'>
           <a href='/'>
-            <img
-              src='/img/navigation/logo.svg'
+            <ImgLogo
               alt='logo'
               class='mx-auto h-fit w-32 lg:mx-0 lg:w-44'
             />

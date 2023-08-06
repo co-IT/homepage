@@ -21,8 +21,18 @@ import {
   videosWieWirArbeiten
 } from './resource';
 
+export const useJobOffers = routeLoader$(async () => {
+  const response = await fetch('https://coiteugmbh.recruitee.com/api/offers');
+
+  const json = await (response.ok
+    ? response.json()
+    : Promise.reject('Bad response fetching job offers from Recruitee.'));
+
+  return createJobOffersFromRecruitee(json);
+});
+
 export default component$(() => {
-  const jobOffers = jobOffersLoader();
+  const jobOffers = useJobOffers();
 
   const articles: Article[] = [
     {
@@ -188,6 +198,15 @@ export default component$(() => {
           onResolved={jobOffers => <JobOffersGrid jobOffers={jobOffers} />}
           onRejected={() => <JobOffersFallbackMessage />}
         />
+
+        <section class='mt-16 grid place-items-center'>
+          <LinkCallToAction
+            href='https://karriere.co-it.eu/o/initiativbewerbung'
+            target='_blank'
+          >
+            🚀 Bewirb Dich initiativ
+          </LinkCallToAction>
+        </section>
       </SectionArea>
     </>
   );
@@ -212,13 +231,3 @@ export const head: DocumentHead = {
     }
   }
 };
-
-export const jobOffersLoader = routeLoader$(async () => {
-  const response = await fetch('https://coiteugmbh.recruitee.com/api/offers');
-
-  const json = await (response.ok
-    ? response.json()
-    : Promise.reject('Bad response fetching job offers from Recruitee.'));
-
-  return createJobOffersFromRecruitee(json);
-});
