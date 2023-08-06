@@ -188,6 +188,15 @@ export default component$(() => {
           onResolved={jobOffers => <JobOffersGrid jobOffers={jobOffers} />}
           onRejected={() => <JobOffersFallbackMessage />}
         />
+
+        <section class='mt-16 grid place-items-center'>
+          <LinkCallToAction
+            href='https://karriere.co-it.eu/o/initiativbewerbung'
+            target='_blank'
+          >
+            🚀 Bewirb Dich initiativ
+          </LinkCallToAction>
+        </section>
       </SectionArea>
     </>
   );
