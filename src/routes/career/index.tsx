@@ -21,8 +21,18 @@ import {
   videosWieWirArbeiten
 } from './resource';
 
+export const useJobOffers = routeLoader$(async () => {
+  const response = await fetch('https://coiteugmbh.recruitee.com/api/offers');
+
+  const json = await (response.ok
+    ? response.json()
+    : Promise.reject('Bad response fetching job offers from Recruitee.'));
+
+  return createJobOffersFromRecruitee(json);
+});
+
 export default component$(() => {
-  const jobOffers = jobOffersLoader();
+  const jobOffers = useJobOffers();
 
   const articles: Article[] = [
     {
@@ -221,13 +231,3 @@ export const head: DocumentHead = {
     }
   }
 };
-
-export const jobOffersLoader = routeLoader$(async () => {
-  const response = await fetch('https://coiteugmbh.recruitee.com/api/offers');
-
-  const json = await (response.ok
-    ? response.json()
-    : Promise.reject('Bad response fetching job offers from Recruitee.'));
-
-  return createJobOffersFromRecruitee(json);
-});
