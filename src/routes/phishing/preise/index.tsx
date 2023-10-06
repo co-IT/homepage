@@ -1,7 +1,46 @@
 import { component$, useStyles$, useVisibleTask$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 
+import { CheckIcon } from '../../../components/icons';
 import style from './styles.css?inline';
+
+type PhisingFeature = {
+  text: string;
+  detail: string;
+};
+
+const starterFeatures: PhisingFeature[] = [
+  { text: '1 E-Mail / Monat / Anwender', detail: '' },
+  { text: 'E-Mail-Support', detail: '' },
+  { text: 'Frequenz: 1 pro Monat', detail: '' },
+  { text: 'Sprachniveau: Akzeptabel', detail: '' }
+];
+
+const profiFeatures: PhisingFeature[] = [
+  { text: '1 E-Mail / Monat / Anwender', detail: '' },
+  { text: 'E-Mail-Support', detail: '' },
+  { text: 'Frequenz: 1 pro Monat', detail: '' },
+  { text: 'Sprachniveau: Hoch', detail: '' },
+  { text: 'Personalisierte Anrede', detail: '' },
+  { text: 'Authentische Absenderadressen', detail: '' },
+  { text: 'Inhalte: Microsoft', detail: '' }
+];
+
+const expertFeatures: PhisingFeature[] = [
+  { text: '1 E-Mail / Monat / Anwender', detail: '' },
+  { text: 'E-Mail-Support', detail: '' },
+  { text: 'Frequenz: 1 pro Monat', detail: '' },
+  { text: 'Sprachniveau Hoch', detail: '' },
+  { text: 'Personalisierte Anrede', detail: '' },
+  { text: 'Authentische Absenderadressen', detail: '' },
+  { text: 'Inhalte: Microsoft', detail: '' },
+  { text: 'Inhalte: Zahlungsaufforderung', detail: '' },
+  { text: 'Anzeigename Cyber-Verantwortlicher', detail: '' },
+  { text: 'Englischsprachige Texte', detail: '' },
+  { text: 'Telefonischer Support', detail: '' },
+  { text: 'Einfluss auf Weiterentwicklung', detail: '' },
+  { text: 'Unternehmenszertifikat Phising', detail: '' }
+];
 
 export default component$(() => {
   useStyles$(style);
@@ -17,17 +56,9 @@ export default component$(() => {
     const goldPerMonthElement = document.getElementById('goldPerMonth');
     const goldPerYearElement = document.getElementById('goldPerYear');
 
-    const slider = document.getElementById('slider');
     const count = document.getElementById('count') as HTMLInputElement;
 
-    if (!slider || !count) return;
-
-    slider.addEventListener('input', element => {
-      const value = (element.target as HTMLInputElement).valueAsNumber;
-
-      const x = Math.round(Math.exp((Math.log(1000) / 100) * value));
-      updatePrices(x);
-    });
+    if (!count) return;
 
     count.addEventListener('input', element => {
       const value = (element.target as HTMLInputElement).valueAsNumber;
@@ -175,24 +206,44 @@ export default component$(() => {
   });
 
   return (
-    <div class='grid place-content-center'>
-      <div class='card user-input'>
-        <span>Anzahl Anwender</span>
+    <div class='mt-8 grid place-content-center'>
+      <h2 class='text-xl font-bold text-secondary-900'>
+        Legen Sie die Anzahl der Phishing-Email-Empfänger fest.
+      </h2>
+
+      <div class='mb-4 mt-4 flex items-center gap-2 p-4 shadow-md'>
+        <span class='font-semibold'>Anzahl Anwender</span>
+
         <input
-          style='display: none'
-          id='slider'
-          type='range'
-          min='1'
-          max='126'
+          type='number'
+          id='count'
+          required
           value='1'
+          min='1'
+          class='rounded-md border border-secondary-900'
         />
-        <input type='number' id='count' required min='1' />
       </div>
 
+      <h2 class='text-xl font-bold text-secondary-900'>
+        Sie das Paket aus, das am besten zu Ihnen passt.
+      </h2>
+
       <div class='pricing-tiers'>
-        <div class='card price-card' id='bronze'>
-          <span class='heading'>Starter</span>
-          <div class='prices'>
+        <div class='card grid items-start gap-8 shadow-md' id='bronze'>
+          <div class='features'>
+            <h3 class='heading'>Starter</h3>
+            <ul>
+              {starterFeatures.map((feature, key) => {
+                return (
+                  <li key={key} class='align-center flex gap-1 p-2'>
+                    <CheckIcon />
+                    <span>{feature.text}</span>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div class='prices self-end'>
             <span>Benutzer / Monat</span>
             <span id='bronzePerUser' class='price'></span>
             <span>Gesamt / Monat</span>
@@ -201,9 +252,22 @@ export default component$(() => {
             <span id='bronzePerYear' class='price'></span>
           </div>
         </div>
-        <div class='card price-card' id='silber'>
-          <span class='heading'>Profi</span>
-          <div class='prices'>
+        <div class='card grid items-start gap-8 shadow-xl' id='silber'>
+          <div class='features'>
+            <h3 class='heading'>Profi</h3>
+            <ul>
+              {profiFeatures.map((feature, key) => {
+                return (
+                  <li key={key} class='flex gap-1 p-2'>
+                    <CheckIcon />
+                    <span>{feature.text}</span>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+
+          <div class='prices self-end'>
             <span>Benutzer / Monat</span>
             <span id='silberPerUser' class='price'></span>
             <span>Gesamt / Monat</span>
@@ -212,9 +276,22 @@ export default component$(() => {
             <span id='silberPerYear' class='price'></span>
           </div>
         </div>
-        <div class='card price-card' id='gold'>
-          <span class='heading'>Experte</span>
-          <div class='prices'>
+        <div class='card grid items-start gap-8 shadow-md' id='gold'>
+          <div class='features'>
+            <h3 class='heading'>Experte</h3>
+            <ul>
+              {expertFeatures.map((feature, key) => {
+                return (
+                  <li key={key} class='align-center flex gap-1 p-2'>
+                    <CheckIcon />
+                    <span>{feature.text}</span>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+
+          <div class='prices self-end'>
             <span>Benutzer / Monat</span>
             <span id='goldPerUser' class='price'></span>
             <span>Gesamt / Monat</span>

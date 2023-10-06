@@ -62,12 +62,13 @@ body {
 }
 .heading {
   font-weight: bold;
+  padding-bottom: 1rem;
   font-size: x-large;
 }
 .prices {
   display: grid;
   grid-template-columns: max-content max-content;
-  gap: 2rem;
+  gap: 1rem;
 }
 .price {
   font-size: large;
