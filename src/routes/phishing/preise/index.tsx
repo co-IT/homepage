@@ -225,7 +225,7 @@ export default component$(() => {
       </div>
 
       <h2 class='text-xl font-bold text-secondary-900'>
-        Sie das Paket aus, das am besten zu Ihnen passt.
+        Wählen Sie das Paket aus, das am besten zu Ihnen passt.
       </h2>
 
       <div class='pricing-tiers'>
