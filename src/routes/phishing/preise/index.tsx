@@ -167,7 +167,8 @@ export default component$(() => {
       y2: number,
       x: number
     ) {
-      const slope = (y2 - y1) / (x2 - x1);
+      let slope = (y2 - y1) / (x2 - x1);
+      if (isNaN(slope)) slope = 0;
       const yIntercept = y1 - slope * x1;
       return slope * x + yIntercept;
     }
@@ -190,7 +191,7 @@ export default component$(() => {
 
       <div class='pricing-tiers'>
         <div class='card price-card' id='bronze'>
-          <span class='heading'>Bronze</span>
+          <span class='heading'>Starter</span>
           <div class='prices'>
             <span>Benutzer / Monat</span>
             <span id='bronzePerUser' class='price'></span>
@@ -201,7 +202,7 @@ export default component$(() => {
           </div>
         </div>
         <div class='card price-card' id='silber'>
-          <span class='heading'>Silber</span>
+          <span class='heading'>Profi</span>
           <div class='prices'>
             <span>Benutzer / Monat</span>
             <span id='silberPerUser' class='price'></span>
@@ -212,7 +213,7 @@ export default component$(() => {
           </div>
         </div>
         <div class='card price-card' id='gold'>
-          <span class='heading'>Gold</span>
+          <span class='heading'>Experte</span>
           <div class='prices'>
             <span>Benutzer / Monat</span>
             <span id='goldPerUser' class='price'></span>
