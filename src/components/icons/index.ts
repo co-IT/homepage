@@ -7,6 +7,7 @@ export * from './blue-phone-icon';
 export * from './calendar-icon';
 export * from './check-icon';
 export * from './gitub-icon';
+export * from './info-icon';
 export * from './mail-icon';
 export * from './map-icon';
 export * from './menu-icon';

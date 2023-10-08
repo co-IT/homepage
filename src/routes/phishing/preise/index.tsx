@@ -1,51 +1,180 @@
-import { component$, useStyles$, useVisibleTask$ } from '@builder.io/qwik';
-import type { DocumentHead } from '@builder.io/qwik-city';
+import {
+  component$,
+  useComputed$,
+  useSignal,
+  useStyles$,
+  useVisibleTask$
+} from '@builder.io/qwik';
 
+import type { DocumentHead } from '@builder.io/qwik-city';
+import { ArticleSection } from '../../../components/article-section';
+import type { Article } from '../../../components/article-section/model';
 import { CheckIcon } from '../../../components/icons';
+import { InfoPopover } from '../../../components/info-popover/info-popover';
+import { SectionArea } from '../../../components/section-area';
 import style from './styles.css?inline';
+
+const articles: Article[] = [
+  {
+    direction: 'right',
+    heading: 'Vision',
+    text: 'Wir wollen allen die fachliche Kompetenz, die praktischen Fähigkeiten und das notwendige Wissen vermitteln, um in der digitalen Welt sich sicher zu fühlen und sicher zu sein. Dafür bieten die Württembergische Versicherung und wir Unternehmen und Ihren Anwendern einen Raum, um nachhaltiges Praxiswissen auf verständliche Weise zu erlernen, dieses mit intensiven Prüfungen und realistischen Simulationen zu festigen und dabei Lernfortschritte methodisch sicherzustellen.',
+    image: {
+      src: '/img/about/flip-chart-session.webp',
+      alt: 'Two colleagues working on the flip chart'
+    }
+  }
+];
 
 type PhisingFeature = {
   text: string;
-  detail: string;
+  detail?: string;
 };
 
 const starterFeatures: PhisingFeature[] = [
-  { text: '1 E-Mail / Monat / Anwender', detail: '' },
-  { text: 'E-Mail-Support', detail: '' },
-  { text: 'Frequenz: 1 pro Monat', detail: '' },
-  { text: 'Sprachniveau: Akzeptabel', detail: '' }
+  {
+    text: 'Anzahl E-Mails: 12',
+    detail: 'Anzahl der Phising Mails pro Anwender und Jahr'
+  },
+  {
+    text: 'E-Mail-Support',
+    detail:
+      'Unsere Reaktionszeit wird an Werktagen innerhalb 48 Stunden in deutscher Sprache gewährleistet.'
+  },
+  { text: 'Frequenz: 1 pro Monat' },
+  {
+    text: 'Sprachniveau: Mittel',
+    detail:
+      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausiblität geachtet.'
+  }
 ];
 
 const profiFeatures: PhisingFeature[] = [
-  { text: '1 E-Mail / Monat / Anwender', detail: '' },
-  { text: 'E-Mail-Support', detail: '' },
-  { text: 'Frequenz: 1 pro Monat', detail: '' },
-  { text: 'Sprachniveau: Hoch', detail: '' },
-  { text: 'Personalisierte Anrede', detail: '' },
-  { text: 'Authentische Absenderadressen', detail: '' },
-  { text: 'Inhalte: Microsoft', detail: '' }
+  {
+    text: 'Anzahl E-Mails: 24',
+    detail: 'Anzahl der Phising Mails pro Anwender und Jahr'
+  },
+  {
+    text: 'E-Mail-Support',
+    detail:
+      'Unsere Reaktionszeit wird an Werktagen innerhalb 48 Stunden in deutscher Sprache gewährleistet.'
+  },
+  {
+    text: 'Frequenz: je Monat (aufeinanderfolgende Tage)',
+    detail:
+      'Im Tarif "Profi" werden die zwei monatlichen E-Mails an aufeinanderfolgneden Tagen versendet.'
+  },
+  {
+    text: 'Sprachniveau: Hoch',
+    detail:
+      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
+  },
+  {
+    text: 'Personalisierte Anrede',
+    detail:
+      'In einem Teil der Phishing-Mails wird auch personalisierte Ansprache verwendet, das heißt die E-Mails enthalten Anrede und Name des Anwenders. Damit werden Ihre Anwender noch besser für besonders gefährliche Phishings sensibilisiert.'
+  },
+  {
+    text: 'Authentische Absenderadressen',
+    detail:
+      'In einem Teil der Phishing-Mails werden passend zu deren Inhalten glaubwürdige Domains verwendet. Geht es in der Mail zum Beispiel um Urheberrechtsverstöße, so würde als Absender klage@kanzlei-abele.de verwendet werden.'
+  },
+  {
+    text: 'Inhalte: Microsoft',
+    detail:
+      'In einem Teil der Phising-Mails wird auf Produkte wie Outlook und Teams eingegangen. Besonders wenn Sie Microsoft-Produkte einsetzten, erhalten erfahrungsgemäß diese Phishing-Mails gesteigerte Aufmerksamkeit.'
+  }
 ];
 
 const expertFeatures: PhisingFeature[] = [
-  { text: '1 E-Mail / Monat / Anwender', detail: '' },
-  { text: 'E-Mail-Support', detail: '' },
-  { text: 'Frequenz: 1 pro Monat', detail: '' },
-  { text: 'Sprachniveau Hoch', detail: '' },
-  { text: 'Personalisierte Anrede', detail: '' },
-  { text: 'Authentische Absenderadressen', detail: '' },
-  { text: 'Inhalte: Microsoft', detail: '' },
-  { text: 'Inhalte: Zahlungsaufforderung', detail: '' },
-  { text: 'Anzeigename Cyber-Verantwortlicher', detail: '' },
-  { text: 'Englischsprachige Texte', detail: '' },
-  { text: 'Telefonischer Support', detail: '' },
-  { text: 'Einfluss auf Weiterentwicklung', detail: '' },
-  { text: 'Unternehmenszertifikat Phising', detail: '' }
+  {
+    text: 'Anzahl E-Mails: 52',
+    detail: 'Anzahl der Phising Mails pro Anwender und Jahr'
+  },
+  { text: 'E-Mail-Support' },
+  {
+    text: 'Frequenz: wöchentlich',
+    detail:
+      'Im Tarif "Experte" kommt pro Woche zu einer zufälligen Zeit die Phising-Mail.'
+  },
+  {
+    text: 'Sprachniveau Hoch',
+    detail:
+      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
+  },
+  {
+    text: 'Personalisierte Anrede',
+    detail:
+      'In einem Teil der Phishing-Mails wird auch personalisierte Ansprache verwendet, das heißt die E-Mails enthalten Anrede und Name des Anwenders. Damit werden Ihre Anwender noch besser für besonders gefährliche Phishings sensibilisiert.'
+  },
+  {
+    text: 'Authentische Absenderadressen',
+    detail:
+      'In einem Teil der Phishing-Mails werden passend zu deren Inhalten glaubwürdige Domains verwendet. Geht es in der Mail zum Beispiel um Urheberrechtsverstöße, so würde als Absender klage@kanzlei-abele.de verwendet werden.'
+  },
+  {
+    text: 'Inhalte: Microsoft',
+    detail:
+      'In einem Teil der Phising-Mails wird auf Produkte wie Outlook und Teams eingegangen. Besonders wenn Sie Microsoft-Produkte einsetzten, erhalten erfahrungsgemäß diese Phishing-Mails gesteigerte Aufmerksamkeit.'
+  },
+  {
+    text: 'Inhalte: Zahlungsaufforderung',
+    detail:
+      'In einem Teil der Phishing-Mails wird der Anwender aufgefordert sich mit einer Zahlungsaufforderung auseinanderzusetzen. Zum einen adressieren Sie damit gezielt Ihr Rechnungswesen. Zum anderen erhalten erfahrungsgemäß diese Phising-Mails gesteigerte Aufmerksamkeit.'
+  },
+  {
+    text: 'Anzeigename Cyber-Verantwortlicher',
+    detail:
+      'In einem Teil der Phishing-Mails wird in der Grußformel der Name des Cyber-Verantwortlichen Ihres Unternehmens genannt. Zudem wird dieser Name als Anzeigename dargestellt. Damit werden Ihre Anwender auch für Phishing-Mails innerhalb Ihres Unternehmens sensibilisiert.'
+  },
+  {
+    text: 'Englischsprachige Texte',
+    detail:
+      'Zusätzlich zur Standardsprache Deutsch erhalten Ihre Anwender auf Mails in englischer Sprache. Das ist zum Beispiel hilfreich, wenn Sie regelmäßig mit internationalen Kontakten kommunizieren.'
+  },
+  {
+    text: 'Telefonischer Support',
+    detail:
+      'Unsere Erreichbarkeit ist an Werktagen von 9 - 16 Uhr in deutscher Sprache gewährleistet.'
+  },
+  {
+    text: 'Einfluss auf Weiterentwicklung',
+    detail:
+      'Nehmen Sie Einfluss auf die weiter Produktentwicklung und stimmen Sie über neue Funktionalitäten ab.'
+  },
+  { text: 'Unternehmenszertifikat Phising' }
 ];
 
 export default component$(() => {
   useStyles$(style);
 
+  const bronzePerYearDiscountSig = useSignal(0);
+  const bronzePerYearDiscountEuro = useComputed$(() =>
+    bronzePerYearDiscountSig.value.toLocaleString('de-DE', {
+      style: 'currency',
+      currency: 'EUR'
+    })
+  );
+
+  const silberPerYearDiscountSig = useSignal(0);
+  const silberPerYearDiscountEuro = useComputed$(() =>
+    silberPerYearDiscountSig.value.toLocaleString('de-DE', {
+      style: 'currency',
+      currency: 'EUR'
+    })
+  );
+
+  const goldPerYearDiscountSig = useSignal(0);
+  const goldPerYearDiscountEuro = useComputed$(() =>
+    goldPerYearDiscountSig.value.toLocaleString('de-DE', {
+      style: 'currency',
+      currency: 'EUR'
+    })
+  );
+
   useVisibleTask$(() => {
+    const discount = 0.12;
+
     const bronzePerUserElement = document.getElementById('bronzePerUser');
     const bronzePerMonthElement = document.getElementById('bronzePerMonth');
     const bronzePerYearElement = document.getElementById('bronzePerYear');
@@ -76,6 +205,7 @@ export default component$(() => {
       const bronzePerUserPerMonth = calculateBronzePricing(userCount);
       const bronzePerMonth = bronzePerUserPerMonth * userCount;
       const bronzePerYear = bronzePerMonth * 12;
+      bronzePerYearDiscountSig.value = bronzePerYear - bronzePerYear * discount;
 
       if (
         !bronzePerUserElement ||
@@ -105,9 +235,11 @@ export default component$(() => {
         style: 'currency',
         currency: 'EUR'
       });
+
       const silberPerUserPerMonth = bronzePerUserPerMonth * 1.3;
       const silberPerMonth = silberPerUserPerMonth * userCount;
       const silberPerYear = silberPerMonth * 12;
+      silberPerYearDiscountSig.value = silberPerYear - silberPerYear * discount;
 
       silverPerUserElement.innerText = silberPerUserPerMonth.toLocaleString(
         'de-DE',
@@ -127,6 +259,7 @@ export default component$(() => {
       const goldPerUserPerMonth = bronzePerUserPerMonth * 2;
       const goldPerMonth = goldPerUserPerMonth * userCount;
       const goldPerYear = goldPerMonth * 12;
+      goldPerYearDiscountSig.value = goldPerYear - goldPerYear * discount;
 
       goldPerUserElement.innerText = goldPerUserPerMonth.toLocaleString(
         'de-DE',
@@ -206,102 +339,144 @@ export default component$(() => {
   });
 
   return (
-    <div class='mt-8 grid place-content-center'>
-      <h2 class='text-xl font-bold text-secondary-900'>
-        Legen Sie die Anzahl der Phishing-Email-Empfänger fest.
-      </h2>
+    <>
+      <SectionArea>
+        <ArticleSection articles={articles} />
+      </SectionArea>
 
-      <div class='mb-4 mt-4 flex items-center gap-2 p-4 shadow-md'>
-        <span class='font-semibold'>Anzahl Anwender</span>
+      <div class='mt-8 grid place-content-center'>
+        <h2 class='text-xl font-bold text-secondary-900'>
+          Legen Sie die Anzahl der Phishing-Email-Empfänger fest.
+        </h2>
 
-        <input
-          type='number'
-          id='count'
-          required
-          value='1'
-          min='1'
-          class='rounded-md border border-secondary-900'
-        />
+        <div class='mb-4 mt-4 flex items-center gap-2 p-4 shadow-md'>
+          <span class='font-semibold'>Anzahl Anwender</span>
+
+          <input
+            type='number'
+            id='count'
+            required
+            value='1'
+            min='1'
+            class='rounded-md border border-secondary-900'
+          />
+        </div>
+
+        <h2 class='text-xl font-bold text-secondary-900'>
+          Wählen Sie das Paket aus, das am besten zu Ihnen passt.
+        </h2>
+
+        <div class='pricing-tiers'>
+          <div class='card grid items-start gap-8 shadow-md' id='bronze'>
+            <div class='features'>
+              <h3 class='heading'>Starter</h3>
+              <ul>
+                {starterFeatures.map((feature, key) => {
+                  return (
+                    <li
+                      key={key}
+                      class='align-center grid grid-cols-[auto_auto_1fr] justify-items-end gap-2 pb-4'
+                    >
+                      <CheckIcon />
+                      <span>{feature.text}</span>
+                      {feature.detail && <InfoPopover text={feature.detail} />}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <div class='prices self-end'>
+              <span>Benutzer / Monat</span>
+              <span id='bronzePerUser' class='price'></span>
+              <span class='hidden'>Gesamt / Monat</span>
+              <span id='bronzePerMonth' class='price hidden'></span>
+              <span>Gesamt / Jahr</span>
+              <p>
+                <span id='bronzePerYear' class='line-through'></span>
+                &nbsp;
+                <span class='price'>{bronzePerYearDiscountEuro}</span>
+                &nbsp;
+                <span class='mr-2 rounded bg-secondary-900 px-2.5 py-0.5 text-xs font-medium text-accent accent-primary'>
+                  12 % Rabatt
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class='card grid items-start gap-8 shadow-xl' id='silber'>
+            <div class='features'>
+              <h3 class='heading'>Profi</h3>
+              <ul>
+                {profiFeatures.map((feature, key) => {
+                  return (
+                    <li
+                      key={key}
+                      class='align-center grid grid-cols-[auto_auto_1fr] justify-items-end gap-2 pb-4'
+                    >
+                      <CheckIcon />
+                      <span>{feature.text}</span>
+                      {feature.detail && <InfoPopover text={feature.detail} />}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+
+            <div class='prices self-end'>
+              <span>Benutzer / Monat</span>
+              <span id='silberPerUser' class='price'></span>
+              <span class='hidden'>Gesamt / Monat</span>
+              <span id='silberPerMonth' class='price hidden'></span>
+              <span>Gesamt / Jahr</span>
+              <p>
+                <span id='silberPerYear' class='line-through'></span>
+                &nbsp;
+                <span class='price'>{silberPerYearDiscountEuro}</span>
+                &nbsp;
+                <span class='mr-2 rounded bg-secondary-900 px-2.5 py-0.5 text-xs font-medium text-accent accent-primary'>
+                  12 % Rabatt
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class='card grid items-start gap-8 shadow-md' id='gold'>
+            <div class='features'>
+              <h3 class='heading'>Experte</h3>
+              <ul>
+                {expertFeatures.map((feature, key) => {
+                  return (
+                    <li
+                      key={key}
+                      class='align-center grid grid-cols-[auto_auto_1fr] justify-items-end gap-2 pb-4'
+                    >
+                      <CheckIcon />
+                      <span>{feature.text}</span>
+                      {feature.detail && <InfoPopover text={feature.detail} />}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+
+            <div class='prices self-end'>
+              <span>Benutzer / Monat</span>
+              <span id='goldPerUser' class='price'></span>
+              <span class='hidden'>Gesamt / Monat</span>
+              <span id='goldPerMonth' class='price hidden'></span>
+              <span>Gesamt / Jahr</span>
+              <p>
+                <span id='goldPerYear' class='line-through'></span>
+                &nbsp;
+                <span class='price'>{goldPerYearDiscountEuro}</span>
+                &nbsp;
+                <span class='mr-2 rounded bg-secondary-900 px-2.5 py-0.5 text-xs font-medium text-accent accent-primary'>
+                  12 % Rabatt
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <h2 class='text-xl font-bold text-secondary-900'>
-        Wählen Sie das Paket aus, das am besten zu Ihnen passt.
-      </h2>
-
-      <div class='pricing-tiers'>
-        <div class='card grid items-start gap-8 shadow-md' id='bronze'>
-          <div class='features'>
-            <h3 class='heading'>Starter</h3>
-            <ul>
-              {starterFeatures.map((feature, key) => {
-                return (
-                  <li key={key} class='align-center flex gap-1 p-2'>
-                    <CheckIcon />
-                    <span>{feature.text}</span>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-          <div class='prices self-end'>
-            <span>Benutzer / Monat</span>
-            <span id='bronzePerUser' class='price'></span>
-            <span>Gesamt / Monat</span>
-            <span id='bronzePerMonth' class='price'></span>
-            <span>Gesamt / Jahr</span>
-            <span id='bronzePerYear' class='price'></span>
-          </div>
-        </div>
-        <div class='card grid items-start gap-8 shadow-xl' id='silber'>
-          <div class='features'>
-            <h3 class='heading'>Profi</h3>
-            <ul>
-              {profiFeatures.map((feature, key) => {
-                return (
-                  <li key={key} class='flex gap-1 p-2'>
-                    <CheckIcon />
-                    <span>{feature.text}</span>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-
-          <div class='prices self-end'>
-            <span>Benutzer / Monat</span>
-            <span id='silberPerUser' class='price'></span>
-            <span>Gesamt / Monat</span>
-            <span id='silberPerMonth' class='price'></span>
-            <span>Gesamt / Jahr</span>
-            <span id='silberPerYear' class='price'></span>
-          </div>
-        </div>
-        <div class='card grid items-start gap-8 shadow-md' id='gold'>
-          <div class='features'>
-            <h3 class='heading'>Experte</h3>
-            <ul>
-              {expertFeatures.map((feature, key) => {
-                return (
-                  <li key={key} class='align-center flex gap-1 p-2'>
-                    <CheckIcon />
-                    <span>{feature.text}</span>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-
-          <div class='prices self-end'>
-            <span>Benutzer / Monat</span>
-            <span id='goldPerUser' class='price'></span>
-            <span>Gesamt / Monat</span>
-            <span id='goldPerMonth' class='price'></span>
-            <span>Gesamt / Jahr</span>
-            <span id='goldPerYear' class='price'></span>
-          </div>
-        </div>
-      </div>
-    </div>
+    </>
   );
 });
 
@@ -310,9 +485,14 @@ export const head: DocumentHead = {
 
   frontmatter: {
     header: {
-      type: 'default',
+      type: 'content-page',
       configuration: {
-        heading: 'Phishing'
+        backgroundImage: {
+          source: '/img/phishing/header.jpg',
+          alt: 'Two team mates checking an App on the tablet.'
+        },
+        heading: 'Cyber Portal',
+        headingAccent: 'Sicher fühlen. Sicher sein.'
       }
     }
   }
