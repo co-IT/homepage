@@ -8,6 +8,7 @@ import {
 
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { ArticleSection } from '../../../components/article-section';
+import type { Article } from '../../../components/article-section/model';
 import { CheckIcon } from '../../../components/icons';
 import { InfoPopover } from '../../../components/info-popover/info-popover';
 import { SectionArea } from '../../../components/section-area';
