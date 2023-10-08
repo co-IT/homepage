@@ -332,8 +332,8 @@ export default component$(() => {
           <div class='prices self-end'>
             <span>Benutzer / Monat</span>
             <span id='bronzePerUser' class='price'></span>
-            <span>Gesamt / Monat</span>
-            <span id='bronzePerMonth' class='price'></span>
+            <span class='hidden'>Gesamt / Monat</span>
+            <span id='bronzePerMonth' class='price hidden'></span>
             <span>Gesamt / Jahr</span>
             <span id='bronzePerYear' class='price'></span>
           </div>
@@ -360,8 +360,8 @@ export default component$(() => {
           <div class='prices self-end'>
             <span>Benutzer / Monat</span>
             <span id='silberPerUser' class='price'></span>
-            <span>Gesamt / Monat</span>
-            <span id='silberPerMonth' class='price'></span>
+            <span class='hidden'>Gesamt / Monat</span>
+            <span id='silberPerMonth' class='price hidden'></span>
             <span>Gesamt / Jahr</span>
             <span id='silberPerYear' class='price'></span>
           </div>
@@ -388,8 +388,8 @@ export default component$(() => {
           <div class='prices self-end'>
             <span>Benutzer / Monat</span>
             <span id='goldPerUser' class='price'></span>
-            <span>Gesamt / Monat</span>
-            <span id='goldPerMonth' class='price'></span>
+            <span class='hidden'>Gesamt / Monat</span>
+            <span id='goldPerMonth' class='price hidden'></span>
             <span>Gesamt / Jahr</span>
             <span id='goldPerYear' class='price'></span>
           </div>
