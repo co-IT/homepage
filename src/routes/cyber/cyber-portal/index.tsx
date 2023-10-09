@@ -6,22 +6,62 @@ import {
   useVisibleTask$
 } from '@builder.io/qwik';
 
+import { ArticleSection } from '~/components/article-section';
+import type { Article } from '~/components/article-section/model';
+import { CheckIcon } from '~/components/icons';
+import { InfoPopover } from '~/components/info-popover/info-popover';
+import { SectionArea } from '~/components/section-area';
+
 import type { DocumentHead } from '@builder.io/qwik-city';
-import { ArticleSection } from '../../../components/article-section';
-import type { Article } from '../../../components/article-section/model';
-import { CheckIcon } from '../../../components/icons';
-import { InfoPopover } from '../../../components/info-popover/info-popover';
-import { SectionArea } from '../../../components/section-area';
+import { HeadingArticle } from '../../../components/heading-article';
+import { LinkCallToAction } from '../../../components/link-call-to-action';
 import style from './styles.css?inline';
 
 const articles: Article[] = [
   {
     direction: 'right',
     heading: 'Vision',
-    text: 'Wir wollen allen die fachliche Kompetenz, die praktischen Fähigkeiten und das notwendige Wissen vermitteln, um in der digitalen Welt sich sicher zu fühlen und sicher zu sein. Dafür bieten die Württembergische Versicherung und wir Unternehmen und Ihren Anwendern einen Raum, um nachhaltiges Praxiswissen auf verständliche Weise zu erlernen, dieses mit intensiven Prüfungen und realistischen Simulationen zu festigen und dabei Lernfortschritte methodisch sicherzustellen.',
+    text: 'Wir wollen allen die fachliche Kompetenz, die praktischen Fähigkeiten und das notwendige Wissen vermitteln, um in der digitalen Welt sich sicher zu fühlen und sicher zu sein. Das Cyber Portal bietet Ihnen und Ihren Anwendern einen Raum, um',
+    enumeration: [
+      'nachhaltiges Praxiswissen auf verständliche Weise zu erlernen,',
+      'dieses mit intensiven Prüfungen und realistischen Simulationen zu festigen und',
+      'dabei Lernfortschritte methodisch sicherzustellen.'
+    ],
     image: {
       src: '/img/about/flip-chart-session.webp',
       alt: 'Two colleagues working on the flip chart'
+    }
+  },
+  {
+    direction: 'left',
+    heading: 'Kunden der Württembergischen Versicherung',
+    text: 'Die Basisversion ist und bleibt für alle Versicherungsnehmer der Württembergischen Versicherung kostenfrei. Bei mehreren 1.000 Unternehmen jeglicher Größe und in über 50 Branchen kann es vorkommen, dass nicht alle individuellen Wünsche und Bedarfe adressiert werden können.',
+    image: {
+      src: '/img/career/it-fascination.webp'
+    }
+  },
+  {
+    direction: 'right',
+    heading: 'Noch mehr Sicherheit',
+    text: 'Mit unseren kostengünstigen Zusatzpaketen schlagen wir die Brücke für all jene, die ein deutliches Plus an Sicherheit erzielen wollen. Aufgrund der kostenfreien Basisversion müssen wir nur die Mehrleistung weiterberechnen und können deutlich niedrigere Preise anbieten als vergleichbare Plattformen.',
+    image: {
+      src: '/img/quality/team-up.webp'
+    }
+  },
+  {
+    direction: 'left',
+    heading: 'Sicherheit gemeinsam gestalten',
+    text: 'Doch was bringt Ihnen eine günstige Lösung, wenn der Mehrwert fehlt? Darum setzen wir ausschließlich Themen um, die Sie sich wünschen: Jeder Abonnent eines jeden Pakets darf abstimmen, was als nächstes realisiert wird. Abonnenten des Pakets „Experte“ können zudem auf die Auswahl, über die abgestimmt wird, Einfluss nehmen.',
+    image: {
+      src: '/img/career/retrospective.webp'
+    }
+  },
+  {
+    direction: 'right',
+    heading: 'Bedarfsgerechte, Progressive Erweiterung',
+    text: 'Und Sie haben noch einen weiteren Vorteil: Sie müssen kein neues Produkt evaluieren und einführen. Die Integration der Zusatzfunktionen erfolgt nahtlos und sofort bei Kauf. Das kann besonders größeren Unternehmen und Behörden helfen, kraftraubende Genehmigungsprozesse zu beschleunigen und langwierige Ausschreibungsverfahren zu umgehen. Das Basisprodukt ist in Ihrem Haus schließlich freigegeben und bereits eingeführt.',
+    image: {
+      src: '/img/career/woman-controlling-a-boat.webp'
     }
   }
 ];
@@ -344,27 +384,51 @@ export default component$(() => {
         <ArticleSection articles={articles} />
       </SectionArea>
 
-      <div class='mt-8 grid place-content-center'>
-        <h2 class='text-xl font-bold text-secondary-900'>
-          Legen Sie die Anzahl der Phishing-Email-Empfänger fest.
-        </h2>
+      <SectionArea>
+        <div class='mb-14 flex flex-col items-center gap-y-4'>
+          <div class='h-1 w-10 bg-primary' />
 
-        <div class='mb-4 mt-4 flex items-center gap-2 p-4 shadow-md'>
-          <span class='font-semibold'>Anzahl Anwender</span>
+          <h2 class='text-secondary text-4xl font-bold leading-10 text-secondary-900'>
+            Jetzt mitgestalten
+          </h2>
 
-          <input
-            type='number'
-            id='count'
-            required
-            value='1'
-            min='1'
-            class='rounded-md border border-secondary-900'
-          />
+          <p class='max-w-xl'>
+            Um unsere Pakete noch genauer auf Ihre Bedarfe zuschneiden zu
+            können, machen wir aktuell eine anonyme Umfrage Teil Sie uns mit,
+            wie ein perfekt auf Sie abgestimmtes Paket aussieht. Die Umfrage
+            dauert nur 1-2 Minuten.
+          </p>
+
+          <LinkCallToAction
+            href='https://e.co-IT.eu/cyber/umfrage'
+            target='_blank'
+          >
+            Jetzt anonym ab der Umfrage teilnehmen
+          </LinkCallToAction>
         </div>
+      </SectionArea>
 
-        <h2 class='text-xl font-bold text-secondary-900'>
-          Wählen Sie das Paket aus, das am besten zu Ihnen passt.
-        </h2>
+      <SectionArea>
+        <div class='grid place-content-center'>
+          <HeadingArticle text='Legen Sie die Anzahl der Phishing-Email-Empfänger fest.' />
+
+          <div class='mt-4 flex items-center justify-center gap-2 p-4 shadow-md'>
+            <span class='font-semibold'>Anzahl Anwender</span>
+
+            <input
+              type='number'
+              id='count'
+              required
+              value='1'
+              min='1'
+              class='rounded-md border border-secondary-900'
+            />
+          </div>
+        </div>
+      </SectionArea>
+
+      <SectionArea>
+        <HeadingArticle text=' Wählen Sie das Paket aus, das am besten zu Ihnen passt.' />
 
         <div class='pricing-tiers'>
           <div class='card grid items-start gap-8 shadow-md' id='bronze'>
@@ -475,7 +539,58 @@ export default component$(() => {
             </div>
           </div>
         </div>
-      </div>
+      </SectionArea>
+
+      <SectionArea>
+        <div class='mb-14 flex flex-col items-center gap-y-4'>
+          <div class='h-1 w-10 bg-primary' />
+
+          <h2 class='text-secondary text-4xl font-bold leading-10 text-secondary-900'>
+            Cyber Security Workshops
+          </h2>
+
+          <p class='max-w-xl'>
+            Für Kunden, die persönliche Schulung zu schätzen wissen, flankieren
+            wir unser Portal mit maßgeschneiderten Trainings vor Ort und remote
+            an. Vereinbaren Sie gerne direkt einen Telefontermin
+          </p>
+
+          <LinkCallToAction
+            href='https://e.co-IT.eu/cyber/schulung'
+            target='_blank'
+          >
+            Telefontermin vereinbaren
+          </LinkCallToAction>
+        </div>
+      </SectionArea>
+
+      <SectionArea>
+        <div class='mb-14 flex flex-col items-center gap-y-4'>
+          <div class='h-1 w-10 bg-primary' />
+
+          <h2 class='text-secondary text-4xl font-bold leading-10 text-secondary-900'>
+            IT-Sicherheit für Ihr Unternehmen
+          </h2>
+
+          <p class='max-w-xl'>
+            Wir wären nicht, wer wir sind, wenn wir Veränderung nicht ganz zu
+            Ende denken würden: Regelmäßig erreichen uns Anrufe und Mails, ob
+            wir eine Bestandsaufnahme des IT-Sicherheit durchführen und - falls
+            notwendig - Lücken schließen können. Die gute Antwortet lautet: Ja.
+            Die Inhalte für das Cyber Portal entstanden aus unseren
+            Erkenntnissen und Erfahrungen, die wir in unserer Funktion als
+            IT-Systemhaus gewinnen konnten. Hier können Sie eine kostenfreie,
+            30-minütige Erstberatung.
+          </p>
+
+          <LinkCallToAction
+            href='https://e.co-IT.eu/cyber/umfrage'
+            target='_blank'
+          >
+            Jetzt 30-minütige Erstberatung vereinbaren
+          </LinkCallToAction>
+        </div>
+      </SectionArea>
     </>
   );
 });
