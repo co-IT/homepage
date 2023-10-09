@@ -13,32 +13,33 @@ import { InfoPopover } from '~/components/info-popover/info-popover';
 import { SectionArea } from '~/components/section-area';
 
 import type { DocumentHead } from '@builder.io/qwik-city';
-import { HeadingArticle } from '../../../components/heading-article';
-import { LinkCallToAction } from '../../../components/link-call-to-action';
+import { VideoOverlapLandscape } from '~/components/content-overlap';
+import { HeadingArticle } from '~/components/heading-article';
+import { HeadingSegmentSecondary } from '~/components/heading-segment';
+import { LinkCallToAction } from '~/components/link-call-to-action';
 import style from './styles.css?inline';
 
 const articles: Article[] = [
-    {
+  {
     direction: 'right',
     heading: 'Unser Antrieb',
     text: 'Wir wollen allen die fachliche Kompetenz, die praktischen Fähigkeiten und das notwendige Wissen vermitteln, um in der digitalen Welt sich sicher zu fühlen und sicher zu sein. Das Cyber Portal bietet Ihnen und Ihren Anwendern einen Raum, um nachhaltiges Praxiswissen auf verständliche Weise zu erlernen, dieses mit intensiven Prüfungen und realistischen Simulationen zu festigen und dabei Lernfortschritte methodisch sicherzustellen.',
     image: {
       src: '/img/about/flip-chart-session.webp',
       alt: 'Two colleagues working on the flip chart'
-      }
     }
+  }
 ];
 
-
 const articles2: Article[] = [
-    {
+  {
     direction: 'right',
     heading: 'Plus an Sicherheit',
     text: 'Doch was bringt Ihnen eine günstige Lösung, wenn der Mehrwert fehlt? Darum setzen wir ausschließlich Themen um, die Sie sich wünschen: Jeder Abonnent eines jeden Pakets darf abstimmen, was als nächstes realisiert wird. Abonnenten des Pakets „Experte“ können zudem auf die Auswahl, über die abgestimmt wird, Einfluss nehmen. Und Sie haben noch einen weiteren Vorteil: Sie müssen kein neues Produkt evaluieren und einführen. Die Integration der Zusatzfunktionen erfolgt nahtlos und sofort bei Kauf. Das kann besonders größeren Unternehmen und Behörden helfen, kraftraubende Genehmigungsprozesse zu beschleunigen und langwierige Ausschreibungsverfahren zu umgehen. Das Basisprodukt ist in Ihrem Haus schließlich freigegeben und bereits eingeführt.',
     image: {
       src: '/img/quality/team-up.webp'
-      }
     }
+  }
 ];
 
 type PhisingFeature = {
@@ -356,18 +357,29 @@ export default component$(() => {
   return (
     <>
       <SectionArea>
-        <ArticleSection articles={articles} />        
+        <ArticleSection articles={articles} />
       </SectionArea>
-      
-        <SectionArea backgroundColor='gray'>
-          <VideoOverlapLandscape youTubeVideoId='QVArEtvAGsk'>
-            <section class='flex flex-col space-y-4'>
-              <h2 class='text-xl font-bold md:text-4xl'>
-                <HeadingSegmentSecondary text='Kostenfreie Basisversion' />
-              </h2>
-              <p class='leading-7'>
-              Beim Cyber Portal handelt es sich um eine Individuallösung, deren Weiterentwicklung von der Württembergischen Versicherung beauftragt und finanziert wird. Die Basisversion ist und bleibt für alle Versicherungsnehmer kostenfrei. Mit mehreren 1.000 Unternehmen unterschiedlicher Größen, die in mehr als 40 Branchen aktiv sind, ist es trotz starker Bemühungen nicht immer möglich alle individuellen Wünsche und Bedarfe zu adressieren. Mit unseren kostengünstigen Zusatzpaketen schlagen wir die Brücke für all jene, die ein deutliches Plus an Sicherheit erzielen wollen. Aufgrund der kostenfreien Basisversion müssen wir nur die Mehrleistung weiterberechnen und können deutlich niedrigere Preise anbieten als vergleichbare Plattformen.
-              </p>
+
+      <SectionArea backgroundColor='gray'>
+        <VideoOverlapLandscape youTubeVideoId='QVArEtvAGsk'>
+          <section class='flex flex-col space-y-4'>
+            <h2 class='text-xl font-bold md:text-4xl'>
+              <HeadingSegmentSecondary text='Kostenfreie Basisversion' />
+            </h2>
+            <p class='leading-7'>
+              Beim Cyber Portal handelt es sich um eine Individuallösung, deren
+              Weiterentwicklung von der Württembergischen Versicherung
+              beauftragt und finanziert wird. Die Basisversion ist und bleibt
+              für alle Versicherungsnehmer kostenfrei. Mit mehreren 1.000
+              Unternehmen unterschiedlicher Größen, die in mehr als 40 Branchen
+              aktiv sind, ist es trotz starker Bemühungen nicht immer möglich
+              alle individuellen Wünsche und Bedarfe zu adressieren. Mit unseren
+              kostengünstigen Zusatzpaketen schlagen wir die Brücke für all
+              jene, die ein deutliches Plus an Sicherheit erzielen wollen.
+              Aufgrund der kostenfreien Basisversion müssen wir nur die
+              Mehrleistung weiterberechnen und können deutlich niedrigere Preise
+              anbieten als vergleichbare Plattformen.
+            </p>
             <LinkCallToAction
               href='https://e.co-IT.eu/cyber/faq'
               target='_blank'
@@ -377,11 +389,11 @@ export default component$(() => {
           </section>
         </VideoOverlapLandscape>
       </SectionArea>
-      
+
       <SectionArea>
-        <ArticleSection articles={articles2} />        
+        <ArticleSection articles={articles2} />
       </SectionArea>
-      
+
       <SectionArea>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
           <div class='h-1 w-10 bg-primary' />
@@ -411,7 +423,9 @@ export default component$(() => {
           <HeadingArticle text='Nutzungsbasierte Abrechnung.' />
 
           <div class='mt-4 flex items-center justify-center gap-2 p-4 shadow-md'>
-            <span class='font-semibold'>Geben Sie die Anzahl der Empfänger von Phishing-Simulationen ein:  </span>
+            <span class='font-semibold'>
+              Geben Sie die Anzahl der Empfänger von Phishing-Simulationen ein:{' '}
+            </span>
 
             <input
               type='number'
@@ -539,15 +553,16 @@ export default component$(() => {
         </div>
       </SectionArea>
 
-        <SectionArea backgroundColor='gray'>
-          <VideoOverlapLandscape youTubeVideoId='QVArEtvAGsk'>
-            <section class='flex flex-col space-y-4'>
-              <h2 class='text-xl font-bold md:text-4xl'>
-                <HeadingSegmentSecondary text='Alle Funktionen vorgestellt' />
-              </h2>
-              <p class='leading-7'>
-              In diesem Video stellen wir Ihnen alle Funktionen detailliert vor, sodass Sie genau wissen, was Sie mit welchem Paket bekommen.
-              </p>
+      <SectionArea backgroundColor='gray'>
+        <VideoOverlapLandscape youTubeVideoId='QVArEtvAGsk'>
+          <section class='flex flex-col space-y-4'>
+            <h2 class='text-xl font-bold md:text-4xl'>
+              <HeadingSegmentSecondary text='Alle Funktionen vorgestellt' />
+            </h2>
+            <p class='leading-7'>
+              In diesem Video stellen wir Ihnen alle Funktionen detailliert vor,
+              sodass Sie genau wissen, was Sie mit welchem Paket bekommen.
+            </p>
             <LinkCallToAction
               href='https://e.co-IT.eu/cyber/anfrage'
               target='_blank'
@@ -568,7 +583,8 @@ export default component$(() => {
 
           <p class='max-w-xl'>
             Für Kunden, die persönliche Schulung zu schätzen wissen, flankieren
-            wir unser Portal mit maßgeschneiderten Trainings vor Ort und remote. Vereinbaren Sie gerne direkt einen Telefontermin.
+            wir unser Portal mit maßgeschneiderten Trainings vor Ort und remote.
+            Vereinbaren Sie gerne direkt einen Telefontermin.
           </p>
 
           <LinkCallToAction
