@@ -362,7 +362,7 @@ export default component$(() => {
       </SectionArea>
 
       <SectionArea backgroundColor='gray'>
-        <VideoOverlapLandscape youTubeVideoId='QVArEtvAGsk'>
+        <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
             <h2 class='text-xl font-bold md:text-4xl'>
               <HeadingSegmentSecondary text='Kostenfreie Basisversion' />
@@ -422,7 +422,7 @@ export default component$(() => {
       <SectionArea>
         <HeadingArticle text=' Wählen Sie das Paket aus, das am besten zu Ihnen passt.' />
         <div class='mb-4 flex max-w-xs items-center gap-2 rounded-3xl p-8 shadow-md'>
-          <h3 class='text-xl font-bold'>Nutzeranzahl</h3>
+          <h3 class='text-xl font-bold'>Anzahl Anwender</h3>
 
           <input
             type='number'
@@ -458,7 +458,7 @@ export default component$(() => {
               </ul>
             </div>
             <div class='prices self-end'>
-              <span>Benutzer / Monat</span>
+              <span>Anwender / Monat</span>
               <span id='bronzePerUser' class='price'></span>
               <span class='hidden'>Gesamt / Monat</span>
               <span id='bronzePerMonth' class='price hidden'></span>
@@ -541,7 +541,7 @@ export default component$(() => {
       </SectionArea>
 
       <SectionArea backgroundColor='gray'>
-        <VideoOverlapLandscape youTubeVideoId='QVArEtvAGsk'>
+        <VideoOverlapLandscape youTubeVideoId='KSSDqIIikvQ'>
           <section class='flex flex-col space-y-4'>
             <h2 class='text-xl font-bold md:text-4xl'>
               <HeadingSegmentSecondary text='Alle Funktionen vorgestellt' />
@@ -603,7 +603,7 @@ export default component$(() => {
           </p>
 
           <LinkCallToAction
-            href='https://e.co-IT.eu/cyber/umfrage'
+            href='https://e.co-it.eu/cyber/erstberatung'
             target='_blank'
           >
             Erstberatung vereinbaren
