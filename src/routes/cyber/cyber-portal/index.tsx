@@ -13,24 +13,18 @@ import { InfoPopover } from '~/components/info-popover/info-popover';
 import { SectionArea } from '~/components/section-area';
 
 import type { DocumentHead } from '@builder.io/qwik-city';
-import { VideoOverlapLandscape } from '~/components/content-overlap';
+import {
+  ContentOverlapPortrait,
+  VideoOverlapLandscape
+} from '~/components/content-overlap';
 import { HeadingArticle } from '~/components/heading-article';
-import { HeadingSegmentSecondary } from '~/components/heading-segment';
+import {
+  HeadingSegmentSecondary,
+  HeadingSegmentSecondary800
+} from '~/components/heading-segment';
 import { LinkCallToAction } from '~/components/link-call-to-action';
 
 import style from './styles.css?inline';
-
-const articleTop: Article[] = [
-  {
-    direction: 'right',
-    heading: 'Unser Antrieb',
-    text: 'Wir wollen allen die fachliche Kompetenz, die praktischen Fähigkeiten und das notwendige Wissen vermitteln, um in der digitalen Welt sich sicher zu fühlen und sicher zu sein. Das Cyber Portal bietet Ihnen und Ihren Anwendern einen Raum, um nachhaltiges Praxiswissen auf verständliche Weise zu erlernen, dieses mit intensiven Prüfungen und realistischen Simulationen zu festigen und dabei Lernfortschritte methodisch sicherzustellen.',
-    image: {
-      src: '/img/about/flip-chart-session.webp',
-      alt: 'Two colleagues working on the flip chart'
-    }
-  }
-];
 
 const articleBeneathVideo: Article[] = [
   {
@@ -358,7 +352,29 @@ export default component$(() => {
   return (
     <>
       <SectionArea>
-        <ArticleSection articles={articleTop} />
+        <ContentOverlapPortrait
+          image={{
+            source: '/img/cyber/cyber-portal/man-with-rocket.jpg',
+            alternateText: 'Man looking at the sunset'
+          }}
+        >
+          <section q:slot='article' class='flex flex-col space-y-4'>
+            <h2 class='text-xl font-bold md:text-4xl'>
+              <HeadingSegmentSecondary text='Unser' />
+              &nbsp;
+              <HeadingSegmentSecondary800 text='Antrieb' />
+            </h2>
+            <p class='pb-4 leading-7'>
+              Wir wollen allen die fachliche Kompetenz, die praktischen
+              Fähigkeiten und das notwendige Wissen vermitteln, um in der
+              digitalen Welt sich sicher zu fühlen und sicher zu sein. Das Cyber
+              Portal bietet Ihnen und Ihren Anwendern einen Raum, um
+              nachhaltiges Praxiswissen auf verständliche Weise zu erlernen,
+              dieses mit intensiven Prüfungen und realistischen Simulationen zu
+              festigen und dabei Lernfortschritte methodisch sicherzustellen.
+            </p>
+          </section>
+        </ContentOverlapPortrait>
       </SectionArea>
 
       <SectionArea backgroundColor='gray'>
@@ -389,6 +405,37 @@ export default component$(() => {
             </LinkCallToAction>
           </section>
         </VideoOverlapLandscape>
+      </SectionArea>
+
+      <SectionArea>
+        <ContentOverlapPortrait
+          image={{
+            source: '/img/cyber/cyber-portal/planning-table.jpg',
+            alternateText: 'Man looking at the sunset'
+          }}
+        >
+          <section q:slot='article' class='flex flex-col space-y-4'>
+            <h2 class='text-xl font-bold md:text-4xl'>
+              <HeadingSegmentSecondary text='Plus an' />
+              &nbsp;
+              <HeadingSegmentSecondary800 text='Sicherheit' />
+            </h2>
+            <p class='pb-4 leading-7'>
+              Doch was bringt Ihnen eine günstige Lösung, wenn der Mehrwert
+              fehlt? Darum setzen wir ausschließlich Themen um, die Sie sich
+              wünschen: Jeder Abonnent eines jeden Pakets darf abstimmen, was
+              als nächstes realisiert wird. Abonnenten des Pakets „Experte“
+              können zudem auf die Auswahl, über die abgestimmt wird, Einfluss
+              nehmen. Und Sie haben noch einen weiteren Vorteil: Sie müssen kein
+              neues Produkt evaluieren und einführen. Die Integration der
+              Zusatzfunktionen erfolgt nahtlos und sofort bei Kauf. Das kann
+              besonders größeren Unternehmen und Behörden helfen, kraftraubende
+              Genehmigungsprozesse zu beschleunigen und langwierige
+              Ausschreibungsverfahren zu umgehen. Das Basisprodukt ist in Ihrem
+              Haus schließlich freigegeben und bereits eingeführt.
+            </p>
+          </section>
+        </ContentOverlapPortrait>
       </SectionArea>
 
       <SectionArea>
@@ -622,7 +669,7 @@ export const head: DocumentHead = {
       type: 'content-page',
       configuration: {
         backgroundImage: {
-          source: '/img/phishing/header.jpg',
+          source: '/img/cyber/cyber-portal/header.jpg',
           alt: 'Two team mates checking an App on the tablet.'
         },
         heading: 'Cyber Portal',
