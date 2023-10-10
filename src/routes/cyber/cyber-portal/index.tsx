@@ -17,9 +17,10 @@ import { VideoOverlapLandscape } from '~/components/content-overlap';
 import { HeadingArticle } from '~/components/heading-article';
 import { HeadingSegmentSecondary } from '~/components/heading-segment';
 import { LinkCallToAction } from '~/components/link-call-to-action';
+
 import style from './styles.css?inline';
 
-const articles: Article[] = [
+const articleTop: Article[] = [
   {
     direction: 'right',
     heading: 'Unser Antrieb',
@@ -31,7 +32,7 @@ const articles: Article[] = [
   }
 ];
 
-const articles2: Article[] = [
+const articleBeneathVideo: Article[] = [
   {
     direction: 'right',
     heading: 'Plus an Sicherheit',
@@ -42,12 +43,12 @@ const articles2: Article[] = [
   }
 ];
 
-type PhisingFeature = {
+type PhishingFeature = {
   text: string;
   detail?: string;
 };
 
-const starterFeatures: PhisingFeature[] = [
+const starterFeatures: PhishingFeature[] = [
   {
     text: 'Anzahl E-Mails: 12',
     detail: 'Anzahl der Phising Mails pro Anwender und Jahr'
@@ -65,7 +66,7 @@ const starterFeatures: PhisingFeature[] = [
   }
 ];
 
-const profiFeatures: PhisingFeature[] = [
+const profiFeatures: PhishingFeature[] = [
   {
     text: 'Anzahl E-Mails: 24',
     detail: 'Anzahl der Phising Mails pro Anwender und Jahr'
@@ -102,7 +103,7 @@ const profiFeatures: PhisingFeature[] = [
   }
 ];
 
-const expertFeatures: PhisingFeature[] = [
+const expertFeatures: PhishingFeature[] = [
   {
     text: 'Anzahl E-Mails: 52',
     detail: 'Anzahl der Phising Mails pro Anwender und Jahr'
@@ -357,7 +358,7 @@ export default component$(() => {
   return (
     <>
       <SectionArea>
-        <ArticleSection articles={articles} />
+        <ArticleSection articles={articleTop} />
       </SectionArea>
 
       <SectionArea backgroundColor='gray'>
@@ -391,10 +392,10 @@ export default component$(() => {
       </SectionArea>
 
       <SectionArea>
-        <ArticleSection articles={articles2} />
+        <ArticleSection articles={articleBeneathVideo} />
       </SectionArea>
 
-      <SectionArea>
+      <SectionArea backgroundColor='gray'>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
           <div class='h-1 w-10 bg-primary' />
 
@@ -419,31 +420,26 @@ export default component$(() => {
       </SectionArea>
 
       <SectionArea>
-        <div class='grid place-content-center'>
-          <HeadingArticle text='Nutzungsbasierte Abrechnung.' />
-
-          <div class='mt-4 flex items-center justify-center gap-2 p-4 shadow-md'>
-            <span class='font-semibold'>
-              Geben Sie die Anzahl der Empfänger von Phishing-Simulationen ein:{' '}
-            </span>
-
-            <input
-              type='number'
-              id='count'
-              required
-              value='1'
-              min='1'
-              class='rounded-md border border-secondary-900'
-            />
-          </div>
-        </div>
-      </SectionArea>
-
-      <SectionArea>
         <HeadingArticle text=' Wählen Sie das Paket aus, das am besten zu Ihnen passt.' />
+        <div class='mb-4 flex max-w-xs items-center gap-2 rounded-3xl p-8 shadow-md'>
+          <h3 class='text-xl font-bold'>Nutzeranzahl</h3>
+
+          <input
+            type='number'
+            id='count'
+            required
+            value='1'
+            min='1'
+            max='6000'
+            class='border-b border-secondary-900 text-center'
+          />
+        </div>
 
         <div class='pricing-tiers'>
-          <div class='card grid items-start gap-8 shadow-md' id='bronze'>
+          <div
+            class='card grid max-w-xs items-start gap-8 shadow-md'
+            id='bronze'
+          >
             <div class='features'>
               <h3 class='heading'>Starter</h3>
               <ul>
@@ -467,18 +463,17 @@ export default component$(() => {
               <span class='hidden'>Gesamt / Monat</span>
               <span id='bronzePerMonth' class='price hidden'></span>
               <span>Gesamt / Jahr</span>
-              <p>
-                <span id='bronzePerYear' class='line-through'></span>
-                &nbsp;
-                <span class='price'>{bronzePerYearDiscountEuro}</span>
-                &nbsp;
-                <span class='mr-2 rounded bg-secondary-900 px-2.5 py-0.5 text-xs font-medium text-accent accent-primary'>
-                  12 % Rabatt
-                </span>
-              </p>
+              <span id='bronzePerYear' class='text-right line-through'></span>
+              <span class='grid items-center rounded bg-secondary-900 text-center text-xs font-medium text-accent accent-primary'>
+                12% Rabatt
+              </span>
+              <span class='price'>{bronzePerYearDiscountEuro}</span>
             </div>
           </div>
-          <div class='card grid items-start gap-8 shadow-xl' id='silber'>
+          <div
+            class='card grid max-w-xs items-start gap-8 shadow-xl'
+            id='silber'
+          >
             <div class='features'>
               <h3 class='heading'>Profi</h3>
               <ul>
@@ -503,18 +498,14 @@ export default component$(() => {
               <span class='hidden'>Gesamt / Monat</span>
               <span id='silberPerMonth' class='price hidden'></span>
               <span>Gesamt / Jahr</span>
-              <p>
-                <span id='silberPerYear' class='line-through'></span>
-                &nbsp;
-                <span class='price'>{silberPerYearDiscountEuro}</span>
-                &nbsp;
-                <span class='mr-2 rounded bg-secondary-900 px-2.5 py-0.5 text-xs font-medium text-accent accent-primary'>
-                  12 % Rabatt
-                </span>
-              </p>
+              <span id='silberPerYear' class='text-right line-through'></span>
+              <span class='grid items-center rounded bg-secondary-900 text-center text-xs font-medium text-accent accent-primary'>
+                12% Rabatt
+              </span>
+              <span class='price'>{silberPerYearDiscountEuro}</span>
             </div>
           </div>
-          <div class='card grid items-start gap-8 shadow-md' id='gold'>
+          <div class='card grid max-w-lg items-start gap-8 shadow-md' id='gold'>
             <div class='features'>
               <h3 class='heading'>Experte</h3>
               <ul>
@@ -539,15 +530,11 @@ export default component$(() => {
               <span class='hidden'>Gesamt / Monat</span>
               <span id='goldPerMonth' class='price hidden'></span>
               <span>Gesamt / Jahr</span>
-              <p>
-                <span id='goldPerYear' class='line-through'></span>
-                &nbsp;
-                <span class='price'>{goldPerYearDiscountEuro}</span>
-                &nbsp;
-                <span class='mr-2 rounded bg-secondary-900 px-2.5 py-0.5 text-xs font-medium text-accent accent-primary'>
-                  12 % Rabatt
-                </span>
-              </p>
+              <span id='goldPerYear' class='text-right line-through'></span>
+              <span class='grid items-center rounded bg-secondary-900 text-center text-xs font-medium text-accent accent-primary'>
+                12% Rabatt
+              </span>
+              <span class='price'>{goldPerYearDiscountEuro}</span>
             </div>
           </div>
         </div>
@@ -596,7 +583,7 @@ export default component$(() => {
         </div>
       </SectionArea>
 
-      <SectionArea>
+      <SectionArea backgroundColor='gray'>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
           <div class='h-1 w-10 bg-primary' />
 
