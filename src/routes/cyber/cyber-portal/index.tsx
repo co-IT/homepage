@@ -6,8 +6,6 @@ import {
   useVisibleTask$
 } from '@builder.io/qwik';
 
-import { ArticleSection } from '~/components/article-section';
-import type { Article } from '~/components/article-section/model';
 import { CheckIcon } from '~/components/icons';
 import { InfoPopover } from '~/components/info-popover/info-popover';
 import { SectionArea } from '~/components/section-area';
@@ -25,17 +23,6 @@ import {
 import { LinkCallToAction } from '~/components/link-call-to-action';
 
 import style from './styles.css?inline';
-
-const articleBeneathVideo: Article[] = [
-  {
-    direction: 'right',
-    heading: 'Plus an Sicherheit',
-    text: 'Doch was bringt Ihnen eine günstige Lösung, wenn der Mehrwert fehlt? Darum setzen wir ausschließlich Themen um, die Sie sich wünschen: Jeder Abonnent eines jeden Pakets darf abstimmen, was als nächstes realisiert wird. Abonnenten des Pakets „Experte“ können zudem auf die Auswahl, über die abgestimmt wird, Einfluss nehmen. Und Sie haben noch einen weiteren Vorteil: Sie müssen kein neues Produkt evaluieren und einführen. Die Integration der Zusatzfunktionen erfolgt nahtlos und sofort bei Kauf. Das kann besonders größeren Unternehmen und Behörden helfen, kraftraubende Genehmigungsprozesse zu beschleunigen und langwierige Ausschreibungsverfahren zu umgehen. Das Basisprodukt ist in Ihrem Haus schließlich freigegeben und bereits eingeführt.',
-    image: {
-      src: '/img/quality/team-up.webp'
-    }
-  }
-];
 
 type PhishingFeature = {
   text: string;
@@ -436,10 +423,6 @@ export default component$(() => {
             </p>
           </section>
         </ContentOverlapPortrait>
-      </SectionArea>
-
-      <SectionArea>
-        <ArticleSection articles={articleBeneathVideo} />
       </SectionArea>
 
       <SectionArea backgroundColor='gray'>
