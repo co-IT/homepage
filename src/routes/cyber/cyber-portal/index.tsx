@@ -146,6 +146,43 @@ const expertFeatures: PhishingFeature[] = [
 export default component$(() => {
   useStyles$(style);
 
+  const userCountSig = useSignal<string>();
+  const rangeValueSig = useSignal<string>();
+
+  const durationInMonthSig = useComputed$(() => {
+    const durationMonthMap = {
+      1: 1,
+      2: 3,
+      3: 6,
+      4: 12,
+      5: 18,
+      6: 24,
+      7: 36,
+      8: 48
+    } as const;
+
+    const range = rangeValueSig.value || 1;
+
+    //@ts-ignore
+    return durationMonthMap[range] as number;
+  });
+
+  const discountSig = useComputed$(() => {
+    const discountsAccordingToTerm = {
+      1: 0,
+      3: 0.02,
+      6: 0.04,
+      12: 0.1,
+      18: 0.12,
+      24: 0.15,
+      36: 0.18,
+      48: 0.2
+    } as const;
+
+    // @ts-ignore
+    return discountsAccordingToTerm[durationInMonthSig.value];
+  });
+
   const bronzePerYearDiscountSig = useSignal(0);
   const bronzePerYearDiscountEuro = useComputed$(() =>
     bronzePerYearDiscountSig.value.toLocaleString('de-DE', {
@@ -170,8 +207,13 @@ export default component$(() => {
     })
   );
 
-  useVisibleTask$(() => {
-    const discount = 0.12;
+  useVisibleTask$(({ track }) => {
+    const userCount = track(() => userCountSig.value);
+    const discount = track(() => discountSig.value);
+
+    if (!userCount || !discount) {
+      return;
+    }
 
     const bronzePerUserElement = document.getElementById('bronzePerUser');
     const bronzePerMonthElement = document.getElementById('bronzePerMonth');
@@ -183,23 +225,9 @@ export default component$(() => {
     const goldPerMonthElement = document.getElementById('goldPerMonth');
     const goldPerYearElement = document.getElementById('goldPerYear');
 
-    const count = document.getElementById('count') as HTMLInputElement;
-
-    if (!count) return;
-
-    count.addEventListener('input', element => {
-      const value = (element.target as HTMLInputElement).valueAsNumber;
-
-      if (!isNaN(value)) updatePrices(value);
-    });
-
-    const initialValue = 1;
-
-    count.value = initialValue.toString();
-    updatePrices(initialValue);
+    updatePrices(+userCount);
 
     function updatePrices(userCount: number) {
-      count.innerText = userCount.toString();
       const bronzePerUserPerMonth = calculateBronzePricing(userCount);
       const bronzePerMonth = bronzePerUserPerMonth * userCount;
       const bronzePerYear = bronzePerMonth * 12;
@@ -237,6 +265,7 @@ export default component$(() => {
       const silberPerUserPerMonth = bronzePerUserPerMonth * 1.3;
       const silberPerMonth = silberPerUserPerMonth * userCount;
       const silberPerYear = silberPerMonth * 12;
+
       silberPerYearDiscountSig.value = silberPerYear - silberPerYear * discount;
 
       silverPerUserElement.innerText = silberPerUserPerMonth.toLocaleString(
@@ -427,18 +456,33 @@ export default component$(() => {
 
       <SectionArea>
         <HeadingArticle text=' Wählen Sie das Paket aus, das am besten zu Ihnen passt.' />
-        <div class='mb-4 flex max-w-xs items-center gap-2 rounded-3xl p-8 shadow-md'>
+        <div class='mb-4 flex items-center gap-4 rounded-3xl p-8 shadow-md'>
           <h3 class='text-xl font-bold'>Anzahl Anwender</h3>
 
           <input
             type='number'
+            bind:value={userCountSig}
             id='count'
             required
-            value='1'
+            value='10'
             min='1'
             max='6000'
             class='border-b border-secondary-900 text-center'
           />
+
+          <h3 class='text-xl font-bold'>Laufzeit</h3>
+
+          <input
+            type='range'
+            bind:value={rangeValueSig}
+            required
+            value={1}
+            min='1'
+            max='8'
+            step='1'
+          />
+
+          <small>{durationInMonthSig.value} Monate</small>
         </div>
 
         <div class='pricing-tiers'>
@@ -471,7 +515,7 @@ export default component$(() => {
               <span>Gesamt / Jahr</span>
               <span id='bronzePerYear' class='text-right line-through'></span>
               <span class='grid items-center rounded bg-secondary-900 text-center text-xs font-medium text-accent accent-primary'>
-                12% Rabatt
+                {discountSig.value * 100}% Rabatt
               </span>
               <span class='price'>{bronzePerYearDiscountEuro}</span>
             </div>
@@ -506,7 +550,7 @@ export default component$(() => {
               <span>Gesamt / Jahr</span>
               <span id='silberPerYear' class='text-right line-through'></span>
               <span class='grid items-center rounded bg-secondary-900 text-center text-xs font-medium text-accent accent-primary'>
-                12% Rabatt
+                {discountSig.value * 100}% Rabatt
               </span>
               <span class='price'>{silberPerYearDiscountEuro}</span>
             </div>
@@ -538,7 +582,7 @@ export default component$(() => {
               <span>Gesamt / Jahr</span>
               <span id='goldPerYear' class='text-right line-through'></span>
               <span class='grid items-center rounded bg-secondary-900 text-center text-xs font-medium text-accent accent-primary'>
-                12% Rabatt
+                {discountSig.value * 100}% Rabatt
               </span>
               <span class='price'>{goldPerYearDiscountEuro}</span>
             </div>
