@@ -338,7 +338,7 @@ export default component$(() => {
 
   return (
     <>
-      <SectionArea>
+      <SectionArea backgroundColor='gray'>
         <ContentOverlapPortrait
           image={{
             source: '/img/cyber/cyber-portal/man-with-rocket.jpg',
@@ -364,7 +364,7 @@ export default component$(() => {
         </ContentOverlapPortrait>
       </SectionArea>
 
-      <SectionArea backgroundColor='gray'>
+      <SectionArea>
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
             <h2 class='text-xl font-bold md:text-4xl'>
@@ -394,7 +394,7 @@ export default component$(() => {
         </VideoOverlapLandscape>
       </SectionArea>
 
-      <SectionArea>
+      <SectionArea backgroundColor='gray'>
         <ContentOverlapPortrait
           image={{
             source: '/img/cyber/cyber-portal/planning-table.jpg',
@@ -423,30 +423,6 @@ export default component$(() => {
             </p>
           </section>
         </ContentOverlapPortrait>
-      </SectionArea>
-
-      <SectionArea backgroundColor='gray'>
-        <div class='mb-14 flex flex-col items-center gap-y-4'>
-          <div class='h-1 w-10 bg-primary' />
-
-          <h2 class='text-secondary text-4xl font-bold leading-10 text-secondary-900'>
-            Teilen Sie uns Ihre Meinung mit
-          </h2>
-
-          <p class='max-w-xl'>
-            Um unsere Pakete noch genauer auf Ihre Bedarfe zuschneiden zu
-            können, machen wir aktuell eine anonyme Umfrage Teil Sie uns mit,
-            wie ein perfekt auf Sie abgestimmtes Paket aussieht. Die Umfrage
-            dauert nur 1-2 Minuten.
-          </p>
-
-          <LinkCallToAction
-            href='https://e.co-IT.eu/cyber/umfrage'
-            target='_blank'
-          >
-            Jetzt mitgestalten
-          </LinkCallToAction>
-        </div>
       </SectionArea>
 
       <SectionArea>
@@ -571,6 +547,30 @@ export default component$(() => {
       </SectionArea>
 
       <SectionArea backgroundColor='gray'>
+        <div class='mb-14 flex flex-col items-center gap-y-4'>
+          <div class='h-1 w-10 bg-primary' />
+
+          <h2 class='text-secondary text-4xl font-bold leading-10 text-secondary-900'>
+            Teilen Sie uns Ihre Meinung mit
+          </h2>
+
+          <p class='max-w-xl'>
+            Um unsere Pakete noch genauer auf Ihre Bedarfe zuschneiden zu
+            können, machen wir aktuell eine anonyme Umfrage Teil Sie uns mit,
+            wie ein perfekt auf Sie abgestimmtes Paket aussieht. Die Umfrage
+            dauert nur 1-2 Minuten.
+          </p>
+
+          <LinkCallToAction
+            href='https://e.co-IT.eu/cyber/umfrage'
+            target='_blank'
+          >
+            Jetzt mitgestalten
+          </LinkCallToAction>
+        </div>
+      </SectionArea>
+
+      <SectionArea>
         <VideoOverlapLandscape youTubeVideoId='KSSDqIIikvQ'>
           <section class='flex flex-col space-y-4'>
             <h2 class='text-xl font-bold md:text-4xl'>
@@ -590,7 +590,7 @@ export default component$(() => {
         </VideoOverlapLandscape>
       </SectionArea>
 
-      <SectionArea>
+      <SectionArea backgroundColor='gray'>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
           <div class='h-1 w-10 bg-primary' />
 
@@ -613,7 +613,7 @@ export default component$(() => {
         </div>
       </SectionArea>
 
-      <SectionArea backgroundColor='gray'>
+      <SectionArea>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
           <div class='h-1 w-10 bg-primary' />
 
