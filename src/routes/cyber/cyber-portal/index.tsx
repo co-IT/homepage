@@ -2,8 +2,9 @@ import {
   component$,
   useComputed$,
   useSignal,
+  useStore,
   useStyles$,
-  useVisibleTask$
+  useTask$
 } from '@builder.io/qwik';
 
 import { CheckIcon } from '~/components/icons';
@@ -22,6 +23,9 @@ import {
 import { LinkCallToAction } from '~/components/link-call-to-action';
 
 import type { DocumentHead } from '@builder.io/qwik-city';
+import { ShieldCheckmarkIcon } from '../../../components/icons/shield-checkmark-icon';
+import { StarIcon } from '../../../components/icons/star-icon';
+import { ThumbsUpIcon } from '../../../components/icons/thumbs-up-icon';
 import style from './styles.css?inline';
 
 type PhishingFeature = {
@@ -146,137 +150,109 @@ const expertFeatures: PhishingFeature[] = [
 export default component$(() => {
   useStyles$(style);
 
-  const bronzePerYearDiscountSig = useSignal(0);
-  const bronzePerYearDiscountEuro = useComputed$(() =>
-    bronzePerYearDiscountSig.value.toLocaleString('de-DE', {
+  const userCountSig = useSignal<string>('10');
+  const rangeValueSig = useSignal<string>('1');
+
+  const toEuro = (amount: number) =>
+    amount.toLocaleString('de-DE', {
       style: 'currency',
       currency: 'EUR'
-    })
-  );
-
-  const silberPerYearDiscountSig = useSignal(0);
-  const silberPerYearDiscountEuro = useComputed$(() =>
-    silberPerYearDiscountSig.value.toLocaleString('de-DE', {
-      style: 'currency',
-      currency: 'EUR'
-    })
-  );
-
-  const goldPerYearDiscountSig = useSignal(0);
-  const goldPerYearDiscountEuro = useComputed$(() =>
-    goldPerYearDiscountSig.value.toLocaleString('de-DE', {
-      style: 'currency',
-      currency: 'EUR'
-    })
-  );
-
-  useVisibleTask$(() => {
-    const discount = 0.12;
-
-    const bronzePerUserElement = document.getElementById('bronzePerUser');
-    const bronzePerMonthElement = document.getElementById('bronzePerMonth');
-    const bronzePerYearElement = document.getElementById('bronzePerYear');
-    const silverPerUserElement = document.getElementById('silberPerUser');
-    const silverPerMonthElement = document.getElementById('silberPerMonth');
-    const silverPerYearElement = document.getElementById('silberPerYear');
-    const goldPerUserElement = document.getElementById('goldPerUser');
-    const goldPerMonthElement = document.getElementById('goldPerMonth');
-    const goldPerYearElement = document.getElementById('goldPerYear');
-
-    const count = document.getElementById('count') as HTMLInputElement;
-
-    if (!count) return;
-
-    count.addEventListener('input', element => {
-      const value = (element.target as HTMLInputElement).valueAsNumber;
-
-      if (!isNaN(value)) updatePrices(value);
     });
 
-    const initialValue = 1;
+  const pricingTier = useStore({
+    starter: {
+      pricePerUserPerMonth: 0,
+      pricePerYear: 0,
+      pricePerYearWithDiscount: 0
+    },
+    professional: {
+      pricePerUserPerMonth: 0,
+      pricePerYear: 0,
+      totalPerYearWithDiscount: 0
+    },
+    expert: {
+      pricePerUserPerMonth: 0,
+      pricePerYear: 0,
+      totalPerYearWithDiscount: 0
+    }
+  });
 
-    count.value = initialValue.toString();
-    updatePrices(initialValue);
+  const durationInMonthSig = useComputed$(() => {
+    const durationMonthMap = {
+      1: 1,
+      2: 3,
+      3: 6,
+      4: 12,
+      5: 18,
+      6: 24,
+      7: 36,
+      8: 48
+    } as const;
+
+    const range = rangeValueSig.value || 1;
+
+    //@ts-ignore
+    return durationMonthMap[range] as number;
+  });
+
+  const discountSig = useComputed$(() => {
+    const discountsAccordingToTerm = {
+      1: 0,
+      3: 0.02,
+      6: 0.04,
+      12: 0.1,
+      18: 0.12,
+      24: 0.15,
+      36: 0.18,
+      48: 0.2
+    } as const;
+
+    // @ts-ignore
+    return discountsAccordingToTerm[durationInMonthSig.value];
+  });
+
+  useTask$(({ track }) => {
+    const userCount = track(() => userCountSig.value);
+    const discount = track(() => discountSig.value);
+
+    if (userCount === undefined || discount === undefined) {
+      return;
+    }
+
+    updatePrices(+userCount);
 
     function updatePrices(userCount: number) {
-      count.innerText = userCount.toString();
-      const bronzePerUserPerMonth = calculateBronzePricing(userCount);
-      const bronzePerMonth = bronzePerUserPerMonth * userCount;
-      const bronzePerYear = bronzePerMonth * 12;
-      bronzePerYearDiscountSig.value = bronzePerYear - bronzePerYear * discount;
+      pricingTier.starter.pricePerUserPerMonth =
+        calculateBronzePricing(userCount);
 
-      if (
-        !bronzePerUserElement ||
-        !bronzePerMonthElement ||
-        !bronzePerYearElement ||
-        !silverPerUserElement ||
-        !silverPerMonthElement ||
-        !silverPerYearElement ||
-        !goldPerUserElement ||
-        !goldPerMonthElement ||
-        !goldPerYearElement
-      ) {
-        return;
-      }
+      pricingTier.starter.pricePerYear =
+        pricingTier.starter.pricePerUserPerMonth * userCount * 12;
 
-      bronzePerUserElement.innerText = bronzePerUserPerMonth.toLocaleString(
-        'de-DE',
-        { style: 'currency', currency: 'EUR' }
-      );
+      pricingTier.starter.pricePerYearWithDiscount =
+        pricingTier.starter.pricePerYear -
+        pricingTier.starter.pricePerYear * discount;
 
-      bronzePerMonthElement.innerText = bronzePerMonth.toLocaleString('de-DE', {
-        style: 'currency',
-        currency: 'EUR'
-      });
+      pricingTier.professional.pricePerUserPerMonth =
+        pricingTier.starter.pricePerUserPerMonth * 1.3;
 
-      bronzePerYearElement.innerText = bronzePerYear.toLocaleString('de-DE', {
-        style: 'currency',
-        currency: 'EUR'
-      });
+      pricingTier.professional.pricePerYear =
+        pricingTier.professional.pricePerUserPerMonth * userCount * 12;
 
-      const silberPerUserPerMonth = bronzePerUserPerMonth * 1.3;
-      const silberPerMonth = silberPerUserPerMonth * userCount;
-      const silberPerYear = silberPerMonth * 12;
-      silberPerYearDiscountSig.value = silberPerYear - silberPerYear * discount;
+      pricingTier.professional.totalPerYearWithDiscount =
+        pricingTier.professional.pricePerYear -
+        pricingTier.professional.pricePerYear * discount;
 
-      silverPerUserElement.innerText = silberPerUserPerMonth.toLocaleString(
-        'de-DE',
-        { style: 'currency', currency: 'EUR' }
-      );
+      pricingTier.expert.pricePerUserPerMonth =
+        pricingTier.starter.pricePerUserPerMonth * 2;
 
-      silverPerMonthElement.innerText = silberPerMonth.toLocaleString('de-DE', {
-        style: 'currency',
-        currency: 'EUR'
-      });
+      pricingTier.expert.pricePerYear =
+        pricingTier.expert.pricePerUserPerMonth * userCount * 12;
 
-      silverPerYearElement.innerText = silberPerYear.toLocaleString('de-DE', {
-        style: 'currency',
-        currency: 'EUR'
-      });
-
-      const goldPerUserPerMonth = bronzePerUserPerMonth * 2;
-      const goldPerMonth = goldPerUserPerMonth * userCount;
-      const goldPerYear = goldPerMonth * 12;
-      goldPerYearDiscountSig.value = goldPerYear - goldPerYear * discount;
-
-      goldPerUserElement.innerText = goldPerUserPerMonth.toLocaleString(
-        'de-DE',
-        {
-          style: 'currency',
-          currency: 'EUR'
-        }
-      );
-
-      goldPerMonthElement.innerText = goldPerMonth.toLocaleString('de-DE', {
-        style: 'currency',
-        currency: 'EUR'
-      });
-
-      goldPerYearElement.innerText = goldPerYear.toLocaleString('de-DE', {
-        style: 'currency',
-        currency: 'EUR'
-      });
+      pricingTier.expert.totalPerYearWithDiscount =
+        pricingTier.expert.pricePerYear -
+        pricingTier.expert.pricePerYear * discount;
     }
+
     function calculateBronzePricing(wantedUsers: number) {
       wantedUsers = wantedUsers < 1 ? 1 : wantedUsers;
       const pricingBronze = [
@@ -426,19 +402,34 @@ export default component$(() => {
       </SectionArea>
 
       <SectionArea>
-        <HeadingArticle text=' Wählen Sie das Paket aus, das am besten zu Ihnen passt.' />
-        <div class='mb-4 flex max-w-xs items-center gap-2 rounded-3xl p-8 shadow-md'>
+        <HeadingArticle text='Wählen Sie das Paket aus, das am besten zu Ihnen passt.' />
+        <div class='mb-4 flex max-w-3xl items-center gap-4 rounded-3xl p-8 shadow-md'>
           <h3 class='text-xl font-bold'>Anzahl Anwender</h3>
-
           <input
             type='number'
-            id='count'
+            bind:value={userCountSig}
             required
-            value='1'
+            value='10'
             min='1'
             max='6000'
             class='border-b border-secondary-900 text-center'
           />
+          <h3 class='text-xl font-bold'>Laufzeit</h3>
+          <input
+            type='range'
+            bind:value={rangeValueSig}
+            required
+            min='1'
+            max='8'
+            step='1'
+          />
+          {durationInMonthSig.value === 1 && (
+            <small>mindestens {durationInMonthSig.value} Monat</small>
+          )}
+
+          {durationInMonthSig.value > 1 && (
+            <small>mindestens {durationInMonthSig.value} Monate</small>
+          )}
         </div>
 
         <div class='pricing-tiers'>
@@ -447,7 +438,10 @@ export default component$(() => {
             id='bronze'
           >
             <div class='features'>
-              <h3 class='heading'>Starter</h3>
+              <h3 class='mb-4 flex items-center gap-4 text-3xl font-bold'>
+                <ThumbsUpIcon />
+                Starter
+              </h3>
               <ul>
                 {starterFeatures.map((feature, key) => {
                   return (
@@ -465,23 +459,29 @@ export default component$(() => {
             </div>
             <div class='prices self-end'>
               <span>Anwender / Monat</span>
-              <span id='bronzePerUser' class='price'></span>
+              <span class='price'>
+                {toEuro(pricingTier.starter.pricePerUserPerMonth)}
+              </span>
               <span class='hidden'>Gesamt / Monat</span>
               <span id='bronzePerMonth' class='price hidden'></span>
               <span>Gesamt / Jahr</span>
-              <span id='bronzePerYear' class='text-right line-through'></span>
-              <span class='grid items-center rounded bg-secondary-900 text-center text-xs font-medium text-accent accent-primary'>
-                12% Rabatt
+              <span class='text-right line-through'>
+                {toEuro(pricingTier.starter.pricePerYear)}
               </span>
-              <span class='price'>{bronzePerYearDiscountEuro}</span>
+              <span class='grid items-center rounded bg-secondary-900 text-center text-xs font-medium text-accent accent-primary'>
+                {discountSig.value * 100}% Rabatt
+              </span>
+              <span class='price'>
+                {toEuro(pricingTier.starter.pricePerYearWithDiscount)}
+              </span>
             </div>
           </div>
-          <div
-            class='card grid max-w-xs items-start gap-8 shadow-xl'
-            id='silber'
-          >
+          <div class='card grid max-w-xs items-start gap-8 shadow-xl'>
             <div class='features'>
-              <h3 class='heading'>Profi</h3>
+              <h3 class='mb-4 flex items-center gap-4 text-3xl font-bold'>
+                <StarIcon />
+                Profi
+              </h3>
               <ul>
                 {profiFeatures.map((feature, key) => {
                   return (
@@ -500,20 +500,27 @@ export default component$(() => {
 
             <div class='prices self-end'>
               <span>Benutzer / Monat</span>
-              <span id='silberPerUser' class='price'></span>
-              <span class='hidden'>Gesamt / Monat</span>
-              <span id='silberPerMonth' class='price hidden'></span>
-              <span>Gesamt / Jahr</span>
-              <span id='silberPerYear' class='text-right line-through'></span>
-              <span class='grid items-center rounded bg-secondary-900 text-center text-xs font-medium text-accent accent-primary'>
-                12% Rabatt
+              <span class='price'>
+                {toEuro(pricingTier.professional.pricePerUserPerMonth)}
               </span>
-              <span class='price'>{silberPerYearDiscountEuro}</span>
+              <span>Gesamt / Jahr</span>
+              <span class='text-right line-through'>
+                {toEuro(pricingTier.professional.pricePerYear)}
+              </span>
+              <span class='grid items-center rounded bg-secondary-900 text-center text-xs font-medium text-accent accent-primary'>
+                {discountSig.value * 100}% Rabatt
+              </span>
+              <span class='price'>
+                {toEuro(pricingTier.professional.totalPerYearWithDiscount)}
+              </span>
             </div>
           </div>
           <div class='card grid max-w-lg items-start gap-8 shadow-md' id='gold'>
             <div class='features'>
-              <h3 class='heading'>Experte</h3>
+              <h3 class='mb-4 flex items-center gap-4 text-3xl font-bold'>
+                <ShieldCheckmarkIcon />
+                Experte
+              </h3>
               <ul>
                 {expertFeatures.map((feature, key) => {
                   return (
@@ -532,15 +539,19 @@ export default component$(() => {
 
             <div class='prices self-end'>
               <span>Benutzer / Monat</span>
-              <span id='goldPerUser' class='price'></span>
-              <span class='hidden'>Gesamt / Monat</span>
-              <span id='goldPerMonth' class='price hidden'></span>
-              <span>Gesamt / Jahr</span>
-              <span id='goldPerYear' class='text-right line-through'></span>
-              <span class='grid items-center rounded bg-secondary-900 text-center text-xs font-medium text-accent accent-primary'>
-                12% Rabatt
+              <span class='price'>
+                {toEuro(pricingTier.expert.pricePerUserPerMonth)}
               </span>
-              <span class='price'>{goldPerYearDiscountEuro}</span>
+              <span>Gesamt / Jahr</span>
+              <span class='text-right line-through'>
+                {toEuro(pricingTier.expert.pricePerYear)}
+              </span>
+              <span class='grid items-center rounded bg-secondary-900 text-center text-xs font-medium text-accent accent-primary'>
+                {discountSig.value * 100}% Rabatt
+              </span>
+              <span class='price'>
+                {toEuro(pricingTier.expert.totalPerYearWithDiscount)}
+              </span>
             </div>
           </div>
         </div>
