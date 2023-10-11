@@ -147,8 +147,8 @@ const expertFeatures: PhishingFeature[] = [
 export default component$(() => {
   useStyles$(style);
 
-  const userCountSig = useSignal<string>();
-  const rangeValueSig = useSignal<string>();
+  const userCountSig = useSignal<string>('10');
+  const rangeValueSig = useSignal<string>('1');
 
   const toEuro = (amount: number) =>
     amount.toLocaleString('de-DE', {
@@ -163,13 +163,13 @@ export default component$(() => {
       pricePerYearWithDiscount: 0
     },
     professional: {
-      userPerMonth: 0,
-      totalPerYear: 0,
+      pricePerUserPerMonth: 0,
+      pricePerYear: 0,
       totalPerYearWithDiscount: 0
     },
     expert: {
-      userPerMonth: 0,
-      totalPerYear: 0,
+      pricePerUserPerMonth: 0,
+      pricePerYear: 0,
       totalPerYearWithDiscount: 0
     }
   });
@@ -208,22 +208,6 @@ export default component$(() => {
     return discountsAccordingToTerm[durationInMonthSig.value];
   });
 
-  const silberPerYearDiscountSig = useSignal(0);
-  const silberPerYearDiscountEuro = useComputed$(() =>
-    silberPerYearDiscountSig.value.toLocaleString('de-DE', {
-      style: 'currency',
-      currency: 'EUR'
-    })
-  );
-
-  const goldPerYearDiscountSig = useSignal(0);
-  const goldPerYearDiscountEuro = useComputed$(() =>
-    goldPerYearDiscountSig.value.toLocaleString('de-DE', {
-      style: 'currency',
-      currency: 'EUR'
-    })
-  );
-
   useVisibleTask$(({ track }) => {
     const userCount = track(() => userCountSig.value);
     const discount = track(() => discountSig.value);
@@ -231,13 +215,6 @@ export default component$(() => {
     if (userCount === undefined || discount === undefined) {
       return;
     }
-
-    const silverPerUserElement = document.getElementById('silberPerUser');
-    const silverPerMonthElement = document.getElementById('silberPerMonth');
-    const silverPerYearElement = document.getElementById('silberPerYear');
-    const goldPerUserElement = document.getElementById('goldPerUser');
-    const goldPerMonthElement = document.getElementById('goldPerMonth');
-    const goldPerYearElement = document.getElementById('goldPerYear');
 
     updatePrices(+userCount);
 
@@ -252,62 +229,27 @@ export default component$(() => {
         pricingTier.starter.pricePerYear -
         pricingTier.starter.pricePerYear * discount;
 
-      if (
-        !silverPerUserElement ||
-        !silverPerMonthElement ||
-        !silverPerYearElement ||
-        !goldPerUserElement ||
-        !goldPerMonthElement ||
-        !goldPerYearElement
-      ) {
-        return;
-      }
-
-      const silberPerUserPerMonth =
+      pricingTier.professional.pricePerUserPerMonth =
         pricingTier.starter.pricePerUserPerMonth * 1.3;
-      const silberPerMonth = silberPerUserPerMonth * userCount;
-      const silberPerYear = silberPerMonth * 12;
 
-      silberPerYearDiscountSig.value = silberPerYear - silberPerYear * discount;
+      pricingTier.professional.pricePerYear =
+        pricingTier.professional.pricePerUserPerMonth * userCount * 12;
 
-      silverPerUserElement.innerText = silberPerUserPerMonth.toLocaleString(
-        'de-DE',
-        { style: 'currency', currency: 'EUR' }
-      );
+      pricingTier.professional.totalPerYearWithDiscount =
+        pricingTier.professional.pricePerYear -
+        pricingTier.professional.pricePerYear * discount;
 
-      silverPerMonthElement.innerText = silberPerMonth.toLocaleString('de-DE', {
-        style: 'currency',
-        currency: 'EUR'
-      });
+      pricingTier.expert.pricePerUserPerMonth =
+        pricingTier.starter.pricePerUserPerMonth * 2;
 
-      silverPerYearElement.innerText = silberPerYear.toLocaleString('de-DE', {
-        style: 'currency',
-        currency: 'EUR'
-      });
+      pricingTier.expert.pricePerYear =
+        pricingTier.expert.pricePerUserPerMonth * userCount * 12;
 
-      const goldPerUserPerMonth = pricingTier.starter.pricePerUserPerMonth * 2;
-      const goldPerMonth = goldPerUserPerMonth * userCount;
-      const goldPerYear = goldPerMonth * 12;
-      goldPerYearDiscountSig.value = goldPerYear - goldPerYear * discount;
-
-      goldPerUserElement.innerText = goldPerUserPerMonth.toLocaleString(
-        'de-DE',
-        {
-          style: 'currency',
-          currency: 'EUR'
-        }
-      );
-
-      goldPerMonthElement.innerText = goldPerMonth.toLocaleString('de-DE', {
-        style: 'currency',
-        currency: 'EUR'
-      });
-
-      goldPerYearElement.innerText = goldPerYear.toLocaleString('de-DE', {
-        style: 'currency',
-        currency: 'EUR'
-      });
+      pricingTier.expert.totalPerYearWithDiscount =
+        pricingTier.expert.pricePerYear -
+        pricingTier.expert.pricePerYear * discount;
     }
+
     function calculateBronzePricing(wantedUsers: number) {
       wantedUsers = wantedUsers < 1 ? 1 : wantedUsers;
       const pricingBronze = [
@@ -527,10 +469,7 @@ export default component$(() => {
               </span>
             </div>
           </div>
-          <div
-            class='card grid max-w-xs items-start gap-8 shadow-xl'
-            id='silber'
-          >
+          <div class='card grid max-w-xs items-start gap-8 shadow-xl'>
             <div class='features'>
               <h3 class='heading'>Profi</h3>
               <ul>
@@ -551,15 +490,19 @@ export default component$(() => {
 
             <div class='prices self-end'>
               <span>Benutzer / Monat</span>
-              <span id='silberPerUser' class='price'></span>
-              <span class='hidden'>Gesamt / Monat</span>
-              <span id='silberPerMonth' class='price hidden'></span>
+              <span class='price'>
+                {toEuro(pricingTier.professional.pricePerUserPerMonth)}
+              </span>
               <span>Gesamt / Jahr</span>
-              <span id='silberPerYear' class='text-right line-through'></span>
+              <span class='text-right line-through'>
+                {toEuro(pricingTier.professional.pricePerYear)}
+              </span>
               <span class='grid items-center rounded bg-secondary-900 text-center text-xs font-medium text-accent accent-primary'>
                 {discountSig.value * 100}% Rabatt
               </span>
-              <span class='price'>{silberPerYearDiscountEuro}</span>
+              <span class='price'>
+                {toEuro(pricingTier.professional.totalPerYearWithDiscount)}
+              </span>
             </div>
           </div>
           <div class='card grid max-w-lg items-start gap-8 shadow-md' id='gold'>
@@ -583,15 +526,19 @@ export default component$(() => {
 
             <div class='prices self-end'>
               <span>Benutzer / Monat</span>
-              <span id='goldPerUser' class='price'></span>
-              <span class='hidden'>Gesamt / Monat</span>
-              <span id='goldPerMonth' class='price hidden'></span>
+              <span class='price'>
+                {toEuro(pricingTier.expert.pricePerUserPerMonth)}
+              </span>
               <span>Gesamt / Jahr</span>
-              <span id='goldPerYear' class='text-right line-through'></span>
+              <span class='text-right line-through'>
+                {toEuro(pricingTier.expert.pricePerYear)}
+              </span>
               <span class='grid items-center rounded bg-secondary-900 text-center text-xs font-medium text-accent accent-primary'>
                 {discountSig.value * 100}% Rabatt
               </span>
-              <span class='price'>{goldPerYearDiscountEuro}</span>
+              <span class='price'>
+                {toEuro(pricingTier.expert.totalPerYearWithDiscount)}
+              </span>
             </div>
           </div>
         </div>
