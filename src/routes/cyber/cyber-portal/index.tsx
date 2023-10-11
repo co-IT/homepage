@@ -2,6 +2,7 @@ import {
   component$,
   useComputed$,
   useSignal,
+  useStore,
   useStyles$,
   useVisibleTask$
 } from '@builder.io/qwik';
@@ -148,6 +149,24 @@ export default component$(() => {
 
   const userCountSig = useSignal<string>();
   const rangeValueSig = useSignal<string>();
+
+  const pricingTier = useStore({
+    starter: {
+      userPerMonth: 0,
+      totalPerYear: 0,
+      totalPerYearWithDiscount: 0
+    },
+    professional: {
+      userPerMonth: 0,
+      totalPerYear: 0,
+      totalPerYearWithDiscount: 0
+    },
+    expert: {
+      userPerMonth: 0,
+      totalPerYear: 0,
+      totalPerYearWithDiscount: 0
+    }
+  });
 
   const durationInMonthSig = useComputed$(() => {
     const durationMonthMap = {
