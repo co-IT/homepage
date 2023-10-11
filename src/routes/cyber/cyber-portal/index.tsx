@@ -23,6 +23,9 @@ import {
 import { LinkCallToAction } from '~/components/link-call-to-action';
 
 import type { DocumentHead } from '@builder.io/qwik-city';
+import { ShieldCheckmarkIcon } from '../../../components/icons/shield-checkmark-icon';
+import { StarIcon } from '../../../components/icons/star-icon';
+import { ThumbsUpIcon } from '../../../components/icons/thumbs-up-icon';
 import style from './styles.css?inline';
 
 type PhishingFeature = {
@@ -399,8 +402,8 @@ export default component$(() => {
       </SectionArea>
 
       <SectionArea>
-        <HeadingArticle text=' Wählen Sie das Paket aus, das am besten zu Ihnen passt.' />
-        <div class='mb-4 flex items-center gap-4 rounded-3xl p-8 shadow-md'>
+        <HeadingArticle text='Wählen Sie das Paket aus, das am besten zu Ihnen passt.' />
+        <div class='mb-4 flex max-w-3xl items-center gap-4 rounded-3xl p-8 shadow-md'>
           <h3 class='text-xl font-bold'>Anzahl Anwender</h3>
           <input
             type='number'
@@ -435,7 +438,10 @@ export default component$(() => {
             id='bronze'
           >
             <div class='features'>
-              <h3 class='heading'>Starter</h3>
+              <h3 class='mb-4 flex items-center gap-4 text-3xl font-bold'>
+                <ThumbsUpIcon />
+                Starter
+              </h3>
               <ul>
                 {starterFeatures.map((feature, key) => {
                   return (
@@ -472,7 +478,10 @@ export default component$(() => {
           </div>
           <div class='card grid max-w-xs items-start gap-8 shadow-xl'>
             <div class='features'>
-              <h3 class='heading'>Profi</h3>
+              <h3 class='mb-4 flex items-center gap-4 text-3xl font-bold'>
+                <StarIcon />
+                Profi
+              </h3>
               <ul>
                 {profiFeatures.map((feature, key) => {
                   return (
@@ -508,7 +517,10 @@ export default component$(() => {
           </div>
           <div class='card grid max-w-lg items-start gap-8 shadow-md' id='gold'>
             <div class='features'>
-              <h3 class='heading'>Experte</h3>
+              <h3 class='mb-4 flex items-center gap-4 text-3xl font-bold'>
+                <ShieldCheckmarkIcon />
+                Experte
+              </h3>
               <ul>
                 {expertFeatures.map((feature, key) => {
                   return (
