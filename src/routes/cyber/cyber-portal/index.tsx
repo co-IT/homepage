@@ -150,11 +150,17 @@ export default component$(() => {
   const userCountSig = useSignal<string>();
   const rangeValueSig = useSignal<string>();
 
+  const toEuro = (amount: number) =>
+    amount.toLocaleString('de-DE', {
+      style: 'currency',
+      currency: 'EUR'
+    });
+
   const pricingTier = useStore({
     starter: {
-      userPerMonth: 0,
-      totalPerYear: 0,
-      totalPerYearWithDiscount: 0
+      pricePerUserPerMonth: 0,
+      pricePerYear: 0,
+      pricePerYearWithDiscount: 0
     },
     professional: {
       userPerMonth: 0,
@@ -202,14 +208,6 @@ export default component$(() => {
     return discountsAccordingToTerm[durationInMonthSig.value];
   });
 
-  const bronzePerYearDiscountSig = useSignal(0);
-  const bronzePerYearDiscountEuro = useComputed$(() =>
-    bronzePerYearDiscountSig.value.toLocaleString('de-DE', {
-      style: 'currency',
-      currency: 'EUR'
-    })
-  );
-
   const silberPerYearDiscountSig = useSignal(0);
   const silberPerYearDiscountEuro = useComputed$(() =>
     silberPerYearDiscountSig.value.toLocaleString('de-DE', {
@@ -230,13 +228,10 @@ export default component$(() => {
     const userCount = track(() => userCountSig.value);
     const discount = track(() => discountSig.value);
 
-    if (!userCount || !discount) {
+    if (userCount === undefined || discount === undefined) {
       return;
     }
 
-    const bronzePerUserElement = document.getElementById('bronzePerUser');
-    const bronzePerMonthElement = document.getElementById('bronzePerMonth');
-    const bronzePerYearElement = document.getElementById('bronzePerYear');
     const silverPerUserElement = document.getElementById('silberPerUser');
     const silverPerMonthElement = document.getElementById('silberPerMonth');
     const silverPerYearElement = document.getElementById('silberPerYear');
@@ -247,15 +242,17 @@ export default component$(() => {
     updatePrices(+userCount);
 
     function updatePrices(userCount: number) {
-      const bronzePerUserPerMonth = calculateBronzePricing(userCount);
-      const bronzePerMonth = bronzePerUserPerMonth * userCount;
-      const bronzePerYear = bronzePerMonth * 12;
-      bronzePerYearDiscountSig.value = bronzePerYear - bronzePerYear * discount;
+      pricingTier.starter.pricePerUserPerMonth =
+        calculateBronzePricing(userCount);
+
+      pricingTier.starter.pricePerYear =
+        pricingTier.starter.pricePerUserPerMonth * userCount * 12;
+
+      pricingTier.starter.pricePerYearWithDiscount =
+        pricingTier.starter.pricePerYear -
+        pricingTier.starter.pricePerYear * discount;
 
       if (
-        !bronzePerUserElement ||
-        !bronzePerMonthElement ||
-        !bronzePerYearElement ||
         !silverPerUserElement ||
         !silverPerMonthElement ||
         !silverPerYearElement ||
@@ -266,22 +263,8 @@ export default component$(() => {
         return;
       }
 
-      bronzePerUserElement.innerText = bronzePerUserPerMonth.toLocaleString(
-        'de-DE',
-        { style: 'currency', currency: 'EUR' }
-      );
-
-      bronzePerMonthElement.innerText = bronzePerMonth.toLocaleString('de-DE', {
-        style: 'currency',
-        currency: 'EUR'
-      });
-
-      bronzePerYearElement.innerText = bronzePerYear.toLocaleString('de-DE', {
-        style: 'currency',
-        currency: 'EUR'
-      });
-
-      const silberPerUserPerMonth = bronzePerUserPerMonth * 1.3;
+      const silberPerUserPerMonth =
+        pricingTier.starter.pricePerUserPerMonth * 1.3;
       const silberPerMonth = silberPerUserPerMonth * userCount;
       const silberPerYear = silberPerMonth * 12;
 
@@ -302,7 +285,7 @@ export default component$(() => {
         currency: 'EUR'
       });
 
-      const goldPerUserPerMonth = bronzePerUserPerMonth * 2;
+      const goldPerUserPerMonth = pricingTier.starter.pricePerUserPerMonth * 2;
       const goldPerMonth = goldPerUserPerMonth * userCount;
       const goldPerYear = goldPerMonth * 12;
       goldPerYearDiscountSig.value = goldPerYear - goldPerYear * discount;
@@ -481,7 +464,6 @@ export default component$(() => {
           <input
             type='number'
             bind:value={userCountSig}
-            id='count'
             required
             value='10'
             min='1'
@@ -528,15 +510,21 @@ export default component$(() => {
             </div>
             <div class='prices self-end'>
               <span>Anwender / Monat</span>
-              <span id='bronzePerUser' class='price'></span>
+              <span class='price'>
+                {toEuro(pricingTier.starter.pricePerUserPerMonth)}
+              </span>
               <span class='hidden'>Gesamt / Monat</span>
               <span id='bronzePerMonth' class='price hidden'></span>
               <span>Gesamt / Jahr</span>
-              <span id='bronzePerYear' class='text-right line-through'></span>
+              <span class='text-right line-through'>
+                {toEuro(pricingTier.starter.pricePerYear)}
+              </span>
               <span class='grid items-center rounded bg-secondary-900 text-center text-xs font-medium text-accent accent-primary'>
                 {discountSig.value * 100}% Rabatt
               </span>
-              <span class='price'>{bronzePerYearDiscountEuro}</span>
+              <span class='price'>
+                {toEuro(pricingTier.starter.pricePerYearWithDiscount)}
+              </span>
             </div>
           </div>
           <div
