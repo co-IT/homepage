@@ -10,7 +10,6 @@ import { CheckIcon } from '~/components/icons';
 import { InfoPopover } from '~/components/info-popover/info-popover';
 import { SectionArea } from '~/components/section-area';
 
-import type { DocumentHead } from '@builder.io/qwik-city';
 import {
   ContentOverlapPortrait,
   VideoOverlapLandscape
@@ -551,6 +550,29 @@ export default component$(() => {
           <div class='h-1 w-10 bg-primary' />
 
           <h2 class='text-secondary text-4xl font-bold leading-10 text-secondary-900'>
+            Fordern Sie Ihr individuelles Angebot an.
+          </h2>
+
+          <p class='max-w-2xl'>
+            Sichern Sie sich Ihr maßgeschneidertes Angebot - unkompliziert und
+            in nur wenigen Schritten! Nach Ihrer Anfrage werden wir uns
+            persönlich bei Ihnen melden, um alle Details zu besprechen
+          </p>
+
+          <LinkCallToAction
+            href='https://e.co-IT.eu/cyber/angebot-anfordern'
+            target='_blank'
+          >
+            Jetzt Angebot anfordern
+          </LinkCallToAction>
+        </div>
+      </SectionArea>
+
+      <SectionArea>
+        <div class='mb-14 flex flex-col items-center gap-y-4'>
+          <div class='h-1 w-10 bg-primary' />
+
+          <h2 class='text-secondary text-4xl font-bold leading-10 text-secondary-900'>
             Teilen Sie uns Ihre Meinung mit
           </h2>
 
@@ -570,7 +592,7 @@ export default component$(() => {
         </div>
       </SectionArea>
 
-      <SectionArea>
+      <SectionArea backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='KSSDqIIikvQ'>
           <section class='flex flex-col space-y-4'>
             <h2 class='text-xl font-bold md:text-4xl'>
@@ -590,7 +612,7 @@ export default component$(() => {
         </VideoOverlapLandscape>
       </SectionArea>
 
-      <SectionArea backgroundColor='gray'>
+      <SectionArea>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
           <div class='h-1 w-10 bg-primary' />
 
@@ -613,7 +635,7 @@ export default component$(() => {
         </div>
       </SectionArea>
 
-      <SectionArea>
+      <SectionArea backgroundColor='gray'>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
           <div class='h-1 w-10 bg-primary' />
 
