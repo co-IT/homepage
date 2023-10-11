@@ -162,18 +162,15 @@ export default component$(() => {
   const pricingTier = useStore({
     starter: {
       pricePerUserPerMonth: 0,
-      pricePerYear: 0,
-      pricePerYearWithDiscount: 0
+      pricePerMonth: 0
     },
     professional: {
       pricePerUserPerMonth: 0,
-      pricePerYear: 0,
-      totalPerYearWithDiscount: 0
+      pricePerYearMonth: 0
     },
     expert: {
       pricePerUserPerMonth: 0,
-      pricePerYear: 0,
-      totalPerYearWithDiscount: 0
+      pricePerMonth: 0
     }
   });
 
@@ -195,7 +192,7 @@ export default component$(() => {
     return durationMonthMap[range] as number;
   });
 
-  const discountSig = useComputed$(() => {
+  const pricingScaleSig = useComputed$(() => {
     const discountsAccordingToTerm = {
       1: 0,
       3: 0.02,
@@ -213,47 +210,37 @@ export default component$(() => {
 
   useTask$(({ track }) => {
     const userCount = track(() => userCountSig.value);
-    const discount = track(() => discountSig.value);
+    const pricingScale = track(() => pricingScaleSig.value);
 
-    if (userCount === undefined || discount === undefined) {
+    if (userCount === undefined || pricingScale === undefined) {
       return;
     }
 
     updatePrices(+userCount);
 
     function updatePrices(userCount: number) {
+      const basePrice = calculateBasePrice(userCount);
+
       pricingTier.starter.pricePerUserPerMonth =
-        calculateBronzePricing(userCount);
+        basePrice - basePrice * pricingScale;
 
-      pricingTier.starter.pricePerYear =
-        pricingTier.starter.pricePerUserPerMonth * userCount * 12;
-
-      pricingTier.starter.pricePerYearWithDiscount =
-        pricingTier.starter.pricePerYear -
-        pricingTier.starter.pricePerYear * discount;
+      pricingTier.starter.pricePerMonth =
+        pricingTier.starter.pricePerUserPerMonth * userCount;
 
       pricingTier.professional.pricePerUserPerMonth =
-        pricingTier.starter.pricePerUserPerMonth * 1.3;
+        basePrice * 1.3 - basePrice * 1.3 * pricingScale;
 
-      pricingTier.professional.pricePerYear =
-        pricingTier.professional.pricePerUserPerMonth * userCount * 12;
-
-      pricingTier.professional.totalPerYearWithDiscount =
-        pricingTier.professional.pricePerYear -
-        pricingTier.professional.pricePerYear * discount;
+      pricingTier.professional.pricePerYearMonth =
+        pricingTier.professional.pricePerUserPerMonth * userCount;
 
       pricingTier.expert.pricePerUserPerMonth =
-        pricingTier.starter.pricePerUserPerMonth * 2;
+        basePrice * 2 - basePrice * 2 * pricingScale;
 
-      pricingTier.expert.pricePerYear =
-        pricingTier.expert.pricePerUserPerMonth * userCount * 12;
-
-      pricingTier.expert.totalPerYearWithDiscount =
-        pricingTier.expert.pricePerYear -
-        pricingTier.expert.pricePerYear * discount;
+      pricingTier.expert.pricePerMonth =
+        pricingTier.expert.pricePerUserPerMonth * userCount;
     }
 
-    function calculateBronzePricing(wantedUsers: number) {
+    function calculateBasePrice(wantedUsers: number) {
       wantedUsers = wantedUsers < 1 ? 1 : wantedUsers;
       const pricingBronze = [
         { user: 1, price: 20 },
@@ -274,9 +261,7 @@ export default component$(() => {
         { user: 5000, price: 0.32 },
         { user: 6000, price: 0.3 }
       ];
-
       const lastElement = pricingBronze[pricingBronze.length - 1];
-
       if (wantedUsers > lastElement.user) return lastElement.price;
 
       let lastBigger = pricingBronze[0];
@@ -288,14 +273,15 @@ export default component$(() => {
         lastSmaller = pricingBronze[i];
       }
 
-      const preis = calculatePointOnLine(
+      const price = calculatePointOnLine(
         lastSmaller.user,
         lastSmaller.price,
         lastBigger.user,
         lastBigger.price,
         wantedUsers
       );
-      return preis;
+
+      return price;
     }
 
     function calculatePointOnLine(
@@ -462,17 +448,9 @@ export default component$(() => {
               <span class='price'>
                 {toEuro(pricingTier.starter.pricePerUserPerMonth)}
               </span>
-              <span class='hidden'>Gesamt / Monat</span>
-              <span id='bronzePerMonth' class='price hidden'></span>
-              <span>Gesamt / Jahr</span>
-              <span class='text-right line-through'>
-                {toEuro(pricingTier.starter.pricePerYear)}
-              </span>
-              <span class='grid items-center rounded bg-secondary-900 text-center text-xs font-medium text-accent accent-primary'>
-                {discountSig.value * 100}% Rabatt
-              </span>
+              <span>Gesamt / Monat</span>
               <span class='price'>
-                {toEuro(pricingTier.starter.pricePerYearWithDiscount)}
+                {toEuro(pricingTier.starter.pricePerMonth)}
               </span>
             </div>
           </div>
@@ -503,15 +481,9 @@ export default component$(() => {
               <span class='price'>
                 {toEuro(pricingTier.professional.pricePerUserPerMonth)}
               </span>
-              <span>Gesamt / Jahr</span>
-              <span class='text-right line-through'>
-                {toEuro(pricingTier.professional.pricePerYear)}
-              </span>
-              <span class='grid items-center rounded bg-secondary-900 text-center text-xs font-medium text-accent accent-primary'>
-                {discountSig.value * 100}% Rabatt
-              </span>
+              <span>Gesamt / Monat</span>
               <span class='price'>
-                {toEuro(pricingTier.professional.totalPerYearWithDiscount)}
+                {toEuro(pricingTier.professional.pricePerYearMonth)}
               </span>
             </div>
           </div>
@@ -542,15 +514,9 @@ export default component$(() => {
               <span class='price'>
                 {toEuro(pricingTier.expert.pricePerUserPerMonth)}
               </span>
-              <span>Gesamt / Jahr</span>
-              <span class='text-right line-through'>
-                {toEuro(pricingTier.expert.pricePerYear)}
-              </span>
-              <span class='grid items-center rounded bg-secondary-900 text-center text-xs font-medium text-accent accent-primary'>
-                {discountSig.value * 100}% Rabatt
-              </span>
+              <span>Gesamt / Monat</span>
               <span class='price'>
-                {toEuro(pricingTier.expert.totalPerYearWithDiscount)}
+                {toEuro(pricingTier.expert.pricePerMonth)}
               </span>
             </div>
           </div>
