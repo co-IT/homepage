@@ -477,7 +477,7 @@ export default component$(() => {
             </div>
 
             <div class='prices self-end'>
-              <span>Benutzer / Monat</span>
+              <span>Anwender / Monat</span>
               <span class='price'>
                 {toEuro(pricingTier.professional.pricePerUserPerMonth)}
               </span>
@@ -510,7 +510,7 @@ export default component$(() => {
             </div>
 
             <div class='prices self-end'>
-              <span>Benutzer / Monat</span>
+              <span>Anwender / Monat</span>
               <span class='price'>
                 {toEuro(pricingTier.expert.pricePerUserPerMonth)}
               </span>
