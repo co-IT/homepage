@@ -21,6 +21,7 @@ import {
 } from '~/components/heading-segment';
 import { LinkCallToAction } from '~/components/link-call-to-action';
 
+import type { DocumentHead } from '@builder.io/qwik-city';
 import style from './styles.css?inline';
 
 type PhishingFeature = {
