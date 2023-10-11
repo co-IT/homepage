@@ -4,7 +4,7 @@ import {
   useSignal,
   useStore,
   useStyles$,
-  useVisibleTask$
+  useTask$
 } from '@builder.io/qwik';
 
 import { CheckIcon } from '~/components/icons';
@@ -208,7 +208,7 @@ export default component$(() => {
     return discountsAccordingToTerm[durationInMonthSig.value];
   });
 
-  useVisibleTask$(({ track }) => {
+  useTask$(({ track }) => {
     const userCount = track(() => userCountSig.value);
     const discount = track(() => discountSig.value);
 
@@ -402,7 +402,6 @@ export default component$(() => {
         <HeadingArticle text=' Wählen Sie das Paket aus, das am besten zu Ihnen passt.' />
         <div class='mb-4 flex items-center gap-4 rounded-3xl p-8 shadow-md'>
           <h3 class='text-xl font-bold'>Anzahl Anwender</h3>
-
           <input
             type='number'
             bind:value={userCountSig}
@@ -412,20 +411,22 @@ export default component$(() => {
             max='6000'
             class='border-b border-secondary-900 text-center'
           />
-
           <h3 class='text-xl font-bold'>Laufzeit</h3>
-
           <input
             type='range'
             bind:value={rangeValueSig}
             required
-            value={1}
             min='1'
             max='8'
             step='1'
           />
+          {durationInMonthSig.value === 1 && (
+            <small>mindestens {durationInMonthSig.value} Monat</small>
+          )}
 
-          <small>{durationInMonthSig.value} Monate</small>
+          {durationInMonthSig.value > 1 && (
+            <small>mindestens {durationInMonthSig.value} Monate</small>
+          )}
         </div>
 
         <div class='pricing-tiers'>
