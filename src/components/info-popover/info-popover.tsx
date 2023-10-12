@@ -1,6 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import { InfoIcon } from '../icons';
-import { Popover, PopoverContent, PopoverTrigger } from '../popover';
+import { Popover, PopoverContent, PopoverTrigger } from '../qwik-ui';
 
 type InfoPopoverProps = {
   text: string;
