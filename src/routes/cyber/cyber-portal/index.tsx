@@ -155,6 +155,7 @@ export default component$(() => {
   const rangeValueSig = useSignal<string>('1');
 
   const surveyModalShow = useSignal<boolean>(false);
+  const offerModalShow = useSignal<boolean>(false);
 
   const toEuro = (amount: number) =>
     amount.toLocaleString('de-DE', {
@@ -541,12 +542,29 @@ export default component$(() => {
             persönlich bei Ihnen melden, um alle Details zu besprechen
           </p>
 
-          <LinkCallToAction
-            href='https://e.co-IT.eu/cyber/angebot-anfordern'
-            target='_blank'
-          >
+          <LinkCallToAction onClick$={() => (offerModalShow.value = true)}>
             Jetzt Angebot anfordern
           </LinkCallToAction>
+          <Modal bind:show={offerModalShow}>
+            <ModalHeader class='flex items-center justify-between bg-black px-8 pb-8 pt-14'>
+              <h2 class='text:md font-bold text-white md:text-4xl'>
+                <i class='mb-2 block h-[4px] w-10 bg-primary' />
+                <span>Angebot anfordern</span>
+              </h2>
+              <button
+                class='cursor-pointer'
+                onClick$={() => (offerModalShow.value = false)}
+              >
+                <BlackCloseIcon />
+              </button>
+            </ModalHeader>
+            <ModalContent>
+              <iframe
+                src='https://forms.office.com/e/x9y2sJSm8P?embed=true'
+                class='m-0 max-h-screen min-h-[80vh] min-w-[80vw] max-w-full border-0'
+              ></iframe>
+            </ModalContent>
+          </Modal>
         </div>
       </SectionArea>
 
@@ -583,7 +601,7 @@ export default component$(() => {
             </ModalHeader>
             <ModalContent>
               <iframe
-                src='https://forms.office.com/e/x9y2sJSm8P?embed=true'
+                src='https://forms.office.com/Pages/ResponsePage.aspx?id=hqVrfY9Jf0mmHhFRXNyN_57QTiT3NkFCvqHHDSVqQ7RURDdIWlhERzZWNEJINUI4M1paNDRLN0pEVi4u&embed=true'
                 class='m-0 max-h-screen min-h-[80vh] min-w-[80vw] max-w-full border-0'
               ></iframe>
             </ModalContent>
