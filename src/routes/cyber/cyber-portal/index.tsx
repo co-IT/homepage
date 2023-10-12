@@ -393,7 +393,7 @@ export default component$(() => {
 
       <SectionArea>
         <HeadingArticle text='Wählen Sie das Paket aus, das am besten zu Ihnen passt.' />
-        <div class='mb-4 flex max-w-3xl flex-wrap items-center gap-4 rounded-3xl p-8 shadow-md'>
+        <div class='mb-4 flex flex-wrap items-center justify-center gap-4 rounded-3xl p-8 shadow-md'>
           <section class='flex gap-4'>
             <span class='text-xl font-bold'>Anzahl Anwender</span>
             <input
@@ -425,7 +425,7 @@ export default component$(() => {
           </section>
         </div>
 
-        <div class='pricing-tiers'>
+        <div class='pricing-tiers justify-center'>
           <div class='card grid items-start gap-8 shadow-md'>
             <div class='features'>
               <h3 class='mb-4 flex items-center gap-4 text-3xl font-bold'>
