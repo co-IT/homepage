@@ -7,7 +7,7 @@ import {
   useTask$
 } from '@builder.io/qwik';
 
-import { CheckIcon } from '~/components/icons';
+import { BlackCloseIcon, CheckIcon } from '~/components/icons';
 import { InfoPopover } from '~/components/info-popover/info-popover';
 import { SectionArea } from '~/components/section-area';
 
@@ -26,6 +26,7 @@ import type { DocumentHead } from '@builder.io/qwik-city';
 import { ShieldCheckmarkIcon } from '../../../components/icons/shield-checkmark-icon';
 import { StarIcon } from '../../../components/icons/star-icon';
 import { ThumbsUpIcon } from '../../../components/icons/thumbs-up-icon';
+import { Modal, ModalContent, ModalHeader } from '../../../components/qwik-ui';
 import style from './styles.css?inline';
 
 type PhishingFeature = {
@@ -62,7 +63,7 @@ const profiFeatures: PhishingFeature[] = [
       'Unsere Reaktionszeit wird an Werktagen innerhalb 48 Stunden in deutscher Sprache gewährleistet.'
   },
   {
-    text: 'Frequenz: je Monat (aufeinanderfolgende Tage)',
+    text: 'Frequenz: je Monat',
     detail:
       'Im Tarif "Profi" werden die zwei monatlichen E-Mails an aufeinanderfolgneden Tagen versendet.'
   },
@@ -152,6 +153,8 @@ export default component$(() => {
 
   const userCountSig = useSignal<string>('10');
   const rangeValueSig = useSignal<string>('1');
+
+  const surveyModalShow = useSignal<boolean>(false);
 
   const toEuro = (amount: number) =>
     amount.toLocaleString('de-DE', {
@@ -389,40 +392,40 @@ export default component$(() => {
 
       <SectionArea>
         <HeadingArticle text='Wählen Sie das Paket aus, das am besten zu Ihnen passt.' />
-        <div class='mb-4 flex max-w-3xl items-center gap-4 rounded-3xl p-8 shadow-md'>
-          <h3 class='text-xl font-bold'>Anzahl Anwender</h3>
-          <input
-            type='number'
-            bind:value={userCountSig}
-            required
-            value='10'
-            min='1'
-            max='6000'
-            class='border-b border-secondary-900 text-center'
-          />
-          <h3 class='text-xl font-bold'>Laufzeit</h3>
-          <input
-            type='range'
-            bind:value={rangeValueSig}
-            required
-            min='1'
-            max='8'
-            step='1'
-          />
-          {durationInMonthSig.value === 1 && (
-            <small>mindestens {durationInMonthSig.value} Monat</small>
-          )}
-
-          {durationInMonthSig.value > 1 && (
-            <small>mindestens {durationInMonthSig.value} Monate</small>
-          )}
+        <div class='mb-4 flex max-w-3xl flex-wrap items-center gap-4 rounded-3xl p-8 shadow-md'>
+          <section class='flex gap-4'>
+            <span class='text-xl font-bold'>Anzahl Anwender</span>
+            <input
+              type='number'
+              bind:value={userCountSig}
+              required
+              value='10'
+              min='1'
+              max='6000'
+              class='border-b border-secondary-900 text-center'
+            />
+          </section>
+          <section class='flex gap-4'>
+            <span class='text-xl font-bold'>Laufzeit</span>
+            <input
+              type='range'
+              bind:value={rangeValueSig}
+              required
+              min='1'
+              max='8'
+              step='1'
+            />
+            {durationInMonthSig.value === 1 && (
+              <small>mindestens {durationInMonthSig.value} Monat</small>
+            )}
+            {durationInMonthSig.value > 1 && (
+              <small>mindestens {durationInMonthSig.value} Monate</small>
+            )}
+          </section>
         </div>
 
         <div class='pricing-tiers'>
-          <div
-            class='card grid max-w-xs items-start gap-8 shadow-md'
-            id='bronze'
-          >
+          <div class='card grid items-start gap-8 shadow-md'>
             <div class='features'>
               <h3 class='mb-4 flex items-center gap-4 text-3xl font-bold'>
                 <ThumbsUpIcon />
@@ -443,7 +446,7 @@ export default component$(() => {
                 })}
               </ul>
             </div>
-            <div class='prices self-end'>
+            <div class='prices justify-end self-end'>
               <span>Anwender / Monat</span>
               <span class='price'>
                 {toEuro(pricingTier.starter.pricePerUserPerMonth)}
@@ -454,7 +457,8 @@ export default component$(() => {
               </span>
             </div>
           </div>
-          <div class='card grid max-w-xs items-start gap-8 shadow-xl'>
+
+          <div class='card grid items-start gap-8 shadow-xl'>
             <div class='features'>
               <h3 class='mb-4 flex items-center gap-4 text-3xl font-bold'>
                 <StarIcon />
@@ -476,7 +480,7 @@ export default component$(() => {
               </ul>
             </div>
 
-            <div class='prices self-end'>
+            <div class='prices justify-end self-end '>
               <span>Anwender / Monat</span>
               <span class='price'>
                 {toEuro(pricingTier.professional.pricePerUserPerMonth)}
@@ -487,7 +491,7 @@ export default component$(() => {
               </span>
             </div>
           </div>
-          <div class='card grid max-w-lg items-start gap-8 shadow-md' id='gold'>
+          <div class='card grid items-start gap-8 shadow-md' id='gold'>
             <div class='features'>
               <h3 class='mb-4 flex items-center gap-4 text-3xl font-bold'>
                 <ShieldCheckmarkIcon />
@@ -509,7 +513,7 @@ export default component$(() => {
               </ul>
             </div>
 
-            <div class='prices self-end'>
+            <div class='prices justify-end self-end'>
               <span>Anwender / Monat</span>
               <span class='price'>
                 {toEuro(pricingTier.expert.pricePerUserPerMonth)}
@@ -524,7 +528,7 @@ export default component$(() => {
       </SectionArea>
 
       <SectionArea backgroundColor='gray'>
-        <div class='mb-14 flex flex-col items-center gap-y-4'>
+        <div class='mb-14 flex flex-col  items-center gap-y-4'>
           <div class='h-1 w-10 bg-primary' />
 
           <h2 class='text-secondary text-4xl font-bold leading-10 text-secondary-900'>
@@ -561,12 +565,29 @@ export default component$(() => {
             dauert nur 1-2 Minuten.
           </p>
 
-          <LinkCallToAction
-            href='https://e.co-IT.eu/cyber/umfrage'
-            target='_blank'
-          >
+          <LinkCallToAction onClick$={() => (surveyModalShow.value = true)}>
             Jetzt mitgestalten
           </LinkCallToAction>
+          <Modal bind:show={surveyModalShow}>
+            <ModalHeader class='flex items-center justify-between bg-black px-8 pb-8 pt-14'>
+              <h2 class='text:md font-bold text-white md:text-4xl'>
+                <i class='mb-2 block h-[4px] w-10 bg-primary' />
+                <span>Umfrage</span>
+              </h2>
+              <button
+                class='cursor-pointer'
+                onClick$={() => (surveyModalShow.value = false)}
+              >
+                <BlackCloseIcon />
+              </button>
+            </ModalHeader>
+            <ModalContent>
+              <iframe
+                src='https://forms.office.com/e/x9y2sJSm8P?embed=true'
+                class='m-0 max-h-screen min-h-[80vh] min-w-[80vw] max-w-full border-0'
+              ></iframe>
+            </ModalContent>
+          </Modal>
         </div>
       </SectionArea>
 
