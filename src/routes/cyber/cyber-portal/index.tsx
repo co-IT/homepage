@@ -529,7 +529,7 @@ export default component$(() => {
       </SectionArea>
 
       <SectionArea backgroundColor='gray'>
-        <div class='mb-14 flex flex-col  items-center gap-y-4'>
+        <div class='mb-14 flex flex-col  items-center gap-y-10'>
           <div class='h-1 w-10 bg-primary' />
 
           <h2 class='text-secondary text-4xl font-bold leading-10 text-secondary-900'>
@@ -569,7 +569,7 @@ export default component$(() => {
       </SectionArea>
 
       <SectionArea>
-        <div class='mb-14 flex flex-col items-center gap-y-4'>
+        <div class='mb-14 flex flex-col items-center gap-y-10'>
           <div class='h-1 w-10 bg-primary' />
 
           <h2 class='text-secondary text-4xl font-bold leading-10 text-secondary-900'>
