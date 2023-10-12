@@ -1,14 +1,11 @@
-import {
-  $,
-  component$,
+import type {
   QRL,
   QwikIntrinsicElements,
   QwikMouseEvent,
-  Signal,
-  Slot,
-  useSignal,
-  useTask$,
+  Signal
 } from '@builder.io/qwik';
+import { $, Slot, component$, useSignal, useTask$ } from '@builder.io/qwik';
+import type { WidthElement as WidthState } from './modal-behavior';
 import {
   activateFocusTrap,
   preventScrollbarFlickering as adjustScrollbar,
@@ -18,8 +15,7 @@ import {
   showModal,
   trapFocus,
   unlockScroll,
-  wasModalBackdropClicked,
-  WidthElement as WidthState,
+  wasModalBackdropClicked
 } from './modal-behavior';
 
 export type ModalProps = Omit<QwikIntrinsicElements['dialog'], 'open'> & {
@@ -67,7 +63,9 @@ export const Modal = component$((props: ModalProps) => {
 
       // cleanup the scroll padding
       const currentPadding = parseInt(document.body.style.paddingRight);
-      document.body.style.paddingRight = `${currentPadding - scrollbarWidth.width}px`;
+      document.body.style.paddingRight = `${
+        currentPadding - (scrollbarWidth.width || 0)
+      }px`;
     });
   });
 
@@ -79,10 +77,10 @@ export const Modal = component$((props: ModalProps) => {
 
   return (
     <dialog
-      class="preventScrollFlicker"
+      class='preventScrollFlicker'
       {...props}
       ref={modalRefSig}
-      onClick$={(event) => closeOnBackdropClick$(event)}
+      onClick$={event => closeOnBackdropClick$(event)}
       onClose$={() => (showSig.value = false)}
     >
       <Slot />
