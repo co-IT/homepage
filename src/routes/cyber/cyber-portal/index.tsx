@@ -432,10 +432,10 @@ export default component$(() => {
               step='1'
             />
             {durationInMonthSig.value === 1 && (
-              <small>mindestens {durationInMonthSig.value} Monat</small>
+              <small>{durationInMonthSig.value} Monat</small>
             )}
             {durationInMonthSig.value > 1 && (
-              <small>mindestens {durationInMonthSig.value} Monate</small>
+              <small>{durationInMonthSig.value} Monate</small>
             )}
           </section>
         </div>
