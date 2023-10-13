@@ -49,6 +49,11 @@ const starterFeatures: PhishingFeature[] = [
     text: 'Sprachniveau: Mittel',
     detail:
       'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausiblität geachtet.'
+  },
+  {
+    text: 'Zahlweise: monatlich',
+    detail:
+      'Auch bei einer längeren Vertragslaufzeit als 1 Monat rechnen wir monatlich ab, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den einzelnen Zahlungsterminen pro Monat für die gesamte Vertragslaufzeit.'
   }
 ];
 
@@ -71,6 +76,11 @@ const profiFeatures: PhishingFeature[] = [
     text: 'Sprachniveau: Hoch',
     detail:
       'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
+  },
+  {
+    text: 'Zahlweise: monatlich',
+    detail:
+      'Auch bei einer längeren Vertragslaufzeit als 1 Monat rechnen wir monatlich ab, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den einzelnen Zahlungsterminen pro Monat für die gesamte Vertragslaufzeit.'
   },
   {
     text: 'Personalisierte Anrede',
@@ -104,6 +114,11 @@ const expertFeatures: PhishingFeature[] = [
     text: 'Sprachniveau Hoch',
     detail:
       'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
+  },
+  {
+    text: 'Zahlweise: monatlich',
+    detail:
+      'Auch bei einer längeren Vertragslaufzeit als 1 Monat rechnen wir monatlich ab, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den einzelnen Zahlungsterminen pro Monat für die gesamte Vertragslaufzeit.'
   },
   {
     text: 'Personalisierte Anrede',
