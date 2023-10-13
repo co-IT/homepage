@@ -610,7 +610,7 @@ export default component$(() => {
       </SectionArea>
 
       <SectionArea backgroundColor='gray'>
-        <VideoOverlapLandscape youTubeVideoId='KSSDqIIikvQ'>
+        <VideoOverlapLandscape youTubeVideoId='FjThxiKBApc'>
           <section class='flex flex-col space-y-4'>
             <h2 class='text-xl font-bold md:text-4xl'>
               <HeadingSegmentSecondary text='Alle Funktionen vorgestellt' />
