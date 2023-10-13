@@ -211,7 +211,7 @@ export default component$(() => {
     return durationMonthMap[range] as number;
   });
 
-  const pricingScaleSig = useComputed$(() => {
+  const discountSig = useComputed$(() => {
     const discountsAccordingToTerm = {
       1: 0,
       3: 0.02,
@@ -229,9 +229,9 @@ export default component$(() => {
 
   useTask$(({ track }) => {
     const userCount = track(() => userCountSig.value);
-    const pricingScale = track(() => pricingScaleSig.value);
+    const discount = track(() => discountSig.value);
 
-    if (userCount === undefined || pricingScale === undefined) {
+    if (userCount === undefined || discount === undefined) {
       return;
     }
 
@@ -241,19 +241,19 @@ export default component$(() => {
       const basePrice = calculateBasePrice(userCount);
 
       pricingTier.starter.pricePerUserPerMonth =
-        basePrice - basePrice * pricingScale;
+        basePrice - basePrice * discount;
 
       pricingTier.starter.pricePerMonth =
         pricingTier.starter.pricePerUserPerMonth * userCount;
 
       pricingTier.professional.pricePerUserPerMonth =
-        basePrice * 1.3 - basePrice * 1.3 * pricingScale;
+        basePrice * 1.3 - basePrice * 1.3 * discount;
 
       pricingTier.professional.pricePerYearMonth =
         pricingTier.professional.pricePerUserPerMonth * userCount;
 
       pricingTier.expert.pricePerUserPerMonth =
-        basePrice * 2 - basePrice * 2 * pricingScale;
+        basePrice * 2 - basePrice * 2 * discount;
 
       pricingTier.expert.pricePerMonth =
         pricingTier.expert.pricePerUserPerMonth * userCount;
@@ -421,7 +421,7 @@ export default component$(() => {
               class='border-b border-secondary-900 text-center'
             />
           </section>
-          <section class='flex gap-4'>
+          <section class='flex items-center gap-4'>
             <span class='text-xl font-bold'>Laufzeit</span>
             <input
               type='range'
@@ -432,11 +432,23 @@ export default component$(() => {
               step='1'
             />
             {durationInMonthSig.value === 1 && (
-              <small>{durationInMonthSig.value} Monat</small>
+              <small class='min-w-[4rem]'>
+                {durationInMonthSig.value} Monat
+              </small>
             )}
             {durationInMonthSig.value > 1 && (
-              <small>{durationInMonthSig.value} Monate</small>
+              <small class='min-w-[4rem]'>
+                {durationInMonthSig.value} Monate
+              </small>
             )}
+
+            <span
+              class={`${
+                discountSig.value === 0 ? 'opacity-50' : ''
+              } grid w-32 items-center rounded bg-secondary-900 p-2 text-center text-xs font-medium text-accent accent-primary`}
+            >
+              {discountSig.value * 100}% Rabatt
+            </span>
           </section>
         </div>
 
