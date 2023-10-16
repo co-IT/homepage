@@ -116,7 +116,7 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
       <div
         class={`${
           videoDialog.open ? 'fixed' : 'hidden'
-        } top-0 bottom-0 left-0 right-0 z-50 m-0 h-screen w-screen bg-white md:m-auto`}
+        } bottom-0 left-0 right-0 top-0 z-50 m-0 h-screen w-screen bg-white md:m-auto`}
       >
         <div class='grid h-screen' style='grid-template-rows: auto 1fr auto'>
           <header class='flex items-center justify-between bg-black px-8 pb-8 pt-14'>
@@ -134,10 +134,12 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
             style='grid-template-columns 1fr; grid-template-rows: auto 1fr '
           >
             <div class='bg-black '>
-              <YoutubeVideoPlayerEmbedded
-                youTubeVideoId={videoDialog.videoPlaying.id}
-                class='md:h-[500px] md:w-[1000px]'
-              />
+              {videoDialog.open && (
+                <YoutubeVideoPlayerEmbedded
+                  youTubeVideoId={videoDialog.videoPlaying.id}
+                  class='md:h-[500px] md:w-[1000px]'
+                />
+              )}
             </div>
 
             <Markdown
@@ -146,7 +148,7 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
             />
           </main>
 
-          <footer class='container mx-auto flex justify-between border-t border-b border-gray-200 py-5 px-8 md:w-[1000px]'>
+          <footer class='container mx-auto flex justify-between border-b border-t border-gray-200 px-8 py-5 md:w-[1000px]'>
             <button
               onClick$={() => showPreviousVideo$()}
               disabled={!videoDialog.videoPlayingHasPredecessor}
