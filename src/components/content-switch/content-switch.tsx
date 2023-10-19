@@ -46,6 +46,8 @@ export const ContentSwitch = component$(() => {
               <div class='bg-secondary-900'>
                 <img
                   src={link.image}
+                  width='608'
+                  height='300'
                   loading='lazy'
                   alt='content'
                   class='hidden h-72 w-full object-cover opacity-50 md:block'
