@@ -21,8 +21,10 @@ export const YouTubeVideoTile = component$((props: YouTubeVideoTileProps) => {
           class='bg-secondary relative h-44 w-full rounded-tl-xl rounded-tr-xl object-cover opacity-50'
           src={props.video.thumb}
           alt='img'
+          width='304'
+          height='171'
         />
-        <div class='absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 hover:opacity-75'>
+        <div class='absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4 hover:opacity-75'>
           <WhiteVideoPlayerIcon />
         </div>
       </div>

@@ -15,7 +15,12 @@ export const ArticleCard = component$((props: ArticleCardProps) => {
             <div class='flex flex-col gap-y-4'>
               <HeadingArticle text={props.article.heading} />
               <div class='mt-4 w-full lg:hidden'>
-                <img {...props.article.image} loading='lazy' />
+                <img
+                  {...props.article.image}
+                  width='1920'
+                  height='1280'
+                  loading='lazy'
+                />
               </div>
             </div>
 
@@ -25,13 +30,23 @@ export const ArticleCard = component$((props: ArticleCardProps) => {
           </div>
 
           <div class='hidden w-full lg:block'>
-            <img {...props.article.image} loading='lazy' />
+            <img
+              {...props.article.image}
+              width='1920'
+              height='1280'
+              loading='lazy'
+            />
           </div>
         </div>
       ) : (
         <div class='flex flex-col gap-x-12 lg:flex-row lg:px-10'>
           <div class='hidden w-full lg:block'>
-            <img {...props.article.image} loading='lazy' />
+            <img
+              {...props.article.image}
+              width='1920'
+              height='1280'
+              loading='lazy'
+            />
           </div>
 
           <div class='flex w-full flex-col gap-y-5'>
@@ -41,7 +56,12 @@ export const ArticleCard = component$((props: ArticleCardProps) => {
                 {props.article.heading}
               </div>
               <div class='mt-4 w-full lg:hidden'>
-                <img {...props.article.image} loading='lazy' />
+                <img
+                  {...props.article.image}
+                  width='1920'
+                  height='1280'
+                  loading='lazy'
+                />
               </div>
             </div>
 

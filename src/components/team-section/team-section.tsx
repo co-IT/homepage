@@ -1,6 +1,5 @@
 import { component$ } from '@builder.io/qwik';
 import { LinkCallToAction } from '../link-call-to-action';
-
 export const TeamSection = component$(() => {
   return (
     <div class='flex flex-col'>
@@ -44,6 +43,8 @@ export const TeamSection = component$(() => {
         class='mx-auto'
         loading='lazy'
         src='/img/about/team.webp'
+        width='1920'
+        height='601'
         alt='Picture showing the whole team at co-IT'
       />
     </div>
