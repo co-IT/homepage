@@ -22,12 +22,14 @@ export const ContentOverlapPortrait = component$(
   (props: ContentOverlapPortraitProps) => {
     return (
       <article class='grid auto-rows-min md:grid-cols-8 md:grid-rows-1'>
-        <div class='z-20 row-start-3 mx-3 -translate-y-28 self-center bg-white pt-10 pb-10 pr-5 pl-5 drop-shadow-2xl md:col-span-4 md:col-start-2 md:row-span-full md:-translate-y-0 md:p-14'>
+        <div class='z-20 row-start-3 mx-3 -translate-y-28 self-center bg-white pb-10 pl-5 pr-5 pt-10 drop-shadow-2xl md:col-span-4 md:col-start-2 md:row-span-full md:-translate-y-0 md:p-14'>
           <Slot name='article'></Slot>
         </div>
         <div class='z-10 row-start-1 md:col-span-3 md:col-start-5 md:row-span-full'>
           <img
             class='shadow-xl'
+            width='480'
+            height='586'
             src={props.image.source}
             alt={props.image.alternateText}
           />
