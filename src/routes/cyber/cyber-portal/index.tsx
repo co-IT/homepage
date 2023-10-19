@@ -322,7 +322,7 @@ export default component$(() => {
       <SectionArea backgroundColor='gray'>
         <ContentOverlapPortrait
           image={{
-            source: '/img/cyber/cyber-portal/man-with-rocket.jpg',
+            source: '/img/cyber/cyber-portal/man-with-rocket.webp',
             alternateText: 'Man looking at the sunset'
           }}
         >
@@ -378,7 +378,7 @@ export default component$(() => {
       <SectionArea backgroundColor='gray'>
         <ContentOverlapPortrait
           image={{
-            source: '/img/cyber/cyber-portal/planning-table.jpg',
+            source: '/img/cyber/cyber-portal/planning-table.webp',
             alternateText: 'Man looking at the sunset'
           }}
         >
@@ -718,7 +718,7 @@ export const head: DocumentHead = {
       type: 'content-page',
       configuration: {
         backgroundImage: {
-          source: '/img/cyber/cyber-portal/header.jpg',
+          source: '/img/cyber/cyber-portal/header.webp',
           alt: 'Two team mates checking an App on the tablet.'
         },
         heading: 'Cyber Portal',
