@@ -2,7 +2,7 @@ import type { YouTubeVideo } from '~/components/youtube';
 
 export const cyberVerantwortlicheVideos: YouTubeVideo[] = [
   {
-    id: '2jKcWfxv9uZtf6nZ',
+    id: 'icrErze3A1g',
     title: 'Freigabe der Phishing Simulation in Exchange Online',
     thumb: '/img/cyber/cyber-portal/video-thumbnails/exchange-online.webp'
   },
