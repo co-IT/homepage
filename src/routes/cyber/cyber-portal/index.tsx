@@ -586,8 +586,15 @@ export default component$(() => {
       <SectionArea>
         <div class='mx-auto mb-4 h-1 w-10 bg-primary'></div>
         <h2 class='text-secondary mb-14 text-center text-4xl font-bold'>
-          WICHTIG - Für Cyber-Verantwortliche
+          Wichtig für{' '}
+          <HeadingSegmentSecondary800 text='Cyber-Verantwortliche'></HeadingSegmentSecondary800>
         </h2>
+
+        <p class='mx-auto mb-14 max-w-xl text-center font-medium leading-7'>
+          Damit Sie in der Lage sind, die Phishing E-Mails für Ihre Organisation
+          zu konfigurieren, haben wir für Sie die folgenden Videos
+          bereitgestellt.
+        </p>
 
         <YouTubeVideoGrid videos={cyberVerantwortlicheVideos} />
       </SectionArea>
