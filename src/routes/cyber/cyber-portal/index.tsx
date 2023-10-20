@@ -6,6 +6,7 @@ import {
   useStyles$,
   useTask$
 } from '@builder.io/qwik';
+import type { DocumentHead } from '@builder.io/qwik-city';
 
 import { BlackCloseIcon, CheckIcon } from '~/components/icons';
 import { InfoPopover } from '~/components/info-popover/info-popover';
@@ -23,13 +24,18 @@ import {
 } from '~/components/heading-segment';
 import { LinkCallToAction } from '~/components/link-call-to-action';
 
-import type { DocumentHead } from '@builder.io/qwik-city';
 import { ShieldCheckmarkIcon } from '~/components/icons/shield-checkmark-icon';
 import { StarIcon } from '~/components/icons/star-icon';
 import { ThumbsUpIcon } from '~/components/icons/thumbs-up-icon';
 import { Modal, ModalContent, ModalHeader } from '~/components/qwik-ui';
+import { YouTubeVideoGrid } from '~/components/youtube';
 
-import { expertFeatures, profiFeatures, starterFeatures } from './resources';
+import {
+  cyberVerantwortlicheVideos,
+  expertFeatures,
+  profiFeatures,
+  starterFeatures
+} from './resources';
 
 import style from './styles.css?inline';
 
@@ -583,7 +589,7 @@ export default component$(() => {
           WICHTIG - Für Cyber-Verantwortliche
         </h2>
 
-        <YouTubeVideoGrid videos={videosWarumWirUnsereArbeitLieben} />
+        <YouTubeVideoGrid videos={cyberVerantwortlicheVideos} />
       </SectionArea>
     </>
   );
