@@ -15,6 +15,7 @@ import {
   ContentOverlapPortrait,
   VideoOverlapLandscape
 } from '~/components/content-overlap';
+
 import { HeadingArticle } from '~/components/heading-article';
 import {
   HeadingSegmentSecondary,
@@ -23,10 +24,11 @@ import {
 import { LinkCallToAction } from '~/components/link-call-to-action';
 
 import type { DocumentHead } from '@builder.io/qwik-city';
-import { ShieldCheckmarkIcon } from '../../../components/icons/shield-checkmark-icon';
-import { StarIcon } from '../../../components/icons/star-icon';
-import { ThumbsUpIcon } from '../../../components/icons/thumbs-up-icon';
-import { Modal, ModalContent, ModalHeader } from '../../../components/qwik-ui';
+import { ShieldCheckmarkIcon } from '~/components/icons/shield-checkmark-icon';
+import { StarIcon } from '~/components/icons/star-icon';
+import { ThumbsUpIcon } from '~/components/icons/thumbs-up-icon';
+import { Modal, ModalContent, ModalHeader } from '~/components/qwik-ui';
+
 import { expertFeatures, profiFeatures, starterFeatures } from './resources';
 
 import style from './styles.css?inline';
