@@ -1,0 +1,35 @@
+---
+title: 'co-IT - Phishing | Fake-Seite'
+
+header:
+  type: default
+  configuration:
+    heading: ES IST NICHTS PASSIERT
+---
+
+import {
+  HeadingArticle,
+  VideoOverlapLandscape,
+  HeadingSegmentSecondary,
+  LinkCallToAction,
+  SectionArea
+} from './components';
+
+<HeadingArticle text='Dies ist eine Fake-Seite' />
+
+Hallo lieber Kollege,
+
+die co-IT hat dir eine betrügerische E-Mail geschickt, um dich für die Gefahren von Phishing-Emails zu sensibilisieren.
+Keine Sorge, es ist nichts passiert.
+In dem folgenden Video werden die Merkmale erklärt, anhand derer du Phishing-Mails erkennen kannst.
+Schau es dir in Ruhe an.
+
+<SectionArea>
+  <VideoOverlapLandscape youTubeVideoId='FjThxiKBApc?si'>
+    <section class='flex flex-col space-y-4'>
+      <h2 class='text-xl font-bold md:text-4xl'>
+        <HeadingSegmentSecondary text='Merkmale von Phsing-Mails erklärt...' />
+      </h2>
+    </section>
+  </VideoOverlapLandscape>
+</SectionArea>
