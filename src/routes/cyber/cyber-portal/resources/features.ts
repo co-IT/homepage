@@ -127,14 +127,14 @@ export const expertFeatures: ProductFeature[] = [
     text: 'Cyber-Verantwortlicher',
     detail: 'In den Phishing Simulationen wird der Name des Cyber-Verantwortlichen angedruckt, z.B. dass "Reinhold Müller" via OneDrive eine Datei mit dem Empfänger geteilt hat.'
   },{
-    text: 'Englischsprachige Texte',
-    detail: 'Einige Phishing Simulationen werden in englischer Sprache verfasst. Das hilft  Unternehmen, die regelmäßig mit dem Ausland korrespondieren.'
-  },{
     text: '"Attack Pack": Microsoft',
     detail: 'Microsoft verschickt regelmäßig Nachrichten zu Produkten wie Teams und Outlook. In diesen Simulationen versenden wir entsprechende Kopien.'
   },{
     text: '"Attack Pack": Banking',
-    detail: 'Speziell bei betrügerischen Zahlungsaufforderungen kann es schnell zu finanziellen Schäden kommen. Mit diesen Simulationen adressieren sollen Rechnungswesen und Einkauf gesondert sensibilisert werden.'
+    detail: 'Speziell bei betrügerischen Zahlungsaufforderungen kann es schnell zu finanziellen Schäden kommen. Mit diesen Simulationen sollen Rechnungswesen und Einkauf gesondert sensibilisert werden.'
+  },{
+    text: 'Englischsprachige Texte',
+    detail: 'Einige Phishing Simulationen werden in englischer Sprache verfasst. Das hilft  Unternehmen, die regelmäßig mit dem Ausland korrespondieren.'
   },{
     text: 'Eigene Inhalte',
     detail: 'Bei einer entsprechend großen Zahl an Empfänger können wir für Sie gezielt Inhalte einsteuern. Sprechen Sie uns darauf an.'
@@ -145,7 +145,7 @@ export const expertFeatures: ProductFeature[] = [
     text: 'Unternehmenszertifikat',
     detail:'Nach 12 Monaten erhalten Sie ein auf Ihr Unternehmen ausgestelltes Zertifikat, das die kontinuierliche Sensibilisierung durch unsere Phishing Simulationen nachweist.'
   },{
-    text: 'telefonischer Support',
+    text: 'Telefonischer Support',
     detail:'Montag - Freitag zw. 9-16 Uhr mit Ausnahme gesetzlicher Feiertage in Baden-Württemberg.'
   }
 ];
