@@ -286,7 +286,7 @@ export default component$(() => {
         <HeadingArticle text='Wählen Sie das Paket aus, das am besten zu Ihnen passt.' />
         <div class='mb-4 flex flex-wrap items-center justify-center gap-4 rounded-3xl p-8 shadow-md'>
           <section class='flex gap-4'>
-            <span class='text-xl font-bold'>Anzahl Anwender</span>
+            <span class='text-xl font-bold'>Anzahl Empfänger</span>
             <input
               type='number'
               bind:value={userCountSig}
@@ -432,6 +432,26 @@ export default component$(() => {
       </SectionArea>
 
       <SectionArea backgroundColor='gray'>
+        <VideoOverlapLandscape youTubeVideoId='FjThxiKBApc'>
+          <section class='flex flex-col space-y-4'>
+            <h2 class='text-xl font-bold md:text-4xl'>
+              <HeadingSegmentSecondary text='Alle Funktionen vorgestellt' />
+            </h2>
+            <p class='leading-7'>
+              In diesem Video stellen wir Ihnen alle Funktionen detailliert vor,
+              sodass Sie genau wissen, was Sie mit welchem Paket bekommen.
+            </p>
+            <LinkCallToAction
+              href='https://e.co-IT.eu/cyber/anfrage'
+              target='_blank'
+            >
+              Klären Sie Ihre Fragen mit uns persönlich.
+            </LinkCallToAction>
+          </section>
+        </VideoOverlapLandscape>
+      </SectionArea>
+
+      <SectionArea backgroundColor='gray'>
         <div class='mb-14 flex flex-col  items-center gap-y-10'>
           <div class='h-1 w-10 bg-primary' />
 
@@ -442,7 +462,7 @@ export default component$(() => {
           <p class='max-w-2xl'>
             Sichern Sie sich Ihr maßgeschneidertes Angebot - unkompliziert und
             in nur wenigen Schritten! Nach Ihrer Anfrage werden wir uns
-            persönlich bei Ihnen melden, um alle Details zu besprechen
+            persönlich bei Ihnen melden, um alle Details zu besprechen.
           </p>
 
           <LinkCallToAction onClick$={() => (offerModalShow.value = true)}>
@@ -471,6 +491,19 @@ export default component$(() => {
         </div>
       </SectionArea>
 
+<SectionArea>
+        <div class='mx-auto mb-4 h-1 w-10 bg-primary'></div>
+        <h2 class='text-secondary mb-14 text-center text-4xl font-bold'>
+          Wichtig für{' '}
+          <HeadingSegmentSecondary800 text='Cyber-Verantwortliche'></HeadingSegmentSecondary800>
+        </h2>
+
+        <p class='mx-auto mb-14 max-w-xl text-center font-medium leading-7'>
+          Die besten Phishing-Mails helfen nichts, wenn diese nicht den Posteingang des Empfängers erreichen. Geben Sie deshalb unseren E-Mail-Server und unsere Domains in Ihrer Firewall und in den Postfächern frei. Nur dadurch können Sie sicherstellen, dass Auswertungen zum Klickverhalten korrekt sind. Damit Sie schnell starten können, haben wir für gängige Produkte wie Microsofts "Exchange Server" Anleitungsvideos bereitgestellt.</p>
+
+        <YouTubeVideoGrid videos={cyberVerantwortlicheVideos} />
+</SectionArea>
+
       <SectionArea>
         <div class='mb-14 flex flex-col items-center gap-y-10'>
           <div class='h-1 w-10 bg-primary' />
@@ -481,9 +514,9 @@ export default component$(() => {
 
           <p class='max-w-xl'>
             Um unsere Pakete noch genauer auf Ihre Bedarfe zuschneiden zu
-            können, machen wir aktuell eine anonyme Umfrage Teil Sie uns mit,
+            können, machen wir aktuell eine anonyme Umfrage. Teil Sie uns mit,
             wie ein perfekt auf Sie abgestimmtes Paket aussieht. Die Umfrage
-            dauert nur 1-2 Minuten.
+            dauert nur wenige Minuten.
           </p>
 
           <LinkCallToAction onClick$={() => (surveyModalShow.value = true)}>
@@ -510,26 +543,6 @@ export default component$(() => {
             </ModalContent>
           </Modal>
         </div>
-      </SectionArea>
-
-      <SectionArea backgroundColor='gray'>
-        <VideoOverlapLandscape youTubeVideoId='FjThxiKBApc'>
-          <section class='flex flex-col space-y-4'>
-            <h2 class='text-xl font-bold md:text-4xl'>
-              <HeadingSegmentSecondary text='Alle Funktionen vorgestellt' />
-            </h2>
-            <p class='leading-7'>
-              In diesem Video stellen wir Ihnen alle Funktionen detailliert vor,
-              sodass Sie genau wissen, was Sie mit welchem Paket bekommen.
-            </p>
-            <LinkCallToAction
-              href='https://e.co-IT.eu/cyber/anfrage'
-              target='_blank'
-            >
-              Klären Sie Ihre Fragen mit uns persönlich.
-            </LinkCallToAction>
-          </section>
-        </VideoOverlapLandscape>
       </SectionArea>
 
       <SectionArea>
@@ -583,21 +596,6 @@ export default component$(() => {
         </div>
       </SectionArea>
 
-      <SectionArea>
-        <div class='mx-auto mb-4 h-1 w-10 bg-primary'></div>
-        <h2 class='text-secondary mb-14 text-center text-4xl font-bold'>
-          Wichtig für{' '}
-          <HeadingSegmentSecondary800 text='Cyber-Verantwortliche'></HeadingSegmentSecondary800>
-        </h2>
-
-        <p class='mx-auto mb-14 max-w-xl text-center font-medium leading-7'>
-          Damit Sie in der Lage sind, die Phishing E-Mails für Ihre Organisation
-          zu konfigurieren, haben wir für Sie die folgenden Videos
-          bereitgestellt.
-        </p>
-
-        <YouTubeVideoGrid videos={cyberVerantwortlicheVideos} />
-      </SectionArea>
     </>
   );
 });
