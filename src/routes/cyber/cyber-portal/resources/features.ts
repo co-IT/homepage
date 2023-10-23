@@ -6,13 +6,13 @@ type ProductFeature = {
 export const starterFeatures: ProductFeature[] = [
   {
     text: 'Anzahl E-Mails: 12',
-    detail: 'Anzahl der Phising-Simulationen pro Empfänger und Jahr.'
+    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },{ 
     text: 'Frequenz: 30 Tage',
     detail: 'Pro Monat erhalten Ihre Anwender eine Phishing-Simulation.'
   },{ 
     text: 'Versandzeit: Gleichzeitig',
-    detail: 'Alle Phishing-Simulationen gehen zur gleichen Zeit an die Anwender raus.'
+    detail: 'Alle Phishing Simulationen gehen zur gleichen Zeit an die Anwender raus.'
   },{
     text: 'Sprachniveau: Mittel',
     detail: 'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausiblität geachtet.'
@@ -21,22 +21,43 @@ export const starterFeatures: ProductFeature[] = [
     detail: 'Authentische Absenderadressen sind z.B. Domains wie bundesgerichtshof-karlsruhe.de oder bund-und-laender.online, wohingegen eine Domäne wie why-how-what.info weniger echt wirkt.'
   },{
     text: 'Anrede: Personalisiert',
-    detail: 'In den Phishing-Simulationen wird der Name des Empfänger in der Begrüßung verwendet, also z.B. Sehr geehrter Herr Tim Kater.'
+    detail: 'In den Phishing Simulationen wird der Name des Empfängers in der Anrede verwendet, also z.B. "Sehr geehrter Herr Tim Kater".'
   },{
     text: 'Unternehmensname: Ja',
-    detail: 'In den Phishing-Simulationen wird Ihr Unternehmen referenziert, z.B. indem in einer Simulation eine Kununu-Bewertung zu Ihrer Firma nachgestellt wird.'
+    detail: 'In den Phishing Simulationen wird Ihr Unternehmen referenziert, z.B. indem in einer Simulation eine Kununu-Bewertung zu Ihrer Firma nachgestellt wird.'
   },{
-    text: 'Abteilungsname: keine Nennung',
-    detail: 'In den Phishing-Simulationen wird die Abteilungs des Empfängers referenziert, z.B. indem eine Datenschutzbefragung im Einkauf simuliert wird.'
+    text: 'Abteilungsname: Nein',
+    detail: 'In den Phishing Simulationen wird die Abteilungs des Empfängers referenziert, z.B. indem eine Datenschutzbefragung im Einkauf simuliert wird.'
   },{
-    text: 'Cyber-Verantwortlicher: keine Nennung',
-    detail: 'In den Phishing-Simulationen wird der Name des Cyber-Verantwortlichen angedruckt, z.B. dass dieser eine Datei mit dem Empfänger teilt.'
+    text: 'Cyber-Verantwortlicher: Nein',
+    detail: 'In den Phishing Simulationen wird der Name des Cyber-Verantwortlichen angedruckt, z.B. dass dieser eine Datei mit dem Empfänger teilt.'
   },{
     text: 'Englischsprachige Texte',
-    detail: 'Einige Phishing-Simulationen werden in englischer Sprache verfasst. Das ist für Unternehmen hilfreich, die regelmäßig mit dem Ausland korrespondieren.'
+    detail: 'Einige Phishing Simulationen werden in englischer Sprache verfasst. Das ist für Unternehmen hilfreich, die regelmäßig mit dem Ausland korrespondieren.'
   },{
-    text: 'E-Mail-Support',
+    text: 'Zahlungsaufforderungen: Nein',
+    detail: 'Speziell bei betrügerischen Zahlungsaufforderungen kann es schnell zu finanziellen Schäden kommen. Mit diesen Angriffen adressieren wir vor allem das Rechnungswesen und den Einkauf.'
+  },{
+    text: 'Microsoft Produkte: Nein',
+    detail: 'Microsoft verschickt regelmäßig Nachrichten zu Produkten wie Teams und Outlook. In diesen Simulationen versenden wir entsprechende Kopien.'
+  },{
+    text: 'Behörden Updates: Ja',
+    detail: 'Arbeitsrecht, Elternzeit, Unfallversicherung: Diese Inhalte interessieren praktisch jeden und haben eine hohe Klickquote.'
+  },{
+    text: 'Eigene Inhalte: Nein',
+    detail: 'Arbeitsrecht, Elternzeit, Unfallversicherung: Diese Inhalte interessieren praktisch jeden und haben eine hohe Klickquote.'
+  },{
+    text: 'Abstimmung über neue Funktionen: Ja',
+    detail: 'Ihre Stimme zählt: Sie können regelmäßig über die Priorisierung von neuen Funktionen mit abstimmen.'
+  },{
+    text: 'Vorschlagen von Funktionen: Ja',
+    detail: 'Teilen Sie uns Ihre Ideen unserem Entwicklungsteam mit.'
+  },{
+    text: 'E-Mail-Support: Ja',
     detail:'Unsere Reaktionszeit wird an Werktagen innerhalb 48 Stunden in deutscher Sprache gewährleistet.'
+  },{
+    text: 'telefonischer Support: Nein',
+    detail:'Montag - Freitag zw. 9-16 Uhr mit Ausnahme gesetzlicher Feiertage in Baden-Württemberg.'
   },{
     text: 'Zahlweise: monatlich',
     detail:'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
