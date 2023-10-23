@@ -12,7 +12,7 @@ export const starterFeatures: ProductFeature[] = [
     detail: 'Pro Monat erhalten Ihre Anwender eine Phishing-Simulation.'
   },{ 
     text: 'Versandzeit: Gleichzeitig',
-    detail: 'Alle Phishing Simulationen gehen zur gleichen Zeit an die Anwender raus.'
+    detail: 'Alle Phishing Simulationen gehen zur gleichen Zeit an die Empfänger raus.'
   },{
     text: 'Sprachniveau: Mittel',
     detail: 'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausiblität geachtet.'
