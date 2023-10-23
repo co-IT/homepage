@@ -6,23 +6,40 @@ type ProductFeature = {
 export const starterFeatures: ProductFeature[] = [
   {
     text: 'Anzahl E-Mails: 12',
-    detail: 'Anzahl der Phising Mails pro Anwender und Jahr'
-  },
-  {
-    text: 'E-Mail-Support',
-    detail:
-      'Unsere Reaktionszeit wird an Werktagen innerhalb 48 Stunden in deutscher Sprache gewährleistet.'
-  },
-  { text: 'Frequenz: 1 pro Monat' },
-  {
+    detail: 'Anzahl der Phising-Simulationen pro Empfänger und Jahr.'
+  },{ 
+    text: 'Frequenz: 30 Tage',
+    detail: 'Pro Monat erhalten Ihre Anwender eine Phishing-Simulation.'
+  },{ 
+    text: 'Versandzeit: Gleichzeitig',
+    detail: 'Alle Phishing-Simulationen gehen zur gleichen Zeit an die Anwender raus.'
+  },{
     text: 'Sprachniveau: Mittel',
-    detail:
-      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausiblität geachtet.'
-  },
-  {
+    detail: 'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausiblität geachtet.'
+  },{
+    text: 'Absender: Authentisch',
+    detail: 'Authentische Absenderadressen sind z.B. Domains wie bundesgerichtshof-karlsruhe.de oder bund-und-laender.online, wohingegen eine Domäne wie why-how-what.info weniger echt wirkt.'
+  },{
+    text: 'Anrede: Personalisiert',
+    detail: 'In den Phishing-Simulationen wird der Name des Empfänger in der Begrüßung verwendet, also z.B. Sehr geehrter Herr Tim Kater.'
+  },{
+    text: 'Unternehmensname: Ja',
+    detail: 'In den Phishing-Simulationen wird Ihr Unternehmen referenziert, z.B. indem in einer Simulation eine Kununu-Bewertung zu Ihrer Firma nachgestellt wird.'
+  },{
+    text: 'Abteilungsname: keine Nennung',
+    detail: 'In den Phishing-Simulationen wird die Abteilungs des Empfängers referenziert, z.B. indem eine Datenschutzbefragung im Einkauf simuliert wird.'
+  },{
+    text: 'Cyber-Verantwortlicher: keine Nennung',
+    detail: 'In den Phishing-Simulationen wird der Name des Cyber-Verantwortlichen angedruckt, z.B. dass dieser eine Datei mit dem Empfänger teilt.'
+  },{
+    text: 'Englischsprachige Texte',
+    detail: 'Einige Phishing-Simulationen werden in englischer Sprache verfasst. Das ist für Unternehmen hilfreich, die regelmäßig mit dem Ausland korrespondieren.'
+  },{
+    text: 'E-Mail-Support',
+    detail:'Unsere Reaktionszeit wird an Werktagen innerhalb 48 Stunden in deutscher Sprache gewährleistet.'
+  },{
     text: 'Zahlweise: monatlich',
-    detail:
-      'Auch bei einer längeren Vertragslaufzeit als 1 Monat rechnen wir monatlich ab, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den einzelnen Zahlungsterminen pro Monat für die gesamte Vertragslaufzeit.'
+    detail:'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   }
 ];
 
@@ -37,9 +54,9 @@ export const profiFeatures: ProductFeature[] = [
       'Unsere Reaktionszeit wird an Werktagen innerhalb 48 Stunden in deutscher Sprache gewährleistet.'
   },
   {
-    text: 'Frequenz: je Monat',
+    text: 'Frequenz: 14 Tage',
     detail:
-      'Im Tarif "Profi" werden die zwei monatlichen E-Mails an aufeinanderfolgneden Tagen versendet.'
+      'Im Rhytmus von 2 Wochen erhalten Ihre Anwender eine Phishing-Simulation.'
   },
   {
     text: 'Sprachniveau: Hoch',
