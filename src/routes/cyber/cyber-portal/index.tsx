@@ -10,7 +10,7 @@ import type { DocumentHead } from '@builder.io/qwik-city';
 
 import { BlackCloseIcon, CheckIcon } from '~/components/icons';
 import { InfoPopover } from '~/components/info-popover/info-popover';
-import { Section } from '~/components/section-area';
+import { Section } from '~/components/section';
 
 import {
   ContentOverlapPortrait,
@@ -195,7 +195,7 @@ export default component$(() => {
 
   return (
     <>
-      <Section backgroundColor='gray'>
+      <Section>
         <ContentOverlapPortrait
           image={{
             source: '/img/cyber/cyber-portal/man-with-rocket.webp',
@@ -220,7 +220,7 @@ export default component$(() => {
           </section>
         </ContentOverlapPortrait>
       </Section>
-      <Section>
+      <Section backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
             <h2 class='text-xl font-bold md:text-4xl'>
@@ -249,7 +249,7 @@ export default component$(() => {
           </section>
         </VideoOverlapLandscape>
       </Section>
-      <Section backgroundColor='gray'>
+      <Section>
         <ContentOverlapPortrait
           image={{
             source: '/img/cyber/cyber-portal/planning-table.webp',
@@ -279,6 +279,7 @@ export default component$(() => {
           </section>
         </ContentOverlapPortrait>
       </Section>
+
       <Section>
         <HeadingArticle text='Wählen Sie das Paket aus, das am besten zu Ihnen passt.' />
         <div class='mb-4 flex flex-wrap items-center justify-center gap-4 rounded-3xl p-8 shadow-md'>
@@ -427,6 +428,7 @@ export default component$(() => {
           </div>
         </div>
       </Section>
+
       <Section backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='FjThxiKBApc'>
           <section class='flex flex-col space-y-4'>
@@ -446,7 +448,8 @@ export default component$(() => {
           </section>
         </VideoOverlapLandscape>
       </Section>
-      <Section backgroundColor='gray'>
+
+      <Section>
         <div class='mb-14 flex flex-col  items-center gap-y-10'>
           <div class='h-1 w-10 bg-primary' />
 
@@ -485,7 +488,8 @@ export default component$(() => {
           </Modal>
         </div>
       </Section>
-      <Section id='wichtig_fuer_cyber_verantwortliche'>
+
+      <Section id='wichtig_fuer_cyber_verantwortliche' backgroundColor='gray'>
         <div class='mx-auto mb-4 h-1 w-10 bg-primary'></div>
         <h2 class='text-secondary mb-14 text-center text-4xl font-bold'>
           Wichtig für{' '}
@@ -504,6 +508,7 @@ export default component$(() => {
 
         <YouTubeVideoGrid videos={cyberVerantwortlicheVideos} />
       </Section>
+
       <Section>
         <div class='mb-14 flex flex-col items-center gap-y-10'>
           <div class='h-1 w-10 bg-primary' />
@@ -544,7 +549,8 @@ export default component$(() => {
           </Modal>
         </div>
       </Section>
-      <Section>
+
+      <Section backgroundColor='gray'>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
           <div class='h-1 w-10 bg-primary' />
 
@@ -566,7 +572,8 @@ export default component$(() => {
           </LinkCallToAction>
         </div>
       </Section>
-      <Section backgroundColor='gray'>
+
+      <Section>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
           <div class='h-1 w-10 bg-primary' />
 

@@ -10,7 +10,7 @@ import { NavigationContext } from '~/components/navigation/navigation.context';
 import { QuickDialButtons } from '~/components/quick-dial-buttons';
 import { ContactPossibilitiesGrid } from '../components/contact-possibilities-grid';
 import { ContentSwitch } from '../components/content-switch';
-import { Section } from '../components/section-area';
+import { Section } from '../components/section';
 
 export default component$(() => {
   const documentHead = useDocumentHead();

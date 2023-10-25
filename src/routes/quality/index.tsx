@@ -1,7 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { ArticleSection } from '~/components/article-section';
-import { Section } from '~/components/section-area';
+import { Section } from '~/components/section';
 import type { Article } from '../../components/article-section/model';
 
 export default component$(() => {

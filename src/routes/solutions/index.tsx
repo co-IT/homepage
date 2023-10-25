@@ -4,7 +4,7 @@ import { ArticleCard } from '~/components/article-section/article-card';
 import { VideoOverlapLandscape } from '~/components/content-overlap';
 import { HeadingSegmentSecondary } from '~/components/heading-segment';
 import { LinkCallToAction } from '~/components/link-call-to-action';
-import { Section } from '~/components/section-area';
+import { Section } from '~/components/section';
 
 export default component$(() => {
   return (

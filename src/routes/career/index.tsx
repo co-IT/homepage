@@ -11,7 +11,7 @@ import {
   JobOffersGrid
 } from '~/components/job-offers';
 import { LinkCallToAction } from '~/components/link-call-to-action';
-import { Section } from '~/components/section-area';
+import { Section } from '~/components/section';
 import { Timeline } from '~/components/timeline/timeline';
 import { YouTubeVideoGrid } from '~/components/youtube';
 import { createJobOffersFromRecruitee } from './model-helper';

@@ -24,7 +24,6 @@ export const Section = component$((props: SectionProps) => {
           <Slot />
         )}
       </section>
-      )
     </>
   );
 });

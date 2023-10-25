@@ -9,7 +9,7 @@ import {
   HeadingSegmentSecondary800
 } from '~/components/heading-segment';
 import { LinkCallToAction } from '~/components/link-call-to-action';
-import { Section } from '~/components/section-area';
+import { Section } from '~/components/section';
 
 export default component$(() => {
   return (
