@@ -220,7 +220,6 @@ export default component$(() => {
           </section>
         </ContentOverlapPortrait>
       </SectionArea>
-
       <SectionArea>
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
@@ -250,7 +249,6 @@ export default component$(() => {
           </section>
         </VideoOverlapLandscape>
       </SectionArea>
-
       <SectionArea backgroundColor='gray'>
         <ContentOverlapPortrait
           image={{
@@ -281,7 +279,6 @@ export default component$(() => {
           </section>
         </ContentOverlapPortrait>
       </SectionArea>
-
       <SectionArea>
         <HeadingArticle text='Wählen Sie das Paket aus, das am besten zu Ihnen passt.' />
         <div class='mb-4 flex flex-wrap items-center justify-center gap-4 rounded-3xl p-8 shadow-md'>
@@ -430,7 +427,6 @@ export default component$(() => {
           </div>
         </div>
       </SectionArea>
-
       <SectionArea backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='FjThxiKBApc'>
           <section class='flex flex-col space-y-4'>
@@ -450,7 +446,6 @@ export default component$(() => {
           </section>
         </VideoOverlapLandscape>
       </SectionArea>
-
       <SectionArea backgroundColor='gray'>
         <div class='mb-14 flex flex-col  items-center gap-y-10'>
           <div class='h-1 w-10 bg-primary' />
@@ -490,8 +485,7 @@ export default component$(() => {
           </Modal>
         </div>
       </SectionArea>
-
-<SectionArea>
+      <SectionArea id='wichtig_fuer_cyber_verantwortliche'>
         <div class='mx-auto mb-4 h-1 w-10 bg-primary'></div>
         <h2 class='text-secondary mb-14 text-center text-4xl font-bold'>
           Wichtig für{' '}
@@ -499,11 +493,17 @@ export default component$(() => {
         </h2>
 
         <p class='mx-auto mb-14 max-w-xl text-center font-medium leading-7'>
-          Die besten Phishing-Mails helfen nichts, wenn diese nicht den Posteingang des Empfängers erreichen. Geben Sie deshalb unseren E-Mail-Server und unsere Domains in Ihrer Firewall und in den Postfächern frei. Nur dadurch können Sie sicherstellen, dass Auswertungen zum Klickverhalten korrekt sind. Damit Sie schnell starten können, haben wir für gängige Produkte wie Microsofts "Exchange Server" Anleitungsvideos bereitgestellt.</p>
+          Die besten Phishing-Mails helfen nichts, wenn diese nicht den
+          Posteingang des Empfängers erreichen. Geben Sie deshalb unseren
+          E-Mail-Server und unsere Domains in Ihrer Firewall und in den
+          Postfächern frei. Nur dadurch können Sie sicherstellen, dass
+          Auswertungen zum Klickverhalten korrekt sind. Damit Sie schnell
+          starten können, haben wir für gängige Produkte wie Microsofts
+          "Exchange Server" Anleitungsvideos bereitgestellt.
+        </p>
 
         <YouTubeVideoGrid videos={cyberVerantwortlicheVideos} />
-</SectionArea>
-
+      </SectionArea>
       <SectionArea>
         <div class='mb-14 flex flex-col items-center gap-y-10'>
           <div class='h-1 w-10 bg-primary' />
@@ -544,7 +544,6 @@ export default component$(() => {
           </Modal>
         </div>
       </SectionArea>
-
       <SectionArea>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
           <div class='h-1 w-10 bg-primary' />
@@ -567,7 +566,6 @@ export default component$(() => {
           </LinkCallToAction>
         </div>
       </SectionArea>
-
       <SectionArea backgroundColor='gray'>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
           <div class='h-1 w-10 bg-primary' />
@@ -595,7 +593,6 @@ export default component$(() => {
           </LinkCallToAction>
         </div>
       </SectionArea>
-
     </>
   );
 });
