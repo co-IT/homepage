@@ -1,7 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { ArticleSection } from '~/components/article-section';
-import { SectionArea } from '~/components/section-area';
+import { Section } from '~/components/section-area';
 import { TeamSection } from '~/components/team-section';
 import type { Article } from '../../components/article-section/model';
 
@@ -37,9 +37,9 @@ export default component$(() => {
   ];
   return (
     <>
-      <SectionArea>
+      <Section>
         <ArticleSection articles={articles} />
-      </SectionArea>
+      </Section>
 
       <TeamSection />
     </>

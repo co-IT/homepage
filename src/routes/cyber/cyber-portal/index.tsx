@@ -10,7 +10,7 @@ import type { DocumentHead } from '@builder.io/qwik-city';
 
 import { BlackCloseIcon, CheckIcon } from '~/components/icons';
 import { InfoPopover } from '~/components/info-popover/info-popover';
-import { SectionArea } from '~/components/section-area';
+import { Section } from '~/components/section-area';
 
 import {
   ContentOverlapPortrait,
@@ -195,7 +195,7 @@ export default component$(() => {
 
   return (
     <>
-      <SectionArea backgroundColor='gray'>
+      <Section backgroundColor='gray'>
         <ContentOverlapPortrait
           image={{
             source: '/img/cyber/cyber-portal/man-with-rocket.webp',
@@ -219,9 +219,8 @@ export default component$(() => {
             </p>
           </section>
         </ContentOverlapPortrait>
-      </SectionArea>
-
-      <SectionArea>
+      </Section>
+      <Section>
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
             <h2 class='text-xl font-bold md:text-4xl'>
@@ -249,9 +248,8 @@ export default component$(() => {
             </LinkCallToAction>
           </section>
         </VideoOverlapLandscape>
-      </SectionArea>
-
-      <SectionArea backgroundColor='gray'>
+      </Section>
+      <Section backgroundColor='gray'>
         <ContentOverlapPortrait
           image={{
             source: '/img/cyber/cyber-portal/planning-table.webp',
@@ -280,9 +278,8 @@ export default component$(() => {
             </p>
           </section>
         </ContentOverlapPortrait>
-      </SectionArea>
-
-      <SectionArea>
+      </Section>
+      <Section>
         <HeadingArticle text='Wählen Sie das Paket aus, das am besten zu Ihnen passt.' />
         <div class='mb-4 flex flex-wrap items-center justify-center gap-4 rounded-3xl p-8 shadow-md'>
           <section class='flex gap-4'>
@@ -429,9 +426,8 @@ export default component$(() => {
             </div>
           </div>
         </div>
-      </SectionArea>
-
-      <SectionArea backgroundColor='gray'>
+      </Section>
+      <Section backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='FjThxiKBApc'>
           <section class='flex flex-col space-y-4'>
             <h2 class='text-xl font-bold md:text-4xl'>
@@ -449,9 +445,8 @@ export default component$(() => {
             </LinkCallToAction>
           </section>
         </VideoOverlapLandscape>
-      </SectionArea>
-
-      <SectionArea backgroundColor='gray'>
+      </Section>
+      <Section backgroundColor='gray'>
         <div class='mb-14 flex flex-col  items-center gap-y-10'>
           <div class='h-1 w-10 bg-primary' />
 
@@ -489,9 +484,8 @@ export default component$(() => {
             </ModalContent>
           </Modal>
         </div>
-      </SectionArea>
-
-<SectionArea>
+      </Section>
+      <Section id='wichtig_fuer_cyber_verantwortliche'>
         <div class='mx-auto mb-4 h-1 w-10 bg-primary'></div>
         <h2 class='text-secondary mb-14 text-center text-4xl font-bold'>
           Wichtig für{' '}
@@ -499,12 +493,18 @@ export default component$(() => {
         </h2>
 
         <p class='mx-auto mb-14 max-w-xl text-center font-medium leading-7'>
-          Die besten Phishing-Mails helfen nichts, wenn diese nicht den Posteingang des Empfängers erreichen. Geben Sie deshalb unseren E-Mail-Server und unsere Domains in Ihrer Firewall und in den Postfächern frei. Nur dadurch können Sie sicherstellen, dass Auswertungen zum Klickverhalten korrekt sind. Damit Sie schnell starten können, haben wir für gängige Produkte wie Microsofts "Exchange Server" Anleitungsvideos bereitgestellt.</p>
+          Die besten Phishing-Mails helfen nichts, wenn diese nicht den
+          Posteingang des Empfängers erreichen. Geben Sie deshalb unseren
+          E-Mail-Server und unsere Domains in Ihrer Firewall und in den
+          Postfächern frei. Nur dadurch können Sie sicherstellen, dass
+          Auswertungen zum Klickverhalten korrekt sind. Damit Sie schnell
+          starten können, haben wir für gängige Produkte wie Microsofts
+          "Exchange Server" Anleitungsvideos bereitgestellt.
+        </p>
 
         <YouTubeVideoGrid videos={cyberVerantwortlicheVideos} />
-</SectionArea>
-
-      <SectionArea>
+      </Section>
+      <Section>
         <div class='mb-14 flex flex-col items-center gap-y-10'>
           <div class='h-1 w-10 bg-primary' />
 
@@ -543,9 +543,8 @@ export default component$(() => {
             </ModalContent>
           </Modal>
         </div>
-      </SectionArea>
-
-      <SectionArea>
+      </Section>
+      <Section>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
           <div class='h-1 w-10 bg-primary' />
 
@@ -566,9 +565,8 @@ export default component$(() => {
             Telefontermin auswählen.
           </LinkCallToAction>
         </div>
-      </SectionArea>
-
-      <SectionArea backgroundColor='gray'>
+      </Section>
+      <Section backgroundColor='gray'>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
           <div class='h-1 w-10 bg-primary' />
 
@@ -594,8 +592,7 @@ export default component$(() => {
             Erstberatung vereinbaren
           </LinkCallToAction>
         </div>
-      </SectionArea>
-
+      </Section>
     </>
   );
 });
