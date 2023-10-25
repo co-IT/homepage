@@ -4,12 +4,12 @@ import { ArticleCard } from '~/components/article-section/article-card';
 import { VideoOverlapLandscape } from '~/components/content-overlap';
 import { HeadingSegmentSecondary } from '~/components/heading-segment';
 import { LinkCallToAction } from '~/components/link-call-to-action';
-import { SectionArea } from '~/components/section-area';
+import { Section } from '~/components/section-area';
 
 export default component$(() => {
   return (
     <div>
-      <SectionArea>
+      <Section>
         <ArticleCard
           article={{
             direction: 'right',
@@ -28,9 +28,9 @@ Change, Prozess- und Projektmanagement
 Strategie- und Unternehmensberatung`
           }}
         ></ArticleCard>
-      </SectionArea>
+      </Section>
 
-      <SectionArea backgroundColor='gray'>
+      <Section backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='QVArEtvAGsk'>
           <section class='flex flex-col space-y-4'>
             <h2 class='text-xl font-bold md:text-4xl'>
@@ -53,7 +53,7 @@ Strategie- und Unternehmensberatung`
             </LinkCallToAction>
           </section>
         </VideoOverlapLandscape>
-      </SectionArea>
+      </Section>
     </div>
   );
 });

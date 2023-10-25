@@ -1,11 +1,11 @@
 import type { QwikIntrinsicElements } from '@builder.io/qwik';
 import { component$, Slot } from '@builder.io/qwik';
 
-export type SectionAreaProps = QwikIntrinsicElements['section'] & {
+export type SectionProps = QwikIntrinsicElements['section'] & {
   backgroundColor?: 'white' | 'gray';
 };
 
-export const SectionArea = component$((props: SectionAreaProps) => {
+export const Section = component$((props: SectionProps) => {
   const appearance: 'bg-white' | 'bg-gray-100' =
     props.backgroundColor === 'white'
       ? 'bg-white'

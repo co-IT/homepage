@@ -10,7 +10,7 @@ import { NavigationContext } from '~/components/navigation/navigation.context';
 import { QuickDialButtons } from '~/components/quick-dial-buttons';
 import { ContactPossibilitiesGrid } from '../components/contact-possibilities-grid';
 import { ContentSwitch } from '../components/content-switch';
-import { SectionArea } from '../components/section-area';
+import { Section } from '../components/section-area';
 
 export default component$(() => {
   const documentHead = useDocumentHead();
@@ -28,14 +28,14 @@ export default component$(() => {
       <main>
         <Slot />
 
-        <SectionArea>
+        <Section>
           <ContentSwitch />
-        </SectionArea>
+        </Section>
 
-        <SectionArea>
+        <Section>
           {!documentHead.frontmatter?.footer
             ?.disableContactPossibilitiesGrid && <ContactPossibilitiesGrid />}
-        </SectionArea>
+        </Section>
       </main>
 
       <Footer />

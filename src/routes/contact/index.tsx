@@ -2,18 +2,18 @@ import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { ContactPossibilitiesGrid } from '~/components/contact-possibilities-grid';
 import { MapSection } from '~/components/map-section';
-import { SectionArea } from '~/components/section-area';
+import { Section } from '~/components/section-area';
 
 export default component$(() => {
   return (
     <>
-      <SectionArea backgroundColor='white'>
+      <Section backgroundColor='white'>
         <ContactPossibilitiesGrid />
-      </SectionArea>
+      </Section>
 
-      <SectionArea backgroundColor='white'>
+      <Section backgroundColor='white'>
         <MapSection />
-      </SectionArea>
+      </Section>
     </>
   );
 });

@@ -11,7 +11,7 @@ import {
   JobOffersGrid
 } from '~/components/job-offers';
 import { LinkCallToAction } from '~/components/link-call-to-action';
-import { SectionArea } from '~/components/section-area';
+import { Section } from '~/components/section-area';
 import { Timeline } from '~/components/timeline/timeline';
 import { YouTubeVideoGrid } from '~/components/youtube';
 import { createJobOffersFromRecruitee } from './model-helper';
@@ -102,9 +102,9 @@ export default component$(() => {
 
   return (
     <>
-      <SectionArea>
+      <Section>
         <ArticleSection articles={articles} />
-      </SectionArea>
+      </Section>
 
       <VideoOverlapLandscape
         youTubeVideoId='STUlI6toSTA'
@@ -135,31 +135,31 @@ export default component$(() => {
 
       <hr class='container mx-auto mt-10 lg:mt-20' />
 
-      <SectionArea>
+      <Section>
         <div class='mx-auto mb-4 h-1 w-10 bg-primary'></div>
         <h2 class='text-secondary mb-14 text-center text-4xl font-bold'>
           Warum wir unsere Arbeit lieben
         </h2>
         <YouTubeVideoGrid videos={videosWarumWirUnsereArbeitLieben} />
-      </SectionArea>
+      </Section>
 
-      <SectionArea>
+      <Section>
         <div class='mx-auto mb-4 h-1 w-10 bg-primary'></div>
         <h2 class='text-secondary mb-14 text-center text-4xl font-bold'>
           Wie wir zusammenarbeiten
         </h2>
         <YouTubeVideoGrid videos={videosWieWirArbeiten} />
-      </SectionArea>
+      </Section>
 
-      <SectionArea>
+      <Section>
         <div class='mx-auto mb-4 h-1 w-10 bg-primary'></div>
         <h2 class='text-secondary mb-14 text-center text-4xl font-bold'>
           Was wir Dir bieten
         </h2>
         <YouTubeVideoGrid videos={videosWasWirDirBieten} />
-      </SectionArea>
+      </Section>
 
-      <SectionArea>
+      <Section>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
           <div class='h-1 w-10 bg-primary' />
 
@@ -184,8 +184,8 @@ export default component$(() => {
             </div>
           </section>
         </div>
-      </SectionArea>
-      <SectionArea>
+      </Section>
+      <Section>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
           <div class='h-1 w-10 bg-primary' />
 
@@ -207,7 +207,7 @@ export default component$(() => {
             🚀 Bewirb Dich initiativ
           </LinkCallToAction>
         </section>
-      </SectionArea>
+      </Section>
     </>
   );
 });

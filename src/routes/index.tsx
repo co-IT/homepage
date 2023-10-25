@@ -9,12 +9,12 @@ import {
   HeadingSegmentSecondary800
 } from '~/components/heading-segment';
 import { LinkCallToAction } from '~/components/link-call-to-action';
-import { SectionArea } from '~/components/section-area';
+import { Section } from '~/components/section-area';
 
 export default component$(() => {
   return (
     <>
-      <SectionArea>
+      <Section>
         <ContentOverlapPortrait
           image={{
             source:
@@ -38,7 +38,7 @@ export default component$(() => {
             <LinkCallToAction href='/about'>Lösung anfragen</LinkCallToAction>
           </section>
         </ContentOverlapPortrait>
-      </SectionArea>
+      </Section>
 
       {/** TODO: Currently spacing is hard since the *Overlap-Components have content that breaks the DOM-flow
        *         We need to find a way optimizing this in order to not having to handle special cases.
