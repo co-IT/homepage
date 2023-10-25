@@ -23,8 +23,8 @@
     "qwik": "qwik"
   },
   "devDependencies": {
-    "@builder.io/qwik": "1.2.6",
-    "@builder.io/qwik-city": "1.2.6",
+    "@builder.io/qwik": "1.2.14",
+    "@builder.io/qwik-city": "1.2.14",
     "@floating-ui/dom": "^1.5.3",
     "@qwik-ui/headless": "^0.1.17",
     "@types/eslint": "8.44.2",
