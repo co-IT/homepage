@@ -100,7 +100,7 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
 
   return (
     <>
-      <div class='container mx-auto'>
+      <div class='container mx-auto p-4'>
         <div class='flex flex-col gap-y-14 px-8 lg:px-0'>
           <div class='grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3'>
             {props.videos.map((video, index) => (
