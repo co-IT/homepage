@@ -23,8 +23,11 @@ export const JobOfferCard = component$((props: JobOfferCardProps) => {
         <span>{props.jobOffer.location}</span>
 
         <div class='flex flex-row gap-2'>
-          {props.jobOffer.tags?.map(tag => (
-            <span class='bg-secondary rounded-lg px-2 py-1 text-sm font-bold leading-5 text-white'>
+          {props.jobOffer.tags?.map((tag, key) => (
+            <span
+              key={key}
+              class='bg-secondary rounded-lg px-2 py-1 text-sm font-bold leading-5 text-white'
+            >
               {tag}
             </span>
           ))}
