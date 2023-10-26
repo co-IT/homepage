@@ -8,7 +8,7 @@ import {
 } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 
-import { BlackCloseIcon, CheckIcon } from '~/components/icons';
+import { CheckIcon } from '~/components/icons';
 import { InfoPopover } from '~/components/info-popover/info-popover';
 import { Section } from '~/components/section';
 
@@ -17,7 +17,6 @@ import {
   VideoOverlapLandscape
 } from '~/components/content-overlap';
 
-import { HeadingArticle } from '~/components/heading-article';
 import {
   HeadingSegmentSecondary,
   HeadingSegmentSecondary800
@@ -27,7 +26,6 @@ import { LinkCallToAction } from '~/components/link-call-to-action';
 import { ShieldCheckmarkIcon } from '~/components/icons/shield-checkmark-icon';
 import { StarIcon } from '~/components/icons/star-icon';
 import { ThumbsUpIcon } from '~/components/icons/thumbs-up-icon';
-import { Modal, ModalContent, ModalHeader } from '~/components/qwik-ui';
 import { YouTubeVideoGrid } from '~/components/youtube';
 
 import {
@@ -44,9 +42,6 @@ export default component$(() => {
 
   const userCountSig = useSignal<string>('10');
   const rangeValueSig = useSignal<string>('1');
-
-  const surveyModalShow = useSignal<boolean>(false);
-  const offerModalShow = useSignal<boolean>(false);
 
   const toEuro = (amount: number) =>
     amount.toLocaleString('de-DE', {
@@ -281,8 +276,11 @@ export default component$(() => {
       </Section>
 
       <Section>
-        <HeadingArticle text='Wählen Sie das Paket aus, das am besten zu Ihnen passt.' />
-        <div class='mb-4 flex flex-wrap items-center justify-center gap-4 rounded-3xl p-8 shadow-md'>
+        <div class='mx-auto mb-3 h-1 w-10 bg-primary' />
+        <h2 class='mb-5 px-6 text-center text-3xl font-bold leading-8 text-secondary-900 lg:px-0  lg:text-4xl lg:leading-10'>
+          Wählen Sie das Paket aus, das am besten zu Ihnen passt.
+        </h2>
+        <div class='mx-auto mb-4 flex max-w-5xl flex-wrap items-center justify-center gap-4 rounded-3xl p-8 shadow-md'>
           <section class='flex gap-4'>
             <span class='text-xl font-bold'>Anzahl Empfänger</span>
             <input
@@ -463,29 +461,12 @@ export default component$(() => {
             persönlich bei Ihnen melden, um alle Details zu besprechen.
           </p>
 
-          <LinkCallToAction onClick$={() => (offerModalShow.value = true)}>
+          <LinkCallToAction
+            href='https://forms.office.com/e/x9y2sJSm8P'
+            target='_blank'
+          >
             Jetzt Angebot anfordern
           </LinkCallToAction>
-          <Modal bind:show={offerModalShow}>
-            <ModalHeader class='flex items-center justify-between bg-black px-8 pb-8 pt-14'>
-              <h2 class='text:md font-bold text-white md:text-4xl'>
-                <i class='mb-2 block h-[4px] w-10 bg-primary' />
-                <span>Angebot anfordern</span>
-              </h2>
-              <button
-                class='cursor-pointer'
-                onClick$={() => (offerModalShow.value = false)}
-              >
-                <BlackCloseIcon />
-              </button>
-            </ModalHeader>
-            <ModalContent>
-              <iframe
-                src='https://forms.office.com/e/x9y2sJSm8P?embed=true'
-                class='m-0 max-h-screen min-h-[80vh] min-w-[80vw] max-w-full border-0'
-              ></iframe>
-            </ModalContent>
-          </Modal>
         </div>
       </Section>
 
@@ -524,29 +505,12 @@ export default component$(() => {
             dauert nur wenige Minuten.
           </p>
 
-          <LinkCallToAction onClick$={() => (surveyModalShow.value = true)}>
+          <LinkCallToAction
+            href='https://forms.office.com/Pages/ResponsePage.aspx?id=hqVrfY9Jf0mmHhFRXNyN_57QTiT3NkFCvqHHDSVqQ7RURDdIWlhERzZWNEJINUI4M1paNDRLN0pEVi4u'
+            target='_blank'
+          >
             Jetzt mitgestalten
           </LinkCallToAction>
-          <Modal bind:show={surveyModalShow}>
-            <ModalHeader class='flex items-center justify-between bg-black px-8 pb-8 pt-14'>
-              <h2 class='text:md font-bold text-white md:text-4xl'>
-                <i class='mb-2 block h-[4px] w-10 bg-primary' />
-                <span>Umfrage</span>
-              </h2>
-              <button
-                class='cursor-pointer'
-                onClick$={() => (surveyModalShow.value = false)}
-              >
-                <BlackCloseIcon />
-              </button>
-            </ModalHeader>
-            <ModalContent>
-              <iframe
-                src='https://forms.office.com/Pages/ResponsePage.aspx?id=hqVrfY9Jf0mmHhFRXNyN_57QTiT3NkFCvqHHDSVqQ7RURDdIWlhERzZWNEJINUI4M1paNDRLN0pEVi4u&embed=true'
-                class='m-0 max-h-screen min-h-[80vh] min-w-[80vw] max-w-full border-0'
-              ></iframe>
-            </ModalContent>
-          </Modal>
         </div>
       </Section>
 
