@@ -35,6 +35,7 @@ import {
   starterFeatures
 } from './resources';
 
+import { LinkedHeading } from '../../../components/link-heading';
 import style from './styles.css?inline';
 
 export default component$(() => {
@@ -447,13 +448,12 @@ export default component$(() => {
         </VideoOverlapLandscape>
       </Section>
 
-      <Section>
-        <div class='mb-14 flex flex-col  items-center gap-y-10'>
-          <div class='h-1 w-10 bg-primary' />
-
-          <h2 class='text-secondary text-4xl font-bold leading-10 text-secondary-900'>
-            Fordern Sie Ihr individuelles Angebot an.
-          </h2>
+      <Section id='fordern_sie_ihr_angebot_an'>
+        <div class='mb-14 flex flex-col  items-center'>
+          <LinkedHeading href='#fordern_sie_ihr_angebot_an'>
+            Fordern Sie Ihr{' '}
+            <HeadingSegmentSecondary800 text='individuelles Angebot' /> an.
+          </LinkedHeading>
 
           <p class='max-w-2xl'>
             Sichern Sie sich Ihr maßgeschneidertes Angebot - unkompliziert und
@@ -471,11 +471,10 @@ export default component$(() => {
       </Section>
 
       <Section id='wichtig_fuer_cyber_verantwortliche' backgroundColor='gray'>
-        <div class='mx-auto mb-4 h-1 w-10 bg-primary'></div>
-        <h2 class='text-secondary mb-14 text-center text-4xl font-bold'>
+        <LinkedHeading href='#wichtig_fuer_cyber_verantwortliche'>
           Wichtig für{' '}
-          <HeadingSegmentSecondary800 text='Cyber-Verantwortliche'></HeadingSegmentSecondary800>
-        </h2>
+          <HeadingSegmentSecondary800 text='Cyber-Verantwortliche' />
+        </LinkedHeading>
 
         <p class='mx-auto mb-14 max-w-xl text-center font-medium leading-7'>
           Die besten Phishing-Mails helfen nichts, wenn diese nicht den
@@ -490,13 +489,12 @@ export default component$(() => {
         <YouTubeVideoGrid videos={cyberVerantwortlicheVideos} />
       </Section>
 
-      <Section>
-        <div class='mb-14 flex flex-col items-center gap-y-10'>
-          <div class='h-1 w-10 bg-primary' />
-
-          <h2 class='text-secondary text-4xl font-bold leading-10 text-secondary-900'>
-            Teilen Sie uns Ihre Meinung mit
-          </h2>
+      <Section id='teilen_sie_uns_ihre_meinung_mit'>
+        <div class='mb-14 flex flex-col items-center gap-4'>
+          <LinkedHeading href='#teilen_sie_uns_ihre_meinung_mit'>
+            Teilen Sie uns <HeadingSegmentSecondary800 text='Ihre Meinung ' />{' '}
+            mit
+          </LinkedHeading>
 
           <p class='max-w-xl'>
             Um unsere Pakete noch genauer auf Ihre Bedarfe zuschneiden zu
@@ -514,13 +512,12 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section backgroundColor='gray'>
+      <Section id='sie_wollen_ihre_anwender_schulen' backgroundColor='gray'>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
-          <div class='h-1 w-10 bg-primary' />
-
-          <h2 class='text-secondary text-4xl font-bold leading-10 text-secondary-900'>
-            Sie wollen Ihre Anwender schulen?
-          </h2>
+          <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
+            Sie wollen Ihre <HeadingSegmentSecondary800 text='Ihre Anwender ' />{' '}
+            schulen?
+          </LinkedHeading>
 
           <p class='max-w-xl'>
             Für Kunden, die persönliche Schulung zu schätzen wissen, flankieren
@@ -539,11 +536,10 @@ export default component$(() => {
 
       <Section>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
-          <div class='h-1 w-10 bg-primary' />
-
-          <h2 class='text-secondary text-4xl font-bold leading-10 text-secondary-900'>
-            Sie suchen einen Partner für IT-Sicherheit?
-          </h2>
+          <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
+            Sie suchen einen <HeadingSegmentSecondary800 text='Partner' /> für
+            IT-Sicherheit?
+          </LinkedHeading>
 
           <p class='max-w-xl'>
             Wir wären nicht, wer wir sind, wenn wir Veränderung nicht ganz zu
