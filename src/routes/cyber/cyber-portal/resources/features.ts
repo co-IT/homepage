@@ -10,6 +10,9 @@ export const starterFeatures: ProductFeature[] = [
   },{
     text: 'Zahlweise: monatlich',
     detail:'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
+   },{
+    text: 'Klickrate: Hoch',
+    detail:'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
   },{
     text: 'Anzahl E-Mails: 12',
     detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
@@ -18,7 +21,7 @@ export const starterFeatures: ProductFeature[] = [
     detail: 'Pro Monat erhalten Empfänger eine Phishing Simulation.'
   },{ 
     text: 'Versandzeit: Gleichzeitig',
-    detail: 'Alle Phishing Simulationen werden zur gleichen Zeit an alle Empfänger verschickt.'
+    detail: 'Alle Empfänger erhalten zur gleichen Zeit die gleiche Phishing Simulationen.'
   },{
     text: 'Sprachniveau: Hoch',
     detail: 'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausiblität geachtet.'
@@ -48,6 +51,9 @@ export const profiFeatures: ProductFeature[] = [
     text: 'Zahlweise: monatlich',
     detail:'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },{
+    text: 'Klickrate: Hoch',
+    detail:'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
+  },{
     text: 'Anzahl E-Mails: 24',
     detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },{ 
@@ -55,7 +61,7 @@ export const profiFeatures: ProductFeature[] = [
     detail: 'Alle zwei Wochen erhalten Empfänger eine Phishing Simulation.'
   },{ 
     text: 'Versandzeit: Gleichzeitig',
-    detail: 'Alle Phishing Simulationen werden gleichzeitig an alle Empfänger verschickt.'
+    detail: 'Alle Empfänger erhalten zur gleichen Zeit die gleiche Phishing Simulationen.'
   },{
     text: 'Sprachniveau: Hoch',
     detail: 'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausiblität geachtet.'
@@ -94,6 +100,9 @@ export const expertFeatures: ProductFeature[] = [
     text: 'Zahlweise: monatlich',
     detail:'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },{
+    text: 'Klickrate: Hoch',
+    detail:'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
+  },{
     text: 'Anzahl E-Mails: 52',
     detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },{
@@ -101,7 +110,7 @@ export const expertFeatures: ProductFeature[] = [
     detail: 'Jede Woche erhalten die Empfänger eine Phishing-Simulation. Damit erreichen Sie maximale Sensibilisierung ohne den Empfänger zu häufig zu stören.'
   },{
     text: 'Versandzeit: Zufällig',
-    detail: 'Alle Phishing Simulationen werden pro Empfänger zufällig verschickt.'
+    detail: 'Jeder Empfänger erhält zu unterschiedlichen Zeiten unterschiedliche Phishing Simulationen.'
   },{
     text: 'Sprachniveau: Hoch',
     detail: 'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausiblität geachtet.'
