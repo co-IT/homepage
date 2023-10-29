@@ -223,9 +223,20 @@ export default component$(() => {
               <HeadingSegmentSecondary text='Kostenfreie Basisversion' />
             </h2>
             <p class='leading-7'>
-              Beim Cyber Portal handelt es sich um eine Individuallösung für alle Kunden der Württembergischen Versicherung. Die Plattform soll allen Versicherungsnehmern gleichermaßen zugutekommen, indem der Fokus auf leicht zu bedienende Funktionen, praxisrelevantes Wissen und hochwertigen Phishing-Simulationen gelegt wird. Dabei stellt die Württembergische als alleiniger Auftraggeber sicher, dass die Basisversion kostenfrei weiterentwickelt, kontinuierlich aktualisiert und sicher betrieben wird.
-Seit Veröffentlichung des Cyber Portals im Jahr 2021 erreichen uns viele gute Ideen und individuelle Wünsche aus allen Unternehmensbranchen und -größen. Mit den hier angebotenen Zusatzpaketen wollen wir die Brücke für all diejenigen schlagen, denen unsere Lösung bereits geholfen hat und jetzt noch mehr helfen soll.
-</p>
+              Beim Cyber Portal handelt es sich um eine Individuallösung für
+              alle Kunden der Württembergischen Versicherung. Die Plattform soll
+              allen Versicherungsnehmern gleichermaßen zugutekommen, indem der
+              Fokus auf leicht zu bedienende Funktionen, praxisrelevantes Wissen
+              und hochwertigen Phishing-Simulationen gelegt wird. Dabei stellt
+              die Württembergische als alleiniger Auftraggeber sicher, dass die
+              Basisversion kostenfrei weiterentwickelt, kontinuierlich
+              aktualisiert und sicher betrieben wird. Seit Veröffentlichung des
+              Cyber Portals im Jahr 2021 erreichen uns viele gute Ideen und
+              individuelle Wünsche aus allen Unternehmensbranchen und -größen.
+              Mit den hier angebotenen Zusatzpaketen wollen wir die Brücke für
+              all diejenigen schlagen, denen unsere Lösung bereits geholfen hat
+              und jetzt noch mehr helfen soll.
+            </p>
             <LinkCallToAction
               href='https://e.co-IT.eu/cyber/faq'
               target='_blank'
@@ -249,18 +260,21 @@ Seit Veröffentlichung des Cyber Portals im Jahr 2021 erreichen uns viele gute I
               <HeadingSegmentSecondary800 text='Sicherheit' />
             </h2>
             <p class='pb-4 leading-7'>
-              Mit der kostenfreien Basisversion im Untergrund müssen wir nur die anfallende Mehrleistung weiterberechnen und können deutlich niedrigere Preise anbieten als vergleichbare Plattformen. Doch was bringt Ihnen eine günstige Lösung, wenn der Mehrwert
-              fehlt? Darum setzen wir ausschließlich Themen um, die Sie sich
-              wünschen: Jeder Abonnent eines jeden Pakets kann abstimmen, was
-              als nächstes realisiert werden soll. Abonnenten des „Experte“-Pakets 
-              können zudem auf die Auswahl, über die abgestimmt wird, Einfluss
-              nehmen. Es gibt noch einen weiteren Vorteil: Sie müssen kein
-              neues Produkt evaluieren und einführen. Die Integration der
-              Zusatzfunktionen erfolgt nahtlos und sofort bei Kauf. Das hilft
-              besonders größeren Unternehmen und Behörden kraftraubende
-              Genehmigungsprozesse zu beschleunigen und langwierige
-              Ausschreibungsverfahren zu umgehen. Die Basisversion ist schließlich in Ihrem
-              Haus bereits freigegeben und eingeführt.
+              Mit der kostenfreien Basisversion im Untergrund müssen wir nur die
+              anfallende Mehrleistung weiterberechnen und können deutlich
+              niedrigere Preise anbieten als vergleichbare Plattformen. Doch was
+              bringt Ihnen eine günstige Lösung, wenn der Mehrwert fehlt? Darum
+              setzen wir ausschließlich Themen um, die Sie sich wünschen: Jeder
+              Abonnent eines jeden Pakets kann abstimmen, was als nächstes
+              realisiert werden soll. Abonnenten des „Experte“-Pakets können
+              zudem auf die Auswahl, über die abgestimmt wird, Einfluss nehmen.
+              Es gibt noch einen weiteren Vorteil: Sie müssen kein neues Produkt
+              evaluieren und einführen. Die Integration der Zusatzfunktionen
+              erfolgt nahtlos und sofort bei Kauf. Das hilft besonders größeren
+              Unternehmen und Behörden kraftraubende Genehmigungsprozesse zu
+              beschleunigen und langwierige Ausschreibungsverfahren zu umgehen.
+              Die Basisversion ist schließlich in Ihrem Haus bereits freigegeben
+              und eingeführt.
             </p>
           </section>
         </ContentOverlapPortrait>
@@ -426,7 +440,14 @@ Seit Veröffentlichung des Cyber Portals im Jahr 2021 erreichen uns viele gute I
             </h2>
             <p class='leading-7'>
               In diesem Video stellen wir Ihnen alle Funktionen detailliert vor,
-              sodass Sie genau wissen, was Sie mit welchem Paket bekommen. Egal, für welches Paket Sie sich entscheiden: Alle Simulationen durchlaufen vorab einen Praxischeck. In einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern prüfen wir vorab die Klickraten. Wir unterscheiden dabei niedrige (>20%), mittelere (>40%) und hohe (>60%) Klickquoten. In vielen Fällen klicken über 90% der Anwender, sodass im mittel mehr als jede zweite Phishing-Mail geklickt wird.
+              sodass Sie genau wissen, was Sie mit welchem Paket bekommen. Egal,
+              für welches Paket Sie sich entscheiden: Alle Simulationen
+              durchlaufen vorab einen Praxischeck. In einer Testgruppe aus
+              mehreren Unternehmen mit über 300 Anwendern prüfen wir vorab die
+              Klickraten. Wir unterscheiden dabei niedrige (&gt;20%), mittlere
+              (&gt;40%) und hohe (&gt;60%) Klickquoten. In vielen Fällen klicken
+              über 90% der Anwender, sodass im mittel mehr als jede zweite
+              Phishing-Mail geklickt wird.
             </p>
             <LinkCallToAction
               href='https://e.co-IT.eu/cyber/anfrage'
