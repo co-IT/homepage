@@ -526,7 +526,7 @@ export default component$(() => {
       <Section id='sie_wollen_ihre_anwender_schulen' backgroundColor='gray'>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
           <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
-            Sie wollen Ihre <HeadingSegmentSecondary800 text='Ihre Anwender ' />{' '}
+            Sie wollen <HeadingSegmentSecondary800 text='Ihre Anwender ' />{' '}
             schulen?
           </LinkedHeading>
 
