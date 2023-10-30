@@ -4,6 +4,19 @@
   "short_name": "co-IT",
   "start_url": "https://co-IT.eu",
   "display": "standalone",
-  "background_color": "#fff",
-  "description": "Die offizielle Homepage der co-IT.eu GmbH."
+  "description": "Die offizielle Homepage der co-IT.eu GmbH.",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
 }
