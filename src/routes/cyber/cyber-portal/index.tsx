@@ -32,10 +32,13 @@ import {
   cyberVerantwortlicheVideos,
   expertFeatures,
   profiFeatures,
-  starterFeatures
+  starterFeatures,
+  wuerttembergischeFeatures
 } from './resources';
 
 import { LinkedHeading } from '../../../components/link-heading';
+import { PricePerUsePerMonth } from '../../../components/pricing/price-per-user-per-month';
+import { WuerttembergischeLogo } from '../../../components/wuerttembergische/logo';
 import style from './styles.css?inline';
 
 export default component$(() => {
@@ -330,9 +333,45 @@ export default component$(() => {
         </div>
 
         <div class='pricing-tiers justify-center'>
+          {/* Wuerttembergische Basic */}
           <div class='card grid items-start gap-8 shadow-md'>
             <div class='features'>
-              <h3 class='mb-4 flex items-center gap-4 text-3xl font-bold'>
+              <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold text-[#48504F]'>
+                <WuerttembergischeLogo />
+                Basic
+              </h3>
+              <ul>
+                {wuerttembergischeFeatures.map((feature, key) => {
+                  return (
+                    <li
+                      key={key}
+                      class='align-center grid grid-cols-[auto_auto_1fr] justify-items-end gap-2 pb-4'
+                    >
+                      <CheckIcon />
+                      <span>{feature.text}</span>
+                      {feature.detail && <InfoPopover text={feature.detail} />}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <div class='prices justify-end self-end'>
+              <a
+                href='https://www.wuerttembergische.de/geschaeftskunden/cyber-versicherung/'
+                target='_blank'
+                class='md rounded-[3.5rem] bg-[#f84914] p-4 text-center text-white transition-colors hover:bg-[#d33e11]'
+              >
+                Mehr zur Cyber-Versicherung
+              </a>
+              <br />
+              <small>Für Inhaber der Cyber-Versicherung inklusive</small>
+            </div>
+          </div>
+
+          {/* Starter */}
+          <div class='card grid items-start gap-8 shadow-md'>
+            <div class='features'>
+              <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold'>
                 <ThumbsUpIcon />
                 Starter
               </h3>
@@ -351,21 +390,17 @@ export default component$(() => {
                 })}
               </ul>
             </div>
-            <div class='prices justify-end self-end'>
-              <span>Anwender / Monat</span>
-              <span class='price'>
-                {toEuro(pricingTier.starter.pricePerUserPerMonth)}
-              </span>
-              <span>Gesamt / Monat</span>
-              <span class='price'>
-                {toEuro(pricingTier.starter.pricePerMonth)}
-              </span>
-            </div>
+
+            <PricePerUsePerMonth
+              usersCount={+userCountSig.value}
+              pricePerUser={pricingTier.starter.pricePerUserPerMonth}
+            />
           </div>
 
+          {/* Profi */}
           <div class='card grid items-start gap-8 shadow-xl'>
             <div class='features'>
-              <h3 class='mb-4 flex items-center gap-4 text-3xl font-bold'>
+              <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold'>
                 <StarIcon />
                 Profi
               </h3>
@@ -385,20 +420,16 @@ export default component$(() => {
               </ul>
             </div>
 
-            <div class='prices justify-end self-end '>
-              <span>Anwender / Monat</span>
-              <span class='price'>
-                {toEuro(pricingTier.professional.pricePerUserPerMonth)}
-              </span>
-              <span>Gesamt / Monat</span>
-              <span class='price'>
-                {toEuro(pricingTier.professional.pricePerYearMonth)}
-              </span>
-            </div>
+            <PricePerUsePerMonth
+              usersCount={+userCountSig.value}
+              pricePerUser={pricingTier.professional.pricePerUserPerMonth}
+            />
           </div>
+
+          {/* Expert */}
           <div class='card grid items-start gap-8 shadow-md' id='gold'>
             <div class='features'>
-              <h3 class='mb-4 flex items-center gap-4 text-3xl font-bold'>
+              <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold'>
                 <ShieldCheckmarkIcon />
                 Experte
               </h3>
@@ -417,17 +448,10 @@ export default component$(() => {
                 })}
               </ul>
             </div>
-
-            <div class='prices justify-end self-end'>
-              <span>Anwender / Monat</span>
-              <span class='price'>
-                {toEuro(pricingTier.expert.pricePerUserPerMonth)}
-              </span>
-              <span>Gesamt / Monat</span>
-              <span class='price'>
-                {toEuro(pricingTier.expert.pricePerMonth)}
-              </span>
-            </div>
+            <PricePerUsePerMonth
+              usersCount={+userCountSig.value}
+              pricePerUser={pricingTier.expert.pricePerUserPerMonth}
+            />
           </div>
         </div>
       </Section>
