@@ -47,12 +47,6 @@ export default component$(() => {
   const userCountSig = useSignal<string>('10');
   const rangeValueSig = useSignal<string>('1');
 
-  const toEuro = (amount: number) =>
-    amount.toLocaleString('de-DE', {
-      style: 'currency',
-      currency: 'EUR'
-    });
-
   const pricingTier = useStore({
     starter: {
       pricePerUserPerMonth: 0,
