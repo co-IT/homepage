@@ -5,27 +5,18 @@ type ProductFeature = {
 
 export const wuerttembergischeFeatures: ProductFeature[] = [
   {
-    text: 'E-Mail-Support',
+    text: 'Feedbackfunktion',
     detail:
-      'Unsere Reaktionszeiten sind in deutscher Sprache von Montag-Freitag zw. 9-16 Uhr und innerhalb von 48 Stunden.'
+      'Im Cyber Portal finden Sie in der unteren rechten Ecke eine Schaltfläche, die ein Formular öffnet, in dem Sie Feedback einsenden können.'
   },
   {
-    text: 'Zahlweise: monatlich',
-    detail:
-      'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
-  },
-  {
-    text: 'Klickrate: Hoch',
+    text: 'Klickquote: Hoch',
     detail:
       'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
   },
   {
-    text: 'Anzahl E-Mails: 12',
+    text: 'Anzahl E-Mails: 6',
     detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
-  },
-  {
-    text: 'Frequenz: 30 Tage',
-    detail: 'Pro Monat erhalten Empfänger eine Phishing Simulation.'
   },
   {
     text: 'Versandzeit: Gleichzeitig',
@@ -61,7 +52,7 @@ export const starterFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
-    text: 'Klickrate: Hoch',
+    text: 'Klickquote: Hoch',
     detail:
       'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
   },
@@ -122,7 +113,7 @@ export const profiFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
-    text: 'Klickrate: Hoch',
+    text: 'Klickquote: Hoch',
     detail:
       'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
   },
@@ -198,7 +189,7 @@ export const expertFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
-    text: 'Klickrate: Hoch',
+    text: 'Klickquote: Hoch',
     detail:
       'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
   },

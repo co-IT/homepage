@@ -41,6 +41,18 @@ import { PricePerUsePerMonth } from '../../../components/pricing/price-per-user-
 import { WuerttembergischeLogo } from '../../../components/wuerttembergische/logo';
 import style from './styles.css?inline';
 
+// const articles: Article[] = [
+//   {
+//     direction: 'right',
+//     image: {
+//       src: '/img/career/it-fascination.webp',
+//       alt: 'Two colleagues learning to together'
+//     },
+//     heading: 'Mach Deinen Beruf zur Berufung',
+//     text: 'Wir arbeiten, weil das Arbeiten selbst etwas Befriedigendes ist und weil das, was dabei herauskommt, für uns sinnvoll ist. Damit das funktioniert, sucht sich bei uns jeder seine Kunden und Projekte selbst aus. Du willst Routineaufgaben für Deine Kollegen automatisieren, um Tempo und Effizienz zu steigern? Sehr gern! Du möchtest lieber an unseren eigenen Produkten mitwirken, um neue Geschäftsfelder zu erschließen? Dann bring Deine Ideen ein! Dich reizt vor allem die Abwechslung? Dann unterstütze parallel mehrere Kunden in unterschiedlichen Branchen! Was in allen Fällen gleich bleibt: Du darfst Deine Talente ausschöpfen und eigene Vorstellungen realisieren. Wenn das zu Deinen Zielen passt, dann bewirb dich bei uns.'
+//   }
+// ];
+
 export default component$(() => {
   useStyles$(style);
 
@@ -243,6 +255,11 @@ export default component$(() => {
           </section>
         </VideoOverlapLandscape>
       </Section>
+
+      {/* <Section>
+        <ArticleSection articles={articles} />
+      </Section> */}
+
       <Section>
         <ContentOverlapPortrait
           image={{
@@ -292,17 +309,53 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Herausforderung' />
             </h2>
             <p class='pb-4 leading-7'>
-              Unsere E-Mail Phishingsimulationen setzen neue Maßstäbe in Sachen
-              Qualität und Realismus. Anders als herkömmliche Tests verwenden
-              wir gezielte und raffinierte Phishing-E-Mails, die von einer
-              Testgruppe validiert wurden, um sicherzustellen, dass sie wirklich
-              schwer zu erkennen sind. Dabei bewerten wir die Phishing-E-Mails
-              anhand ihrer <strong>Klickquote</strong>. Wir unterscheiden dabei
-              niedrige (&gt;20%), mittlere (&gt;40%) und hohe (&gt;60%)
-              Klickquoten.
+              Unsere E-Mail Phishing-Simulationen setzen neue Maßstäbe in Sachen
+              Qualität und Authentizität. Unsere gezielten und raffinierten
+              Simulationen werden vorab in einer Testgruppe aus mehreren
+              Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen.
+              Unterstützung erhalten wir dabei von einem linguistische
+              Psychologen. Damit stellen wir sicher, dass sie wirklich schwer zu
+              erkennen sind. Wir unterscheiden dabei niedrige (&gt;20%),
+              mittlere (&gt;40%) und hohe (&gt;60%) Klickquoten.
             </p>
           </section>
         </ContentOverlapPortrait>
+      </Section>
+
+      <Section>
+        {/* Wuerttembergische Basic */}
+        <div class='card grid items-start gap-8 shadow-md'>
+          <div class='features'>
+            <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold text-[#48504F]'>
+              <WuerttembergischeLogo />
+            </h3>
+            <ul>
+              {wuerttembergischeFeatures.map((feature, key) => {
+                return (
+                  <li
+                    key={key}
+                    class='align-center grid grid-cols-[auto_auto_1fr] justify-items-end gap-2 pb-4'
+                  >
+                    <CheckIcon />
+                    <span>{feature.text}</span>
+                    {feature.detail && <InfoPopover text={feature.detail} />}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div class='grid self-end'>
+            <a
+              href='https://www.wuerttembergische.de/geschaeftskunden/cyber-versicherung/'
+              target='_blank'
+              class='rounded-[3.5rem] bg-[#f84914] p-4 text-center text-white transition-colors hover:bg-[#d33e11]'
+            >
+              Mehr zur Cyber-Versicherung
+            </a>
+            <br />
+            <small>Für Inhaber der Cyber-Versicherung inklusive</small>
+          </div>
+        </div>
       </Section>
 
       <Section>
@@ -355,41 +408,6 @@ export default component$(() => {
         </div>
 
         <div class='pricing-tiers justify-center'>
-          {/* Wuerttembergische Basic */}
-          <div class='card grid items-start gap-8 shadow-md'>
-            <div class='features'>
-              <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold text-[#48504F]'>
-                <WuerttembergischeLogo />
-                Basic
-              </h3>
-              <ul>
-                {wuerttembergischeFeatures.map((feature, key) => {
-                  return (
-                    <li
-                      key={key}
-                      class='align-center grid grid-cols-[auto_auto_1fr] justify-items-end gap-2 pb-4'
-                    >
-                      <CheckIcon />
-                      <span>{feature.text}</span>
-                      {feature.detail && <InfoPopover text={feature.detail} />}
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-            <div class='prices justify-end self-end'>
-              <a
-                href='https://www.wuerttembergische.de/geschaeftskunden/cyber-versicherung/'
-                target='_blank'
-                class='md rounded-[3.5rem] bg-[#f84914] p-4 text-center text-white transition-colors hover:bg-[#d33e11]'
-              >
-                Mehr zur Cyber-Versicherung
-              </a>
-              <br />
-              <small>Für Inhaber der Cyber-Versicherung inklusive</small>
-            </div>
-          </div>
-
           {/* Starter */}
           <div class='card grid items-start gap-8 shadow-md'>
             <div class='features'>
@@ -413,10 +431,19 @@ export default component$(() => {
               </ul>
             </div>
 
-            <PricePerUsePerMonth
-              usersCount={+userCountSig.value}
-              pricePerUser={pricingTier.starter.pricePerUserPerMonth}
-            />
+            <div class='grid gap-8 self-end'>
+              <PricePerUsePerMonth
+                usersCount={+userCountSig.value}
+                pricePerUser={pricingTier.starter.pricePerUserPerMonth}
+              />
+              <LinkCallToAction
+                href='https://forms.office.com/e/x9y2sJSm8P'
+                target='_blank'
+                class='mx-auto'
+              >
+                Anfordern
+              </LinkCallToAction>
+            </div>
           </div>
 
           {/* Profi */}
@@ -442,10 +469,19 @@ export default component$(() => {
               </ul>
             </div>
 
-            <PricePerUsePerMonth
-              usersCount={+userCountSig.value}
-              pricePerUser={pricingTier.professional.pricePerUserPerMonth}
-            />
+            <div class='grid gap-8 self-end'>
+              <PricePerUsePerMonth
+                usersCount={+userCountSig.value}
+                pricePerUser={pricingTier.professional.pricePerUserPerMonth}
+              />
+              <LinkCallToAction
+                href='https://forms.office.com/e/x9y2sJSm8P'
+                target='_blank'
+                class='mx-auto'
+              >
+                Anfordern
+              </LinkCallToAction>
+            </div>
           </div>
 
           {/* Expert */}
@@ -470,10 +506,19 @@ export default component$(() => {
                 })}
               </ul>
             </div>
-            <PricePerUsePerMonth
-              usersCount={+userCountSig.value}
-              pricePerUser={pricingTier.expert.pricePerUserPerMonth}
-            />
+            <div class='grid gap-8 self-end'>
+              <PricePerUsePerMonth
+                usersCount={+userCountSig.value}
+                pricePerUser={pricingTier.expert.pricePerUserPerMonth}
+              />
+              <LinkCallToAction
+                href='https://forms.office.com/e/x9y2sJSm8P'
+                target='_blank'
+                class='mx-auto'
+              >
+                Anfordern
+              </LinkCallToAction>
+            </div>
           </div>
         </div>
       </Section>
