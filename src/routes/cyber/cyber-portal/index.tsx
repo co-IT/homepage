@@ -41,6 +41,18 @@ import { PricePerUsePerMonth } from '../../../components/pricing/price-per-user-
 import { WuerttembergischeLogo } from '../../../components/wuerttembergische/logo';
 import style from './styles.css?inline';
 
+// const articles: Article[] = [
+//   {
+//     direction: 'right',
+//     image: {
+//       src: '/img/career/it-fascination.webp',
+//       alt: 'Two colleagues learning to together'
+//     },
+//     heading: 'Mach Deinen Beruf zur Berufung',
+//     text: 'Wir arbeiten, weil das Arbeiten selbst etwas Befriedigendes ist und weil das, was dabei herauskommt, für uns sinnvoll ist. Damit das funktioniert, sucht sich bei uns jeder seine Kunden und Projekte selbst aus. Du willst Routineaufgaben für Deine Kollegen automatisieren, um Tempo und Effizienz zu steigern? Sehr gern! Du möchtest lieber an unseren eigenen Produkten mitwirken, um neue Geschäftsfelder zu erschließen? Dann bring Deine Ideen ein! Dich reizt vor allem die Abwechslung? Dann unterstütze parallel mehrere Kunden in unterschiedlichen Branchen! Was in allen Fällen gleich bleibt: Du darfst Deine Talente ausschöpfen und eigene Vorstellungen realisieren. Wenn das zu Deinen Zielen passt, dann bewirb dich bei uns.'
+//   }
+// ];
+
 export default component$(() => {
   useStyles$(style);
 
@@ -243,6 +255,11 @@ export default component$(() => {
           </section>
         </VideoOverlapLandscape>
       </Section>
+
+      {/* <Section>
+        <ArticleSection articles={articles} />
+      </Section> */}
+
       <Section>
         <ContentOverlapPortrait
           image={{
