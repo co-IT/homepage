@@ -284,6 +284,34 @@ export default component$(() => {
       </Section>
 
       <Section>
+        <ContentOverlapPortrait
+          image={{
+            source: '/img/cyber/cyber-portal/planning-table.webp',
+            alternateText:
+              'Six team mates sitting on a table puzzling a rocket.'
+          }}
+        >
+          <section q:slot='article' class='flex flex-col space-y-4'>
+            <h2 class='text-xl font-bold md:text-4xl'>
+              <HeadingSegmentSecondary text='Garantiert eine' />
+              &nbsp;
+              <HeadingSegmentSecondary800 text='Herausforderung' />
+            </h2>
+            <p class='pb-4 leading-7'>
+              Unsere E-Mail Phishingsimulationen setzen neue Maßstäbe in Sachen
+              Qualität und Realismus. Anders als herkömmliche Tests verwenden
+              wir gezielte und raffinierte Phishing-E-Mails, die von einer
+              Testgruppe validiert wurden, um sicherzustellen, dass sie wirklich
+              schwer zu erkennen sind. Dabei bewerten wir die Phishing-E-Mails
+              anhand ihrer <strong>Klickquote</strong>. Wir unterscheiden dabei
+              niedrige (&gt;20%), mittlere (&gt;40%) und hohe (&gt;60%)
+              Klickquoten.
+            </p>
+          </section>
+        </ContentOverlapPortrait>
+      </Section>
+
+      <Section>
         <div class='mx-auto mb-3 h-1 w-10 bg-primary' />
         <h2 class='mb-5 px-6 text-center text-3xl font-bold leading-8 text-secondary-900 lg:px-0  lg:text-4xl lg:leading-10'>
           Wählen Sie das Paket aus, das am besten zu Ihnen passt.
@@ -468,7 +496,7 @@ export default component$(() => {
               für welches Paket Sie sich entscheiden: Alle Simulationen
               durchlaufen vorab einen Praxischeck. In einer Testgruppe aus
               mehreren Unternehmen mit über 300 Anwendern prüfen wir vorab die
-              Klickraten. Wir unterscheiden dabei niedrige (&gt;20%), mittlere
+              Klickquoten. Wir unterscheiden dabei niedrige (&gt;20%), mittlere
               (&gt;40%) und hohe (&gt;60%) Klickquoten. In vielen Fällen klicken
               über 90% der Anwender, sodass im mittel mehr als jede zweite
               Phishing-Mail geklickt wird.
