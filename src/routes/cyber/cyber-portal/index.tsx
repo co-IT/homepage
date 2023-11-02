@@ -369,6 +369,11 @@ export default component$(() => {
             <input
               type='number'
               bind:value={userCountSig}
+              onKeyUp$={() => {
+                if (+userCountSig.value < 0) {
+                  userCountSig.value = '1';
+                }
+              }}
               required
               value='10'
               min='1'
