@@ -292,14 +292,7 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Herausforderung' />
             </h2>
             <p class='pb-4 leading-7'>
-              Unsere E-Mail Phishingsimulationen setzen neue Maßstäbe in Sachen
-              Qualität und Realismus. Anders als herkömmliche Tests verwenden
-              wir gezielte und raffinierte Phishing-E-Mails, die von einer
-              Testgruppe validiert wurden, um sicherzustellen, dass sie wirklich
-              schwer zu erkennen sind. Dabei bewerten wir die Phishing-E-Mails
-              anhand ihrer <strong>Klickquote</strong>. Wir unterscheiden dabei
-              niedrige (&gt;20%), mittlere (&gt;40%) und hohe (&gt;60%)
-              Klickquoten.
+              Unsere E-Mail Phishing-Simulationen setzen neue Maßstäbe in Sachen Qualität und Authentizität. Unsere gezielten und raffinierten Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Unterstützung erhalten wir dabei von einem linguistische Psychologen. Damit stellen wir sicher, dass sie wirklich schwer zu erkennen sind. Wir unterscheiden dabei niedrige (>20%), mittlere (>40%) und hohe (>60%) Klickquoten.
             </p>
           </section>
         </ContentOverlapPortrait>
@@ -360,7 +353,6 @@ export default component$(() => {
             <div class='features'>
               <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold text-[#48504F]'>
                 <WuerttembergischeLogo />
-                Basic
               </h3>
               <ul>
                 {wuerttembergischeFeatures.map((feature, key) => {

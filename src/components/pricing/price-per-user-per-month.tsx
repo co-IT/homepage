@@ -14,15 +14,17 @@ export const PricePerUsePerMonth = component$(
       });
 
     return (
-      <div class='grid grid-cols-2 justify-end gap-4 self-end'>
-        <span>Anwender / Monat</span>
-        <span class='min-w-[6rem] text-lg font-bold'>
-          {toEuro(props.pricePerUser)}
-        </span>
-        <span>Gesamt / Monat</span>
-        <span class='min-w-[6rem] text-lg font-bold'>
-          {toEuro(props.pricePerUser * props.usersCount)}
-        </span>
+      <div class='grid self-end'>
+        <div>
+          <span class='text-sm font-medium'>{toEuro(props.pricePerUser)}</span>
+          <span class='text-xs'>&nbsp;/&nbsp;Anwender&nbsp;/&nbsp;Monat</span>
+        </div>
+        <div>
+          <span class='text-xl font-bold'>
+            {toEuro(props.pricePerUser * props.usersCount)}
+          </span>
+          <span class='font-medium'>&nbsp;/&nbsp;Monat</span>
+        </div>
       </div>
     );
   }
