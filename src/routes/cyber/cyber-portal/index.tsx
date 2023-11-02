@@ -292,10 +292,53 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Herausforderung' />
             </h2>
             <p class='pb-4 leading-7'>
-              Unsere E-Mail Phishing-Simulationen setzen neue Maßstäbe in Sachen Qualität und Authentizität. Unsere gezielten und raffinierten Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Unterstützung erhalten wir dabei von einem linguistische Psychologen. Damit stellen wir sicher, dass sie wirklich schwer zu erkennen sind. Wir unterscheiden dabei niedrige (>20%), mittlere (>40%) und hohe (>60%) Klickquoten.
+              Unsere E-Mail Phishing-Simulationen setzen neue Maßstäbe in Sachen
+              Qualität und Authentizität. Unsere gezielten und raffinierten
+              Simulationen werden vorab in einer Testgruppe aus mehreren
+              Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen.
+              Unterstützung erhalten wir dabei von einem linguistische
+              Psychologen. Damit stellen wir sicher, dass sie wirklich schwer zu
+              erkennen sind. Wir unterscheiden dabei niedrige (&gt;20%),
+              mittlere (&gt;40%) und hohe (&gt;60%) Klickquoten.
             </p>
           </section>
         </ContentOverlapPortrait>
+      </Section>
+
+      <Section>
+        {/* Wuerttembergische Basic */}
+        <div class='card grid items-start gap-8 shadow-md'>
+          <div class='features'>
+            <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold text-[#48504F]'>
+              <WuerttembergischeLogo />
+            </h3>
+            <ul>
+              {wuerttembergischeFeatures.map((feature, key) => {
+                return (
+                  <li
+                    key={key}
+                    class='align-center grid grid-cols-[auto_auto_1fr] justify-items-end gap-2 pb-4'
+                  >
+                    <CheckIcon />
+                    <span>{feature.text}</span>
+                    {feature.detail && <InfoPopover text={feature.detail} />}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div class='grid self-end'>
+            <a
+              href='https://www.wuerttembergische.de/geschaeftskunden/cyber-versicherung/'
+              target='_blank'
+              class='rounded-[3.5rem] bg-[#f84914] p-4 text-center text-white transition-colors hover:bg-[#d33e11]'
+            >
+              Mehr zur Cyber-Versicherung
+            </a>
+            <br />
+            <small>Für Inhaber der Cyber-Versicherung inklusive</small>
+          </div>
+        </div>
       </Section>
 
       <Section>
@@ -348,40 +391,6 @@ export default component$(() => {
         </div>
 
         <div class='pricing-tiers justify-center'>
-          {/* Wuerttembergische Basic */}
-          <div class='card grid items-start gap-8 shadow-md'>
-            <div class='features'>
-              <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold text-[#48504F]'>
-                <WuerttembergischeLogo />
-              </h3>
-              <ul>
-                {wuerttembergischeFeatures.map((feature, key) => {
-                  return (
-                    <li
-                      key={key}
-                      class='align-center grid grid-cols-[auto_auto_1fr] justify-items-end gap-2 pb-4'
-                    >
-                      <CheckIcon />
-                      <span>{feature.text}</span>
-                      {feature.detail && <InfoPopover text={feature.detail} />}
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-            <div class='prices justify-end self-end'>
-              <a
-                href='https://www.wuerttembergische.de/geschaeftskunden/cyber-versicherung/'
-                target='_blank'
-                class='md rounded-[3.5rem] bg-[#f84914] p-4 text-center text-white transition-colors hover:bg-[#d33e11]'
-              >
-                Mehr zur Cyber-Versicherung
-              </a>
-              <br />
-              <small>Für Inhaber der Cyber-Versicherung inklusive</small>
-            </div>
-          </div>
-
           {/* Starter */}
           <div class='card grid items-start gap-8 shadow-md'>
             <div class='features'>
@@ -405,10 +414,19 @@ export default component$(() => {
               </ul>
             </div>
 
-            <PricePerUsePerMonth
-              usersCount={+userCountSig.value}
-              pricePerUser={pricingTier.starter.pricePerUserPerMonth}
-            />
+            <div class='grid gap-8 self-end'>
+              <PricePerUsePerMonth
+                usersCount={+userCountSig.value}
+                pricePerUser={pricingTier.starter.pricePerUserPerMonth}
+              />
+              <LinkCallToAction
+                href='https://forms.office.com/e/x9y2sJSm8P'
+                target='_blank'
+                class='mx-auto'
+              >
+                Anfordern
+              </LinkCallToAction>
+            </div>
           </div>
 
           {/* Profi */}
@@ -434,10 +452,19 @@ export default component$(() => {
               </ul>
             </div>
 
-            <PricePerUsePerMonth
-              usersCount={+userCountSig.value}
-              pricePerUser={pricingTier.professional.pricePerUserPerMonth}
-            />
+            <div class='grid gap-8 self-end'>
+              <PricePerUsePerMonth
+                usersCount={+userCountSig.value}
+                pricePerUser={pricingTier.professional.pricePerUserPerMonth}
+              />
+              <LinkCallToAction
+                href='https://forms.office.com/e/x9y2sJSm8P'
+                target='_blank'
+                class='mx-auto'
+              >
+                Anfordern
+              </LinkCallToAction>
+            </div>
           </div>
 
           {/* Expert */}
@@ -462,10 +489,19 @@ export default component$(() => {
                 })}
               </ul>
             </div>
-            <PricePerUsePerMonth
-              usersCount={+userCountSig.value}
-              pricePerUser={pricingTier.expert.pricePerUserPerMonth}
-            />
+            <div class='grid gap-8 self-end'>
+              <PricePerUsePerMonth
+                usersCount={+userCountSig.value}
+                pricePerUser={pricingTier.expert.pricePerUserPerMonth}
+              />
+              <LinkCallToAction
+                href='https://forms.office.com/e/x9y2sJSm8P'
+                target='_blank'
+                class='mx-auto'
+              >
+                Anfordern
+              </LinkCallToAction>
+            </div>
           </div>
         </div>
       </Section>
