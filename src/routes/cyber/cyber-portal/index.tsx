@@ -329,7 +329,7 @@ export default component$(() => {
       <Section id='entscheiden_sie_mit'>
         <ContentOverlapPortrait
           image={{
-            source: '/img/cyber/cyber-portal/decision.jpg',
+            source: '/img/cyber/cyber-portal/decision.webp',
             alternateText: 'Man looking at the sunset'
           }}
         >
