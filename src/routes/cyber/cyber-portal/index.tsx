@@ -190,7 +190,7 @@ export default component$(() => {
       <Section id='unser_antrieb'>
         <ContentOverlapPortrait
           image={{
-            source: '/img/cyber/cyber-portal/man-with-rocket.webp',
+            source: '/img/cyber/Cyber Portal/man-with-rocket.webp',
             alternateText: 'Man looking at the sunset'
           }}
         >
@@ -222,7 +222,7 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Inklusivleistungen' />
             </LinkedHeading>
             <p class='leading-7'>
-              Beim Cyber-Portal handelt es sich um eine Individuallösung für
+              Beim Cyber Portal handelt es sich um eine Individuallösung für
               alle Kunden der Württembergischen Versicherung. Die Plattform soll
               allen Versicherungsnehmern gleichermaßen zugutekommen, indem der
               Fokus auf leicht zu bedienende Funktionen, praxisrelevantes Wissen
@@ -251,7 +251,7 @@ export default component$(() => {
               target='_blank'
               class='rounded-[3.5rem] bg-[#f84914] p-4 text-center text-white transition-colors hover:bg-[#d33e11]'
             >
-              Zum Cyber-Portal
+              Zum Cyber Portal
             </a>
           </div>
           {/* Wuerttembergische Basispaket Teaser */}
@@ -262,7 +262,7 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Basisversion' />
             </LinkedHeading>
             <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
-              Die kostenfreie Basisversion des Cyber-Portals bietet Ihnen sechs
+              Die kostenfreie Basisversion des Cyber Portals bietet Ihnen sechs
               Kurse mit praktischen Fähigkeiten und essenziellem Wissen für den
               sicheren Umgang in der digitalen Welt. In vier Examen mit
               anspruchsvollen, interaktiven Prüfungen können Ihre Anwender das
@@ -336,7 +336,7 @@ export default component$(() => {
       <Section id='entscheiden_sie_mit'>
         <ContentOverlapPortrait
           image={{
-            source: '/img/cyber/cyber-portal/decision.webp',
+            source: '/img/cyber/Cyber Portal/decision.webp',
             alternateText: 'Man looking at the sunset'
           }}
         >
@@ -653,7 +653,7 @@ export const head: DocumentHead = {
       type: 'content-page',
       configuration: {
         backgroundImage: {
-          source: '/img/cyber/cyber-portal/header.webp',
+          source: '/img/cyber/Cyber Portal/header.webp',
           alt: 'Two team mates checking an App on the tablet.'
         },
         heading: 'Cyber Portal',
