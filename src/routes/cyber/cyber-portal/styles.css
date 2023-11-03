@@ -17,8 +17,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
-  position: relative;
-  z-index: 1;
 }
 
 .heading {

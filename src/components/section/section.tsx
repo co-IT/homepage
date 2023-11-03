@@ -15,17 +15,10 @@ export const Section = component$((props: SectionProps) => {
 
   return (
     <>
-      <section
-        id={props.id}
-        class={`container mx-auto ${appearance} py-12 md:py-24`}
-      >
-        {appearance === 'bg-gray-100' ? (
-          <div class='container mx-auto'>
-            <Slot></Slot>
-          </div>
-        ) : (
+      <section id={props.id} class={` ${appearance} py-12 md:py-24`}>
+        <div class='container mx-auto'>
           <Slot />
-        )}
+        </div>
       </section>
     </>
   );

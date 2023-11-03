@@ -1,7 +1,4 @@
-type ProductFeature = {
-  text: string;
-  detail?: string;
-};
+import type { ProductFeature } from '~/components/product-feature-list';
 
 export const wuerttembergischeFeatures: ProductFeature[] = [
   {
@@ -10,12 +7,12 @@ export const wuerttembergischeFeatures: ProductFeature[] = [
       'Im Cyber Portal finden Sie in der unteren rechten Ecke eine Schaltfläche, die ein Formular öffnet, in dem Sie Feedback einsenden können.'
   },
   {
-    text: 'Klickquote: Hoch',
+    text: 'Klickquote: bis 40%',
     detail:
       'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
   },
   {
-    text: 'Anzahl E-Mails: 6',
+    text: 'Anzahl E-Mails: 8',
     detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },
   {
@@ -26,7 +23,7 @@ export const wuerttembergischeFeatures: ProductFeature[] = [
   {
     text: 'Sprachniveau: Hoch',
     detail:
-      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausiblität geachtet.'
+      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
   },
   {
     text: 'Absender: Authentisch',
@@ -52,7 +49,7 @@ export const starterFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
-    text: 'Klickquote: Hoch',
+    text: 'Klickquote: bis 60%',
     detail:
       'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
   },
@@ -72,7 +69,7 @@ export const starterFeatures: ProductFeature[] = [
   {
     text: 'Sprachniveau: Hoch',
     detail:
-      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausiblität geachtet.'
+      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
   },
   {
     text: 'Absender: Authentisch',
@@ -113,7 +110,7 @@ export const profiFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
-    text: 'Klickquote: Hoch',
+    text: 'Klickquote: über 80%',
     detail:
       'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
   },
@@ -133,7 +130,7 @@ export const profiFeatures: ProductFeature[] = [
   {
     text: 'Sprachniveau: Hoch',
     detail:
-      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausiblität geachtet.'
+      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
   },
   {
     text: 'Absender: Authentisch',
@@ -189,7 +186,7 @@ export const expertFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
-    text: 'Klickquote: Hoch',
+    text: 'Klickquote: über 80%',
     detail:
       'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
   },
@@ -210,7 +207,7 @@ export const expertFeatures: ProductFeature[] = [
   {
     text: 'Sprachniveau: Hoch',
     detail:
-      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausiblität geachtet.'
+      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
   },
   {
     text: 'Absender: Authentisch',

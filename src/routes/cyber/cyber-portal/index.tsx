@@ -8,8 +8,6 @@ import {
 } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 
-import { CheckIcon } from '~/components/icons';
-import { InfoPopover } from '~/components/info-popover/info-popover';
 import { Section } from '~/components/section';
 
 import {
@@ -36,22 +34,11 @@ import {
   wuerttembergischeFeatures
 } from './resources';
 
-import { LinkedHeading } from '../../../components/link-heading';
-import { PricePerUsePerMonth } from '../../../components/pricing/price-per-user-per-month';
-import { WuerttembergischeLogo } from '../../../components/wuerttembergische/logo';
+import { LinkedHeading } from '~/components/link-heading';
+import { PricePerUsePerMonth } from '~/components/pricing/price-per-user-per-month';
+import { ProductFeatureList } from '~/components/product-feature-list';
+import { WuerttembergischeLogo } from '~/components/wuerttembergische/logo';
 import style from './styles.css?inline';
-
-// const articles: Article[] = [
-//   {
-//     direction: 'right',
-//     image: {
-//       src: '/img/career/it-fascination.webp',
-//       alt: 'Two colleagues learning to together'
-//     },
-//     heading: 'Mach Deinen Beruf zur Berufung',
-//     text: 'Wir arbeiten, weil das Arbeiten selbst etwas Befriedigendes ist und weil das, was dabei herauskommt, für uns sinnvoll ist. Damit das funktioniert, sucht sich bei uns jeder seine Kunden und Projekte selbst aus. Du willst Routineaufgaben für Deine Kollegen automatisieren, um Tempo und Effizienz zu steigern? Sehr gern! Du möchtest lieber an unseren eigenen Produkten mitwirken, um neue Geschäftsfelder zu erschließen? Dann bring Deine Ideen ein! Dich reizt vor allem die Abwechslung? Dann unterstütze parallel mehrere Kunden in unterschiedlichen Branchen! Was in allen Fällen gleich bleibt: Du darfst Deine Talente ausschöpfen und eigene Vorstellungen realisieren. Wenn das zu Deinen Zielen passt, dann bewirb dich bei uns.'
-//   }
-// ];
 
 export default component$(() => {
   useStyles$(style);
@@ -200,7 +187,7 @@ export default component$(() => {
 
   return (
     <>
-      <Section>
+      <Section id='unser_antrieb'>
         <ContentOverlapPortrait
           image={{
             source: '/img/cyber/cyber-portal/man-with-rocket.webp',
@@ -208,355 +195,302 @@ export default component$(() => {
           }}
         >
           <section q:slot='article' class='flex flex-col space-y-4'>
-            <h2 class='text-xl font-bold md:text-4xl'>
+            <LinkedHeading href='#unser_antrieb'>
               <HeadingSegmentSecondary text='Unser' />
               &nbsp;
               <HeadingSegmentSecondary800 text='Antrieb' />
-            </h2>
+            </LinkedHeading>
             <p class='pb-4 leading-7'>
               Wir wollen allen die fachliche Kompetenz, die praktischen
-              Fähigkeiten und das notwendige Wissen vermitteln, um in der
-              digitalen Welt sich sicher zu fühlen und sicher zu sein. Das Cyber
+              Fähigkeiten und das notwendige Wissen vermitteln, um sich in der
+              digitalen Welt sicher zu fühlen und sicher zu sein. Das Cyber
               Portal bietet Ihnen und Ihren Anwendern einen Raum, um
               nachhaltiges Praxiswissen auf verständliche Weise zu erlernen,
               dieses mit intensiven Prüfungen und realistischen Simulationen zu
-              festigen und dabei Lernfortschritte methodisch sicherzustellen.
+              festigen und dabei Lernfortschritte systematisch sicherzustellen.
             </p>
           </section>
         </ContentOverlapPortrait>
       </Section>
-      <Section backgroundColor='gray'>
+
+      <Section id='kostenfreie-basisversion' backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
-            <h2 class='text-xl font-bold md:text-4xl'>
-              <HeadingSegmentSecondary text='Kostenfreie Basisversion' />
-            </h2>
+            <LinkedHeading href='#kostenfreie-basisversion'>
+              <HeadingSegmentSecondary text='Kostenfreie' />
+              &nbsp;
+              <HeadingSegmentSecondary800 text='Basisversion' />
+            </LinkedHeading>
             <p class='leading-7'>
               Beim Cyber Portal handelt es sich um eine Individuallösung für
               alle Kunden der Württembergischen Versicherung. Die Plattform soll
               allen Versicherungsnehmern gleichermaßen zugutekommen, indem der
               Fokus auf leicht zu bedienende Funktionen, praxisrelevantes Wissen
-              und hochwertigen Phishing-Simulationen gelegt wird. Dabei stellt
+              und hochwertige Phishing-Simulationen gelegt wird. Dabei stellt
               die Württembergische als alleiniger Auftraggeber sicher, dass die
-              Basisversion kostenfrei weiterentwickelt, kontinuierlich
-              aktualisiert und sicher betrieben wird. Seit Veröffentlichung des
-              Cyber Portals im Jahr 2021 erreichen uns viele gute Ideen und
-              individuelle Wünsche aus allen Unternehmensbranchen und -größen.
-              Mit den hier angebotenen Zusatzpaketen wollen wir die Brücke für
-              all diejenigen schlagen, denen unsere Lösung bereits geholfen hat
-              und jetzt noch mehr helfen soll.
+              Basisversion kostenfrei weiterentwickelt und sicher betrieben
+              wird. Seit Veröffentlichung des Cyber Portals im Jahr 2021
+              erreichten uns viele gute Ideen und individuelle Wünsche aus allen
+              Unternehmensbranchen und -größen. Mit den hier angebotenen
+              Zusatzpaketen wollen wir die Brücke für all diejenigen schlagen,
+              denen unsere Lösung bereits geholfen hat und die jetzt einen
+              Schritt weitergehen wollen.
             </p>
-            <LinkCallToAction
-              href='https://e.co-IT.eu/cyber/faq'
-              target='_blank'
-            >
-              Details zur Weiterentwicklung
-            </LinkCallToAction>
           </section>
         </VideoOverlapLandscape>
       </Section>
 
-      {/* <Section>
-        <ArticleSection articles={articles} />
-      </Section> */}
+      <Section id='ihr_plus_an_sicherheit'>
+        <VideoOverlapLandscape youTubeVideoId='FjThxiKBApc'>
+          <section class='flex flex-col space-y-4'>
+            <LinkedHeading href='#ihr_plus_an_sicherheit'>
+              <HeadingSegmentSecondary text='Ihr' />
+              &nbsp;
+              <HeadingSegmentSecondary800 text='Plus' />{' '}
+              <HeadingSegmentSecondary text='an' />
+              &nbsp;
+              <HeadingSegmentSecondary800 text='Sicherheit' />
+            </LinkedHeading>
+            <p class='pb-4 leading-7'>
+              Mit der kostenfreien Basisversion im Untergrund berechnen wir nur
+              die anfallende Mehrleistung für die jeweiligen Pakete weiter.
+              Damit können wir deutlich niedrigere Preise als vergleichbare
+              Plattformen anbieten. Doch was ist Ihr Mehrwert? Mit den
+              angebotenen Phishing-Paketen setzen wir neue Maßstäbe in Sachen
+              Qualität und Authentizität. Unsere gezielten und raffinierten
+              Phishing-Mails werden vorab in einer Testgruppe aus mehreren
+              Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen.
+              Mehr noch: Mit Hilfe eines linguistischen Psychologen werden die
+              Anwender sprachlich subtil zum Öffnen der betrügerischen Mails
+              bewegt. Flankiert wird der Erstellungsprozess von der KI namens
+              ChatGPT . Mit diesen Maßnahmen stellen wir sicher, dass unsere
+              Phishing-Simulationen nur schwer als solche zu erkennen sind.
+              Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir
+              niedrige (&gt;20%), mittlere (&gt;40%), hohe (&gt;60%) und sehr
+              hohe (&gt;80) Klickquoten. Mit der hohen Qualität unserer
+              Phishing-Simulationen schützen Sie sich und Ihr Unternehmen vor
+              modernen, KI-gestützten Phishing-Angriffen, wie sie immer häufiger
+              auftreten.
+            </p>
+          </section>
+        </VideoOverlapLandscape>
+      </Section>
 
-      <Section>
+      <Section id='ihre_inklusivleistungen' backgroundColor='gray'>
+        <div class='grid grid-flow-row justify-center gap-16 sm:grid-flow-col'>
+          {/* Wuerttembergische Basispaket Features */}
+          <div class='card grid items-start gap-8 shadow-md'>
+            <WuerttembergischeLogo />
+            <ProductFeatureList features={wuerttembergischeFeatures} />
+            <a
+              href='https://wuerttembergische.co-it.eu'
+              target='_blank'
+              class='rounded-[3.5rem] bg-[#f84914] p-4 text-center text-white transition-colors hover:bg-[#d33e11]'
+            >
+              Zum Cyber-Portal
+            </a>
+          </div>
+          {/* Wuerttembergische Basispaket Teaser */}
+          <section class='flex max-w-md flex-col gap-4'>
+            <LinkedHeading href='ihre_inklusivleistungen'>
+              Ihre Inklusivleistungen
+            </LinkedHeading>
+            <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
+              Die Basisversion der Cyber-Versicherung bietet bereits ein
+              umfassendes Leistungspaket, inklusive acht hochwertiger
+              Phishing-E-Mails pro Jahr. Diese E-Mails zeichnen sich durch
+              anspruchsvolle Sprache und präzise Semantik aus, verwenden
+              authentische Absenderadressen und beinhalten eine persönliche
+              Anrede, um die Authentizität zu steigern. Für eine größere
+              Herausforderung gibt es kostenpflichtige Upgrades, die mehr
+              Phishing-Simulationen in verschiedenen Zeitabständen, eine
+              Qualitätskontrolle zur Verbesserung der Klickquoten und die
+              Möglichkeit bieten, den Unternehmensnamen einzubinden und die
+              Ansprache an bestimmte Zielgruppen anzupassen. Diese Upgrades
+              ermöglichen es, sich in der Identifizierung von Phishing-E-Mails
+              zum Experten zu entwickeln.
+            </p>
+          </section>
+        </div>
+      </Section>
+
+      <Section id='entscheiden_sie_mit'>
         <ContentOverlapPortrait
           image={{
-            source: '/img/cyber/cyber-portal/planning-table.webp',
+            source: '/img/cyber/cyber-portal/decision.jpg',
             alternateText: 'Man looking at the sunset'
           }}
         >
           <section q:slot='article' class='flex flex-col space-y-4'>
-            <h2 class='text-xl font-bold md:text-4xl'>
-              <HeadingSegmentSecondary text='Plus an' />
-              &nbsp;
-              <HeadingSegmentSecondary800 text='Sicherheit' />
-            </h2>
+            <LinkedHeading href='#unser_antrieb'>
+              <HeadingSegmentSecondary800 text='Entscheiden' />{' '}
+              <HeadingSegmentSecondary text='Sie mit' />
+            </LinkedHeading>
             <p class='pb-4 leading-7'>
-              Mit der kostenfreien Basisversion im Untergrund müssen wir nur die
-              anfallende Mehrleistung weiterberechnen und können deutlich
-              niedrigere Preise anbieten als vergleichbare Plattformen. Doch was
-              bringt Ihnen eine günstige Lösung, wenn der Mehrwert fehlt? Darum
-              setzen wir ausschließlich Themen um, die Sie sich wünschen: Jeder
-              Abonnent eines jeden Pakets kann abstimmen, was als nächstes
-              realisiert werden soll. Abonnenten des „Experte“-Pakets können
-              zudem auf die Auswahl, über die abgestimmt wird, Einfluss nehmen.
-              Es gibt noch einen weiteren Vorteil: Sie müssen kein neues Produkt
-              evaluieren und einführen. Die Integration der Zusatzfunktionen
-              erfolgt nahtlos und sofort bei Kauf. Das hilft besonders größeren
-              Unternehmen und Behörden kraftraubende Genehmigungsprozesse zu
-              beschleunigen und langwierige Ausschreibungsverfahren zu umgehen.
-              Die Basisversion ist schließlich in Ihrem Haus bereits freigegeben
-              und eingeführt.
+              Während in der Basisversion am Ende der Auftraggeber über neue
+              Funktionen entscheidet, können Sie als Abonnent eines jeden Pakets
+              abstimmen, welcher Vorschlag als nächstes realisiert werden soll.
+              Käufer des „Experte“-Pakets können zudem auf die Auswahl, über die
+              abgestimmt wird, Einfluss nehmen. Es gibt noch einen weiteren
+              Vorteil: Sie müssen kein neues Produkt evaluieren und einführen.
+              Die Integration der Zusatzfunktionen erfolgt nahtlos und sofort
+              bei Kauf. Das hilft besonders Behörden und größeren Unternehmen
+              kraftraubende Genehmigungsprozesse zu beschleunigen und
+              langwierige Ausschreibungsverfahren zu umgehen, weil die
+              Basisversion in Ihrem Haus bereits freigegeben und eingeführt ist.
             </p>
           </section>
         </ContentOverlapPortrait>
       </Section>
 
-      <Section>
-        <ContentOverlapPortrait
-          image={{
-            source: '/img/cyber/cyber-portal/planning-table.webp',
-            alternateText:
-              'Six team mates sitting on a table puzzling a rocket.'
-          }}
-        >
-          <section q:slot='article' class='flex flex-col space-y-4'>
-            <h2 class='text-xl font-bold md:text-4xl'>
-              <HeadingSegmentSecondary text='Garantiert eine' />
-              &nbsp;
-              <HeadingSegmentSecondary800 text='Herausforderung' />
-            </h2>
-            <p class='pb-4 leading-7'>
-              Unsere E-Mail Phishing-Simulationen setzen neue Maßstäbe in Sachen
-              Qualität und Authentizität. Unsere gezielten und raffinierten
-              Simulationen werden vorab in einer Testgruppe aus mehreren
-              Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen.
-              Unterstützung erhalten wir dabei von einem linguistische
-              Psychologen. Damit stellen wir sicher, dass sie wirklich schwer zu
-              erkennen sind. Wir unterscheiden dabei niedrige (&gt;20%),
-              mittlere (&gt;40%) und hohe (&gt;60%) Klickquoten.
-            </p>
-          </section>
-        </ContentOverlapPortrait>
-      </Section>
+      <Section id='lust_auf_mehr' backgroundColor='gray'>
+        <div class='grid gap-8'>
+          <LinkedHeading href='#lust_auf_mehr'>
+            Lust auf &nbsp;
+            <HeadingSegmentSecondary800 text='mehr?' />
+          </LinkedHeading>
 
-      <Section>
-        {/* Wuerttembergische Basic */}
-        <div class='card grid items-start gap-8 shadow-md'>
-          <div class='features'>
-            <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold text-[#48504F]'>
-              <WuerttembergischeLogo />
-            </h3>
-            <ul>
-              {wuerttembergischeFeatures.map((feature, key) => {
-                return (
-                  <li
-                    key={key}
-                    class='align-center grid grid-cols-[auto_auto_1fr] justify-items-end gap-2 pb-4'
-                  >
-                    <CheckIcon />
-                    <span>{feature.text}</span>
-                    {feature.detail && <InfoPopover text={feature.detail} />}
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-          <div class='grid self-end'>
-            <a
-              href='https://www.wuerttembergische.de/geschaeftskunden/cyber-versicherung/'
-              target='_blank'
-              class='rounded-[3.5rem] bg-[#f84914] p-4 text-center text-white transition-colors hover:bg-[#d33e11]'
-            >
-              Mehr zur Cyber-Versicherung
-            </a>
-            <br />
-            <small>Für Inhaber der Cyber-Versicherung inklusive</small>
-          </div>
-        </div>
-      </Section>
+          <p class='leading-7'>
+            Hier finden Sie alle Informationen zu den erweiterten Paketen auf
+            einen Blick. <br /> Der Konfigurator unterstützt Sie bei der Auswahl
+            des passenden Pakets.
+          </p>
 
-      <Section>
-        <div class='mx-auto mb-3 h-1 w-10 bg-primary' />
-        <h2 class='mb-5 px-6 text-center text-3xl font-bold leading-8 text-secondary-900 lg:px-0  lg:text-4xl lg:leading-10'>
-          Wählen Sie das Paket aus, das am besten zu Ihnen passt.
-        </h2>
-        <div class='mx-auto mb-4 flex max-w-5xl flex-wrap items-center justify-center gap-4 rounded-3xl p-8 shadow-md'>
-          <section class='flex gap-4'>
-            <span class='text-xl font-bold'>Anzahl Empfänger</span>
-            <input
-              type='number'
-              bind:value={userCountSig}
-              onKeyUp$={() => {
-                if (+userCountSig.value < 0) {
-                  userCountSig.value = '1';
-                }
-              }}
-              required
-              value='10'
-              min='1'
-              max='6000'
-              class='border-b border-secondary-900 text-center'
-            />
-          </section>
-          <section class='flex items-center gap-4'>
-            <span class='text-xl font-bold'>Laufzeit</span>
-            <input
-              type='range'
-              bind:value={rangeValueSig}
-              required
-              min='1'
-              max='8'
-              step='1'
-            />
-            {durationInMonthSig.value === 1 && (
-              <small class='min-w-[4rem]'>
-                {durationInMonthSig.value} Monat
-              </small>
-            )}
-            {durationInMonthSig.value > 1 && (
-              <small class='min-w-[4rem]'>
-                {durationInMonthSig.value} Monate
-              </small>
-            )}
-
-            <span
-              class={`${
-                discountSig.value === 0 ? 'opacity-50' : ''
-              } grid w-32 items-center rounded bg-secondary-900 p-2 text-center text-xs font-medium text-accent accent-primary`}
-            >
-              {discountSig.value * 100}% Rabatt
-            </span>
-          </section>
-        </div>
-
-        <div class='pricing-tiers justify-center'>
-          {/* Starter */}
-          <div class='card grid items-start gap-8 shadow-md'>
-            <div class='features'>
-              <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold'>
-                <ThumbsUpIcon />
-                Starter
-              </h3>
-              <ul>
-                {starterFeatures.map((feature, key) => {
-                  return (
-                    <li
-                      key={key}
-                      class='align-center grid grid-cols-[auto_auto_1fr] justify-items-end gap-2 pb-4'
-                    >
-                      <CheckIcon />
-                      <span>{feature.text}</span>
-                      {feature.detail && <InfoPopover text={feature.detail} />}
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-
-            <div class='grid gap-8 self-end'>
-              <PricePerUsePerMonth
-                usersCount={+userCountSig.value}
-                pricePerUser={pricingTier.starter.pricePerUserPerMonth}
+          <div class='flex flex-wrap items-center gap-4 rounded-3xl'>
+            <section class='flex gap-4'>
+              <span class='text-xl font-bold'>Anzahl Empfänger</span>
+              <input
+                type='number'
+                bind:value={userCountSig}
+                onKeyUp$={() => {
+                  if (+userCountSig.value < 0) {
+                    userCountSig.value = '1';
+                  }
+                }}
+                required
+                value='10'
+                min='1'
+                max='6000'
+                class='border-b border-secondary-900 text-center'
               />
-              <LinkCallToAction
-                href='https://forms.office.com/e/x9y2sJSm8P'
-                target='_blank'
-                class='mx-auto'
+            </section>
+            <section class='flex items-center gap-4'>
+              <span class='text-xl font-bold'>Laufzeit</span>
+              <input
+                type='range'
+                bind:value={rangeValueSig}
+                required
+                min='1'
+                max='8'
+                step='1'
+              />
+              {durationInMonthSig.value === 1 && (
+                <small class='min-w-[4rem]'>
+                  {durationInMonthSig.value} Monat
+                </small>
+              )}
+              {durationInMonthSig.value > 1 && (
+                <small class='min-w-[4rem]'>
+                  {durationInMonthSig.value} Monate
+                </small>
+              )}
+
+              <span
+                class={`${
+                  discountSig.value === 0 ? 'opacity-50' : ''
+                } grid w-32 items-center rounded bg-secondary-900 p-2 text-center text-xs font-medium text-accent accent-primary`}
               >
-                Anfordern
-              </LinkCallToAction>
-            </div>
+                {discountSig.value * 100}% Rabatt
+              </span>
+            </section>
           </div>
 
-          {/* Profi */}
-          <div class='card grid items-start gap-8 shadow-xl'>
-            <div class='features'>
-              <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold'>
-                <StarIcon />
-                Profi
-              </h3>
-              <ul>
-                {profiFeatures.map((feature, key) => {
-                  return (
-                    <li
-                      key={key}
-                      class='align-center grid grid-cols-[auto_auto_1fr] justify-items-end gap-2 pb-4'
-                    >
-                      <CheckIcon />
-                      <span>{feature.text}</span>
-                      {feature.detail && <InfoPopover text={feature.detail} />}
-                    </li>
-                  );
-                })}
-              </ul>
+          <div class='pricing-tiers'>
+            {/* Starter */}
+            <div class='card grid items-start gap-8 shadow-md'>
+              <div class='features'>
+                <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold'>
+                  <ThumbsUpIcon />
+                  Starter
+                </h3>
+                <ul>
+                  <ProductFeatureList features={starterFeatures} />
+                </ul>
+              </div>
+
+              <div class='grid gap-8 self-end'>
+                <PricePerUsePerMonth
+                  usersCount={+userCountSig.value}
+                  pricePerUser={pricingTier.starter.pricePerUserPerMonth}
+                />
+                <LinkCallToAction
+                  href='https://forms.office.com/e/x9y2sJSm8P'
+                  target='_blank'
+                  class='mx-auto'
+                >
+                  Anfordern
+                </LinkCallToAction>
+              </div>
             </div>
 
-            <div class='grid gap-8 self-end'>
-              <PricePerUsePerMonth
-                usersCount={+userCountSig.value}
-                pricePerUser={pricingTier.professional.pricePerUserPerMonth}
-              />
-              <LinkCallToAction
-                href='https://forms.office.com/e/x9y2sJSm8P'
-                target='_blank'
-                class='mx-auto'
-              >
-                Anfordern
-              </LinkCallToAction>
-            </div>
-          </div>
+            {/* Profi */}
+            <div class='card grid items-start gap-8 shadow-xl'>
+              <div class='features'>
+                <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold'>
+                  <StarIcon />
+                  Profi
+                </h3>
+                <ul>
+                  <ProductFeatureList features={profiFeatures} />
+                </ul>
+              </div>
 
-          {/* Expert */}
-          <div class='card grid items-start gap-8 shadow-md' id='gold'>
-            <div class='features'>
-              <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold'>
-                <ShieldCheckmarkIcon />
-                Experte
-              </h3>
-              <ul>
-                {expertFeatures.map((feature, key) => {
-                  return (
-                    <li
-                      key={key}
-                      class='align-center grid grid-cols-[auto_auto_1fr] justify-items-end gap-2 pb-4'
-                    >
-                      <CheckIcon />
-                      <span>{feature.text}</span>
-                      {feature.detail && <InfoPopover text={feature.detail} />}
-                    </li>
-                  );
-                })}
-              </ul>
+              <div class='grid gap-8 self-end'>
+                <PricePerUsePerMonth
+                  usersCount={+userCountSig.value}
+                  pricePerUser={pricingTier.professional.pricePerUserPerMonth}
+                />
+                <LinkCallToAction
+                  href='https://forms.office.com/e/x9y2sJSm8P'
+                  target='_blank'
+                  class='mx-auto'
+                >
+                  Anfordern
+                </LinkCallToAction>
+              </div>
             </div>
-            <div class='grid gap-8 self-end'>
-              <PricePerUsePerMonth
-                usersCount={+userCountSig.value}
-                pricePerUser={pricingTier.expert.pricePerUserPerMonth}
-              />
-              <LinkCallToAction
-                href='https://forms.office.com/e/x9y2sJSm8P'
-                target='_blank'
-                class='mx-auto'
-              >
-                Anfordern
-              </LinkCallToAction>
+
+            {/* Expert */}
+            <div class='card grid items-start gap-8 shadow-md' id='gold'>
+              <div class='features'>
+                <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold'>
+                  <ShieldCheckmarkIcon />
+                  Experte
+                </h3>
+                <ul>
+                  <ProductFeatureList features={expertFeatures} />
+                </ul>
+              </div>
+              <div class='grid gap-8 self-end'>
+                <PricePerUsePerMonth
+                  usersCount={+userCountSig.value}
+                  pricePerUser={pricingTier.expert.pricePerUserPerMonth}
+                />
+                <LinkCallToAction
+                  href='https://forms.office.com/e/x9y2sJSm8P'
+                  target='_blank'
+                  class='mx-auto'
+                >
+                  Anfordern
+                </LinkCallToAction>
+              </div>
             </div>
           </div>
         </div>
-      </Section>
-
-      <Section backgroundColor='gray'>
-        <VideoOverlapLandscape youTubeVideoId='FjThxiKBApc'>
-          <section class='flex flex-col space-y-4'>
-            <h2 class='text-xl font-bold md:text-4xl'>
-              <HeadingSegmentSecondary text='Alle Funktionen vorgestellt' />
-            </h2>
-            <p class='leading-7'>
-              In diesem Video stellen wir Ihnen alle Funktionen detailliert vor,
-              sodass Sie genau wissen, was Sie mit welchem Paket bekommen. Egal,
-              für welches Paket Sie sich entscheiden: Alle Simulationen
-              durchlaufen vorab einen Praxischeck. In einer Testgruppe aus
-              mehreren Unternehmen mit über 300 Anwendern prüfen wir vorab die
-              Klickquoten. Wir unterscheiden dabei niedrige (&gt;20%), mittlere
-              (&gt;40%) und hohe (&gt;60%) Klickquoten. In vielen Fällen klicken
-              über 90% der Anwender, sodass im mittel mehr als jede zweite
-              Phishing-Mail geklickt wird.
-            </p>
-            <LinkCallToAction
-              href='https://e.co-IT.eu/cyber/anfrage'
-              target='_blank'
-            >
-              Klären Sie Ihre Fragen mit uns persönlich.
-            </LinkCallToAction>
-          </section>
-        </VideoOverlapLandscape>
       </Section>
 
       <Section id='fordern_sie_ihr_angebot_an'>
-        <div class='mb-14 flex flex-col  items-center'>
+        <div class='flex flex-col items-center gap-4'>
           <LinkedHeading href='#fordern_sie_ihr_angebot_an'>
             Fordern Sie Ihr{' '}
             <HeadingSegmentSecondary800 text='individuelles Angebot' /> an.
@@ -578,26 +512,35 @@ export default component$(() => {
       </Section>
 
       <Section id='wichtig_fuer_cyber_verantwortliche' backgroundColor='gray'>
-        <LinkedHeading href='#wichtig_fuer_cyber_verantwortliche'>
-          Wichtig für{' '}
-          <HeadingSegmentSecondary800 text='Cyber-Verantwortliche' />
-        </LinkedHeading>
+        <div class='flex flex-col items-center gap-y-8'>
+          <LinkedHeading href='#wichtig_fuer_cyber_verantwortliche'>
+            Wichtig für{' '}
+            <HeadingSegmentSecondary800 text='Cyber-Verantwortliche' />
+          </LinkedHeading>
 
-        <p class='mx-auto mb-14 max-w-xl text-center font-medium leading-7'>
-          Die besten Phishing-Mails helfen nichts, wenn diese nicht den
-          Posteingang des Empfängers erreichen. Geben Sie deshalb unseren
-          E-Mail-Server und unsere Domains in Ihrer Firewall und in den
-          Postfächern frei. Nur dadurch können Sie sicherstellen, dass
-          Auswertungen zum Klickverhalten korrekt sind. Damit Sie schnell
-          starten können, haben wir für gängige Produkte wie Microsofts
-          "Exchange Server" Anleitungsvideos bereitgestellt.
-        </p>
+          <p class='mx-auto max-w-xl leading-7'>
+            Die besten Phishing-Mails helfen nichts, wenn diese nicht den
+            Posteingang des Empfängers erreichen. Geben Sie deshalb unseren
+            E-Mail-Server und unsere Domains in Ihrer Firewall und in den
+            Postfächern frei. Nur dadurch können Sie sicherstellen, dass
+            Auswertungen zum Klickverhalten korrekt sind. Damit Sie schnell
+            starten können, haben wir für gängige Produkte wie Microsofts
+            "Exchange Server" Anleitungsvideos bereitgestellt.
+          </p>
 
-        <YouTubeVideoGrid videos={cyberVerantwortlicheVideos} />
+          <LinkCallToAction
+            href='https://e.co-it.eu/cyberportal-adminkonfiguration'
+            target='_blank'
+          >
+            Freigaberegeln anschauen
+          </LinkCallToAction>
+
+          <YouTubeVideoGrid videos={cyberVerantwortlicheVideos} />
+        </div>
       </Section>
 
       <Section id='teilen_sie_uns_ihre_meinung_mit'>
-        <div class='mb-14 flex flex-col items-center gap-4'>
+        <div class='mb-14 flex flex-col items-center gap-y-4'>
           <LinkedHeading href='#teilen_sie_uns_ihre_meinung_mit'>
             Teilen Sie uns <HeadingSegmentSecondary800 text='Ihre Meinung ' />{' '}
             mit
@@ -620,7 +563,7 @@ export default component$(() => {
       </Section>
 
       <Section id='sie_wollen_ihre_anwender_schulen' backgroundColor='gray'>
-        <div class='mb-14 flex flex-col items-center gap-y-4'>
+        <div class='flex flex-col items-center gap-y-4'>
           <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
             Sie wollen <HeadingSegmentSecondary800 text='Ihre Anwender ' />{' '}
             schulen?
@@ -641,9 +584,9 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section>
-        <div class='mb-14 flex flex-col items-center gap-y-4'>
-          <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
+      <Section id='partner_it_sicherheit'>
+        <div class='flex flex-col items-center gap-y-4'>
+          <LinkedHeading href='#partner_it_sicherheit'>
             Sie suchen einen <HeadingSegmentSecondary800 text='Partner' /> für
             IT-Sicherheit?
           </LinkedHeading>
@@ -672,7 +615,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'co-IT - Inspire to Change',
+  title: 'co-IT - Cyber Portal',
 
   frontmatter: {
     header: {
