@@ -4,7 +4,7 @@ export const wuerttembergischeFeatures: ProductFeature[] = [
   {
     text: '8 Phishing-E-Mails',
     detail:
-      'Pro Jahr werden 8 Phishing-Emails an die Anwender des Cyber Portals versandt.'
+      'Pro Jahr werden 8 Phishing-Mails an die Anwender des Cyber Portals versandt.'
   },
   {
     text: 'Versandzeit: Gleichzeitig',
