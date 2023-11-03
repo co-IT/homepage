@@ -423,7 +423,7 @@ export default component$(() => {
               <span
                 class={`${
                   discountSig.value === 0 ? 'opacity-50' : ''
-                } grid w-32 items-center rounded bg-secondary-900 p-2 text-center text-xs font-medium text-accent accent-primary`}
+                } grid w-32 items-center rounded bg-secondary-900 p-2 text-center text-xs font-medium text-primary`}
               >
                 {discountSig.value * 100}% Rabatt
               </span>
