@@ -207,20 +207,24 @@ export default component$(() => {
             alternateText: 'Man looking at the sunset'
           }}
         >
-          <section q:slot='article' class='flex flex-col space-y-4'>
-            <h2 class='text-xl font-bold md:text-4xl'>
+          <section
+            id='unser_antrieb'
+            q:slot='article'
+            class='flex flex-col space-y-4'
+          >
+            <LinkedHeading href='#unser_antrieb'>
               <HeadingSegmentSecondary text='Unser' />
               &nbsp;
               <HeadingSegmentSecondary800 text='Antrieb' />
-            </h2>
+            </LinkedHeading>
             <p class='pb-4 leading-7'>
               Wir wollen allen die fachliche Kompetenz, die praktischen
-              Fähigkeiten und das notwendige Wissen vermitteln, um in der
-              digitalen Welt sich sicher zu fühlen und sicher zu sein. Das Cyber
+              Fähigkeiten und das notwendige Wissen vermitteln, um sich in der
+              digitalen Welt sicher zu fühlen und sicher zu sein. Das Cyber
               Portal bietet Ihnen und Ihren Anwendern einen Raum, um
               nachhaltiges Praxiswissen auf verständliche Weise zu erlernen,
               dieses mit intensiven Prüfungen und realistischen Simulationen zu
-              festigen und dabei Lernfortschritte methodisch sicherzustellen.
+              festigen und dabei Lernfortschritte systematisch sicherzustellen.
             </p>
           </section>
         </ContentOverlapPortrait>
@@ -556,7 +560,7 @@ export default component$(() => {
       </Section>
 
       <Section id='fordern_sie_ihr_angebot_an'>
-        <div class='mb-14 flex flex-col  items-center'>
+        <div class='flex flex-col items-center gap-4'>
           <LinkedHeading href='#fordern_sie_ihr_angebot_an'>
             Fordern Sie Ihr{' '}
             <HeadingSegmentSecondary800 text='individuelles Angebot' /> an.
@@ -578,26 +582,28 @@ export default component$(() => {
       </Section>
 
       <Section id='wichtig_fuer_cyber_verantwortliche' backgroundColor='gray'>
-        <LinkedHeading href='#wichtig_fuer_cyber_verantwortliche'>
-          Wichtig für{' '}
-          <HeadingSegmentSecondary800 text='Cyber-Verantwortliche' />
-        </LinkedHeading>
+        <div class='flex flex-col items-center gap-y-4'>
+          <LinkedHeading href='#wichtig_fuer_cyber_verantwortliche'>
+            Wichtig für{' '}
+            <HeadingSegmentSecondary800 text='Cyber-Verantwortliche' />
+          </LinkedHeading>
 
-        <p class='mx-auto mb-14 max-w-xl text-center font-medium leading-7'>
-          Die besten Phishing-Mails helfen nichts, wenn diese nicht den
-          Posteingang des Empfängers erreichen. Geben Sie deshalb unseren
-          E-Mail-Server und unsere Domains in Ihrer Firewall und in den
-          Postfächern frei. Nur dadurch können Sie sicherstellen, dass
-          Auswertungen zum Klickverhalten korrekt sind. Damit Sie schnell
-          starten können, haben wir für gängige Produkte wie Microsofts
-          "Exchange Server" Anleitungsvideos bereitgestellt.
-        </p>
+          <p class='mx-auto mb-14 max-w-xl leading-7'>
+            Die besten Phishing-Mails helfen nichts, wenn diese nicht den
+            Posteingang des Empfängers erreichen. Geben Sie deshalb unseren
+            E-Mail-Server und unsere Domains in Ihrer Firewall und in den
+            Postfächern frei. Nur dadurch können Sie sicherstellen, dass
+            Auswertungen zum Klickverhalten korrekt sind. Damit Sie schnell
+            starten können, haben wir für gängige Produkte wie Microsofts
+            "Exchange Server" Anleitungsvideos bereitgestellt.
+          </p>
 
-        <YouTubeVideoGrid videos={cyberVerantwortlicheVideos} />
+          <YouTubeVideoGrid videos={cyberVerantwortlicheVideos} />
+        </div>
       </Section>
 
       <Section id='teilen_sie_uns_ihre_meinung_mit'>
-        <div class='mb-14 flex flex-col items-center gap-4'>
+        <div class='mb-14 flex flex-col items-center gap-y-4'>
           <LinkedHeading href='#teilen_sie_uns_ihre_meinung_mit'>
             Teilen Sie uns <HeadingSegmentSecondary800 text='Ihre Meinung ' />{' '}
             mit
@@ -620,7 +626,7 @@ export default component$(() => {
       </Section>
 
       <Section id='sie_wollen_ihre_anwender_schulen' backgroundColor='gray'>
-        <div class='mb-14 flex flex-col items-center gap-y-4'>
+        <div class='flex flex-col items-center gap-y-4'>
           <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
             Sie wollen <HeadingSegmentSecondary800 text='Ihre Anwender ' />{' '}
             schulen?
@@ -642,7 +648,7 @@ export default component$(() => {
       </Section>
 
       <Section>
-        <div class='mb-14 flex flex-col items-center gap-y-4'>
+        <div class='flex flex-col items-center gap-y-4'>
           <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
             Sie suchen einen <HeadingSegmentSecondary800 text='Partner' /> für
             IT-Sicherheit?
