@@ -1,7 +1,4 @@
-type ProductFeature = {
-  text: string;
-  detail?: string;
-};
+import type { ProductFeature } from '~/components/product-feature-list';
 
 export const wuerttembergischeFeatures: ProductFeature[] = [
   {

@@ -38,6 +38,7 @@ import {
 
 import { LinkedHeading } from '../../../components/link-heading';
 import { PricePerUsePerMonth } from '../../../components/pricing/price-per-user-per-month';
+import { ProductFeatureList } from '../../../components/product-feature-list';
 import { WuerttembergischeLogo } from '../../../components/wuerttembergische/logo';
 import style from './styles.css?inline';
 
@@ -280,55 +281,14 @@ export default component$(() => {
         </VideoOverlapLandscape>
       </Section>
 
-      <Section>
-        <ContentOverlapPortrait
-          image={{
-            source: '/img/cyber/cyber-portal/planning-table.webp',
-            alternateText:
-              'Six team mates sitting on a table puzzling a rocket.'
-          }}
-        >
-          <section q:slot='article' class='flex flex-col space-y-4'>
-            <h2 class='text-xl font-bold md:text-4xl'>
-              <HeadingSegmentSecondary text='Garantiert eine' />
-              &nbsp;
-              <HeadingSegmentSecondary800 text='Herausforderung' />
-            </h2>
-            <p class='pb-4 leading-7'>
-              Unsere E-Mail Phishing-Simulationen setzen neue Maßstäbe in Sachen
-              Qualität und Authentizität. Unsere gezielten und raffinierten
-              Simulationen werden vorab in einer Testgruppe aus mehreren
-              Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen.
-              Unterstützung erhalten wir dabei von einem linguistische
-              Psychologen. Damit stellen wir sicher, dass sie wirklich schwer zu
-              erkennen sind. Wir unterscheiden dabei niedrige (&gt;20%),
-              mittlere (&gt;40%) und hohe (&gt;60%) Klickquoten.
-            </p>
-          </section>
-        </ContentOverlapPortrait>
-      </Section>
-
-      <Section>
+      <Section id='ihre_inklusivleistungen'>
         {/* Wuerttembergische Basic */}
         <div class='card grid items-start gap-8 shadow-md'>
           <div class='features'>
             <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold text-[#48504F]'>
               <WuerttembergischeLogo />
             </h3>
-            <ul>
-              {wuerttembergischeFeatures.map((feature, key) => {
-                return (
-                  <li
-                    key={key}
-                    class='align-center grid grid-cols-[auto_auto_1fr] justify-items-end gap-2 pb-4'
-                  >
-                    <CheckIcon />
-                    <span>{feature.text}</span>
-                    {feature.detail && <InfoPopover text={feature.detail} />}
-                  </li>
-                );
-              })}
-            </ul>
+            <ProductFeatureList features={wuerttembergischeFeatures} />
           </div>
           <div class='grid self-end'>
             <a
