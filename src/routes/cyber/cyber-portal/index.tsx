@@ -6,7 +6,6 @@ import {
   useStyles$,
   useTask$
 } from '@builder.io/qwik';
-import type { DocumentHead } from '@builder.io/qwik-city';
 
 import { Section } from '~/components/section';
 
@@ -287,20 +286,24 @@ export default component$(() => {
               Mit der kostenfreien Basisversion im Untergrund berechnen wir nur
               die anfallende Mehrleistung für die jeweiligen Pakete weiter.
               Damit können wir deutlich niedrigere Preise als vergleichbare
-              Plattformen anbieten. Doch was ist Ihr Mehrwert? Mit den
-              angebotenen Phishing-Paketen setzen wir neue Maßstäbe in Sachen
-              Qualität und Authentizität. Unsere gezielten und raffinierten
-              Phishing-Mails werden vorab in einer Testgruppe aus mehreren
-              Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen.
-              Mehr noch: Mit Hilfe eines linguistischen Psychologen werden die
-              Anwender sprachlich subtil zum Öffnen der betrügerischen Mails
-              bewegt. Flankiert wird der Erstellungsprozess von der KI namens
-              ChatGPT. Mit diesen Maßnahmen stellen wir sicher, dass unsere
-              Phishing-Simulationen nur schwer als solche zu erkennen sind. Die
-              Ergebnisse unserer Testgruppe werden in unterschiedliche{' '}
+              Plattformen anbieten. <br />
+              <br />
+              Doch was ist Ihr Mehrwert? Mit den angebotenen Phishing-Paketen
+              setzen wir neue Maßstäbe in Sachen Qualität und Authentizität.
+              Unsere gezielten und raffinierten Phishing-Mails werden vorab in
+              einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern
+              einem Praxischeck unterzogen. Mehr noch: Mit Hilfe eines
+              linguistischen Psychologen werden die Anwender sprachlich subtil
+              zum Öffnen der betrügerischen Mails bewegt. Flankiert wird der
+              Erstellungsprozess von der KI namens ChatGPT. Mit diesen Maßnahmen
+              stellen wir sicher, dass unsere Phishing-Simulationen nur schwer
+              als solche zu erkennen sind.
+              <br />
+              <br />
+              Die Ergebnisse unserer Testgruppe werden in unterschiedliche{' '}
               <strong>Klickquoten</strong> unterteilt:
             </p>
-            <ul class='ml-4 list-decimal'>
+            <ul>
               <li>
                 &gt;&nbsp;20% - <strong>verdächtig</strong>
               </li>
@@ -311,7 +314,7 @@ export default component$(() => {
                 &gt;&nbsp;60% - <strong>authentisch</strong>
               </li>
               <li>
-                &gt;&nbsp;80% - <strong>täuschend Echt</strong>
+                &gt;&nbsp;80% - <strong>täuschend echt</strong>
               </li>
             </ul>
             <p>
@@ -343,13 +346,16 @@ export default component$(() => {
               einreichen und bei der konkreten Ausgestaltung mitdiskutieren.
               Zudem können alle Abonnenten kostenpflichtiger Pakete regelmäßig
               über Vorschläge abstimmen und dadurch Einfluss auf die
-              Priorisierung bei der Umsetzung nehmen. Es gibt noch einen
-              weiteren Vorteil: Sie müssen kein neues Produkt evaluieren und
-              einführen. Die Integration der Zusatzfunktionen erfolgt nahtlos
-              und sofort bei Kauf. Das hilft besonders Behörden und größeren
-              Unternehmen kraftraubende Genehmigungsprozesse zu beschleunigen
-              und langwierige Ausschreibungsverfahren zu umgehen, weil die
-              Basisversion in Ihrem Haus bereits freigegeben und eingeführt ist.
+              Priorisierung bei der Umsetzung nehmen.
+              <br />
+              <br />
+              Es gibt noch einen weiteren Vorteil: Sie müssen kein neues Produkt
+              evaluieren und einführen. Die Integration der Zusatzfunktionen
+              erfolgt nahtlos und sofort bei Kauf. Das hilft besonders Behörden
+              und größeren Unternehmen kraftraubende Genehmigungsprozesse zu
+              beschleunigen und langwierige Ausschreibungsverfahren zu umgehen,
+              weil die Basisversion in Ihrem Haus bereits freigegeben und
+              eingeführt ist.
             </p>
           </section>
         </ContentOverlapPortrait>
