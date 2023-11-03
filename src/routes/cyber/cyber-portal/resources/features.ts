@@ -42,6 +42,11 @@ export const wuerttembergischeFeatures: ProductFeature[] = [
       'In den Phishing Simulationen wird der Name des Empfängers in der Anrede verwendet, also z.B. "Sehr geehrter Herr Tim Kater".'
   },
   {
+    text: 'Unternehmensname',
+    detail:
+      'In den Phishing Simulationen wird Ihr Unternehmen referenziert, z.B. indem in einer Simulation eine "Kununu"-Bewertung zu Ihrer Firma nachgestellt wird.'
+  },
+  {
     text: 'Feedbackfunktion',
     detail:
       'Im Cyber Portal finden Sie in der unteren rechten Ecke eine Schaltfläche, die ein Formular öffnet, in dem Sie Feedback einsenden können.'

@@ -213,10 +213,10 @@ export default component$(() => {
         </ContentOverlapPortrait>
       </Section>
 
-      <Section id='kostenfreie-basisversion' backgroundColor='gray'>
+      <Section id='ihre_inklusivleistungen' backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
-            <LinkedHeading href='#kostenfreie-basisversion'>
+            <LinkedHeading href='#ihre_inklusivleistungen'>
               <HeadingSegmentSecondary text='Ihre' />
               &nbsp;
               <HeadingSegmentSecondary800 text='Inklusivleistungen' />
