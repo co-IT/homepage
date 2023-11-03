@@ -242,7 +242,7 @@ export default component$(() => {
       <Section id='kostenfreie_basisversion'>
         <div class='grid grid-flow-row justify-center gap-16 sm:grid-flow-col'>
           {/* Wuerttembergische Basispaket Features */}
-          <div class='card grid items-start gap-8 shadow-md'>
+          <div class='card mx-auto grid items-start gap-8 shadow-md'>
             <WuerttembergischeLogo />
             <ProductFeatureList features={wuerttembergischeFeatures} />
             <a
