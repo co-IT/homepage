@@ -6,7 +6,6 @@ import {
   useStyles$,
   useTask$
 } from '@builder.io/qwik';
-import type { DocumentHead } from '@builder.io/qwik-city';
 
 import { Section } from '~/components/section';
 
@@ -34,6 +33,7 @@ import {
   wuerttembergischeFeatures
 } from './resources';
 
+import type { DocumentHead } from '@builder.io/qwik-city';
 import { LinkedHeading } from '~/components/link-heading';
 import { PricePerUsePerMonth } from '~/components/pricing/price-per-user-per-month';
 import { ProductFeatureList } from '~/components/product-feature-list';
@@ -217,12 +217,12 @@ export default component$(() => {
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
             <LinkedHeading href='#kostenfreie-basisversion'>
-              <HeadingSegmentSecondary text='Kostenfreie' />
+              <HeadingSegmentSecondary text='Ihre' />
               &nbsp;
-              <HeadingSegmentSecondary800 text='Basisversion' />
+              <HeadingSegmentSecondary800 text='Inklusivleistungen' />
             </LinkedHeading>
             <p class='leading-7'>
-              Beim Cyber Portal handelt es sich um eine Individuallösung für
+              Beim Cyber-Portal handelt es sich um eine Individuallösung für
               alle Kunden der Württembergischen Versicherung. Die Plattform soll
               allen Versicherungsnehmern gleichermaßen zugutekommen, indem der
               Fokus auf leicht zu bedienende Funktionen, praxisrelevantes Wissen
@@ -257,22 +257,16 @@ export default component$(() => {
           {/* Wuerttembergische Basispaket Teaser */}
           <section class='flex max-w-md flex-col gap-4'>
             <LinkedHeading href='ihre_inklusivleistungen'>
-              Ihre Inklusivleistungen
+              <HeadingSegmentSecondary text='Kostenfreie' />
+              &nbsp;
+              <HeadingSegmentSecondary800 text='Basisversion' />
             </LinkedHeading>
             <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
-              Die Basisversion der Cyber-Versicherung bietet bereits ein
-              umfassendes Leistungspaket, inklusive acht hochwertiger
-              Phishing-E-Mails pro Jahr. Diese E-Mails zeichnen sich durch
+              Die Basisversion des Cyber-Portals bietet bereits acht hochwertige
+              Phishing-Mails pro Jahr. Diese E-Mails zeichnen sich durch
               anspruchsvolle Sprache und präzise Semantik aus, verwenden
               authentische Absenderadressen und beinhalten eine persönliche
-              Anrede, um die Authentizität zu steigern. Für eine größere
-              Herausforderung gibt es kostenpflichtige Upgrades, die mehr
-              Phishing-Simulationen in verschiedenen Zeitabständen, eine
-              Qualitätskontrolle zur Verbesserung der Klickquoten und die
-              Möglichkeit bieten, den Unternehmensnamen einzubinden und die
-              Ansprache an bestimmte Zielgruppen anzupassen. Diese Upgrades
-              ermöglichen es, sich in der Identifizierung von Phishing-E-Mails
-              zum Experten zu entwickeln.
+              Anrede, um die Authentizität zu steigern.
             </p>
           </section>
         </div>
@@ -289,26 +283,45 @@ export default component$(() => {
               &nbsp;
               <HeadingSegmentSecondary800 text='Sicherheit' />
             </LinkedHeading>
-            <p class='pb-4 leading-7'>
+            <p class='leading-7'>
               Mit der kostenfreien Basisversion im Untergrund berechnen wir nur
               die anfallende Mehrleistung für die jeweiligen Pakete weiter.
               Damit können wir deutlich niedrigere Preise als vergleichbare
-              Plattformen anbieten. Doch was ist Ihr Mehrwert? Mit den
-              angebotenen Phishing-Paketen setzen wir neue Maßstäbe in Sachen
-              Qualität und Authentizität. Unsere gezielten und raffinierten
-              Phishing-Mails werden vorab in einer Testgruppe aus mehreren
-              Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen.
-              Mehr noch: Mit Hilfe eines linguistischen Psychologen werden die
-              Anwender sprachlich subtil zum Öffnen der betrügerischen Mails
-              bewegt. Flankiert wird der Erstellungsprozess von der KI namens
-              ChatGPT . Mit diesen Maßnahmen stellen wir sicher, dass unsere
-              Phishing-Simulationen nur schwer als solche zu erkennen sind.
-              Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir
-              niedrige (&gt;20%), mittlere (&gt;40%), hohe (&gt;60%) und sehr
-              hohe (&gt;80) Klickquoten. Mit der hohen Qualität unserer
-              Phishing-Simulationen schützen Sie sich und Ihr Unternehmen vor
-              modernen, KI-gestützten Phishing-Angriffen, wie sie immer häufiger
-              auftreten.
+              Plattformen anbieten. <br />
+              <br />
+              Doch was ist Ihr Mehrwert? Mit den angebotenen Phishing-Paketen
+              setzen wir neue Maßstäbe in Sachen Qualität und Authentizität.
+              Unsere gezielten und raffinierten Phishing-Mails werden vorab in
+              einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern
+              einem Praxischeck unterzogen. Mehr noch: Mit Hilfe eines
+              linguistischen Psychologen werden die Anwender sprachlich subtil
+              zum Öffnen der betrügerischen Mails bewegt. Flankiert wird der
+              Erstellungsprozess von der KI namens ChatGPT. Mit diesen Maßnahmen
+              stellen wir sicher, dass unsere Phishing-Simulationen nur schwer
+              als solche zu erkennen sind.
+              <br />
+              <br />
+              Die Ergebnisse unserer Testgruppe werden in unterschiedliche{' '}
+              <strong>Klickquoten</strong> unterteilt:
+            </p>
+            <ul>
+              <li>
+                &gt;&nbsp;20% - <strong>verdächtig</strong>
+              </li>
+              <li>
+                &gt;&nbsp;40% - <strong>ungewiss</strong>
+              </li>
+              <li>
+                &gt;&nbsp;60% - <strong>authentisch</strong>
+              </li>
+              <li>
+                &gt;&nbsp;80% - <strong>täuschend echt</strong>
+              </li>
+            </ul>
+            <p>
+              Mit der hohen Qualität unserer Phishing-Simulationen schützen Sie
+              sich und Ihr Unternehmen vor modernen, KI-gestützten
+              Phishing-Angriffen, wie sie immer häufiger auftreten.
             </p>
           </section>
         </VideoOverlapLandscape>
@@ -317,7 +330,7 @@ export default component$(() => {
       <Section id='entscheiden_sie_mit'>
         <ContentOverlapPortrait
           image={{
-            source: '/img/cyber/cyber-portal/decision.jpg',
+            source: '/img/cyber/cyber-portal/decision.webp',
             alternateText: 'Man looking at the sunset'
           }}
         >
@@ -327,18 +340,31 @@ export default component$(() => {
               <HeadingSegmentSecondary text='Sie mit' />
             </LinkedHeading>
             <p class='pb-4 leading-7'>
-              Während in der Basisversion am Ende der Auftraggeber über neue
-              Funktionen entscheidet, können Sie als Abonnent eines jeden Pakets
-              abstimmen, welcher Vorschlag als nächstes realisiert werden soll.
-              Käufer des „Experte“-Pakets können zudem auf die Auswahl, über die
-              abgestimmt wird, Einfluss nehmen. Es gibt noch einen weiteren
-              Vorteil: Sie müssen kein neues Produkt evaluieren und einführen.
-              Die Integration der Zusatzfunktionen erfolgt nahtlos und sofort
-              bei Kauf. Das hilft besonders Behörden und größeren Unternehmen
-              kraftraubende Genehmigungsprozesse zu beschleunigen und
-              langwierige Ausschreibungsverfahren zu umgehen, weil die
-              Basisversion in Ihrem Haus bereits freigegeben und eingeführt ist.
+              Während in der kostenfreien Basisversion am Ende der Auftraggeber
+              über neue Funktionen entscheidet, können Sie als Abonnent des
+              "Experte"-Pakets nachhaltig die Weiterentwicklung beeinflussen.
+              Dafür dürfen Sie Vorschläge direkt bei unseren Entwicklern
+              einreichen und bei der konkreten Ausgestaltung mitdiskutieren.
+              Zudem können alle Abonnenten kostenpflichtiger Pakete regelmäßig
+              über Vorschläge abstimmen und dadurch Einfluss auf die
+              Priorisierung bei der Umsetzung nehmen.
+              <br />
+              <br />
+              Es gibt noch einen weiteren Vorteil: Sie müssen kein neues Produkt
+              evaluieren und einführen. Die Integration der Zusatzfunktionen
+              erfolgt nahtlos und sofort bei Kauf. Das hilft besonders Behörden
+              und größeren Unternehmen kraftraubende Genehmigungsprozesse zu
+              beschleunigen und langwierige Ausschreibungsverfahren zu umgehen,
+              weil die Basisversion in Ihrem Haus bereits freigegeben und
+              eingeführt ist.
             </p>
+
+            <LinkCallToAction
+              href='https://forms.office.com/e/tKwD5aqPJY'
+              target='_blank'
+            >
+              Jetzt mit abstimmen
+            </LinkCallToAction>
           </section>
         </ContentOverlapPortrait>
       </Section>
@@ -346,8 +372,7 @@ export default component$(() => {
       <Section id='lust_auf_mehr' backgroundColor='gray'>
         <div class='grid gap-8'>
           <LinkedHeading href='#lust_auf_mehr'>
-            Lust auf &nbsp;
-            <HeadingSegmentSecondary800 text='mehr?' />
+            Lust auf <HeadingSegmentSecondary800 text='mehr?' />
           </LinkedHeading>
 
           <p class='leading-7'>
@@ -490,7 +515,7 @@ export default component$(() => {
       </Section>
 
       <Section id='fordern_sie_ihr_angebot_an'>
-        <div class='flex flex-col items-center gap-4'>
+        <div class='flex flex-col items-center gap-y-8'>
           <LinkedHeading href='#fordern_sie_ihr_angebot_an'>
             Fordern Sie Ihr{' '}
             <HeadingSegmentSecondary800 text='individuelles Angebot' /> an.
@@ -540,7 +565,7 @@ export default component$(() => {
       </Section>
 
       <Section id='teilen_sie_uns_ihre_meinung_mit'>
-        <div class='mb-14 flex flex-col items-center gap-y-4'>
+        <div class='mb-14 flex flex-col items-center gap-y-8'>
           <LinkedHeading href='#teilen_sie_uns_ihre_meinung_mit'>
             Teilen Sie uns <HeadingSegmentSecondary800 text='Ihre Meinung ' />{' '}
             mit
@@ -563,7 +588,7 @@ export default component$(() => {
       </Section>
 
       <Section id='sie_wollen_ihre_anwender_schulen' backgroundColor='gray'>
-        <div class='flex flex-col items-center gap-y-4'>
+        <div class='flex flex-col items-center gap-y-8'>
           <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
             Sie wollen <HeadingSegmentSecondary800 text='Ihre Anwender ' />{' '}
             schulen?
@@ -585,7 +610,7 @@ export default component$(() => {
       </Section>
 
       <Section id='partner_it_sicherheit'>
-        <div class='flex flex-col items-center gap-y-4'>
+        <div class='flex flex-col items-center gap-y-8'>
           <LinkedHeading href='#partner_it_sicherheit'>
             Sie suchen einen <HeadingSegmentSecondary800 text='Partner' /> für
             IT-Sicherheit?

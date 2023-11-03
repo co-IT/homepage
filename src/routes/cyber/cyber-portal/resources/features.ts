@@ -2,18 +2,24 @@ import type { ProductFeature } from '~/components/product-feature-list';
 
 export const wuerttembergischeFeatures: ProductFeature[] = [
   {
-    text: 'Feedbackfunktion',
+    text: '4 "verdächtige" E-Mails',
     detail:
-      'Im Cyber Portal finden Sie in der unteren rechten Ecke eine Schaltfläche, die ein Formular öffnet, in dem Sie Feedback einsenden können.'
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
-    text: 'Klickquote: bis 40%',
+    text: '2 "ungewisse" E-Mails',
     detail:
-      'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
-    text: 'Anzahl E-Mails: 8',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    text: '1 "authentische" E-Mail',
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
+  },
+  {
+    text: '1 "täuschend echte" E-Mail',
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: 'Versandzeit: Gleichzeitig',
@@ -34,6 +40,11 @@ export const wuerttembergischeFeatures: ProductFeature[] = [
     text: 'Anrede: Personalisiert',
     detail:
       'In den Phishing Simulationen wird der Name des Empfängers in der Anrede verwendet, also z.B. "Sehr geehrter Herr Tim Kater".'
+  },
+  {
+    text: 'Feedbackfunktion',
+    detail:
+      'Im Cyber Portal finden Sie in der unteren rechten Ecke eine Schaltfläche, die ein Formular öffnet, in dem Sie Feedback einsenden können.'
   }
 ];
 
@@ -49,13 +60,24 @@ export const starterFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
-    text: 'Klickquote: bis 60%',
+    text: '4 "verdächtige" E-Mails',
     detail:
-      'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
-    text: 'Anzahl E-Mails: 12',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    text: '4 "ungewisse" E-Mails',
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
+  },
+  {
+    text: '2 "authentische" E-Mails',
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
+  },
+  {
+    text: '2 "täuschend echte" E-Mails',
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: 'Frequenz: 30 Tage',
@@ -110,13 +132,24 @@ export const profiFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
-    text: 'Klickquote: über 80%',
+    text: '4 "verdächtige" E-Mails',
     detail:
-      'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
-    text: 'Anzahl E-Mails: 24',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    text: '4 "ungewisse" E-Mails',
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
+  },
+  {
+    text: '8 "authentische" E-Mails',
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
+  },
+  {
+    text: '8 "täuschend echte" E-Mails',
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: 'Frequenz: 14 Tage',
@@ -186,13 +219,24 @@ export const expertFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
-    text: 'Klickquote: über 80%',
+    text: '10 "verdächtige" E-Mails',
     detail:
-      'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
-    text: 'Anzahl E-Mails: 52',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    text: '12 "ungewisse" E-Mails',
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
+  },
+  {
+    text: '15 "authentische" E-Mails',
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
+  },
+  {
+    text: '15 "täuschend echte" E-Mails',
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: 'Frequenz: 7 Tage',
