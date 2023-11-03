@@ -222,7 +222,7 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Basisversion' />
             </LinkedHeading>
             <p class='leading-7'>
-              Beim Cyber Portal handelt es sich um eine Individuallösung für
+              Beim Cyber-Portal handelt es sich um eine Individuallösung für
               alle Kunden der Württembergischen Versicherung. Die Plattform soll
               allen Versicherungsnehmern gleichermaßen zugutekommen, indem der
               Fokus auf leicht zu bedienende Funktionen, praxisrelevantes Wissen
@@ -272,7 +272,7 @@ export default component$(() => {
               Möglichkeit bieten, den Unternehmensnamen einzubinden und die
               Ansprache an bestimmte Zielgruppen anzupassen. Diese Upgrades
               ermöglichen es, sich in der Identifizierung von Phishing-E-Mails
-              zum Experten zu entwickeln.
+              zum Profi bis hin zum Experten zu entwickeln.
             </p>
           </section>
         </div>
