@@ -229,33 +229,29 @@ export default component$(() => {
           </section>
         </ContentOverlapPortrait>
       </Section>
-      <Section backgroundColor='gray'>
+      <Section id='kostenfreie-basisversion' backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
-            <h2 class='text-xl font-bold md:text-4xl'>
-              <HeadingSegmentSecondary text='Kostenfreie Basisversion' />
-            </h2>
+            <LinkedHeading href='#kostenfreie-basisversion'>
+              <HeadingSegmentSecondary text='Kostenfreie' />
+              &nbsp;
+              <HeadingSegmentSecondary800 text='Basisversion' />
+            </LinkedHeading>
             <p class='leading-7'>
               Beim Cyber Portal handelt es sich um eine Individuallösung für
               alle Kunden der Württembergischen Versicherung. Die Plattform soll
               allen Versicherungsnehmern gleichermaßen zugutekommen, indem der
               Fokus auf leicht zu bedienende Funktionen, praxisrelevantes Wissen
-              und hochwertigen Phishing-Simulationen gelegt wird. Dabei stellt
+              und hochwertige Phishing-Simulationen gelegt wird. Dabei stellt
               die Württembergische als alleiniger Auftraggeber sicher, dass die
-              Basisversion kostenfrei weiterentwickelt, kontinuierlich
-              aktualisiert und sicher betrieben wird. Seit Veröffentlichung des
-              Cyber Portals im Jahr 2021 erreichen uns viele gute Ideen und
-              individuelle Wünsche aus allen Unternehmensbranchen und -größen.
-              Mit den hier angebotenen Zusatzpaketen wollen wir die Brücke für
-              all diejenigen schlagen, denen unsere Lösung bereits geholfen hat
-              und jetzt noch mehr helfen soll.
+              Basisversion kostenfrei weiterentwickelt und sicher betrieben
+              wird. Seit Veröffentlichung des Cyber Portals im Jahr 2021
+              erreichten uns viele gute Ideen und individuelle Wünsche aus allen
+              Unternehmensbranchen und -größen. Mit den hier angebotenen
+              Zusatzpaketen wollen wir die Brücke für all diejenigen schlagen,
+              denen unsere Lösung bereits geholfen hat und die jetzt einen
+              Schritt weitergehen wollen.
             </p>
-            <LinkCallToAction
-              href='https://e.co-IT.eu/cyber/faq'
-              target='_blank'
-            >
-              Details zur Weiterentwicklung
-            </LinkCallToAction>
           </section>
         </VideoOverlapLandscape>
       </Section>
