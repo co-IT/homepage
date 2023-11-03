@@ -336,16 +336,19 @@ export default component$(() => {
               <HeadingSegmentSecondary text='Sie mit' />
             </LinkedHeading>
             <p class='pb-4 leading-7'>
-              Während in der Basisversion am Ende der Auftraggeber über neue
-              Funktionen entscheidet, können Sie als Abonnent eines jeden Pakets
-              abstimmen, welcher Vorschlag als nächstes realisiert werden soll.
-              Käufer des „Experte“-Pakets können zudem auf die Auswahl, über die
-              abgestimmt wird, Einfluss nehmen. Es gibt noch einen weiteren
-              Vorteil: Sie müssen kein neues Produkt evaluieren und einführen.
-              Die Integration der Zusatzfunktionen erfolgt nahtlos und sofort
-              bei Kauf. Das hilft besonders Behörden und größeren Unternehmen
-              kraftraubende Genehmigungsprozesse zu beschleunigen und
-              langwierige Ausschreibungsverfahren zu umgehen, weil die
+              Während in der kostenfreien Basisversion am Ende der Auftraggeber
+              über neue Funktionen entscheidet, können Sie als Abonnent des
+              "Experte"-Pakets nachhaltig die Weiterentwicklung beeinflussen.
+              Dafür dürfen Sie Vorschläge direkt bei unseren Entwicklern
+              einreichen und bei der konkreten Ausgestaltung mitdiskutieren.
+              Zudem können alle Abonnenten kostenpflichtiger Pakete regelmäßig
+              über Vorschläge abstimmen und dadurch Einfluss auf die
+              Priorisierung bei der Umsetzung nehmen. Es gibt noch einen
+              weiteren Vorteil: Sie müssen kein neues Produkt evaluieren und
+              einführen. Die Integration der Zusatzfunktionen erfolgt nahtlos
+              und sofort bei Kauf. Das hilft besonders Behörden und größeren
+              Unternehmen kraftraubende Genehmigungsprozesse zu beschleunigen
+              und langwierige Ausschreibungsverfahren zu umgehen, weil die
               Basisversion in Ihrem Haus bereits freigegeben und eingeführt ist.
             </p>
           </section>

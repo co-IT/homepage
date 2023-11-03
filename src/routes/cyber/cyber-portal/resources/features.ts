@@ -2,17 +2,19 @@ import type { ProductFeature } from '~/components/product-feature-list';
 
 export const wuerttembergischeFeatures: ProductFeature[] = [
   {
-    text: 'Feedbackfunktion',
-    detail:
-      'Im Cyber Portal finden Sie in der unteren rechten Ecke eine Schaltfläche, die ein Formular öffnet, in dem Sie Feedback einsenden können.'
+    text: '4 "verdächtige" E-Mails',
+    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },
   {
-    text: 'Klickquote: bis 40%',
-    detail:
-      'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
+    text: '2 "ungewisse" E-Mails',
+    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },
   {
-    text: 'Anzahl E-Mails: 8',
+    text: '1 "authentische" E-Mail',
+    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+  },
+  {
+    text: '1 "täuschend echte" E-Mail',
     detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },
   {
@@ -34,6 +36,11 @@ export const wuerttembergischeFeatures: ProductFeature[] = [
     text: 'Anrede: Personalisiert',
     detail:
       'In den Phishing Simulationen wird der Name des Empfängers in der Anrede verwendet, also z.B. "Sehr geehrter Herr Tim Kater".'
+  },
+  {
+    text: 'Feedbackfunktion',
+    detail:
+      'Im Cyber Portal finden Sie in der unteren rechten Ecke eine Schaltfläche, die ein Formular öffnet, in dem Sie Feedback einsenden können.'
   }
 ];
 
@@ -49,9 +56,20 @@ export const starterFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
-    text: 'Klickquote: bis 60%',
-    detail:
-      'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
+    text: '4 "verdächtige" E-Mails',
+    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+  },
+  {
+    text: '4 "ungewisse" E-Mails',
+    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+  },
+  {
+    text: '2 "authentische" E-Mail',
+    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+  },
+  {
+    text: '2 "täuschend echte" E-Mail',
+    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },
   {
     text: 'Anzahl E-Mails: 12',
@@ -110,12 +128,19 @@ export const profiFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
-    text: 'Klickquote: über 80%',
-    detail:
-      'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
+    text: '4 "verdächtige" E-Mails',
+    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },
   {
-    text: 'Anzahl E-Mails: 24',
+    text: '4 "ungewisse" E-Mails',
+    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+  },
+  {
+    text: '8 "authentische" E-Mail',
+    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+  },
+  {
+    text: '8 "täuschend echte" E-Mail',
     detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },
   {
@@ -186,12 +211,19 @@ export const expertFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
-    text: 'Klickquote: über 80%',
-    detail:
-      'Unsere Simulationen werden vorab immer von über 300 Anwendern in einer Testgruppe von unterschiedlichen Unternehmen einem Praxistest unterzogen: Dabei teilen wir die Klickquote in niedrig (>20%), mittel (>40%) und hoch (>60%) ein.'
+    text: '10 "verdächtige" E-Mails',
+    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },
   {
-    text: 'Anzahl E-Mails: 52',
+    text: '12 "ungewisse" E-Mails',
+    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+  },
+  {
+    text: '15 "authentische" E-Mail',
+    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+  },
+  {
+    text: '15 "täuschend echte" E-Mail',
     detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },
   {
