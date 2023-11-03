@@ -64,15 +64,11 @@ export const starterFeatures: ProductFeature[] = [
     detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },
   {
-    text: '2 "authentische" E-Mail',
+    text: '2 "authentische" E-Mails',
     detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },
   {
-    text: '2 "täuschend echte" E-Mail',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
-  },
-  {
-    text: 'Anzahl E-Mails: 12',
+    text: '2 "täuschend echte" E-Mails',
     detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },
   {
@@ -136,11 +132,11 @@ export const profiFeatures: ProductFeature[] = [
     detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },
   {
-    text: '8 "authentische" E-Mail',
+    text: '8 "authentische" E-Mails',
     detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },
   {
-    text: '8 "täuschend echte" E-Mail',
+    text: '8 "täuschend echte" E-Mails',
     detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },
   {
@@ -219,11 +215,11 @@ export const expertFeatures: ProductFeature[] = [
     detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },
   {
-    text: '15 "authentische" E-Mail',
+    text: '15 "authentische" E-Mails',
     detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },
   {
-    text: '15 "täuschend echte" E-Mail',
+    text: '15 "täuschend echte" E-Mails',
     detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
   },
   {
