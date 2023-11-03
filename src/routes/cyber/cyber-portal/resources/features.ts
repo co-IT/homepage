@@ -3,19 +3,23 @@ import type { ProductFeature } from '~/components/product-feature-list';
 export const wuerttembergischeFeatures: ProductFeature[] = [
   {
     text: '4 "verdächtige" E-Mails',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: '2 "ungewisse" E-Mails',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: '1 "authentische" E-Mail',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: '1 "täuschend echte" E-Mail',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: 'Versandzeit: Gleichzeitig',
@@ -57,19 +61,23 @@ export const starterFeatures: ProductFeature[] = [
   },
   {
     text: '4 "verdächtige" E-Mails',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: '4 "ungewisse" E-Mails',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: '2 "authentische" E-Mails',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: '2 "täuschend echte" E-Mails',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: 'Frequenz: 30 Tage',
@@ -125,19 +133,23 @@ export const profiFeatures: ProductFeature[] = [
   },
   {
     text: '4 "verdächtige" E-Mails',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: '4 "ungewisse" E-Mails',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: '8 "authentische" E-Mails',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: '8 "täuschend echte" E-Mails',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: 'Frequenz: 14 Tage',
@@ -208,19 +220,23 @@ export const expertFeatures: ProductFeature[] = [
   },
   {
     text: '10 "verdächtige" E-Mails',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: '12 "ungewisse" E-Mails',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: '15 "authentische" E-Mails',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: '15 "täuschend echte" E-Mails',
-    detail: 'Anzahl der Phishing Simulationen pro Empfänger und Jahr.'
+    detail:
+      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
     text: 'Frequenz: 7 Tage',
