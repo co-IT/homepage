@@ -315,142 +315,182 @@ export default component$(() => {
           </section>
         </div>
       </Section>
-      <Section id='lust_auf_mehr'>
-        <LinkedHeading href='#lust_auf_mehr'>
-          Lust auf &nbsp;
-          <HeadingSegmentSecondary800 text='mehr?' />
-        </LinkedHeading>
-        <div class='flex flex-wrap items-center gap-4 rounded-3xl py-10 '>
-          <section class='flex gap-4'>
-            <span class='text-xl font-bold'>Anwenderanzahl</span>
-            <input
-              type='number'
-              bind:value={userCountSig}
-              onKeyUp$={() => {
-                if (+userCountSig.value < 0) {
-                  userCountSig.value = '1';
-                }
-              }}
-              required
-              value='10'
-              min='1'
-              max='6000'
-              class='border-b border-secondary-900 text-center'
-            />
+
+      <Section id='entscheiden_sie_mit'>
+        <ContentOverlapPortrait
+          image={{
+            source: '/img/cyber/cyber-portal/decision.jpg',
+            alternateText: 'Man looking at the sunset'
+          }}
+        >
+          <section q:slot='article' class='flex flex-col space-y-4'>
+            <LinkedHeading href='#unser_antrieb'>
+              <HeadingSegmentSecondary800 text='Entscheiden' />{' '}
+              <HeadingSegmentSecondary text='Sie mit' />
+            </LinkedHeading>
+            <p class='pb-4 leading-7'>
+              Während in der Basisversion am Ende der Auftraggeber über neue
+              Funktionen entscheidet, können Sie als Abonnent eines jeden Pakets
+              abstimmen, welcher Vorschlag als nächstes realisiert werden soll.
+              Käufer des „Experte“-Pakets können zudem auf die Auswahl, über die
+              abgestimmt wird, Einfluss nehmen. Es gibt noch einen weiteren
+              Vorteil: Sie müssen kein neues Produkt evaluieren und einführen.
+              Die Integration der Zusatzfunktionen erfolgt nahtlos und sofort
+              bei Kauf. Das hilft besonders Behörden und größeren Unternehmen
+              kraftraubende Genehmigungsprozesse zu beschleunigen und
+              langwierige Ausschreibungsverfahren zu umgehen, weil die
+              Basisversion in Ihrem Haus bereits freigegeben und eingeführt ist.
+            </p>
           </section>
-          <section class='flex items-center gap-4'>
-            <span class='text-xl font-bold'>Laufzeit</span>
-            <input
-              type='range'
-              bind:value={rangeValueSig}
-              required
-              min='1'
-              max='8'
-              step='1'
-            />
-            {durationInMonthSig.value === 1 && (
-              <small class='min-w-[4rem]'>
-                {durationInMonthSig.value} Monat
-              </small>
-            )}
-            {durationInMonthSig.value > 1 && (
-              <small class='min-w-[4rem]'>
-                {durationInMonthSig.value} Monate
-              </small>
-            )}
+        </ContentOverlapPortrait>
+      </Section>
 
-            <span
-              class={`${
-                discountSig.value === 0 ? 'opacity-50' : ''
-              } grid w-32 items-center rounded bg-secondary-900 p-2 text-center text-xs font-medium text-accent accent-primary`}
-            >
-              {discountSig.value * 100}% Rabatt
-            </span>
-          </section>
-        </div>
+      <Section id='lust_auf_mehr' backgroundColor='gray'>
+        <div class='grid gap-8'>
+          <LinkedHeading href='#lust_auf_mehr'>
+            Lust auf &nbsp;
+            <HeadingSegmentSecondary800 text='mehr?' />
+          </LinkedHeading>
 
-        <div class='pricing-tiers'>
-          {/* Starter */}
-          <div class='card grid items-start gap-8 shadow-md'>
-            <div class='features'>
-              <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold'>
-                <ThumbsUpIcon />
-                Starter
-              </h3>
-              <ul>
-                <ProductFeatureList features={starterFeatures} />
-              </ul>
-            </div>
+          <p class='leading-7'>
+            Hier finden Sie alle Informationen zu den erweiterten Paketen auf
+            einen Blick. <br /> Der Konfigurator unterstützt Sie bei der Auswahl
+            des passenden Pakets.
+          </p>
 
-            <div class='grid gap-8 self-end'>
-              <PricePerUsePerMonth
-                usersCount={+userCountSig.value}
-                pricePerUser={pricingTier.starter.pricePerUserPerMonth}
+          <div class='flex flex-wrap items-center gap-4 rounded-3xl'>
+            <section class='flex gap-4'>
+              <span class='text-xl font-bold'>Anzahl Empfänger</span>
+              <input
+                type='number'
+                bind:value={userCountSig}
+                onKeyUp$={() => {
+                  if (+userCountSig.value < 0) {
+                    userCountSig.value = '1';
+                  }
+                }}
+                required
+                value='10'
+                min='1'
+                max='6000'
+                class='border-b border-secondary-900 text-center'
               />
-              <LinkCallToAction
-                href='https://forms.office.com/e/x9y2sJSm8P'
-                target='_blank'
-                class='mx-auto'
+            </section>
+            <section class='flex items-center gap-4'>
+              <span class='text-xl font-bold'>Laufzeit</span>
+              <input
+                type='range'
+                bind:value={rangeValueSig}
+                required
+                min='1'
+                max='8'
+                step='1'
+              />
+              {durationInMonthSig.value === 1 && (
+                <small class='min-w-[4rem]'>
+                  {durationInMonthSig.value} Monat
+                </small>
+              )}
+              {durationInMonthSig.value > 1 && (
+                <small class='min-w-[4rem]'>
+                  {durationInMonthSig.value} Monate
+                </small>
+              )}
+
+              <span
+                class={`${
+                  discountSig.value === 0 ? 'opacity-50' : ''
+                } grid w-32 items-center rounded bg-secondary-900 p-2 text-center text-xs font-medium text-accent accent-primary`}
               >
-                Anfordern
-              </LinkCallToAction>
-            </div>
+                {discountSig.value * 100}% Rabatt
+              </span>
+            </section>
           </div>
 
-          {/* Profi */}
-          <div class='card grid items-start gap-8 shadow-xl'>
-            <div class='features'>
-              <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold'>
-                <StarIcon />
-                Profi
-              </h3>
-              <ul>
-                <ProductFeatureList features={profiFeatures} />
-              </ul>
+          <div class='pricing-tiers'>
+            {/* Starter */}
+            <div class='card grid items-start gap-8 shadow-md'>
+              <div class='features'>
+                <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold'>
+                  <ThumbsUpIcon />
+                  Starter
+                </h3>
+                <ul>
+                  <ProductFeatureList features={starterFeatures} />
+                </ul>
+              </div>
+
+              <div class='grid gap-8 self-end'>
+                <PricePerUsePerMonth
+                  usersCount={+userCountSig.value}
+                  pricePerUser={pricingTier.starter.pricePerUserPerMonth}
+                />
+                <LinkCallToAction
+                  href='https://forms.office.com/e/x9y2sJSm8P'
+                  target='_blank'
+                  class='mx-auto'
+                >
+                  Anfordern
+                </LinkCallToAction>
+              </div>
             </div>
 
-            <div class='grid gap-8 self-end'>
-              <PricePerUsePerMonth
-                usersCount={+userCountSig.value}
-                pricePerUser={pricingTier.professional.pricePerUserPerMonth}
-              />
-              <LinkCallToAction
-                href='https://forms.office.com/e/x9y2sJSm8P'
-                target='_blank'
-                class='mx-auto'
-              >
-                Anfordern
-              </LinkCallToAction>
-            </div>
-          </div>
+            {/* Profi */}
+            <div class='card grid items-start gap-8 shadow-xl'>
+              <div class='features'>
+                <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold'>
+                  <StarIcon />
+                  Profi
+                </h3>
+                <ul>
+                  <ProductFeatureList features={profiFeatures} />
+                </ul>
+              </div>
 
-          {/* Expert */}
-          <div class='card grid items-start gap-8 shadow-md' id='gold'>
-            <div class='features'>
-              <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold'>
-                <ShieldCheckmarkIcon />
-                Experte
-              </h3>
-              <ul>
-                <ProductFeatureList features={expertFeatures} />
-              </ul>
+              <div class='grid gap-8 self-end'>
+                <PricePerUsePerMonth
+                  usersCount={+userCountSig.value}
+                  pricePerUser={pricingTier.professional.pricePerUserPerMonth}
+                />
+                <LinkCallToAction
+                  href='https://forms.office.com/e/x9y2sJSm8P'
+                  target='_blank'
+                  class='mx-auto'
+                >
+                  Anfordern
+                </LinkCallToAction>
+              </div>
             </div>
-            <div class='grid gap-8 self-end'>
-              <PricePerUsePerMonth
-                usersCount={+userCountSig.value}
-                pricePerUser={pricingTier.expert.pricePerUserPerMonth}
-              />
-              <LinkCallToAction
-                href='https://forms.office.com/e/x9y2sJSm8P'
-                target='_blank'
-                class='mx-auto'
-              >
-                Anfordern
-              </LinkCallToAction>
+
+            {/* Expert */}
+            <div class='card grid items-start gap-8 shadow-md' id='gold'>
+              <div class='features'>
+                <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold'>
+                  <ShieldCheckmarkIcon />
+                  Experte
+                </h3>
+                <ul>
+                  <ProductFeatureList features={expertFeatures} />
+                </ul>
+              </div>
+              <div class='grid gap-8 self-end'>
+                <PricePerUsePerMonth
+                  usersCount={+userCountSig.value}
+                  pricePerUser={pricingTier.expert.pricePerUserPerMonth}
+                />
+                <LinkCallToAction
+                  href='https://forms.office.com/e/x9y2sJSm8P'
+                  target='_blank'
+                  class='mx-auto'
+                >
+                  Anfordern
+                </LinkCallToAction>
+              </div>
             </div>
           </div>
         </div>
       </Section>
+
       <Section id='fordern_sie_ihr_angebot_an'>
         <div class='flex flex-col items-center gap-4'>
           <LinkedHeading href='#fordern_sie_ihr_angebot_an'>
@@ -472,6 +512,7 @@ export default component$(() => {
           </LinkCallToAction>
         </div>
       </Section>
+
       <Section id='wichtig_fuer_cyber_verantwortliche' backgroundColor='gray'>
         <div class='flex flex-col items-center gap-y-4'>
           <LinkedHeading href='#wichtig_fuer_cyber_verantwortliche'>
@@ -492,6 +533,7 @@ export default component$(() => {
           <YouTubeVideoGrid videos={cyberVerantwortlicheVideos} />
         </div>
       </Section>
+
       <Section id='teilen_sie_uns_ihre_meinung_mit'>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
           <LinkedHeading href='#teilen_sie_uns_ihre_meinung_mit'>
@@ -514,6 +556,7 @@ export default component$(() => {
           </LinkCallToAction>
         </div>
       </Section>
+
       <Section id='sie_wollen_ihre_anwender_schulen' backgroundColor='gray'>
         <div class='flex flex-col items-center gap-y-4'>
           <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
@@ -535,9 +578,10 @@ export default component$(() => {
           </LinkCallToAction>
         </div>
       </Section>
-      <Section>
+
+      <Section id='partner_it_sicherheit'>
         <div class='flex flex-col items-center gap-y-4'>
-          <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
+          <LinkedHeading href='#partner_it_sicherheit'>
             Sie suchen einen <HeadingSegmentSecondary800 text='Partner' /> für
             IT-Sicherheit?
           </LinkedHeading>
@@ -566,7 +610,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'co-IT - Inspire to Change',
+  title: 'co-IT - Cyber Portal',
 
   frontmatter: {
     header: {
