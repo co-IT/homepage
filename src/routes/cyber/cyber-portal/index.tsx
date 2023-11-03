@@ -187,18 +187,14 @@ export default component$(() => {
 
   return (
     <>
-      <Section>
+      <Section id='unser_antrieb'>
         <ContentOverlapPortrait
           image={{
             source: '/img/cyber/cyber-portal/man-with-rocket.webp',
             alternateText: 'Man looking at the sunset'
           }}
         >
-          <section
-            id='unser_antrieb'
-            q:slot='article'
-            class='flex flex-col space-y-4'
-          >
+          <section q:slot='article' class='flex flex-col space-y-4'>
             <LinkedHeading href='#unser_antrieb'>
               <HeadingSegmentSecondary text='Unser' />
               &nbsp;
@@ -216,6 +212,7 @@ export default component$(() => {
           </section>
         </ContentOverlapPortrait>
       </Section>
+
       <Section id='kostenfreie-basisversion' backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
@@ -279,29 +276,45 @@ export default component$(() => {
         </VideoOverlapLandscape>
       </Section>
 
-      <Section id='ihre_inklusivleistungen'>
-        {/* Wuerttembergische Basic */}
-        <div class='card grid items-start gap-8 shadow-md'>
-          <div class='features'>
-            <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold text-[#48504F]'>
-              <WuerttembergischeLogo />
-            </h3>
-            <ProductFeatureList features={wuerttembergischeFeatures} />
+      <Section id='ihre_inklusivleistungen' backgroundColor='gray'>
+        <div class='grid grid-flow-col justify-center gap-16'>
+          {/* Wuerttembergische Basispaket Features */}
+          <div class='card grid items-start gap-8 shadow-md'>
+            <div class='features'>
+              <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold text-[#48504F]'>
+                <WuerttembergischeLogo />
+              </h3>
+              <ProductFeatureList features={wuerttembergischeFeatures} />
+            </div>
+            <div class='grid self-end'>
+              <a
+                href='https://www.wuerttembergische.de/geschaeftskunden/cyber-versicherung/'
+                target='_blank'
+                class='rounded-[3.5rem] bg-[#f84914] p-4 text-center text-white transition-colors hover:bg-[#d33e11]'
+              >
+                Mehr zur Cyber-Versicherung
+              </a>
+              <br />
+              <small>Für Inhaber der Cyber-Versicherung inklusive</small>
+            </div>
           </div>
-          <div class='grid self-end'>
-            <a
-              href='https://www.wuerttembergische.de/geschaeftskunden/cyber-versicherung/'
-              target='_blank'
-              class='rounded-[3.5rem] bg-[#f84914] p-4 text-center text-white transition-colors hover:bg-[#d33e11]'
-            >
-              Mehr zur Cyber-Versicherung
-            </a>
-            <br />
-            <small>Für Inhaber der Cyber-Versicherung inklusive</small>
-          </div>
+          {/* Wuerttembergische Basispaket Teaser */}
+          <section class='flex max-w-md flex-col gap-4'>
+            <LinkedHeading href='ihre_inklusivleistungen'>
+              Ihre Inklusivleistungen
+            </LinkedHeading>
+            <p class='whitespace-pre-line px-10 text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 lg:px-0'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </section>
         </div>
       </Section>
-
       <Section>
         <div class='mx-auto mb-3 h-1 w-10 bg-primary' />
         <h2 class='mb-5 px-6 text-center text-3xl font-bold leading-8 text-secondary-900 lg:px-0  lg:text-4xl lg:leading-10'>
@@ -438,7 +451,6 @@ export default component$(() => {
           </div>
         </div>
       </Section>
-
       <Section id='fordern_sie_ihr_angebot_an'>
         <div class='flex flex-col items-center gap-4'>
           <LinkedHeading href='#fordern_sie_ihr_angebot_an'>
@@ -460,7 +472,6 @@ export default component$(() => {
           </LinkCallToAction>
         </div>
       </Section>
-
       <Section id='wichtig_fuer_cyber_verantwortliche' backgroundColor='gray'>
         <div class='flex flex-col items-center gap-y-4'>
           <LinkedHeading href='#wichtig_fuer_cyber_verantwortliche'>
@@ -481,7 +492,6 @@ export default component$(() => {
           <YouTubeVideoGrid videos={cyberVerantwortlicheVideos} />
         </div>
       </Section>
-
       <Section id='teilen_sie_uns_ihre_meinung_mit'>
         <div class='mb-14 flex flex-col items-center gap-y-4'>
           <LinkedHeading href='#teilen_sie_uns_ihre_meinung_mit'>
@@ -504,7 +514,6 @@ export default component$(() => {
           </LinkCallToAction>
         </div>
       </Section>
-
       <Section id='sie_wollen_ihre_anwender_schulen' backgroundColor='gray'>
         <div class='flex flex-col items-center gap-y-4'>
           <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
@@ -526,7 +535,6 @@ export default component$(() => {
           </LinkCallToAction>
         </div>
       </Section>
-
       <Section>
         <div class='flex flex-col items-center gap-y-4'>
           <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
