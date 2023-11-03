@@ -217,8 +217,7 @@ export default component$(() => {
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
             <LinkedHeading href='#ihre_inklusivleistungen'>
-              <HeadingSegmentSecondary text='Ihre' />
-              &nbsp;
+              <HeadingSegmentSecondary text='Ihre' />{' '}
               <HeadingSegmentSecondary800 text='Inklusivleistungen' />
             </LinkedHeading>
             <p class='leading-7'>
@@ -257,8 +256,7 @@ export default component$(() => {
           {/* Wuerttembergische Basispaket Teaser */}
           <section class='flex max-w-md flex-col gap-4'>
             <LinkedHeading href='#kostenfreie_basisversion'>
-              <HeadingSegmentSecondary text='Kostenfreie' />
-              &nbsp;
+              <HeadingSegmentSecondary text='Kostenfreie' />{' '}
               <HeadingSegmentSecondary800 text='Basisversion' />
             </LinkedHeading>
             <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
@@ -282,53 +280,53 @@ export default component$(() => {
         <VideoOverlapLandscape youTubeVideoId='FjThxiKBApc'>
           <section class='flex flex-col space-y-4'>
             <LinkedHeading href='#ihr_plus_an_sicherheit'>
-              <HeadingSegmentSecondary text='Ihr' />
-              &nbsp;
+              <HeadingSegmentSecondary text='Ihr' />{' '}
               <HeadingSegmentSecondary800 text='Plus' />{' '}
-              <HeadingSegmentSecondary text='an' />
-              &nbsp;
+              <HeadingSegmentSecondary text='an' />{' '}
               <HeadingSegmentSecondary800 text='Sicherheit' />
             </LinkedHeading>
-            <p class='leading-7'>
-              Mit der kostenfreien Basisversion im Untergrund berechnen wir nur
-              die anfallende Mehrleistung für die jeweiligen Pakete weiter.
-              Damit können wir deutlich niedrigere Preise als vergleichbare
-              Plattformen anbieten. <br />
-              <br />
-              Doch was ist Ihr Mehrwert? Mit den angebotenen Phishing-Paketen
-              setzen wir neue Maßstäbe in Sachen Qualität und Authentizität.
-              Unsere gezielten und raffinierten Phishing-Mails werden vorab in
-              einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern
-              einem Praxischeck unterzogen. Mehr noch: Mit Hilfe eines
-              linguistischen Psychologen werden die Anwender sprachlich subtil
-              zum Öffnen der betrügerischen Mails bewegt. Flankiert wird der
-              Erstellungsprozess von der KI namens ChatGPT. Mit diesen Maßnahmen
-              stellen wir sicher, dass unsere Phishing-Simulationen nur schwer
-              als solche zu erkennen sind.
-              <br />
-              <br />
-              Die Ergebnisse unserer Testgruppe werden in unterschiedliche{' '}
-              <strong>Klickquoten</strong> unterteilt:
-            </p>
-            <ul>
-              <li>
-                &gt;&nbsp;20% - <strong>verdächtig</strong>
-              </li>
-              <li>
-                &gt;&nbsp;40% - <strong>ungewiss</strong>
-              </li>
-              <li>
-                &gt;&nbsp;60% - <strong>authentisch</strong>
-              </li>
-              <li>
-                &gt;&nbsp;80% - <strong>täuschend echt</strong>
-              </li>
-            </ul>
-            <p>
-              Mit der hohen Qualität unserer Phishing-Simulationen schützen Sie
-              sich und Ihr Unternehmen vor modernen, KI-gestützten
-              Phishing-Angriffen, wie sie immer häufiger auftreten.
-            </p>
+            <section>
+              <p class='leading-7'>
+                Mit der kostenfreien Basisversion im Untergrund berechnen wir
+                nur die anfallende Mehrleistung für die jeweiligen Pakete
+                weiter. Damit können wir deutlich niedrigere Preise als
+                vergleichbare Plattformen anbieten. <br />
+                <br />
+                Doch was ist Ihr Mehrwert? Mit den angebotenen Phishing-Paketen
+                setzen wir neue Maßstäbe in Sachen Qualität und Authentizität.
+                Unsere gezielten und raffinierten Phishing-Mails werden vorab in
+                einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern
+                einem Praxischeck unterzogen. Mehr noch: Mit Hilfe eines
+                linguistischen Psychologen werden die Anwender sprachlich subtil
+                zum Öffnen der betrügerischen Mails bewegt. Flankiert wird der
+                Erstellungsprozess von der KI namens ChatGPT. Mit diesen
+                Maßnahmen stellen wir sicher, dass unsere Phishing-Simulationen
+                nur schwer als solche zu erkennen sind.
+                <br />
+                <br />
+                Die Ergebnisse unserer Testgruppe werden in unterschiedliche{' '}
+                <strong>Klickquoten</strong> unterteilt:
+              </p>
+              <ul>
+                <li>
+                  &gt;&nbsp;20% - <strong>verdächtig</strong>
+                </li>
+                <li>
+                  &gt;&nbsp;40% - <strong>ungewiss</strong>
+                </li>
+                <li>
+                  &gt;&nbsp;60% - <strong>authentisch</strong>
+                </li>
+                <li>
+                  &gt;&nbsp;80% - <strong>täuschend echt</strong>
+                </li>
+              </ul>
+              <p>
+                Mit der hohen Qualität unserer Phishing-Simulationen schützen
+                Sie sich und Ihr Unternehmen vor modernen, KI-gestützten
+                Phishing-Angriffen, wie sie immer häufiger auftreten.
+              </p>
+            </section>
           </section>
         </VideoOverlapLandscape>
       </Section>
