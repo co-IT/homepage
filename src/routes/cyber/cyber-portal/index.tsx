@@ -512,13 +512,13 @@ export default component$(() => {
       </Section>
 
       <Section id='wichtig_fuer_cyber_verantwortliche' backgroundColor='gray'>
-        <div class='flex flex-col items-center gap-y-4'>
+        <div class='flex flex-col items-center gap-y-8'>
           <LinkedHeading href='#wichtig_fuer_cyber_verantwortliche'>
             Wichtig für{' '}
             <HeadingSegmentSecondary800 text='Cyber-Verantwortliche' />
           </LinkedHeading>
 
-          <p class='mx-auto mb-14 max-w-xl leading-7'>
+          <p class='mx-auto max-w-xl leading-7'>
             Die besten Phishing-Mails helfen nichts, wenn diese nicht den
             Posteingang des Empfängers erreichen. Geben Sie deshalb unseren
             E-Mail-Server und unsere Domains in Ihrer Firewall und in den
@@ -527,6 +527,13 @@ export default component$(() => {
             starten können, haben wir für gängige Produkte wie Microsofts
             "Exchange Server" Anleitungsvideos bereitgestellt.
           </p>
+
+          <LinkCallToAction
+            href='https://e.co-it.eu/cyberportal-adminkonfiguration'
+            target='_blank'
+          >
+            Freigaberegeln anschauen
+          </LinkCallToAction>
 
           <YouTubeVideoGrid videos={cyberVerantwortlicheVideos} />
         </div>
