@@ -217,8 +217,7 @@ export default component$(() => {
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
             <LinkedHeading href='#ihre_inklusivleistungen'>
-              <HeadingSegmentSecondary text='Ihre' />
-              &nbsp;
+              <HeadingSegmentSecondary text='Ihre' />{' '}
               <HeadingSegmentSecondary800 text='Inklusivleistungen' />
             </LinkedHeading>
             <p class='leading-7'>
@@ -243,7 +242,7 @@ export default component$(() => {
       <Section id='kostenfreie_basisversion'>
         <div class='grid grid-flow-row justify-center gap-16 sm:grid-flow-col'>
           {/* Wuerttembergische Basispaket Features */}
-          <div class='card grid items-start gap-8 shadow-md'>
+          <div class='card mx-auto grid items-start gap-8 shadow-md'>
             <WuerttembergischeLogo />
             <ProductFeatureList features={wuerttembergischeFeatures} />
             <a
@@ -255,10 +254,9 @@ export default component$(() => {
             </a>
           </div>
           {/* Wuerttembergische Basispaket Teaser */}
-          <section class='flex max-w-md flex-col gap-4'>
+          <section class='flex max-w-md flex-col gap-4 px-4'>
             <LinkedHeading href='#kostenfreie_basisversion'>
-              <HeadingSegmentSecondary text='Kostenfreie' />
-              &nbsp;
+              <HeadingSegmentSecondary text='Kostenfreie' />{' '}
               <HeadingSegmentSecondary800 text='Basisversion' />
             </LinkedHeading>
             <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
@@ -282,53 +280,53 @@ export default component$(() => {
         <VideoOverlapLandscape youTubeVideoId='FjThxiKBApc'>
           <section class='flex flex-col space-y-4'>
             <LinkedHeading href='#ihr_plus_an_sicherheit'>
-              <HeadingSegmentSecondary text='Ihr' />
-              &nbsp;
+              <HeadingSegmentSecondary text='Ihr' />{' '}
               <HeadingSegmentSecondary800 text='Plus' />{' '}
-              <HeadingSegmentSecondary text='an' />
-              &nbsp;
+              <HeadingSegmentSecondary text='an' />{' '}
               <HeadingSegmentSecondary800 text='Sicherheit' />
             </LinkedHeading>
-            <p class='leading-7'>
-              Mit der kostenfreien Basisversion im Untergrund berechnen wir nur
-              die anfallende Mehrleistung für die jeweiligen Pakete weiter.
-              Damit können wir deutlich niedrigere Preise als vergleichbare
-              Plattformen anbieten. <br />
-              <br />
-              Doch was ist Ihr Mehrwert? Mit den angebotenen Phishing-Paketen
-              setzen wir neue Maßstäbe in Sachen Qualität und Authentizität.
-              Unsere gezielten und raffinierten Phishing-Mails werden vorab in
-              einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern
-              einem Praxischeck unterzogen. Mehr noch: Mit Hilfe eines
-              linguistischen Psychologen werden die Anwender sprachlich subtil
-              zum Öffnen der betrügerischen Mails bewegt. Flankiert wird der
-              Erstellungsprozess von der KI namens ChatGPT. Mit diesen Maßnahmen
-              stellen wir sicher, dass unsere Phishing-Simulationen nur schwer
-              als solche zu erkennen sind.
-              <br />
-              <br />
-              Die Ergebnisse unserer Testgruppe werden in unterschiedliche{' '}
-              <strong>Klickquoten</strong> unterteilt:
-            </p>
-            <ul>
-              <li>
-                &gt;&nbsp;20% - <strong>verdächtig</strong>
-              </li>
-              <li>
-                &gt;&nbsp;40% - <strong>ungewiss</strong>
-              </li>
-              <li>
-                &gt;&nbsp;60% - <strong>authentisch</strong>
-              </li>
-              <li>
-                &gt;&nbsp;80% - <strong>täuschend echt</strong>
-              </li>
-            </ul>
-            <p>
-              Mit der hohen Qualität unserer Phishing-Simulationen schützen Sie
-              sich und Ihr Unternehmen vor modernen, KI-gestützten
-              Phishing-Angriffen, wie sie immer häufiger auftreten.
-            </p>
+            <section>
+              <p class='leading-7'>
+                Mit der kostenfreien Basisversion im Untergrund berechnen wir
+                nur die anfallende Mehrleistung für die jeweiligen Pakete
+                weiter. Damit können wir deutlich niedrigere Preise als
+                vergleichbare Plattformen anbieten. <br />
+                <br />
+                Doch was ist Ihr Mehrwert? Mit den angebotenen Phishing-Paketen
+                setzen wir neue Maßstäbe in Sachen Qualität und Authentizität.
+                Unsere gezielten und raffinierten Phishing-Mails werden vorab in
+                einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern
+                einem Praxischeck unterzogen. Mehr noch: Mit Hilfe eines
+                linguistischen Psychologen werden die Anwender sprachlich subtil
+                zum Öffnen der betrügerischen Mails bewegt. Flankiert wird der
+                Erstellungsprozess von der KI namens ChatGPT. Mit diesen
+                Maßnahmen stellen wir sicher, dass unsere Phishing-Simulationen
+                nur schwer als solche zu erkennen sind.
+                <br />
+                <br />
+                Die Ergebnisse unserer Testgruppe werden in unterschiedliche{' '}
+                <strong>Klickquoten</strong> unterteilt:
+              </p>
+              <ul>
+                <li>
+                  &gt;&nbsp;20% - <strong>verdächtig</strong>
+                </li>
+                <li>
+                  &gt;&nbsp;40% - <strong>ungewiss</strong>
+                </li>
+                <li>
+                  &gt;&nbsp;60% - <strong>authentisch</strong>
+                </li>
+                <li>
+                  &gt;&nbsp;80% - <strong>täuschend echt</strong>
+                </li>
+              </ul>
+              <p>
+                Mit der hohen Qualität unserer Phishing-Simulationen schützen
+                Sie sich und Ihr Unternehmen vor modernen, KI-gestützten
+                Phishing-Angriffen, wie sie immer häufiger auftreten.
+              </p>
+            </section>
           </section>
         </VideoOverlapLandscape>
       </Section>
@@ -376,7 +374,7 @@ export default component$(() => {
       </Section>
 
       <Section id='lust_auf_mehr' backgroundColor='gray'>
-        <div class='grid gap-8'>
+        <section class='grid gap-8 px-4'>
           <LinkedHeading href='#lust_auf_mehr'>
             Lust auf <HeadingSegmentSecondary800 text='mehr?' />
           </LinkedHeading>
@@ -388,7 +386,7 @@ export default component$(() => {
           </p>
 
           <div class='flex flex-wrap items-center gap-4 rounded-3xl'>
-            <section class='flex gap-4'>
+            <section class='flex flex-wrap gap-4'>
               <span class='text-xl font-bold'>Anzahl Empfänger</span>
               <input
                 type='number'
@@ -405,7 +403,7 @@ export default component$(() => {
                 class='border-b border-secondary-900 text-center'
               />
             </section>
-            <section class='flex items-center gap-4'>
+            <section class='flex flex-wrap items-center gap-4'>
               <span class='text-xl font-bold'>Laufzeit</span>
               <input
                 type='range'
@@ -517,11 +515,11 @@ export default component$(() => {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </Section>
 
       <Section id='fordern_sie_ihr_angebot_an'>
-        <div class='flex flex-col items-center gap-y-8'>
+        <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#fordern_sie_ihr_angebot_an'>
             Fordern Sie Ihr{' '}
             <HeadingSegmentSecondary800 text='individuelles Angebot' /> an.
@@ -543,7 +541,7 @@ export default component$(() => {
       </Section>
 
       <Section id='wichtig_fuer_cyber_verantwortliche' backgroundColor='gray'>
-        <div class='flex flex-col items-center gap-y-8'>
+        <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#wichtig_fuer_cyber_verantwortliche'>
             Wichtig für{' '}
             <HeadingSegmentSecondary800 text='Cyber-Verantwortliche' />
@@ -567,11 +565,11 @@ export default component$(() => {
           </LinkCallToAction>
 
           <YouTubeVideoGrid videos={cyberVerantwortlicheVideos} />
-        </div>
+        </section>
       </Section>
 
       <Section id='teilen_sie_uns_ihre_meinung_mit'>
-        <div class='mb-14 flex flex-col items-center gap-y-8'>
+        <section class='mb-14 flex flex-col items-center gap-y-8 px-4'>
           <LinkedHeading href='#teilen_sie_uns_ihre_meinung_mit'>
             Teilen Sie uns <HeadingSegmentSecondary800 text='Ihre Meinung ' />{' '}
             mit
@@ -590,11 +588,11 @@ export default component$(() => {
           >
             Jetzt mitgestalten
           </LinkCallToAction>
-        </div>
+        </section>
       </Section>
 
       <Section id='sie_wollen_ihre_anwender_schulen' backgroundColor='gray'>
-        <div class='flex flex-col items-center gap-y-8'>
+        <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
             Sie wollen <HeadingSegmentSecondary800 text='Ihre Anwender ' />{' '}
             schulen?
@@ -616,7 +614,7 @@ export default component$(() => {
       </Section>
 
       <Section id='partner_it_sicherheit'>
-        <div class='flex flex-col items-center gap-y-8'>
+        <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#partner_it_sicherheit'>
             Sie suchen einen <HeadingSegmentSecondary800 text='Partner' /> für
             IT-Sicherheit?

@@ -15,7 +15,7 @@ export const Section = component$((props: SectionProps) => {
 
   return (
     <>
-      <section id={props.id} class={` ${appearance} py-12 md:py-24`}>
+      <section id={props.id} class={`${appearance} py-12  md:py-24`}>
         <div class='container mx-auto'>
           <Slot />
         </div>
