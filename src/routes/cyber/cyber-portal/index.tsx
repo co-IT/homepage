@@ -262,7 +262,7 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Basisversion' />
             </LinkedHeading>
             <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
-              Die Basisversion des Cyber-Portals bietet bereits acht hochwertige
+              Die Basisversion des Cyber Portals bietet bereits acht hochwertige
               Phishing-Mails pro Jahr. Diese E-Mails zeichnen sich durch
               anspruchsvolle Sprache und präzise Semantik aus, verwenden
               authentische Absenderadressen und beinhalten eine persönliche

@@ -2,24 +2,9 @@ import type { ProductFeature } from '~/components/product-feature-list';
 
 export const wuerttembergischeFeatures: ProductFeature[] = [
   {
-    text: '4 "verdächtige" E-Mails',
+    text: '8 Phishing-E-Mails',
     detail:
-      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
-  },
-  {
-    text: '2 "ungewisse" E-Mails',
-    detail:
-      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
-  },
-  {
-    text: '1 "authentische" E-Mail',
-    detail:
-      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
-  },
-  {
-    text: '1 "täuschend echte" E-Mail',
-    detail:
-      'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
+      'Pro Jahr werden 8 Phishing-Emails an die Anwender des Cyber Portals versandt.'
   },
   {
     text: 'Versandzeit: Gleichzeitig',
