@@ -33,6 +33,7 @@ import {
   wuerttembergischeFeatures
 } from './resources';
 
+import type { DocumentHead } from '@builder.io/qwik-city';
 import { LinkedHeading } from '~/components/link-heading';
 import { PricePerUsePerMonth } from '~/components/pricing/price-per-user-per-month';
 import { ProductFeatureList } from '~/components/product-feature-list';
@@ -357,6 +358,13 @@ export default component$(() => {
               weil die Basisversion in Ihrem Haus bereits freigegeben und
               eingeführt ist.
             </p>
+
+            <LinkCallToAction
+              href='https://forms.office.com/e/tKwD5aqPJY'
+              target='_blank'
+            >
+              Jetzt mit abstimmen
+            </LinkCallToAction>
           </section>
         </ContentOverlapPortrait>
       </Section>
@@ -507,7 +515,7 @@ export default component$(() => {
       </Section>
 
       <Section id='fordern_sie_ihr_angebot_an'>
-        <div class='flex flex-col items-center gap-4'>
+        <div class='flex flex-col items-center gap-y-8'>
           <LinkedHeading href='#fordern_sie_ihr_angebot_an'>
             Fordern Sie Ihr{' '}
             <HeadingSegmentSecondary800 text='individuelles Angebot' /> an.
@@ -557,7 +565,7 @@ export default component$(() => {
       </Section>
 
       <Section id='teilen_sie_uns_ihre_meinung_mit'>
-        <div class='mb-14 flex flex-col items-center gap-y-4'>
+        <div class='mb-14 flex flex-col items-center gap-y-8'>
           <LinkedHeading href='#teilen_sie_uns_ihre_meinung_mit'>
             Teilen Sie uns <HeadingSegmentSecondary800 text='Ihre Meinung ' />{' '}
             mit
@@ -580,7 +588,7 @@ export default component$(() => {
       </Section>
 
       <Section id='sie_wollen_ihre_anwender_schulen' backgroundColor='gray'>
-        <div class='flex flex-col items-center gap-y-4'>
+        <div class='flex flex-col items-center gap-y-8'>
           <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
             Sie wollen <HeadingSegmentSecondary800 text='Ihre Anwender ' />{' '}
             schulen?
@@ -602,7 +610,7 @@ export default component$(() => {
       </Section>
 
       <Section id='partner_it_sicherheit'>
-        <div class='flex flex-col items-center gap-y-4'>
+        <div class='flex flex-col items-center gap-y-8'>
           <LinkedHeading href='#partner_it_sicherheit'>
             Sie suchen einen <HeadingSegmentSecondary800 text='Partner' /> für
             IT-Sicherheit?
