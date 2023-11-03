@@ -45,31 +45,33 @@ export default component$(() => {
        */}
       <div class='md:mb-48'></div>
 
-      <VideoOverlapLandscape
-        youTubeVideoId='fpPjn58ONrI'
-        class='container mx-auto'
-      >
-        <section class='flex flex-col space-y-4'>
-          <h2 class='text-xl font-bold md:text-4xl'>
-            <HeadingSegmentSecondary text='Machen' />
-            &nbsp;
-            <HeadingSegmentSecondary800 text='Menschen' />
-            &nbsp;
-            <HeadingSegmentSecondary text='für Sie auch den' />
-            &nbsp;
-            <HeadingSegmentSecondary800 text='Unterschied?' />
-          </h2>
-          <p class='pb-4 leading-7'>
-            Dann haben wir für Sie echte Game Changer in unseren Reihen.
-            Motiviert durch den Fachkräftemangel, rekrutieren wir mit eigenen
-            HR-Spezialisten und qualitätsgetriebenem Auswahlprozess unsere
-            Talente. Dank unserer werteorientierten Unternehmenskultur und
-            unserer teamzentrierten Lösungsmentalität halten und entwickeln wir
-            unsere Mitarbeiter.
-          </p>
-          <LinkCallToAction href='/quality'>Mehr erfahren</LinkCallToAction>
-        </section>
-      </VideoOverlapLandscape>
+      <Section backgroundColor='gray'>
+        <VideoOverlapLandscape
+          youTubeVideoId='fpPjn58ONrI'
+          class='container mx-auto'
+        >
+          <section class='flex flex-col space-y-4'>
+            <h2 class='text-xl font-bold md:text-4xl'>
+              <HeadingSegmentSecondary text='Machen' />
+              &nbsp;
+              <HeadingSegmentSecondary800 text='Menschen' />
+              &nbsp;
+              <HeadingSegmentSecondary text='für Sie auch den' />
+              &nbsp;
+              <HeadingSegmentSecondary800 text='Unterschied?' />
+            </h2>
+            <p class='pb-4 leading-7'>
+              Dann haben wir für Sie echte Game Changer in unseren Reihen.
+              Motiviert durch den Fachkräftemangel, rekrutieren wir mit eigenen
+              HR-Spezialisten und qualitätsgetriebenem Auswahlprozess unsere
+              Talente. Dank unserer werteorientierten Unternehmenskultur und
+              unserer teamzentrierten Lösungsmentalität halten und entwickeln
+              wir unsere Mitarbeiter.
+            </p>
+            <LinkCallToAction href='/quality'>Mehr erfahren</LinkCallToAction>
+          </section>
+        </VideoOverlapLandscape>
+      </Section>
     </>
   );
 });
