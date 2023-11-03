@@ -277,40 +277,38 @@ export default component$(() => {
       </Section>
 
       <Section id='ihre_inklusivleistungen' backgroundColor='gray'>
-        <div class='grid grid-flow-col justify-center gap-16'>
+        <div class='grid grid-flow-row justify-center gap-16 sm:grid-flow-col'>
           {/* Wuerttembergische Basispaket Features */}
           <div class='card grid items-start gap-8 shadow-md'>
-            <div class='features'>
-              <h3 class='mb-8 flex items-center gap-4 text-3xl font-bold text-[#48504F]'>
-                <WuerttembergischeLogo />
-              </h3>
-              <ProductFeatureList features={wuerttembergischeFeatures} />
-            </div>
-            <div class='grid self-end'>
-              <a
-                href='https://www.wuerttembergische.de/geschaeftskunden/cyber-versicherung/'
-                target='_blank'
-                class='rounded-[3.5rem] bg-[#f84914] p-4 text-center text-white transition-colors hover:bg-[#d33e11]'
-              >
-                Mehr zur Cyber-Versicherung
-              </a>
-              <br />
-              <small>Für Inhaber der Cyber-Versicherung inklusive</small>
-            </div>
+            <WuerttembergischeLogo />
+            <ProductFeatureList features={wuerttembergischeFeatures} />
+            <a
+              href='https://wuerttembergische.co-it.eu'
+              target='_blank'
+              class='rounded-[3.5rem] bg-[#f84914] p-4 text-center text-white transition-colors hover:bg-[#d33e11]'
+            >
+              Zum Cyber-Portal
+            </a>
           </div>
           {/* Wuerttembergische Basispaket Teaser */}
           <section class='flex max-w-md flex-col gap-4'>
             <LinkedHeading href='ihre_inklusivleistungen'>
               Ihre Inklusivleistungen
             </LinkedHeading>
-            <p class='whitespace-pre-line px-10 text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 lg:px-0'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum
+            <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
+              Die Basisversion der Cyber-Versicherung bietet bereits ein
+              umfassendes Leistungspaket, inklusive sechs hochwertiger
+              Phishing-E-Mails pro Jahr. Diese E-Mails zeichnen sich durch
+              anspruchsvolle Sprache und präzise Semantik aus, verwenden
+              authentische Absenderadressen und beinhalten eine persönliche
+              Anrede, um die Authentizität zu steigern. Für eine größere
+              Herausforderung gibt es kostenpflichtige Upgrades, die mehr
+              Phishing-Simulationen in verschiedenen Zeitabständen, eine
+              Qualitätskontrolle zur Verbesserung der Klickquoten und die
+              Möglichkeit bieten, den Unternehmensnamen einzubinden und die
+              Ansprache an bestimmte Zielgruppen anzupassen. Diese Upgrades
+              ermöglichen es, sich in der Identifizierung von Phishing-E-Mails
+              zum Experten zu entwickeln.
             </p>
           </section>
         </div>
