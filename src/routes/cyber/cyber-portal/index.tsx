@@ -240,7 +240,7 @@ export default component$(() => {
         </VideoOverlapLandscape>
       </Section>
 
-      <Section id='ihre_inklusivleistungen'>
+      <Section id='kostenfreie_basisversion'>
         <div class='grid grid-flow-row justify-center gap-16 sm:grid-flow-col'>
           {/* Wuerttembergische Basispaket Features */}
           <div class='card grid items-start gap-8 shadow-md'>
@@ -256,7 +256,7 @@ export default component$(() => {
           </div>
           {/* Wuerttembergische Basispaket Teaser */}
           <section class='flex max-w-md flex-col gap-4'>
-            <LinkedHeading href='ihre_inklusivleistungen'>
+            <LinkedHeading href='#kostenfreie_basisversion'>
               <HeadingSegmentSecondary text='Kostenfreie' />
               &nbsp;
               <HeadingSegmentSecondary800 text='Basisversion' />
@@ -335,7 +335,7 @@ export default component$(() => {
           }}
         >
           <section q:slot='article' class='flex flex-col space-y-4'>
-            <LinkedHeading href='#unser_antrieb'>
+            <LinkedHeading href='#entscheiden_sie_mit'>
               <HeadingSegmentSecondary800 text='Entscheiden' />{' '}
               <HeadingSegmentSecondary text='Sie mit' />
             </LinkedHeading>
