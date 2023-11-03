@@ -240,43 +240,7 @@ export default component$(() => {
         </VideoOverlapLandscape>
       </Section>
 
-      <Section id='ihr_plus_an_sicherheit'>
-        <VideoOverlapLandscape youTubeVideoId='FjThxiKBApc'>
-          <section class='flex flex-col space-y-4'>
-            <LinkedHeading href='#ihr_plus_an_sicherheit'>
-              <HeadingSegmentSecondary text='Ihr' />
-              &nbsp;
-              <HeadingSegmentSecondary800 text='Plus' />{' '}
-              <HeadingSegmentSecondary text='an' />
-              &nbsp;
-              <HeadingSegmentSecondary800 text='Sicherheit' />
-            </LinkedHeading>
-            <p class='pb-4 leading-7'>
-              Mit der kostenfreien Basisversion im Untergrund berechnen wir nur
-              die anfallende Mehrleistung für die jeweiligen Pakete weiter.
-              Damit können wir deutlich niedrigere Preise als vergleichbare
-              Plattformen anbieten. Doch was ist Ihr Mehrwert? Mit den
-              angebotenen Phishing-Paketen setzen wir neue Maßstäbe in Sachen
-              Qualität und Authentizität. Unsere gezielten und raffinierten
-              Phishing-Mails werden vorab in einer Testgruppe aus mehreren
-              Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen.
-              Mehr noch: Mit Hilfe eines linguistischen Psychologen werden die
-              Anwender sprachlich subtil zum Öffnen der betrügerischen Mails
-              bewegt. Flankiert wird der Erstellungsprozess von der KI namens
-              ChatGPT . Mit diesen Maßnahmen stellen wir sicher, dass unsere
-              Phishing-Simulationen nur schwer als solche zu erkennen sind.
-              Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir
-              niedrige (&gt;20%), mittlere (&gt;40%), hohe (&gt;60%) und sehr
-              hohe (&gt;80) Klickquoten. Mit der hohen Qualität unserer
-              Phishing-Simulationen schützen Sie sich und Ihr Unternehmen vor
-              modernen, KI-gestützten Phishing-Angriffen, wie sie immer häufiger
-              auftreten.
-            </p>
-          </section>
-        </VideoOverlapLandscape>
-      </Section>
-
-      <Section id='ihre_inklusivleistungen' backgroundColor='gray'>
+      <Section id='ihre_inklusivleistungen'>
         <div class='grid grid-flow-row justify-center gap-16 sm:grid-flow-col'>
           {/* Wuerttembergische Basispaket Features */}
           <div class='card grid items-start gap-8 shadow-md'>
@@ -312,6 +276,42 @@ export default component$(() => {
             </p>
           </section>
         </div>
+      </Section>
+
+      <Section id='ihr_plus_an_sicherheit' backgroundColor='gray'>
+        <VideoOverlapLandscape youTubeVideoId='FjThxiKBApc'>
+          <section class='flex flex-col space-y-4'>
+            <LinkedHeading href='#ihr_plus_an_sicherheit'>
+              <HeadingSegmentSecondary text='Ihr' />
+              &nbsp;
+              <HeadingSegmentSecondary800 text='Plus' />{' '}
+              <HeadingSegmentSecondary text='an' />
+              &nbsp;
+              <HeadingSegmentSecondary800 text='Sicherheit' />
+            </LinkedHeading>
+            <p class='pb-4 leading-7'>
+              Mit der kostenfreien Basisversion im Untergrund berechnen wir nur
+              die anfallende Mehrleistung für die jeweiligen Pakete weiter.
+              Damit können wir deutlich niedrigere Preise als vergleichbare
+              Plattformen anbieten. Doch was ist Ihr Mehrwert? Mit den
+              angebotenen Phishing-Paketen setzen wir neue Maßstäbe in Sachen
+              Qualität und Authentizität. Unsere gezielten und raffinierten
+              Phishing-Mails werden vorab in einer Testgruppe aus mehreren
+              Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen.
+              Mehr noch: Mit Hilfe eines linguistischen Psychologen werden die
+              Anwender sprachlich subtil zum Öffnen der betrügerischen Mails
+              bewegt. Flankiert wird der Erstellungsprozess von der KI namens
+              ChatGPT . Mit diesen Maßnahmen stellen wir sicher, dass unsere
+              Phishing-Simulationen nur schwer als solche zu erkennen sind.
+              Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir
+              niedrige (&gt;20%), mittlere (&gt;40%), hohe (&gt;60%) und sehr
+              hohe (&gt;80) Klickquoten. Mit der hohen Qualität unserer
+              Phishing-Simulationen schützen Sie sich und Ihr Unternehmen vor
+              modernen, KI-gestützten Phishing-Angriffen, wie sie immer häufiger
+              auftreten.
+            </p>
+          </section>
+        </VideoOverlapLandscape>
       </Section>
 
       <Section id='entscheiden_sie_mit'>
