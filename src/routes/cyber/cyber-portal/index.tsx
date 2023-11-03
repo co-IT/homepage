@@ -8,8 +8,6 @@ import {
 } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 
-import { CheckIcon } from '~/components/icons';
-import { InfoPopover } from '~/components/info-popover/info-popover';
 import { Section } from '~/components/section';
 
 import {
@@ -367,18 +365,7 @@ export default component$(() => {
                 Starter
               </h3>
               <ul>
-                {starterFeatures.map((feature, key) => {
-                  return (
-                    <li
-                      key={key}
-                      class='align-center grid grid-cols-[auto_auto_1fr] justify-items-end gap-2 pb-4'
-                    >
-                      <CheckIcon />
-                      <span>{feature.text}</span>
-                      {feature.detail && <InfoPopover text={feature.detail} />}
-                    </li>
-                  );
-                })}
+                <ProductFeatureList features={starterFeatures} />
               </ul>
             </div>
 
@@ -405,18 +392,7 @@ export default component$(() => {
                 Profi
               </h3>
               <ul>
-                {profiFeatures.map((feature, key) => {
-                  return (
-                    <li
-                      key={key}
-                      class='align-center grid grid-cols-[auto_auto_1fr] justify-items-end gap-2 pb-4'
-                    >
-                      <CheckIcon />
-                      <span>{feature.text}</span>
-                      {feature.detail && <InfoPopover text={feature.detail} />}
-                    </li>
-                  );
-                })}
+                <ProductFeatureList features={profiFeatures} />
               </ul>
             </div>
 
@@ -443,18 +419,7 @@ export default component$(() => {
                 Experte
               </h3>
               <ul>
-                {expertFeatures.map((feature, key) => {
-                  return (
-                    <li
-                      key={key}
-                      class='align-center grid grid-cols-[auto_auto_1fr] justify-items-end gap-2 pb-4'
-                    >
-                      <CheckIcon />
-                      <span>{feature.text}</span>
-                      {feature.detail && <InfoPopover text={feature.detail} />}
-                    </li>
-                  );
-                })}
+                <ProductFeatureList features={expertFeatures} />
               </ul>
             </div>
             <div class='grid gap-8 self-end'>
