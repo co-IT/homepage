@@ -262,11 +262,17 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Basisversion' />
             </LinkedHeading>
             <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
-              Die Basisversion des Cyber Portals bietet bereits acht hochwertige
-              Phishing-Mails pro Jahr. Diese E-Mails zeichnen sich durch
-              anspruchsvolle Sprache und präzise Semantik aus, verwenden
-              authentische Absenderadressen und beinhalten eine persönliche
-              Anrede, um die Authentizität zu steigern.
+              Die kostenfreie Basisversion des Cyber-Portals bietet Ihnen sechs
+              Kurse mit praktischen Fähigkeiten und essenziellem Wissen für den
+              sicheren Umgang in der digitalen Welt. In vier Examen mit
+              anspruchsvollen, interaktiven Prüfungen können Ihre Anwender das
+              Gelernte festigen. Abgerundet wird die Leistung mit dem
+              Werkzeugkasten, der untere anderem die eigene Passwortsicherheit
+              prüfen kann. Besonders interessant sind die Phishing-Simulationen
+              mit 8 hochwertigen Phishing-Mails pro Jahr. Diese E-Mails zeichnen
+              sich durch anspruchsvolle Sprache und präzise Semantik aus,
+              verwenden authentische Absenderadressen und beinhalten eine
+              persönliche Anrede, um die Authentizität zu steigern.
             </p>
           </section>
         </div>
