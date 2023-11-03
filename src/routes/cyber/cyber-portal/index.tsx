@@ -41,18 +41,6 @@ import { PricePerUsePerMonth } from '../../../components/pricing/price-per-user-
 import { WuerttembergischeLogo } from '../../../components/wuerttembergische/logo';
 import style from './styles.css?inline';
 
-// const articles: Article[] = [
-//   {
-//     direction: 'right',
-//     image: {
-//       src: '/img/career/it-fascination.webp',
-//       alt: 'Two colleagues learning to together'
-//     },
-//     heading: 'Mach Deinen Beruf zur Berufung',
-//     text: 'Wir arbeiten, weil das Arbeiten selbst etwas Befriedigendes ist und weil das, was dabei herauskommt, für uns sinnvoll ist. Damit das funktioniert, sucht sich bei uns jeder seine Kunden und Projekte selbst aus. Du willst Routineaufgaben für Deine Kollegen automatisieren, um Tempo und Effizienz zu steigern? Sehr gern! Du möchtest lieber an unseren eigenen Produkten mitwirken, um neue Geschäftsfelder zu erschließen? Dann bring Deine Ideen ein! Dich reizt vor allem die Abwechslung? Dann unterstütze parallel mehrere Kunden in unterschiedlichen Branchen! Was in allen Fällen gleich bleibt: Du darfst Deine Talente ausschöpfen und eigene Vorstellungen realisieren. Wenn das zu Deinen Zielen passt, dann bewirb dich bei uns.'
-//   }
-// ];
-
 export default component$(() => {
   useStyles$(style);
 
@@ -256,42 +244,40 @@ export default component$(() => {
         </VideoOverlapLandscape>
       </Section>
 
-      {/* <Section>
-        <ArticleSection articles={articles} />
-      </Section> */}
-
-      <Section>
-        <ContentOverlapPortrait
-          image={{
-            source: '/img/cyber/cyber-portal/planning-table.webp',
-            alternateText: 'Man looking at the sunset'
-          }}
-        >
-          <section q:slot='article' class='flex flex-col space-y-4'>
-            <h2 class='text-xl font-bold md:text-4xl'>
-              <HeadingSegmentSecondary text='Plus an' />
+      <Section id='ihr_plus_an_sicherheit'>
+        <VideoOverlapLandscape youTubeVideoId='FjThxiKBApc'>
+          <section class='flex flex-col space-y-4'>
+            <LinkedHeading href='#ihr_plus_an_sicherheit'>
+              <HeadingSegmentSecondary text='Ihr' />
+              &nbsp;
+              <HeadingSegmentSecondary800 text='Plus' />{' '}
+              <HeadingSegmentSecondary text='an' />
               &nbsp;
               <HeadingSegmentSecondary800 text='Sicherheit' />
-            </h2>
+            </LinkedHeading>
             <p class='pb-4 leading-7'>
-              Mit der kostenfreien Basisversion im Untergrund müssen wir nur die
-              anfallende Mehrleistung weiterberechnen und können deutlich
-              niedrigere Preise anbieten als vergleichbare Plattformen. Doch was
-              bringt Ihnen eine günstige Lösung, wenn der Mehrwert fehlt? Darum
-              setzen wir ausschließlich Themen um, die Sie sich wünschen: Jeder
-              Abonnent eines jeden Pakets kann abstimmen, was als nächstes
-              realisiert werden soll. Abonnenten des „Experte“-Pakets können
-              zudem auf die Auswahl, über die abgestimmt wird, Einfluss nehmen.
-              Es gibt noch einen weiteren Vorteil: Sie müssen kein neues Produkt
-              evaluieren und einführen. Die Integration der Zusatzfunktionen
-              erfolgt nahtlos und sofort bei Kauf. Das hilft besonders größeren
-              Unternehmen und Behörden kraftraubende Genehmigungsprozesse zu
-              beschleunigen und langwierige Ausschreibungsverfahren zu umgehen.
-              Die Basisversion ist schließlich in Ihrem Haus bereits freigegeben
-              und eingeführt.
+              Mit der kostenfreien Basisversion im Untergrund berechnen wir nur
+              die anfallende Mehrleistung für die jeweiligen Pakete weiter.
+              Damit können wir deutlich niedrigere Preise als vergleichbare
+              Plattformen anbieten. Doch was ist Ihr Mehrwert? Mit den
+              angebotenen Phishing-Paketen setzen wir neue Maßstäbe in Sachen
+              Qualität und Authentizität. Unsere gezielten und raffinierten
+              Phishing-Mails werden vorab in einer Testgruppe aus mehreren
+              Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen.
+              Mehr noch: Mit Hilfe eines linguistischen Psychologen werden die
+              Anwender sprachlich subtil zum Öffnen der betrügerischen Mails
+              bewegt. Flankiert wird der Erstellungsprozess von der KI namens
+              ChatGPT . Mit diesen Maßnahmen stellen wir sicher, dass unsere
+              Phishing-Simulationen nur schwer als solche zu erkennen sind.
+              Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir
+              niedrige (&gt;20%), mittlere (&gt;40%), hohe (&gt;60%) und sehr
+              hohe (&gt;80) Klickquoten. Mit der hohen Qualität unserer
+              Phishing-Simulationen schützen Sie sich und Ihr Unternehmen vor
+              modernen, KI-gestützten Phishing-Angriffen, wie sie immer häufiger
+              auftreten.
             </p>
           </section>
-        </ContentOverlapPortrait>
+        </VideoOverlapLandscape>
       </Section>
 
       <Section>
@@ -526,33 +512,6 @@ export default component$(() => {
             </div>
           </div>
         </div>
-      </Section>
-
-      <Section backgroundColor='gray'>
-        <VideoOverlapLandscape youTubeVideoId='FjThxiKBApc'>
-          <section class='flex flex-col space-y-4'>
-            <h2 class='text-xl font-bold md:text-4xl'>
-              <HeadingSegmentSecondary text='Alle Funktionen vorgestellt' />
-            </h2>
-            <p class='leading-7'>
-              In diesem Video stellen wir Ihnen alle Funktionen detailliert vor,
-              sodass Sie genau wissen, was Sie mit welchem Paket bekommen. Egal,
-              für welches Paket Sie sich entscheiden: Alle Simulationen
-              durchlaufen vorab einen Praxischeck. In einer Testgruppe aus
-              mehreren Unternehmen mit über 300 Anwendern prüfen wir vorab die
-              Klickquoten. Wir unterscheiden dabei niedrige (&gt;20%), mittlere
-              (&gt;40%) und hohe (&gt;60%) Klickquoten. In vielen Fällen klicken
-              über 90% der Anwender, sodass im mittel mehr als jede zweite
-              Phishing-Mail geklickt wird.
-            </p>
-            <LinkCallToAction
-              href='https://e.co-IT.eu/cyber/anfrage'
-              target='_blank'
-            >
-              Klären Sie Ihre Fragen mit uns persönlich.
-            </LinkCallToAction>
-          </section>
-        </VideoOverlapLandscape>
       </Section>
 
       <Section id='fordern_sie_ihr_angebot_an'>
