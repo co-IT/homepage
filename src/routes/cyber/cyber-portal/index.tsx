@@ -217,9 +217,9 @@ export default component$(() => {
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
             <LinkedHeading href='#kostenfreie-basisversion'>
-              <HeadingSegmentSecondary text='Kostenfreie' />
+              <HeadingSegmentSecondary text='Ihre' />
               &nbsp;
-              <HeadingSegmentSecondary800 text='Basisversion' />
+              <HeadingSegmentSecondary800 text='Inklusivleistungen' />
             </LinkedHeading>
             <p class='leading-7'>
               Beim Cyber-Portal handelt es sich um eine Individuallösung für
@@ -257,22 +257,16 @@ export default component$(() => {
           {/* Wuerttembergische Basispaket Teaser */}
           <section class='flex max-w-md flex-col gap-4'>
             <LinkedHeading href='ihre_inklusivleistungen'>
-              Ihre Inklusivleistungen
+              <HeadingSegmentSecondary text='Kostenfreie' />
+              &nbsp;
+              <HeadingSegmentSecondary800 text='Basisversion' />
             </LinkedHeading>
             <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
-              Die Basisversion der Cyber-Versicherung bietet bereits ein
-              umfassendes Leistungspaket, inklusive acht hochwertiger
-              Phishing-E-Mails pro Jahr. Diese E-Mails zeichnen sich durch
+              Die Basisversion des Cyber-Portals bietet bereits acht hochwertige
+              Phishing-Mails pro Jahr. Diese E-Mails zeichnen sich durch
               anspruchsvolle Sprache und präzise Semantik aus, verwenden
               authentische Absenderadressen und beinhalten eine persönliche
-              Anrede, um die Authentizität zu steigern. Für eine größere
-              Herausforderung gibt es kostenpflichtige Upgrades, die mehr
-              Phishing-Simulationen in verschiedenen Zeitabständen, eine
-              Qualitätskontrolle zur Verbesserung der Klickquoten und die
-              Möglichkeit bieten, den Unternehmensnamen einzubinden und die
-              Ansprache an bestimmte Zielgruppen anzupassen. Diese Upgrades
-              ermöglichen es, sich in der Identifizierung von Phishing-E-Mails
-              zum Profi bis hin zum Experten zu entwickeln.
+              Anrede, um die Authentizität zu steigern.
             </p>
           </section>
         </div>
@@ -289,7 +283,7 @@ export default component$(() => {
               &nbsp;
               <HeadingSegmentSecondary800 text='Sicherheit' />
             </LinkedHeading>
-            <p class='pb-4 leading-7'>
+            <p class='leading-7'>
               Mit der kostenfreien Basisversion im Untergrund berechnen wir nur
               die anfallende Mehrleistung für die jeweiligen Pakete weiter.
               Damit können wir deutlich niedrigere Preise als vergleichbare
@@ -301,14 +295,29 @@ export default component$(() => {
               Mehr noch: Mit Hilfe eines linguistischen Psychologen werden die
               Anwender sprachlich subtil zum Öffnen der betrügerischen Mails
               bewegt. Flankiert wird der Erstellungsprozess von der KI namens
-              ChatGPT . Mit diesen Maßnahmen stellen wir sicher, dass unsere
-              Phishing-Simulationen nur schwer als solche zu erkennen sind.
-              Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir
-              niedrige (&gt;20%), mittlere (&gt;40%), hohe (&gt;60%) und sehr
-              hohe (&gt;80) Klickquoten. Mit der hohen Qualität unserer
-              Phishing-Simulationen schützen Sie sich und Ihr Unternehmen vor
-              modernen, KI-gestützten Phishing-Angriffen, wie sie immer häufiger
-              auftreten.
+              ChatGPT. Mit diesen Maßnahmen stellen wir sicher, dass unsere
+              Phishing-Simulationen nur schwer als solche zu erkennen sind. Die
+              Ergebnisse unserer Testgruppe werden in unterschiedliche{' '}
+              <strong>Klickquoten</strong> unterteilt:
+            </p>
+            <ul class='ml-4 list-decimal'>
+              <li>
+                &gt;&nbsp;20% - <strong>verdächtig</strong>
+              </li>
+              <li>
+                &gt;&nbsp;40% - <strong>ungewiss</strong>
+              </li>
+              <li>
+                &gt;&nbsp;60% - <strong>authentisch</strong>
+              </li>
+              <li>
+                &gt;&nbsp;80% - <strong>täuschend Echt</strong>
+              </li>
+            </ul>
+            <p>
+              Mit der hohen Qualität unserer Phishing-Simulationen schützen Sie
+              sich und Ihr Unternehmen vor modernen, KI-gestützten
+              Phishing-Angriffen, wie sie immer häufiger auftreten.
             </p>
           </section>
         </VideoOverlapLandscape>
@@ -346,8 +355,7 @@ export default component$(() => {
       <Section id='lust_auf_mehr' backgroundColor='gray'>
         <div class='grid gap-8'>
           <LinkedHeading href='#lust_auf_mehr'>
-            Lust auf &nbsp;
-            <HeadingSegmentSecondary800 text='mehr?' />
+            Lust auf <HeadingSegmentSecondary800 text='mehr?' />
           </LinkedHeading>
 
           <p class='leading-7'>
