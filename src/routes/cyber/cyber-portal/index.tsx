@@ -34,10 +34,10 @@ import {
   wuerttembergischeFeatures
 } from './resources';
 
-import { LinkedHeading } from '../../../components/link-heading';
-import { PricePerUsePerMonth } from '../../../components/pricing/price-per-user-per-month';
-import { ProductFeatureList } from '../../../components/product-feature-list';
-import { WuerttembergischeLogo } from '../../../components/wuerttembergische/logo';
+import { LinkedHeading } from '~/components/link-heading';
+import { PricePerUsePerMonth } from '~/components/pricing/price-per-user-per-month';
+import { ProductFeatureList } from '~/components/product-feature-list';
+import { WuerttembergischeLogo } from '~/components/wuerttembergische/logo';
 import style from './styles.css?inline';
 
 export default component$(() => {
@@ -297,7 +297,7 @@ export default component$(() => {
             </LinkedHeading>
             <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
               Die Basisversion der Cyber-Versicherung bietet bereits ein
-              umfassendes Leistungspaket, inklusive sechs hochwertiger
+              umfassendes Leistungspaket, inklusive acht hochwertiger
               Phishing-E-Mails pro Jahr. Diese E-Mails zeichnen sich durch
               anspruchsvolle Sprache und präzise Semantik aus, verwenden
               authentische Absenderadressen und beinhalten eine persönliche
