@@ -190,7 +190,7 @@ export default component$(() => {
       <Section id='unser_antrieb'>
         <ContentOverlapPortrait
           image={{
-            source: '/img/cyber/Cyber Portal/man-with-rocket.webp',
+            source: '/img/cyber/cyber-portal/man-with-rocket.webp',
             alternateText: 'Man looking at the sunset'
           }}
         >
@@ -336,7 +336,7 @@ export default component$(() => {
       <Section id='entscheiden_sie_mit'>
         <ContentOverlapPortrait
           image={{
-            source: '/img/cyber/Cyber Portal/decision.webp',
+            source: '/img/cyber/cyber-portal/decision.webp',
             alternateText: 'Man looking at the sunset'
           }}
         >
@@ -653,7 +653,7 @@ export const head: DocumentHead = {
       type: 'content-page',
       configuration: {
         backgroundImage: {
-          source: '/img/cyber/Cyber Portal/header.webp',
+          source: '/img/cyber/cyber-portal/header.webp',
           alt: 'Two team mates checking an App on the tablet.'
         },
         heading: 'Cyber Portal',
