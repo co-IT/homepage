@@ -315,14 +315,14 @@ export default component$(() => {
           </section>
         </div>
       </Section>
-      <Section>
-        <div class='mx-auto mb-3 h-1 w-10 bg-primary' />
-        <h2 class='mb-5 px-6 text-center text-3xl font-bold leading-8 text-secondary-900 lg:px-0  lg:text-4xl lg:leading-10'>
-          Wählen Sie das Paket aus, das am besten zu Ihnen passt.
-        </h2>
-        <div class='mx-auto mb-4 flex max-w-5xl flex-wrap items-center justify-center gap-4 rounded-3xl p-8 shadow-md'>
+      <Section id='lust_auf_mehr'>
+        <LinkedHeading href='#lust_auf_mehr'>
+          Lust auf &nbsp;
+          <HeadingSegmentSecondary800 text='mehr?' />
+        </LinkedHeading>
+        <div class='flex flex-wrap items-center gap-4 rounded-3xl py-10 '>
           <section class='flex gap-4'>
-            <span class='text-xl font-bold'>Anzahl Empfänger</span>
+            <span class='text-xl font-bold'>Anwenderanzahl</span>
             <input
               type='number'
               bind:value={userCountSig}
@@ -369,7 +369,7 @@ export default component$(() => {
           </section>
         </div>
 
-        <div class='pricing-tiers justify-center'>
+        <div class='pricing-tiers'>
           {/* Starter */}
           <div class='card grid items-start gap-8 shadow-md'>
             <div class='features'>
