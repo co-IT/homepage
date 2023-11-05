@@ -299,7 +299,7 @@ export default component$(() => {
                 einem Praxischeck unterzogen. Mehr noch: Mit Hilfe eines
                 linguistischen Psychologen werden die Anwender sprachlich subtil
                 zum Öffnen der betrügerischen Mails bewegt. Flankiert wird der
-                Erstellungsprozess von der KI namens ChatGPT. Mit diesen
+                Erstellungsprozess von unserer generativen KI. Mit diesen
                 Maßnahmen stellen wir sicher, dass unsere Phishing-Simulationen
                 nur schwer als solche zu erkennen sind.
                 <br />
