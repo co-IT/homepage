@@ -12,13 +12,19 @@ export const ProductFeatureList = component$(
       <ul class='grid gap-y-2'>
         {props.features.map((feature, key) => {
           return (
-            <li key={key} class='align-center flex gap-2'>
-              {feature.detail && <InfoPopover text={feature.detail} />}
+            <li key={key} class='flex gap-2'>
+              {feature.detail ? (
+                <InfoPopover text={feature.detail} />
+              ) : (
+                <span class='w-[18px]'></span>
+              )}
               {/* margin-top is a hack since the InfoPopover is 24px height
                   The InfoPopover should have a height of 18px.
                   Currently, we do not know where the extra 8px come from. 
                 */}
-              <span class='mt-[-.25em] text-black'>{feature.text}</span>
+              <span class={`mt-[-.25em] text-black ${feature.class}`}>
+                {feature.text}
+              </span>
             </li>
           );
         })}
