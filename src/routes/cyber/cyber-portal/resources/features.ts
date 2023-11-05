@@ -50,6 +50,10 @@ export const starterFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
+    text: 'Insgesamt 12 Simulation, davon',
+    class: 'font-medium'
+  },
+  {
     text: '4 "verdächtige" E-Mails',
     detail:
       'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
@@ -120,6 +124,10 @@ export const profiFeatures: ProductFeature[] = [
     text: 'Zahlweise: monatlich',
     detail:
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
+  },
+  {
+    text: 'Insgesamt 24 Simulation, davon',
+    class: 'font-medium'
   },
   {
     text: '4 "verdächtige" E-Mails',
@@ -207,6 +215,10 @@ export const expertFeatures: ProductFeature[] = [
     text: 'Zahlweise: monatlich',
     detail:
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
+  },
+  {
+    text: 'Insgesamt 52 Simulation, davon',
+    class: 'font-medium'
   },
   {
     text: '10 "verdächtige" E-Mails',
