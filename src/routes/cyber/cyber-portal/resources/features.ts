@@ -74,13 +74,12 @@ export const starterFeatures: ProductFeature[] = [
       'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
-    text: 'Frequenz: 30 Tage',
+    text: 'Versandzeit: 30 Tage',
     detail: 'Pro Monat erhalten Empfänger eine Phishing Simulation.'
   },
   {
-    text: 'Versandzeit: Gleichzeitig',
-    detail:
-      'Alle Empfänger erhalten zur gleichen Zeit die gleiche Phishing Simulationen.'
+    text: 'Randomisierung: Keine',
+    detail: 'Alle Anwender erhalten zur gleichen Zeit die gleiche Simulation.'
   },
   {
     text: 'Sprachniveau: Hoch',
@@ -150,13 +149,13 @@ export const profiFeatures: ProductFeature[] = [
       'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
-    text: 'Frequenz: 14 Tage',
+    text: 'Versandzeit: 14 Tage',
     detail: 'Alle zwei Wochen erhalten Empfänger eine Phishing Simulation.'
   },
   {
-    text: 'Versandzeit: Gleichzeitig',
+    text: 'Randomisierung: Zufällig',
     detail:
-      'Alle Empfänger erhalten zur gleichen Zeit die gleiche Phishing Simulationen.'
+      'Alle Anwender erhalten die gleiche Simulation, aber zu zufälligen Zeiten über Tage verteilt.'
   },
   {
     text: 'Sprachniveau: Hoch',
@@ -241,14 +240,14 @@ export const expertFeatures: ProductFeature[] = [
       'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
-    text: 'Frequenz: 7 Tage',
+    text: 'Versandzeit: 7 Tage',
     detail:
       'Jede Woche erhalten die Empfänger eine Phishing-Simulation. Damit erreichen Sie maximale Sensibilisierung ohne den Empfänger zu häufig zu stören.'
   },
   {
-    text: 'Versandzeit: Zufällig',
+    text: 'Randomisierung: Zufällig',
     detail:
-      'Jeder Empfänger erhält zu unterschiedlichen Zeiten unterschiedliche Phishing Simulationen.'
+      'Alle Anwender erhalten unterschiedliche Simulationen zu unterschiedlichen Zeiten.'
   },
   {
     text: 'Sprachniveau: Hoch',
