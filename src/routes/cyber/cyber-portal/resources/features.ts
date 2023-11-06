@@ -7,11 +7,6 @@ export const wuerttembergischeFeatures: ProductFeature[] = [
       'Pro Jahr werden 8 Phishing-Mails an die Anwender des Cyber Portals versandt.'
   },
   {
-    text: 'Versandzeit: Gleichzeitig',
-    detail:
-      'Alle Empfänger erhalten zur gleichen Zeit die gleiche Phishing Simulationen.'
-  },
-  {
     text: 'Sprachniveau: Hoch',
     detail:
       'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
@@ -72,10 +67,6 @@ export const starterFeatures: ProductFeature[] = [
     text: '2 "täuschend echte" E-Mails',
     detail:
       'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
-  },
-  {
-    text: 'Versandzeit: 30 Tage',
-    detail: 'Pro Monat erhalten Empfänger eine Phishing Simulation.'
   },
   {
     text: 'Randomisierung: Keine',
@@ -147,10 +138,6 @@ export const profiFeatures: ProductFeature[] = [
     text: '8 "täuschend echte" E-Mails',
     detail:
       'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
-  },
-  {
-    text: 'Versandzeit: 14 Tage',
-    detail: 'Alle zwei Wochen erhalten Empfänger eine Phishing Simulation.'
   },
   {
     text: 'Randomisierung: Zufällig',
@@ -238,11 +225,6 @@ export const expertFeatures: ProductFeature[] = [
     text: '15 "täuschend echte" E-Mails',
     detail:
       'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
-  },
-  {
-    text: 'Versandzeit: 7 Tage',
-    detail:
-      'Jede Woche erhalten die Empfänger eine Phishing-Simulation. Damit erreichen Sie maximale Sensibilisierung ohne den Empfänger zu häufig zu stören.'
   },
   {
     text: 'Randomisierung: Zufällig',
