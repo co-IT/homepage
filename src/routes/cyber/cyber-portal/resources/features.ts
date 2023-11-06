@@ -12,6 +12,11 @@ export const wuerttembergischeFeatures: ProductFeature[] = [
       'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
   },
   {
+    text: 'Randomisierung: Keine',
+    detail:
+      'Alle Anwender erhalten zur gleichen Zeit die gleiche Phishing-E-Mail.'
+  },
+  {
     text: 'Absender: Authentisch',
     detail:
       'Authentische Absenderadressen sind z.B. Domains wie "bundesgerichtshof-karlsruhe.de" oder "bund-und-laender.online", wohingegen eine Domäne wie "why-how-what.info" weniger echt wirkt.'
@@ -45,7 +50,9 @@ export const starterFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
-    text: 'Insgesamt 12 Simulation, davon',
+    text: 'Anzahl Simulation: 12',
+    detail:
+      'Es handelt sich um die übers Jahr insgesamt verschickten Phishing-Simulationen. Bei einer geringeren Vertragslaufzeit erhalten Sie pro Monat der Vertragslaufzeit jeweils 1/12 der Phishing-Mails.',
     class: 'font-medium'
   },
   {
@@ -116,7 +123,9 @@ export const profiFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
-    text: 'Insgesamt 24 Simulation, davon',
+    text: 'Anzahl Simulationen: 24',
+    detail:
+      'Es handelt sich um die übers Jahr insgesamt verschickten Phishing-Simulationen. Bei einer geringeren Vertragslaufzeit erhalten Sie pro Monat der Vertragslaufzeit jeweils 1/12 der Phishing-Mails.',
     class: 'font-medium'
   },
   {
@@ -142,7 +151,7 @@ export const profiFeatures: ProductFeature[] = [
   {
     text: 'Randomisierung: Zufällig',
     detail:
-      'Alle Anwender erhalten die gleiche Simulation, aber zu zufälligen Zeiten über Tage verteilt.'
+      'Alle Anwender erhalten die gleiche Simulation, aber zu zufälligen Zeiten über Tage verteilt'
   },
   {
     text: 'Sprachniveau: Hoch',
@@ -203,8 +212,9 @@ export const expertFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
-    text: 'Insgesamt 52 Simulation, davon',
-    class: 'font-medium'
+    text: 'Anzahl Simulationen: 52',
+    detail:
+      'Es handelt sich um die übers Jahr insgesamt verschickten Phishing-Simulationen. Bei einer geringeren Vertragslaufzeit erhalten Sie pro Monat der Vertragslaufzeit jeweils 1/12 der Phishing-Mails.'
   },
   {
     text: '10 "verdächtige" E-Mails',
@@ -227,7 +237,7 @@ export const expertFeatures: ProductFeature[] = [
       'Unsere Phishing-Simulationen werden vorab in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem Praxischeck unterzogen. Anhand der Ergebnisse in unserer Testgruppe unterscheiden wir "verdächtige" (>20%), "ungewisse" (>40%), "authentische" (>60%) und "täuschend echte" (>80) Klickquoten. Alles unter 20% erhalten Sie gar nicht erst.'
   },
   {
-    text: 'Randomisierung: Zufällig',
+    text: 'Randomisierung: überraschend ',
     detail:
       'Alle Anwender erhalten unterschiedliche Simulationen zu unterschiedlichen Zeiten.'
   },
