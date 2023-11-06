@@ -214,7 +214,8 @@ export const expertFeatures: ProductFeature[] = [
   {
     text: 'Anzahl Simulationen: 52',
     detail:
-      'Es handelt sich um die übers Jahr insgesamt verschickten Phishing-Simulationen. Bei einer geringeren Vertragslaufzeit erhalten Sie pro Monat der Vertragslaufzeit jeweils 1/12 der Phishing-Mails.'
+      'Es handelt sich um die übers Jahr insgesamt verschickten Phishing-Simulationen. Bei einer geringeren Vertragslaufzeit erhalten Sie pro Monat der Vertragslaufzeit jeweils 1/12 der Phishing-Mails.',
+    class: 'font-medium'
   },
   {
     text: '10 "verdächtige" E-Mails',
