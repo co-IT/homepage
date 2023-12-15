@@ -265,7 +265,7 @@ export default component$(() => {
               sicheren Umgang in der digitalen Welt. In vier Examen mit
               anspruchsvollen, interaktiven Prüfungen können Ihre Anwender das
               Gelernte festigen. Abgerundet wird die Leistung mit dem
-              Werkzeugkasten, der untere anderem die eigene Passwortsicherheit
+              Werkzeugkasten, der unter anderem die eigene Passwortsicherheit
               prüfen kann. Besonders interessant sind die Phishing-Simulationen
               mit 8 hochwertigen Phishing-Mails pro Jahr. Diese E-Mails zeichnen
               sich durch anspruchsvolle Sprache und präzise Semantik aus,
