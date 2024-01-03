@@ -221,7 +221,7 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Herausforderungen' />
             </LinkedHeading>
             <p class='leading-7'>
-              Der Faktor Mensch ist das größte Sicherheitsrisiko für Ihre Daten. Und als unverzichtbarer Teil der kritischen Infrastruktur ist der Schutz sensibler Daten in Apotheken von entscheidender Bedeutung.
+              Als unverzichtbarer Teil der kritischen Infrastruktur ist der Schutz sensibler Daten in Apotheken von entscheidender Bedeutung.
               
               Die Gesundheitsbranche unterliegt strengen Sicherheitsauflagen und das IT-Sicherheitsgesetz 2.0 sowie die NIS 2 Richtlinie geben klare Regeln vor – darunter regelmäßige Mitarbeiterschulungen. Unsere auf den Gesundheitssektor zugeschnittenen, kontrollierten Phishing-Tests bieten das perfekte Awareness-Training um Ihre Mitglieder gegen Gefahren zu Schulen und Sie auf die strengeren Sicherheitsstandards vorzubereiten. Sichern Sie Ihre Daten durch erhöhte Wachsamkeit gegenüber potenziellen E-Mail-Bedrohungen.
             </p>
@@ -246,11 +246,11 @@ export default component$(() => {
           {/* Wuerttembergische Basispaket Teaser */}
           <section class='flex max-w-md flex-col gap-4 px-4'>
             <LinkedHeading href='#ihre_vorteile'>
-              <HeadingSegmentSecondary text='Ihre Vorteile' />{' '}
+              <HeadingSegmentSecondary text='Ihre' />{' '}
               <HeadingSegmentSecondary800 text='Vorteile' />
             </LinkedHeading>
             <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
-              Unser Apotheken-Paket bietet Ihnen für all Ihre Mitglieder dedizierte Inhalte und individualisierte Phishing-Mails um vor Cyber-Bedrohungen in KRITIS Unternehmen zu sensibilisieren.
+              Unser Gesundheits-Paket bietet Ihnen für all Ihre Mitglieder dedizierte Inhalte und individualisierte Phishing-Mails um vor Cyber-Bedrohungen in KRITIS Unternehmen zu sensibilisieren.
               
 Unsere E-Mails zeichnen sich durch anspruchsvolle Sprache und präzise Semantik aus, verwenden authentische Absenderadressen und beinhalten eine persönliche Anrede, um die Authentizität zu steigern. Da gerade im Gesundheitssektor mit sehr sensiblen Daten umgegangen wird, bieten wir Ihnen exklusive Inhalte, um besser zu schulen und zu sensibilisieren. Wir unterstützen Sie dabei, Richtlinien und Vorgaben einzuhalten.
 </p>
@@ -269,15 +269,8 @@ Unsere E-Mails zeichnen sich durch anspruchsvolle Sprache und präzise Semantik 
             </LinkedHeading>
             <section>
               <p class='leading-7'>
-                Mit Hilfe eines linguistischen Psychologen werden die Anwender sprachlich subtilzum Öffnen der betrügerischen Mails bewegt. Flankiert wird der
-                Erstellungsprozess von unserer generativen KI. Mit diesen
-                Maßnahmen stellen wir sicher, dass unsere Phishing-Simulationen
-                nur schwer als solche zu erkennen sind.
-              </p>
-              <p>
-                Mit der hohen Qualität unserer Phishing-Simulationen schützen
-                Sie sich und Ihr Unternehmen vor modernen, KI-gestützten
-                Phishing-Angriffen, wie sie immer häufiger auftreten.
+                Mit den angebotenen Phishing-Mails setzen wir neue Maßstäbe in Sachen Qualität und Authentizität. Mit Hilfe eines linguistischen Psychologenwerden die Anwender sprachlich subtil zum Öffnen der betrügerischen Mails bewegt. Flankiert wird der Erstellungsprozess von unserer generativen KI. Mit diesen Maßnahmen stellen wir sicher, dass unsere Phishing-Simulationen nur schwer als solche zu erkennen sind.
+                Mit der hohen Qualität unserer Phishing-Simulationen schützen Sie sich und IhrUnternehmen vor modernen, KI-gestützten Phishing-Angriffen, wie sie immerhäufiger auftreten.
               </p>
             </section>
           </section>
@@ -297,7 +290,7 @@ Unsere E-Mails zeichnen sich durch anspruchsvolle Sprache und präzise Semantik 
               <HeadingSegmentSecondary text='Sie mit' />
             </LinkedHeading>
             <p class='pb-4 leading-7'>
-            Mit unserem Apotheken-Paket können Sie mitentscheiden, welche Inhalte für Ihre Mitglieder eingespielt werden sollen. Haben Sie bestimmte Domains oder E-Mail Themen im Sinn? Sprechen Sie mit uns!
+            Mit unserem Gesundheits-Paket können Sie mitentscheiden, welche Inhalte für Ihre Mitglieder eingespielt werden sollen. Haben Sie bestimmte Domains oder E-Mail Themen im Sinn? Sprechen Sie mit uns!
             Durch Zusammenarbeit und individuelle Inhalte können wir noch genauere Phishing-Simulationen erstellen und besser Schulen.
             Es gibt noch einen weiteren Vorteil: Sie müssen kein neues Produkt evaluieren und einführen. Die Integration der Zusatzfunktionen erfolgt nahtlos und sofort bei Kauf. Sie erhalten sofort Zugriff auf die für Sie zugeschnittenen Inhalte.
             </p>
@@ -483,17 +476,11 @@ Unsere E-Mails zeichnen sich durch anspruchsvolle Sprache und präzise Semantik 
         <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#wichtig_fuer_cyber_verantwortliche'>
             Wichtig für{' '}
-            <HeadingSegmentSecondary800 text='Cyber-Verantwortliche' />
+            <HeadingSegmentSecondary800 text='Anwender' />
           </LinkedHeading>
 
           <p class='mx-auto max-w-xl leading-7'>
-            Die besten Phishing-Mails helfen nichts, wenn diese nicht den
-            Posteingang des Empfängers erreichen. Geben Sie deshalb unseren
-            E-Mail-Server und unsere Domains in Ihrer Firewall und in den
-            Postfächern frei. Nur dadurch können Sie sicherstellen, dass
-            Auswertungen zum Klickverhalten korrekt sind. Damit Sie schnell
-            starten können, haben wir für gängige Produkte wie Microsofts
-            "Exchange Server" Anleitungsvideos bereitgestellt.
+          Die besten Phishing-Mails helfen nichts, wenn diese nicht den Posteingang des Empfängers erreichen. Geben Sie deshalb unseren E-Mail-Server und unsere Domains in Ihren Postfächern frei. Nur dadurch können Sie sicherstellen, dass Auswertungen zum Klickverhalten korrekt sind. Damit Sie schnell starten können, haben wir für gängige Anbieter wie GMX, Gmail und web.de Anleitungsvideos bereitgestellt.
           </p>
 
           <LinkCallToAction
