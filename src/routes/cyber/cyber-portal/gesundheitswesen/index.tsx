@@ -212,13 +212,16 @@ export default component$(() => {
           </section>
         </ContentOverlapPortrait>
       </Section>
+
       <Section id='kostenfreie_basisversion'>
         <ContentOverlapPortrait
           image={{
             source: '/img/cyber/cyber-portal/gesundheitswesen/Antrieb.webp',
             alternateText: 'Kostenfreie Basisversion'
           }}
-        >
+        />
+      </Section>
+
       <Section id='kostenfreie_basisversion' backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
@@ -253,14 +256,20 @@ export default component$(() => {
               <HeadingSegmentSecondary text='Herausforderungen' />
             </LinkedHeading>
             <p class='pb-4 leading-7'>
-              Als unverzichtbarer Teil der kritischen Infrastruktur ist der Schutz sensibler Daten in Apotheken von entscheidender Bedeutung.
-              
-              Die Gesundheitsbranche unterliegt strengen Sicherheitsauflagen und das IT-Sicherheitsgesetz 2.0 sowie die NIS 2 Richtlinie geben klare Regeln vor – darunter regelmäßige Mitarbeiterschulungen. Unsere auf den Gesundheitssektor zugeschnittenen, kontrollierten Phishing-Tests bieten das perfekte Awareness-Training um Ihre Mitglieder gegen Gefahren zu Schulen und Sie auf die strengeren Sicherheitsstandards vorzubereiten. Sichern Sie Ihre Daten durch erhöhte Wachsamkeit gegenüber potenziellen E-Mail-Bedrohungen.
+              Als unverzichtbarer Teil der kritischen Infrastruktur ist der
+              Schutz sensibler Daten in Apotheken von entscheidender Bedeutung.
+              Die Gesundheitsbranche unterliegt strengen Sicherheitsauflagen und
+              das IT-Sicherheitsgesetz 2.0 sowie die NIS 2 Richtlinie geben
+              klare Regeln vor – darunter regelmäßige Mitarbeiterschulungen.
+              Unsere auf den Gesundheitssektor zugeschnittenen, kontrollierten
+              Phishing-Tests bieten das perfekte Awareness-Training um Ihre
+              Mitglieder gegen Gefahren zu Schulen und Sie auf die strengeren
+              Sicherheitsstandards vorzubereiten. Sichern Sie Ihre Daten durch
+              erhöhte Wachsamkeit gegenüber potenziellen E-Mail-Bedrohungen.
             </p>
           </section>
         </ContentOverlapPortrait>
       </Section>
-
 
       <Section id='individuelle_loesung'>
         <div class='grid grid-flow-row justify-center gap-16 sm:grid-flow-col'>
@@ -283,12 +292,12 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Lösung' />
             </LinkedHeading>
             <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
-Für das Gesundheitswesen haben wir ein Paket geschnürrt, welches Ihnen die folgende Vorteile bietet:
-- Dedizierte Phishing-Simulationen mit eigenen Domains wie ratiopharm-info.de
-- Von Ihnen vorgegebene 
-- Anleitungen speziell für E-Mail-Systeme Ihrer Anwender
-- Besonders günstiger Preis
-</p>
+              Für das Gesundheitswesen haben wir ein Paket geschnürrt, welches
+              Ihnen die folgende Vorteile bietet: - Dedizierte
+              Phishing-Simulationen mit eigenen Domains wie ratiopharm-info.de -
+              Von Ihnen vorgegebene - Anleitungen speziell für E-Mail-Systeme
+              Ihrer Anwender - Besonders günstiger Preis
+            </p>
           </section>
         </div>
       </Section>
@@ -304,8 +313,16 @@ Für das Gesundheitswesen haben wir ein Paket geschnürrt, welches Ihnen die fol
             </LinkedHeading>
             <section>
               <p class='leading-7'>
-                Mit den angebotenen Phishing-Mails setzen wir neue Maßstäbe in Sachen Qualität und Authentizität. Mit Hilfe eines linguistischen Psychologenwerden die Anwender sprachlich subtil zum Öffnen der betrügerischen Mails bewegt. Flankiert wird der Erstellungsprozess von unserer generativen KI. Mit diesen Maßnahmen stellen wir sicher, dass unsere Phishing-Simulationen nur schwer als solche zu erkennen sind.
-                Mit der hohen Qualität unserer Phishing-Simulationen schützen Sie sich und IhrUnternehmen vor modernen, KI-gestützten Phishing-Angriffen, wie sie immerhäufiger auftreten.
+                Mit den angebotenen Phishing-Mails setzen wir neue Maßstäbe in
+                Sachen Qualität und Authentizität. Mit Hilfe eines
+                linguistischen Psychologenwerden die Anwender sprachlich subtil
+                zum Öffnen der betrügerischen Mails bewegt. Flankiert wird der
+                Erstellungsprozess von unserer generativen KI. Mit diesen
+                Maßnahmen stellen wir sicher, dass unsere Phishing-Simulationen
+                nur schwer als solche zu erkennen sind. Mit der hohen Qualität
+                unserer Phishing-Simulationen schützen Sie sich und
+                IhrUnternehmen vor modernen, KI-gestützten Phishing-Angriffen,
+                wie sie immerhäufiger auftreten.
               </p>
             </section>
           </section>
@@ -325,9 +342,15 @@ Für das Gesundheitswesen haben wir ein Paket geschnürrt, welches Ihnen die fol
               <HeadingSegmentSecondary text='Sie mit' />
             </LinkedHeading>
             <p class='pb-4 leading-7'>
-            Mit unserem Gesundheits-Paket können Sie mitentscheiden, welche Inhalte für Ihre Mitglieder eingespielt werden sollen. Haben Sie bestimmte Domains oder E-Mail Themen im Sinn? Sprechen Sie mit uns!
-            Durch Zusammenarbeit und individuelle Inhalte können wir noch genauere Phishing-Simulationen erstellen und besser Schulen.
-            Es gibt noch einen weiteren Vorteil: Sie müssen kein neues Produkt evaluieren und einführen. Die Integration der Zusatzfunktionen erfolgt nahtlos und sofort bei Kauf. Sie erhalten sofort Zugriff auf die für Sie zugeschnittenen Inhalte.
+              Mit unserem Gesundheits-Paket können Sie mitentscheiden, welche
+              Inhalte für Ihre Mitglieder eingespielt werden sollen. Haben Sie
+              bestimmte Domains oder E-Mail Themen im Sinn? Sprechen Sie mit
+              uns! Durch Zusammenarbeit und individuelle Inhalte können wir noch
+              genauere Phishing-Simulationen erstellen und besser Schulen. Es
+              gibt noch einen weiteren Vorteil: Sie müssen kein neues Produkt
+              evaluieren und einführen. Die Integration der Zusatzfunktionen
+              erfolgt nahtlos und sofort bei Kauf. Sie erhalten sofort Zugriff
+              auf die für Sie zugeschnittenen Inhalte.
             </p>
 
             <LinkCallToAction
@@ -510,12 +533,17 @@ Für das Gesundheitswesen haben wir ein Paket geschnürrt, welches Ihnen die fol
       <Section id='wichtig_fuer_cyber_verantwortliche' backgroundColor='gray'>
         <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#wichtig_fuer_cyber_verantwortliche'>
-            Wichtig für{' '}
-            <HeadingSegmentSecondary800 text='Anwender' />
+            Wichtig für <HeadingSegmentSecondary800 text='Anwender' />
           </LinkedHeading>
 
           <p class='mx-auto max-w-xl leading-7'>
-          Die besten Phishing-Mails helfen nichts, wenn diese nicht den Posteingang des Empfängers erreichen. Geben Sie deshalb unseren E-Mail-Server und unsere Domains in Ihren Postfächern frei. Nur dadurch können Sie sicherstellen, dass Auswertungen zum Klickverhalten korrekt sind. Damit Sie schnell starten können, haben wir für gängige Anbieter wie GMX, Gmail und web.de Anleitungsvideos bereitgestellt.
+            Die besten Phishing-Mails helfen nichts, wenn diese nicht den
+            Posteingang des Empfängers erreichen. Geben Sie deshalb unseren
+            E-Mail-Server und unsere Domains in Ihren Postfächern frei. Nur
+            dadurch können Sie sicherstellen, dass Auswertungen zum
+            Klickverhalten korrekt sind. Damit Sie schnell starten können, haben
+            wir für gängige Anbieter wie GMX, Gmail und web.de Anleitungsvideos
+            bereitgestellt.
           </p>
 
           <LinkCallToAction
