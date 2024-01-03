@@ -2,9 +2,10 @@ import type { ProductFeature } from '~/components/product-feature-list';
 
 export const wuerttembergischeFeatures: ProductFeature[] = [
   {
-    text: '8 Phishing-E-Mails',
+    text: 'Anzahl Simulationen: 24',
     detail:
-      'Pro Jahr werden 8 Phishing-Mails an die Anwender des Cyber Portals versandt.'
+      'Es handelt sich um die übers Jahr insgesamt verschickten Phishing-Simulationen. Bei einer geringeren Vertragslaufzeit erhalten Sie pro Monat der Vertragslaufzeit jeweils 1/12 der Phishing-Mails.',
+    class: 'font-medium'
   },
   {
     text: 'Sprachniveau: Hoch',
@@ -12,14 +13,19 @@ export const wuerttembergischeFeatures: ProductFeature[] = [
       'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
   },
   {
-    text: 'Randomisierung: Keine',
+    text: 'Branche: Gesundheitswesen',
     detail:
-      'Alle Anwender erhalten zur gleichen Zeit die gleiche Phishing-E-Mail.'
+      'Sprechen Sie uns an, was Sie sich für Ihre Kunden wünschen.'
+  },
+  {
+    text: 'Randomisierung: überraschend',
+    detail:
+      'Alle Anwender erhalten unterschiedliche Simulationen zu unterschiedlichen Zeiten.'
   },
   {
     text: 'Absender: Authentisch',
     detail:
-      'Authentische Absenderadressen sind z.B. Domains wie "bundesgerichtshof-karlsruhe.de" oder "bund-und-laender.online", wohingegen eine Domäne wie "why-how-what.info" weniger echt wirkt.'
+      'Authentische Absenderadressen sind z.B. Domains wie "ratiopharm-info.de" oder "apotheker-netzwerk.de", wohingegen eine Domäne wie "why-how-what.info" weniger echt wirkt.'
   },
   {
     text: 'Anrede: Personalisiert',
@@ -29,7 +35,7 @@ export const wuerttembergischeFeatures: ProductFeature[] = [
   {
     text: 'Unternehmensname',
     detail:
-      'In den Phishing Simulationen wird Ihr Unternehmen referenziert, z.B. indem in einer Simulation eine "Kununu"-Bewertung zu Ihrer Firma nachgestellt wird.'
+      'In den Phishing Simulationen wird Ihr Unternehmen referenziert, z.B. indem in einer Simulation eine "Jameda"-Bewertung zu Ihrer Firma nachgestellt wird.'
   },
   {
     text: 'Feedbackfunktion',

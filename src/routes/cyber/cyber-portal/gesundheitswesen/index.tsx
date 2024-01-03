@@ -190,8 +190,8 @@ export default component$(() => {
       <Section id='unser_antrieb'>
         <ContentOverlapPortrait
           image={{
-            source: '/img/cyber/cyber-portal/man-with-rocket.webp',
-            alternateText: 'Man looking at the sunset'
+            source: '/img/cyber/cyber-portal/gesundheitswesen/Antrieb.webp',
+            alternateText: 'Unser Antrieb'
           }}
         >
           <section q:slot='article' class='flex flex-col space-y-4'>
@@ -213,40 +213,30 @@ export default component$(() => {
         </ContentOverlapPortrait>
       </Section>
 
-      <Section id='ihre_inklusivleistungen' backgroundColor='gray'>
+      <Section id='ihre_herausforderungen' backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
-            <LinkedHeading href='#ihre_inklusivleistungen'>
+            <LinkedHeading href='#ihre_herausforderungen'>
               <HeadingSegmentSecondary text='Ihre' />{' '}
-              <HeadingSegmentSecondary800 text='Inklusivleistungen' />
+              <HeadingSegmentSecondary800 text='Herausforderungen' />
             </LinkedHeading>
             <p class='leading-7'>
-              Beim Cyber Portal handelt es sich um eine Individuallösung für
-              alle Kunden der Württembergischen Versicherung. Die Plattform soll
-              allen Versicherungsnehmern gleichermaßen zugutekommen, indem der
-              Fokus auf leicht zu bedienende Funktionen, praxisrelevantes Wissen
-              und hochwertige Phishing-Simulationen gelegt wird. Dabei stellt
-              die Württembergische als alleiniger Auftraggeber sicher, dass die
-              Basisversion kostenfrei weiterentwickelt und sicher betrieben
-              wird. Seit Veröffentlichung des Cyber Portals im Jahr 2021
-              erreichten uns viele gute Ideen und individuelle Wünsche aus allen
-              Unternehmensbranchen und -größen. Mit den hier angebotenen
-              Zusatzpaketen wollen wir die Brücke für all diejenigen schlagen,
-              denen unsere Lösung bereits geholfen hat und die jetzt einen
-              Schritt weitergehen wollen.
+              Der Faktor Mensch ist das größte Sicherheitsrisiko für Ihre Daten. Und als unverzichtbarer Teil der kritischen Infrastruktur ist der Schutz sensibler Daten in Apotheken von entscheidender Bedeutung.
+              
+              Die Gesundheitsbranche unterliegt strengen Sicherheitsauflagen und das IT-Sicherheitsgesetz 2.0 sowie die NIS 2 Richtlinie geben klare Regeln vor – darunter regelmäßige Mitarbeiterschulungen. Unsere auf den Gesundheitssektor zugeschnittenen, kontrollierten Phishing-Tests bieten das perfekte Awareness-Training um Ihre Mitglieder gegen Gefahren zu Schulen und Sie auf die strengeren Sicherheitsstandards vorzubereiten. Sichern Sie Ihre Daten durch erhöhte Wachsamkeit gegenüber potenziellen E-Mail-Bedrohungen.
             </p>
           </section>
         </VideoOverlapLandscape>
       </Section>
 
-      <Section id='kostenfreie_basisversion'>
+      <Section id='ihre_vorteile'>
         <div class='grid grid-flow-row justify-center gap-16 sm:grid-flow-col'>
           {/* Wuerttembergische Basispaket Features */}
           <div class='card mx-auto grid items-start gap-8 shadow-md'>
             <WuerttembergischeLogo />
             <ProductFeatureList features={wuerttembergischeFeatures} />
             <a
-              href='https://wuerttembergische.co-it.eu'
+              href='https://wuerttembergische.co-IT.eu'
               target='_blank'
               class='rounded-[3.5rem] bg-[#f84914] p-4 text-center text-white transition-colors hover:bg-[#d33e11]'
             >
@@ -255,23 +245,15 @@ export default component$(() => {
           </div>
           {/* Wuerttembergische Basispaket Teaser */}
           <section class='flex max-w-md flex-col gap-4 px-4'>
-            <LinkedHeading href='#kostenfreie_basisversion'>
-              <HeadingSegmentSecondary text='Kostenfreie' />{' '}
-              <HeadingSegmentSecondary800 text='Basisversion' />
+            <LinkedHeading href='#ihre_vorteile'>
+              <HeadingSegmentSecondary text='Ihre Vorteile' />{' '}
+              <HeadingSegmentSecondary800 text='Vorteile' />
             </LinkedHeading>
             <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
-              Die kostenfreie Basisversion des Cyber Portals bietet Ihnen sechs
-              Kurse mit praktischen Fähigkeiten und essenziellem Wissen für den
-              sicheren Umgang in der digitalen Welt. In vier Examen mit
-              anspruchsvollen, interaktiven Prüfungen können Ihre Anwender das
-              Gelernte festigen. Abgerundet wird die Leistung mit dem
-              Werkzeugkasten, der untere anderem die eigene Passwortsicherheit
-              prüfen kann. Besonders interessant sind die Phishing-Simulationen
-              mit 8 hochwertigen Phishing-Mails pro Jahr. Diese E-Mails zeichnen
-              sich durch anspruchsvolle Sprache und präzise Semantik aus,
-              verwenden authentische Absenderadressen und beinhalten eine
-              persönliche Anrede, um die Authentizität zu steigern.
-            </p>
+              Unser Apotheken-Paket bietet Ihnen für all Ihre Mitglieder dedizierte Inhalte und individualisierte Phishing-Mails um vor Cyber-Bedrohungen in KRITIS Unternehmen zu sensibilisieren.
+              
+Unsere E-Mails zeichnen sich durch anspruchsvolle Sprache und präzise Semantik aus, verwenden authentische Absenderadressen und beinhalten eine persönliche Anrede, um die Authentizität zu steigern. Da gerade im Gesundheitssektor mit sehr sensiblen Daten umgegangen wird, bieten wir Ihnen exklusive Inhalte, um besser zu schulen und zu sensibilisieren. Wir unterstützen Sie dabei, Richtlinien und Vorgaben einzuhalten.
+</p>
           </section>
         </div>
       </Section>
@@ -287,40 +269,11 @@ export default component$(() => {
             </LinkedHeading>
             <section>
               <p class='leading-7'>
-                Mit der kostenfreien Basisversion im Untergrund berechnen wir
-                nur die anfallende Mehrleistung für die jeweiligen Pakete
-                weiter. Damit können wir deutlich niedrigere Preise als
-                vergleichbare Plattformen anbieten. <br />
-                <br />
-                Doch was ist Ihr Mehrwert? Mit den angebotenen Phishing-Paketen
-                setzen wir neue Maßstäbe in Sachen Qualität und Authentizität.
-                Unsere gezielten und raffinierten Phishing-Mails werden vorab in
-                einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern
-                einem Praxischeck unterzogen. Mehr noch: Mit Hilfe eines
-                linguistischen Psychologen werden die Anwender sprachlich subtil
-                zum Öffnen der betrügerischen Mails bewegt. Flankiert wird der
+                Mit Hilfe eines linguistischen Psychologen werden die Anwender sprachlich subtilzum Öffnen der betrügerischen Mails bewegt. Flankiert wird der
                 Erstellungsprozess von unserer generativen KI. Mit diesen
                 Maßnahmen stellen wir sicher, dass unsere Phishing-Simulationen
                 nur schwer als solche zu erkennen sind.
-                <br />
-                <br />
-                Die Ergebnisse unserer Testgruppe werden in unterschiedliche{' '}
-                <strong>Klickquoten</strong> unterteilt:
               </p>
-              <ul>
-                <li>
-                  &gt;&nbsp;20% - <strong>verdächtig</strong>
-                </li>
-                <li>
-                  &gt;&nbsp;40% - <strong>ungewiss</strong>
-                </li>
-                <li>
-                  &gt;&nbsp;60% - <strong>authentisch</strong>
-                </li>
-                <li>
-                  &gt;&nbsp;80% - <strong>täuschend echt</strong>
-                </li>
-              </ul>
               <p>
                 Mit der hohen Qualität unserer Phishing-Simulationen schützen
                 Sie sich und Ihr Unternehmen vor modernen, KI-gestützten
@@ -334,7 +287,7 @@ export default component$(() => {
       <Section id='entscheiden_sie_mit'>
         <ContentOverlapPortrait
           image={{
-            source: '/img/cyber/cyber-portal/decision.webp',
+            source: '/img/cyber/cyber-portal/gesundheitswesen/Entscheiden.webp',
             alternateText: 'Man looking at the sunset'
           }}
         >
@@ -344,23 +297,9 @@ export default component$(() => {
               <HeadingSegmentSecondary text='Sie mit' />
             </LinkedHeading>
             <p class='pb-4 leading-7'>
-              Während in der kostenfreien Basisversion am Ende der Auftraggeber
-              über neue Funktionen entscheidet, können Sie als Abonnent des
-              "Experte"-Pakets nachhaltig die Weiterentwicklung beeinflussen.
-              Dafür dürfen Sie Vorschläge direkt bei unseren Entwicklern
-              einreichen und bei der konkreten Ausgestaltung mitdiskutieren.
-              Zudem können alle Abonnenten kostenpflichtiger Pakete regelmäßig
-              über Vorschläge abstimmen und dadurch Einfluss auf die
-              Priorisierung bei der Umsetzung nehmen.
-              <br />
-              <br />
-              Es gibt noch einen weiteren Vorteil: Sie müssen kein neues Produkt
-              evaluieren und einführen. Die Integration der Zusatzfunktionen
-              erfolgt nahtlos und sofort bei Kauf. Das hilft besonders Behörden
-              und größeren Unternehmen kraftraubende Genehmigungsprozesse zu
-              beschleunigen und langwierige Ausschreibungsverfahren zu umgehen,
-              weil die Basisversion in Ihrem Haus bereits freigegeben und
-              eingeführt ist.
+            Mit unserem Apotheken-Paket können Sie mitentscheiden, welche Inhalte für Ihre Mitglieder eingespielt werden sollen. Haben Sie bestimmte Domains oder E-Mail Themen im Sinn? Sprechen Sie mit uns!
+            Durch Zusammenarbeit und individuelle Inhalte können wir noch genauere Phishing-Simulationen erstellen und besser Schulen.
+            Es gibt noch einen weiteren Vorteil: Sie müssen kein neues Produkt evaluieren und einführen. Die Integration der Zusatzfunktionen erfolgt nahtlos und sofort bei Kauf. Sie erhalten sofort Zugriff auf die für Sie zugeschnittenen Inhalte.
             </p>
 
             <LinkCallToAction
@@ -644,18 +583,18 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'co-IT - Cyber Portal',
+  title: 'co-IT - Cyber Portal fürs Gesundheitswesen',
 
   frontmatter: {
     header: {
       type: 'content-page',
       configuration: {
         backgroundImage: {
-          source: '/img/cyber/cyber-portal/header.webp',
+          source: '/img/cyber/cyber-portal/gesundheitswesen/header.webp',
           alt: 'Two team mates checking an App on the tablet.'
         },
         heading: 'Cyber Portal',
-        headingAccent: 'Sicher fühlen. Sicher sein.'
+        headingAccent: 'Rezeptur für nachhaltige Sicherheit.'
       }
     }
   }
