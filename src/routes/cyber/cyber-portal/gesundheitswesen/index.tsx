@@ -214,15 +214,6 @@ export default component$(() => {
         </ContentOverlapPortrait>
       </Section>
 
-      <Section id='kostenfreie_basisversion'>
-        <ContentOverlapPortrait
-          image={{
-            source: '/img/cyber/cyber-portal/gesundheitswesen/Antrieb.webp',
-            alternateText: 'Kostenfreie Basisversion'
-          }}
-        />
-      </Section>
-
       <Section id='kostenfreie_basisversion' backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
