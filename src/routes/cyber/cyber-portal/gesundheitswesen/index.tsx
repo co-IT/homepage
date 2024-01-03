@@ -212,24 +212,57 @@ export default component$(() => {
           </section>
         </ContentOverlapPortrait>
       </Section>
-
-      <Section id='ihre_herausforderungen' backgroundColor='gray'>
+      <Section id='kostenfreie_basisversion'>
+        <ContentOverlapPortrait
+          image={{
+            source: '/img/cyber/cyber-portal/gesundheitswesen/Antrieb.webp',
+            alternateText: 'Kostenfreie Basisversion'
+          }}
+        >
+      <Section id='kostenfreie_basisversion' backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
-            <LinkedHeading href='#ihre_herausforderungen'>
-              <HeadingSegmentSecondary text='Ihre' />{' '}
-              <HeadingSegmentSecondary800 text='Herausforderungen' />
+            <LinkedHeading href='#kostenfreie_basisversion'>
+              <HeadingSegmentSecondary text='Kostenfreie' />{' '}
+              <HeadingSegmentSecondary800 text='Basisversion' />
             </LinkedHeading>
             <p class='leading-7'>
-              Als unverzichtbarer Teil der kritischen Infrastruktur ist der Schutz sensibler Daten in Apotheken von entscheidender Bedeutung.
-              
-              Die Gesundheitsbranche unterliegt strengen Sicherheitsauflagen und das IT-Sicherheitsgesetz 2.0 sowie die NIS 2 Richtlinie geben klare Regeln vor – darunter regelmäßige Mitarbeiterschulungen. Unsere auf den Gesundheitssektor zugeschnittenen, kontrollierten Phishing-Tests bieten das perfekte Awareness-Training um Ihre Mitglieder gegen Gefahren zu Schulen und Sie auf die strengeren Sicherheitsstandards vorzubereiten. Sichern Sie Ihre Daten durch erhöhte Wachsamkeit gegenüber potenziellen E-Mail-Bedrohungen.
+              Beim Cyber Portal handelt es sich um eine Individuallösung für
+              alle Kunden der Württembergischen Versicherung. Die Plattform soll
+              allen Versicherungsnehmern gleichermaßen zugutekommen, indem der
+              Fokus auf leicht zu bedienende Funktionen, praxisrelevantes Wissen
+              und hochwertige Phishing-Simulationen gelegt wird. Dabei stellt
+              die Württembergische als alleiniger Auftraggeber sicher, dass die
+              Basisversion kostenfrei weiterentwickelt und sicher betrieben
+              wird.
             </p>
           </section>
         </VideoOverlapLandscape>
       </Section>
 
-      <Section id='ihre_vorteile'>
+      <Section id='ihre_herausforderungen'>
+        <ContentOverlapPortrait
+          image={{
+            source: '/img/cyber/cyber-portal/gesundheitswesen/Entscheiden.webp',
+            alternateText: 'Man looking at the sunset'
+          }}
+        >
+          <section q:slot='article' class='flex flex-col space-y-4'>
+            <LinkedHeading href='#ihre_herausforderungen'>
+              <HeadingSegmentSecondary800 text='Ihre' />{' '}
+              <HeadingSegmentSecondary text='Herausforderungen' />
+            </LinkedHeading>
+            <p class='pb-4 leading-7'>
+              Als unverzichtbarer Teil der kritischen Infrastruktur ist der Schutz sensibler Daten in Apotheken von entscheidender Bedeutung.
+              
+              Die Gesundheitsbranche unterliegt strengen Sicherheitsauflagen und das IT-Sicherheitsgesetz 2.0 sowie die NIS 2 Richtlinie geben klare Regeln vor – darunter regelmäßige Mitarbeiterschulungen. Unsere auf den Gesundheitssektor zugeschnittenen, kontrollierten Phishing-Tests bieten das perfekte Awareness-Training um Ihre Mitglieder gegen Gefahren zu Schulen und Sie auf die strengeren Sicherheitsstandards vorzubereiten. Sichern Sie Ihre Daten durch erhöhte Wachsamkeit gegenüber potenziellen E-Mail-Bedrohungen.
+            </p>
+          </section>
+        </ContentOverlapPortrait>
+      </Section>
+
+
+      <Section id='individuelle_loesung'>
         <div class='grid grid-flow-row justify-center gap-16 sm:grid-flow-col'>
           {/* Wuerttembergische Basispaket Features */}
           <div class='card mx-auto grid items-start gap-8 shadow-md'>
@@ -245,14 +278,16 @@ export default component$(() => {
           </div>
           {/* Wuerttembergische Basispaket Teaser */}
           <section class='flex max-w-md flex-col gap-4 px-4'>
-            <LinkedHeading href='#ihre_vorteile'>
-              <HeadingSegmentSecondary text='Ihre' />{' '}
-              <HeadingSegmentSecondary800 text='Vorteile' />
+            <LinkedHeading href='#individuelle_loesung'>
+              <HeadingSegmentSecondary text='Individuelle' />{' '}
+              <HeadingSegmentSecondary800 text='Lösung' />
             </LinkedHeading>
             <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
-              Unser Gesundheits-Paket bietet Ihnen für all Ihre Mitglieder dedizierte Inhalte und individualisierte Phishing-Mails um vor Cyber-Bedrohungen in KRITIS Unternehmen zu sensibilisieren.
-              
-Unsere E-Mails zeichnen sich durch anspruchsvolle Sprache und präzise Semantik aus, verwenden authentische Absenderadressen und beinhalten eine persönliche Anrede, um die Authentizität zu steigern. Da gerade im Gesundheitssektor mit sehr sensiblen Daten umgegangen wird, bieten wir Ihnen exklusive Inhalte, um besser zu schulen und zu sensibilisieren. Wir unterstützen Sie dabei, Richtlinien und Vorgaben einzuhalten.
+Für das Gesundheitswesen haben wir ein Paket geschnürrt, welches Ihnen die folgende Vorteile bietet:
+- Dedizierte Phishing-Simulationen mit eigenen Domains wie ratiopharm-info.de
+- Von Ihnen vorgegebene 
+- Anleitungen speziell für E-Mail-Systeme Ihrer Anwender
+- Besonders günstiger Preis
 </p>
           </section>
         </div>
