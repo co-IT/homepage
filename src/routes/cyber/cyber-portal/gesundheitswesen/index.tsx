@@ -37,8 +37,9 @@ import type { DocumentHead } from '@builder.io/qwik-city';
 import { LinkedHeading } from '~/components/link-heading';
 import { PricePerUsePerMonth } from '~/components/pricing/price-per-user-per-month';
 import { ProductFeatureList } from '~/components/product-feature-list';
-import { WuerttembergischeLogo } from '~/components/wuerttembergische/logo';
 import style from './styles.css?inline';
+
+import PharmassecLogo from '~/media/gesundheitswesen/pharmassec_logo.png?jsx';
 
 export default component$(() => {
   useStyles$(style);
@@ -275,7 +276,7 @@ export default component$(() => {
         <div class='grid grid-flow-row justify-center gap-16 sm:grid-flow-col'>
           {/* Wuerttembergische Basispaket Features */}
           <div class='card mx-auto grid items-start gap-8 shadow-md'>
-            <WuerttembergischeLogo />
+            <PharmassecLogo />
             <ProductFeatureList features={wuerttembergischeFeatures} />
             <a
               href='https://wuerttembergische.co-IT.eu'
