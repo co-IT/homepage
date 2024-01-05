@@ -26,17 +26,17 @@ import PharmassecLogo from '~/media/gesundheitswesen/pharmassec_logo.png?jsx';
 export default component$(() => {
   return (
     <>
-      <Section id='besonderheiten'>
+      <Section id='cyber-risiken'>
         <ContentOverlapPortrait
           image={{
             source:
               '/img/cyber/cyber-portal/gesundheitswesen/besonderheiten.webp',
-            alternateText: 'Besonderheiten im Gesundheitswesen'
+            alternateText: '3 Holzklötze die aufeinandergestapelt sind'
           }}
         >
           <section q:slot='article' class='flex flex-col space-y-4'>
-            <LinkedHeading href='#besonderheiten'>
-              <HeadingSegmentSecondary text='Besonderheiten im' />
+            <LinkedHeading href='#cyber-risiken'>
+              <HeadingSegmentSecondary text='Cyber Risiken im' />
               &nbsp;
               <HeadingSegmentSecondary800 text='Gesundheitswesen' />
             </LinkedHeading>
@@ -45,13 +45,15 @@ export default component$(() => {
               der kritischen Infrastruktur ist der Schutz sensibler Daten gerade
               im Gesundheitswesen eine enorme Herausforderung. Die
               Gesundheitsbranche unterliegt strengen Sicherheitsauflagen: zum
-              einen durch die <strong>DSGVO</strong>, zum anderen durch
-              Regularien wie dem <strong>IT-Sicherheitsgesetz 2.0</strong>. Uns
-              ist bewusst, dass es im Gesundheitswesen keinen klassischen
-              Büroalltag gibt, umso wichtiger ist es hier regelmäßig zu
-              sensibilisieren. Sichern Sie Ihre Daten durch zukunftsorientiert
-              Wachsamkeit gegenüber potenziellen E-Mail-Bedrohungen - nie war
-              der Schutz Ihrer Daten wichtiger.
+              einen durch die <strong>DSGVO</strong>, die Patientendaten als
+              besonders schützenswert erachtet, zum anderen durch Regularien wie
+              dem <strong>IT-Sicherheitsgesetz 2.0</strong> und der strengeren{' '}
+              <strong>NIS 2 Richtlinie</strong>. Uns ist bewusst, dass es im
+              Gesundheitswesen keinen klassischen Büroalltag gibt, umso
+              wichtiger ist es hier regelmäßig zu sensibilisieren. Die Zukunft
+              Ihrer Patientendaten liegt in Ihrer wachsamen Vorsorge gegen
+              potenzielle E-Mail-Bedrohungen - nie war der Schutz Ihrer Daten
+              wichtiger.
             </p>
           </section>
         </ContentOverlapPortrait>
@@ -112,10 +114,11 @@ export default component$(() => {
             </LinkedHeading>
             <p class='leading-7'>
               Wir haben spezialisierte Szenarien und aktuelle Themen aus dem
-              Gesundheitswesen in Form von Phishing-Mails umgesetzt - somit wird
+              Gesundheitswesen in Form von Phishing-Mails umgesetzt. Somit wird
               Ihren Mitgliedern das perfekte Awareness-Training geboten - gerade
-              im Hinblick auf die NIS 2 Richtlinien, welche bis Mitte 2024
-              umgesetzt werden sollen. Unser Gesundheitswesen-Paket bietet Ihnen
+              im Hinblick auf die <strong>NIS 2 Richtlinien</strong>, welche bis
+              Mitte 2024 umgesetzt werden sollen und unter anderem regelmäßige
+              Schulungen fordern. Unser Gesundheitswesen-Paket bietet Ihnen
               exklusive Vorteile, darunter:
             </p>
             <ul class='list-inside list-disc'>
