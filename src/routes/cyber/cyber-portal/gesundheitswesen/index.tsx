@@ -12,7 +12,7 @@ import {
   HeadingSegmentSecondary800
 } from '~/components/heading-segment';
 
-import { wuerttembergischeFeatures } from './resources';
+import { pharmassecFeatures } from './resources';
 
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { LinkedHeading } from '~/components/link-heading';
@@ -129,10 +129,9 @@ export default component$(() => {
 
       <Section id='ihr_portal'>
         <div class='grid grid-flow-row justify-center gap-16 sm:grid-flow-col'>
-          {/* Wuerttembergische Basispaket Features */}
           <div class='mx-auto grid items-start gap-8 rounded-md p-4 shadow-md'>
             <PharmassecLogo />
-            <ProductFeatureList features={wuerttembergischeFeatures} />
+            <ProductFeatureList features={pharmassecFeatures} />
             <a
               href='https://wuerttembergische.co-IT.eu'
               target='_blank'
@@ -141,11 +140,10 @@ export default component$(() => {
               Zum Cyber Portal
             </a>
           </div>
-          {/* Wuerttembergische Basispaket Teaser */}
           <section class='flex max-w-md flex-col gap-4 px-4'>
             <LinkedHeading href='#individuelle_loesung'>
-              <HeadingSegmentSecondary text='Ihre Marke,' />{' '}
-              <HeadingSegmentSecondary800 text='Ihr Portal' />
+              <HeadingSegmentSecondary text='Individuelle' />{' '}
+              <HeadingSegmentSecondary800 text='Lösung' />
             </LinkedHeading>
             <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
               Für das Gesundheitswesen haben wir ein Paket geschnürrt, welches
@@ -158,12 +156,12 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section id='white-label' backgroundColor='gray'>
+      <Section id='ihr-portal' backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='YbaUJQYRojE'>
           <section class='flex flex-col space-y-4'>
-            <LinkedHeading href='#kostenfreie_basisversion'>
-              <HeadingSegmentSecondary text='White' />
-              <HeadingSegmentSecondary800 text='-Label' />
+            <LinkedHeading href='#ihr-portal'>
+              <HeadingSegmentSecondary text='Ihre Marke,' />{' '}
+              <HeadingSegmentSecondary800 text='Ihr Portal' />
             </LinkedHeading>
             <p class='leading-7'>----</p>
           </section>
