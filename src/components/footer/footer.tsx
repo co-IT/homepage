@@ -1,9 +1,12 @@
 import { component$ } from '@builder.io/qwik';
-import { Link } from '@builder.io/qwik-city';
+import { Link, useDocumentHead } from '@builder.io/qwik-city';
 import { GithubIcon, MapIcon, YoutubeIcon } from '../icons';
 import { Logo } from '../logo/logo';
+import { Popover, PopoverContent, PopoverTrigger } from '../qwik-ui';
 
 export const Footer = component$(() => {
+  const documentHead = useDocumentHead();
+
   const links = [
     {
       textFirstLine: 'Lösungen',
@@ -29,7 +32,7 @@ export const Footer = component$(() => {
 
   return (
     <>
-      <div class='container relative mt-48 flex w-full flex-col bg-secondary-900 pt-12 pb-16 lg:pb-32'>
+      <div class='container relative mt-48 flex w-full flex-col bg-secondary-900 pb-16 pt-12 lg:pb-32'>
         <div class='flex flex-col lg:flex-row'>
           <div class='mb-14 flex w-full justify-center lg:mb-0 lg:mr-24 lg:w-4/12 lg:justify-end'>
             <Logo />
@@ -51,6 +54,29 @@ export const Footer = component$(() => {
               </div>
             </Link>
           ))}
+
+          {documentHead.frontmatter.footer?.attributions.map(
+            (
+              attribution: { title: string; sources: string[] },
+              key: number
+            ) => (
+              <Popover
+                key={key}
+                class='mb-5 w-full text-center font-bold leading-7 text-white'
+              >
+                <PopoverContent>
+                  <ul class='list-item w-60 list-inside space-y-2 rounded-md bg-gray-800 p-4 text-white shadow-md'>
+                    {attribution.sources.map((source, key) => (
+                      <li key={key}>{source}</li>
+                    ))}
+                  </ul>
+                </PopoverContent>
+                <PopoverTrigger>
+                  <div class=''>{attribution.title}</div>
+                </PopoverTrigger>
+              </Popover>
+            )
+          )}
         </div>
 
         <div class='right-14 top-40 flex flex-col justify-end gap-y-6 px-16 lg:absolute lg:flex-row lg:gap-x-5 lg:px-0'>
