@@ -239,9 +239,15 @@ export const head: DocumentHead = {
       attributions: [
         {
           title: 'Designed by Freepik',
-          sources: [
-            'https://de.freepik.com/fotos-kostenlos/vorderansichtarzt-der-medizinisches-element-haelt_12412966.htm#page=3&query=medizin%20baustein&position=13&from_view=search&track=ais&uuid=f0b16208-40f7-4803-915b-235db8c7ae36',
-            'https://de.freepik.com/fotos-kostenlos/nahaufnahme-des-gesundheitspersonals_18776122.htm#page=2&query=%C3%A4rzte%20h%C3%A4nde&position=21&from_view=search&track=ais&uuid=6463e737-bb77-4a3f-ad43-dd1677d23d94'
+          images: [
+            {
+              title: 'Vorderansicht Arzt',
+              href: 'https://de.freepik.com/fotos-kostenlos/vorderansichtarzt-der-medizinisches-element-haelt_12412966.htm#page=3&query=medizin%20baustein&position=13&from_view=search&track=ais&uuid=f0b16208-40f7-4803-915b-235db8c7ae36'
+            },
+            {
+              title: 'Nahaufnahme des Gesundheitspersonals',
+              href: 'https://de.freepik.com/fotos-kostenlos/nahaufnahme-des-gesundheitspersonals_18776122.htm#page=2&query=%C3%A4rzte%20h%C3%A4nde&position=21&from_view=search&track=ais&uuid=6463e737-bb77-4a3f-ad43-dd1677d23d94'
+            }
           ]
         }
       ]

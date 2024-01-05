@@ -31,17 +31,17 @@ export const Footer = component$(() => {
   ];
 
   return (
-    <>
+    <footer>
       <div class='container relative mt-48 flex w-full flex-col bg-secondary-900 pb-16 pt-12 lg:pb-32'>
         <div class='flex flex-col lg:flex-row'>
-          <div class='mb-14 flex w-full justify-center lg:mb-0 lg:mr-24 lg:w-4/12 lg:justify-end'>
+          <div class='mb-14 flex w-full justify-center lg:mb-0 lg:mr-24 lg:w-3/12 lg:justify-end'>
             <Logo />
           </div>
 
           {links.map((link, key) => (
             <Link
               href={link.path}
-              class='mb-5 w-full text-center lg:mb-0 lg:w-2/12'
+              class='mb-5 w-full text-center lg:mb-0 lg:w-1/12'
               key={key}
             >
               <div class='flex flex-col gap-y-2'>
@@ -57,22 +57,33 @@ export const Footer = component$(() => {
 
           {documentHead.frontmatter.footer?.attributions.map(
             (
-              attribution: { title: string; sources: string[] },
+              attribution: {
+                title: string;
+                images: { title: string; href: string }[];
+              },
               key: number
             ) => (
               <Popover
                 key={key}
-                class='mb-5 w-full text-center font-bold leading-7 text-white'
+                class='mb-5 w-full text-center font-bold leading-7 text-white lg:mb-0 lg:w-2/12'
               >
                 <PopoverContent>
                   <ul class='list-item w-60 list-inside space-y-2 rounded-md bg-gray-800 p-4 text-white shadow-md'>
-                    {attribution.sources.map((source, key) => (
-                      <li key={key}>{source}</li>
+                    {attribution.images.map((image, key) => (
+                      <li key={key}>
+                        <a
+                          href={image.href}
+                          class='font-normal hover:underline'
+                          target='_blank'
+                        >
+                          {image.title}
+                        </a>
+                      </li>
                     ))}
                   </ul>
                 </PopoverContent>
                 <PopoverTrigger>
-                  <div class=''>{attribution.title}</div>
+                  <span>{attribution.title}</span>
                 </PopoverTrigger>
               </Popover>
             )
@@ -149,6 +160,6 @@ export const Footer = component$(() => {
           AGB
         </a>
       </div>
-    </>
+    </footer>
   );
 });
