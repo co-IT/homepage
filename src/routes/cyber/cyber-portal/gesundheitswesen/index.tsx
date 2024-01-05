@@ -97,6 +97,21 @@ export default component$(() => {
         </VideoOverlapLandscape>
       </Section>
 
+      <Section id='ihr_cyber-paket' backgroundColor='gray'>
+        <VideoOverlapLandscape youTubeVideoId='YbaUJQYRojE'>
+          <section class='flex flex-col space-y-4'>
+            <LinkedHeading href='#kostenfreie_basisversion'>
+              <HeadingSegmentSecondary text='Ihr' />{' '}
+              <HeadingSegmentSecondary800 text='Cyber-Paket' />
+            </LinkedHeading>
+            <p class='leading-7'>
+              Eigene Inhalte, Eigene Domains, Individuelle Hilfestellung
+              (Anleitungsvideos Spamfilter)
+            </p>
+          </section>
+        </VideoOverlapLandscape>
+      </Section>
+
       <Section id='ihre_herausforderungen'>
         <ContentOverlapPortrait
           image={{
