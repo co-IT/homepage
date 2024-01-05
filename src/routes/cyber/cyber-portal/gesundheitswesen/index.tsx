@@ -118,7 +118,7 @@ export default component$(() => {
               umgesetzt werden sollen. Unser Gesundheitswesen-Paket bietet Ihnen
               exklusive Vorteile, darunter:
             </p>
-            <ul class='list-disc'>
+            <ul class='list-inside list-disc'>
               <li>Dedizierte Phishing-Simulationen</li>
               <li>
                 Maßgeschneiderte Anleitungen für die E-Mail-Systeme Ihrer
