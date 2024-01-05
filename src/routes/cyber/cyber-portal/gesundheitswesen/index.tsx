@@ -295,7 +295,7 @@ export default component$(() => {
       </Section>
 
       <Section id='ihr_plus_an_sicherheit' backgroundColor='gray'>
-        <VideoOverlapLandscape youTubeVideoId='FjThxiKBApc'>
+        <VideoOverlapLandscape youTubeVideoId='4pvfj1ggRlQ'>
           <section class='flex flex-col space-y-4'>
             <LinkedHeading href='#ihr_plus_an_sicherheit'>
               <HeadingSegmentSecondary text='Ihr' />{' '}
