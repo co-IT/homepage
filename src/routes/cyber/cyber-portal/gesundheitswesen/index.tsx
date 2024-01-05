@@ -98,7 +98,7 @@ export default component$(() => {
       </Section>
 
       <Section id='ihr_cyber-paket' backgroundColor='gray'>
-        <VideoOverlapLandscape youTubeVideoId='YbaUJQYRojE'>
+        <VideoOverlapLandscape youTubeVideoId='4pvfj1ggRlQ'>
           <section class='flex flex-col space-y-4'>
             <LinkedHeading href='#kostenfreie_basisversion'>
               <HeadingSegmentSecondary text='Ihr' />{' '}
@@ -112,38 +112,10 @@ export default component$(() => {
         </VideoOverlapLandscape>
       </Section>
 
-      <Section id='ihre_herausforderungen'>
-        <ContentOverlapPortrait
-          image={{
-            source: '/img/cyber/cyber-portal/gesundheitswesen/Entscheiden.webp',
-            alternateText: 'Man looking at the sunset'
-          }}
-        >
-          <section q:slot='article' class='flex flex-col space-y-4'>
-            <LinkedHeading href='#ihre_herausforderungen'>
-              <HeadingSegmentSecondary800 text='Ihre' />{' '}
-              <HeadingSegmentSecondary text='Herausforderungen' />
-            </LinkedHeading>
-            <p class='pb-4 leading-7'>
-              Als unverzichtbarer Teil der kritischen Infrastruktur ist der
-              Schutz sensibler Daten in Apotheken von entscheidender Bedeutung.
-              Die Gesundheitsbranche unterliegt strengen Sicherheitsauflagen und
-              das IT-Sicherheitsgesetz 2.0 sowie die NIS 2 Richtlinie geben
-              klare Regeln vor – darunter regelmäßige Mitarbeiterschulungen.
-              Unsere auf den Gesundheitssektor zugeschnittenen, kontrollierten
-              Phishing-Tests bieten das perfekte Awareness-Training um Ihre
-              Mitglieder gegen Gefahren zu Schulen und Sie auf die strengeren
-              Sicherheitsstandards vorzubereiten. Sichern Sie Ihre Daten durch
-              erhöhte Wachsamkeit gegenüber potenziellen E-Mail-Bedrohungen.
-            </p>
-          </section>
-        </ContentOverlapPortrait>
-      </Section>
-
-      <Section id='individuelle_loesung'>
+      <Section id='ihr_portal'>
         <div class='grid grid-flow-row justify-center gap-16 sm:grid-flow-col'>
           {/* Wuerttembergische Basispaket Features */}
-          <div class='card mx-auto grid items-start gap-8 shadow-md'>
+          <div class='mx-auto grid items-start gap-8 rounded-md p-4 shadow-md'>
             <PharmassecLogo />
             <ProductFeatureList features={wuerttembergischeFeatures} />
             <a
@@ -157,8 +129,8 @@ export default component$(() => {
           {/* Wuerttembergische Basispaket Teaser */}
           <section class='flex max-w-md flex-col gap-4 px-4'>
             <LinkedHeading href='#individuelle_loesung'>
-              <HeadingSegmentSecondary text='Individuelle' />{' '}
-              <HeadingSegmentSecondary800 text='Lösung' />
+              <HeadingSegmentSecondary text='Ihre Marke,' />{' '}
+              <HeadingSegmentSecondary800 text='Ihr Portal' />
             </LinkedHeading>
             <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
               Für das Gesundheitswesen haben wir ein Paket geschnürrt, welches
