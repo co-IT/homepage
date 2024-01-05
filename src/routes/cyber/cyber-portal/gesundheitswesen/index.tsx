@@ -42,10 +42,14 @@ export default component$(() => {
               der kritischen Infrastruktur ist der Schutz sensibler Daten gerade
               im Gesundheitswesen eine enorme Herausforderung. Die
               Gesundheitsbranche unterliegt strengen Sicherheitsauflagen: zum
-              einen durch die DSGVO, zum anderen durch Regularien wie dem
-              IT-Sicherheitsgesetz 2.0. Uns ist bewusst, dass es im
-              Gesundheitswesen keinen klassischen Büroalltag gibt, umso
-              wichtiger ist es hier regelmäßig zu sensibilisieren.
+              einen durch die <strong>DSGVO</strong>, zum anderen durch
+              Regularien wie dem
+              <strong>IT-Sicherheitsgesetz 2.0</strong>. Uns ist bewusst, dass
+              es im Gesundheitswesen keinen klassischen Büroalltag gibt, umso
+              wichtiger ist es hier regelmäßig zu sensibilisieren. Sichern Sie
+              Ihre Daten durch zukunftsorientiert Wachsamkeit gegenüber
+              potenziellen E-Mail-Bedrohungen - nie war der Schutz Ihrer Daten
+              wichtiger.
             </p>
           </section>
         </ContentOverlapPortrait>
