@@ -163,7 +163,15 @@ export default component$(() => {
               <HeadingSegmentSecondary text='Ihre Marke,' />{' '}
               <HeadingSegmentSecondary800 text='Ihr Portal' />
             </LinkedHeading>
-            <p class='leading-7'>----</p>
+            <p class='leading-7'>
+              Willkommen bei Ihrem maßgeschneiderten Cyber Portal. Diese Option
+              ist für Sie interessant, wenn Sie einen eigenen Anwenderkreis für
+              Themen in der Cyber Security fit machen möchten. Sie erhalten Ihre
+              eigene Instanz unter eigenem Namen und können Ihr firmeneigenes
+              Branding einstellen. Auch Ihre Kunden können Sie in Ihr Cyber
+              Portal einladen und diese damit noch enger an Ihr Unternehmen
+              binden.
+            </p>
           </section>
         </VideoOverlapLandscape>
       </Section>

@@ -2,7 +2,7 @@ import type { ProductFeature } from '~/components/product-feature-list';
 
 export const pharmassecFeatures: ProductFeature[] = [
   {
-    text: 'Anzahl Simulationen: 24',
+    text: 'Anzahl Simulationen: 18',
     detail:
       'Es handelt sich um die übers Jahr insgesamt verschickten Phishing-Simulationen. Bei einer geringeren Vertragslaufzeit erhalten Sie pro Monat der Vertragslaufzeit jeweils 1/12 der Phishing-Mails.',
     class: 'font-medium'
