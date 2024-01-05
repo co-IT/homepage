@@ -1,6 +1,6 @@
 import type { YouTubeVideo } from '~/components/youtube';
 
-export const cyberVerantwortlicheVideos: YouTubeVideo[] = [
+export const anwenderVideos: YouTubeVideo[] = [
   {
     id: 'e6bEOffcyv0',
     title: 'Freigabe der Phishing Simulation in GMX',

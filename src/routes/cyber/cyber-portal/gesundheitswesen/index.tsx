@@ -1,4 +1,5 @@
 import { component$ } from '@builder.io/qwik';
+import type { DocumentHead } from '@builder.io/qwik-city';
 
 import { Section } from '~/components/section';
 
@@ -12,11 +13,13 @@ import {
   HeadingSegmentSecondary800
 } from '~/components/heading-segment';
 
-import { pharmassecFeatures } from './resources';
+import { anwenderVideos, pharmassecFeatures } from './resources';
 
-import type { DocumentHead } from '@builder.io/qwik-city';
 import { LinkedHeading } from '~/components/link-heading';
 import { ProductFeatureList } from '~/components/product-feature-list';
+
+import { YouTubeVideoGrid } from '~/components/youtube';
+import { LinkCallToAction } from '../../phishing/components';
 
 import PharmassecLogo from '~/media/gesundheitswesen/pharmassec_logo.png?jsx';
 
@@ -174,6 +177,33 @@ export default component$(() => {
             </p>
           </section>
         </VideoOverlapLandscape>
+      </Section>
+
+      <Section id='wichtig_fuer_anwender'>
+        <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
+          <LinkedHeading href='#wichtig_fuer_cyber_verantwortliche'>
+            Wichtig für <HeadingSegmentSecondary800 text='Anwender' />
+          </LinkedHeading>
+
+          <p class='mx-auto max-w-xl leading-7'>
+            Die besten Phishing-Mails helfen nichts, wenn diese nicht den
+            Posteingang des Empfängers erreichen. Geben Sie deshalb unseren
+            E-Mail-Server und unsere Domains in Ihrer Firewall und in den
+            Postfächern frei. Nur dadurch können Sie sicherstellen, dass
+            Auswertungen zum Klickverhalten korrekt sind. Damit Sie schnell
+            starten können, haben wir für gängige Produkte wie Microsofts
+            "Exchange Server" Anleitungsvideos bereitgestellt.
+          </p>
+
+          <LinkCallToAction
+            href='https://e.co-it.eu/cyberportal-adminkonfiguration'
+            target='_blank'
+          >
+            Freigaberegeln anschauen
+          </LinkCallToAction>
+
+          <YouTubeVideoGrid videos={anwenderVideos} />
+        </section>
       </Section>
     </>
   );
