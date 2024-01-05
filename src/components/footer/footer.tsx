@@ -55,7 +55,7 @@ export const Footer = component$(() => {
             </Link>
           ))}
 
-          {documentHead.frontmatter.footer?.attributions.map(
+          {documentHead.frontmatter.footer?.attributions?.map(
             (
               attribution: {
                 title: string;
