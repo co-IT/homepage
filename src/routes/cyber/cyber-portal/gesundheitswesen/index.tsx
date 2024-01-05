@@ -135,13 +135,12 @@ export default component$(() => {
           <div class='mx-auto grid items-start gap-8 rounded-md p-4 shadow-md'>
             <PharmassecLogo />
             <ProductFeatureList features={pharmassecFeatures} />
-            <a
-              href='https://wuerttembergische.co-IT.eu'
+            <LinkCallToAction
+              href='https://e.co-it.eu/cyber/gesundheitswesen/termin-vereinbaren'
               target='_blank'
-              class='rounded-[3.5rem] bg-[#f84914] p-4 text-center text-white transition-colors hover:bg-[#d33e11]'
             >
-              Zum Cyber Portal
-            </a>
+              Termin vereinbaren
+            </LinkCallToAction>
           </div>
           <section class='flex max-w-md flex-col gap-4 px-4'>
             <LinkedHeading href='#individuelle_loesung'>
@@ -179,6 +178,13 @@ export default component$(() => {
               wir Ihnen eine Schnittstelle, um automatisiert Kunden
               freizuschalten.
             </p>
+
+            <LinkCallToAction
+              href='https://e.co-it.eu/cyber/gesundheitswesen/termin-vereinbaren'
+              target='_blank'
+            >
+              Termin vereinbaren
+            </LinkCallToAction>
           </section>
         </VideoOverlapLandscape>
       </Section>
