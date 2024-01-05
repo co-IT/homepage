@@ -84,20 +84,17 @@ export default component$(() => {
       <Section id='cyber_portal'>
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
-            <LinkedHeading href='#kostenfreie_basisversion'>
+            <LinkedHeading href='#cyber_portal'>
               <HeadingSegmentSecondary text='Cyber' />{' '}
               <HeadingSegmentSecondary800 text='Portal' />
             </LinkedHeading>
             <p class='leading-7'>
-              Wir haben spezialisierte Szenarien und aktuelle Themen aus dem
-              Gesundheitswesen in Form von Phishing-Mails umgesetzt – somit wird
-              Ihren Mitgliedern das perfekte Awareness-Training geboten – gerade
-              im Hinblick auf die NIS 2 Richtlinien, welche bis Mitte 2024
-              umgesetzt werden sollen. Unser Gesundheitswesen-Paket bietet Ihnen
-              exklusive Vorteile, darunter: - Dedizierte Phishing-Simulationen
-              mit individuellen Domains wie ratiopharm-info.de -
-              Maßgeschneiderte Anleitungen für die E-Mail-Systeme Ihrer Anwender
-              - Attraktive Preiskonditionen, speziell für Sie.
+              Bei der Basisfunktion unseres Cyber Portals handelt es sich um
+              eine Individuallösung für alle Kunden der Württembergischen
+              Versicherung. Die Plattform soll allen Versicherungsnehmern
+              gleichermaßen zugutekommen, indem der Fokus auf leicht zu
+              bedienende Funktionen, praxisrelevantes Wissen und hochwertige
+              Phishing-Simulationen gelegt wird.
             </p>
           </section>
         </VideoOverlapLandscape>
@@ -106,7 +103,7 @@ export default component$(() => {
       <Section id='ihr_cyber-paket' backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='4pvfj1ggRlQ'>
           <section class='flex flex-col space-y-4'>
-            <LinkedHeading href='#kostenfreie_basisversion'>
+            <LinkedHeading href='#ihr_cyber-paket'>
               <HeadingSegmentSecondary text='Ihr' />{' '}
               <HeadingSegmentSecondary800 text='Cyber-Paket' />
             </LinkedHeading>
