@@ -53,7 +53,8 @@ export default component$(() => {
       <Section id='unser_antrieb' backgroundColor='gray'>
         <ContentOverlapPortrait
           image={{
-            source: '/img/cyber/cyber-portal/gesundheitswesen/Antrieb.webp',
+            source:
+              '/img/cyber/cyber-portal/gesundheitswesen/unser_antrieb.webp',
             alternateText: 'Unser Antrieb'
           }}
         >
