@@ -8,14 +8,19 @@ export const wuerttembergischeFeatures: ProductFeature[] = [
     class: 'font-medium'
   },
   {
-    text: 'Sprachniveau: Hoch',
-    detail:
-      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
-  },
-  {
     text: 'Branche: Gesundheitswesen',
     detail:
       'Sprechen Sie uns an, was Sie sich für Ihre Kunden wünschen.'
+  },
+  {
+    text: 'Eigene Inhalte',
+    detail:
+      'Wir gestalten mit Ihnen gemeinsam genau die Inhalte, die für Apotheken, Sanitärshäuser und Arztpraxen relevant sind, damit diese auf die gefährlichsten Phishing-Angriffe vorbereitet sind.'
+  },
+  {
+    text: 'Sprachniveau: Hoch',
+    detail:
+      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
   },
   {
     text: 'Randomisierung: überraschend',
