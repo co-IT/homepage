@@ -130,7 +130,7 @@ export default component$(() => {
         </VideoOverlapLandscape>
       </Section>
 
-      <Section id='ihr_portal'>
+      <Section id='individuelle_loesung'>
         <div class='grid grid-flow-row justify-center gap-16 sm:grid-flow-col'>
           <div class='mx-auto grid items-start gap-8 rounded-md p-4 shadow-md'>
             <PharmassecLogo />
