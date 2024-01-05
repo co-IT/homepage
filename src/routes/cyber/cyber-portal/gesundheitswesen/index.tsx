@@ -38,7 +38,7 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Gesundheitswesen' />
             </LinkedHeading>
             <p class='pb-4 leading-7'>
-              Was ist gesund in die kranke Cyber-Welt? Als unverzichtbarer Teil
+              Was ist gesund in der kranken Cyber-Welt? Als unverzichtbarer Teil
               der kritischen Infrastruktur ist der Schutz sensibler Daten gerade
               im Gesundheitswesen eine enorme Herausforderung. Die
               Gesundheitsbranche unterliegt strengen Sicherheitsauflagen: zum
