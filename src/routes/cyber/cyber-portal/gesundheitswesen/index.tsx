@@ -50,7 +50,7 @@ export default component$(() => {
         </ContentOverlapPortrait>
       </Section>
 
-      <Section id='unser_antrieb'>
+      <Section id='unser_antrieb' backgroundColor='gray'>
         <ContentOverlapPortrait
           image={{
             source: '/img/cyber/cyber-portal/gesundheitswesen/Antrieb.webp',
@@ -76,7 +76,7 @@ export default component$(() => {
         </ContentOverlapPortrait>
       </Section>
 
-      <Section id='kostenfreie_basisversion' backgroundColor='gray'>
+      <Section id='kostenfreie_basisversion'>
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
             <LinkedHeading href='#kostenfreie_basisversion'>
@@ -155,7 +155,7 @@ export default component$(() => {
         </VideoOverlapLandscape>
       </Section>
 
-      <Section id='ihr_plus_an_sicherheit' backgroundColor='gray'>
+      <Section id='ihr_plus_an_sicherheit'>
         <VideoOverlapLandscape youTubeVideoId='4pvfj1ggRlQ'>
           <section class='flex flex-col space-y-4'>
             <LinkedHeading href='#ihr_plus_an_sicherheit'>
@@ -182,7 +182,7 @@ export default component$(() => {
         </VideoOverlapLandscape>
       </Section>
 
-      <Section id='entscheiden_sie_mit'>
+      <Section id='entscheiden_sie_mit' backgroundColor='gray'>
         <ContentOverlapPortrait
           image={{
             source: '/img/cyber/cyber-portal/gesundheitswesen/Entscheiden.webp',
