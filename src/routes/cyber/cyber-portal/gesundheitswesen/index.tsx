@@ -31,14 +31,20 @@ export default component$(() => {
           }}
         >
           <section q:slot='article' class='flex flex-col space-y-4'>
-            <LinkedHeading href='#unser_antrieb'>
+            <LinkedHeading href='#besonderheiten'>
               <HeadingSegmentSecondary text='Besunderheiten im' />
               &nbsp;
               <HeadingSegmentSecondary800 text='Gesundheitswesen' />
             </LinkedHeading>
             <p class='pb-4 leading-7'>
-              Kritische Infrastruktur, Besonders sensible Daten, Kein
-              klassisches Büro.
+              Was ist gesund in die kranke Cyber-Welt? Als unverzichtbarer Teil
+              der kritischen Infrastruktur ist der Schutz sensibler Daten gerade
+              im Gesundheitswesen eine enorme Herausforderung. Die
+              Gesundheitsbranche unterliegt strengen Sicherheitsauflagen: zum
+              einen durch die DSGVO, zum anderen durch Regularien wie dem
+              IT-Sicherheitsgesetz 2.0. Uns ist bewusst, dass es im
+              Gesundheitswesen keinen klassischen Büroalltag gibt, umso
+              wichtiger ist es hier regelmäßig zu sensibilisieren.
             </p>
           </section>
         </ContentOverlapPortrait>
