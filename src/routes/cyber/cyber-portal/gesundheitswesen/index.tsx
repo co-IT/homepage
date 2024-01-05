@@ -43,13 +43,12 @@ export default component$(() => {
               im Gesundheitswesen eine enorme Herausforderung. Die
               Gesundheitsbranche unterliegt strengen Sicherheitsauflagen: zum
               einen durch die <strong>DSGVO</strong>, zum anderen durch
-              Regularien wie dem
-              <strong>IT-Sicherheitsgesetz 2.0</strong>. Uns ist bewusst, dass
-              es im Gesundheitswesen keinen klassischen Büroalltag gibt, umso
-              wichtiger ist es hier regelmäßig zu sensibilisieren. Sichern Sie
-              Ihre Daten durch zukunftsorientiert Wachsamkeit gegenüber
-              potenziellen E-Mail-Bedrohungen - nie war der Schutz Ihrer Daten
-              wichtiger.
+              Regularien wie dem <strong>IT-Sicherheitsgesetz 2.0</strong>. Uns
+              ist bewusst, dass es im Gesundheitswesen keinen klassischen
+              Büroalltag gibt, umso wichtiger ist es hier regelmäßig zu
+              sensibilisieren. Sichern Sie Ihre Daten durch zukunftsorientiert
+              Wachsamkeit gegenüber potenziellen E-Mail-Bedrohungen - nie war
+              der Schutz Ihrer Daten wichtiger.
             </p>
           </section>
         </ContentOverlapPortrait>
@@ -90,14 +89,15 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Portal' />
             </LinkedHeading>
             <p class='leading-7'>
-              Beim Cyber Portal handelt es sich um eine Individuallösung für
-              alle Kunden der Württembergischen Versicherung. Die Plattform soll
-              allen Versicherungsnehmern gleichermaßen zugutekommen, indem der
-              Fokus auf leicht zu bedienende Funktionen, praxisrelevantes Wissen
-              und hochwertige Phishing-Simulationen gelegt wird. Dabei stellt
-              die Württembergische als alleiniger Auftraggeber sicher, dass die
-              Basisversion kostenfrei weiterentwickelt und sicher betrieben
-              wird.
+              Wir haben spezialisierte Szenarien und aktuelle Themen aus dem
+              Gesundheitswesen in Form von Phishing-Mails umgesetzt – somit wird
+              Ihren Mitgliedern das perfekte Awareness-Training geboten – gerade
+              im Hinblick auf die NIS 2 Richtlinien, welche bis Mitte 2024
+              umgesetzt werden sollen. Unser Gesundheitswesen-Paket bietet Ihnen
+              exklusive Vorteile, darunter: - Dedizierte Phishing-Simulationen
+              mit individuellen Domains wie ratiopharm-info.de -
+              Maßgeschneiderte Anleitungen für die E-Mail-Systeme Ihrer Anwender
+              - Attraktive Preiskonditionen, speziell für Sie.
             </p>
           </section>
         </VideoOverlapLandscape>
@@ -111,9 +111,21 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Cyber-Paket' />
             </LinkedHeading>
             <p class='leading-7'>
-              Eigene Inhalte, Eigene Domains, Individuelle Hilfestellung
-              (Anleitungsvideos Spamfilter)
+              Wir haben spezialisierte Szenarien und aktuelle Themen aus dem
+              Gesundheitswesen in Form von Phishing-Mails umgesetzt - somit wird
+              Ihren Mitgliedern das perfekte Awareness-Training geboten - gerade
+              im Hinblick auf die NIS 2 Richtlinien, welche bis Mitte 2024
+              umgesetzt werden sollen. Unser Gesundheitswesen-Paket bietet Ihnen
+              exklusive Vorteile, darunter:
             </p>
+            <ul class='list-disc'>
+              <li>Dedizierte Phishing-Simulationen</li>
+              <li>
+                Maßgeschneiderte Anleitungen für die E-Mail-Systeme Ihrer
+                Anwender
+              </li>
+              <li>Attraktive Preiskonditionen, speziell für Sie</li>
+            </ul>
           </section>
         </VideoOverlapLandscape>
       </Section>
