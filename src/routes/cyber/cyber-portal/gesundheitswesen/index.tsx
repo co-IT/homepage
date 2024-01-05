@@ -167,13 +167,17 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Ihr Portal' />
             </LinkedHeading>
             <p class='leading-7'>
-              Willkommen bei Ihrem maßgeschneiderten Cyber Portal. Diese Option
-              ist für Sie interessant, wenn Sie einen eigenen Anwenderkreis für
-              Themen in der Cyber Security fit machen möchten. Sie erhalten Ihre
-              eigene Instanz unter eigenem Namen und können Ihr firmeneigenes
-              Branding einstellen. Auch Ihre Kunden können Sie in Ihr Cyber
-              Portal einladen und diese damit noch enger an Ihr Unternehmen
-              binden.
+              Sie möchten für Ihre Kunden einen Schritt weiter gehen,
+              nachhaltigen Wert stiften und Antworten auf drängende Fragen
+              bieten? Sie wollen, dass Ihr Unternehmen und Ihre Marke als
+              modern, digital und sicher wahrgenommen wird? Dann betreiben wir
+              für Sie das Cyber Portal - unter Ihrem Namen mit Ihrem
+              firmeneigenen Branding und Kunden-spezifischen Inhalten. Nutzen
+              Sie die eigene Instanz, um für sich Werbung zu machen, langjährige
+              Bestandskunden noch enger zu binden und Ihre Verkäufe mit
+              kostenfreien oder rabattierten Zugängen zu steigern. Gerne bauen
+              wir Ihnen eine Schnittstelle, um automatisiert Kunden
+              freizuschalten.
             </p>
           </section>
         </VideoOverlapLandscape>
