@@ -50,10 +50,8 @@ export default component$(() => {
               dem <strong>IT-Sicherheitsgesetz 2.0</strong> und der strengeren{' '}
               <strong>NIS 2 Richtlinie</strong>. Uns ist bewusst, dass es im
               Gesundheitswesen keinen klassischen Büroalltag gibt, umso
-              wichtiger ist es hier regelmäßig zu sensibilisieren. Die Zukunft
-              Ihrer Patientendaten liegt in Ihrer wachsamen Vorsorge gegen
-              potenzielle E-Mail-Bedrohungen - nie war der Schutz Ihrer Daten
-              wichtiger.
+              wichtiger ist es hier regelmäßig zu sensibilisieren. Die
+              Sicherheit zahlreicher Patientendaten obliegt Ihrer Verantwortung.
             </p>
           </section>
         </ContentOverlapPortrait>
