@@ -78,12 +78,12 @@ export default component$(() => {
         </ContentOverlapPortrait>
       </Section>
 
-      <Section id='kostenfreie_basisversion'>
+      <Section id='cyber_portal'>
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
             <LinkedHeading href='#kostenfreie_basisversion'>
-              <HeadingSegmentSecondary text='Kostenfreie' />{' '}
-              <HeadingSegmentSecondary800 text='Basisversion' />
+              <HeadingSegmentSecondary text='Cyber' />{' '}
+              <HeadingSegmentSecondary800 text='Portal' />
             </LinkedHeading>
             <p class='leading-7'>
               Beim Cyber Portal handelt es sich um eine Individuallösung für
