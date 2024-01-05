@@ -143,6 +143,18 @@ export default component$(() => {
         </div>
       </Section>
 
+      <Section id='white-label' backgroundColor='gray'>
+        <VideoOverlapLandscape youTubeVideoId='YbaUJQYRojE'>
+          <section class='flex flex-col space-y-4'>
+            <LinkedHeading href='#kostenfreie_basisversion'>
+              <HeadingSegmentSecondary text='White' />
+              <HeadingSegmentSecondary800 text='-Label' />
+            </LinkedHeading>
+            <p class='leading-7'>----</p>
+          </section>
+        </VideoOverlapLandscape>
+      </Section>
+
       <Section id='ihr_plus_an_sicherheit' backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='4pvfj1ggRlQ'>
           <section class='flex flex-col space-y-4'>
