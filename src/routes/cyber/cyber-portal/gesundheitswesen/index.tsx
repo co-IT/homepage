@@ -26,13 +26,14 @@ export default component$(() => {
       <Section id='besonderheiten'>
         <ContentOverlapPortrait
           image={{
-            source: '/img/cyber/cyber-portal/gesundheitswesen/Antrieb.webp',
+            source:
+              '/img/cyber/cyber-portal/gesundheitswesen/besonderheiten.webp',
             alternateText: 'Besonderheiten im Gesundheitswesen'
           }}
         >
           <section q:slot='article' class='flex flex-col space-y-4'>
             <LinkedHeading href='#besonderheiten'>
-              <HeadingSegmentSecondary text='Besunderheiten im' />
+              <HeadingSegmentSecondary text='Besonderheiten im' />
               &nbsp;
               <HeadingSegmentSecondary800 text='Gesundheitswesen' />
             </LinkedHeading>
