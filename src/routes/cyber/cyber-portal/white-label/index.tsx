@@ -70,6 +70,7 @@ Die Württembergische Versicherung bietet beispielsweise allen Versicherungsnehm
       <Section id='cyber-plattform' backgroundColor='gray'>
       
               <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
+
           <LinkedHeading href='#cyber-plattform'>
             Die Basis der <HeadingSegmentSecondary800 text='Cyber-Plattform' />
           </LinkedHeading>
