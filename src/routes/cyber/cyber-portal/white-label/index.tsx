@@ -26,16 +26,16 @@ import PharmassecLogo from '~/media/gesundheitswesen/pharmassec_logo.png?jsx';
 export default component$(() => {
   return (
     <>
-      <Section id='cyber-risiken'>
+      <Section id='hervorstechen-anderssein'>
         <ContentOverlapPortrait
           image={{
             source:
-              '/img/cyber/cyber-portal/gesundheitswesen/besonderheiten.webp',
+              '/img/cyber/cyber-portal/white-label/hardware.webp',
             alternateText: '3 Holzklötze die aufeinandergestapelt sind'
           }}
         >
           <section q:slot='article' class='flex flex-col space-y-4'>
-            <LinkedHeading href='#cyber-risiken'>
+            <LinkedHeading href='#hervorstechen-anderssein'>
               <HeadingSegmentSecondary text='Hervorstechen,' />
               &nbsp;
               <HeadingSegmentSecondary800 text='Anderssein' />
@@ -53,30 +53,25 @@ Wir transportieren Ihre Marke auf moderne Weise, indem wir unsere Lösung in ihr
         </ContentOverlapPortrait>
       </Section>
 
-      <Section id='unser_antrieb' backgroundColor='gray'>
-        <ContentOverlapPortrait
-          image={{
-            source:
-              '/img/cyber/cyber-portal/gesundheitswesen/unser_antrieb.webp',
-            alternateText: 'Unser Antrieb'
-          }}
-        >
-          <section q:slot='article' class='flex flex-col space-y-4'>
-            <LinkedHeading href='#unser_antrieb'>
-              <HeadingSegmentSecondary text='Beispiel:' />
-              &nbsp;
-              <HeadingSegmentSecondary800 text='Württembergische' />
-            </LinkedHeading>
-            <p class='pb-4 leading-7'>
-Die Württembergische Versicherung bietet beispielsweise allen Versicherungsnehmern, die eine Cyber-Versicherung für Schäden aus Ransomware-Angriffen abschließen, einen kostenlosen Zugang zum „Cyber Portal“. Unser Cyber-Produkt wurde in enger Absprache für die Bedarfe der Versicherungsnehmer adaptiert und <a href="https://wuerttembergische.co-IT.eu">hier</a> bereitgestellt. Die Württembergische verbindet dabei das Notwendige mit dem Nützlichen: Sie reduzieren Cyber-Risiken in den versicherten Unternehmen und heben sich von anderen Versicherern ab.
-            </p>
-            <p class='pb-4 leading-7'>
-Das Ergebnis zeigt die folgende Videoserie.
+      <Section id='beispiel_wuerttembergische' backgroundColor='gray'>
+      
+              <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
+          <LinkedHeading href='#beispiel_wuerttembergische'>
+            Wichtig für <HeadingSegmentSecondary800 text='Anwender' />
+          </LinkedHeading>
 
+          <p class='mx-auto max-w-xl leading-7'>
+Die Württembergische Versicherung bietet beispielsweise allen Versicherungsnehmern, die eine Cyber-Versicherung für Schäden aus Ransomware-Angriffen abschließen, einen kostenlosen Zugang zum „Cyber Portal“. Unser Cyber-Produkt wurde in enger Absprache für die Bedarfe der Versicherungsnehmer adaptiert und <a href="https://wuerttembergische.co-IT.eu">hier</a> bereitgestellt. Die Württembergische verbindet dabei das Notwendige mit dem Nützlichen: Sie reduzieren Cyber-Risiken in den versicherten Unternehmen und heben sich von anderen Versicherern ab.
+          </p>
+
+          <LinkCallToAction
+            href='https://e.co-it.eu/cyber/gesundheitswesen/termin-vereinbaren'
+            target='_blank'
+          >
+            Termin für Demo vereinbaren
+          </LinkCallToAction>
           <YouTubeVideoGrid videos={anwenderVideos} />
-            </p>
-          </section>
-        </ContentOverlapPortrait>
+        </section>
       </Section>
 
       <Section id='cyber_portal'>
@@ -187,33 +182,6 @@ In jedem Fall ist es immer möglich für Sie, ganz individuell, Ihre Wünsche um
             </LinkCallToAction>
           </section>
         </VideoOverlapLandscape>
-      </Section>
-
-      <Section id='wichtig_fuer_anwender'>
-        <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
-          <LinkedHeading href='#wichtig_fuer_cyber_verantwortliche'>
-            Wichtig für <HeadingSegmentSecondary800 text='Anwender' />
-          </LinkedHeading>
-
-          <p class='mx-auto max-w-xl leading-7'>
-            Die besten Phishing-Mails helfen nichts, wenn diese nicht den
-            Posteingang des Empfängers erreichen. Geben Sie deshalb unseren
-            E-Mail-Server und unsere Domains in Ihrer Firewall und in den
-            Postfächern frei. Nur dadurch können Sie sicherstellen, dass
-            Auswertungen zum Klickverhalten korrekt sind. Damit Sie schnell
-            starten können, haben wir für gängige Produkte wie Microsofts
-            "Exchange Server" Anleitungsvideos bereitgestellt.
-          </p>
-
-          <LinkCallToAction
-            href='https://e.co-it.eu/cyberportal-adminkonfiguration'
-            target='_blank'
-          >
-            Freigaberegeln anschauen
-          </LinkCallToAction>
-
-          <YouTubeVideoGrid videos={anwenderVideos} />
-        </section>
       </Section>
     </>
   );
