@@ -1,19 +1,22 @@
 import type { YouTubeVideo } from '~/components/youtube';
 
-export const cyberVerantwortlicheVideos: YouTubeVideo[] = [
+export const anwenderVideos: YouTubeVideo[] = [
   {
-    id: 'icrErze3A1g',
-    title: 'Freigabe der Phishing Simulation in Exchange Online',
-    thumb: '/img/cyber/cyber-portal/video-thumbnails/exchange-online.webp'
+    id: 'e6bEOffcyv0',
+    title: 'Freigabe der Phishing Simulation in GMX',
+    thumb:
+      '/img/cyber/cyber-portal/gesundheitswesen/wichtig-fuer-anwender/gmx.webp'
   },
   {
-    id: 'xP43TKhrg84',
-    title: 'Freigabe der Phishing Simulation in Exchange 2016 On-Premise',
-    thumb: '/img/cyber/cyber-portal/video-thumbnails/exchange-2016.webp'
+    id: 'NJRTV451uf0',
+    title: 'Freigabe der Phishing Simulation in Gmail',
+    thumb:
+      '/img/cyber/cyber-portal/gesundheitswesen/wichtig-fuer-anwender/gmail.webp'
   },
   {
-    id: 'MTtJwd7UrTA',
-    title: 'Freigabe der Phishing Simulation in Sophos XGS Mail Protection',
-    thumb: '/img/cyber/cyber-portal/video-thumbnails/sophos-xgs-mail.webp'
+    id: 'G8SZjZ4_BtA',
+    title: 'Freigabe der Phishing Simulation in web.de',
+    thumb:
+      '/img/cyber/cyber-portal/gesundheitswesen/wichtig-fuer-anwender/web.webp'
   }
 ];
