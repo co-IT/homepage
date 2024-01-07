@@ -53,20 +53,33 @@ Nutzen Sie dafür unser Cyber-Produkt: Es bietet Ihren Kunden einen Raum, um nac
         </ContentOverlapPortrait>
       </Section>
 
-      <Section id='beispiel_wuerttembergische' backgroundColor='gray'>
+      <Section id='beispiel_wuerttembergische'>
+        <VideoOverlapLandscape youTubeVideoId='KSSDqIIikvQ'>
+          <section class='flex flex-col space-y-4'>
+            <LinkedHeading href='#beispiel_wuerttembergische'>
+              <HeadingSegmentSecondary text='Beispiel' />{' '}
+              <HeadingSegmentSecondary800 text='Württembergische' />
+            </LinkedHeading>
+            <p class='leading-7'>
+Die Württembergische Versicherung bietet beispielsweise allen Versicherungsnehmern, die eine Cyber-Versicherung für Schäden aus Ransomware-Angriffen abschließen, einen kostenlosen Zugang zum „Cyber Portal“.<br/>Unser Cyber-Produkt wurde in enger Absprache für die Bedarfe der Versicherungsnehmer adaptiert und <a href="https://wuerttembergische.co-IT.eu">hier</a> bereitgestellt. Die Württembergische verbindet dabei das Notwendige mit dem Nützlichen:<br/> Sie reduzieren Cyber-Risiken in den versicherten Unternehmen und heben sich von anderen Versicherern ab.<br/>Machen Sie sich in der folgenden Videoserie selbst einen Eindruck.
+            </p>
+          </section>
+        </VideoOverlapLandscape>
+      </Section>
+      
+      <Section id='cyber-plattform' backgroundColor='gray'>
       
               <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
-          <LinkedHeading href='#beispiel_wuerttembergische'>
-            Beispiel <HeadingSegmentSecondary800 text='Württembergische' />
+          <LinkedHeading href='#cyber-plattform'>
+            Die Basis der <HeadingSegmentSecondary800 text='Cyber-Plattform' />
           </LinkedHeading>
 
           <p class='mx-auto max-w-xl leading-7'>
-Die Württembergische Versicherung bietet beispielsweise allen Versicherungsnehmern, die eine Cyber-Versicherung für Schäden aus Ransomware-Angriffen abschließen, einen kostenlosen Zugang zum „Cyber Portal“. Unser Cyber-Produkt wurde in enger Absprache für die Bedarfe der Versicherungsnehmer adaptiert und <a href="https://wuerttembergische.co-IT.eu">hier</a> bereitgestellt. Die Württembergische verbindet dabei das Notwendige mit dem Nützlichen:<br/> Sie reduzieren Cyber-Risiken in den versicherten Unternehmen und heben sich von anderen Versicherern ab.
+Unsere Cyber-Plattform bietet Ihnen von Haus aus <strong>6 Kurse</strong> mit praktischen Fähigkeiten und essenziellem Wissen für den sicheren Umgang in der digitalen Welt. In <strong>4 Examen</strong> mit anspruchsvollen, interaktiven Prüfungen können Ihre Kunden bzw. deren Mitarbeiter das Gelernte festigen. Abgerundet wird die Leistung mit dem <strong>Werkzeugkasten</strong>, der unter anderem die eigene Passwortsicherheit prüfen kann.
+            </p>
+            <p class='leading-7'>
+Das besondere Highlight sind unsere <strong>Phishing-Simulationen</strong>, mit denen Mitarbeiter kontinuierlich sensibilisiert werden. Damit können Ihre Kunden Cyber Risiken erheblich reduzieren und gleichzeitig wichtige IT-Richtlinien (z.B. NIS 2) umsetzen. 
           </p>
-          <p class='mx-auto max-w-xl leading-7'>
-            Machen Sie sich in der folgenden Videoserie selbst einen Eindruck.
-          </p>
-
           <LinkCallToAction
             href='https://e.co-it.eu/cyber/gesundheitswesen/termin-vereinbaren'
             target='_blank'
@@ -75,23 +88,6 @@ Die Württembergische Versicherung bietet beispielsweise allen Versicherungsnehm
           </LinkCallToAction>
           <YouTubeVideoGrid videos={anwenderVideos} />
         </section>
-      </Section>
-
-      <Section id='cyber-plattform'>
-        <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
-          <section class='flex flex-col space-y-4'>
-            <LinkedHeading href='#cyber-plattform'>
-              <HeadingSegmentSecondary text='Die Basis der' />{' '}
-              <HeadingSegmentSecondary800 text='Cyber-Plattform' />
-            </LinkedHeading>
-            <p class='leading-7'>
-Unsere Cyber-Plattform bietet Ihnen von Haus aus <strong>6 Kurse</strong> mit praktischen Fähigkeiten und essenziellem Wissen für den sicheren Umgang in der digitalen Welt. In <strong>4 Examen</strong> mit anspruchsvollen, interaktiven Prüfungen können Ihre Kunden bzw. deren Mitarbeiter das Gelernte festigen. Abgerundet wird die Leistung mit dem <strong>Werkzeugkasten</strong>, der unter anderem die eigene Passwortsicherheit prüfen kann.
-            </p>
-            <p class='leading-7'>
-Das besondere Highlight sind unsere <strong>Phishing-Simulationen</strong>, mit denen Mitarbeiter kontinuierlich sensibilisiert werden. Damit können Ihre Kunden Cyber Risiken erheblich reduzieren und gleichzeitig wichtige IT-Richtlinien (z.B. NIS 2) umsetzen. 
-            </p>
-          </section>
-        </VideoOverlapLandscape>
       </Section>
 
       <Section id='ihre-marke' backgroundColor='gray'>
