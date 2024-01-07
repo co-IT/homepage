@@ -2,21 +2,15 @@ import type { YouTubeVideo } from '~/components/youtube';
 
 export const anwenderVideos: YouTubeVideo[] = [
   {
-    id: 'e6bEOffcyv0',
-    title: 'Freigabe der Phishing Simulation in GMX',
+    id: 'KSSDqIIikvQ',
+    title: 'Cyber Portal Württembergische: Funktionalitäten der Anwender',
     thumb:
-      '/img/cyber/cyber-portal/gesundheitswesen/wichtig-fuer-anwender/gmx.webp'
+      '/img/cyber/cyber-portal/white-label/cyber_portal_anwender.webp'
   },
   {
-    id: 'NJRTV451uf0',
-    title: 'Freigabe der Phishing Simulation in Gmail',
+    id: '_SZyfQB7n7k',
+    title: 'Cyber Portal Württembergische: Funktionalitäten für Entscheider',
     thumb:
-      '/img/cyber/cyber-portal/gesundheitswesen/wichtig-fuer-anwender/gmail.webp'
-  },
-  {
-    id: 'G8SZjZ4_BtA',
-    title: 'Freigabe der Phishing Simulation in web.de',
-    thumb:
-      '/img/cyber/cyber-portal/gesundheitswesen/wichtig-fuer-anwender/web.webp'
+      '/img/cyber/cyber-portal/white-label/cyber_portal_verantwortliche.webp'
   }
 ];

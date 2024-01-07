@@ -69,8 +69,11 @@ Wir transportieren Ihre Marke auf moderne Weise, indem wir unsere Lösung in ihr
             </LinkedHeading>
             <p class='pb-4 leading-7'>
 Die Württembergische Versicherung bietet beispielsweise allen Versicherungsnehmern, die eine Cyber-Versicherung für Schäden aus Ransomware-Angriffen abschließen, einen kostenlosen Zugang zum „Cyber Portal“. Unser Cyber-Produkt wurde in enger Absprache für die Bedarfe der Versicherungsnehmer adaptiert und <a href="https://wuerttembergische.co-IT.eu">hier</a> bereitgestellt. Die Württembergische verbindet dabei das Notwendige mit dem Nützlichen: Sie reduzieren Cyber-Risiken in den versicherten Unternehmen und heben sich von anderen Versicherern ab.
+            </p>
+            <p class='pb-4 leading-7'>
 Das Ergebnis zeigt die folgende Videoserie.
 
+          <YouTubeVideoGrid videos={anwenderVideos} />
             </p>
           </section>
         </ContentOverlapPortrait>
@@ -84,7 +87,7 @@ Das Ergebnis zeigt die folgende Videoserie.
               <HeadingSegmentSecondary800 text='Cyber-Plattform' />
             </LinkedHeading>
             <p class='leading-7'>
-cUnsere Cyber-Plattform bietet Ihnen von Haus aus sechs Kurse mit praktischen Fähigkeiten und essenziellem Wissen für den sicheren Umgang in der digitalen Welt. In vier Examen mit anspruchsvollen, interaktiven Prüfungen können Ihre Kunden bzw. deren Mitarbeiter das Gelernte festigen. Abgerundet wird die Leistung mit dem Werkzeugkasten, der unter anderem die eigene Passwortsicherheit prüfen kann.
+Unsere Cyber-Plattform bietet Ihnen von Haus aus sechs Kurse mit praktischen Fähigkeiten und essenziellem Wissen für den sicheren Umgang in der digitalen Welt. In vier Examen mit anspruchsvollen, interaktiven Prüfungen können Ihre Kunden bzw. deren Mitarbeiter das Gelernte festigen. Abgerundet wird die Leistung mit dem Werkzeugkasten, der unter anderem die eigene Passwortsicherheit prüfen kann.
             </p>
             <p class='leading-7'>
 Das besondere Highlight sind unsere Phishing-Simulationen, mit denen Mitarbeiter kontinuierlich sensibilisiert werden. Damit können Ihre Kunden Cyber Risiken erheblich reduzieren und gleichzeitig wichtige IT-Richtlinien (z.B. NIS 2) umsetzen. 
@@ -217,14 +220,14 @@ In jedem Fall ist es immer möglich für Sie, ganz individuell, Ihre Wünsche um
 });
 
 export const head: DocumentHead = {
-  title: 'co-IT - Cyber Portal fürs Gesundheitswesen',
+  title: 'co-IT - Ihre Marke als Cyber-Produkt',
 
   frontmatter: {
     header: {
       type: 'content-page',
       configuration: {
         backgroundImage: {
-          source: '/img/cyber/cyber-portal/gesundheitswesen/header.webp',
+          source: '/img/cyber/cyber-portal/white-label/header.webp',
           alt: 'Two team mates checking an App on the tablet.'
         },
         heading: 'Ihre Cyber-Marke',
