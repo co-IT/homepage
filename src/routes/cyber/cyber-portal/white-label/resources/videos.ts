@@ -12,5 +12,17 @@ export const anwenderVideos: YouTubeVideo[] = [
     title: 'Cyber Portal Württembergische: Funktionalitäten für Entscheider',
     thumb:
       '/img/cyber/cyber-portal/white-label/cyber_portal_verantwortliche.webp'
+  },
+  {
+    id: 'Qsjrg9Mj5QQ',
+    title: 'Kurs: Effektives Basiswissen',
+    thumb:
+      '/img/cyber/cyber-portal/white-label/Kurs_Effektives_Basiswissen.webp'
+  },
+  {
+    id: 'LrjckqfadeE',
+    title: 'Kurs: E-Mail-Sicherheit',
+    thumb:
+      '/img/cyber/cyber-portal/white-label/Kurs_E-Mail-Sicherheit.webp'
   }
 ];
