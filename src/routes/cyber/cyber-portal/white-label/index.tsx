@@ -47,7 +47,7 @@ Was macht ihr Geschäft aus? Gehen Sie für Ihre Kunden gerne einen Schritt weit
 Nutzen Sie dafür unser Cyber-Produkt: Es bietet Ihren Kunden einen Raum, um nachhaltiges Praxiswissen auf verständliche Weise zu erlernen, dieses mit intensiven Prüfungen und realistischen Simulationen zu festigen und dabei Lernfortschritte systematisch sicherzustellen.
             </p>
             <p class='pb-4 leading-7'>
-Wir transportieren Ihre Marke auf moderne Weise, indem wir unsere Lösung in ihrem firmeneigenen Branding und auf Ihre Kundenbedürfnisse zugeschnitten betreiben. Erweitern Sie es optional mit eigenen Inhalten oder lassen Sie uns dedizierte Cyber-Werkzeuge für Ihre Anwender einbauen. Machen Sie Werbung mit ihrem Cyber-Produkt, binden Sie langjährige Bestandskunden noch enger oder steigern Sie Ihre Verkäufe mit kostenfreien Zugängen.
+<strong>Wir transportieren Ihre Marke auf moderne Weise</strong>, indem wir unsere Lösung in ihrem firmeneigenen Branding und auf Ihre Kundenbedürfnisse zugeschnitten betreiben. Erweitern Sie es optional mit eigenen Inhalten oder lassen Sie uns dedizierte Cyber-Werkzeuge für Ihre Anwender einbauen. Machen Sie Werbung mit ihrem Cyber-Produkt, binden Sie langjährige Bestandskunden noch enger oder steigern Sie Ihre Verkäufe mit kostenfreien Zugängen.
             </p>
           </section>
         </ContentOverlapPortrait>
@@ -57,11 +57,14 @@ Wir transportieren Ihre Marke auf moderne Weise, indem wir unsere Lösung in ihr
       
               <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#beispiel_wuerttembergische'>
-            Wichtig für <HeadingSegmentSecondary800 text='Anwender' />
+            Beispiel <HeadingSegmentSecondary800 text='Württembergische' />
           </LinkedHeading>
 
           <p class='mx-auto max-w-xl leading-7'>
-Die Württembergische Versicherung bietet beispielsweise allen Versicherungsnehmern, die eine Cyber-Versicherung für Schäden aus Ransomware-Angriffen abschließen, einen kostenlosen Zugang zum „Cyber Portal“. Unser Cyber-Produkt wurde in enger Absprache für die Bedarfe der Versicherungsnehmer adaptiert und <a href="https://wuerttembergische.co-IT.eu">hier</a> bereitgestellt. Die Württembergische verbindet dabei das Notwendige mit dem Nützlichen: Sie reduzieren Cyber-Risiken in den versicherten Unternehmen und heben sich von anderen Versicherern ab.
+Die Württembergische Versicherung bietet beispielsweise allen Versicherungsnehmern, die eine Cyber-Versicherung für Schäden aus Ransomware-Angriffen abschließen, einen kostenlosen Zugang zum „Cyber Portal“. Unser Cyber-Produkt wurde in enger Absprache für die Bedarfe der Versicherungsnehmer adaptiert und <a href="https://wuerttembergische.co-IT.eu">hier</a> bereitgestellt. Die Württembergische verbindet dabei das Notwendige mit dem Nützlichen:<br/> Sie reduzieren Cyber-Risiken in den versicherten Unternehmen und heben sich von anderen Versicherern ab.
+          </p>
+          <p class='mx-auto max-w-xl leading-7'>
+            Machen Sie sich in der folgenden Videoserie selbst einen Eindruck.
           </p>
 
           <LinkCallToAction
@@ -74,27 +77,27 @@ Die Württembergische Versicherung bietet beispielsweise allen Versicherungsnehm
         </section>
       </Section>
 
-      <Section id='cyber_portal'>
+      <Section id='cyber-plattform'>
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
-            <LinkedHeading href='#cyber_portal'>
+            <LinkedHeading href='#cyber-plattform'>
               <HeadingSegmentSecondary text='Die Basis der' />{' '}
               <HeadingSegmentSecondary800 text='Cyber-Plattform' />
             </LinkedHeading>
             <p class='leading-7'>
-Unsere Cyber-Plattform bietet Ihnen von Haus aus sechs Kurse mit praktischen Fähigkeiten und essenziellem Wissen für den sicheren Umgang in der digitalen Welt. In vier Examen mit anspruchsvollen, interaktiven Prüfungen können Ihre Kunden bzw. deren Mitarbeiter das Gelernte festigen. Abgerundet wird die Leistung mit dem Werkzeugkasten, der unter anderem die eigene Passwortsicherheit prüfen kann.
+Unsere Cyber-Plattform bietet Ihnen von Haus aus <strong>6 Kurse</strong> mit praktischen Fähigkeiten und essenziellem Wissen für den sicheren Umgang in der digitalen Welt. In <strong>4 Examen</strong> mit anspruchsvollen, interaktiven Prüfungen können Ihre Kunden bzw. deren Mitarbeiter das Gelernte festigen. Abgerundet wird die Leistung mit dem <strong>Werkzeugkasten</strong>, der unter anderem die eigene Passwortsicherheit prüfen kann.
             </p>
             <p class='leading-7'>
-Das besondere Highlight sind unsere Phishing-Simulationen, mit denen Mitarbeiter kontinuierlich sensibilisiert werden. Damit können Ihre Kunden Cyber Risiken erheblich reduzieren und gleichzeitig wichtige IT-Richtlinien (z.B. NIS 2) umsetzen. 
+Das besondere Highlight sind unsere <strong>Phishing-Simulationen</strong>, mit denen Mitarbeiter kontinuierlich sensibilisiert werden. Damit können Ihre Kunden Cyber Risiken erheblich reduzieren und gleichzeitig wichtige IT-Richtlinien (z.B. NIS 2) umsetzen. 
             </p>
           </section>
         </VideoOverlapLandscape>
       </Section>
 
-      <Section id='ihr_cyber-paket' backgroundColor='gray'>
-        <VideoOverlapLandscape youTubeVideoId='4pvfj1ggRlQ'>
+      <Section id='ihre-marke' backgroundColor='gray'>
+        <VideoOverlapLandscape youTubeVideoId='nWwjjQj0HNw'>
           <section class='flex flex-col space-y-4'>
-            <LinkedHeading href='#ihr_cyber-paket'>
+            <LinkedHeading href='#ihre-marke'>
               <HeadingSegmentSecondary text='Ihre Marke,' />{' '}
               <HeadingSegmentSecondary800 text='Ihr Geschäftsmodell' />
             </LinkedHeading>
@@ -102,13 +105,13 @@ Das besondere Highlight sind unsere Phishing-Simulationen, mit denen Mitarbeiter
              Die folgenden Beispiele sollen Ihnen als Denkanstoß dienen, wie Sie Ihre Marke mit unserer Cyber-Plattform digitalisieren können:
             </p>
             <p class='leading-7'>
-           Kanzleien könnten ihren Mandanten ein Produkt an die Hand geben, um sie für Cyber-Risiken zu sensibilisieren. Gleichzeitig ließen sich dort gezielt Ihre Inhalte zu Datenschutz und Arbeitssicherheit multimedial platzieren.
+           <strong>Kanzleien</strong> könnten ihren Mandanten ein Produkt an die Hand geben, um sie für Cyber-Risiken zu sensibilisieren. Gleichzeitig ließen sich dort gezielt Ihre Inhalte zu Datenschutz und Arbeitssicherheit multimedial platzieren.
             </p>
             <p class='leading-7'>
-    Als Branchenverband wäre eine eigene Instanz unserer Cyber-Lösung denkbar, bei der Sie Ihren Mitgliedern ein effektives Werkzeug zur Einhaltung von Gesetzen und Richtlinien zur Verfügung stellen. Auf unserer Seite fürs Gesundheitswesen zeigen wir, wie spezifische Phishing-Simulationen und Anleitungen für Apotheken aussehen könnten.
+    Als <strong>Branchenverband</strong> wäre eine eigene Instanz unserer Cyber-Lösung denkbar, bei der Sie Ihren Mitgliedern ein effektives Werkzeug zur Einhaltung von Gesetzen und Richtlinien zur Verfügung stellen. Auf unserer Seite fürs Gesundheitswesen zeigen wir, wie spezifische Phishing-Simulationen und Anleitungen für Apotheken aussehen könnten.
             </p>
             <p class='leading-7'>
-       Als Agentur, Makler oder Vertreter kann unsere Cyber-Plattform für Sie einen Weg darstellen, um sich von Mitbewerbern abzuheben und einen Unique Selling Point zu schaffen.
+       Als <strong>Agentur, Makler oder Vertreter</strong> kann unsere Cyber-Plattform für Sie einen Weg darstellen, um sich von Mitbewerbern abzuheben und einen Unique Selling Point zu schaffen.
             </p>
             <p class='leading-7'>
 Wir, die co-IT.eu GmbH, bieten unseren großen Kunde bei Abschluss eines Rahmenvertrags Zugang zu unserer Cyber-Instanz namens „Cyber Lounge“ an. Je nach finanziellem Umfang des Abschlusses erhalten unsere Klienten rabattierte oder kostenlose Zugänge. Wir stellen dort unter anderem Videokurse für die bei uns gekauften Lösungen (z.B. für die Passwort-Management-Software) bereit. Zudem bieten wir individuelle Auswertungen zu den Phishing-Simulationen an.
@@ -151,37 +154,6 @@ In jedem Fall ist es immer möglich für Sie, ganz individuell, Ihre Wünsche um
             </p>
           </section>
         </div>
-      </Section>
-
-      <Section id='ihr-portal' backgroundColor='gray'>
-        <VideoOverlapLandscape youTubeVideoId='YbaUJQYRojE'>
-          <section class='flex flex-col space-y-4'>
-            <LinkedHeading href='#ihr-portal'>
-              <HeadingSegmentSecondary text='Ihre Marke,' />{' '}
-              <HeadingSegmentSecondary800 text='Ihr Portal' />
-            </LinkedHeading>
-            <p class='leading-7'>
-              Sie möchten für Ihre Kunden einen Schritt weiter gehen,
-              nachhaltigen Wert stiften und Antworten auf drängende Fragen
-              bieten? Sie wollen, dass Ihr Unternehmen und Ihre Marke als
-              modern, digital und sicher wahrgenommen wird? Dann betreiben wir
-              für Sie das Cyber Portal - unter Ihrem Namen mit Ihrem
-              firmeneigenen Branding und Kunden-spezifischen Inhalten. Nutzen
-              Sie die eigene Instanz, um für sich Werbung zu machen, langjährige
-              Bestandskunden noch enger zu binden und Ihre Verkäufe mit
-              kostenfreien oder rabattierten Zugängen zu steigern. Gerne bauen
-              wir Ihnen eine Schnittstelle, um automatisiert Kunden
-              freizuschalten.
-            </p>
-
-            <LinkCallToAction
-              href='https://e.co-it.eu/cyber/gesundheitswesen/termin-vereinbaren'
-              target='_blank'
-            >
-              Termin vereinbaren
-            </LinkCallToAction>
-          </section>
-        </VideoOverlapLandscape>
       </Section>
     </>
   );
