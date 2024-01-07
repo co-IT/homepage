@@ -9,32 +9,38 @@ export const anwenderVideos: YouTubeVideo[] = [
   },
   {
     id: 'LrjckqfadeE',
-    title: 'Kurs: E-Mail-Sicherheit',
+    title: 'Kurs: Sicher per E-Mail kommunizieren',
     thumb:
       '/img/cyber/cyber-portal/white-label/Kurs2.webp'
   },
   {
     id: 'Apl91xmNOJs',
-    title: 'Kurs: Sichere Passwörter',
+    title: 'Kurs: Endlich sichere Passwörter',
     thumb:
       '/img/cyber/cyber-portal/white-label/Kurs3.webp'
   },
   {
     id: 'pwhDfa5ICZg',
-    title: 'Kurs: Sicher surfen',
+    title: 'Kurs: Jederzeit sicher surfen',
     thumb:
       '/img/cyber/cyber-portal/white-label/Kurs4.webp'
   },
   {
     id: 'pB8yRwUFxW4',
-    title: 'Kurs: Onlinebanking',
+    title: 'Kurs: Augen auf beim Onlinebanking',
     thumb:
       '/img/cyber/cyber-portal/white-label/Kurs5.webp'
   },
   {
     id: 'qvl-qM38j6M',
-    title: 'Kurs: Datenschutz',
+    title: 'Kurs: Schnelleinstieg Datenschutz',
     thumb:
       '/img/cyber/cyber-portal/white-label/Kurs6.webp'
+  },
+  {
+    id: 'FjThxiKBApc',
+    title: 'Einblick in unsere Phishing-Simulationen',
+    thumb:
+      '/img/cyber/cyber-portal/white-label/phishing-simulationen.webp'
   }
 ];
