@@ -13,7 +13,7 @@ import {
   HeadingSegmentSecondary800
 } from '~/components/heading-segment';
 
-import { anwenderVideos, pharmassecFeatures } from './resources';
+import { anwenderVideos, ihreMarkeFeatures } from './resources';
 
 import { LinkedHeading } from '~/components/link-heading';
 import { ProductFeatureList } from '~/components/product-feature-list';
@@ -21,7 +21,7 @@ import { ProductFeatureList } from '~/components/product-feature-list';
 import { YouTubeVideoGrid } from '~/components/youtube';
 import { LinkCallToAction } from '../phishing/components';
 
-import PharmassecLogo from '~/media/gesundheitswesen/pharmassec_logo.png?jsx';
+import NoBrandLogo from '~/media/ihre-marke/no-brand-logo.png?jsx';
 
 export default component$(() => {
   return (
@@ -173,10 +173,10 @@ export default component$(() => {
       </Section>
 
       <Section id='individuelle_loesung'>
-        <div class='grid grid-flow-row justify-center gap-16 sm:grid-flow-col'>
-          <div class='mx-auto grid items-start gap-8 rounded-md p-4 shadow-md'>
-            <PharmassecLogo />
-            <ProductFeatureList features={pharmassecFeatures} />
+        <div class='ga-x-8 flex flex-wrap items-start'>
+          <div class='mx-auto flex flex-col items-start gap-8 rounded-md p-4 shadow-md'>
+            <NoBrandLogo class='mx-auto' />
+            <ProductFeatureList features={ihreMarkeFeatures} />
             <LinkCallToAction
               href='https://e.co-it.eu/cyber/gesundheitswesen/termin-vereinbaren'
               target='_blank'
