@@ -1,17 +1,17 @@
 import type { ProductFeature } from '~/components/product-feature-list';
 
-export const pharmassecFeatures: ProductFeature[] = [
+export const ihreMarkeFeatures: ProductFeature[] = [
   {
-    text: 'Anzahl Simulationen: 18',
+    text: 'Anzahl Simulationen: Beliebig',
     detail:
       'Es handelt sich um die übers Jahr insgesamt verschickten Phishing-Simulationen. Bei einer geringeren Vertragslaufzeit erhalten Sie pro Monat der Vertragslaufzeit jeweils 1/12 der Phishing-Mails.'
   },
   {
-    text: 'Branche: Gesundheitswesen',
+    text: 'Ihre Branche',
     detail: 'Sprechen Sie uns an, was Sie sich für Ihre Kunden wünschen.'
   },
   {
-    text: 'Eigene Inhalte',
+    text: 'Ihre Inhalte',
     detail:
       'Wir gestalten mit Ihnen gemeinsam genau die Inhalte, die für Apotheken, Sanitärshäuser und Arztpraxen relevant sind, damit diese auf die gefährlichsten Phishing-Angriffe vorbereitet sind.'
   },
