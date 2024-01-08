@@ -120,7 +120,7 @@ export default component$(() => {
             Machen Sie sich mit der folgenden Videoserie selbst einen Eindruck.
           </p>
           <LinkCallToAction
-            href='https://e.co-it.eu/cyber/gesundheitswesen/termin-vereinbaren'
+            href='https://e.co-it.eu/cyber-paket-vorstellung'
             target='_blank'
           >
             Termin für Demo vereinbaren
@@ -178,7 +178,7 @@ export default component$(() => {
             <NoBrandLogo class='mx-auto' />
             <ProductFeatureList features={ihreMarkeFeatures} />
             <LinkCallToAction
-              href='https://e.co-it.eu/cyber/gesundheitswesen/termin-vereinbaren'
+              href='https://e.co-it.eu/cyber-paket-vorstellung'
               target='_blank'
             >
               Termin vereinbaren
