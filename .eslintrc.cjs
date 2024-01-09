@@ -20,7 +20,7 @@ module.exports = {
       jsx: true
     }
   },
-  plugins: ['@typescript-eslint', 'deprecation'],
+  plugins: ['@typescript-eslint'],
   rules: {
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
@@ -37,6 +37,6 @@ module.exports = {
     'no-console': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
     '@typescript-eslint/consistent-type-imports': 'warn',
-    'deprecation/deprecation': 'warn'
+    '@typescript-eslint/no-unnecessary-condition': 'warn'
   }
 };

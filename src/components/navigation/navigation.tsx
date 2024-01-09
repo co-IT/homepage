@@ -1,5 +1,5 @@
-
-import ImgLogo from '~/media/img/navigation/logo.svg?jsx';import { $, component$, useContext } from '@builder.io/qwik';
+import { $, component$, useContext } from '@builder.io/qwik';
+import ImgLogo from '~/media/img/navigation/logo.svg?jsx';
 import { NavigationLinkCard } from '../cards';
 import {
   BlueMailIcon,
@@ -44,15 +44,12 @@ export const Navigation = component$((props: { open: boolean }) => {
     <div
       class={`${
         props.open ? 'block' : 'hidden'
-      } fixed top-0 z-40 w-full bg-primary pt-6 pb-12 shadow-xl lg:pb-24`}
+      } fixed top-0 z-40 w-full bg-primary pb-12 pt-6 shadow-xl lg:pb-24`}
     >
       <div class='container mx-auto flex flex-col gap-y-10 lg:gap-y-20'>
         <div class='flex flex-col justify-between lg:flex-row'>
           <a href='/'>
-            <ImgLogo
-              alt='logo'
-              class='mx-auto h-fit w-32 lg:mx-0 lg:w-44'
-            />
+            <ImgLogo class='mx-auto h-fit w-32 lg:mx-0 lg:w-44' />
           </a>
           <div
             class='my-auto hidden cursor-pointer flex-row gap-x-2 hover:opacity-75 md:flex'
@@ -89,7 +86,7 @@ export const Navigation = component$((props: { open: boolean }) => {
               target='_self'
               class='relative h-14 w-14 rounded-full bg-white shadow-lg'
             >
-              <div class='absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4'>
+              <div class='absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4'>
                 <BluePhoneIcon />
               </div>
             </a>
@@ -98,7 +95,7 @@ export const Navigation = component$((props: { open: boolean }) => {
               target='_blank'
               class='relative h-14 w-14 rounded-full bg-white shadow-lg'
             >
-              <div class='absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4'>
+              <div class='absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4'>
                 <BlueMailIcon />
               </div>
             </a>
@@ -107,7 +104,7 @@ export const Navigation = component$((props: { open: boolean }) => {
               target='_blank'
               class='relative h-14 w-14 rounded-full bg-white shadow-lg'
             >
-              <div class='absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4'>
+              <div class='absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4'>
                 <BlueMapIcon />
               </div>
             </a>
@@ -117,7 +114,7 @@ export const Navigation = component$((props: { open: boolean }) => {
             class='relative h-14 w-14 rounded-full bg-white shadow-lg'
             onClick$={() => closeMenu$()}
           >
-            <div class='absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4'>
+            <div class='absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4'>
               <YellowCloseIcon />
             </div>
           </div>
