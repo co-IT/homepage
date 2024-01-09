@@ -157,10 +157,11 @@ export default component$(() => {
             <p class='leading-7'>
               Als <strong>Agentur, Makler oder Vertreter</strong> kann unsere
               Cyber-Plattform für Sie einen Weg darstellen, um sich von
-              Mitbewerbern abzuheben und einen Unique Selling Point zu schaffen.
+              Mitbewerbern abzuheben und einen Alleinstellungsmerkmal zu
+              schaffen.
             </p>
             <p class='leading-7'>
-              Wir, die co-IT.eu GmbH, bieten unseren großen Kunde bei Abschluss
+              Wir, die co-IT.eu GmbH, bieten unseren großen Kunden bei Abschluss
               eines Rahmenvertrags Zugang zu unserer Cyber-Instanz namens „Cyber
               Lounge“ an. Je nach finanziellem Umfang des Abschlusses erhalten
               unsere Klienten rabattierte oder kostenlose Zugänge. Wir stellen
