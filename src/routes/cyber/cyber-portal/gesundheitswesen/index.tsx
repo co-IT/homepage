@@ -81,6 +81,8 @@ export default component$(() => {
             alle Versicherungsnehmer der Württembergischen Versicherung
             kostenlos, damit alle Anwender gleichermaßen davon profitieren.
             Machen Sie sich in der folgenden Videoserie selbst einen Eindruck.
+            <br />
+            <br />
             Besitzen Sie keine Cyberpolice bei der Württembergischen, haben wir
             eine Alternative für Sie.
           </p>
