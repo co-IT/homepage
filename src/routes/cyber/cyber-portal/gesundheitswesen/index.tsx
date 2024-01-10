@@ -13,12 +13,11 @@ import {
   HeadingSegmentSecondary800
 } from '~/components/heading-segment';
 
-import { anwenderVideos, gesundheitswesenFeatures } from './resources';
+import { gesundheitswesenFeatures } from './resources';
 
 import { LinkedHeading } from '~/components/link-heading';
 import { ProductFeatureList } from '~/components/product-feature-list';
 
-import { YouTubeVideoGrid } from '~/components/youtube';
 import { LinkCallToAction } from '../../phishing/components';
 
 import PharmassecLogo from '~/media/gesundheitswesen/pharmassec_logo.png?jsx';
@@ -162,7 +161,7 @@ export default component$(() => {
           <section class='flex max-w-md flex-col gap-4 px-4'>
             <LinkedHeading href='#cyber-paket_gesundheitswesen'>
               <HeadingSegmentSecondary text='Das Cyber-Paket fürs' />{' '}
-              <HeadingSegmentSecondary800 text='Lösung' />
+              <HeadingSegmentSecondary800 text='Gesundheitswesen' />
             </LinkedHeading>
             <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
               Vertreten Sie im Gesundheitswesen eine Unternehmensgruppe, z.B.
@@ -172,64 +171,6 @@ export default component$(() => {
             </p>
           </section>
         </div>
-      </Section>
-
-      <Section id='ihr-portal' backgroundColor='gray'>
-        <VideoOverlapLandscape youTubeVideoId='YbaUJQYRojE'>
-          <section class='flex flex-col space-y-4'>
-            <LinkedHeading href='#ihr-portal'>
-              <HeadingSegmentSecondary text='Ihre Marke,' />{' '}
-              <HeadingSegmentSecondary800 text='Ihr Portal' />
-            </LinkedHeading>
-            <p class='leading-7'>
-              Sie möchten für Ihre Kunden einen Schritt weiter gehen,
-              nachhaltigen Wert stiften und Antworten auf drängende Fragen
-              bieten? Sie wollen, dass Ihr Unternehmen und Ihre Marke als
-              modern, digital und sicher wahrgenommen wird? Dann betreiben wir
-              für Sie das Cyber Portal - unter Ihrem Namen mit Ihrem
-              firmeneigenen Branding und Kunden-spezifischen Inhalten. Nutzen
-              Sie die eigene Instanz, um für sich Werbung zu machen, langjährige
-              Bestandskunden noch enger zu binden und Ihre Verkäufe mit
-              kostenfreien oder rabattierten Zugängen zu steigern. Gerne bauen
-              wir Ihnen eine Schnittstelle, um automatisiert Kunden
-              freizuschalten.
-            </p>
-
-            <LinkCallToAction
-              href='https://e.co-it.eu/cyber/gesundheitswesen/termin-vereinbaren'
-              target='_blank'
-            >
-              Termin vereinbaren
-            </LinkCallToAction>
-          </section>
-        </VideoOverlapLandscape>
-      </Section>
-
-      <Section id='wichtig_fuer_anwender'>
-        <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
-          <LinkedHeading href='#wichtig_fuer_cyber_verantwortliche'>
-            Wichtig für <HeadingSegmentSecondary800 text='Anwender' />
-          </LinkedHeading>
-
-          <p class='mx-auto max-w-xl leading-7'>
-            Die besten Phishing-Mails helfen nichts, wenn diese nicht den
-            Posteingang des Empfängers erreichen. Geben Sie deshalb unseren
-            E-Mail-Server und unsere Domains in Ihrer Firewall und in den
-            Postfächern frei. Nur dadurch können Sie sicherstellen, dass
-            Auswertungen zum Klickverhalten korrekt sind. Damit Sie schnell
-            starten können, haben wir für gängige Produkte wie Microsofts
-            "Exchange Server" Anleitungsvideos bereitgestellt.
-          </p>
-
-          <LinkCallToAction
-            href='https://e.co-it.eu/cyberportal-adminkonfiguration'
-            target='_blank'
-          >
-            Freigaberegeln anschauen
-          </LinkCallToAction>
-
-          <YouTubeVideoGrid videos={anwenderVideos} />
-        </section>
       </Section>
     </>
   );
