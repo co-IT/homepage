@@ -4,12 +4,12 @@ export const anwenderVideos: YouTubeVideo[] = [
   {
     id: '_SZyfQB7n7k',
     title: 'Funktionalitäten Cyberverantwortliche',
-    thumb: '/img/cyber/cyber-portal/white-label/Kurs1.webp'
+    thumb: '/img/cyber/cyber-portal/video-thumbnails/cyber-portal.webp'
   },
   {
     id: 'KSSDqIIikvQ',
     title: 'Funktionalitäten Anwender',
-    thumb: '/img/cyber/cyber-portal/white-label/Kurs2.webp'
+    thumb: '/img/cyber/cyber-portal/video-thumbnails/cyber-portal.webp'
   },
   {
     id: 'Qsjrg9Mj5QQ',
