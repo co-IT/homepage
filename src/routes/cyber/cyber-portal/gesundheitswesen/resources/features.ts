@@ -1,34 +1,35 @@
 import type { ProductFeature } from '~/components/product-feature-list';
 
-export const pharmassecFeatures: ProductFeature[] = [
+export const gesundheitswesenFeatures: ProductFeature[] = [
   {
-    text: 'Anzahl Simulationen: 18',
+    text: 'Anzahl Simulationen nach Wunsch',
     detail:
-      'Es handelt sich um die übers Jahr insgesamt verschickten Phishing-Simulationen. Bei einer geringeren Vertragslaufzeit erhalten Sie pro Monat der Vertragslaufzeit jeweils 1/12 der Phishing-Mails.'
+      'Wir legen mit Ihnen gemeinsam die Menge fest, die nachhaltig sensibilisiert, aber nicht zu störend für den Geschäftsbetrieb ist.'
   },
   {
     text: 'Branche: Gesundheitswesen',
-    detail: 'Sprechen Sie uns an, was Sie sich für Ihre Kunden wünschen.'
-  },
-  {
-    text: 'Eigene Inhalte',
     detail:
-      'Wir gestalten mit Ihnen gemeinsam genau die Inhalte, die für Apotheken, Sanitärshäuser und Arztpraxen relevant sind, damit diese auf die gefährlichsten Phishing-Angriffe vorbereitet sind.'
+      'Beim Gesundheitswesen handelt es sich um ein großes Spektrum. Wir fokussieren uns auf Apotheken und Arztpraxen, führen aber gerne Gespräche für andere Themenschwerpunkte.'
   },
   {
-    text: 'Sprachniveau: Hoch',
+    text: 'Eigene Inhalte nach Wunsch',
     detail:
-      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
+      'Wir legen mit Ihnen gemeinsam die Menge fest, die nachhaltig sensibilisiert, aber nicht zu störend für den Geschäftsbetrieb ist.'
   },
   {
-    text: 'Randomisierung: überraschend',
-    detail:
-      'Alle Anwender erhalten unterschiedliche Simulationen zu unterschiedlichen Zeiten.'
-  },
-  {
-    text: 'Absender: Authentisch',
+    text: 'Absender: maximal authentisch',
     detail:
       'Authentische Absenderadressen sind z.B. Domains wie "ratiopharm-info.de" oder "apotheker-netzwerk.de", wohingegen eine Domäne wie "why-how-what.info" weniger echt wirkt.'
+  },
+  {
+    text: 'Inhalte: sehr glaubwürdig',
+    detail:
+      'Wir arbeiten mit Apotheken und Arztpraxen zusammen, wodurch wir Inhalte einbauen, die typischerweise dort Verwendung finden.'
+  },
+  {
+    text: 'Sprachniveau: hoch',
+    detail:
+      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
   },
   {
     text: 'Anrede: Personalisiert',
@@ -36,13 +37,22 @@ export const pharmassecFeatures: ProductFeature[] = [
       'In den Phishing Simulationen wird der Name des Empfängers in der Anrede verwendet, also z.B. "Sehr geehrter Herr Tim Kater".'
   },
   {
-    text: 'Unternehmensname',
-    detail:
-      'In den Phishing Simulationen wird Ihr Unternehmen referenziert, z.B. indem in einer Simulation eine "Jameda"-Bewertung zu Ihrer Firma nachgestellt wird.'
+    text: 'Funktionen vorschlagen',
+    detail: 'Teilen Sie Ihre Ideen unserem Entwicklungsteam mit'
   },
   {
     text: 'Unternehmenszertifikat',
     detail:
-      'Nach 12 Monaten erhalten Sie ein auf Ihr Unternehmen ausgestelltes Zertifikat, das die kontinuierliche Sensibilisierung durch unsere Phishing Simulationen nachweist.'
+      'Dient als Nachweis der kontinuierlichen Sensibilisierung gegenüber Behörden'
+  },
+  {
+    text: 'Dedizierte Anleitungen',
+    detail:
+      'Unsere Auswertungen haben gezeigt, dass web.de, gmx, gmail und t-online die am meist genutzten E-Mail-Dienstleister sind. Hierfür haben wir Anleitungen aufgenommen.'
+  },
+  {
+    text: 'Support: Telefon + E-Mail',
+    detail:
+      'Montag - Freitag zw. 9-16 Uhr mit Ausnahme gesetzlicher Feiertage in Baden-Württemberg.'
   }
 ];
