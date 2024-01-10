@@ -13,13 +13,14 @@ import {
   HeadingSegmentSecondary800
 } from '~/components/heading-segment';
 
-import { gesundheitswesenFeatures } from './resources';
+import { anwenderVideos, gesundheitswesenFeatures } from './resources';
 
 import { LinkedHeading } from '~/components/link-heading';
 import { ProductFeatureList } from '~/components/product-feature-list';
 
 import { LinkCallToAction } from '../../phishing/components';
 
+import { YouTubeVideoGrid } from '~/components/youtube';
 import PharmassecLogo from '~/media/gesundheitswesen/pharmassec_logo.png?jsx';
 
 export default component$(() => {
@@ -98,9 +99,9 @@ export default component$(() => {
         </ContentOverlapPortrait>
       </Section>
 
-      {
-        // TODO Video Serie einbinden
-      }
+      <Section>
+        <YouTubeVideoGrid videos={anwenderVideos} />
+      </Section>
 
       <Section id='cyber_portal'>
         <VideoOverlapLandscape youTubeVideoId='4pvfj1ggRlQ'>
