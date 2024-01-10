@@ -13,7 +13,7 @@ import {
   HeadingSegmentSecondary800
 } from '~/components/heading-segment';
 
-import { anwenderVideos, ihreMarkeFeatures } from './resources';
+import { ihreMarkeFeatures, ihreMarkeVideos } from './resources';
 
 import { LinkedHeading } from '~/components/link-heading';
 import { ProductFeatureList } from '~/components/product-feature-list';
@@ -125,7 +125,7 @@ export default component$(() => {
           >
             Termin für Demo vereinbaren
           </LinkCallToAction>
-          <YouTubeVideoGrid videos={anwenderVideos} />
+          <YouTubeVideoGrid videos={ihreMarkeVideos} />
         </section>
       </Section>
 
