@@ -3,12 +3,12 @@ import type { YouTubeVideo } from '~/components/youtube';
 export const anwenderVideos: YouTubeVideo[] = [
   {
     id: '_SZyfQB7n7k',
-    title: 'Funktionalitäten Cyberverantwortliche',
+    title: 'Funktionalitäten für Cyberverantwortliche',
     thumb: '/img/cyber/cyber-portal/video-thumbnails/cyber-portal.webp'
   },
   {
     id: 'KSSDqIIikvQ',
-    title: 'Funktionalitäten Anwender',
+    title: 'Funktionalitäten für Anwender',
     thumb: '/img/cyber/cyber-portal/video-thumbnails/cyber-portal.webp'
   },
   {
