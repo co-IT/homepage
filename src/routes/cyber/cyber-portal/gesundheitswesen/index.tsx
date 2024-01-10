@@ -30,7 +30,7 @@ export default component$(() => {
         <ContentOverlapPortrait
           image={{
             source:
-              '/img/cyber/cyber-portal/gesundheitswesen/besonderheiten.webp',
+              '/img/cyber/cyber-portal/gesundheitswesen/digitale-krankheiten.webp',
             alternateText: '3 Holzklötze die aufeinandergestapelt sind'
           }}
         >
@@ -47,13 +47,17 @@ export default component$(() => {
               braucht. Jeder Patient und jede Patientin wird individuell beraten
               und behandelt.
               <br />
-              Wir wissen welchen wertvollen Beitrag Apotheken, Arztpraxen,
-              Sanitätshäuser und Therapeuten leisten. Darum wollen wir Ihnen die
-              gleiche Wertschätzung entgegenbringen und uns um Ihre digitale
-              Gesundheit kümmern - am besten präventiv, damit Viren und
-              Ransomware keine Chance haben. Nicht mit einer Einheitslösung,
-              indem wir alle über einen Kamm scheren, sondern individuell und
-              auf den Punkt.
+              <br />
+              Wir wissen welchen wertvollen Beitrag <strong> Apotheken </strong>
+              , <strong>Arztpraxen</strong>, <strong>Sanitätshäuser</strong> und
+              Therapeuten leisten. Darum wollen wir Ihnen die gleiche
+              Wertschätzung entgegenbringen und uns um Ihre digitale Gesundheit
+              kümmern - am besten präventiv, damit Viren und Ransomware keine
+              Chance haben.
+              <br />
+              <br />
+              Nicht mit einer Einheitslösung, indem wir alle über einen Kamm
+              scheren, sondern individuell und auf den Punkt.
             </p>
           </section>
         </ContentOverlapPortrait>
@@ -160,10 +164,11 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Gesundheitswesen' />
             </LinkedHeading>
             <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
-              Vertreten Sie im Gesundheitswesen eine Unternehmensgruppe, z.B.
-              Apotheken, Ärzte oder Sanitätshäuser, dann nehmen Sie Kontakt zu
-              uns auf. Wir gestalten gerne mit Ihnen gemeinsam den Paketumfang
-              und finden preislich die attraktivste Branchenlösung.
+              Vertreten Sie im Gesundheitswesen eine Unternehmensgruppe, z.B.{' '}
+              <strong>Apotheken</strong>, <strong>Ärzte</strong> oder{' '}
+              <strong>Sanitätshäuser</strong>, dann nehmen Sie Kontakt zu uns
+              auf. Wir gestalten gerne mit Ihnen gemeinsam den Paketumfang und
+              finden preislich die attraktivste Branchenlösung.
             </p>
           </section>
         </div>
@@ -192,10 +197,6 @@ export const head: DocumentHead = {
         {
           title: 'Designed by Freepik',
           images: [
-            {
-              title: 'Vorderansicht Arzt',
-              href: 'https://de.freepik.com/fotos-kostenlos/vorderansichtarzt-der-medizinisches-element-haelt_12412966.htm#page=3&query=medizin%20baustein&position=13&from_view=search&track=ais&uuid=f0b16208-40f7-4803-915b-235db8c7ae36'
-            },
             {
               title: 'Nahaufnahme des Gesundheitspersonals',
               href: 'https://de.freepik.com/fotos-kostenlos/nahaufnahme-des-gesundheitspersonals_18776122.htm#page=2&query=%C3%A4rzte%20h%C3%A4nde&position=21&from_view=search&track=ais&uuid=6463e737-bb77-4a3f-ad43-dd1677d23d94'
