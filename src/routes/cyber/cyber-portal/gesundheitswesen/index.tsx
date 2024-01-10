@@ -60,47 +60,40 @@ export default component$(() => {
       </Section>
 
       <Section id='moderne_praevention' backgroundColor='gray'>
-        <ContentOverlapPortrait
-          image={{
-            source:
-              '/img/cyber/cyber-portal/gesundheitswesen/unser_antrieb.webp',
-            alternateText: 'Unser Antrieb'
-          }}
-        >
-          <section q:slot='article' class='flex flex-col space-y-4'>
-            <LinkedHeading href='#moderne_praevention'>
-              <HeadingSegmentSecondary text='Moderne' />{' '}
-              <HeadingSegmentSecondary800 text='Prävention' />
-            </LinkedHeading>
-            <p class='pb-4 leading-7'>
-              Wir wollen Ihnen die fachliche Kompetenz, die praktischen
-              Fähigkeiten und das notwendige Wissen vermitteln, um sich in der
-              digitalen Welt sicher zu fühlen und bestmöglich sicher zu sein.
-              Unser Medikament dafür nennt sich Cyber Portal und bietet Ihnen
-              und Ihren Anwendern einen Raum, um nachhaltiges, praktisches
-              Wissen auf verständliche Weise zu erlernen, dieses mit intensiven
-              Prüfungen und realistischen Simulationen zu festigen sowie
-              Lernfortschritte systematisch sicherzustellen.
-              <br />
-              Die Plattform ist eine Individuallösung und in der Basisversion
-              für alle Versicherungsnehmer der Württembergischen Versicherung
-              kostenlos, damit alle Anwender gleichermaßen davon profitieren.
-              Machen Sie sich in der folgenden Videoserie selbst einen Eindruck.
-              Besitzen Sie keine Cyberpolice bei der Württembergischen, haben
-              wir eine Alternative für Sie.
-            </p>
-            <LinkCallToAction
-              href='https://e.co-it.eu/cyber-paket-vorstellung'
-              target='_blank'
-            >
-              Sprechen Sie uns an
-            </LinkCallToAction>
-          </section>
-        </ContentOverlapPortrait>
-      </Section>
+        <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
+          <LinkedHeading href='#moderne_praevention'>
+            <HeadingSegmentSecondary text='Moderne' />{' '}
+            <HeadingSegmentSecondary800 text='Prävention' />
+          </LinkedHeading>
 
-      <Section>
-        <YouTubeVideoGrid videos={anwenderVideos} />
+          <p class='pb-4 leading-7'>
+            Wir wollen Ihnen die fachliche Kompetenz, die praktischen
+            Fähigkeiten und das notwendige Wissen vermitteln, um sich in der
+            digitalen Welt sicher zu fühlen und bestmöglich sicher zu sein.
+            Unser Medikament dafür nennt sich Cyber Portal und bietet Ihnen und
+            Ihren Anwendern einen Raum, um nachhaltiges, praktisches Wissen auf
+            verständliche Weise zu erlernen, dieses mit intensiven Prüfungen und
+            realistischen Simulationen zu festigen sowie Lernfortschritte
+            systematisch sicherzustellen.
+            <br />
+            <br />
+            Die Plattform ist eine Individuallösung und in der Basisversion für
+            alle Versicherungsnehmer der Württembergischen Versicherung
+            kostenlos, damit alle Anwender gleichermaßen davon profitieren.
+            Machen Sie sich in der folgenden Videoserie selbst einen Eindruck.
+            Besitzen Sie keine Cyberpolice bei der Württembergischen, haben wir
+            eine Alternative für Sie.
+          </p>
+
+          <LinkCallToAction
+            href='https://e.co-it.eu/cyber-paket-vorstellung'
+            target='_blank'
+          >
+            Sprechen Sie uns an
+          </LinkCallToAction>
+
+          <YouTubeVideoGrid videos={anwenderVideos} />
+        </section>
       </Section>
 
       <Section id='cyber_portal'>
