@@ -113,13 +113,17 @@ const videos: YouTubeVideo[] = [
 export default component$(() => {
   return (
     <>
-      <Section>
+      <Section id='sicherheit_auf_knopfdruck'>
         <div class='flex flex-wrap items-start gap-8'>
           <section>
             <LockCheckCurvedIcon />
           </section>
           <section class='grid gap-2'>
-            <h2 class='text-4xl font-bold'>Sicherheit auf Knopfdruck!</h2>
+            <h2 class='text-4xl font-bold'>
+              <a href='#sicherheit_auf_knopfdruck'>
+                Sicherheit auf Knopfdruck!
+              </a>
+            </h2>
             <p class='max-w-3xl text-xl leading-8 xl:max-w-6xl'>
               Sichern Sie Ihre digitale Welt mit Leichtigkeit. Unser
               Passwortmanager ist Ihr ultimativer Schutzschild gegen
@@ -136,13 +140,17 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section backgroundColor='gray'>
+      <Section backgroundColor='gray' id='sicherheit_trifft-einfachheit'>
         <div class='flex flex-wrap items-start gap-8'>
           <section>
             <LockCheckCurvedIcon />
           </section>
           <section class='grid gap-2'>
-            <h2 class='text-4xl font-bold'>Sicherheit trifft Einfachheit!</h2>
+            <h2 class='text-4xl font-bold'>
+              <a href='#sicherheit_trifft-einfachheit'>
+                Sicherheit trifft Einfachheit!
+              </a>
+            </h2>
             <p class='max-w-3xl text-xl leading-8 xl:max-w-6xl'>
               Schützen Sie vertrauliche Dokumente mit unserer revolutionären
               Lösung. Verschlüsseln Sie wichtige Dateien mühelos und speichern
@@ -155,11 +163,13 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section>
+      <Section id='ihre_vorteile'>
         <div class='grid gap-8'>
           <header class='flex items-center gap-2'>
             <CheckCurvedIcon />
-            <h2 class='text-4xl font-bold'>Ihre Vorteile</h2>
+            <h2 class='text-4xl font-bold'>
+              <a href='#ihre_vorteile'>Ihre Vorteile</a>
+            </h2>
           </header>
 
           <section class='grid grid-cols-1 gap-x-8 gap-y-16 md:grid-cols-2'>
@@ -178,11 +188,13 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section backgroundColor='gray'>
+      <Section backgroundColor='gray' id='sends'>
         <div class='grid gap-8'>
           <header class='flex items-center gap-2'>
             <CheckCurvedIcon />
-            <h2 class='text-4xl font-bold'>Sends!</h2>
+            <h2 class='text-4xl font-bold'>
+              <a href='#sends'>Sends!</a>
+            </h2>
           </header>
 
           <p class='max-w-5xl text-xl leading-8'>
@@ -207,13 +219,15 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section>
+      <Section id='vertragsvorschau'>
         <div class='flex flex-wrap items-start gap-8'>
           <section>
             <CheckCurvedIcon />
           </section>
           <section class='grid gap-2'>
-            <h2 class='text-4xl font-bold'>Vertragsvorschau</h2>
+            <h2 class='text-4xl font-bold'>
+              <a href='#vertragsvorschau'>Vertragsvorschau</a>
+            </h2>
             <p class='max-w-3xl text-xl leading-8 xl:max-w-6xl'>
               Entdecken Sie Details Ihres Vertrags im Voraus. Lesen Sie unsere
               Allgemeinen Geschäftsbedingungen (
@@ -231,11 +245,13 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section backgroundColor='gray'>
+      <Section backgroundColor='gray' id='open_source'>
         <div class='grid gap-8'>
           <header class='flex items-center gap-2'>
             <CheckCurvedIcon />
-            <h2 class='text-4xl font-bold'>Open Source</h2>
+            <h2 class='text-4xl font-bold'>
+              <a href='#open_source'>Open Source</a>
+            </h2>
           </header>
 
           <div class='flex flex-wrap items-start gap-8'>
@@ -249,11 +265,13 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section>
+      <Section id='videos'>
         <div class='grid gap-8'>
           <header class='flex items-center gap-2'>
             <CheckCurvedIcon />
-            <h2 class='text-4xl font-bold'>Videos</h2>
+            <h2 class='text-4xl font-bold'>
+              <a href='#videos'>Videos</a>
+            </h2>
           </header>
 
           <YouTubeVideoGrid videos={videos} />
