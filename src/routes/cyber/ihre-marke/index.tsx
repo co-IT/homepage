@@ -35,8 +35,7 @@ export default component$(() => {
         >
           <section q:slot='article' class='flex flex-col space-y-4'>
             <LinkedHeading href='#hervorstechen-anderssein'>
-              <HeadingSegmentSecondary text='Hervorstechen,' />
-              &nbsp;
+              <HeadingSegmentSecondary text='Hervorstechen,' />{' '}
               <HeadingSegmentSecondary800 text='Anderssein' />
             </LinkedHeading>
             <p class='pb-4 leading-7'>
