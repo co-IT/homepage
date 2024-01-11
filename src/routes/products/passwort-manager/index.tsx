@@ -119,6 +119,29 @@ export default component$(() => {
             <LockCheckCurvedIcon />
           </section>
           <section class='grid gap-2'>
+            <h2 class='text-4xl font-bold'>Sicherheit auf Knopfdruck!</h2>
+            <p class='max-w-3xl text-xl leading-8 xl:max-w-6xl'>
+              Sichern Sie Ihre digitale Welt mit Leichtigkeit. Unser
+              Passwortmanager ist Ihr ultimativer Schutzschild gegen
+              Cyber-Bedrohungen. Kein mühsames Merken von komplizierten
+              Passwörtern mehr - Ihre sensiblen Daten sind in einem
+              hochverschlüsselten Tresor vor neugierigen Blicken geschützt. Mit
+              bequemen Funktionen wie automatischem Formularausfüllen und
+              synchronisiertem Zugriff von überall aus wird digitales Arbeiten
+              so unkompliziert wie nie zuvor. Schluss mit unsicheren Passwörtern
+              - willkommen in einer Zukunft voller digitaler Sicherheit, mit
+              unserem Passwortmanager.
+            </p>
+          </section>
+        </div>
+      </Section>
+
+      <Section backgroundColor='gray'>
+        <div class='flex flex-wrap items-start gap-8'>
+          <section>
+            <LockCheckCurvedIcon />
+          </section>
+          <section class='grid gap-2'>
             <h2 class='text-4xl font-bold'>Sicherheit trifft Einfachheit!</h2>
             <p class='max-w-3xl text-xl leading-8 xl:max-w-6xl'>
               Schützen Sie vertrauliche Dokumente mit unserer revolutionären
@@ -132,19 +155,16 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section backgroundColor='gray'>
+      <Section>
         <div class='grid gap-8'>
           <header class='flex items-center gap-2'>
             <CheckCurvedIcon />
             <h2 class='text-4xl font-bold'>Ihre Vorteile</h2>
           </header>
 
-          <section class='flex flex-wrap gap-x-8 gap-y-16'>
+          <section class='grid grid-cols-1 gap-x-8 gap-y-16 md:grid-cols-2'>
             {pros.map((pro, key) => (
-              <div
-                class='flex max-w-lg flex-col items-start gap-8 md:flex-row'
-                key={key}
-              >
+              <div class='flex max-w-lg items-start gap-8' key={key}>
                 <section class='hidden md:block'>
                   <LockIcon />
                 </section>
@@ -158,7 +178,7 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section>
+      <Section backgroundColor='gray'>
         <div class='grid gap-8'>
           <header class='flex items-center gap-2'>
             <CheckCurvedIcon />
@@ -187,7 +207,7 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section backgroundColor='gray'>
+      <Section>
         <div class='flex flex-wrap items-start gap-8'>
           <section>
             <CheckCurvedIcon />
@@ -211,7 +231,7 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section>
+      <Section backgroundColor='gray'>
         <div class='grid gap-8'>
           <header class='flex items-center gap-2'>
             <CheckCurvedIcon />
@@ -229,7 +249,7 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section backgroundColor='gray'>
+      <Section>
         <div class='grid gap-8'>
           <header class='flex items-center gap-2'>
             <CheckCurvedIcon />
