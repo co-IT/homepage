@@ -66,6 +66,25 @@ const sendFeatures = [
   }
 ];
 
+const ossCriteria = [
+  {
+    heading: 'Transparenz',
+    text: 'Der Quellcode unseres Passwortmanagers ist öffentlich zugänglich. So können Sie sicherstellen, dass keine unsicheren Praktiken oder unerwünschte Funktionen genutzt werden und Ihre Daten sicher sind.'
+  },
+  {
+    heading: 'Gemeinschaftsgetriebene Entwicklung',
+    text: 'Open-Source-Software profitiert von der Zusammenarbeit einer breiten Entwicklergemeinschaft. Fehler und Sicherheitslücken werden schneller erkannt und behoben, da viele Augen den Code überprüfen.'
+  },
+  {
+    heading: 'Passwortgeschütztes Versenden',
+    text: 'Sie können optional auch ein selbstbestimmtes Passwort verlangen, damit der Empfänger auf die Datei zugreifen kann'
+  },
+  {
+    heading: 'Verschlüsselte Notiz',
+    text: 'Sie können private Notizen zu Ihren Dateien hinzufügen'
+  }
+];
+
 export default component$(() => {
   return (
     <>
@@ -76,7 +95,7 @@ export default component$(() => {
           </section>
           <section class='grid gap-2'>
             <h2 class='text-4xl font-bold'>Sicherheit trifft Einfachheit!</h2>
-            <p class='max-w-5xl text-xl leading-8'>
+            <p class='max-w-3xl text-xl leading-8 xl:max-w-6xl'>
               Schützen Sie vertrauliche Dokumente mit unserer revolutionären
               Lösung. Verschlüsseln Sie wichtige Dateien mühelos und speichern
               Sie Zugangscodes sicher in unserem digitalen Tresor. Teilen Sie
@@ -134,6 +153,48 @@ export default component$(() => {
               <section class='grid gap-2' key={key}>
                 <h2 class='font-semibold'>{feature.heading}</h2>
                 <p class='max-w-md leading-7'>{feature.text}</p>
+              </section>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      <Section>
+        <div class='flex flex-wrap items-start gap-8'>
+          <section>
+            <CheckCurvedIcon />
+          </section>
+          <section class='grid gap-2'>
+            <h2 class='text-4xl font-bold'>Vertragsvorschau</h2>
+            <p class='max-w-3xl text-xl leading-8 xl:max-w-6xl'>
+              Entdecken Sie Details Ihres Vertrags im Voraus. Lesen Sie unsere
+              Allgemeinen Geschäftsbedingungen (
+              <a
+                class='hover:underline'
+                href='http://e.co-it.eu/agb'
+                target='_blank'
+              >
+                AGB
+              </a>
+              ) , um einen klaren Einblick in die vereinbarten Konditionen zu
+              erhalten, noch bevor spezifische Details verhandelt werden. LINK
+            </p>
+          </section>
+        </div>
+      </Section>
+
+      <Section backgroundColor='gray'>
+        <div class='grid gap-8'>
+          <header class='flex items-center gap-2'>
+            <CheckCurvedIcon />
+            <h2 class='text-4xl font-bold'>Open Source</h2>
+          </header>
+
+          <div class='flex flex-wrap items-start gap-8'>
+            {ossCriteria.map((criterion, key) => (
+              <section class='grid gap-2' key={key}>
+                <h2 class='font-semibold'>{criterion.heading}</h2>
+                <p class='max-w-md leading-7'>{criterion.text}</p>
               </section>
             ))}
           </div>
