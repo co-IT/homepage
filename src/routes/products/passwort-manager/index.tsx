@@ -91,22 +91,22 @@ const videos: YouTubeVideo[] = [
   {
     id: '66uq_I0ODRQ',
     title: 'Weboberfläche',
-    thumb: '/img/cyber/cyber-portal/white-label/register-company.webp'
+    thumb: '/img/products/passwort-manager/web.webp'
   },
   {
     id: 'wYEoI1Glws0',
     title: 'Desktop App',
-    thumb: '/img/cyber/cyber-portal/white-label/register-company.webp'
+    thumb: '/img/products/passwort-manager/desktop.webp'
   },
   {
     id: 'NGvVQT8oxQY',
     title: 'Browser Extension',
-    thumb: '/img/cyber/cyber-portal/white-label/register-company.webp'
+    thumb: '/img/products/passwort-manager/browser-extension.webp'
   },
   {
     id: 'e2VOF3LxNxI',
     title: '2 -Faktor Authentifizierung',
-    thumb: '/img/cyber/cyber-portal/white-label/register-company.webp'
+    thumb: '/img/products/passwort-manager/desktop.webp'
   }
 ];
 
@@ -141,8 +141,11 @@ export default component$(() => {
 
           <section class='flex flex-wrap gap-x-8 gap-y-16'>
             {pros.map((pro, key) => (
-              <div class='flex max-w-lg items-start gap-8' key={key}>
-                <section>
+              <div
+                class='flex max-w-lg flex-col items-start gap-8 md:flex-row'
+                key={key}
+              >
+                <section class='hidden md:block'>
                   <LockIcon />
                 </section>
                 <section class='grid gap-2'>
@@ -248,7 +251,7 @@ export const head: DocumentHead = {
       type: 'content-page',
       configuration: {
         backgroundImage: {
-          source: '/img/cyber/cyber-portal/white-label/header.webp',
+          source: '/img/products/passwort-manager/header.webp',
           alt: 'Two team mates checking an App on the tablet.'
         },
         heading: 'Passwort-Manager',
