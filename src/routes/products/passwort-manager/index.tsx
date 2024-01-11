@@ -6,6 +6,8 @@ import {
   LockIcon
 } from '~/components/icons';
 import { Section } from '~/components/section';
+import type { YouTubeVideo } from '~/components/youtube';
+import { YouTubeVideoGrid } from '~/components/youtube';
 
 const pros = [
   {
@@ -85,6 +87,29 @@ const ossCriteria = [
   }
 ];
 
+const videos: YouTubeVideo[] = [
+  {
+    id: '66uq_I0ODRQ',
+    title: 'Weboberfläche',
+    thumb: '/img/cyber/cyber-portal/white-label/register-company.webp'
+  },
+  {
+    id: 'wYEoI1Glws0',
+    title: 'Desktop App',
+    thumb: '/img/cyber/cyber-portal/white-label/register-company.webp'
+  },
+  {
+    id: 'NGvVQT8oxQY',
+    title: 'Browser Extension',
+    thumb: '/img/cyber/cyber-portal/white-label/register-company.webp'
+  },
+  {
+    id: 'e2VOF3LxNxI',
+    title: '2 -Faktor Authentifizierung',
+    thumb: '/img/cyber/cyber-portal/white-label/register-company.webp'
+  }
+];
+
 export default component$(() => {
   return (
     <>
@@ -159,7 +184,7 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section>
+      <Section backgroundColor='gray'>
         <div class='flex flex-wrap items-start gap-8'>
           <section>
             <CheckCurvedIcon />
@@ -183,7 +208,7 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section backgroundColor='gray'>
+      <Section>
         <div class='grid gap-8'>
           <header class='flex items-center gap-2'>
             <CheckCurvedIcon />
@@ -198,6 +223,17 @@ export default component$(() => {
               </section>
             ))}
           </div>
+        </div>
+      </Section>
+
+      <Section backgroundColor='gray'>
+        <div class='grid gap-8'>
+          <header class='flex items-center gap-2'>
+            <CheckCurvedIcon />
+            <h2 class='text-4xl font-bold'>Videos</h2>
+          </header>
+
+          <YouTubeVideoGrid videos={videos} />
         </div>
       </Section>
     </>
