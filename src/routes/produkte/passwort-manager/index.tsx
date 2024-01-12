@@ -38,10 +38,6 @@ const pros = [
   {
     heading: 'Unterstützung diverser Betriebssysteme',
     text: 'Windows, Android, MAC, iOS, Linux'
-  },
-  {
-    heading: 'Kombination für maximale Sicherheit',
-    text: 'Kombinieren Sie alle Optionen, um das Maximum an Sicherheit zu erreichen.'
   }
 ];
 
@@ -103,6 +99,10 @@ const sendFeatures = [
   {
     heading: 'Verschlüsselte Notiz',
     text: 'Sie können private Notizen zu Ihren Dateien hinzufügen.'
+  },
+  {
+    heading: 'Kombination für maximale Sicherheit',
+    text: 'Kombinieren Sie alle Optionen, um das Maximum an Sicherheit zu erreichen.'
   }
 ];
 
