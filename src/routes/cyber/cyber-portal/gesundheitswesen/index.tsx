@@ -114,7 +114,7 @@ export default component$(() => {
               brauchen, führten etliche individuelle Gespräche und werteten eine
               Vielzahl an Vorfällen aus. Immer mit dem Ohr am Puls der Zeit,
               haben wir natürlich auch die Entwicklung der{' '}
-              <strong>NIS 2 Richtlinie und des IT-Sicherheitsgesetz 2</strong>
+              <strong>NIS 2 Richtlinie und des IT-Sicherheitsgesetz 2</strong>{' '}
               beobachtet.
               <br />
               Als Teil der kritischen Infrastruktur und mit aus{' '}
