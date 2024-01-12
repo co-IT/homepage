@@ -20,12 +20,11 @@ const pros = [
     text: 'Stellen Sie sich Passkeys wie spezielle, geheime Codes vor, die Sie anstelle von normalen Passwörtern verwenden können. Wenn Sie auf Ihre Kontoinformationen zugreifen möchten, müssen Sie diesen besonderen Code eingeben. Im Gegensatz zu gewöhnlichen Passwörtern sind Passkeys oft länger und komplizierter, was sie schwieriger für andere macht, zu erraten. Sie sind so etwas wie magische Schlüssel, die nur Ihnen erlauben, auf Ihre wichtigen Dinge zuzugreifen und somit Ihre Informationen sicherer machen.'
   },
   {
-    heading: 'Passwörter mit anderen Teilen',
+    heading: 'Passwörter mit anderen teilen',
     text: 'Stellen Sie sich Passkeys wie spezielle, geheime Codes vor, die Sie anstelle von normalen Passwörtern verwenden können. Wenn Sie auf Ihre Kontoinformationen zugreifen möchten, müssen Sie diesen besonderen Code eingeben. Im Gegensatz zu gewöhnlichen Passwörtern sind Passkeys oft länger und komplizierter, was sie schwieriger für andere macht, zu erraten. Sie sind so etwas wie magische Schlüssel, die nur Ihnen erlauben, auf Ihre wichtigen Dinge zuzugreifen und somit Ihre Informationen sicherer machen.'
   },
   {
-    heading:
-      'Automatisches Ausfüllen durch Browser-Erweiterung mit anderen Teilen',
+    heading: 'Automatisches Ausfüllen durch Browser-Erweiterung',
     text: 'Mit der zugehörigen Browser-Erweiterung können Sie die Funktionen unseres Passwortmanagers bequem in Ihrem Webbrowser verwenden. Das automatische Ausfüllen von Passwörtern ist eine Funktion, die es ermöglicht, gespeicherte Passwörter in Webformularen oder Anmeldeseiten automatisch einzufügen, um Ihnen den Sicherheitsprozess so angenehm wie Möglich zu gestalten.'
   },
   {
@@ -38,7 +37,7 @@ const pros = [
   },
   {
     heading: 'Unterstützung diverser Betriebssysteme',
-    text: 'Windows, Android, MAC, IOS'
+    text: 'Windows, Android, MAC, iOS, Linux'
   }
 ];
 
@@ -80,7 +79,7 @@ const videos: YouTubeVideo[] = [
   {
     id: 'e2VOF3LxNxI',
     title: '2 -Faktor Authentifizierung',
-    thumb: '/img/products/passwort-manager/desktop.webp'
+    thumb: '/img/products/passwort-manager/2-faktor.webp'
   }
 ];
 
@@ -155,21 +154,30 @@ export default component$(() => {
               <br />
               Das Gleiche gilt für Software: Die Sicherheit lässt sich nur durch
               den Blick in den Programmcode bewerten. Deshalb setzen wir auf
-              eine quelloffene, sogenannte „Open Source“ Lösung, die von
-              Sicherheitsexperten gesichtet und mit Schwarmintelligenz der
-              Tausenden von Entwicklern verbessert werden kann.
+              eine quelloffene, sogenannte <strong>„Open Source“</strong>-
+              Lösung, die von Sicherheitsexperten gesichtet und mit
+              Schwarmintelligenz der Tausenden von Entwicklern verbessert werden
+              kann.
+              <br />
               <br />
               Gleichzeitig halten wir digitale Identitäten für so sensibel und
               schützenswert, dass sie in Deutschland gespeichert werden sollten
               und nicht in die Hände von Konzernen gehören. Darum ermöglichen
-              wir Ihnen die Auswahl zwischen drei Betriebsmodi: Wir stellen die
-              Lösung auf Ihren lokalen Servern (On-Premise), im Rechenzentrum
-              Ihrer Wahl oder auf „unserer Hardware“ zur Verfügung.
-              <br />
+              wir Ihnen die Auswahl zwischen <strong>drei Betriebsmodi</strong>:
+            </p>
+            <ul class='list-inside list-disc text-xl'>
+              <li>
+                Wir stellen die Lösung auf Ihren lokalen Servern (On-Premise),
+                <li>im Rechenzentrum Ihrer Wahl oder,</li>
+              </li>
+              <li>auf „unserer Hardware“ zur Verfügung.</li>
+            </ul>
+            <br />
+            <p class='max-w-3xl text-xl leading-8 xl:max-w-6xl'>
               Wir nutzen dafür keine fertigen Dienste von Cloudanbietern,
               sondern provisionieren unser Produkt selbst auf dem angemieteten
-              Server im Rechenzentrum. Damit behalten Sie die maximale
-              Datenautonomie.
+              Server im Rechenzentrum.{' '}
+              <strong>Damit behalten Sie die maximale Datenautonomie.</strong>
             </p>
           </section>
         </div>
@@ -252,7 +260,7 @@ export default component$(() => {
           <header class='flex items-center gap-8'>
             <h2 class='text-4xl font-bold'>
               <a href='#zusatzfunktion_sichere_datenuebermittlung'>
-                Zusatzfunktion: Sichere Datenuebermittlung
+                Zusatzfunktion: Sichere Datenübermittlung
               </a>
             </h2>
           </header>
@@ -287,7 +295,7 @@ export default component$(() => {
             ))}
           </div>
 
-          <p class='max-w-5xl text-xl leading-8'>
+          <p class='max-w-5xl text-xl font-bold leading-8'>
             Kombination für maximale Sicherheit Kombinieren Sie alle Optionen,
             um das Maximum an Sicherheit zu erreichen.
           </p>
