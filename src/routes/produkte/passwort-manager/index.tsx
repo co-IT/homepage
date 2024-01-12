@@ -38,6 +38,10 @@ const pros = [
   {
     heading: 'Unterstützung diverser Betriebssysteme',
     text: 'Windows, Android, MAC, iOS, Linux'
+  },
+  {
+    heading: 'Kombination für maximale Sicherheit',
+    text: 'Kombinieren Sie alle Optionen, um das Maximum an Sicherheit zu erreichen.'
   }
 ];
 
@@ -79,7 +83,7 @@ const videos: YouTubeVideo[] = [
   {
     id: 'e2VOF3LxNxI',
     title: '2 -Faktor Authentifizierung',
-    thumb: '/img/products/passwort-manager/2-faktor.webp'
+    thumb: '/img/products/passwort-manager/2-faktor-authentifizierung.webp'
   }
 ];
 
@@ -244,7 +248,7 @@ export default component$(() => {
         <div class='grid gap-8'>
           <header>
             <h2 class='text-4xl font-bold'>
-              <a href='#videos'>Demos unser Lösung</a>
+              <a href='#videos'>Demos unserer Lösung</a>
             </h2>
           </header>
 
@@ -294,11 +298,6 @@ export default component$(() => {
               </div>
             ))}
           </div>
-
-          <p class='max-w-5xl text-xl font-bold leading-8'>
-            Kombination für maximale Sicherheit Kombinieren Sie alle Optionen,
-            um das Maximum an Sicherheit zu erreichen.
-          </p>
         </div>
       </Section>
     </>
