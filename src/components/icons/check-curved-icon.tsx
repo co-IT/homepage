@@ -1,7 +1,7 @@
 export const CheckCurvedIcon = () => (
   <svg
-    width='74'
-    height='52'
+    width='44'
+    height='22'
     viewBox='0 0 74 52'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
