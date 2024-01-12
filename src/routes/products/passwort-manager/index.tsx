@@ -5,10 +5,10 @@ import {
   LockCheckCurvedIcon,
   LockIcon
 } from '~/components/icons';
+import { LinkCallToAction } from '~/components/link-call-to-action';
 import { Section } from '~/components/section';
 import type { YouTubeVideo } from '~/components/youtube';
 import { YouTubeVideoGrid } from '~/components/youtube';
-import { LinkCallToAction } from '../../../components/link-call-to-action';
 
 const pros = [
   {
@@ -184,8 +184,8 @@ export default component$(() => {
       </Section>
 
       <Section id='leistungsumfang'>
-        <div class='grid gap-8'>
-          <header class='flex items-center gap-2'>
+        <div class='grid gap-12'>
+          <header class='flex items-center gap-8'>
             <CheckCurvedIcon />
             <h2 class='text-4xl font-bold'>
               <a href='#leistungsumfang'>Leistungsumfang</a>
@@ -194,22 +194,29 @@ export default component$(() => {
 
           <div class='flex flex-wrap items-start gap-8'>
             {leistungen.map((leistung, key) => (
-              <section class='grid gap-2' key={key}>
-                <h2 class='font-semibold'>{leistung.heading}</h2>
-                <p class='max-w-md leading-7'>{leistung.text}</p>
-              </section>
+              <div class='flex max-w-lg items-start gap-8' key={key}>
+                <section class='hidden md:block'>
+                  <LockIcon />
+                </section>
+                <section class='grid gap-2'>
+                  <h2 class='text-xl font-bold'>{leistung.heading}</h2>
+                  <p class='text-md leading-7'>{leistung.text}</p>
+                </section>
+              </div>
             ))}
           </div>
 
-          <LinkCallToAction href='http://e.co-it.eu/agb' target='_blank'>
-            Für Details schauen Sie in unsere Nutzungsbedingungen
-          </LinkCallToAction>
+          <div class='mx-auto'>
+            <LinkCallToAction href='http://e.co-it.eu/agb' target='_blank'>
+              Für Details schauen Sie in unsere Nutzungsbedingungen
+            </LinkCallToAction>
+          </div>
         </div>
       </Section>
 
       <Section id='ihre_vorteile'>
         <div class='grid gap-8'>
-          <header class='flex items-center gap-2'>
+          <header class='flex items-center gap-8'>
             <CheckCurvedIcon />
             <h2 class='text-4xl font-bold'>
               <a href='#ihre_vorteile'>Ihre Vorteile</a>
@@ -234,7 +241,7 @@ export default component$(() => {
 
       <Section backgroundColor='gray' id='sends'>
         <div class='grid gap-8'>
-          <header class='flex items-center gap-2'>
+          <header class='flex items-center gap-8'>
             <CheckCurvedIcon />
             <h2 class='text-4xl font-bold'>
               <a href='#sends'>Sends!</a>
@@ -265,7 +272,7 @@ export default component$(() => {
 
       <Section id='videos'>
         <div class='grid gap-8'>
-          <header class='flex items-center gap-2'>
+          <header class='flex items-center gap-8'>
             <CheckCurvedIcon />
             <h2 class='text-4xl font-bold'>
               <a href='#videos'>Videos</a>
