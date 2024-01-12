@@ -46,22 +46,22 @@ const pros = [
   }
 ];
 
-const sendFeatures = [
+const leistungen = [
   {
-    heading: 'Löschdatum festlegen',
-    text: 'Die Datei wird nach einem von Ihnen festgelegten Ablaufdatum automatisch gelöscht'
+    heading: 'Betrieb',
+    text: 'Wir betreiben unsere Lösung alternativ auf Ihren Servern, in dem Rechenzentrum Ihrer Wahl oder als Software-as-a-Software im Rechenzentrum unserer Wahl. Sprechen Sie uns an, wir beraten Sie dazu gerne. Zudem überwachen wir die Verfügbarkeit und werden proaktiv bei Betriebsstörungen tätig.'
   },
   {
-    heading: 'Löschdatum Maximale Zugriffszahl festlegen',
-    text: 'Sie können bestimmen, wie oft sich der Empfänger die Datei ansehen kann'
+    heading: 'Wartung',
+    text: 'Wir kümmern uns um das Einspielen neuster Sicherheitsupdates und das Beheben von Fehlern. Natürlich testen wir vorab alles ausgiebig, damit für Sie möglichst keine Probleme in der täglichen Nutzung entstehen.'
   },
   {
-    heading: 'Passwortgeschütztes Versenden',
-    text: 'Sie können optional auch ein selbstbestimmtes Passwort verlangen, damit der Empfänger auf die Datei zugreifen kann'
+    heading: 'Datensicherung',
+    text: 'Dank unserer langjährigen Erfahrungen sichern wir Ihre Daten mit in der Praxis bewährten Praktiken und Prinzipien. Regelmäßige Ausfalltests gehören für uns zum Selbstverständnis.'
   },
   {
-    heading: 'Verschlüsselte Notiz',
-    text: 'Sie können private Notizen zu Ihren Dateien hinzufügen'
+    heading: 'Datenschutz',
+    text: 'Mit einer Auftragsdatenverarbeitungsvereinbarung, wie sie die DSGVO fordert, sind Sie mit uns auf der sicheren Seite. Sofern Sie sich für den Betrieb auf unseren Servern entscheiden, bleiben die Daten in Deutschland.'
   }
 ];
 
@@ -88,22 +88,22 @@ const videos: YouTubeVideo[] = [
   }
 ];
 
-const leistungen = [
+const sendFeatures = [
   {
-    heading: 'Betrieb',
-    text: 'Wir betreiben unsere Lösung alternativ auf Ihren Servern, in dem Rechenzentrum Ihrer Wahl oder als Software-as-a-Software im Rechenzentrum unserer Wahl. Sprechen Sie uns an, wir beraten Sie dazu gerne. Zudem überwachen wir die Verfügbarkeit und werden proaktiv bei Betriebsstörungen tätig.'
+    heading: 'Löschdatum festlegen',
+    text: 'Die Information bzw. Datei wird nach einem von Ihnen festgelegten Ablaufdatum automatisch gelöscht.'
   },
   {
-    heading: 'Wartung',
-    text: 'Wir kümmern uns um das Einspielen neuster Sicherheitsupdates und das Beheben von Fehlern. Natürlich testen wir vorab alles ausgiebig, damit für Sie möglichst keine Probleme in der täglichen Nutzung entstehen.'
+    heading: 'Maximale Zugriffszahl festlegen',
+    text: 'Sie können bestimmen, wie oft der Link geöffnet werden kann bevor er ungültig wird.'
   },
   {
-    heading: 'Datensicherung',
-    text: 'Dank unserer langjährigen Erfahrungen sichern wir Ihre Daten mit in der Praxis bewährten Praktiken und Prinzipien. Regelmäßige Ausfalltests gehören für uns zum Selbstverständnis.'
+    heading: 'Passwortgeschützte Links',
+    text: 'Sie können optional ein Passwort zum Öffnen des Links vergeben, das Sie dem Empfänger separat mitteilen.'
   },
   {
-    heading: 'Datenschutz',
-    text: 'Mit einer Auftragsdatenverarbeitungsvereinbarung, wie sie die DSGVO fordert, sind Sie mit uns auf der sicheren Seite. Sofern Sie sich für den Betrieb auf unseren Servern entscheiden, bleiben die Daten in Deutschland.'
+    heading: 'Verschlüsselte Notiz',
+    text: 'Sie können private Notizen zu Ihren Dateien hinzufügen.'
   }
 ];
 
@@ -248,34 +248,53 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section id='sends' backgroundColor='gray'>
+      <Section
+        id='zusatzfunktion_sichere_datenuebermittlung'
+        backgroundColor='gray'
+      >
         <div class='grid gap-8'>
           <header class='flex items-center gap-8'>
-            <CheckCurvedIcon />
             <h2 class='text-4xl font-bold'>
-              <a href='#sends'>Sends!</a>
+              <a href='#zusatzfunktion_sichere_datenuebermittlung'>
+                Zusatzfunktion: Sichere Datenuebermittlung
+              </a>
             </h2>
           </header>
 
           <p class='max-w-5xl text-xl leading-8'>
-            Vertraulichkeit neu definiert! Mit unserer Lösung senden Sie Ihre
-            vertraulichen Dokumente absolut sicher an Ihren Steuerberater. Kein
-            unbefugter Zugriff, vollständige Kontrolle mit Ablaufdatum und
-            Passwortschutz. Unsere einmalige Öffnungsfunktion gewährleistet,
-            dass Ihre sensiblen Informationen nur von den richtigen Augen
-            gesehen werden. Datenschutzkonform und effizient - Ihre Daten, Ihre
-            Sicherheit, unsere Priorität.
+            Buchen Sie die Option für sichere Datenübermittlung dazu. Damit ist
+            es Ihnen möglich Inhalte, z.B. Texte oder Dateien, als sichere Links
+            an Ihre Geschäftspartner zu verschicken. Seien es vertrauliche
+            Unterlagen für Ihren Wirtschaftsprüfer, Zugänge an externe
+            Dienstleister oder sensible Kreditkartendaten an Ihre Mitarbeiter.
+            <br />
+            <br />
+            Nutzen Sie Einmal-Links: Hat ihre Vertrauensperson den Link geöffnet
+            und den Inhalt gelesen bzw. heruntergeladen, wird der Link
+            automatisch ungültig. Kommen Angreifer in Besitz der Links, z.B.
+            weil das E-Mail-Konto des Empfängers gehackt wurde, sind diese
+            wertlos.
           </p>
 
-          <h3 class='text-xl font-semibold'>Ihre Funktionen im Überblick</h3>
+          <h3 class='text-xl font-semibold'>Alle Funktionen im Überblick</h3>
           <div class='flex flex-wrap items-start gap-8'>
             {sendFeatures.map((feature, key) => (
-              <section class='grid gap-2' key={key}>
-                <h2 class='font-semibold'>{feature.heading}</h2>
-                <p class='max-w-md leading-7'>{feature.text}</p>
-              </section>
+              <div class='flex max-w-lg items-start gap-8' key={key}>
+                <section class='hidden md:block'>
+                  <CheckCurvedIcon />
+                </section>
+                <section class='grid gap-2'>
+                  <h2 class='text-xl font-bold'>{feature.heading}</h2>
+                  <p class='text-md leading-7'>{feature.text}</p>
+                </section>
+              </div>
             ))}
           </div>
+
+          <p class='max-w-5xl text-xl leading-8'>
+            Kombination für maximale Sicherheit Kombinieren Sie alle Optionen,
+            um das Maximum an Sicherheit zu erreichen.
+          </p>
         </div>
       </Section>
     </>
