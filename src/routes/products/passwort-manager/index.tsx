@@ -8,6 +8,7 @@ import {
 import { Section } from '~/components/section';
 import type { YouTubeVideo } from '~/components/youtube';
 import { YouTubeVideoGrid } from '~/components/youtube';
+import { LinkCallToAction } from '../../../components/link-call-to-action';
 
 const pros = [
   {
@@ -68,25 +69,6 @@ const sendFeatures = [
   }
 ];
 
-const ossCriteria = [
-  {
-    heading: 'Transparenz',
-    text: 'Der Quellcode unseres Passwortmanagers ist öffentlich zugänglich. So können Sie sicherstellen, dass keine unsicheren Praktiken oder unerwünschte Funktionen genutzt werden und Ihre Daten sicher sind.'
-  },
-  {
-    heading: 'Gemeinschaftsgetriebene Entwicklung',
-    text: 'Open-Source-Software profitiert von der Zusammenarbeit einer breiten Entwicklergemeinschaft. Fehler und Sicherheitslücken werden schneller erkannt und behoben, da viele Augen den Code überprüfen.'
-  },
-  {
-    heading: 'Passwortgeschütztes Versenden',
-    text: 'Sie können optional auch ein selbstbestimmtes Passwort verlangen, damit der Empfänger auf die Datei zugreifen kann'
-  },
-  {
-    heading: 'Verschlüsselte Notiz',
-    text: 'Sie können private Notizen zu Ihren Dateien hinzufügen'
-  }
-];
-
 const videos: YouTubeVideo[] = [
   {
     id: '66uq_I0ODRQ',
@@ -110,17 +92,36 @@ const videos: YouTubeVideo[] = [
   }
 ];
 
+const leistungen = [
+  {
+    heading: 'Betrieb',
+    text: 'Wir betreiben unsere Lösung alternativ auf Ihren Servern, in dem Rechenzentrum Ihrer Wahl oder als Software-as-a-Software im Rechenzentrum unserer Wahl. Sprechen Sie uns an, wir beraten Sie dazu gerne. Zudem überwachen wir die Verfügbarkeit und werden proaktiv bei Betriebsstörungen tätig.'
+  },
+  {
+    heading: 'Wartung',
+    text: 'Wir kümmern uns um das Einspielen neuster Sicherheitsupdates und das Beheben von Fehlern. Natürlich testen wir vorab alles ausgiebig, damit für Sie möglichst keine Probleme in der täglichen Nutzung entstehen.'
+  },
+  {
+    heading: 'Datensicherung',
+    text: 'Dank unserer langjährigen Erfahrungen sichern wir Ihre Daten mit in der Praxis bewährten Praktiken und Prinzipien. Regelmäßige Ausfalltests gehören für uns zum Selbstverständnis.'
+  },
+  {
+    heading: 'Datenschutz',
+    text: 'Mit einer Auftragsdatenverarbeitungsvereinbarung, wie sie die DSGVO fordert, sind Sie mit uns auf der sicheren Seite. Sofern Sie sich für den Betrieb auf unseren Servern entscheiden, bleiben die Daten in Deutschland.'
+  }
+];
+
 export default component$(() => {
   return (
     <>
-      <Section id='sicherheit_auf_knopfdruck'>
+      <Section id='sicherheit_trifft_einfachheit'>
         <div class='flex flex-wrap items-start gap-8'>
           <section>
             <LockCheckCurvedIcon />
           </section>
           <section class='grid gap-2'>
             <h2 class='text-4xl font-bold'>
-              <a href='#sicherheit_auf_knopfdruck'>
+              <a href='#sicherheit_trifft_einfachheit'>
                 Sicherheit trifft Einfachheit
               </a>
             </h2>
@@ -142,14 +143,14 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section backgroundColor='gray' id='sicherheit_trifft-einfachheit'>
+      <Section backgroundColor='gray' id='so_verstehen_wir_sicherheit'>
         <div class='flex flex-wrap items-start gap-8'>
           <section>
             <LockCheckCurvedIcon />
           </section>
           <section class='grid gap-2'>
             <h2 class='text-4xl font-bold'>
-              <a href='#sicherheit_trifft-einfachheit'>
+              <a href='#so_verstehen_wir_sicherheit'>
                 So verstehen wir Sicherheit
               </a>
             </h2>
@@ -179,6 +180,30 @@ export default component$(() => {
               Datenautonomie.
             </p>
           </section>
+        </div>
+      </Section>
+
+      <Section id='leistungsumfang'>
+        <div class='grid gap-8'>
+          <header class='flex items-center gap-2'>
+            <CheckCurvedIcon />
+            <h2 class='text-4xl font-bold'>
+              <a href='#leistungsumfang'>Leistungsumfang</a>
+            </h2>
+          </header>
+
+          <div class='flex flex-wrap items-start gap-8'>
+            {leistungen.map((leistung, key) => (
+              <section class='grid gap-2' key={key}>
+                <h2 class='font-semibold'>{leistung.heading}</h2>
+                <p class='max-w-md leading-7'>{leistung.text}</p>
+              </section>
+            ))}
+          </div>
+
+          <LinkCallToAction href='http://e.co-it.eu/agb' target='_blank'>
+            Für Details schauen Sie in unsere Nutzungsbedingungen
+          </LinkCallToAction>
         </div>
       </Section>
 
@@ -238,52 +263,6 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section id='vertragsvorschau'>
-        <div class='flex flex-wrap items-start gap-8'>
-          <section>
-            <CheckCurvedIcon />
-          </section>
-          <section class='grid gap-2'>
-            <h2 class='text-4xl font-bold'>
-              <a href='#vertragsvorschau'>Vertragsvorschau</a>
-            </h2>
-            <p class='max-w-3xl text-xl leading-8 xl:max-w-6xl'>
-              Entdecken Sie Details Ihres Vertrags im Voraus. Lesen Sie unsere
-              Allgemeinen Geschäftsbedingungen (
-              <a
-                class='hover:underline'
-                href='http://e.co-it.eu/agb'
-                target='_blank'
-              >
-                AGB
-              </a>
-              ) , um einen klaren Einblick in die vereinbarten Konditionen zu
-              erhalten, noch bevor spezifische Details verhandelt werden. LINK
-            </p>
-          </section>
-        </div>
-      </Section>
-
-      <Section backgroundColor='gray' id='open_source'>
-        <div class='grid gap-8'>
-          <header class='flex items-center gap-2'>
-            <CheckCurvedIcon />
-            <h2 class='text-4xl font-bold'>
-              <a href='#open_source'>Open Source</a>
-            </h2>
-          </header>
-
-          <div class='flex flex-wrap items-start gap-8'>
-            {ossCriteria.map((criterion, key) => (
-              <section class='grid gap-2' key={key}>
-                <h2 class='font-semibold'>{criterion.heading}</h2>
-                <p class='max-w-md leading-7'>{criterion.text}</p>
-              </section>
-            ))}
-          </div>
-        </div>
-      </Section>
-
       <Section id='videos'>
         <div class='grid gap-8'>
           <header class='flex items-center gap-2'>
@@ -311,8 +290,8 @@ export const head: DocumentHead = {
           source: '/img/products/passwort-manager/header.webp',
           alt: 'Two team mates checking an App on the tablet.'
         },
-        heading: 'Passwort-Manager',
-        headingAccent: 'Endlich.Sicher.'
+        heading: 'Passwort-Manager für Unternehmen',
+        headingAccent: 'Digitale Identitäten sicher organisieren.'
       }
     }
   }
