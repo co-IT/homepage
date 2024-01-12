@@ -143,7 +143,7 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section backgroundColor='gray' id='so_verstehen_wir_sicherheit'>
+      <Section id='so_verstehen_wir_sicherheit' backgroundColor='gray'>
         <div class='flex flex-wrap items-start gap-8'>
           <section>
             <LockCheckCurvedIcon />
@@ -214,12 +214,12 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section id='ihre_vorteile'>
+      <Section id='funktionen' backgroundColor='gray'>
         <div class='grid gap-8'>
           <header class='flex items-center gap-8'>
             <CheckCurvedIcon />
             <h2 class='text-4xl font-bold'>
-              <a href='#ihre_vorteile'>Ihre Vorteile</a>
+              <a href='#funktionen'>Funktionen</a>
             </h2>
           </header>
 
@@ -239,7 +239,20 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section backgroundColor='gray' id='sends'>
+      <Section id='videos'>
+        <div class='grid gap-8'>
+          <header class='flex items-center gap-8'>
+            <CheckCurvedIcon />
+            <h2 class='text-4xl font-bold'>
+              <a href='#videos'>Videos</a>
+            </h2>
+          </header>
+
+          <YouTubeVideoGrid videos={videos} />
+        </div>
+      </Section>
+
+      <Section id='sends' backgroundColor='gray'>
         <div class='grid gap-8'>
           <header class='flex items-center gap-8'>
             <CheckCurvedIcon />
@@ -267,19 +280,6 @@ export default component$(() => {
               </section>
             ))}
           </div>
-        </div>
-      </Section>
-
-      <Section id='videos'>
-        <div class='grid gap-8'>
-          <header class='flex items-center gap-8'>
-            <CheckCurvedIcon />
-            <h2 class='text-4xl font-bold'>
-              <a href='#videos'>Videos</a>
-            </h2>
-          </header>
-
-          <YouTubeVideoGrid videos={videos} />
         </div>
       </Section>
     </>
