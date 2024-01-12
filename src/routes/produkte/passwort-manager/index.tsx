@@ -1,10 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
-import {
-  CheckCurvedIcon,
-  LockCheckCurvedIcon,
-  LockIcon
-} from '~/components/icons';
+import { CheckCurvedIcon, LockCheckCurvedIcon } from '~/components/icons';
 import { LinkCallToAction } from '~/components/link-call-to-action';
 import { Section } from '~/components/section';
 import type { YouTubeVideo } from '~/components/youtube';
@@ -186,7 +182,6 @@ export default component$(() => {
       <Section id='leistungsumfang'>
         <div class='grid gap-12'>
           <header class='flex items-center gap-8'>
-            <CheckCurvedIcon />
             <h2 class='text-4xl font-bold'>
               <a href='#leistungsumfang'>Leistungsumfang</a>
             </h2>
@@ -196,7 +191,7 @@ export default component$(() => {
             {leistungen.map((leistung, key) => (
               <div class='flex max-w-lg items-start gap-8' key={key}>
                 <section class='hidden md:block'>
-                  <LockIcon />
+                  <CheckCurvedIcon />
                 </section>
                 <section class='grid gap-2'>
                   <h2 class='text-xl font-bold'>{leistung.heading}</h2>
@@ -216,8 +211,7 @@ export default component$(() => {
 
       <Section id='funktionen' backgroundColor='gray'>
         <div class='grid gap-8'>
-          <header class='flex items-center gap-8'>
-            <CheckCurvedIcon />
+          <header>
             <h2 class='text-4xl font-bold'>
               <a href='#funktionen'>Funktionen</a>
             </h2>
@@ -227,7 +221,7 @@ export default component$(() => {
             {pros.map((pro, key) => (
               <div class='flex max-w-lg items-start gap-8' key={key}>
                 <section class='hidden md:block'>
-                  <LockIcon />
+                  <CheckCurvedIcon />
                 </section>
                 <section class='grid gap-2'>
                   <h2 class='text-xl font-bold'>{pro.heading}</h2>
@@ -241,10 +235,9 @@ export default component$(() => {
 
       <Section id='videos'>
         <div class='grid gap-8'>
-          <header class='flex items-center gap-8'>
-            <CheckCurvedIcon />
+          <header>
             <h2 class='text-4xl font-bold'>
-              <a href='#videos'>Videos</a>
+              <a href='#videos'>Demos unser Lösung</a>
             </h2>
           </header>
 
