@@ -5,6 +5,7 @@ import {
   LockCheckCurvedIcon,
   LockIcon
 } from '~/components/icons';
+import { LinkCallToAction } from '~/components/link-call-to-action';
 import { Section } from '~/components/section';
 import type { YouTubeVideo } from '~/components/youtube';
 import { YouTubeVideoGrid } from '~/components/youtube';
@@ -68,25 +69,6 @@ const sendFeatures = [
   }
 ];
 
-const ossCriteria = [
-  {
-    heading: 'Transparenz',
-    text: 'Der Quellcode unseres Passwortmanagers ist öffentlich zugänglich. So können Sie sicherstellen, dass keine unsicheren Praktiken oder unerwünschte Funktionen genutzt werden und Ihre Daten sicher sind.'
-  },
-  {
-    heading: 'Gemeinschaftsgetriebene Entwicklung',
-    text: 'Open-Source-Software profitiert von der Zusammenarbeit einer breiten Entwicklergemeinschaft. Fehler und Sicherheitslücken werden schneller erkannt und behoben, da viele Augen den Code überprüfen.'
-  },
-  {
-    heading: 'Passwortgeschütztes Versenden',
-    text: 'Sie können optional auch ein selbstbestimmtes Passwort verlangen, damit der Empfänger auf die Datei zugreifen kann'
-  },
-  {
-    heading: 'Verschlüsselte Notiz',
-    text: 'Sie können private Notizen zu Ihren Dateien hinzufügen'
-  }
-];
-
 const videos: YouTubeVideo[] = [
   {
     id: '66uq_I0ODRQ',
@@ -110,65 +92,134 @@ const videos: YouTubeVideo[] = [
   }
 ];
 
+const leistungen = [
+  {
+    heading: 'Betrieb',
+    text: 'Wir betreiben unsere Lösung alternativ auf Ihren Servern, in dem Rechenzentrum Ihrer Wahl oder als Software-as-a-Software im Rechenzentrum unserer Wahl. Sprechen Sie uns an, wir beraten Sie dazu gerne. Zudem überwachen wir die Verfügbarkeit und werden proaktiv bei Betriebsstörungen tätig.'
+  },
+  {
+    heading: 'Wartung',
+    text: 'Wir kümmern uns um das Einspielen neuster Sicherheitsupdates und das Beheben von Fehlern. Natürlich testen wir vorab alles ausgiebig, damit für Sie möglichst keine Probleme in der täglichen Nutzung entstehen.'
+  },
+  {
+    heading: 'Datensicherung',
+    text: 'Dank unserer langjährigen Erfahrungen sichern wir Ihre Daten mit in der Praxis bewährten Praktiken und Prinzipien. Regelmäßige Ausfalltests gehören für uns zum Selbstverständnis.'
+  },
+  {
+    heading: 'Datenschutz',
+    text: 'Mit einer Auftragsdatenverarbeitungsvereinbarung, wie sie die DSGVO fordert, sind Sie mit uns auf der sicheren Seite. Sofern Sie sich für den Betrieb auf unseren Servern entscheiden, bleiben die Daten in Deutschland.'
+  }
+];
+
 export default component$(() => {
   return (
     <>
-      <Section id='sicherheit_auf_knopfdruck'>
+      <Section id='sicherheit_trifft_einfachheit'>
         <div class='flex flex-wrap items-start gap-8'>
           <section>
             <LockCheckCurvedIcon />
           </section>
           <section class='grid gap-2'>
             <h2 class='text-4xl font-bold'>
-              <a href='#sicherheit_auf_knopfdruck'>
-                Sicherheit auf Knopfdruck!
+              <a href='#sicherheit_trifft_einfachheit'>
+                Sicherheit trifft Einfachheit
               </a>
             </h2>
             <p class='max-w-3xl text-xl leading-8 xl:max-w-6xl'>
-              Sichern Sie Ihre digitale Welt mit Leichtigkeit. Unser
-              Passwortmanager ist Ihr ultimativer Schutzschild gegen
-              Cyber-Bedrohungen. Kein mühsames Merken von komplizierten
-              Passwörtern mehr - Ihre sensiblen Daten sind in einem
-              hochverschlüsselten Tresor vor neugierigen Blicken geschützt. Mit
-              bequemen Funktionen wie automatischem Formularausfüllen und
-              synchronisiertem Zugriff von überall aus wird digitales Arbeiten
-              so unkompliziert wie nie zuvor. Schluss mit unsicheren Passwörtern
-              - willkommen in einer Zukunft voller digitaler Sicherheit, mit
-              unserem Passwortmanager.
+              Was haben das On-/Offboarding von Mitarbeitern, die Vielfalt an
+              betrieblichen Arbeitsgeräten und die Datenschutz-Grundverordnung
+              gemeinsam? Sie erfordern eine möglichst flexible, besonders
+              anwenderfreundliche, maximal sichere und unternehmensweite
+              Organisation Ihrer Zugänge.
+              <br />
+              <br />
+              Mit unserem Verständnis für Unternehmensstrukturen und unserer
+              technisch hochmodernen Lösung etablieren wir mit Ihnen gemeinsam
+              ein zentrales Passwortmanagement, das Ihre sensiblen Daten
+              schützt, höchste Sicherheitsansprüche erfüllt und gleichzeitig
+              Ihre individuellen Prozesse abbildet.
             </p>
           </section>
         </div>
       </Section>
 
-      <Section backgroundColor='gray' id='sicherheit_trifft-einfachheit'>
+      <Section id='so_verstehen_wir_sicherheit' backgroundColor='gray'>
         <div class='flex flex-wrap items-start gap-8'>
           <section>
             <LockCheckCurvedIcon />
           </section>
           <section class='grid gap-2'>
             <h2 class='text-4xl font-bold'>
-              <a href='#sicherheit_trifft-einfachheit'>
-                Sicherheit trifft Einfachheit!
+              <a href='#so_verstehen_wir_sicherheit'>
+                So verstehen wir Sicherheit
               </a>
             </h2>
             <p class='max-w-3xl text-xl leading-8 xl:max-w-6xl'>
-              Schützen Sie vertrauliche Dokumente mit unserer revolutionären
-              Lösung. Verschlüsseln Sie wichtige Dateien mühelos und speichern
-              Sie Zugangscodes sicher in unserem digitalen Tresor. Teilen Sie
-              sensible Informationen mit einem speziell generierten Link, der
-              nach einmaligem Gebrauch verfällt - Ihre Daten bleiben geschützt
-              und Ihr Kopf bleibt frei.
+              Ob ein Unternehmen gesund aufgestellt ist, erkennen Sie nicht
+              durch einen Blick auf dessen Webseite. Sie müssen in das
+              Unternehmen reinschauen, mit den Beteiligten sprechen und Interna
+              sichten.
+              <br />
+              <br />
+              Das Gleiche gilt für Software: Die Sicherheit lässt sich nur durch
+              den Blick in den Programmcode bewerten. Deshalb setzen wir auf
+              eine quelloffene, sogenannte „Open Source“ Lösung, die von
+              Sicherheitsexperten gesichtet und mit Schwarmintelligenz der
+              Tausenden von Entwicklern verbessert werden kann.
+              <br />
+              Gleichzeitig halten wir digitale Identitäten für so sensibel und
+              schützenswert, dass sie in Deutschland gespeichert werden sollten
+              und nicht in die Hände von Konzernen gehören. Darum ermöglichen
+              wir Ihnen die Auswahl zwischen drei Betriebsmodi: Wir stellen die
+              Lösung auf Ihren lokalen Servern (On-Premise), im Rechenzentrum
+              Ihrer Wahl oder auf „unserer Hardware“ zur Verfügung.
+              <br />
+              Wir nutzen dafür keine fertigen Dienste von Cloudanbietern,
+              sondern provisionieren unser Produkt selbst auf dem angemieteten
+              Server im Rechenzentrum. Damit behalten Sie die maximale
+              Datenautonomie.
             </p>
           </section>
         </div>
       </Section>
 
-      <Section id='ihre_vorteile'>
-        <div class='grid gap-8'>
-          <header class='flex items-center gap-2'>
+      <Section id='leistungsumfang'>
+        <div class='grid gap-12'>
+          <header class='flex items-center gap-8'>
             <CheckCurvedIcon />
             <h2 class='text-4xl font-bold'>
-              <a href='#ihre_vorteile'>Ihre Vorteile</a>
+              <a href='#leistungsumfang'>Leistungsumfang</a>
+            </h2>
+          </header>
+
+          <div class='flex flex-wrap items-start gap-8'>
+            {leistungen.map((leistung, key) => (
+              <div class='flex max-w-lg items-start gap-8' key={key}>
+                <section class='hidden md:block'>
+                  <LockIcon />
+                </section>
+                <section class='grid gap-2'>
+                  <h2 class='text-xl font-bold'>{leistung.heading}</h2>
+                  <p class='text-md leading-7'>{leistung.text}</p>
+                </section>
+              </div>
+            ))}
+          </div>
+
+          <div class='mx-auto'>
+            <LinkCallToAction href='http://e.co-it.eu/agb' target='_blank'>
+              Für Details schauen Sie in unsere Nutzungsbedingungen
+            </LinkCallToAction>
+          </div>
+        </div>
+      </Section>
+
+      <Section id='funktionen' backgroundColor='gray'>
+        <div class='grid gap-8'>
+          <header class='flex items-center gap-8'>
+            <CheckCurvedIcon />
+            <h2 class='text-4xl font-bold'>
+              <a href='#funktionen'>Funktionen</a>
             </h2>
           </header>
 
@@ -188,9 +239,22 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section backgroundColor='gray' id='sends'>
+      <Section id='videos'>
         <div class='grid gap-8'>
-          <header class='flex items-center gap-2'>
+          <header class='flex items-center gap-8'>
+            <CheckCurvedIcon />
+            <h2 class='text-4xl font-bold'>
+              <a href='#videos'>Videos</a>
+            </h2>
+          </header>
+
+          <YouTubeVideoGrid videos={videos} />
+        </div>
+      </Section>
+
+      <Section id='sends' backgroundColor='gray'>
+        <div class='grid gap-8'>
+          <header class='flex items-center gap-8'>
             <CheckCurvedIcon />
             <h2 class='text-4xl font-bold'>
               <a href='#sends'>Sends!</a>
@@ -218,65 +282,6 @@ export default component$(() => {
           </div>
         </div>
       </Section>
-
-      <Section id='vertragsvorschau'>
-        <div class='flex flex-wrap items-start gap-8'>
-          <section>
-            <CheckCurvedIcon />
-          </section>
-          <section class='grid gap-2'>
-            <h2 class='text-4xl font-bold'>
-              <a href='#vertragsvorschau'>Vertragsvorschau</a>
-            </h2>
-            <p class='max-w-3xl text-xl leading-8 xl:max-w-6xl'>
-              Entdecken Sie Details Ihres Vertrags im Voraus. Lesen Sie unsere
-              Allgemeinen Geschäftsbedingungen (
-              <a
-                class='hover:underline'
-                href='http://e.co-it.eu/agb'
-                target='_blank'
-              >
-                AGB
-              </a>
-              ) , um einen klaren Einblick in die vereinbarten Konditionen zu
-              erhalten, noch bevor spezifische Details verhandelt werden. LINK
-            </p>
-          </section>
-        </div>
-      </Section>
-
-      <Section backgroundColor='gray' id='open_source'>
-        <div class='grid gap-8'>
-          <header class='flex items-center gap-2'>
-            <CheckCurvedIcon />
-            <h2 class='text-4xl font-bold'>
-              <a href='#open_source'>Open Source</a>
-            </h2>
-          </header>
-
-          <div class='flex flex-wrap items-start gap-8'>
-            {ossCriteria.map((criterion, key) => (
-              <section class='grid gap-2' key={key}>
-                <h2 class='font-semibold'>{criterion.heading}</h2>
-                <p class='max-w-md leading-7'>{criterion.text}</p>
-              </section>
-            ))}
-          </div>
-        </div>
-      </Section>
-
-      <Section id='videos'>
-        <div class='grid gap-8'>
-          <header class='flex items-center gap-2'>
-            <CheckCurvedIcon />
-            <h2 class='text-4xl font-bold'>
-              <a href='#videos'>Videos</a>
-            </h2>
-          </header>
-
-          <YouTubeVideoGrid videos={videos} />
-        </div>
-      </Section>
     </>
   );
 });
@@ -292,8 +297,8 @@ export const head: DocumentHead = {
           source: '/img/products/passwort-manager/header.webp',
           alt: 'Two team mates checking an App on the tablet.'
         },
-        heading: 'Passwort-Manager',
-        headingAccent: 'Endlich.Sicher.'
+        heading: 'Passwort-Manager für Unternehmen',
+        headingAccent: 'Digitale Identitäten sicher organisieren.'
       }
     }
   }
