@@ -26,7 +26,7 @@ import NoBrandLogo from '~/media/ihre-marke/no-brand-logo.png?jsx';
 export default component$(() => {
   return (
     <>
-      <Section id='hervorstechen-anderssein'>
+      <Section id='hervorstechen-anderssein' backgroundColor='gray'>
         <ContentOverlapPortrait
           image={{
             source: '/img/cyber/cyber-portal/white-label/hardware.webp',
@@ -128,7 +128,7 @@ export default component$(() => {
         </section>
       </Section>
 
-      <Section id='ihre-marke' backgroundColor='gray'>
+      <Section id='ihre-marke'>
         <VideoOverlapLandscape youTubeVideoId='nWwjjQj0HNw'>
           <section class='flex flex-col space-y-4'>
             <LinkedHeading href='#ihre-marke'>
@@ -172,7 +172,7 @@ export default component$(() => {
         </VideoOverlapLandscape>
       </Section>
 
-      <Section id='individuelle_loesung'>
+      <Section id='individuelle_loesung' backgroundColor='gray'>
         <div class='ga-x-8 flex flex-wrap items-start'>
           <div class='mx-auto flex flex-col items-start gap-8 rounded-md p-4 shadow-md'>
             <NoBrandLogo class='mx-auto' />
@@ -218,6 +218,55 @@ export default component$(() => {
               Herausforderung.
             </p>
           </section>
+        </div>
+      </Section>
+
+      <Section id='passwort-manager_fuer_unternehmen'>
+        <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
+          <LinkedHeading href='#passwort-manager_fuer_unternehmen'>
+            <HeadingSegmentSecondary text='Passwort-Manager' />{' '}
+            <HeadingSegmentSecondary800 text='für Unternehmen' />
+          </LinkedHeading>
+
+          <p class='max-w-xl pb-4 leading-7'>
+            Neben praktischem Wissen wollen und brauchen Menschen auch smarte,
+            digitale Werkzeuge. Als Lösungsanbieter wollen wir erprobte Lösungen
+            für ganzheitliche Sicherheit anbieten. Aus unserer täglichen Arbeit
+            mit und für unsere Kunden entwickeln wir Ansätze, mit denen sich
+            betriebliche Prozesse und Richtlinien auf moderne und
+            anwenderfreundliche Art umsetzen lassen. Passend zu unserem
+            E-Learning Kurs "Endlich sichere Passwörter" und dem zugehörigen
+            Examen bieten Ihnen das passende Werkzeug.
+          </p>
+
+          <LinkCallToAction href='/produkte/passwort-manager'>
+            Mehr erfahren
+          </LinkCallToAction>
+        </section>
+      </Section>
+
+      <Section id='sie_wollen_ihre_anwender_schulen' backgroundColor='gray'>
+        <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
+          <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
+            Sie wollen <HeadingSegmentSecondary800 text='Ihre Anwender ' />{' '}
+            schulen?
+          </LinkedHeading>
+
+          <p class='max-w-xl'>
+            Für Kunden, die persönliche Schulung zu schätzen wissen, flankieren
+            wir unsere Phishing-Simulationen und unseren E-Learning Kurs "Sicher
+            per E-Mail kommunizieren" mit maßgeschneiderten Anwenderschulungen -
+            vor Ort und remote. Natürlich vermitteln wir darin Ihre
+            betriebsspezifischen Richtlinien zum Umgang mit potenziell
+            schädlichen E-Mails und zum Verhalten bei einem Sicherheitsvorfall.
+          </p>
+
+          <LinkCallToAction
+            href='https://e.co-IT.eu/cyber/schulung'
+            target='_blank'
+          >
+            Vereinbaren Sie einen Gesprächstermin
+          </LinkCallToAction>
         </div>
       </Section>
     </>

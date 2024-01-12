@@ -147,7 +147,7 @@ export default component$(() => {
         </VideoOverlapLandscape>
       </Section>
 
-      <Section id='cyber-paket_gesundheitswesen'>
+      <Section id='cyber-paket_gesundheitswesen' backgroundColor='gray'>
         <div class='grid grid-flow-row justify-center gap-16 sm:grid-flow-col'>
           <div class='mx-auto grid items-start gap-8 rounded-md p-4 shadow-md'>
             <PharmassecLogo />
@@ -172,6 +172,55 @@ export default component$(() => {
               finden preislich die attraktivste Branchenlösung.
             </p>
           </section>
+        </div>
+      </Section>
+
+      <Section id='passwort-manager_fuer_unternehmen'>
+        <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
+          <LinkedHeading href='#passwort-manager_fuer_unternehmen'>
+            <HeadingSegmentSecondary text='Passwort-Manager' />{' '}
+            <HeadingSegmentSecondary800 text='für Unternehmen' />
+          </LinkedHeading>
+
+          <p class='max-w-xl pb-4 leading-7'>
+            Neben praktischem Wissen wollen und brauchen Menschen auch smarte,
+            digitale Werkzeuge. Als Lösungsanbieter wollen wir erprobte Lösungen
+            für ganzheitliche Sicherheit anbieten. Aus unserer täglichen Arbeit
+            mit und für unsere Kunden entwickeln wir Ansätze, mit denen sich
+            betriebliche Prozesse und Richtlinien auf moderne und
+            anwenderfreundliche Art umsetzen lassen. Passend zu unserem
+            E-Learning Kurs "Endlich sichere Passwörter" und dem zugehörigen
+            Examen bieten Ihnen das passende Werkzeug.
+          </p>
+
+          <LinkCallToAction href='/produkte/passwort-manager'>
+            Mehr erfahren
+          </LinkCallToAction>
+        </section>
+      </Section>
+
+      <Section id='sie_wollen_ihre_anwender_schulen' backgroundColor='gray'>
+        <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
+          <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
+            Sie wollen <HeadingSegmentSecondary800 text='Ihre Anwender ' />{' '}
+            schulen?
+          </LinkedHeading>
+
+          <p class='max-w-xl'>
+            Für Kunden, die persönliche Schulung zu schätzen wissen, flankieren
+            wir unsere Phishing-Simulationen und unseren E-Learning Kurs "Sicher
+            per E-Mail kommunizieren" mit maßgeschneiderten Anwenderschulungen -
+            vor Ort und remote. Natürlich vermitteln wir darin Ihre
+            betriebsspezifischen Richtlinien zum Umgang mit potenziell
+            schädlichen E-Mails und zum Verhalten bei einem Sicherheitsvorfall.
+          </p>
+
+          <LinkCallToAction
+            href='https://e.co-IT.eu/cyber/schulung'
+            target='_blank'
+          >
+            Vereinbaren Sie einen Gesprächstermin
+          </LinkCallToAction>
         </div>
       </Section>
     </>
