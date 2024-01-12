@@ -106,20 +106,21 @@ export default component$(() => {
         <VideoOverlapLandscape youTubeVideoId='4pvfj1ggRlQ'>
           <section class='flex flex-col space-y-4'>
             <LinkedHeading href='#cyber_portal'>
-              <HeadingSegmentSecondary text='Spezifische Rezeptur, bessere' />{' '}
-              <HeadingSegmentSecondary800 text='Wirksamkeit' />
+              <HeadingSegmentSecondary text='Spezifische Rezeptur,' />{' '}
+              <HeadingSegmentSecondary800 text='bessere Wirksamkeit' />
             </LinkedHeading>
             <p class='leading-7'>
               Wir haben uns genau angeschaut, was Sie im Gesundheitswesen
               brauchen, führten etliche individuelle Gespräche und werteten eine
               Vielzahl an Vorfällen aus. Immer mit dem Ohr am Puls der Zeit,
-              haben wir natürlich auch die Entwicklung der NIS 2 Richtlinie und
-              des IT-Sicherheitsgesetz 2 beobachtet.
+              haben wir natürlich auch die Entwicklung der{' '}
+              <strong>NIS 2 Richtlinie und des IT-Sicherheitsgesetz 2</strong>
+              beobachtet.
               <br />
-              Als Teil der kritischen Infrastruktur und mit aus DSGVO Sicht
-              besonders sensiblen Patientendaten betraut, haben wir für Sie eine
-              individuelle Rezeptur unsere hochwertigen Phishing-Simulationen
-              erstellt:
+              Als Teil der kritischen Infrastruktur und mit aus{' '}
+              <strong>DSGVO</strong> Sicht besonders sensiblen Patientendaten
+              betraut, haben wir für Sie eine individuelle Rezeptur unsere
+              hochwertigen Phishing-Simulationen erstellt:
             </p>
             <ul class='list-inside list-disc'>
               <li>
