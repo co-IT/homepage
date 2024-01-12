@@ -37,10 +37,6 @@ const pros = [
     text: 'Sie können in unserem Tresor nicht nur Ihre Passwörter schützen. Ihnen ist es möglich, alle Arten von sensiblen Daten abzusichern.'
   },
   {
-    heading: 'Server Standort in Deutschland oder bei Ihnen vor Ort',
-    text: 'Sie können den Dienst über uns hosten lassen oder on Premise bei Ihnen vor Ort - ganz nach Ihren Wünschen.'
-  },
-  {
     heading: 'Unterstützung diverser Betriebssysteme',
     text: 'Windows, Android, MAC, IOS'
   }
