@@ -202,8 +202,11 @@ export default component$(() => {
           </div>
 
           <div class='mx-auto'>
-            <LinkCallToAction href='http://e.co-it.eu/agb' target='_blank'>
-              Für Details schauen Sie in unsere Nutzungsbedingungen
+            <LinkCallToAction
+              href='https://e.co-IT.eu/passwort-mgmt/v1 '
+              target='_blank'
+            >
+              Unsere Nutzungsbedingungen
             </LinkCallToAction>
           </div>
         </div>
