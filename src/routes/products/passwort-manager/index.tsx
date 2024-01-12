@@ -121,20 +121,22 @@ export default component$(() => {
           <section class='grid gap-2'>
             <h2 class='text-4xl font-bold'>
               <a href='#sicherheit_auf_knopfdruck'>
-                Sicherheit auf Knopfdruck!
+                Sicherheit trifft Einfachheit
               </a>
             </h2>
             <p class='max-w-3xl text-xl leading-8 xl:max-w-6xl'>
-              Sichern Sie Ihre digitale Welt mit Leichtigkeit. Unser
-              Passwortmanager ist Ihr ultimativer Schutzschild gegen
-              Cyber-Bedrohungen. Kein mühsames Merken von komplizierten
-              Passwörtern mehr - Ihre sensiblen Daten sind in einem
-              hochverschlüsselten Tresor vor neugierigen Blicken geschützt. Mit
-              bequemen Funktionen wie automatischem Formularausfüllen und
-              synchronisiertem Zugriff von überall aus wird digitales Arbeiten
-              so unkompliziert wie nie zuvor. Schluss mit unsicheren Passwörtern
-              - willkommen in einer Zukunft voller digitaler Sicherheit, mit
-              unserem Passwortmanager.
+              Was haben das On-/Offboarding von Mitarbeitern, die Vielfalt an
+              betrieblichen Arbeitsgeräten und die Datenschutz-Grundverordnung
+              gemeinsam? Sie erfordern eine möglichst flexible, besonders
+              anwenderfreundliche, maximal sichere und unternehmensweite
+              Organisation Ihrer Zugänge.
+              <br />
+              <br />
+              Mit unserem Verständnis für Unternehmensstrukturen und unserer
+              technisch hochmodernen Lösung etablieren wir mit Ihnen gemeinsam
+              ein zentrales Passwortmanagement, das Ihre sensiblen Daten
+              schützt, höchste Sicherheitsansprüche erfüllt und gleichzeitig
+              Ihre individuellen Prozesse abbildet.
             </p>
           </section>
         </div>
@@ -148,16 +150,33 @@ export default component$(() => {
           <section class='grid gap-2'>
             <h2 class='text-4xl font-bold'>
               <a href='#sicherheit_trifft-einfachheit'>
-                Sicherheit trifft Einfachheit!
+                So verstehen wir Sicherheit
               </a>
             </h2>
             <p class='max-w-3xl text-xl leading-8 xl:max-w-6xl'>
-              Schützen Sie vertrauliche Dokumente mit unserer revolutionären
-              Lösung. Verschlüsseln Sie wichtige Dateien mühelos und speichern
-              Sie Zugangscodes sicher in unserem digitalen Tresor. Teilen Sie
-              sensible Informationen mit einem speziell generierten Link, der
-              nach einmaligem Gebrauch verfällt - Ihre Daten bleiben geschützt
-              und Ihr Kopf bleibt frei.
+              Ob ein Unternehmen gesund aufgestellt ist, erkennen Sie nicht
+              durch einen Blick auf dessen Webseite. Sie müssen in das
+              Unternehmen reinschauen, mit den Beteiligten sprechen und Interna
+              sichten.
+              <br />
+              <br />
+              Das Gleiche gilt für Software: Die Sicherheit lässt sich nur durch
+              den Blick in den Programmcode bewerten. Deshalb setzen wir auf
+              eine quelloffene, sogenannte „Open Source“ Lösung, die von
+              Sicherheitsexperten gesichtet und mit Schwarmintelligenz der
+              Tausenden von Entwicklern verbessert werden kann.
+              <br />
+              Gleichzeitig halten wir digitale Identitäten für so sensibel und
+              schützenswert, dass sie in Deutschland gespeichert werden sollten
+              und nicht in die Hände von Konzernen gehören. Darum ermöglichen
+              wir Ihnen die Auswahl zwischen drei Betriebsmodi: Wir stellen die
+              Lösung auf Ihren lokalen Servern (On-Premise), im Rechenzentrum
+              Ihrer Wahl oder auf „unserer Hardware“ zur Verfügung.
+              <br />
+              Wir nutzen dafür keine fertigen Dienste von Cloudanbietern,
+              sondern provisionieren unser Produkt selbst auf dem angemieteten
+              Server im Rechenzentrum. Damit behalten Sie die maximale
+              Datenautonomie.
             </p>
           </section>
         </div>
