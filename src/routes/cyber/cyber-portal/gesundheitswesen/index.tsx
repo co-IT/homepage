@@ -149,7 +149,7 @@ export default component$(() => {
 
       <Section id='cyber-paket_gesundheitswesen' backgroundColor='gray'>
         <div class='grid grid-flow-row justify-center gap-16 sm:grid-flow-col'>
-          <div class='mx-auto grid items-start gap-8 rounded-md p-4 shadow-md'>
+          <div class='mx-auto grid items-start gap-8 rounded-md bg-white p-4 shadow-md'>
             <PharmassecLogo />
             <ProductFeatureList features={gesundheitswesenFeatures} />
             <LinkCallToAction
