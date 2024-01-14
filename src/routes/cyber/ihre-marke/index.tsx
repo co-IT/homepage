@@ -175,7 +175,7 @@ export default component$(() => {
 
       <Section id='individuelle_loesung' backgroundColor='gray'>
         <div class='ga-x-8 flex flex-wrap items-start'>
-          <div class='mx-auto flex flex-col items-start gap-8 rounded-md p-4 shadow-md'>
+          <div class='mx-auto flex flex-col items-start gap-8 rounded-md bg-white p-4 shadow-md'>
             <NoBrandLogo class='mx-auto' />
             <ProductFeatureList features={ihreMarkeFeatures} />
             <LinkCallToAction
