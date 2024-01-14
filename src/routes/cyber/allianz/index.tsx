@@ -29,7 +29,8 @@ export default component$(() => {
       <Section id='hervorstechen-anderssein' backgroundColor='gray'>
         <ContentOverlapPortrait
           image={{
-            source: '/img/cyber/cyber-portal/white-label/hardware.webp',
+            source:
+              '/img/cyber/cyber-portal/white-label/hervorstechen-anders-sein.webp',
             alternateText: '3 Holzklötze die aufeinandergestapelt sind'
           }}
         >
@@ -293,6 +294,10 @@ export const head: DocumentHead = {
         {
           title: 'Designed by Freepik',
           images: [
+            {
+              title: 'Hervorstechen anders Sein',
+              href: 'https://www.freepik.com/free-photo/close-up-cute-child-portrait_19917228.htm#query=anders%20sein&position=30&from_view=search&track=ais&uuid=c24d694c-a41f-4103-adcf-f2dbbc5da8be'
+            },
             {
               title: 'Keyboard',
               href: 'https://de.freepik.com/fotos-kostenlos/vorderansichtarzt-der-medizinisches-element-haelt_12412966.htm#page=3&query=medizin%20baustein&position=13&from_view=search&track=ais&uuid=f0b16208-40f7-4803-915b-235db8c7ae36'
