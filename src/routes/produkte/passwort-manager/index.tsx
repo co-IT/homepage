@@ -21,7 +21,7 @@ const pros = [
   },
   {
     heading: 'Passwörter mit anderen teilen',
-    text: 'Stellen Sie sich Passkeys wie spezielle, geheime Codes vor, die Sie anstelle von normalen Passwörtern verwenden können. Wenn Sie auf Ihre Kontoinformationen zugreifen möchten, müssen Sie diesen besonderen Code eingeben. Im Gegensatz zu gewöhnlichen Passwörtern sind Passkeys oft länger und komplizierter, was sie schwieriger für andere macht, zu erraten. Sie sind so etwas wie magische Schlüssel, die nur Ihnen erlauben, auf Ihre wichtigen Dinge zuzugreifen und somit Ihre Informationen sicherer machen.'
+    text: 'Unser Passwortmanager ermöglicht es Ihnen, Passwörter innerhalb Ihrer Organisation zu teilen und anderen Zugriff auf Ihre Zugangsdaten zu geben.'
   },
   {
     heading: 'Automatisches Ausfüllen durch Browser-Erweiterung',
