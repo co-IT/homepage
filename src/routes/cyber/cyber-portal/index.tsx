@@ -671,7 +671,19 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'co-IT - Cyber Portal',
+  title: 'co-IT - Cyber Portal: Stärken Sie Ihre digitale Sicherheit!',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Mehr digitale Sicherheit durch praxisrelevantes Wissen und hochwertige Phishing-Simulationen, um sich in der digitalen Welt sicher zu fühlen und zu sein.'
+    },
+    {
+      name: 'keywords',
+      content:
+        'Cyber Portal, Digitale Sicherheit, Praxisrelevantes Wissen, Phishing-Simulationen, Digitale Welt'
+    }
+  ],
 
   frontmatter: {
     header: {
