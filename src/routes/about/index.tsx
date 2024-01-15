@@ -48,7 +48,18 @@ export default component$(() => {
 
 export const head: DocumentHead = {
   title: 'co-IT - Über uns',
-
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Mit Mut, Kollegialität und Hingabe gestalten wir Veränderungen in einer sich ständig wandelnden IT-Welt zu etwas Positivem. Erfahre mehr über uns...'
+    },
+    {
+      name: 'keywords',
+      content:
+        'Über uns, Mut, Kollegialität, Hingabe, Veränderungen, IT-Welt, Positiv'
+    }
+  ],
   frontmatter: {
     header: {
       type: 'content-page',

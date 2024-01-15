@@ -306,6 +306,18 @@ export default component$(() => {
 
 export const head: DocumentHead = {
   title: 'co-IT - Passwort-Manager',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Ein zentrales Passwortmanagement, das Ihre sensiblen Daten schützt, höchste Sicherheitsansprüche erfüllt und gleichzeitig Ihre individuellen Prozesse abbildet.'
+    },
+    {
+      name: 'keywords',
+      content:
+        'Passwort-Manager, Sicherheit, Weniger Komplexität, Zentrales Passwortmanagement, Sensible Daten, Höchste Sicherheitsansprüche, Individuelle Prozesse, Digitale Zugänge'
+    }
+  ],
 
   frontmatter: {
     header: {

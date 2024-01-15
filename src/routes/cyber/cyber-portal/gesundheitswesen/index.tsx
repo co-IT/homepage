@@ -228,7 +228,19 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'co-IT - Cyber Portal fürs Gesundheitswesen',
+  title: 'co-IT - Cyber Portal: Stärken Sie Ihre digitale Sicherheit!',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Ihr Portal für praxisrelevante Kurse, hochwertige Phishing-Simulationen als Lösung für Apotheken und Arztpraxen - individuell und auf den Punkt.'
+    },
+    {
+      name: 'keywords',
+      content:
+        'Cyber Portal, Digitale Sicherheit, Gesundheitswesen, Praxisrelevante Kurse, Phishing-Simulationen, Apotheken, Arztpraxen'
+    }
+  ],
 
   frontmatter: {
     header: {

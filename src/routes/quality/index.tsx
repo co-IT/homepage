@@ -53,7 +53,19 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'co-IT - Qualität',
+  title: 'co-IT - Qualität, abgestimmt auf den Punkt!',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Wir setzen auf Qualität und Teamarbeit. Unsere T-Shaped-Professionals verstehen Ihr Business, um für Sie eine auf den Punkt abgestimmte IT-Lösung zu schaffen.'
+    },
+    {
+      name: 'keywords',
+      content:
+        'Qualität, Teamarbeit, T-Shaped-Professionals, Abgestimmt auf den Punkt, IT-Lösung'
+    }
+  ],
 
   frontmatter: {
     header: {

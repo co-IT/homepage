@@ -214,6 +214,17 @@ export default component$(() => {
 
 export const head: DocumentHead = {
   title: 'co-IT - Karriere',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Nichts zu lachen im Job? - Bei uns findest du dein Lächeln wieder!'
+    },
+    {
+      name: 'keywords',
+      content: 'Karriere, Job, Lächeln, Arbeitsplatz, Positiv, Bewerben'
+    }
+  ],
 
   frontmatter: {
     header: {
