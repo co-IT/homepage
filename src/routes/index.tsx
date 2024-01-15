@@ -77,7 +77,19 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'co-IT - Inspire to Change',
+  title: 'co-IT - Ihre Premiumlösung für Ihre IT-Anforderungen',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Herausforderungen in einzigartige Chancen verwandeln! Unsere Expertise in Softwareentwicklung und IT-Service-Management bringt Ihre Idee auf die Straße.'
+    },
+    {
+      name: 'keywords',
+      content:
+        'co-IT, Premiumlösungen, IT-Anforderungen, Herausforderungen, Softwareentwicklung, IT-Service-Management'
+    }
+  ],
 
   frontmatter: {
     header: {
