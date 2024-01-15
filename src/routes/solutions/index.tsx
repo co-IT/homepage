@@ -60,6 +60,18 @@ Strategie- und Unternehmensberatung`
 
 export const head: DocumentHead = {
   title: 'co-IT - Lösungen',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Von Softwareentwicklung über IT-Service-Management bis hin zu Change, Prozess- und Projektmanagement sowie Strategie- und Unternehmensberatung.'
+    },
+    {
+      name: 'keywords',
+      content:
+        'Vollumfängliche Lösungen, Softwareentwicklung, IT-Service-Management, Change, Prozessmanagement, Projektmanagement, Strategie, Unternehmensberatung'
+    }
+  ],
 
   frontmatter: {
     header: {
