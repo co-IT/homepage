@@ -1,6 +1,5 @@
 import { $, component$, useContext } from '@builder.io/qwik';
 import { MenuIcon } from '../icons';
-import { Logo } from '../logo';
 import { MobileMenuButton } from '../mobile-menu-button';
 import type { NavigationState } from '../navigation/navigation.context';
 import { NavigationContext } from '../navigation/navigation.context';
@@ -15,7 +14,7 @@ export const Header = component$((props: HeaderProps) => {
 
   const headerHeight = props.type === 'default' ? 'lg:h-auto' : 'lg:h-[90vh]';
 
-  const headerBackgrundImage =
+  const headerBackgroundImage =
     props.type !== 'default'
       ? `background-image: linear-gradient(0deg, rgba(2, 2, 52, 0.6), rgba(2, 2, 52, 0.6)), url("${props.configuration.backgroundImage.source}");`
       : '';
@@ -23,14 +22,12 @@ export const Header = component$((props: HeaderProps) => {
   return (
     <header
       class={`bg-secondary-900 bg-cover bg-no-repeat sm:max-h-max md:bg-right-top ${headerHeight}`}
-      style={headerBackgrundImage}
+      style={headerBackgroundImage}
     >
       <div class='container mx-auto grid gap-36 lg:h-full'>
         <section class='flex h-fit justify-center pt-6 md:justify-between md:px-6'>
-          <Logo></Logo>
-
           <div
-            class='my-auto hidden cursor-pointer flex-row gap-x-4 hover:opacity-75 md:block'
+            class='my-auto mt-20 hidden cursor-pointer flex-row gap-x-4 hover:opacity-75 md:block'
             onClick$={() => openMenu()}
           >
             <MenuIcon />

@@ -9,27 +9,30 @@ export default {
     container: false
   },
   theme: {
-    colors: {
-      primary: '#FFC138',
-      secondary: {
-        50: '#e5eeff',
-        100: '#d0e0ff',
-        200: '#abc4ff',
-        300: '#799cff',
-        400: '#4562ff',
-        500: '#1c2aff',
-        600: '#0001ff',
-        700: '#0004ff',
-        800: '#0004dd',
-        900: '#02024d'
-      },
-      accent: '#11E07D',
-      'accent-dark': '#058547',
-      surface: '#D9D9D9',
-      black: colors.black,
-      gray: colors.gray,
-      white: colors.white
-    }
+    extend: {
+      colors: {
+        primary: '#FFC138',
+        secondary: {
+          50: '#e5eeff',
+          100: '#d0e0ff',
+          200: '#abc4ff',
+          300: '#799cff',
+          400: '#4562ff',
+          500: '#1c2aff',
+          600: '#0001ff',
+          700: '#0004ff',
+          800: '#0004dd',
+          900: '#02024d',
+          950: '#121230'
+        },
+        accent: '#11E07D',
+        'accent-dark': '#058547',
+        surface: '#D9D9D9',
+        black: colors.black,
+        gray: colors.gray,
+        white: colors.white
+      }
+    },
   },
   plugins: [
     plugin(({ addBase, theme }) => {

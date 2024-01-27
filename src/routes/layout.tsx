@@ -1,6 +1,7 @@
 import { component$, Slot, useContext } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { useDocumentHead } from '@builder.io/qwik-city';
+import { TopBar } from '~/_shell/top-bar/top-bar';
 import { Footer } from '~/components/footer';
 import type { HeaderProps } from '~/components/header';
 import { Header } from '~/components/header';
@@ -21,6 +22,7 @@ export default component$(() => {
 
   return (
     <>
+      <TopBar />
       <Header {...headerProps} />
       <Navigation open={menuState.isOpen} />
 

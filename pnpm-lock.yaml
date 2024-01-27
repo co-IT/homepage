@@ -18,8 +18,8 @@ devDependencies:
     specifier: ^0.33.1
     version: 0.33.1
   '@qwik-ui/headless':
-    specifier: ^0.1.17
-    version: 0.1.22(@builder.io/qwik@1.3.3)
+    specifier: ^0.2.2
+    version: 0.2.2(@builder.io/qwik@1.3.3)
   '@types/eslint':
     specifier: ^8.44.8
     version: 8.56.1
@@ -725,25 +725,13 @@ packages:
     dev: true
     optional: true
 
-  /@qwik-ui/headless@0.1.22(@builder.io/qwik@1.3.3):
-    resolution: {integrity: sha512-WJoa1ZfIuKADH5zyHstaBvxtbO/VVDocKYCA1EfP9Vm5C3n9VKiArE9fFByJrx0Ra1G8s6tc90JE3WXG7R9cWw==}
+  /@qwik-ui/headless@0.2.2(@builder.io/qwik@1.3.3):
+    resolution: {integrity: sha512-6x2of9pWacGeS9A79e2rqZXLPVj6iJ9FsPbIR2NJm1TvT1duMNEtMZCjGlBfiDSrff2010GuvO/HvoD8Kng6tg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
-      '@builder.io/qwik': '>=1.2.19'
+      '@builder.io/qwik': ^1.4.0
     dependencies:
       '@builder.io/qwik': 1.3.3(@types/node@20.10.8)(undici@5.28.2)
-      '@floating-ui/dom': 1.5.4
-      '@qwik-ui/utils': 0.0.3
-      body-scroll-lock: 4.0.0-beta.0
-      country-list-json: 1.1.0
-      focus-trap: 7.5.4
-      libphonenumber-js: 1.10.53
-    dev: true
-
-  /@qwik-ui/utils@0.0.3:
-    resolution: {integrity: sha512-/3m1Vh0XevcD9WfI8eh/UNo9eKbJW42mZCrVewzdMJV9Zehdt/yWsFAGqrDy/JVUsicM18kkiT0Xc2EA2sT43Q==}
-    dependencies:
-      tailwind-merge: 1.14.0
     dev: true
 
   /@rollup/pluginutils@5.1.0:
@@ -1241,10 +1229,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /body-scroll-lock@4.0.0-beta.0:
-    resolution: {integrity: sha512-a7tP5+0Mw3YlUJcGAKUqIBkYYGlYxk2fnCasq/FUph1hadxlTRjF+gAcZksxANnaMnALjxEddmSi/H3OR8ugcQ==}
-    dev: true
-
   /boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
     dev: true
@@ -1394,10 +1378,6 @@ packages:
 
   /concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
-    dev: true
-
-  /country-list-json@1.1.0:
-    resolution: {integrity: sha512-9a6sGBVXq3rXmZlddQQIjk0ZAk/pfBwVMUU1zJczWtIG4VcfUKp8HDSMteK1bBZVznE7+wWVg6kntxtzDBjvPQ==}
     dev: true
 
   /cross-spawn@7.0.3:
@@ -2517,10 +2497,6 @@ packages:
     dependencies:
       prelude-ls: 1.2.1
       type-check: 0.4.0
-    dev: true
-
-  /libphonenumber-js@1.10.53:
-    resolution: {integrity: sha512-sDTnnqlWK4vH4AlDQuswz3n4Hx7bIQWTpIcScJX+Sp7St3LXHmfiax/ZFfyYxHmkdCvydOLSuvtAO/XpXiSySw==}
     dev: true
 
   /lilconfig@2.1.0:
@@ -3734,10 +3710,6 @@ packages:
 
   /tabbable@6.2.0:
     resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==}
-    dev: true
-
-  /tailwind-merge@1.14.0:
-    resolution: {integrity: sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ==}
     dev: true
 
   /tailwindcss@3.3.3:
