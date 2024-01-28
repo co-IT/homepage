@@ -1,5 +1,4 @@
-import { $, component$, useContext } from '@builder.io/qwik';
-import { MenuIcon } from '../icons';
+import { component$, useContext } from '@builder.io/qwik';
 import { MobileMenuButton } from '../mobile-menu-button';
 import type { NavigationState } from '../navigation/navigation.context';
 import { NavigationContext } from '../navigation/navigation.context';
@@ -10,7 +9,6 @@ import type { HeaderProps } from './header.props';
 
 export const Header = component$((props: HeaderProps) => {
   const menuState = useContext<NavigationState>(NavigationContext);
-  const openMenu = $(() => (menuState.isOpen = true));
 
   const headerHeight = props.type === 'default' ? 'lg:h-auto' : 'lg:h-[90vh]';
 
@@ -25,14 +23,6 @@ export const Header = component$((props: HeaderProps) => {
       style={headerBackgroundImage}
     >
       <div class='container mx-auto grid gap-36 lg:h-full'>
-        <section class='flex h-fit justify-center pt-6 md:justify-between md:px-6'>
-          <div
-            class='my-auto mt-20 hidden cursor-pointer flex-row gap-x-4 hover:opacity-75 md:block'
-            onClick$={() => openMenu()}
-          >
-            <MenuIcon />
-          </div>
-        </section>
         <section class='flex flex-col items-center space-y-10 text-center lg:mb-12 lg:self-end'>
           {props.type === 'landing-page' ? (
             <HeaderLandingPage {...props.configuration} />
