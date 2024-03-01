@@ -7,11 +7,11 @@ export const NavMenuAd = component$(({ ad }: { ad: MenuAd }) => {
       <div class='flex h-fit items-start gap-5 '>
         <div>{ad.image}</div>
         <div class='flex flex-1 flex-col items-start gap-4 self-stretch '>
-          <h3 class='text-2xl font-bold text-secondary-950'>{ad.headline}</h3>
+          <h3 class='text-xl font-bold text-secondary-950'>{ad.headline}</h3>
           <p class='mb-auto text-lg text-gray-600'>{ad.description}</p>
           <a
             href={ad.link}
-            class='rounded bg-primary px-6 py-3 text-2xl font-bold text-secondary-950'
+            class='rounded bg-primary px-6 py-3 text-lg font-bold text-secondary-950'
           >
             {ad.ctaText}
           </a>
