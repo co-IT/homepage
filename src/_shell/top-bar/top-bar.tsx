@@ -16,7 +16,7 @@ export const TopBar = component$(() => {
           changeBgSig.value = window.scrollY > 5;
         }}
         class={[
-          'fixed z-10 w-full p-3 transition duration-300',
+          'fixed z-50 w-full p-3 transition duration-300',
           changeBgSig.value ? 'bg-secondary-950' : ''
         ]}
       >
@@ -24,8 +24,12 @@ export const TopBar = component$(() => {
           <div class='mr-auto'>
             <Logo />
           </div>
-          <NavMenu config={navigationConfig} menuAnchorRef={ref} />
-          <MobileNavigation config={navigationConfig} />
+          <div class='hidden md:block'>
+            <NavMenu config={navigationConfig} menuAnchorRef={ref} />
+          </div>
+          <div class='md:hidden'>
+            <MobileNavigation config={navigationConfig} />
+          </div>
         </section>
       </div>
     </>

@@ -12,7 +12,7 @@ import {
 import type { NavMenuConfig } from '../../nav-menu/nav-menu';
 
 import { Link } from '@builder.io/qwik-city';
-import { CaretIcon, CloseIcon } from './icons';
+import { CaretIcon, CloseIcon, MenuIcon } from './icons';
 
 import Logo from './logo-blue.svg?jsx';
 import mobileNavigationStyles from './mobile-navigation.css?inline';
@@ -33,9 +33,9 @@ export const MobileNavigation = component$(
           onClick$={() => {
             showSig.value = true;
           }}
-          class='rounded-base border px-3 py-2 hover:bg-accent/80'
+          class='px-3 py-2'
         >
-          Open Modal
+          <MenuIcon />
         </button>
         <Modal
           bind:show={showSig}

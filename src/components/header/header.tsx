@@ -8,7 +8,7 @@ import type { HeaderProps } from './header.props';
 
 export const Header = component$((props: HeaderProps) => {
   const headerHeight =
-    props.type === 'default' ? 'lg:h-auto' : 'md:h-[60vh] lg:h-[90vh]';
+    props.type === 'default' ? 'lg:h-auto' : 'h-[60vh] lg:h-[90vh]';
 
   const headerBackgroundImage =
     props.type !== 'default'
