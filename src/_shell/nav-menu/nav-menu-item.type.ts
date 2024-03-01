@@ -1,10 +1,10 @@
-import type { JSXNode } from '@builder.io/qwik';
+import type { JSXOutput } from '@builder.io/qwik';
 
 export type NavMenuItem = {
   text: string;
   path?: string;
   isCategory?: boolean;
   description?: string;
-  icon?: JSXNode;
+  icon?: JSXOutput;
   items?: NavMenuItem[];
 };
