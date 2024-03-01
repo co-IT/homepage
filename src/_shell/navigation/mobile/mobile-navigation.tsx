@@ -1,19 +1,20 @@
-import { component$, useSignal, useStyles$ } from '@builder.io/qwik';
+import { $, component$, useSignal, useStyles$ } from '@builder.io/qwik';
 import {
-  AccordionContent,
-  AccordionHeader,
-  AccordionItem,
   AccordionRoot,
-  AccordionTrigger,
   Modal,
   ModalContent,
   ModalHeader
 } from '@qwik-ui/headless';
 import type { NavMenuConfig } from '../../nav-menu/nav-menu';
 
-import { Link } from '@builder.io/qwik-city';
-import { CaretIcon, CloseIcon, MenuIcon } from './icons';
+import { CloseIcon, MenuIcon } from './icons';
 
+import { Link } from '@builder.io/qwik-city';
+import {
+  CallToActionAccordionItem,
+  CollapsibleAccordionItem,
+  LinkAccordionItem
+} from './accordion';
 import Logo from './logo-blue.svg?jsx';
 import mobileNavigationStyles from './mobile-navigation.css?inline';
 
@@ -26,6 +27,8 @@ export const MobileNavigation = component$(
     useStyles$(mobileNavigationStyles);
 
     const showSig = useSignal(false);
+
+    const close$ = $(() => (showSig.value = false));
 
     return (
       <>
@@ -42,7 +45,9 @@ export const MobileNavigation = component$(
           class='sheet bg-background text-foreground rounded-base fixed bottom-0 right-0 top-0 mr-0 h-full w-[min(400px,_100%)] border-0 p-[28px] shadow-md backdrop:backdrop-blur backdrop:backdrop-brightness-50 dark:backdrop:backdrop-brightness-100'
         >
           <ModalHeader class='flex justify-between'>
-            <Logo />
+            <Link href='/' onClick$={close$}>
+              <Logo />
+            </Link>
             <button onClick$={() => (showSig.value = false)}>
               <CloseIcon />
             </button>
@@ -56,43 +61,35 @@ export const MobileNavigation = component$(
                 behavior='single'
                 class='w-[min(400px,_100%)]'
               >
-                {config.items.map((entryItem, index) => (
-                  <AccordionItem class='border-b' key={`entryItem-${index}`}>
-                    <AccordionHeader as='h3' class=''>
-                      <AccordionTrigger class='group flex w-full items-center justify-between py-4 text-left'>
-                        <span class='font-bold text-secondary-900'>
-                          {entryItem.text}
-                        </span>
-                        <span class='pl-2'>
-                          <CaretIcon class='ease transition-transform duration-500 group-aria-expanded:rotate-180 group-aria-expanded:transform' />
-                        </span>
-                      </AccordionTrigger>
-                    </AccordionHeader>
-                    <AccordionContent class=' accordion-animation-1 overflow-hidden'>
-                      <div class='grid gap-2 pb-4 pl-2'>
-                        {entryItem.items?.map((category, index) => (
-                          <div key={`categoryItem-${index}`}>
-                            <h4 class='mb-4 mt-2 font-semibold uppercase text-gray-800'>
-                              {category.text}
-                            </h4>
-                            <ul class='grid gap-2'>
-                              {category.items?.map((subItem, index) => (
-                                <li key={`subItem-${index}`}>
-                                  <Link
-                                    href={subItem.path}
-                                    class='font-semibold text-secondary-900'
-                                  >
-                                    {subItem.text}
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        ))}
-                      </div>
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
+                {config.items.map((entryItem, index) => {
+                  {
+                    if (entryItem.items) {
+                      return (
+                        <CollapsibleAccordionItem
+                          item={entryItem}
+                          key={`entryItem-${index}`}
+                          onItemClick$={close$}
+                        />
+                      );
+                    } else if (entryItem.isCta) {
+                      return (
+                        <CallToActionAccordionItem
+                          item={entryItem}
+                          key={`entryItem-${index}`}
+                          onItemClick$={close$}
+                        />
+                      );
+                    }
+
+                    return (
+                      <LinkAccordionItem
+                        item={entryItem}
+                        key={`entryItem-${index}`}
+                        onItemClick$={close$}
+                      />
+                    );
+                  }
+                })}
               </AccordionRoot>
             </div>
           </ModalContent>
