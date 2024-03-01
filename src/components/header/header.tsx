@@ -1,16 +1,14 @@
-import { component$, useContext } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
+import { TopBar } from '../../_shell/top-bar/top-bar';
 import { MobileMenuButton } from '../mobile-menu-button';
-import type { NavigationState } from '../navigation/navigation.context';
-import { NavigationContext } from '../navigation/navigation.context';
 import { HeaderContentPage } from './header-content-page';
 import { HeaderDefaultPage } from './header-default-page';
 import { HeaderLandingPage } from './header-landing-page';
 import type { HeaderProps } from './header.props';
 
 export const Header = component$((props: HeaderProps) => {
-  const menuState = useContext<NavigationState>(NavigationContext);
-
-  const headerHeight = props.type === 'default' ? 'lg:h-auto' : 'lg:h-[90vh]';
+  const headerHeight =
+    props.type === 'default' ? 'lg:h-auto' : 'md:h-[60vh] lg:h-[90vh]';
 
   const headerBackgroundImage =
     props.type !== 'default'
@@ -19,11 +17,13 @@ export const Header = component$((props: HeaderProps) => {
 
   return (
     <header
-      class={`bg-secondary-900 bg-cover bg-no-repeat sm:max-h-max md:bg-right-top ${headerHeight}`}
+      class={`bg-secondary-900 bg-cover bg-no-repeat md:bg-right-top ${headerHeight}`}
       style={headerBackgroundImage}
     >
-      <div class='container mx-auto grid gap-36 lg:h-full'>
-        <section class='flex flex-col items-center space-y-10 text-center lg:mb-12 lg:self-end'>
+      <TopBar />
+
+      <div class='container mx-auto grid h-full gap-36'>
+        <section class='flex flex-col items-center space-y-10 self-end text-center lg:mb-12'>
           {props.type === 'landing-page' ? (
             <HeaderLandingPage {...props.configuration} />
           ) : props.type === 'content-page' ? (
