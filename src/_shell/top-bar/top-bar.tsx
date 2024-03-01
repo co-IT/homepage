@@ -2,6 +2,7 @@
 import { component$, useSignal } from '@builder.io/qwik';
 import { Logo } from '~/components/logo';
 import { NavMenu } from '../nav-menu/nav-menu';
+import { MobileNavigation } from '../navigation/mobile/mobile-navigation';
 import { navigationConfig } from '../navigation/navigation.config';
 
 export const TopBar = component$(() => {
@@ -15,7 +16,7 @@ export const TopBar = component$(() => {
           changeBgSig.value = window.scrollY > 5;
         }}
         class={[
-          'fixed z-50 w-full p-3 transition duration-300',
+          'fixed z-10 w-full p-3 transition duration-300',
           changeBgSig.value ? 'bg-secondary-950' : ''
         ]}
       >
@@ -24,6 +25,7 @@ export const TopBar = component$(() => {
             <Logo />
           </div>
           <NavMenu config={navigationConfig} menuAnchorRef={ref} />
+          <MobileNavigation config={navigationConfig} />
         </section>
       </div>
     </>
