@@ -1,6 +1,5 @@
 import { component$ } from '@builder.io/qwik';
 import { TopBar } from '../../_shell/top-bar/top-bar';
-import { MobileMenuButton } from '../mobile-menu-button';
 import { HeaderContentPage } from './header-content-page';
 import { HeaderDefaultPage } from './header-default-page';
 import { HeaderLandingPage } from './header-landing-page';
@@ -33,7 +32,6 @@ export const Header = component$((props: HeaderProps) => {
           )}
         </section>
       </div>
-      <MobileMenuButton />
     </header>
   );
 });
