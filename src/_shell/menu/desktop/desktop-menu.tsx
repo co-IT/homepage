@@ -1,10 +1,17 @@
 /* eslint-disable qwik/valid-lexical-scope */
-import { component$, useSignal, type Signal } from '@builder.io/qwik';
+import {
+  component$,
+  useSignal,
+  useStyles$,
+  type Signal
+} from '@builder.io/qwik';
 import { Popover, PopoverTrigger } from '@qwik-ui/headless';
 import type { MenuConfig, MenuEntryItem } from '../types';
 import { CategoryItem } from './category-item';
 import { NavMenuAd } from './nav-menu-ad';
 import { ShevronIcon } from './shevron.icon';
+
+import styles from './desktop-menu.css?inline';
 
 type DesktopMenuProps = {
   config: MenuConfig;
@@ -60,6 +67,8 @@ export type MenuPopoverLinkProps = {
 
 export const MenuPopoverLink = component$<MenuPopoverLinkProps>(
   ({ index, item, menuAnchorRef }) => {
+    useStyles$(styles);
+
     const isOpenedSig = useSignal(false);
     return (
       <>

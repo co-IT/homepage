@@ -1,0 +1,25 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.popover-showing {
+  animation: fadeIn both 500ms ease;
+}
+
+.popover-closing {
+  animation: fadeOut both 500ms ease;
+}
