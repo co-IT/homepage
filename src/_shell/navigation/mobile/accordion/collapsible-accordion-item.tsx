@@ -7,7 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger
 } from '@qwik-ui/headless';
-import type { NavTopMenuItem } from '../../../nav-menu/nav-top-menu-item.type';
+import type { NavTopMenuItem } from '../../desktop/nav-top-menu-item.type';
 import { CaretIcon } from '../icons';
 
 type CollapsibleAccordionItemProps = {

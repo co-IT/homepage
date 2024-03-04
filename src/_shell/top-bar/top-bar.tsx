@@ -1,7 +1,7 @@
 /* eslint-disable qwik/jsx-img */
 import { component$, useSignal } from '@builder.io/qwik';
 import { Logo } from '~/components/logo';
-import { NavMenu } from '../nav-menu/nav-menu';
+import { NavMenu } from '../navigation/desktop';
 import { MobileNavigation } from '../navigation/mobile/mobile-navigation';
 import { navigationConfig } from '../navigation/navigation.config';
 

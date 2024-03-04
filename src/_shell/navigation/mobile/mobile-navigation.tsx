@@ -5,7 +5,7 @@ import {
   ModalContent,
   ModalHeader
 } from '@qwik-ui/headless';
-import type { NavMenuConfig } from '../../nav-menu/nav-menu';
+import type { NavMenuConfig } from '../desktop/nav-menu';
 
 import { CloseIcon, MenuIcon } from './icons';
 

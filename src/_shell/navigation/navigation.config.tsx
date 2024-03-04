@@ -1,7 +1,7 @@
-import type { NavMenuConfig } from '../nav-menu/nav-menu';
 import { CareerIcon } from '../top-bar/icons/career-icon';
 import { ServiceIcon } from '../top-bar/icons/service-icon';
 import { TargetIcon } from '../top-bar/icons/target-icon';
+import type { NavMenuConfig } from './desktop/nav-menu';
 
 export const navigationConfig: NavMenuConfig = {
   items: [
