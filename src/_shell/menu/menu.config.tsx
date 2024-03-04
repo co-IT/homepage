@@ -58,7 +58,7 @@ export const menuConfig: MenuConfig = {
             height='233'
           />
         ),
-        link: '/career',
+        link: 'https://karriere.co-it.eu/o/initiativbewerbung',
         ctaText: 'Initiativ bewerben'
       },
       items: [
