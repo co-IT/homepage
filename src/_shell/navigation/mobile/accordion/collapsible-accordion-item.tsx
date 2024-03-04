@@ -7,11 +7,11 @@ import {
   AccordionItem,
   AccordionTrigger
 } from '@qwik-ui/headless';
-import type { NavTopMenuItem } from '../../desktop/nav-top-menu-item.type';
+import type { MenuEntryItem } from '../../types/entry-menu-item.type';
 import { CaretIcon } from '../icons';
 
 type CollapsibleAccordionItemProps = {
-  item: NavTopMenuItem;
+  item: MenuEntryItem;
   key?: string;
   onItemClick$?: QRL<() => void>;
 };

@@ -1,8 +1,8 @@
 import { component$ } from '@builder.io/qwik';
-import type { NavMenuItem } from './nav-menu-item.type';
+import type { MenuItem } from '../types/menu-item.type';
 
 export const CategoryItem = component$(
-  ({ category }: { category: NavMenuItem }) => {
+  ({ category }: { category: MenuItem }) => {
     return (
       <>
         <h3 class='text-xl font-semibold text-gray-500'>{category.text}</h3>

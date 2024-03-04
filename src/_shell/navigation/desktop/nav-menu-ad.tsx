@@ -1,5 +1,5 @@
 import { component$ } from '@builder.io/qwik';
-import type { MenuAd } from './nav-menu-ad.type';
+import type { MenuAd } from '../types/menu-ad.type';
 
 export const NavMenuAd = component$(({ ad }: { ad: MenuAd }) => {
   return (

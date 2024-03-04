@@ -1,17 +1,13 @@
 /* eslint-disable qwik/valid-lexical-scope */
 import { component$, useSignal, type Signal } from '@builder.io/qwik';
 import { Popover, PopoverTrigger } from '@qwik-ui/headless';
+import type { MenuConfig, MenuEntryItem } from '../types';
 import { CategoryItem } from './category-item';
 import { NavMenuAd } from './nav-menu-ad';
-import type { NavTopMenuItem } from './nav-top-menu-item.type';
-import Shevron from './shevron';
-
-export type NavMenuConfig = {
-  items: NavTopMenuItem[];
-};
+import { ShevronIcon } from './shevron.icon';
 
 export type DesktopMenuProps = {
-  config: NavMenuConfig;
+  config: MenuConfig;
   menuAnchorRef: Signal<HTMLElement | undefined>;
 };
 
@@ -57,7 +53,7 @@ export const DesktopMenu = component$(
 );
 
 export type MenuPopoverLinkProps = {
-  item: NavTopMenuItem;
+  item: MenuEntryItem;
   index: number;
   menuAnchorRef: Signal<HTMLElement | undefined>;
 };
@@ -75,7 +71,7 @@ export const MenuPopoverLink = component$<MenuPopoverLinkProps>(
         >
           {item.text}
           <span class='pl-2'>
-            <Shevron
+            <ShevronIcon
               class={`ease font-bold transition-transform duration-500 ${
                 isOpenedSig.value ? 'rotate-180 transform text-primary' : ''
               }

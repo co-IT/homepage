@@ -5,7 +5,7 @@ import {
   ModalContent,
   ModalHeader
 } from '@qwik-ui/headless';
-import type { NavMenuConfig } from '../desktop/nav-menu';
+import type { MenuConfig } from '../types/menu-config.type';
 
 import { CloseIcon, MenuIcon } from './icons';
 
@@ -19,7 +19,7 @@ import Logo from './logo-blue.svg?jsx';
 import mobileNavigationStyles from './mobile-navigation.css?inline';
 
 type MobileNavigationProps = {
-  config: NavMenuConfig;
+  config: MenuConfig;
 };
 
 export const MobileNavigation = component$(

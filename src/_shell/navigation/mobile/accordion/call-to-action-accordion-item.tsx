@@ -1,11 +1,11 @@
 import type { QRL } from '@builder.io/qwik';
 import { component$ } from '@builder.io/qwik';
 import { AccordionHeader, AccordionItem } from '@qwik-ui/headless';
-import type { NavTopMenuItem } from '../../desktop/nav-top-menu-item.type';
+import type { MenuEntryItem } from '../../types/entry-menu-item.type';
 
 type CallToActionAccordionItemProps = {
   key?: string;
-  item: NavTopMenuItem;
+  item: MenuEntryItem;
   onItemClick$?: QRL<() => void>;
 };
 

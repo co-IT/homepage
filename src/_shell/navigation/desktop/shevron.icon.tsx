@@ -1,6 +1,6 @@
 import type { PropsOf } from '@builder.io/qwik';
 
-export default function Shevron(props: PropsOf<'svg'>) {
+export const ShevronIcon = (props: PropsOf<'svg'>) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -15,4 +15,4 @@ export default function Shevron(props: PropsOf<'svg'>) {
       ></path>
     </svg>
   );
-}
+};

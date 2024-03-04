@@ -1,9 +1,9 @@
 import { CareerIcon } from '../top-bar/icons/career-icon';
 import { ServiceIcon } from '../top-bar/icons/service-icon';
 import { TargetIcon } from '../top-bar/icons/target-icon';
-import type { NavMenuConfig } from './desktop/nav-menu';
+import type { MenuConfig } from './types';
 
-export const navigationConfig: NavMenuConfig = {
+export const navigationConfig: MenuConfig = {
   items: [
     {
       text: 'Für Unternehmen',

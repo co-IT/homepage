@@ -2,7 +2,7 @@
 import { component$, useSignal } from '@builder.io/qwik';
 import { Logo } from '~/components/logo';
 import { DesktopMenu } from '../navigation/desktop';
-import { MobileNavigation } from '../navigation/mobile/mobile-navigation';
+import { MobileNavigation } from '../navigation/mobile';
 import { navigationConfig } from '../navigation/navigation.config';
 
 export const TopBar = component$(() => {
