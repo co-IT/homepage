@@ -20,7 +20,7 @@ export const TopBar = component$(() => {
           changeBgSig.value ? 'bg-secondary-950' : ''
         ]}
       >
-        <section ref={ref} class='container mx-auto flex w-full items-center'>
+        <section ref={ref} class='container mx-auto flex justify-center'>
           <div class='mr-auto'>
             <Logo />
           </div>

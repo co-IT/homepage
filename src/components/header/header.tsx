@@ -6,8 +6,7 @@ import { HeaderLandingPage } from './header-landing-page';
 import type { HeaderProps } from './header.props';
 
 export const Header = component$((props: HeaderProps) => {
-  const headerHeight =
-    props.type === 'default' ? 'h-[30vh]' : 'h-[60vh] lg:h-[90vh]';
+  const headerHeight = props.type === 'default' ? 'h-[30vh]' : 'h-[90vh]';
 
   const headerBackgroundImage =
     props.type !== 'default'
