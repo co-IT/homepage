@@ -1,25 +1,18 @@
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+.desktop-menu-opacity-transition {
+  transition:
+    opacity 0.5s,
+    display 0.5s,
+    overlay 0.5s;
 
-@keyframes fadeOut {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  transition-behavior: allow-discrete;
+
+  opacity: 0;
 }
 
 .popover-showing {
-  animation: fadeIn both 500ms ease;
+  opacity: 1;
 }
 
 .popover-closing {
-  animation: fadeOut both 500ms ease;
+  opacity: 0;
 }

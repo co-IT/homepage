@@ -97,7 +97,7 @@ export const MenuPopoverLink = component$<MenuPopoverLinkProps>(
           onToggle$={event => {
             isOpenedSig.value = event.newState === 'open';
           }}
-          class='listbox container w-full'
+          class='listbox desktop-menu-opacity-transition container w-full'
         >
           <div class='flex justify-between'>
             <ul class='flex basis-10/12 gap-10 p-10'>
