@@ -2,10 +2,10 @@ import type { QRL } from '@builder.io/qwik';
 import { component$ } from '@builder.io/qwik';
 import { Link } from '@builder.io/qwik-city';
 import { AccordionHeader, AccordionItem } from '@qwik-ui/headless';
-import type { NavTopMenuItem } from '../../../nav-menu/nav-top-menu-item.type';
+import type { MenuEntryItem } from '../../types/entry-menu-item.type';
 
 type CollapsibleAccordionItemProps = {
-  item: NavTopMenuItem;
+  item: MenuEntryItem;
   key?: string;
   onItemClick$?: QRL<() => void>;
 };

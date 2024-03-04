@@ -1,9 +1,9 @@
-import type { NavMenuConfig } from '../nav-menu/nav-menu';
 import { CareerIcon } from '../top-bar/icons/career-icon';
 import { ServiceIcon } from '../top-bar/icons/service-icon';
 import { TargetIcon } from '../top-bar/icons/target-icon';
+import type { MenuConfig } from './types';
 
-export const navigationConfig: NavMenuConfig = {
+export const menuConfig: MenuConfig = {
   items: [
     {
       text: 'Für Unternehmen',
@@ -58,7 +58,7 @@ export const navigationConfig: NavMenuConfig = {
             height='233'
           />
         ),
-        link: '/career',
+        link: 'https://karriere.co-it.eu/o/initiativbewerbung',
         ctaText: 'Initiativ bewerben'
       },
       items: [

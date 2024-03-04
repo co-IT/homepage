@@ -1,74 +1,74 @@
 /* eslint-disable qwik/valid-lexical-scope */
-import { component$, useSignal, type Signal } from '@builder.io/qwik';
+import {
+  component$,
+  useSignal,
+  useStyles$,
+  type Signal
+} from '@builder.io/qwik';
 import { Popover, PopoverTrigger } from '@qwik-ui/headless';
+import type { MenuConfig, MenuEntryItem } from '../types';
 import { CategoryItem } from './category-item';
 import { NavMenuAd } from './nav-menu-ad';
-import type { NavTopMenuItem } from './nav-top-menu-item.type';
-import Shevron from './shevron';
+import { ShevronIcon } from './shevron.icon';
 
-export type NavMenuConfig = {
-  items: NavTopMenuItem[];
-};
+import styles from './desktop-menu.css?inline';
 
-export type NavMenuProps = {
-  config: NavMenuConfig;
+type DesktopMenuProps = {
+  config: MenuConfig;
   menuAnchorRef: Signal<HTMLElement | undefined>;
 };
 
-/* <div
-class='my-auto mt-20 hidden md:block cursor-pointer flex-row gap-x-4 hover:opacity-75 '
-
->
-<MenuIcon />
-</div> */
-
-export const NavMenu = component$(({ config, menuAnchorRef }: NavMenuProps) => {
-  return (
-    <>
-      <div class='flex'>
-        <ul class='flex gap-12'>
-          {config.items.map((item, index) => {
-            return (
-              <li
-                key={item.text}
-                class='flex items-center font-semibold text-white'
-              >
-                {item.items && (
-                  <MenuPopoverLink
-                    index={index}
-                    item={item}
-                    menuAnchorRef={menuAnchorRef}
-                  />
-                )}
-                {!item.items && (
-                  <a
-                    href={item.path}
-                    class={
-                      item.isCta
-                        ? 'border-2 border-primary px-6 py-2 text-sm text-primary hover:bg-primary hover:text-secondary-950'
-                        : 'hover:text-primary'
-                    }
-                  >
-                    {item.text}
-                  </a>
-                )}
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </>
-  );
-});
+export const DesktopMenu = component$(
+  ({ config, menuAnchorRef }: DesktopMenuProps) => {
+    return (
+      <>
+        <div class='flex'>
+          <ul class='flex gap-12'>
+            {config.items.map((item, index) => {
+              return (
+                <li
+                  key={item.text}
+                  class='flex items-center font-semibold text-white'
+                >
+                  {item.items && (
+                    <MenuPopoverLink
+                      index={index}
+                      item={item}
+                      menuAnchorRef={menuAnchorRef}
+                    />
+                  )}
+                  {!item.items && (
+                    <a
+                      href={item.path}
+                      class={
+                        item.isCta
+                          ? 'border-2 border-primary px-6 py-2 text-sm text-primary hover:bg-primary hover:text-secondary-950'
+                          : 'hover:text-primary'
+                      }
+                    >
+                      {item.text}
+                    </a>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </>
+    );
+  }
+);
 
 export type MenuPopoverLinkProps = {
-  item: NavTopMenuItem;
+  item: MenuEntryItem;
   index: number;
   menuAnchorRef: Signal<HTMLElement | undefined>;
 };
 
 export const MenuPopoverLink = component$<MenuPopoverLinkProps>(
   ({ index, item, menuAnchorRef }) => {
+    useStyles$(styles);
+
     const isOpenedSig = useSignal(false);
     return (
       <>
@@ -80,7 +80,7 @@ export const MenuPopoverLink = component$<MenuPopoverLinkProps>(
         >
           {item.text}
           <span class='pl-2'>
-            <Shevron
+            <ShevronIcon
               class={`ease font-bold transition-transform duration-500 ${
                 isOpenedSig.value ? 'rotate-180 transform text-primary' : ''
               }
