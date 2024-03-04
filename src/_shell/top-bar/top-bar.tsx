@@ -1,9 +1,9 @@
 /* eslint-disable qwik/jsx-img */
 import { component$, useSignal } from '@builder.io/qwik';
 import { Logo } from '~/components/logo';
-import { DesktopMenu } from '../navigation/desktop';
-import { MobileNavigation } from '../navigation/mobile';
-import { navigationConfig } from '../navigation/navigation.config';
+import { DesktopMenu } from '../menu/desktop';
+import { menuConfig } from '../menu/menu.config';
+import { MobileMenu } from '../menu/mobile';
 
 export const TopBar = component$(() => {
   const ref = useSignal<HTMLElement>();
@@ -25,10 +25,10 @@ export const TopBar = component$(() => {
             <Logo />
           </div>
           <div class='hidden md:block'>
-            <DesktopMenu config={navigationConfig} menuAnchorRef={ref} />
+            <DesktopMenu config={menuConfig} menuAnchorRef={ref} />
           </div>
           <div class='md:hidden'>
-            <MobileNavigation config={navigationConfig} />
+            <MobileMenu config={menuConfig} />
           </div>
         </section>
       </div>
