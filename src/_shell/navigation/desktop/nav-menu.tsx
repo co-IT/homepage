@@ -15,13 +15,6 @@ export type NavMenuProps = {
   menuAnchorRef: Signal<HTMLElement | undefined>;
 };
 
-/* <div
-class='my-auto mt-20 hidden md:block cursor-pointer flex-row gap-x-4 hover:opacity-75 '
-
->
-<MenuIcon />
-</div> */
-
 export const NavMenu = component$(({ config, menuAnchorRef }: NavMenuProps) => {
   return (
     <>
