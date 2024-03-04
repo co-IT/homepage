@@ -10,49 +10,51 @@ export type NavMenuConfig = {
   items: NavTopMenuItem[];
 };
 
-export type NavMenuProps = {
+export type DesktopMenuProps = {
   config: NavMenuConfig;
   menuAnchorRef: Signal<HTMLElement | undefined>;
 };
 
-export const NavMenu = component$(({ config, menuAnchorRef }: NavMenuProps) => {
-  return (
-    <>
-      <div class='flex'>
-        <ul class='flex gap-12'>
-          {config.items.map((item, index) => {
-            return (
-              <li
-                key={item.text}
-                class='flex items-center font-semibold text-white'
-              >
-                {item.items && (
-                  <MenuPopoverLink
-                    index={index}
-                    item={item}
-                    menuAnchorRef={menuAnchorRef}
-                  />
-                )}
-                {!item.items && (
-                  <a
-                    href={item.path}
-                    class={
-                      item.isCta
-                        ? 'border-2 border-primary px-6 py-2 text-sm text-primary hover:bg-primary hover:text-secondary-950'
-                        : 'hover:text-primary'
-                    }
-                  >
-                    {item.text}
-                  </a>
-                )}
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </>
-  );
-});
+export const DesktopMenu = component$(
+  ({ config, menuAnchorRef }: DesktopMenuProps) => {
+    return (
+      <>
+        <div class='flex'>
+          <ul class='flex gap-12'>
+            {config.items.map((item, index) => {
+              return (
+                <li
+                  key={item.text}
+                  class='flex items-center font-semibold text-white'
+                >
+                  {item.items && (
+                    <MenuPopoverLink
+                      index={index}
+                      item={item}
+                      menuAnchorRef={menuAnchorRef}
+                    />
+                  )}
+                  {!item.items && (
+                    <a
+                      href={item.path}
+                      class={
+                        item.isCta
+                          ? 'border-2 border-primary px-6 py-2 text-sm text-primary hover:bg-primary hover:text-secondary-950'
+                          : 'hover:text-primary'
+                      }
+                    >
+                      {item.text}
+                    </a>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </>
+    );
+  }
+);
 
 export type MenuPopoverLinkProps = {
   item: NavTopMenuItem;
