@@ -77,55 +77,6 @@ export const menuConfig: MenuConfig = {
         }
       ]
     },
-    {
-      text: 'Cyber-Verteidigung',
-      items: [
-        {
-          text: 'Produkte',
-          isCategory: true,
-
-          items: [
-            {
-              text: 'Cyber Lounge',
-              description: 'Sicher fühlen. Sicher sein.',
-              path: '/cyber-verteidigung/produkte/cyber-lounge',
-              icon: <CareerIcon />
-            },
-            {
-              text: 'Ihr Security Portal',
-              description: 'Ihre eigene Cyber Lounge',
-              path: '/cyber/ihre-marke',
-              icon: <CareerIcon />
-            },
-            {
-              text: 'Passwort-Manager',
-              description: 'Digitale Identitäten sicher organisieren.',
-              path: '/produkte/passwort-manager',
-              icon: <CareerIcon />
-            }
-          ]
-        },
-        {
-          text: 'Leistungen',
-          isCategory: true,
-
-          items: [
-            {
-              text: 'Sicherheitsaudit',
-              description: 'Den Ernstfall proben',
-              path: '/cyber-verteidigung/leistungen/e-mail-sicherheitsschulung',
-              icon: <CareerIcon />
-            },
-            {
-              text: 'E-Mail Sicherheitsschulung',
-              description: 'Sicher fühlen, heißt nicht sicher sein',
-              path: '/cyber-verteidigung/leistungen/sicherheitsaudit',
-              icon: <CareerIcon />
-            }
-          ]
-        }
-      ]
-    },
     { text: 'Über uns', path: '/about' },
     { text: 'Kontakt', path: '/contact', isCta: true }
   ]
