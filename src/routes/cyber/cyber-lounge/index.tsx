@@ -552,7 +552,7 @@ export const head: DocumentHead = {
           source: '/img/cyber/cyber-portal/header.webp',
           alt: 'Two team mates checking an App on the tablet.'
         },
-        heading: 'Cyber Portal',
+        heading: 'Cyber Lounge',
         headingAccent: 'Sicher fühlen. Sicher sein.'
       }
     }
