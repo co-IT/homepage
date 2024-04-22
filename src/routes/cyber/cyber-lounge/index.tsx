@@ -37,8 +37,8 @@ import type { DocumentHead } from '@builder.io/qwik-city';
 import { LinkedHeading } from '~/components/link-heading';
 import { PricePerUsePerMonth } from '~/components/pricing/price-per-user-per-month';
 import { ProductFeatureList } from '~/components/product-feature-list';
-import { WuerttembergischeLogo } from '~/components/wuerttembergische/logo';
 
+import { CyberLoungeLogo } from '../../../components/cyber-lounge-logo/cyber-lounge-logo';
 import style from './styles.css?inline';
 
 export default component$(() => {
@@ -202,10 +202,10 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Antrieb' />
             </LinkedHeading>
             <p class='pb-4 leading-7'>
-              Wir wollen allen die fachliche Kompetenz, die praktischen
-              Fähigkeiten und das notwendige Wissen vermitteln, um sich in der
-              digitalen Welt sicher zu fühlen und sicher zu sein. Das Cyber
-              Portal bietet Ihnen und Ihren Anwendern einen Raum, um
+              Wir wollen Ihnen die fachliche Kompetenz, die praktischen
+              Fähigkeiten und das notwendige Wissen vermitteln, damit Sie sich
+              in der digitalen Welt sicher zu fühlen und sicher sind. Die Cyber
+              Lounge bietet Ihnen und Ihren Anwendern einen Raum, um
               nachhaltiges Praxiswissen auf verständliche Weise zu erlernen,
               dieses mit intensiven Prüfungen und realistischen Simulationen zu
               festigen und dabei Lernfortschritte systematisch sicherzustellen.
@@ -214,70 +214,40 @@ export default component$(() => {
         </ContentOverlapPortrait>
       </Section>
 
-      <Section id='ihre_inklusivleistungen' backgroundColor='gray'>
+      <Section id='ihre_leistungen' backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
-            <LinkedHeading href='#ihre_inklusivleistungen'>
+            <LinkedHeading href='#ihre_leistungen'>
               <HeadingSegmentSecondary text='Ihre' />{' '}
-              <HeadingSegmentSecondary800 text='Inklusivleistungen' />
+              <HeadingSegmentSecondary800 text='Leistungen' />
             </LinkedHeading>
             <p class='leading-7'>
-              Beim Cyber Portal handelt es sich um eine Individuallösung für
-              alle Kunden der Württembergischen Versicherung. Die Plattform soll
-              allen Versicherungsnehmern gleichermaßen zugutekommen, indem der
-              Fokus auf leicht zu bedienende Funktionen, praxisrelevantes Wissen
-              und hochwertige Phishing-Simulationen gelegt wird. Dabei stellt
-              die Württembergische als alleiniger Auftraggeber sicher, dass die
-              Basisversion kostenfrei weiterentwickelt und sicher betrieben
-              wird. Seit Veröffentlichung des Cyber Portals im Jahr 2021
-              erreichten uns viele gute Ideen und individuelle Wünsche aus allen
-              Unternehmensbranchen und -größen. Mit den hier angebotenen
-              Zusatzpaketen wollen wir die Brücke für all diejenigen schlagen,
-              denen unsere Lösung bereits geholfen hat und die jetzt einen
-              Schritt weitergehen wollen.
+              Bei der Cyber Lounge handelt es sich um eine Plattform, in dem der
+              Fokus auf hochwertige Phishing-Simulationen, praxisrelevantes
+              Wissen und leicht zu bedienenden Funktionen gelegt wird.
+              <br />
+              Die Cyber Lounge bietet Ihnen sechs Kurse mit praktischen
+              Fähigkeiten und essenziellem Wissen für den sicheren Umgang in der
+              digitalen Welt.
+              <br />
+              In vier Examen mit anspruchsvollen, interaktiven Prüfungen können
+              Ihre Anwender das Gelernte festigen. Abgerundet wird die Leistung
+              mit dem Werkzeugkasten, der unter anderem die eigene
+              Passwortsicherheit prüfen kann.
+              <br />
+              Die Cyber Lounge bietet Ihnen <strong>sechs Kurse</strong> mit
+              insgesamt <strong>26 Lektionen</strong> mit praktischen
+              Fähigkeiten und essenziellem Wissen für den sicheren Umgang in der
+              digitalen Welt. In vier Examen mit anspruchsvollen, interaktiven
+              Prüfungen können Ihre Anwender das Gelernte festigen. Abgerundet
+              wird die Leistung mit dem Werkzeugkasten, der unter anderem die
+              eigene Passwortsicherheit prüfen kann.
             </p>
           </section>
         </VideoOverlapLandscape>
       </Section>
 
-      <Section id='kostenfreie_basisversion'>
-        <div class='grid grid-flow-row justify-center gap-16 sm:grid-flow-col'>
-          {/* Wuerttembergische Basispaket Features */}
-          <div class='card mx-auto grid items-start gap-8 shadow-md'>
-            <WuerttembergischeLogo />
-            <ProductFeatureList features={wuerttembergischeFeatures} />
-            <a
-              href='https://wuerttembergische.co-it.eu'
-              target='_blank'
-              class='rounded-[3.5rem] bg-[#f84914] p-4 text-center text-white transition-colors hover:bg-[#d33e11]'
-            >
-              Zum Cyber Portal
-            </a>
-          </div>
-          {/* Wuerttembergische Basispaket Teaser */}
-          <section class='flex max-w-md flex-col gap-4 px-4'>
-            <LinkedHeading href='#kostenfreie_basisversion'>
-              <HeadingSegmentSecondary text='Kostenfreie' />{' '}
-              <HeadingSegmentSecondary800 text='Basisversion' />
-            </LinkedHeading>
-            <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
-              Die kostenfreie Basisversion des Cyber Portals bietet Ihnen sechs
-              Kurse mit praktischen Fähigkeiten und essenziellem Wissen für den
-              sicheren Umgang in der digitalen Welt. In vier Examen mit
-              anspruchsvollen, interaktiven Prüfungen können Ihre Anwender das
-              Gelernte festigen. Abgerundet wird die Leistung mit dem
-              Werkzeugkasten, der unter anderem die eigene Passwortsicherheit
-              prüfen kann. Besonders interessant sind die Phishing-Simulationen
-              mit 8 hochwertigen Phishing-Mails pro Jahr. Diese E-Mails zeichnen
-              sich durch anspruchsvolle Sprache und präzise Semantik aus,
-              verwenden authentische Absenderadressen und beinhalten eine
-              persönliche Anrede, um die Authentizität zu steigern.
-            </p>
-          </section>
-        </div>
-      </Section>
-
-      <Section id='ihr_plus_an_sicherheit' backgroundColor='gray'>
+      <Section id='ihr_plus_an_sicherheit'>
         <VideoOverlapLandscape youTubeVideoId='FjThxiKBApc'>
           <section class='flex flex-col space-y-4'>
             <LinkedHeading href='#ihr_plus_an_sicherheit'>
@@ -288,21 +258,20 @@ export default component$(() => {
             </LinkedHeading>
             <section>
               <p class='leading-7'>
-                Mit der kostenfreien Basisversion im Untergrund berechnen wir
-                nur die anfallende Mehrleistung für die jeweiligen Pakete
-                weiter. Damit können wir deutlich niedrigere Preise als
-                vergleichbare Plattformen anbieten. <br />
+                Mit den Phishing-Paketen setzen Sie in Ihrem Unternehmen neue
+                Maßstäbe hinsichtlich des Sicherheitsbewusstseins Ihrer
+                Mitarbeiter.
                 <br />
-                Doch was ist Ihr Mehrwert? Mit den angebotenen Phishing-Paketen
-                setzen wir neue Maßstäbe in Sachen Qualität und Authentizität.
-                Unsere gezielten und raffinierten Phishing-Mails werden vorab in
-                einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern
-                einem Praxischeck unterzogen. Mehr noch: Mit Hilfe eines
-                linguistischen Psychologen werden die Anwender sprachlich subtil
-                zum Öffnen der betrügerischen Mails bewegt. Flankiert wird der
-                Erstellungsprozess von unserer generativen KI. Mit diesen
-                Maßnahmen stellen wir sicher, dass unsere Phishing-Simulationen
-                nur schwer als solche zu erkennen sind.
+                Diese erhalten mit Sicherheit täuschend echte & authentische
+                Phishing-Emails Die Phishing-Mails durchlaufen in einer
+                Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem
+                Praxischeck. Mit Hilfe eines linguistischen Psychologen werden
+                die Anwender sprachlich subtil zum Öffnen der betrügerischen
+                Mails bewegt.
+                <br />
+                Flankiert wird der Erstellungsprozess von unserer generativen
+                KI. Mit diesen Maßnahmen stellen wir sicher, dass unsere
+                Phishing-Simulationen nur schwer als solche zu erkennen sind.
                 <br />
                 <br />
                 Die Ergebnisse unserer Testgruppe werden in unterschiedliche{' '}
@@ -332,52 +301,10 @@ export default component$(() => {
         </VideoOverlapLandscape>
       </Section>
 
-      <Section id='entscheiden_sie_mit'>
-        <ContentOverlapPortrait
-          image={{
-            source: '/img/cyber/cyber-portal/decision.webp',
-            alternateText: 'Man looking at the sunset'
-          }}
-        >
-          <section q:slot='article' class='flex flex-col space-y-4'>
-            <LinkedHeading href='#entscheiden_sie_mit'>
-              <HeadingSegmentSecondary800 text='Entscheiden' />{' '}
-              <HeadingSegmentSecondary text='Sie mit' />
-            </LinkedHeading>
-            <p class='pb-4 leading-7'>
-              Während in der kostenfreien Basisversion am Ende der Auftraggeber
-              über neue Funktionen entscheidet, können Sie als Abonnent des
-              "Experte"-Pakets nachhaltig die Weiterentwicklung beeinflussen.
-              Dafür dürfen Sie Vorschläge direkt bei unseren Entwicklern
-              einreichen und bei der konkreten Ausgestaltung mitdiskutieren.
-              Zudem können alle Abonnenten kostenpflichtiger Pakete regelmäßig
-              über Vorschläge abstimmen und dadurch Einfluss auf die
-              Priorisierung bei der Umsetzung nehmen.
-              <br />
-              <br />
-              Es gibt noch einen weiteren Vorteil: Sie müssen kein neues Produkt
-              evaluieren und einführen. Die Integration der Zusatzfunktionen
-              erfolgt nahtlos und sofort bei Kauf. Das hilft besonders Behörden
-              und größeren Unternehmen kraftraubende Genehmigungsprozesse zu
-              beschleunigen und langwierige Ausschreibungsverfahren zu umgehen,
-              weil die Basisversion in Ihrem Haus bereits freigegeben und
-              eingeführt ist.
-            </p>
-
-            <LinkCallToAction
-              href='https://forms.office.com/e/tKwD5aqPJY'
-              target='_blank'
-            >
-              Jetzt mit abstimmen
-            </LinkCallToAction>
-          </section>
-        </ContentOverlapPortrait>
-      </Section>
-
-      <Section id='lust_auf_mehr' backgroundColor='gray'>
+      <Section id='plan_preise' backgroundColor='gray'>
         <section class='grid gap-8 px-4'>
-          <LinkedHeading href='#lust_auf_mehr'>
-            Lust auf <HeadingSegmentSecondary800 text='mehr?' />
+          <LinkedHeading href='#plan_preise'>
+            Pläne <HeadingSegmentSecondary800 text='&' /> Preisgestaltung
           </LinkedHeading>
 
           <p class='leading-7'>
@@ -519,6 +446,36 @@ export default component$(() => {
         </section>
       </Section>
 
+      <Section id='demozugang_anfragen'>
+        <div class='grid grid-flow-row justify-center gap-16 sm:grid-flow-col'>
+          <div class='card mx-auto grid items-start gap-8 shadow-md'>
+            <CyberLoungeLogo />
+            <ProductFeatureList features={wuerttembergischeFeatures} />
+          </div>
+          <section class='flex max-w-md flex-col gap-4 px-4'>
+            <LinkedHeading href='#demozugang_anfragen'>
+              <HeadingSegmentSecondary text='Demozugang' />{' '}
+              <HeadingSegmentSecondary800 text='anfragen' />
+            </LinkedHeading>
+            <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
+              Testen Sie mit dem kostenfreien Demo-Paket bereits alle Vorteile
+              des Experten-Pakets. Für die kommenden 8 Wochen erhalten Sie 8
+              hochwertige Phishing-Simulationen. Diese E-Mails zeichnen sich
+              durch anspruchsvolle Sprache und präzise Semantik aus, verwenden
+              authentische Absenderadressen und beinhalten eine persönliche
+              Anrede, um die Authentizität zu steigern.
+            </p>
+
+            <LinkCallToAction
+              href='https://forms.office.com/e/x9y2sJSm8P'
+              target='_blank'
+            >
+              Demozugang anfragen
+            </LinkCallToAction>
+          </section>
+        </div>
+      </Section>
+
       <Section id='fordern_sie_ihr_angebot_an'>
         <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#fordern_sie_ihr_angebot_an'>
@@ -567,105 +524,6 @@ export default component$(() => {
 
           <YouTubeVideoGrid videos={cyberVerantwortlicheVideos} />
         </section>
-      </Section>
-
-      <Section id='teilen_sie_uns_ihre_meinung_mit'>
-        <section class='mb-14 flex flex-col items-center gap-y-8 px-4'>
-          <LinkedHeading href='#teilen_sie_uns_ihre_meinung_mit'>
-            Teilen Sie uns <HeadingSegmentSecondary800 text='Ihre Meinung ' />{' '}
-            mit
-          </LinkedHeading>
-
-          <p class='max-w-xl'>
-            Um unsere Pakete noch genauer auf Ihre Bedarfe zuschneiden zu
-            können, machen wir aktuell eine anonyme Umfrage. Teil Sie uns mit,
-            wie ein perfekt auf Sie abgestimmtes Paket aussieht. Die Umfrage
-            dauert nur wenige Minuten.
-          </p>
-
-          <LinkCallToAction
-            href='https://forms.office.com/Pages/ResponsePage.aspx?id=hqVrfY9Jf0mmHhFRXNyN_57QTiT3NkFCvqHHDSVqQ7RURDdIWlhERzZWNEJINUI4M1paNDRLN0pEVi4u'
-            target='_blank'
-          >
-            Jetzt mitgestalten
-          </LinkCallToAction>
-        </section>
-      </Section>
-
-      <Section id='passwort-manager_fuer_unternehmen'>
-        <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
-          <LinkedHeading href='#passwort-manager_fuer_unternehmen'>
-            <HeadingSegmentSecondary text='Passwort-Manager' />{' '}
-            <HeadingSegmentSecondary800 text='für Unternehmen' />
-          </LinkedHeading>
-
-          <p class='max-w-xl pb-4 leading-7'>
-            Neben praktischem Wissen wollen und brauchen Menschen auch smarte,
-            digitale Werkzeuge. Als Lösungsanbieter wollen wir erprobte Lösungen
-            für ganzheitliche Sicherheit anbieten. Aus unserer täglichen Arbeit
-            mit und für unsere Kunden entwickeln wir Ansätze, mit denen sich
-            betriebliche Prozesse und Richtlinien auf moderne und
-            anwenderfreundliche Art umsetzen lassen. Passend zu unserem
-            E-Learning Kurs "Endlich sichere Passwörter" und dem zugehörigen
-            Examen bieten Ihnen das passende Werkzeug.
-          </p>
-
-          <LinkCallToAction href='/produkte/passwort-manager'>
-            Mehr erfahren
-          </LinkCallToAction>
-        </section>
-      </Section>
-
-      <Section id='sie_wollen_ihre_anwender_schulen' backgroundColor='gray'>
-        <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
-          <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
-            Sie wollen <HeadingSegmentSecondary800 text='Ihre Anwender ' />{' '}
-            schulen?
-          </LinkedHeading>
-
-          <p class='max-w-xl'>
-            Für Kunden, die persönliche Schulung zu schätzen wissen, flankieren
-            wir unsere Phishing-Simulationen und unseren E-Learning Kurs "Sicher
-            per E-Mail kommunizieren" mit maßgeschneiderten Anwenderschulungen -
-            vor Ort und remote. Natürlich vermitteln wir darin Ihre
-            betriebsspezifischen Richtlinien zum Umgang mit potenziell
-            schädlichen E-Mails und zum Verhalten bei einem Sicherheitsvorfall.
-          </p>
-
-          <LinkCallToAction
-            href='https://e.co-IT.eu/cyber/schulung'
-            target='_blank'
-          >
-            Vereinbaren Sie einen Gesprächstermin
-          </LinkCallToAction>
-        </div>
-      </Section>
-
-      <Section id='partner_it_sicherheit'>
-        <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
-          <LinkedHeading href='#partner_it_sicherheit'>
-            Sie suchen einen <HeadingSegmentSecondary800 text='Partner' /> für
-            IT-Sicherheit?
-          </LinkedHeading>
-
-          <p class='max-w-xl'>
-            Wir wären nicht, wer wir sind, wenn wir Veränderung nicht ganz zu
-            Ende denken würden: Regelmäßig erreichen uns Anrufe und Mails, ob
-            wir eine Bestandsaufnahme des IT-Sicherheit durchführen und - falls
-            notwendig - Lücken schließen können. Die gute Antwort lautet: Ja.
-            Die Inhalte für das Cyber Portal entstanden aus unseren
-            Erkenntnissen und Erfahrungen, die wir in unserer Funktion als
-            IT-Systemhaus gewinnen konnten. Hier können Sie eine kostenfreie,
-            30-minütige Erstberatung.
-          </p>
-
-          <LinkCallToAction
-            href='https://e.co-it.eu/cyber/erstberatung'
-            target='_blank'
-          >
-            Erstberatung vereinbaren
-          </LinkCallToAction>
-        </div>
       </Section>
     </>
   );
