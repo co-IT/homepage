@@ -530,7 +530,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: 'co-IT - Cyber Portal: Stärken Sie Ihre digitale Sicherheit!',
+  title: 'co-IT - Cyber Lounge: Stärken Sie Ihre digitale Sicherheit!',
   meta: [
     {
       name: 'description',
@@ -540,7 +540,7 @@ export const head: DocumentHead = {
     {
       name: 'keywords',
       content:
-        'Cyber Portal, Digitale Sicherheit, Praxisrelevantes Wissen, Phishing-Simulationen, Digitale Welt'
+        'Cyber Lounge, Digitale Sicherheit, Praxisrelevantes Wissen, Phishing-Simulationen, Digitale Welt'
     }
   ],
 
