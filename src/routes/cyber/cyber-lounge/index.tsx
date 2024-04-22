@@ -38,6 +38,7 @@ import { LinkedHeading } from '~/components/link-heading';
 import { PricePerUsePerMonth } from '~/components/pricing/price-per-user-per-month';
 import { ProductFeatureList } from '~/components/product-feature-list';
 import { WuerttembergischeLogo } from '~/components/wuerttembergische/logo';
+
 import style from './styles.css?inline';
 
 export default component$(() => {
@@ -99,7 +100,7 @@ export default component$(() => {
     const userCount = track(() => userCountSig.value);
     const discount = track(() => discountSig.value);
 
-    if (userCount === undefined || discount === undefined) {
+    if (discount === undefined) {
       return;
     }
 
