@@ -37,7 +37,7 @@ import type { DocumentHead } from '@builder.io/qwik-city';
 import { LinkedHeading } from '~/components/link-heading';
 import { PricePerUsePerMonth } from '~/components/pricing/price-per-user-per-month';
 import { ProductFeatureList } from '~/components/product-feature-list';
-import { WuerttembergischeLogo } from '~/components/wuerttembergische/logo';
+import { WuerttembergischeLogo } from '~/components/wuerttembergische/wuerttembergische_logo';
 import style from './styles.css?inline';
 
 export default component$(() => {
