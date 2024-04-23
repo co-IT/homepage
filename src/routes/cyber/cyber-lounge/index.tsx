@@ -214,13 +214,10 @@ export default component$(() => {
         </ContentOverlapPortrait>
       </Section>
 
-      <Section id='ihre_leistungen' backgroundColor='gray'>
+      <Section id='leistungen' backgroundColor='gray'>
         <VideoOverlapLandscape youTubeVideoId='_SZyfQB7n7k'>
           <section class='flex flex-col space-y-4'>
-            <LinkedHeading href='#ihre_leistungen'>
-              <HeadingSegmentSecondary text='Ihre' />{' '}
-              <HeadingSegmentSecondary800 text='Leistungen' />
-            </LinkedHeading>
+            <LinkedHeading href='#leistungen'>Leistungen</LinkedHeading>
             <p class='leading-7'>
               Bei der Cyber Lounge handelt es sich um eine Plattform, in dem der
               Fokus auf hochwertige Phishing-Simulationen, praxisrelevantes
@@ -228,12 +225,10 @@ export default component$(() => {
               <br />
               Die Cyber Lounge bietet Ihnen sechs Kurse mit praktischen
               Fähigkeiten und essenziellem Wissen für den sicheren Umgang in der
-              digitalen Welt.
-              <br />
-              In vier Examen mit anspruchsvollen, interaktiven Prüfungen können
-              Ihre Anwender das Gelernte festigen. Abgerundet wird die Leistung
-              mit dem Werkzeugkasten, der unter anderem die eigene
-              Passwortsicherheit prüfen kann.
+              digitalen Welt. In vier Examen mit anspruchsvollen, interaktiven
+              Prüfungen können Ihre Anwender das Gelernte festigen. Abgerundet
+              wird die Leistung mit dem Werkzeugkasten, der unter anderem die
+              eigene Passwortsicherheit prüfen kann.
               <br />
               Die Cyber Lounge bietet Ihnen <strong>sechs Kurse</strong> mit
               insgesamt <strong>26 Lektionen</strong> mit praktischen
@@ -262,12 +257,10 @@ export default component$(() => {
                 Maßstäbe hinsichtlich des Sicherheitsbewusstseins Ihrer
                 Mitarbeiter.
                 <br />
-                Diese erhalten mit Sicherheit täuschend echte & authentische
-                Phishing-Emails Die Phishing-Mails durchlaufen in einer
-                Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem
-                Praxischeck. Mit Hilfe eines linguistischen Psychologen werden
-                die Anwender sprachlich subtil zum Öffnen der betrügerischen
-                Mails bewegt.
+                Die Phishing-Mails durchlaufen in einer Testgruppe aus mehreren
+                Unternehmen mit über 300 Anwendern einem Praxischeck. Mit Hilfe
+                eines linguistischen Psychologen werden die Anwender sprachlich
+                subtil zum Öffnen der betrügerischen Mails bewegt.
                 <br />
                 Flankiert wird der Erstellungsprozess von unserer generativen
                 KI. Mit diesen Maßnahmen stellen wir sicher, dass unsere
@@ -301,10 +294,10 @@ export default component$(() => {
         </VideoOverlapLandscape>
       </Section>
 
-      <Section id='plan_preise' backgroundColor='gray'>
+      <Section id='pakete_preise' backgroundColor='gray'>
         <section class='grid gap-8 px-4'>
-          <LinkedHeading href='#plan_preise'>
-            Pläne <HeadingSegmentSecondary800 text='&' /> Preisgestaltung
+          <LinkedHeading href='#pakete_preise'>
+            Pakete <HeadingSegmentSecondary800 text='&' /> Preisgestaltung
           </LinkedHeading>
 
           <p class='leading-7'>
