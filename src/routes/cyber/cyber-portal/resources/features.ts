@@ -46,6 +46,11 @@ export const wuerttembergischeFeatures: ProductFeature[] = [
     detail:
       'Alle Anwender erhalten zur gleichen Zeit die gleiche Phishing-E-Mail.'
   },
+  {
+    text: 'Unternehmensstatistik: Keine Fremdvergleiche',
+    detail:
+      'In den Unternehmensstatistiken sind in einigen Paketen Vergleiche mit Unternehmen der gleichen Branche bzw. mit allen registrierten Unternehmen möglich.'
+  },
 ];
 
 export const starterFeatures: ProductFeature[] = [
@@ -93,6 +98,16 @@ export const starterFeatures: ProductFeature[] = [
     text: 'Abstimmen über neue Funktionen',
     detail:
       'Ihre Stimme zählt: Sie können regelmäßig über die Priorisierung von neuen Funktionen mit abstimmen.'
+  },
+  {
+    text: 'Portalvergleich: Ja',
+    detail:
+      'Blick über den Tellerrand: In den Unternehmensstatistiken sind Vergleiche mit allen registrierten Unternehmen möglich.'
+  },
+  {
+    text: 'Branchenvergleich: Nein',
+    detail:
+      'Blick zu den Branchen-Kollegen: In den Unternehmensstatistiken sind Vergleiche mit allen registrierten Unternehmen derselben Branche möglich.'
   }
 ];
 
@@ -142,6 +157,16 @@ export const profiFeatures: ProductFeature[] = [
     text: 'Abstimmung über neue Funktionen',
     detail:
       'Ihre Stimme zählt: Sie können regelmäßig über die Priorisierung von neuen Funktionen abstimmen.'
+  },
+  {
+    text: 'Portalvergleich: Ja',
+    detail:
+      'Blick über den Tellerrand: In den Unternehmensstatistiken sind Vergleiche mit allen registrierten Unternehmen möglich.'
+  },
+  {
+    text: 'Branchenvergleich: Ja',
+    detail:
+      'Blick zu den Branchen-Kollegen: In den Unternehmensstatistiken sind Vergleiche mit allen registrierten Unternehmen derselben Branche möglich.'
   }
 ];
 
@@ -187,6 +212,16 @@ export const expertFeatures: ProductFeature[] = [
     detail:
       'Alle Anwender erhalten unterschiedliche Simulationen zu unterschiedlichen Zeiten.'
   },
+  {
+    text: 'Portalvergleich: Ja',
+    detail:
+      'Blick über den Tellerrand: In den Unternehmensstatistiken sind Vergleiche mit allen registrierten Unternehmen möglich.'
+  },
+  {
+    text: 'Branchenvergleich: Ja',
+    detail:
+      'Blick zu den Branchen-Kollegen: In den Unternehmensstatistiken sind Vergleiche mit allen registrierten Unternehmen derselben Branche möglich.'
+  }
   {
     text: 'Abstimmung über neue Funktionen',
     detail:
