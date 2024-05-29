@@ -42,6 +42,16 @@ export const wuerttembergischeFeatures: ProductFeature[] = [
       'In den Phishing Simulationen wird der Name des Cyber-Verantwortlichen angedruckt, z.B. dass "Reinhold Müller" via OneDrive eine Datei mit dem Empfänger geteilt hat.'
   },
   {
+    text: 'Historische Daten: 12 Monate',
+    detail:
+      'Die Daten in den Statistiken beziehen sich auf die letzten 12 vollen Monate. Ältere Daten werden nicht angezeigt, stehen aber nach einem Paket-Upgrade zur Verfügung.'
+  },
+  {
+    text: 'Aufklärungsseite: Standard',
+    detail:
+      'Beim Klick auf eines Anwenders in einer Phishing-Mail wird er auf unsere standardisierte Seite weitergeleitet.'
+  },
+  {
     text: 'Randomisierung: Keine',
     detail:
       'Alle Anwender erhalten zur gleichen Zeit die gleiche Phishing-E-Mail.'
@@ -100,6 +110,11 @@ export const starterFeatures: ProductFeature[] = [
       'Ihre Stimme zählt: Sie können regelmäßig über die Priorisierung von neuen Funktionen mit abstimmen.'
   },
   {
+    text: 'Historische Daten: unbegrenzt',
+    detail:
+      'Sie können alle zur Verfügung stehenden Auswertungen in den Unternehmensstatistiken auf beliebige Zeiträume seit Ihrer Registrierung eingrenzen.'
+  },
+  {
     text: 'Portalvergleich: Ja',
     detail:
       'Blick über den Tellerrand: In den Unternehmensstatistiken sind Vergleiche mit allen registrierten Unternehmen möglich.'
@@ -108,6 +123,11 @@ export const starterFeatures: ProductFeature[] = [
     text: 'Branchenvergleich: Nein',
     detail:
       'Blick zu den Branchen-Kollegen: In den Unternehmensstatistiken sind Vergleiche mit allen registrierten Unternehmen derselben Branche möglich.'
+  },
+  {
+    text: 'Aufklärungsseite: Standard',
+    detail:
+      'Beim Klick auf eines Anwenders in einer Phishing-Mail wird er auf unsere standardisierte Seite weitergeleitet.'
   }
 ];
 
@@ -159,6 +179,11 @@ export const profiFeatures: ProductFeature[] = [
       'Ihre Stimme zählt: Sie können regelmäßig über die Priorisierung von neuen Funktionen abstimmen.'
   },
   {
+    text: 'Historische Daten: unbegrenzt',
+    detail:
+      'Sie können alle zur Verfügung stehenden Auswertungen in den Unternehmensstatistiken auf beliebige Zeiträume seit Ihrer Registrierung eingrenzen.'
+  },
+  {
     text: 'Portalvergleich: Ja',
     detail:
       'Blick über den Tellerrand: In den Unternehmensstatistiken sind Vergleiche mit allen registrierten Unternehmen möglich.'
@@ -167,6 +192,11 @@ export const profiFeatures: ProductFeature[] = [
     text: 'Branchenvergleich: Ja',
     detail:
       'Blick zu den Branchen-Kollegen: In den Unternehmensstatistiken sind Vergleiche mit allen registrierten Unternehmen derselben Branche möglich.'
+  },
+  {
+    text: 'Aufklärungsseite: Standard',
+    detail:
+      'Beim Klick auf eines Anwenders in einer Phishing-Mail wird er auf unsere standardisierte Seite weitergeleitet.'
   }
 ];
 
@@ -213,6 +243,16 @@ export const expertFeatures: ProductFeature[] = [
       'Alle Anwender erhalten unterschiedliche Simulationen zu unterschiedlichen Zeiten.'
   },
   {
+    text: 'Abstimmung über neue Funktionen',
+    detail:
+      'Ihre Stimme zählt: Sie können regelmäßig über die Priorisierung von neuen Funktionen abstimmen.'
+  },
+  {
+    text: 'Historische Daten: unbegrenzt',
+    detail:
+      'Sie können alle zur Verfügung stehenden Auswertungen in den Unternehmensstatistiken auf beliebige Zeiträume seit Ihrer Registrierung eingrenzen.'
+  },
+  {
     text: 'Portalvergleich: Ja',
     detail:
       'Blick über den Tellerrand: In den Unternehmensstatistiken sind Vergleiche mit allen registrierten Unternehmen möglich.'
@@ -221,11 +261,11 @@ export const expertFeatures: ProductFeature[] = [
     text: 'Branchenvergleich: Ja',
     detail:
       'Blick zu den Branchen-Kollegen: In den Unternehmensstatistiken sind Vergleiche mit allen registrierten Unternehmen derselben Branche möglich.'
-  }
+  },
   {
-    text: 'Abstimmung über neue Funktionen',
+    text: 'Aufklärungsseite: Individuell',
     detail:
-      'Ihre Stimme zählt: Sie können regelmäßig über die Priorisierung von neuen Funktionen abstimmen.'
+      'Beim Klick auf eines Anwenders in einer Phishing-Mail wird er auf die von Ihnen hinterlegte Seite weitergeleitet. Dies kann zum Beispiel ein Link ins Intranet oder zu einem dedizierten Schulungsangebot sein.'
   },
   {
     text: 'Englischsprachige Texte',
