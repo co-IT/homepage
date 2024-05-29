@@ -12,11 +12,6 @@ export const wuerttembergischeFeatures: ProductFeature[] = [
       'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
   },
   {
-    text: 'Randomisierung: Keine',
-    detail:
-      'Alle Anwender erhalten zur gleichen Zeit die gleiche Phishing-E-Mail.'
-  },
-  {
     text: 'Absender: Authentisch',
     detail:
       'Authentische Absenderadressen sind z.B. Domains wie "bundesgerichtshof-karlsruhe.de" oder "bund-und-laender.online", wohingegen eine Domäne wie "why-how-what.info" weniger echt wirkt.'
@@ -35,7 +30,22 @@ export const wuerttembergischeFeatures: ProductFeature[] = [
     text: 'Feedbackfunktion',
     detail:
       'Im Cyber Portal finden Sie in der unteren rechten Ecke eine Schaltfläche, die ein Formular öffnet, in dem Sie Feedback einsenden können.'
-  }
+  },
+  {
+    text: 'Abteilungsname',
+    detail:
+      'In den Phishing Simulationen wird die Abteilung des Empfängers referenziert, z.B. indem eine "Datenschutzbefragung" im "Einkauf" simuliert wird.'
+  },
+  {
+    text: 'Cyber-Verantwortlicher',
+    detail:
+      'In den Phishing Simulationen wird der Name des Cyber-Verantwortlichen angedruckt, z.B. dass "Reinhold Müller" via OneDrive eine Datei mit dem Empfänger geteilt hat.'
+  },
+  {
+    text: 'Randomisierung: Keine',
+    detail:
+      'Alle Anwender erhalten zur gleichen Zeit die gleiche Phishing-E-Mail.'
+  },
 ];
 
 export const starterFeatures: ProductFeature[] = [
@@ -78,31 +88,6 @@ export const starterFeatures: ProductFeature[] = [
   {
     text: 'Randomisierung: Keine',
     detail: 'Alle Anwender erhalten zur gleichen Zeit die gleiche Simulation.'
-  },
-  {
-    text: 'Sprachniveau: Hoch',
-    detail:
-      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
-  },
-  {
-    text: 'Absender: Authentisch',
-    detail:
-      'Authentische Absenderadressen sind z.B. Domains wie "bundesgerichtshof-karlsruhe.de" oder "bund-und-laender.online", wohingegen eine Domäne wie "why-how-what.info" weniger echt wirkt.'
-  },
-  {
-    text: 'Anrede: Personalisiert',
-    detail:
-      'In den Phishing Simulationen wird der Name des Empfängers in der Anrede verwendet, also z.B. "Sehr geehrter Herr Tim Kater".'
-  },
-  {
-    text: 'Unternehmensname',
-    detail:
-      'In den Phishing Simulationen wird Ihr Unternehmen referenziert, z.B. indem in einer Simulation eine "Kununu"-Bewertung zu Ihrer Firma nachgestellt wird.'
-  },
-  {
-    text: '"Attack Pack": Behörden',
-    detail:
-      'Arbeitsrecht, Elternzeit, Unfallversicherung: Diese Inhalte interessieren praktisch jeden und haben eine hohe Klickquote.'
   },
   {
     text: 'Abstimmen über neue Funktionen',
@@ -154,49 +139,9 @@ export const profiFeatures: ProductFeature[] = [
       'Alle Anwender erhalten die gleiche Simulation, aber zu zufälligen Zeiten über Tage verteilt'
   },
   {
-    text: 'Sprachniveau: Hoch',
-    detail:
-      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
-  },
-  {
-    text: 'Absender: Authentisch',
-    detail:
-      'Authentische Absenderadressen sind z.B. Domains wie "bundesgerichtshof-karlsruhe.de" oder "bund-und-laender.online", wohingegen eine Domäne wie "why-how-what.info" weniger echt wirkt.'
-  },
-  {
-    text: 'Anrede: Personalisiert',
-    detail:
-      'In den Phishing Simulationen wird der Name des Empfängers in der Anrede verwendet, also z.B. "Sehr geehrter Herr Tim Kater".'
-  },
-  {
-    text: 'Unternehmensname',
-    detail:
-      'In den Phishing Simulationen wird Ihr Unternehmen referenziert, z.B. indem in einer Simulation eine "Kununu"-Bewertung zu Ihrer Firma nachgestellt wird.'
-  },
-  {
-    text: '"Attack Pack": Behörden',
-    detail:
-      'Arbeitsrecht, Elternzeit, Unfallversicherung: Diese Inhalte sind für jeden interessant und haben eine hohe Klickquote.'
-  },
-  {
     text: 'Abstimmung über neue Funktionen',
     detail:
       'Ihre Stimme zählt: Sie können regelmäßig über die Priorisierung von neuen Funktionen abstimmen.'
-  },
-  {
-    text: 'Abteilungsname',
-    detail:
-      'In den Phishing Simulationen wird die Abteilung des Empfängers referenziert, z.B. indem eine "Datenschutzbefragung" im "Einkauf" simuliert wird.'
-  },
-  {
-    text: 'Cyber-Verantwortlicher',
-    detail:
-      'In den Phishing Simulationen wird der Name des Cyber-Verantwortlichen angedruckt, z.B. dass "Reinhold Müller" via OneDrive eine Datei mit dem Empfänger geteilt hat.'
-  },
-  {
-    text: '"Attack Pack": Microsoft',
-    detail:
-      'Microsoft verschickt regelmäßig Nachrichten zu Produkten wie Teams und Outlook. In diesen Simulationen versenden wir entsprechende Kopien.'
   }
 ];
 
@@ -243,54 +188,9 @@ export const expertFeatures: ProductFeature[] = [
       'Alle Anwender erhalten unterschiedliche Simulationen zu unterschiedlichen Zeiten.'
   },
   {
-    text: 'Sprachniveau: Hoch',
-    detail:
-      'Das Sprachniveau variiert zw. niedrig und hoch. Bei mittlerem Niveau wird korrekte Rechtschreibung und Grammatik benutzt. Auf hohem Sprachniveau wird zusätzlich auf eine klare Semantik und Plausibilität geachtet.'
-  },
-  {
-    text: 'Absender: Authentisch',
-    detail:
-      'Authentische Absenderadressen sind z.B. Domains wie "bundesgerichtshof-karlsruhe.de" oder "bund-und-laender.online", wohingegen eine Domäne wie "why-how-what.info" weniger echt wirkt.'
-  },
-  {
-    text: 'Anrede: Personalisiert',
-    detail:
-      'In den Phishing Simulationen wird der Name des Empfängers in der Anrede verwendet, also z.B. "Sehr geehrter Herr Tim Kater".'
-  },
-  {
-    text: 'Unternehmensname',
-    detail:
-      'In den Phishing Simulationen wird Ihr Unternehmen referenziert, z.B. indem in einer Simulation eine "Kununu"-Bewertung zu Ihrer Firma nachgestellt wird.'
-  },
-  {
-    text: '"Attack Pack": Behörden',
-    detail:
-      'Arbeitsrecht, Elternzeit, Unfallversicherung: Diese Inhalte sind für jeden interessant und haben eine hohe Klickquote.'
-  },
-  {
     text: 'Abstimmung über neue Funktionen',
     detail:
       'Ihre Stimme zählt: Sie können regelmäßig über die Priorisierung von neuen Funktionen abstimmen.'
-  },
-  {
-    text: 'Abteilungsname',
-    detail:
-      'In den Phishing Simulationen wird die Abteilung des Empfängers referenziert, z.B. indem eine "Datenschutzbefragung" im "Einkauf" simuliert wird.'
-  },
-  {
-    text: 'Cyber-Verantwortlicher',
-    detail:
-      'In den Phishing Simulationen wird der Name des Cyber-Verantwortlichen angedruckt, z.B. dass "Reinhold Müller" via OneDrive eine Datei mit dem Empfänger geteilt hat.'
-  },
-  {
-    text: '"Attack Pack": Microsoft',
-    detail:
-      'Microsoft verschickt regelmäßig Nachrichten zu Produkten wie Teams und Outlook. In diesen Simulationen versenden wir entsprechende Kopien.'
-  },
-  {
-    text: '"Attack Pack": Banking',
-    detail:
-      'Speziell bei betrügerischen Zahlungsaufforderungen kann es schnell zu finanziellen Schäden kommen. Mit diesen Simulationen sollen Rechnungswesen und Einkauf gesondert sensibilisert werden.'
   },
   {
     text: 'Englischsprachige Texte',
