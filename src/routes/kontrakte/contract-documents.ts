@@ -4,7 +4,7 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
     documents: [
       {
         name: 'AGB',
-        version: '2',
+        version: '2.0',
         createdAt: '30.11.2023',
         url: 'https://coiteu-my.sharepoint.com/:b:/g/personal/uli_armbruster_co-it_eu/EcR6oU2HlNlCuzvzsQY43YwBFKOrPigAlmzLfT_cemTDNg?e=ZbltLx'
       }
@@ -15,13 +15,13 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
     documents: [
       {
         name: 'Nutzungsbedingungen',
-        version: '1',
+        version: '1.0',
         createdAt: '28.02.2024',
         url: 'https://coiteu-my.sharepoint.com/:b:/g/personal/uli_armbruster_co-it_eu/EZPmd8gvdrhCpEDaMT6Dop8Bp66hzdQeTodg1-Ir8XrtZg?e=KcyXkK'
       },
       {
         name: 'Datenschutzerklärung',
-        version: '1',
+        version: '1.0',
         createdAt: '23.02.2024',
         url: 'https://coiteu-my.sharepoint.com/:b:/g/personal/uli_armbruster_co-it_eu/EQIqNFP3VbRCtIRDxuvhEcwBYql4VgpI4qsTakFuCadqfg?e=glBVmu'
       }
