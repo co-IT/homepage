@@ -9,17 +9,14 @@ importers:
   .:
     devDependencies:
       '@builder.io/qwik':
-        specifier: 1.5.2
-        version: 1.5.2(@types/node@20.11.24)(undici@5.28.3)
+        specifier: 1.5.5
+        version: 1.5.5(@types/node@20.11.24)(undici@5.28.3)
       '@builder.io/qwik-city':
-        specifier: 1.5.2
-        version: 1.5.2(@types/node@20.11.24)(rollup@4.12.0)
-      '@floating-ui/dom':
-        specifier: 1.6.3
-        version: 1.6.3
+        specifier: 1.5.5
+        version: 1.5.5(@types/node@20.11.24)(rollup@4.16.1)
       '@qwik-ui/headless':
-        specifier: 0.3.6
-        version: 0.3.6(@builder.io/qwik@1.5.2(@types/node@20.11.24)(undici@5.28.3))
+        specifier: 0.4.2
+        version: 0.4.2(@builder.io/qwik@1.5.5(@types/node@20.11.24)(undici@5.28.3))
       '@types/eslint':
         specifier: ^8.44.8
         version: 8.56.5
@@ -44,9 +41,6 @@ importers:
       eslint-plugin-qwik:
         specifier: ^1.3.2
         version: 1.4.5(eslint@8.57.0)
-      focus-trap:
-        specifier: ^7.5.3
-        version: 7.5.4
       node-fetch:
         specifier: 3.3.2
         version: 3.3.2
@@ -100,12 +94,12 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
 
-  '@builder.io/qwik-city@1.5.2':
-    resolution: {integrity: sha512-hQ9OxIgfMg7msfPV/oowlzT6sOSJqtZD+8svEzPFsTeYwxkZZV7g0QEudsO0xX5htWj9bcDlE19SCPI2kvL/qA==}
+  '@builder.io/qwik-city@1.5.5':
+    resolution: {integrity: sha512-Xi/1WqrB91CpZcAXs43OC87+7h89hJczJp43FXUMrvTHGeUsR/udhpz6SZWI/mHh0PFNx6f0A59tPmtDDzYl0Q==}
     engines: {node: '>=16.8.0 <18.0.0 || >=18.11'}
 
-  '@builder.io/qwik@1.5.2':
-    resolution: {integrity: sha512-dUz61FEhC7NjJx0xDnCz6+F6uSBZgJUeur9+EYekpP/BNe2pr4ZH5FORcEOLetJtmxezR6EwTU3GeDLl5159Jg==}
+  '@builder.io/qwik@1.5.5':
+    resolution: {integrity: sha512-ZgeWVfkgdBcv/SwfB0RJtSR6YCVBnFtZ4dH1yxDqeShzgFrVqeVIE7l7A5wwb0hXtA6ESxskLgui6ayZlKSnWQ==}
     engines: {node: '>=16.8.0 <18.0.0 || >=18.11'}
     hasBin: true
     peerDependencies:
@@ -415,8 +409,11 @@ packages:
   '@floating-ui/core@1.6.0':
     resolution: {integrity: sha512-PcF++MykgmTj3CIyOQbKA/hDzOAiqI3mhuoN44WRCopIs1sgoDoU4oty4Jtqaj/y3oDU6fnVSm4QG0a3t5i0+g==}
 
-  '@floating-ui/dom@1.6.3':
-    resolution: {integrity: sha512-RnDthu3mzPlQ31Ss/BTwQ1zjzIhr3lk1gZB1OC56h/1vEtaXkESrOqL5fQVMfXpwGtRwX+YsZBdyHtJMQnkArw==}
+  '@floating-ui/core@1.6.2':
+    resolution: {integrity: sha512-+2XpQV9LLZeanU4ZevzRnGFg2neDeKHgFLjP6YLW+tly0IvrhqT4u8enLGjLH3qeh85g19xY5rsAusfwTdn5lg==}
+
+  '@floating-ui/dom@1.6.5':
+    resolution: {integrity: sha512-Nsdud2X65Dz+1RHjAIP0t8z5e2ff/IRbei6BqFrl1urT8sDVzM1HMQ+R0XcU5ceRfyO3I6ayeqIfh+6Wb8LGTw==}
 
   '@floating-ui/utils@0.2.1':
     resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
@@ -582,15 +579,18 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
+  '@oddbird/popover-polyfill@0.4.3':
+    resolution: {integrity: sha512-kBS0ZAwH8kZqFl0mV89KPK4cLYl2ZoKSfYngK4dz1eLAhKzTK0yu4LrvLdMeM7JhjWK6GxBtiY+cl1s6vR2pUg==}
+
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@qwik-ui/headless@0.3.6':
-    resolution: {integrity: sha512-21I+l0/x/4683nVdIxAmxxT2InUFnFICrHmsRERKRNBljbnowruETRUkzJNb9i/El+6h+qjyGJbqesJH5ZDbzw==}
+  '@qwik-ui/headless@0.4.2':
+    resolution: {integrity: sha512-gbkgwNc16jJb6aRgodRDGsd7ciDEvuTBuj4jFTJQlhcio4WpvAoEBFQO1g6R5QWtPc/XLi3OKLcrxJYhZ9Hc3Q==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
-      '@builder.io/qwik': ^1.4.0
+      '@builder.io/qwik': ^1.5.5
 
   '@rollup/pluginutils@5.1.0':
     resolution: {integrity: sha512-XTIWOPPcpvyKI6L1NHo0lFlCyznUEyPmPY1mc3KpPVDYulHSTvyeLNVW00QTLIAFNhR3kYnJTQHeGqU4M3n09g==}
@@ -780,8 +780,8 @@ packages:
   '@types/mdast@4.0.3':
     resolution: {integrity: sha512-LsjtqsyF+d2/yFOYaN22dHZI1Cpwkrj+g06G8+qtUKlhovPW89YhqSnfKtMbkgmEtYpH2gydRNULd6y8mciAFg==}
 
-  '@types/mdx@2.0.11':
-    resolution: {integrity: sha512-HM5bwOaIQJIQbAYfax35HCKxx7a3KrK3nBtIqJgSOitivTD1y3oW9P3rxY9RkXYPUk7y/AjAohfHKmFpGE79zw==}
+  '@types/mdx@2.0.13':
+    resolution: {integrity: sha512-+OWZQfAYyio6YkJb3HLxDrvnx6SWWDbC0zVPfBRzUk0/nqoDyf6dNxQi3eArPe8rJ473nobTMQ/8Zk+LxJ+Yuw==}
 
   '@types/ms@0.7.34':
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
@@ -954,6 +954,9 @@ packages:
   binary-extensions@2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
+
+  body-scroll-lock-upgrade@1.1.0:
+    resolution: {integrity: sha512-nnfVAS+tB7CS9RaksuHVTpgHWHF7fE/ptIBJnwZrMqImIvWJF1OGcLnMpBhC6qhkx9oelvyxmWXwmIJXCV98Sw==}
 
   boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
@@ -2606,16 +2609,16 @@ snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
 
-  '@builder.io/qwik-city@1.5.2(@types/node@20.11.24)(rollup@4.12.0)':
+  '@builder.io/qwik-city@1.5.5(@types/node@20.11.24)(rollup@4.16.1)':
     dependencies:
       '@mdx-js/mdx': 3.0.1
-      '@types/mdx': 2.0.11
+      '@types/mdx': 2.0.13
       source-map: 0.7.4
       svgo: 3.2.0
       undici: 5.28.3
       vfile: 6.0.1
       vite: 5.2.10(@types/node@20.11.24)
-      vite-imagetools: 6.2.9(rollup@4.12.0)
+      vite-imagetools: 6.2.9(rollup@4.16.1)
       zod: 3.22.4
     transitivePeerDependencies:
       - '@types/node'
@@ -2628,7 +2631,7 @@ snapshots:
       - supports-color
       - terser
 
-  '@builder.io/qwik@1.5.2(@types/node@20.11.24)(undici@5.28.3)':
+  '@builder.io/qwik@1.5.5(@types/node@20.11.24)(undici@5.28.3)':
     dependencies:
       csstype: 3.1.3
       undici: 5.28.3
@@ -2814,7 +2817,11 @@ snapshots:
     dependencies:
       '@floating-ui/utils': 0.2.1
 
-  '@floating-ui/dom@1.6.3':
+  '@floating-ui/core@1.6.2':
+    dependencies:
+      '@floating-ui/utils': 0.2.1
+
+  '@floating-ui/dom@1.6.5':
     dependencies:
       '@floating-ui/core': 1.6.0
       '@floating-ui/utils': 0.2.1
@@ -2939,7 +2946,7 @@ snapshots:
       '@types/estree': 1.0.5
       '@types/estree-jsx': 1.0.5
       '@types/hast': 3.0.4
-      '@types/mdx': 2.0.11
+      '@types/mdx': 2.0.13
       collapse-white-space: 2.1.0
       devlop: 1.1.0
       estree-util-build-jsx: 3.0.1
@@ -2974,20 +2981,27 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
+  '@oddbird/popover-polyfill@0.4.3': {}
+
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@qwik-ui/headless@0.3.6(@builder.io/qwik@1.5.2(@types/node@20.11.24)(undici@5.28.3))':
+  '@qwik-ui/headless@0.4.2(@builder.io/qwik@1.5.5(@types/node@20.11.24)(undici@5.28.3))':
     dependencies:
-      '@builder.io/qwik': 1.5.2(@types/node@20.11.24)(undici@5.28.3)
+      '@builder.io/qwik': 1.5.5(@types/node@20.11.24)(undici@5.28.3)
+      '@floating-ui/core': 1.6.2
+      '@floating-ui/dom': 1.6.5
+      '@oddbird/popover-polyfill': 0.4.3
+      body-scroll-lock-upgrade: 1.1.0
+      focus-trap: 7.5.4
 
-  '@rollup/pluginutils@5.1.0(rollup@4.12.0)':
+  '@rollup/pluginutils@5.1.0(rollup@4.16.1)':
     dependencies:
       '@types/estree': 1.0.5
       estree-walker: 2.0.2
       picomatch: 2.3.1
     optionalDependencies:
-      rollup: 4.12.0
+      rollup: 4.16.1
 
   '@rollup/rollup-android-arm-eabi@4.12.0':
     optional: true
@@ -3115,7 +3129,7 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.2
 
-  '@types/mdx@2.0.11': {}
+  '@types/mdx@2.0.13': {}
 
   '@types/ms@0.7.34': {}
 
@@ -3315,6 +3329,8 @@ snapshots:
 
   binary-extensions@2.2.0: {}
 
+  body-scroll-lock-upgrade@1.1.0: {}
+
   boolbase@1.0.0: {}
 
   brace-expansion@1.1.11:
@@ -3425,12 +3441,12 @@ snapshots:
   css-tree@2.2.1:
     dependencies:
       mdn-data: 2.0.28
-      source-map-js: 1.0.2
+      source-map-js: 1.2.0
 
   css-tree@2.3.1:
     dependencies:
       mdn-data: 2.0.30
-      source-map-js: 1.0.2
+      source-map-js: 1.2.0
 
   css-what@6.1.0: {}
 
@@ -5425,9 +5441,9 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite-imagetools@6.2.9(rollup@4.12.0):
+  vite-imagetools@6.2.9(rollup@4.16.1):
     dependencies:
-      '@rollup/pluginutils': 5.1.0(rollup@4.12.0)
+      '@rollup/pluginutils': 5.1.0(rollup@4.16.1)
       imagetools-core: 6.0.4
     transitivePeerDependencies:
       - rollup

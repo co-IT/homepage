@@ -1,6 +1,6 @@
 import { component$ } from '@builder.io/qwik';
+import { Popover } from '@qwik-ui/headless';
 import { InfoIcon } from '../icons';
-import { Popover, PopoverContent, PopoverTrigger } from '../qwik-ui';
 
 type InfoPopoverProps = {
   text: string;
@@ -8,15 +8,15 @@ type InfoPopoverProps = {
 
 export const InfoPopover = component$((props: InfoPopoverProps) => {
   return (
-    <Popover placement='bottom'>
-      <PopoverContent>
+    <Popover.Root floating='bottom'>
+      <Popover.Panel>
         <div class='w-60 rounded-md bg-gray-800 p-4 text-white shadow-md'>
           {props.text}
         </div>
-      </PopoverContent>
-      <PopoverTrigger>
+      </Popover.Panel>
+      <Popover.Trigger>
         <InfoIcon />
-      </PopoverTrigger>
-    </Popover>
+      </Popover.Trigger>
+    </Popover.Root>
   );
 });
