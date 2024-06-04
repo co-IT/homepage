@@ -6,7 +6,7 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
         name: 'AGB',
         version: '2',
         createdAt: '30.11.2023',
-        url: 'https://coiteu-my.sharepoint.com/:b:/g/personal/uli_armbruster_co-it_eu/EcR6oU2HlNlCuzvzsQY43YwBFKOrPigAlmzLfT_cemTDNg?e=efbA5I'
+        url: 'https://coiteu-my.sharepoint.com/:b:/g/personal/uli_armbruster_co-it_eu/EcR6oU2HlNlCuzvzsQY43YwBFKOrPigAlmzLfT_cemTDNg?e=ZbltLx'
       }
     ]
   },
