@@ -1,8 +1,8 @@
 import { component$ } from '@builder.io/qwik';
 import { Link, useDocumentHead } from '@builder.io/qwik-city';
+import { Popover } from '@qwik-ui/headless';
 import { GithubIcon, MapIcon, YoutubeIcon } from '../icons';
 import { Logo } from '../logo/logo';
-import { Popover, PopoverContent, PopoverTrigger } from '../qwik-ui';
 
 export const Footer = component$(() => {
   const documentHead = useDocumentHead();
@@ -63,11 +63,11 @@ export const Footer = component$(() => {
               },
               key: number
             ) => (
-              <Popover
+              <Popover.Root
                 key={key}
                 class='mb-5 w-full text-center font-bold leading-7 text-white lg:mb-0 lg:w-2/12'
               >
-                <PopoverContent>
+                <Popover.Panel>
                   <ul class='list-item w-60 list-inside space-y-2 rounded-md bg-gray-800 p-4 text-white shadow-md'>
                     {attribution.images.map((image, key) => (
                       <li key={key}>
@@ -81,11 +81,11 @@ export const Footer = component$(() => {
                       </li>
                     ))}
                   </ul>
-                </PopoverContent>
-                <PopoverTrigger>
+                </Popover.Panel>
+                <Popover.Trigger>
                   <span>{attribution.title}</span>
-                </PopoverTrigger>
-              </Popover>
+                </Popover.Trigger>
+              </Popover.Root>
             )
           )}
         </div>

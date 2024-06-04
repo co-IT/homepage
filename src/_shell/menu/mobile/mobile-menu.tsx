@@ -1,10 +1,5 @@
 import { $, component$, useSignal, useStyles$ } from '@builder.io/qwik';
-import {
-  AccordionRoot,
-  Modal,
-  ModalContent,
-  ModalHeader
-} from '@qwik-ui/headless';
+import { Accordion, Modal } from '@qwik-ui/headless';
 import type { MenuConfig } from '../types/menu-config.type';
 
 import { CloseIcon, MenuIcon } from './icons';
@@ -39,25 +34,24 @@ export const MobileMenu = component$(({ config }: MobileMenuProps) => {
       >
         <MenuIcon />
       </button>
-      <Modal
+      <Modal.Root
         bind:show={showSig}
         class='sheet bg-background text-foreground rounded-base fixed bottom-0 right-0 top-0 mr-0 h-full w-[min(400px,_100%)] border-0 p-[28px] shadow-md backdrop:backdrop-blur backdrop:backdrop-brightness-50 dark:backdrop:backdrop-brightness-100'
       >
-        <ModalHeader class='flex justify-between'>
+        <header class='flex justify-between'>
           <Link href='/' onClick$={close$}>
             <Logo />
           </Link>
           <button onClick$={() => (showSig.value = false)}>
             <CloseIcon />
           </button>
-        </ModalHeader>
-        <ModalContent class='mb-2 py-4'>
+        </header>
+        <footer class='mb-2 py-4'>
           <div class='flex w-full justify-center'>
-            <AccordionRoot
+            <Accordion.Root
               animated
               collapsible
-              enhance={true}
-              behavior='single'
+              multiple={false}
               class='w-[min(400px,_100%)]'
             >
               {config.items.map((entryItem, index) => {
@@ -89,10 +83,10 @@ export const MobileMenu = component$(({ config }: MobileMenuProps) => {
                   );
                 }
               })}
-            </AccordionRoot>
+            </Accordion.Root>
           </div>
-        </ModalContent>
-      </Modal>
+        </footer>
+      </Modal.Root>
     </>
   );
 });

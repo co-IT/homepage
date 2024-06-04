@@ -5,7 +5,7 @@ import {
   useStyles$,
   type Signal
 } from '@builder.io/qwik';
-import { Popover, PopoverTrigger } from '@qwik-ui/headless';
+import { Popover } from '@qwik-ui/headless';
 import type { MenuConfig, MenuEntryItem } from '../types';
 import { CategoryItem } from './category-item';
 import { NavMenuAd } from './nav-menu-ad';
@@ -71,8 +71,12 @@ export const MenuPopoverLink = component$<MenuPopoverLinkProps>(
 
     const isOpenedSig = useSignal(false);
     return (
-      <>
-        <PopoverTrigger
+      <Popover.Root
+        id={`nav-menu-popover-${index}`}
+        bind:anchor={menuAnchorRef}
+        gutter={12}
+      >
+        <Popover.Trigger
           popovertarget={`nav-menu-popover-${index}`}
           class={`flex items-center font-semibold ${
             isOpenedSig.value ? 'text-primary' : 'text-white hover:text-primary'
@@ -87,13 +91,9 @@ export const MenuPopoverLink = component$<MenuPopoverLinkProps>(
               `}
             />
           </span>
-        </PopoverTrigger>
+        </Popover.Trigger>
 
-        <Popover
-          id={`nav-menu-popover-${index}`}
-          floating={true}
-          anchorRef={menuAnchorRef}
-          gutter={12}
+        <Popover.Panel
           onToggle$={event => {
             isOpenedSig.value = event.newState === 'open';
           }}
@@ -117,8 +117,8 @@ export const MenuPopoverLink = component$<MenuPopoverLinkProps>(
             </ul>
             {item.ad && <NavMenuAd ad={item.ad} />}
           </div>
-        </Popover>
-      </>
+        </Popover.Panel>
+      </Popover.Root>
     );
   }
 );
