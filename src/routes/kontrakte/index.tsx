@@ -8,7 +8,6 @@ export default component$(() => {
   return (
     <>
       <Section>
-        <LinkedHeading>Dokumente</LinkedHeading>
         {contractDocumentsByCategory.map(({ category, documents }, index) => {
           return (
             <div class='grid gap-4 py-12' key={index} id={category}>
