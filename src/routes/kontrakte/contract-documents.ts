@@ -6,7 +6,13 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
         name: 'AGB',
         version: '2.0',
         createdAt: '30.11.2023',
-        url: 'https://coiteu-my.sharepoint.com/:b:/g/personal/uli_armbruster_co-it_eu/EcR6oU2HlNlCuzvzsQY43YwBFKOrPigAlmzLfT_cemTDNg?e=ZbltLx'
+        url: 'https://dl.co-it.eu/kontrakte/AGB_v2.0.pdf'
+      },
+      {
+        name: 'AGB',
+        version: '1.0',
+        createdAt: '04.05.2022',
+        url: 'https://dl.co-it.eu/kontrakte/AGB_v1.0.pdf'
       }
     ]
   },
@@ -17,13 +23,19 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
         name: 'Nutzungsbedingungen',
         version: '1.0',
         createdAt: '28.02.2024',
-        url: 'https://coiteu-my.sharepoint.com/:b:/g/personal/uli_armbruster_co-it_eu/EZPmd8gvdrhCpEDaMT6Dop8Bp66hzdQeTodg1-Ir8XrtZg?e=KcyXkK'
+        url: 'https://dl.co-it.eu/kontrakte/Cyber_Lounge Nutzungsbedingungen v1.0.pdf'
       },
       {
         name: 'Datenschutzerklärung',
         version: '1.0',
         createdAt: '23.02.2024',
-        url: 'https://coiteu-my.sharepoint.com/:b:/g/personal/uli_armbruster_co-it_eu/EQIqNFP3VbRCtIRDxuvhEcwBYql4VgpI4qsTakFuCadqfg?e=glBVmu'
+        url: 'https://dl.co-it.eu/kontrakte/Cyber_Lounge_Datenschutzerklärung_v1.0.pdf'
+      },
+      {
+        name: 'Leistungsumfang',
+        version: '1.0',
+        createdAt: '23.02.2024',
+        url: 'https://dl.co-it.eu/kontrakte/Cyber_Lounge_Leistungsumfang_v1.0.pdf'
       }
     ]
   },
@@ -34,13 +46,25 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
         name: 'Nutzungsbedingungen',
         version: '1.1',
         createdAt: '09.04.2024',
-        url: 'https://coiteu-my.sharepoint.com/:b:/g/personal/uli_armbruster_co-it_eu/ETLIzrA9t-NCgIwC8qH0s7IBHX5EGKA5S0znDnoEnqil-w?e=h9WDVS'
+        url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Nutzungsbedingungen_v1.1.pdf'
+      },
+      {
+        name: 'Nutzungsbedingungen',
+        version: '1.0',
+        createdAt: '14.03.2021',
+        url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Nutzungsbedingungen_v1_0.pdf'
       },
       {
         name: 'Datenschutzerklärung',
         version: '1.1',
         createdAt: '09.04.2024',
-        url: 'https://coiteu-my.sharepoint.com/:b:/g/personal/uli_armbruster_co-it_eu/EZVahRkg2LRPvJqyNwnhooMBQcrUVs5HdtPdtl8ETQaYYA?e=uHfgVN'
+        url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Datenschutzerklärung_v1.1.pdf'
+      },
+      {
+        name: 'Datenschutzerklärung',
+        version: '1.0',
+        createdAt: '14.03.2021',
+        url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Datenschutzerklärung v1.0.pdf'
       }
     ]
   },
@@ -51,13 +75,13 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
         name: 'AVV',
         version: '1.1',
         createdAt: '23.05.2024',
-        url: 'https://coiteu-my.sharepoint.com/:b:/g/personal/uli_armbruster_co-it_eu/EaEKZlVJ8WRGvn7qRKJr-3cBH-cmMD4XVjTC1-Tb_UnHzw?e=eqHzqP'
+        url: 'https://dl.co-it.eu/kontrakte/Passwort-Manager_AVV_v1.1.pdf  '
       },
       {
         name: 'Nutzungsbedingungen',
         version: '1.1',
         createdAt: '23.05.2024',
-        url: 'https://coiteu-my.sharepoint.com/:b:/g/personal/uli_armbruster_co-it_eu/EezyUlic12BFlusELPR3EDEBcI4rW61WHv5FawyX8TCbtw?e=jdbbGd'
+        url: 'https://dl.co-it.eu/kontrakte/Passwort-Manager_Nutzungsbedingungen_ v1.1.pdf'
       }
     ]
   }
