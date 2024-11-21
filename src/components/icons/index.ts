@@ -25,3 +25,5 @@ export * from './white-video-player-icon';
 export * from './yellow-close-icon';
 export * from './yellow-right-arrow-icon';
 export * from './youtube-icon';
+export * from './feature-check-icon';
+export * from './lightbulb-icon';

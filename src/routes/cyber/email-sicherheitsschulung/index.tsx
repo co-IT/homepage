@@ -5,57 +5,26 @@ import { Section } from '~/components/section';
 
 import { HeadingSegmentSecondary, HeadingSegmentSecondary800 } from '~/components/heading-segment';
 
-import { passwortManagerFeatures, passwortManagerFeatures2 } from './resources';
-
 import { LinkedHeading } from '~/components/link-heading';
 
 import { LinkCallToAction } from '../phishing/components';
 
-import { ArticleCard } from '~/components/article-section/article-card';
 import { CheckList } from '~/components/check-list';
-import { HintCard } from '~/components/hint-card';
 import { BluePhoneIcon } from '~/components/icons';
+import { emailSicherheitsBenefits } from '~/routes/cyber/email-sicherheitsschulung/resources';
 
 export default component$(() => {
   return (
     <>
-      <Section>
-        <ArticleCard
-          article={{
-            direction: 'right',
-            image: {
-              src: '/img/placeholder.svg',
-              alt: 'Placeholder'
-            },
-            heading: 'Passwörtern den Schrecken nehmen',
-            text: `Was haben das On /Offboarding von Mitarbeitern, die Vielfalt an Arbeitsgeräten und die DSGVO gemeinsam? Sie erfordern eine flexible, anwenderfreundliche und sichere Organisation von Passwörtern und vertraulichen Daten.
-
-Durch unsere Spezialisierung auf die Geschäftsprozesse in kleinen und mittelständischen Unternehmen können wir dort starten, wo Sie sich gerade befinden. In kleinen Schritten adaptieren wir gemeinsam mit Ihnen die Organisation und den Einsatz von Passwörtern sowie digitaler Identitäten. Mittels flexibler und moderner Konzepte stärken Sie nachhaltig Ihre Unternehmenssicherheit.`
-          }}
-        ></ArticleCard>
-      </Section>
-
-      <Section id='funktionen' backgroundColor='gray'>
+      <Section id='funktionen'>
         <div class='flex flex-wrap-reverse items-center justify-between gap-y-5'>
           <section class='max-w-lg'>
-            <HintCard>
-              <ul class='list-disc pl-4 *:ml-4'>
-                <li>
-                  Unser Passwort-Manager wird in <span class='font-bold'>Deutschland gehostet</span>
-                </li>
-                <li>
-                  Auf Wunsch kann das Produkt auch direkt auf <span class='font-bold'>Ihrer Infrastruktur</span>{' '}
-                  betrieben werden
-                </li>
-              </ul>
-            </HintCard>
+            <CheckList entries={emailSicherheitsBenefits} />
           </section>
           <section class='flex max-w-xl flex-col gap-4 px-4'>
             <LinkedHeading href='#funktionen'>
-              <HeadingSegmentSecondary text='Digitale Identitäten' />{' '}
-              <HeadingSegmentSecondary800 text='sicher und zentral organisieren' />
+              <HeadingSegmentSecondary text='E-Mail-Sicherheitsschulung' /> <HeadingSegmentSecondary800 text='' />
             </LinkedHeading>
-            <CheckList entries={passwortManagerFeatures} />
           </section>
         </div>
       </Section>
@@ -79,7 +48,7 @@ Durch unsere Spezialisierung auf die Geschäftsprozesse in kleinen und mittelst�
           </section>
           <section class='max-w-lg'>
             <div class='mx-auto flex flex-col items-start gap-4 rounded-md bg-white p-4 shadow-md'>
-              <CheckList entries={passwortManagerFeatures2}></CheckList>
+              {/*<CheckList entries={passwortManagerFeatures2}></CheckList>*/}
             </div>
           </section>
         </div>
@@ -106,7 +75,8 @@ export const head: DocumentHead = {
     },
     {
       name: 'keywords',
-      content: 'Cyber-Produkt, Digitale Sicherheit, Passwort-Manager, Vaultwarden, Bitwarden'
+      content:
+        'Cyber-Produkt, Digitale Sicherheit, E-Mail-Sicherheitsschulung, E-Mail, Phishing, Simulationen, Auswertungen'
     }
   ],
 
@@ -118,8 +88,8 @@ export const head: DocumentHead = {
           source: '/img/placeholder.svg',
           alt: 'Placeholder'
         },
-        heading: 'Passwort-Manager',
-        headingAccent: 'Passwort-Manager für Unternehmen'
+        heading: 'E-Mail-Sicherheitsschulung',
+        headingAccent: 'TODO'
       }
     },
     footer: {
