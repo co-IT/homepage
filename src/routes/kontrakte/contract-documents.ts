@@ -9,10 +9,22 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
         url: 'https://dl.co-it.eu/kontrakte/AGB_v2.0.pdf'
       },
       {
+        name: 'Datenschutzerklärung',
+        version: '2.1',
+        createdAt: '01.07.2025',
+        url: 'https://dl.co-it.eu/kontrakte/Website_Datenschutz_v2.1.pdf'
+      },
+      {
         name: 'AGB',
         version: '1.0',
         createdAt: '04.05.2022',
         url: 'https://dl.co-it.eu/kontrakte/AGB_v1.0.pdf'
+      },
+      {
+        name: 'Datenschutzerklärung',
+        version: '2.0',
+        createdAt: '25.04.2023',
+        url: 'https://dl.co-it.eu/kontrakte/Website_Datenschutz_v2.0.pdf'
       }
     ]
   },
