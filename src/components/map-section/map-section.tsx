@@ -4,12 +4,6 @@ import { MapCard } from '../cards';
 export const MapSection = component$(() => {
   const mapItems = [
     {
-      map: '/img/contact/google-maps-karlsruhe-office.webp',
-      address1: 'Kriegsstr.39',
-      address2: '76133 Karlsruhe',
-      googleMapsLink: 'https://g.page/communicativeIT?share'
-    },
-    {
       map: '/img/contact/google-maps-achern-office.webp',
       address1: 'Eisenbahnstr.15',
       address2: '77855 Achern',
