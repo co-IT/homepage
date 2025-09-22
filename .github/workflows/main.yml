@@ -39,6 +39,7 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
+            apt-cache policy azure-cli | sudo apt-get install --allow-downgrades azure-cli=2.76.0-1~jammy && \
             az storage blob delete-batch --pattern '*' --account-name coiteu --auth-mode key -s '$web'
 
       - name: 🚢 Deploy to Azure Static Website
