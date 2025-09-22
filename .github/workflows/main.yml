@@ -39,6 +39,7 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
+            tdnf install azure-cli=2.76.0 -y && \
             az storage blob delete-batch --pattern '*' --account-name coiteu --auth-mode key -s '$web'
 
       - name: 🚢 Deploy to Azure Static Website
