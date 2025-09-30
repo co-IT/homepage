@@ -18,6 +18,6 @@
 
 ## Static Site Generator (Node.js)
 
-```
+```bash
 pnpm build.server
 ```
