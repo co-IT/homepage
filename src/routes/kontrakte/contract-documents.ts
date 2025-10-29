@@ -118,9 +118,15 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
         name: 'Datenschutzerklärung',
         versions: [
           {
+            version: '1.2',
+            validFrom: '29.10.2025',
+            validTo: undefined,
+            url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Datenschutzerklärung_v1.2.pdf'
+          },
+          {
             version: '1.1',
             validFrom: '09.04.2024',
-            validTo: undefined,
+            validTo: '28.10.2025',
             url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Datenschutzerklärung_v1.1.pdf'
           },
           {
