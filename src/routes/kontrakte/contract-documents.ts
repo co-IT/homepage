@@ -4,39 +4,49 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
     documents: [
       {
         name: 'AGB',
-        version: '2.1',
-        createdAt: '27.10.2025',
-        url: 'https://dl.co-it.eu/kontrakte/AGB_v2.1.pdf'
-      },
-      {
-        name: 'AGB',
-        version: '2.0',
-        createdAt: '30.11.2023',
-        url: 'https://dl.co-it.eu/kontrakte/AGB_v2.0.pdf'
-      },
-      {
-        name: 'AGB',
-        version: '1.0',
-        createdAt: '04.05.2022',
-        url: 'https://dl.co-it.eu/kontrakte/AGB_v1.0.pdf'
-      },
-      {
-        name: 'Datenschutzerklärung',
-        version: '2.2',
-        createdAt: '27.10.2025',
-        url: 'https://dl.co-it.eu/kontrakte/Website_Datenschutz_v2.2.pdf'
-      },
-      {
-        name: 'Datenschutzerklärung',
-        version: '2.1',
-        createdAt: '01.07.2025',
-        url: 'https://dl.co-it.eu/kontrakte/Website_Datenschutz_v2.1.pdf'
+        versions: [
+          {
+            version: '2.1',
+            validFrom: '27.10.2025',
+            validTo: undefined,
+            url: 'https://dl.co-it.eu/kontrakte/AGB_v2.1.pdf'
+          },
+          {
+            version: '2.0',
+            validFrom: '30.11.2023',
+            validTo: '26.10.2025',
+            url: 'https://dl.co-it.eu/kontrakte/AGB_v2.0.pdf'
+          },
+          {
+            version: '1.0',
+            validFrom: '04.05.2022',
+            validTo: '29.11.2023',
+            url: 'https://dl.co-it.eu/kontrakte/AGB_v1.0.pdf'
+          }
+        ]
       },
       {
         name: 'Datenschutzerklärung',
-        version: '2.0',
-        createdAt: '25.04.2023',
-        url: 'https://dl.co-it.eu/kontrakte/Website_Datenschutz_v2.0.pdf'
+        versions: [
+          {
+            version: '2.2',
+            validFrom: '27.10.2025',
+            validTo: undefined,
+            url: 'https://dl.co-it.eu/kontrakte/Website_Datenschutz_v2.2.pdf'
+          },
+          {
+            version: '2.1',
+            validFrom: '01.07.2025',
+            validTo: '26.10.2025',
+            url: 'https://dl.co-it.eu/kontrakte/Website_Datenschutz_v2.1.pdf'
+          },
+          {
+            version: '2.0',
+            validFrom: '25.04.2023',
+            validTo: '30.06.2025',
+            url: 'https://dl.co-it.eu/kontrakte/Website_Datenschutz_v2.0.pdf'
+          }
+        ]
       }
     ]
   },
@@ -45,21 +55,36 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
     documents: [
       {
         name: 'Nutzungsbedingungen',
-        version: '1.0',
-        createdAt: '28.02.2024',
-        url: 'https://dl.co-it.eu/kontrakte/Cyber_Lounge Nutzungsbedingungen v1.0.pdf'
+        versions: [
+          {
+            version: '1.0',
+            validFrom: '28.02.2024',
+            validTo: undefined,
+            url: 'https://dl.co-it.eu/kontrakte/Cyber_Lounge Nutzungsbedingungen v1.0.pdf'
+          }
+        ]
       },
       {
         name: 'Datenschutzerklärung',
-        version: '1.0',
-        createdAt: '23.02.2024',
-        url: 'https://dl.co-it.eu/kontrakte/Cyber_Lounge_Datenschutzerklärung_v1.0.pdf'
+        versions: [
+          {
+            version: '1.0',
+            validFrom: '23.02.2024',
+            validTo: undefined,
+            url: 'https://dl.co-it.eu/kontrakte/Cyber_Lounge_Datenschutzerklärung_v1.0.pdf'
+          }
+        ]
       },
       {
         name: 'Leistungsumfang',
-        version: '1.0',
-        createdAt: '23.02.2024',
-        url: 'https://dl.co-it.eu/kontrakte/Cyber_Lounge_Leistungsumfang_v1.0.pdf'
+        versions: [
+          {
+            version: '1.0',
+            validFrom: '23.02.2024',
+            validTo: undefined,
+            url: 'https://dl.co-it.eu/kontrakte/Cyber_Lounge_Leistungsumfang_v1.0.pdf'
+          }
+        ]
       }
     ]
   },
@@ -68,27 +93,37 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
     documents: [
       {
         name: 'Nutzungsbedingungen',
-        version: '1.1',
-        createdAt: '09.04.2024',
-        url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Nutzungsbedingungen_v1.1.pdf'
-      },
-      {
-        name: 'Nutzungsbedingungen',
-        version: '1.0',
-        createdAt: '14.03.2021',
-        url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Nutzungsbedingungen_v1_0.pdf'
+        versions: [
+          {
+            version: '1.1',
+            validFrom: '09.04.2024',
+            validTo: undefined,
+            url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Nutzungsbedingungen_v1.1.pdf'
+          },
+          {
+            version: '1.0',
+            validFrom: '14.03.2021',
+            validTo: '08.04.2024',
+            url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Nutzungsbedingungen_v1_0.pdf'
+          }
+        ]
       },
       {
         name: 'Datenschutzerklärung',
-        version: '1.1',
-        createdAt: '09.04.2024',
-        url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Datenschutzerklärung_v1.1.pdf'
-      },
-      {
-        name: 'Datenschutzerklärung',
-        version: '1.0',
-        createdAt: '14.03.2021',
-        url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Datenschutzerklärung v1.0.pdf'
+        versions: [
+          {
+            version: '1.1',
+            validFrom: '09.04.2024',
+            validTo: undefined,
+            url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Datenschutzerklärung_v1.1.pdf'
+          },
+          {
+            version: '1.0',
+            validFrom: '14.03.2021',
+            validTo: '08.04.2024',
+            url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Datenschutzerklärung v1.0.pdf'
+          }
+        ]
       }
     ]
   },
@@ -97,15 +132,25 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
     documents: [
       {
         name: 'AVV',
-        version: '1.1',
-        createdAt: '23.05.2024',
-        url: 'https://dl.co-it.eu/kontrakte/Passwort-Manager_AVV_v1.1.pdf  '
+        versions: [
+          {
+            version: '1.1',
+            validFrom: '23.05.2024',
+            validTo: undefined,
+            url: 'https://dl.co-it.eu/kontrakte/Passwort-Manager_AVV_v1.1.pdf  '
+          }
+        ]
       },
       {
         name: 'Nutzungsbedingungen',
-        version: '1.1',
-        createdAt: '23.05.2024',
-        url: 'https://dl.co-it.eu/kontrakte/Passwort-Manager_Nutzungsbedingungen_ v1.1.pdf'
+        versions: [
+          {
+            version: '1.1',
+            validFrom: '23.05.2024',
+            validTo: undefined,
+            url: 'https://dl.co-it.eu/kontrakte/Passwort-Manager_Nutzungsbedingungen_ v1.1.pdf'
+          }
+        ]
       }
     ]
   }
@@ -118,7 +163,12 @@ export type ContractDocumentsByCategory = {
 
 type ContractDocument = {
   name: string;
+  versions: ContractDocumentVersion[];
+};
+
+type ContractDocumentVersion = {
   version: string;
-  createdAt: string;
   url: string;
+  validFrom: string;
+  validTo?: string;
 };
