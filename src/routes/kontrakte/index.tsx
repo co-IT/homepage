@@ -8,35 +8,49 @@ export default component$(() => {
   return (
     <>
       <Section>
-        {contractDocumentsByCategory.map(({ category, documents }, index) => {
-          return (
-            <div class='grid gap-4 py-12' key={index} id={category}>
-              <LinkedHeading href={`#${category}`}>{category}</LinkedHeading>
-              <table class='max-w-md border-collapse border border-slate-500'>
-                <thead>
-                  <tr>
-                    <th class='border border-slate-600 p-2'>Dokument</th>
-                    <th class='border border-slate-600 p-2'>Version</th>
-                    <th class='border border-slate-600 p-2'>Erstellt am</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {documents.map((document, index) => (
-                    <tr key={index}>
-                      <td class='border border-slate-600 p-2 underline hover:text-blue-600'>
-                        <a href={document.url} target='_blank'>
-                          {document.name}
+        {contractDocumentsByCategory.map(({ category: app, documents }, appIndex) => (
+          <div class='grid gap-8 py-12' key={appIndex} id={app}>
+            {/* App / Category heading */}
+            <LinkedHeading href={`#${app}`}>{app}</LinkedHeading>
+            <div class='grid md:grid-cols-2 xl:grid-cols-3'>
+            {documents.map((document, docIndex) => (
+              <div key={docIndex} class='space-y-3'>
+                <h3 class='text-xl font-semibold'>{document.name}</h3>
+
+                <ul class='space-y-2 border-l-2 border-slate-400 pl-4'>
+                  {document.versions.map((version, verIndex) => {
+                    const isCurrent = !version.validTo;
+                    return (
+                      <li key={verIndex} class='relative'>
+                        <span class='absolute -left-[17px] top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-slate-400'></span>
+
+                        <a href={version.url} target='_blank' class='block w-fit'>
+                          <div class={`w-80 border border-slate-300 p-3 transition-all hover:border-secondary-800`}>
+                            <div class='flex items-center justify-between'>
+                              <div class='font-medium'>
+                                Version {version.version}
+                                {isCurrent && <span class='ml-2 rounded bg-primary px-2 py-0.5 text-xs'>Aktuell</span>}
+                              </div>
+                            </div>
+                            <div class='mt-1 text-sm text-slate-600'>
+                              {isCurrent && <span>ab {version.validFrom}</span>}
+                              {!isCurrent && (
+                                <span>
+                                  {version.validFrom} - {version.validTo}
+                                </span>
+                              )}
+                            </div>
+                          </div>
                         </a>
-                      </td>
-                      <td class='border border-slate-600 p-2'>{document.version}</td>
-                      <td class='border border-slate-600 p-2'>{document.createdAt}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            ))}
             </div>
-          );
-        })}
+          </div>
+        ))}
       </Section>
     </>
   );
