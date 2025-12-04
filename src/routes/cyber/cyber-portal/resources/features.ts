@@ -133,6 +133,11 @@ export const starterFeatures: ProductFeature[] = [
     text: 'Aufklärungsseite: Standard',
     detail:
       'Beim Klick auf eines Anwenders in einer Phishing-Mail wird er auf unsere standardisierte Seite weitergeleitet.'
+  },
+  {
+    text: 'Gutschrift: 5%',
+    detail:
+      'Bei Vertragsabschluss erhalten Sie auf den Nettobetrag eine 5% Gutschrift, die Sie für unsere Social Engineering Angriffssimulationen und unseren Passwort-Manager nutzen können.'
   }
 ];
 
@@ -207,6 +212,11 @@ export const profiFeatures: ProductFeature[] = [
     text: 'Aufklärungsseite: Standard',
     detail:
       'Beim Klick auf eines Anwenders in einer Phishing-Mail wird er auf unsere standardisierte Seite weitergeleitet.'
+  },
+  {
+    text: 'Gutschrift: 10%',
+    detail:
+      'Bei Vertragsabschluss erhalten Sie auf den Nettobetrag eine 10% Gutschrift, die Sie für unsere Social Engineering Angriffssimulationen und unseren Passwort-Manager nutzen können.'
   }
 ];
 
@@ -281,6 +291,11 @@ export const expertFeatures: ProductFeature[] = [
     text: 'Aufklärungsseite: Individuell',
     detail:
       'Beim Klick auf eines Anwenders in einer Phishing-Mail wird er auf die von Ihnen hinterlegte Seite weitergeleitet. Dies kann zum Beispiel ein Link ins Intranet oder zu einem dedizierten Schulungsangebot sein.'
+  },
+  {
+    text: 'Gutschrift: 20%',
+    detail:
+      'Bei Vertragsabschluss erhalten Sie auf den Nettobetrag eine 20% Gutschrift, die Sie für unsere Social Engineering Angriffssimulationen und unseren Passwort-Manager nutzen können.'
   },
   {
     text: 'Englischsprachige Texte',
