@@ -75,6 +75,11 @@ export const starterFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
+    text: 'Mehrfachaktionen: ja',
+    detail:
+      'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
+  },
+  {
     text: 'Anzahl Simulation: 12',
     detail:
       'Es handelt sich um die übers Jahr insgesamt verschickten Phishing-Simulationen. Bei einer geringeren Vertragslaufzeit erhalten Sie pro Monat der Vertragslaufzeit jeweils 1/12 der Phishing-Mails.',
@@ -139,6 +144,11 @@ export const profiFeatures: ProductFeature[] = [
   },
   {
     text: 'Zahlweise: monatlich',
+    detail:
+      'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
+  },
+  {
+    text: 'Mehrfachaktionen: ja',
     detail:
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
@@ -212,6 +222,11 @@ export const expertFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
+    text: 'Mehrfachaktionen: ja',
+    detail:
+      'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
+  },
+  {
     text: 'Anzahl Simulationen: 52',
     detail:
       'Es handelt sich um die übers Jahr insgesamt verschickten Phishing-Simulationen. Bei einer geringeren Vertragslaufzeit erhalten Sie pro Monat der Vertragslaufzeit jeweils 1/12 der Phishing-Mails.',
@@ -273,9 +288,14 @@ export const expertFeatures: ProductFeature[] = [
       'Einige Phishing Simulationen werden in englischer Sprache verfasst. Das hilft  Unternehmen, die regelmäßig mit dem Ausland korrespondieren.'
   },
   {
-    text: 'Eigene Inhalte',
+    text: 'Eigene Simulationen',
     detail:
-      'Bei einer entsprechend großen Zahl an Empfänger können wir für Sie gezielt Inhalte einsteuern. Sprechen Sie uns darauf an.'
+      'Bei einer entsprechend großen Zahl an Empfänger können wir für Sie gezielt Ihre Simulationen einsteuern. Sprechen Sie uns darauf an.'
+  },
+  {
+    text: 'Eigene Kurse',
+    detail:
+      'Gerne binden wir für Sie Ihre eigenen Kurse mit ein. Buchen Sie Schulungen bei uns, können diese ebenfalls eingesteuert werden. Sprechen Sie uns darauf an.'
   },
   {
     text: 'Funktionen vorschlagen',
