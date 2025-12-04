@@ -518,7 +518,27 @@ export default component$(() => {
         </section>
       </Section>
 
-      <Section id='fordern_sie_ihr_angebot_an'>
+      <Section id='social_engineering'>
+        <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
+          <LinkedHeading href='#social_engineering'>
+           Der nächste Schritt: {' '}
+            <HeadingSegmentSecondary800 text='Social Engineering' /> an.
+          </LinkedHeading>
+
+          <p class='max-w-xl'>
+            Wir führen realitätsnahe Social-Engineering-Angriffssimulationen durch, um die Sicherheitslage Ihrer Organisation gezielt zu prüfen. Dazu gehören individuell zugeschnittene Spear-Phishing-Kampagnen, telefonische Manipulationen (Vishing), SMS-basierte Angriffe (Smishing) sowie kontrollierte USB-Drop-Tests. Ziel ist die Identifikation menschlicher und prozessualer Schwachstellen innerhalb Ihrer Organisatino. Alle Angriffe erfolgen abgestimmt, rechtssicher und ohne Beeinträchtigung des Betriebs. Abschließend erhalten Sie eine detaillierte Auswertung mit konkreten Handlungsempfehlungen zur nachhaltigen Stärkung Ihrer Sicherheitskultur.
+          </p>
+
+          <LinkCallToAction
+            href='https://e.co-IT.eu/cyber/social-engineering'
+            target='_blank'
+          >
+            Weitere Informationen
+          </LinkCallToAction>
+        </div>
+      </Section>
+
+      <Section id='fordern_sie_ihr_angebot_an' backgroundColor='gray'>
         <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#fordern_sie_ihr_angebot_an'>
             Fordern Sie Ihr{' '}
@@ -540,7 +560,7 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section id='wichtig_fuer_cyber_verantwortliche' backgroundColor='gray'>
+      <Section id='wichtig_fuer_cyber_verantwortliche'>
         <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#wichtig_fuer_cyber_verantwortliche'>
             Wichtig für{' '}
@@ -568,7 +588,7 @@ export default component$(() => {
         </section>
       </Section>
 
-      <Section id='teilen_sie_uns_ihre_meinung_mit'>
+      <Section id='teilen_sie_uns_ihre_meinung_mit' backgroundColor='gray'>
         <section class='mb-14 flex flex-col items-center gap-y-8 px-4'>
           <LinkedHeading href='#teilen_sie_uns_ihre_meinung_mit'>
             Teilen Sie uns <HeadingSegmentSecondary800 text='Ihre Meinung ' />{' '}
@@ -591,7 +611,7 @@ export default component$(() => {
         </section>
       </Section>
 
-      <Section id='passwort-manager_fuer_unternehmen'>
+      <Section id='passwort-manager_fuer_unternehmen' backgroundColor='gray'>
         <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#passwort-manager_fuer_unternehmen'>
             <HeadingSegmentSecondary text='Passwort-Manager' />{' '}
@@ -615,7 +635,7 @@ export default component$(() => {
         </section>
       </Section>
 
-      <Section id='sie_wollen_ihre_anwender_schulen' backgroundColor='gray'>
+      <Section id='sie_wollen_ihre_anwender_schulen'>
         <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
             Sie wollen <HeadingSegmentSecondary800 text='Ihre Anwender ' />{' '}
@@ -640,7 +660,7 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section id='partner_it_sicherheit'>
+      <Section id='partner_it_sicherheit' backgroundColor='gray'>
         <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#partner_it_sicherheit'>
             Sie suchen einen <HeadingSegmentSecondary800 text='Partner' /> für
