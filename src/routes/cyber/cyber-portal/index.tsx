@@ -552,7 +552,7 @@ export default component$(() => {
           </p>
 
           <LinkCallToAction
-            href='https://e.co-IT.eu/cyber/social-engineering'
+            href='https://e.co-it.eu/cyber/social-engineering'
             target='_blank'
           >
             Weitere Informationen

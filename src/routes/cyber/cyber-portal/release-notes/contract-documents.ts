@@ -8,7 +8,7 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
           {
             releasedAt: '05.12.2025',
             description: 'Suche, Kursverwaltung',
-            url: 'https://e.co-IT.eu/cyber-portal/cyber-portal-basis_1-0.pdf'
+            url: 'https://e.co-it.eu/cyber-portal/release-notes/basis-1-0'
           }
         ]
       },
@@ -18,7 +18,7 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
           {
             releasedAt: '05.12.2025',
             description: 'Mehrfachaktionen',
-            url: 'https://e.co-IT.eu/cyber-portal/cyber-portal-premium_1-0.pdf'
+            url: 'https://e.co-it.eu/cyber-portal/release-notes/premium-1-0'
           }
         ]
       }
