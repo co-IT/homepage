@@ -518,27 +518,7 @@ export default component$(() => {
         </section>
       </Section>
 
-      <Section id='social_engineering'>
-        <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
-          <LinkedHeading href='#social_engineering'>
-           Der nächste Schritt: {' '}
-            <HeadingSegmentSecondary800 text='Social Engineering' /> an.
-          </LinkedHeading>
-
-          <p class='max-w-xl'>
-            Wir führen realitätsnahe Social-Engineering-Angriffssimulationen durch, um die Sicherheitslage Ihrer Organisation gezielt zu prüfen. Dazu gehören individuell zugeschnittene Spear-Phishing-Kampagnen, telefonische Manipulationen (Vishing), SMS-basierte Angriffe (Smishing) sowie kontrollierte USB-Drop-Tests. Ziel ist die Identifikation menschlicher und prozessualer Schwachstellen innerhalb Ihrer Organisatino. Alle Angriffe erfolgen abgestimmt, rechtssicher und ohne Beeinträchtigung des Betriebs. Abschließend erhalten Sie eine detaillierte Auswertung mit konkreten Handlungsempfehlungen zur nachhaltigen Stärkung Ihrer Sicherheitskultur.
-          </p>
-
-          <LinkCallToAction
-            href='https://e.co-IT.eu/cyber/social-engineering'
-            target='_blank'
-          >
-            Weitere Informationen
-          </LinkCallToAction>
-        </div>
-      </Section>
-
-      <Section id='fordern_sie_ihr_angebot_an' backgroundColor='gray'>
+      <Section id='fordern_sie_ihr_angebot_an'>
         <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#fordern_sie_ihr_angebot_an'>
             Fordern Sie Ihr{' '}
@@ -556,6 +536,26 @@ export default component$(() => {
             target='_blank'
           >
             Jetzt Angebot anfordern
+          </LinkCallToAction>
+        </div>
+      </Section>
+      
+      <Section id='social_engineering' backgroundColor='gray'>
+        <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
+          <LinkedHeading href='#social_engineering'>
+           Wenn der erste Angriff zum Schaden führt: {' '}
+            <HeadingSegmentSecondary800 text='Social Engineering' />
+          </LinkedHeading>
+
+          <p class='max-w-xl'>
+            Wir führen realitätsnahe Social-Engineering-Angriffssimulationen durch, um die Sicherheitslage Ihrer Organisation gezielt zu prüfen. Dazu gehören unter anderem individuell zugeschnittene Spear-Phishing-Kampagnen, telefonische Manipulationen (Vishing), kontrollierte USB-Drop-Tests und viele weitere (z.B. Smishing, Quishing, Invoice Fraud). Ziel ist die Identifikation menschlicher und prozessualer Schwachstellen innerhalb Ihrer Organisation. Alle Simulationen erfolgen abgestimmt, rechtssicher und ohne Beeinträchtigung des Betriebs. Abschließend erhalten Sie eine detaillierte Auswertung mit konkreten Handlungsempfehlungen zur nachhaltigen Stärkung Ihrer Sicherheitskultur.
+          </p>
+
+          <LinkCallToAction
+            href='https://e.co-IT.eu/cyber/social-engineering'
+            target='_blank'
+          >
+            Weitere Informationen
           </LinkCallToAction>
         </div>
       </Section>
@@ -611,7 +611,7 @@ export default component$(() => {
         </section>
       </Section>
 
-      <Section id='passwort-manager_fuer_unternehmen' backgroundColor='gray'>
+      <Section id='passwort-manager_fuer_unternehmen'>
         <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#passwort-manager_fuer_unternehmen'>
             <HeadingSegmentSecondary text='Passwort-Manager' />{' '}
@@ -635,7 +635,7 @@ export default component$(() => {
         </section>
       </Section>
 
-      <Section id='sie_wollen_ihre_anwender_schulen'>
+      <Section id='sie_wollen_ihre_anwender_schulen' backgroundColor='gray'>
         <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
             Sie wollen <HeadingSegmentSecondary800 text='Ihre Anwender ' />{' '}
@@ -660,7 +660,7 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section id='partner_it_sicherheit' backgroundColor='gray'>
+      <Section id='partner_it_sicherheit'>
         <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#partner_it_sicherheit'>
             Sie suchen einen <HeadingSegmentSecondary800 text='Partner' /> für

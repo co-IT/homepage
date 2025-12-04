@@ -75,9 +75,9 @@ export const starterFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
-    text: 'Mehrfachaktionen: ja',
+    text: 'Komfortfunktionen: ja',
     detail:
-      'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
+      'Sparen Sie wertvolle Zeit mit Funktionen, die Ihnen die manuelle Arbeit abnehmen oder erleichtern. Nutzen Sie beispielsweise Mehrfachaktionen in der Administration, um mehrere Kurse für eine Gruppe von Anwendern zuzuweisen.'
   },
   {
     text: 'Anzahl Simulation: 12',
@@ -153,9 +153,9 @@ export const profiFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
-    text: 'Mehrfachaktionen: ja',
+    text: 'Komfortfunktionen: ja',
     detail:
-      'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
+      'Sparen Sie wertvolle Zeit mit Funktionen, die Ihnen die manuelle Arbeit abnehmen oder erleichtern. Nutzen Sie beispielsweise Mehrfachaktionen in der Administration, um mehrere Kurse für eine Gruppe von Anwendern zuzuweisen.'
   },
   {
     text: 'Anzahl Simulationen: 24',
@@ -232,9 +232,9 @@ export const expertFeatures: ProductFeature[] = [
       'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
   },
   {
-    text: 'Mehrfachaktionen: ja',
+    text: 'Komfortfunktionen: ja',
     detail:
-      'Auch bei Vertragslaufzeit länger als einen Monat erfolgt die Rechnungslegung monatlich, d.h. Sie müssen nicht in Vorleistung gehen. Sie erhalten zu Vertragsbeginn eine Rechnung mit den monatlichen Zahlungsterminen für die gesamte Vertragslaufzeit.'
+      'Sparen Sie wertvolle Zeit mit Funktionen, die Ihnen die manuelle Arbeit abnehmen oder erleichtern. Nutzen Sie beispielsweise Mehrfachaktionen in der Administration, um mehrere Kurse für eine Gruppe von Anwendern zuzuweisen.'
   },
   {
     text: 'Anzahl Simulationen: 52',
