@@ -2,7 +2,7 @@ import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { Section } from '~/components/section';
 import { LinkedHeading } from '../../../../components/link-heading';
-import { contractDocumentsByCategory } from './contract-documents';
+import { contractDocumentsByCategory } from './release-notes';
 
 export default component$(() => {
   return (
