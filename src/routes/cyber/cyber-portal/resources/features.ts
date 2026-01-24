@@ -57,6 +57,11 @@ export const wuerttembergischeFeatures: ProductFeature[] = [
       'Alle Anwender erhalten zur gleichen Zeit die gleiche Phishing-E-Mail.'
   },
   {
+    text: 'Individuelles Pausieren: Nein',
+    detail:
+      'Entscheiden Sie pro Anwender, ob dieser Phishing-Simulationen erhalten soll oder nicht.'
+  },
+  {
     text: 'Unternehmensstatistik: Keine Fremdvergleiche',
     detail:
       'In den Unternehmensstatistiken sind in einigen Paketen Vergleiche mit Unternehmen der gleichen Branche bzw. mit allen registrierten Unternehmen möglich.'
@@ -108,6 +113,11 @@ export const starterFeatures: ProductFeature[] = [
   {
     text: 'Randomisierung: Keine',
     detail: 'Alle Anwender erhalten zur gleichen Zeit die gleiche Simulation.'
+  },
+  {
+    text: 'Individuelles Pausieren: Nein',
+    detail:
+      'Entscheiden Sie pro Anwender, ob dieser Phishing-Simulationen erhalten soll oder nicht.'
   },
   {
     text: 'Abstimmen über neue Funktionen',
@@ -189,6 +199,11 @@ export const profiFeatures: ProductFeature[] = [
       'Alle Anwender erhalten die gleiche Simulation, aber zu zufälligen Zeiten über Tage verteilt'
   },
   {
+    text: 'Individuelles Pausieren: Ja',
+    detail:
+      'Entscheiden Sie pro Anwender, ob dieser Phishing-Simulationen erhalten soll oder nicht.'
+  },
+  {
     text: 'Abstimmung über neue Funktionen',
     detail:
       'Ihre Stimme zählt: Sie können regelmäßig über die Priorisierung von neuen Funktionen abstimmen.'
@@ -266,6 +281,11 @@ export const expertFeatures: ProductFeature[] = [
     text: 'Randomisierung: überraschend ',
     detail:
       'Alle Anwender erhalten unterschiedliche Simulationen zu unterschiedlichen Zeiten.'
+  },
+  {
+    text: 'Individuelles Pausieren: Ja',
+    detail:
+      'Entscheiden Sie pro Anwender, ob dieser Phishing-Simulationen erhalten soll oder nicht.'
   },
   {
     text: 'Abstimmung über neue Funktionen',
