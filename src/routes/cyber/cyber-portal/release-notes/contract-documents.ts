@@ -11,6 +11,11 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
             url: 'https://e.co-it.eu/cyber-portal/release-notes/basis-1-1'
           },
           {
+            releasedAt: '26.01.2026',
+            description: 'Webinare, Phishing-Termine',
+            url: 'https://e.co-it.eu/cyber-portal/release-notes/basis-1-1'
+          },
+          {
             releasedAt: '05.12.2025',
             description: 'Suche, Kursverwaltung',
             url: 'https://e.co-it.eu/cyber-portal/release-notes/basis-1-0'
