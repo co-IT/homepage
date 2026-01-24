@@ -60,7 +60,7 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
             version: '1.0',
             validFrom: '28.02.2024',
             validTo: undefined,
-            url: 'https://dl.co-it.eu/kontrakte/Cyber_Lounge Nutzungsbedingungen v1.0.pdf'
+            url: 'https://dl.co-it.eu/kontrakte/Cyber_Lounge_Nutzungsbedingungen_v1.0.pdf'
           }
         ]
       },
@@ -133,7 +133,18 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
             version: '1.0',
             validFrom: '14.03.2021',
             validTo: '08.04.2024',
-            url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Datenschutzerklärung v1.0.pdf'
+            url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Datenschutzerklärung_v1.0.pdf'
+          }
+        ]
+      },
+      {
+        name: 'Datenschutzhinweise Webinare',
+        versions: [
+          {
+            version: '1.0',
+            validFrom: '23.01.2026',
+            validTo: undefined,
+            url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Datenschutzhinweise_Webinare_v1.0.pdf'
           }
         ]
       }
