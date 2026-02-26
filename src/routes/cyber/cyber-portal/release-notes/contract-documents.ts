@@ -5,6 +5,11 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
       {
         name: 'Basis-Paket: Neuerungen',
         versions: [
+			{
+            releasedAt: '26.02.2026',
+            description: 'Schulungsmanagement, Aufklärungsseite',
+            url: 'https://e.co-it.eu/cyber-portal/release-notes/basis-1-2'
+          },
           {
             releasedAt: '26.01.2026',
             description: 'Webinare, Phishing-Termine',
@@ -20,6 +25,11 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
       {
         name: 'Premium-Pakete: Neuerungen',
         versions: [
+          {
+            releasedAt: '26.02.2026',
+            description: 'Eigene Richtlinie in Aufklärungsseite',
+            url: 'https://e.co-it.eu/cyber-portal/release-notes/premium-1-2'
+          },
           {
             releasedAt: '26.01.2026',
             description: 'Phishing-Simulationen deaktivieren',
