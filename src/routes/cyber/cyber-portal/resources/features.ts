@@ -49,7 +49,7 @@ export const wuerttembergischeFeatures: ProductFeature[] = [
   {
     text: 'Aufklärungsseite: Standard',
     detail:
-      'Beim Klick auf eines Anwenders in einer Phishing-Mail wird er auf unsere standardisierte Seite weitergeleitet.'
+      'Beim Klick eines Anwenders auf eine Phishing-Mail wird er auf unsere standardisierte Seite weitergeleitet. Es ist keine Individualisierung möglich.'
   },
   {
     text: 'Randomisierung: Keine',
@@ -140,9 +140,9 @@ export const starterFeatures: ProductFeature[] = [
       'Blick zu den Branchen-Kollegen: In den Unternehmensstatistiken sind Vergleiche mit allen registrierten Unternehmen derselben Branche möglich.'
   },
   {
-    text: 'Aufklärungsseite: Standard',
+    text: 'Aufklärungsseite: Erweiterbar',
     detail:
-      'Beim Klick auf eines Anwenders in einer Phishing-Mail wird er auf unsere standardisierte Seite weitergeleitet.'
+      'Beim Klick eines Anwenders auf eine Phishing-Mail wird er auf unsere Aufklärungsseite weitergeleitet. Dort können Sie eigene Inhalte (z. B. Verhalten im Schadensfall) einbinden und persönliches Feedback ermöglichen.'
   },
   {
     text: 'Gutschrift: 5%',
@@ -224,9 +224,9 @@ export const profiFeatures: ProductFeature[] = [
       'Blick zu den Branchen-Kollegen: In den Unternehmensstatistiken sind Vergleiche mit allen registrierten Unternehmen derselben Branche möglich.'
   },
   {
-    text: 'Aufklärungsseite: Standard',
+    text: 'Aufklärungsseite: Erweiterbar',
     detail:
-      'Beim Klick auf eines Anwenders in einer Phishing-Mail wird er auf unsere standardisierte Seite weitergeleitet.'
+      'Beim Klick eines Anwenders auf eine Phishing-Mail wird er auf unsere Aufklärungsseite weitergeleitet. Dort können Sie eigene Inhalte (z. B. Verhalten im Schadensfall) einbinden und persönliches Feedback ermöglichen.'
   },
   {
     text: 'Gutschrift: 10%',
@@ -310,7 +310,7 @@ export const expertFeatures: ProductFeature[] = [
   {
     text: 'Aufklärungsseite: Individuell',
     detail:
-      'Beim Klick auf eines Anwenders in einer Phishing-Mail wird er auf die von Ihnen hinterlegte Seite weitergeleitet. Dies kann zum Beispiel ein Link ins Intranet oder zu einem dedizierten Schulungsangebot sein.'
+      'Sie können alles, was in den kleineren Paketen möglich ist. Zudem können Sie beim Klick eines Anwenders auf eine Phishing-Mail diesen auf Ihre eigene Aufklärungsseite weiterleiten. Dies könnte beispielsweise ein Link ins Intranet oder zu einem dedizierten Schulungsangebot sein.'
   },
   {
     text: 'Gutschrift: 20%',

@@ -5,20 +5,25 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
       {
         name: 'Basis-Paket: Neuerungen',
         versions: [
-			{
+          {
+            releasedAt: '13.03.2026',
+            description: 'Reminder, Aktivitätskompass, neue Prüfung',
+            url: 'https://stcpmediaprod.blob.core.windows.net/cyber-portal-prod-release-notes/cyber-portal-basis_1-3.pdf'
+          },
+          {
             releasedAt: '26.02.2026',
             description: 'Schulungsmanagement, Aufklärungsseite',
-            url: 'https://e.co-it.eu/cyber-portal/release-notes/basis-1-2'
+            url: 'https://stcpmediaprod.blob.core.windows.net/cyber-portal-prod-release-notes/cyber-portal-basis_1-2.pdf'
           },
           {
             releasedAt: '26.01.2026',
             description: 'Webinare, Phishing-Termine',
-            url: 'https://e.co-it.eu/cyber-portal/release-notes/basis-1-1'
+            url: 'https://stcpmediaprod.blob.core.windows.net/cyber-portal-prod-release-notes/cyber-portal-basis_1-1.pdf'
           },
           {
             releasedAt: '05.12.2025',
             description: 'Suche, Kursverwaltung',
-            url: 'https://e.co-it.eu/cyber-portal/release-notes/basis-1-0'
+            url: 'https://stcpmediaprod.blob.core.windows.net/cyber-portal-prod-release-notes/cyber-portal-basis_1-0.pdf'
           }
         ]
       },
@@ -26,19 +31,24 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
         name: 'Premium-Pakete: Neuerungen',
         versions: [
           {
+            releasedAt: '13.03.2026',
+            description: 'Personalisiertes Melden, Eigene Richtlinie erweitert',
+            url: 'https://stcpmediaprod.blob.core.windows.net/cyber-portal-prod-release-notes/cyber-portal-premium_1-3.pdf'
+          },
+          {
             releasedAt: '26.02.2026',
             description: 'Eigene Richtlinie in Aufklärungsseite',
-            url: 'https://e.co-it.eu/cyber-portal/release-notes/premium-1-2'
+            url: 'https://stcpmediaprod.blob.core.windows.net/cyber-portal-prod-release-notes/cyber-portal-premium_1-2.pdf'
           },
           {
             releasedAt: '26.01.2026',
             description: 'Phishing-Simulationen deaktivieren',
-            url: 'https://e.co-it.eu/cyber-portal/release-notes/premium-1-1'
+            url: 'https://stcpmediaprod.blob.core.windows.net/cyber-portal-prod-release-notes/cyber-portal-premium_1-1.pdf'
           },
           {
             releasedAt: '05.12.2025',
             description: 'Mehrfachaktionen',
-            url: 'https://e.co-it.eu/cyber-portal/release-notes/premium-1-0'
+            url: 'https://stcpmediaprod.blob.core.windows.net/cyber-portal-prod-release-notes/cyber-portal-premium_1-0.pdf'
           }
         ]
       }
