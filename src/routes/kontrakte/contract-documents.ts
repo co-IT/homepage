@@ -157,10 +157,10 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
         name: 'AVV',
         versions: [
           {
-            version: '1.1',
-            validFrom: '23.05.2024',
+            version: '1.0',
+            validFrom: '22.04.2026',
             validTo: undefined,
-            url: 'https://dl.co-it.eu/kontrakte/Passwort-Manager_AVV_v1.1.pdf  '
+            url: 'https://e.co-it.eu/passwort-mgmt/avv'
           }
         ]
       },
@@ -168,10 +168,10 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
         name: 'Nutzungsbedingungen',
         versions: [
           {
-            version: '1.1',
-            validFrom: '23.05.2024',
+            version: '1.0',
+            validFrom: '22.04.2026',
             validTo: undefined,
-            url: 'https://dl.co-it.eu/kontrakte/Passwort-Manager_Nutzungsbedingungen_ v1.1.pdf'
+            url: 'https://e.co-it.eu/passwort-mgmt/nutzungsbedingungen'
           }
         ]
       }
