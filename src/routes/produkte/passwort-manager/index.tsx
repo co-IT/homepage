@@ -211,7 +211,7 @@ export default component$(() => {
 
           <div class='mx-auto'>
             <LinkCallToAction
-              href='https://e.co-IT.eu/passwort-mgmt/v1 '
+              href='https://e.co-it.eu/passwort-mgmt/nutzungsbedingungen'
               target='_blank'
             >
               Unsere Nutzungsbedingungen
