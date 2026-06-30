@@ -25,6 +25,15 @@ export const CollapsibleAccordionItem = component$(
         </Accordion.Header>
         <Accordion.Content class=' accordion-animation-1 overflow-hidden'>
           <div class='grid gap-2 pb-4 pl-2'>
+            {item.path && (
+              <Link
+                href={item.path}
+                class='font-semibold text-secondary-900'
+                onClick$={() => onItemClick$?.()}
+              >
+                Übersicht {item.text}
+              </Link>
+            )}
             {item.items?.map((category, index) => (
               <div key={`categoryItem-${index}`}>
                 <h4 class='mb-4 mt-2 font-semibold uppercase text-gray-800'>

@@ -1,5 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import { HeadingArticle } from '../heading-article';
+import { LinkCallToAction } from '../link-call-to-action';
 import type { Article } from './model';
 
 interface ArticleCardProps {
@@ -27,6 +28,19 @@ export const ArticleCard = component$((props: ArticleCardProps) => {
             <p class='whitespace-pre-line px-10 text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 lg:px-0'>
               {props.article.text}
             </p>
+
+            {props.article.callToAction && (
+              <div class='px-10 pt-2 lg:px-0'>
+                <LinkCallToAction
+                  href={props.article.callToAction.href}
+                  aria-label={props.article.callToAction.ariaLabel}
+                  title={props.article.callToAction.title}
+                  target={props.article.callToAction.target}
+                >
+                  {props.article.callToAction.text}
+                </LinkCallToAction>
+              </div>
+            )}
           </div>
 
           <div class='hidden w-full lg:block'>
@@ -68,6 +82,19 @@ export const ArticleCard = component$((props: ArticleCardProps) => {
             <p class='whitespace-pre-line px-10 text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 lg:px-0'>
               {props.article.text}
             </p>
+
+            {props.article.callToAction && (
+              <div class='px-10 pt-2 lg:px-0'>
+                <LinkCallToAction
+                  href={props.article.callToAction.href}
+                  aria-label={props.article.callToAction.ariaLabel}
+                  title={props.article.callToAction.title}
+                  target={props.article.callToAction.target}
+                >
+                  {props.article.callToAction.text}
+                </LinkCallToAction>
+              </div>
+            )}
           </div>
         </div>
       )}
