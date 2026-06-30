@@ -70,28 +70,61 @@ export const MenuPopoverLink = component$<MenuPopoverLinkProps>(
     useStyles$(styles);
 
     const isOpenedSig = useSignal(false);
+    const panelId = `nav-menu-popover-${index}-panel`;
+    const triggerTextClass = isOpenedSig.value
+      ? 'text-primary'
+      : 'text-white hover:text-primary';
+
     return (
       <Popover.Root
         id={`nav-menu-popover-${index}`}
         bind:anchor={menuAnchorRef}
         gutter={12}
       >
-        <Popover.Trigger
-          popovertarget={`nav-menu-popover-${index}`}
-          class={`flex items-center font-semibold ${
-            isOpenedSig.value ? 'text-primary' : 'text-white hover:text-primary'
-          }`}
-        >
-          {item.text}
-          <span class='pl-2'>
-            <ShevronIcon
-              class={`ease font-bold transition-transform duration-500 ${
-                isOpenedSig.value ? 'rotate-180 transform text-primary' : ''
-              }
-              `}
-            />
-          </span>
-        </Popover.Trigger>
+        {item.path ? (
+          <div class={`flex items-center font-semibold ${triggerTextClass}`}>
+            <a
+              href={item.path}
+              onPointerOver$={() => {
+                document.getElementById(panelId)?.showPopover();
+              }}
+              onFocus$={() => {
+                document.getElementById(panelId)?.showPopover();
+              }}
+            >
+              {item.text}
+            </a>
+            <Popover.Trigger
+              type='button'
+              popovertarget={`nav-menu-popover-${index}`}
+              aria-label={`${item.text} Untermenü anzeigen`}
+              class='pl-2'
+            >
+              <ShevronIcon
+                class={`ease font-bold transition-transform duration-500 ${
+                  isOpenedSig.value ? 'rotate-180 transform text-primary' : ''
+                }
+                `}
+              />
+            </Popover.Trigger>
+          </div>
+        ) : (
+          <Popover.Trigger
+            type='button'
+            popovertarget={`nav-menu-popover-${index}`}
+            class={`flex items-center font-semibold ${triggerTextClass}`}
+          >
+            {item.text}
+            <span class='pl-2'>
+              <ShevronIcon
+                class={`ease font-bold transition-transform duration-500 ${
+                  isOpenedSig.value ? 'rotate-180 transform text-primary' : ''
+                }
+                `}
+              />
+            </span>
+          </Popover.Trigger>
+        )}
 
         <Popover.Panel
           onToggle$={event => {
