@@ -8,12 +8,14 @@ export interface ArticleSectionProps {
 
 export const ArticleSection = component$((props: ArticleSectionProps) => {
   return (
-    <div class='container mx-auto flex w-full flex-col gap-y-10 lg:gap-y-20'>
+    <div class='container mx-auto flex w-full flex-col'>
       {props.articles.map((article, key) => (
-        <>
-          <ArticleCard article={article} key={key} />
-          <hr class='mt-10 lg:mt-20' />
-        </>
+        <div key={key}>
+          <ArticleCard article={article} />
+          {key < props.articles.length - 1 && (
+            <hr class='my-10 lg:my-20' />
+          )}
+        </div>
       ))}
     </div>
   );
