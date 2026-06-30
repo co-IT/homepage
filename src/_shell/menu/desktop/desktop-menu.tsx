@@ -1,11 +1,4 @@
-/* eslint-disable qwik/valid-lexical-scope */
-import {
-  component$,
-  useSignal,
-  useStyles$,
-  type Signal
-} from '@builder.io/qwik';
-import { Popover } from '@qwik-ui/headless';
+import { $, component$, useSignal, useStyles$ } from '@builder.io/qwik';
 import type { MenuConfig, MenuEntryItem } from '../types';
 import { CategoryItem } from './category-item';
 import { NavMenuAd } from './nav-menu-ad';
@@ -15,143 +8,118 @@ import styles from './desktop-menu.css?inline';
 
 type DesktopMenuProps = {
   config: MenuConfig;
-  menuAnchorRef: Signal<HTMLElement | undefined>;
 };
 
-export const DesktopMenu = component$(
-  ({ config, menuAnchorRef }: DesktopMenuProps) => {
-    return (
-      <>
-        <div class='flex'>
-          <ul class='flex gap-12'>
-            {config.items.map((item, index) => {
+export const DesktopMenu = component$(({ config }: DesktopMenuProps) => {
+  useStyles$(styles);
+
+  return (
+    <>
+      <div class='flex'>
+        <ul class='flex gap-12'>
+          {config.items.map(item => {
+            return (
+              <li
+                key={item.text}
+                class='flex items-center font-semibold text-white'
+              >
+                {item.items && <MenuPopoverLink item={item} />}
+                {!item.items && (
+                  <a
+                    href={item.path}
+                    class={
+                      item.isCta
+                        ? 'border-2 border-primary px-6 py-2 text-sm text-primary hover:bg-primary hover:text-secondary-950'
+                        : 'hover:text-primary'
+                    }
+                  >
+                    {item.text}
+                  </a>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </>
+  );
+});
+
+export type MenuPopoverLinkProps = {
+  item: MenuEntryItem;
+};
+
+export const MenuPopoverLink = component$<MenuPopoverLinkProps>(({ item }) => {
+  const isOpenSig = useSignal(false);
+  const closeTimeoutSig = useSignal<number>();
+
+  const openMenu$ = $(() => {
+    window.clearTimeout(closeTimeoutSig.value);
+    isOpenSig.value = true;
+  });
+
+  const scheduleCloseMenu$ = $(() => {
+    window.clearTimeout(closeTimeoutSig.value);
+    closeTimeoutSig.value = window.setTimeout(() => {
+      isOpenSig.value = false;
+    }, 100);
+  });
+
+  return (
+    <div
+      class='desktop-menu-item'
+      onPointerEnter$={openMenu$}
+      onPointerLeave$={scheduleCloseMenu$}
+      onFocus$={openMenu$}
+      onBlur$={scheduleCloseMenu$}
+    >
+      <div
+        class={`flex items-center font-semibold ${
+          isOpenSig.value ? 'text-primary' : 'text-white hover:text-primary'
+        }`}
+      >
+        {item.path ? (
+          <a href={item.path}>{item.text}</a>
+        ) : (
+          <span>{item.text}</span>
+        )}
+        <span class='pl-2'>
+          <ShevronIcon
+            class={`ease font-bold transition-transform duration-300 ${
+              isOpenSig.value ? 'rotate-180 transform text-primary' : ''
+            }`}
+          />
+        </span>
+      </div>
+
+      <div
+        class={`desktop-menu-panel w-full transition-opacity duration-150 ${
+          isOpenSig.value
+            ? 'pointer-events-auto visible opacity-100'
+            : 'pointer-events-none invisible opacity-0'
+        }`}
+        onPointerEnter$={openMenu$}
+        onPointerLeave$={scheduleCloseMenu$}
+      >
+        <div class='grid grid-cols-[minmax(0,1fr)_auto] bg-white shadow-xl'>
+          <ul class='min-w-0 p-10'>
+            {item.items!.map(item => {
               return (
-                <li
-                  key={item.text}
-                  class='flex items-center font-semibold text-white'
-                >
-                  {item.items && (
-                    <MenuPopoverLink
-                      index={index}
-                      item={item}
-                      menuAnchorRef={menuAnchorRef}
-                    />
-                  )}
-                  {!item.items && (
-                    <a
-                      href={item.path}
-                      class={
-                        item.isCta
-                          ? 'border-2 border-primary px-6 py-2 text-sm text-primary hover:bg-primary hover:text-secondary-950'
-                          : 'hover:text-primary'
-                      }
-                    >
+                <li key={item.text}>
+                  {item.isCategory && <CategoryItem category={item} />}
+                  {!item.isCategory && (
+                    <>
+                      {item.icon ? <span>{item.icon}</span> : null}
                       {item.text}
-                    </a>
+                    </>
                   )}
                 </li>
               );
             })}
           </ul>
+          {item.ad && <NavMenuAd ad={item.ad} />}
         </div>
-      </>
-    );
-  }
-);
-
-export type MenuPopoverLinkProps = {
-  item: MenuEntryItem;
-  index: number;
-  menuAnchorRef: Signal<HTMLElement | undefined>;
-};
-
-export const MenuPopoverLink = component$<MenuPopoverLinkProps>(
-  ({ index, item, menuAnchorRef }) => {
-    useStyles$(styles);
-
-    const isOpenedSig = useSignal(false);
-    const panelId = `nav-menu-popover-${index}-panel`;
-    const triggerTextClass = isOpenedSig.value
-      ? 'text-primary'
-      : 'text-white hover:text-primary';
-
-    return (
-      <Popover.Root
-        id={`nav-menu-popover-${index}`}
-        bind:anchor={menuAnchorRef}
-        gutter={12}
-      >
-        {item.path ? (
-          <div class={`flex items-center font-semibold ${triggerTextClass}`}>
-            <a
-              href={item.path}
-              onPointerOver$={() => {
-                document.getElementById(panelId)?.showPopover();
-              }}
-              onFocus$={() => {
-                document.getElementById(panelId)?.showPopover();
-              }}
-            >
-              {item.text}
-            </a>
-            <Popover.Trigger
-              type='button'
-              popovertarget={`nav-menu-popover-${index}`}
-              aria-label={`${item.text} Untermenü anzeigen`}
-              class='pl-2'
-            >
-              <ShevronIcon
-                class={`ease font-bold transition-transform duration-500 ${
-                  isOpenedSig.value ? 'rotate-180 transform text-primary' : ''
-                }
-                `}
-              />
-            </Popover.Trigger>
-          </div>
-        ) : (
-          <Popover.Trigger
-            type='button'
-            popovertarget={`nav-menu-popover-${index}`}
-            class={`flex items-center font-semibold ${triggerTextClass}`}
-          >
-            {item.text}
-            <span class='pl-2'>
-              <ShevronIcon
-                class={`ease font-bold transition-transform duration-500 ${
-                  isOpenedSig.value ? 'rotate-180 transform text-primary' : ''
-                }
-                `}
-              />
-            </span>
-          </Popover.Trigger>
-        )}
-
-        <Popover.Panel
-          onToggle$={event => {
-            isOpenedSig.value = event.newState === 'open';
-          }}
-          class='listbox desktop-menu-opacity-transition container w-full'
-        >
-          <div class='flex justify-between'>
-            <ul class='flex basis-10/12 gap-10 p-10'>
-              {item.items!.map(item => {
-                return (
-                  <li key={item.text}>
-                    {item.isCategory && <CategoryItem category={item} />}
-                    {!item.isCategory && (
-                      <>
-                        {item.icon ? <span>{item.icon}</span> : null}
-                        {item.text}
-                      </>
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
-            {item.ad && <NavMenuAd ad={item.ad} />}
-          </div>
-        </Popover.Panel>
-      </Popover.Root>
-    );
-  }
-);
+      </div>
+    </div>
+  );
+});

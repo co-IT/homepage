@@ -6,7 +6,6 @@ import { menuConfig } from '../menu/menu.config';
 import { MobileMenu } from '../menu/mobile';
 
 export const TopBar = component$(() => {
-  const ref = useSignal<HTMLElement>();
   const changeBgSig = useSignal(false);
 
   return (
@@ -20,12 +19,12 @@ export const TopBar = component$(() => {
           changeBgSig.value ? 'bg-secondary-950' : ''
         ]}
       >
-        <section ref={ref} class='container mx-auto flex justify-center'>
+        <section class='container mx-auto flex justify-center'>
           <div class='mr-auto'>
             <Logo />
           </div>
           <div class='hidden md:block'>
-            <DesktopMenu config={menuConfig} menuAnchorRef={ref} />
+            <DesktopMenu config={menuConfig} />
           </div>
           <div class='md:hidden'>
             <MobileMenu config={menuConfig} />

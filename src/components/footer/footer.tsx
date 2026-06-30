@@ -1,34 +1,35 @@
 import { component$ } from '@builder.io/qwik';
 import { Link, useDocumentHead } from '@builder.io/qwik-city';
 import { Popover } from '@qwik-ui/headless';
+import { menuConfig } from '~/_shell/menu/menu.config';
+import type { MenuItem } from '~/_shell/menu/types';
 import { GithubIcon, MapIcon, YoutubeIcon } from '../icons';
 import { Logo } from '../logo/logo';
 
+const getFirstNestedPath = (items?: MenuItem[]): string | undefined => {
+  for (const item of items ?? []) {
+    if (item.path) {
+      return item.path;
+    }
+
+    const nestedPath = getFirstNestedPath(item.items);
+    if (nestedPath) {
+      return nestedPath;
+    }
+  }
+
+  return undefined;
+};
+
+const footerLinks = menuConfig.items
+  .map(item => ({
+    text: item.text,
+    path: item.path ?? getFirstNestedPath(item.items)
+  }))
+  .filter((link): link is { text: string; path: string } => Boolean(link.path));
+
 export const Footer = component$(() => {
   const documentHead = useDocumentHead();
-
-  const links = [
-    {
-      textFirstLine: 'Lösungen',
-      textSecondLine: 'Alles aus einer Hand',
-      path: '/solutions'
-    },
-    {
-      textFirstLine: 'Qualität',
-      textSecondLine: 'Auf den Punkt abgestimmt',
-      path: '/quality'
-    },
-    {
-      textFirstLine: 'Karriere',
-      textSecondLine: 'Geprägt durch Menschen',
-      path: '/career'
-    },
-    {
-      textFirstLine: 'Über uns',
-      textSecondLine: 'Motiviert von Werten',
-      path: '/about'
-    }
-  ];
 
   return (
     <footer>
@@ -38,11 +39,16 @@ export const Footer = component$(() => {
             <Logo />
           </div>
 
-          {links.map((link, key) => (
-            <Link href={link.path} class='mb-5 w-full text-center lg:mb-0 lg:w-1/12' key={key}>
+          {footerLinks.map(link => (
+            <Link
+              href={link.path}
+              class='mb-5 w-full text-center lg:mb-0 lg:w-1/12'
+              key={link.path}
+            >
               <div class='flex flex-col gap-y-2'>
-                <div class='text-base font-bold leading-7 text-white'>{link.textFirstLine}</div>
-                <div class='text-sm font-semibold leading-6 text-white'>{link.textSecondLine}</div>
+                <div class='text-base font-bold leading-7 text-white'>
+                  {link.text}
+                </div>
               </div>
             </Link>
           ))}
@@ -55,12 +61,19 @@ export const Footer = component$(() => {
               },
               key: number
             ) => (
-              <Popover.Root key={key} class='mb-5 w-full text-center font-bold leading-7 text-white lg:mb-0 lg:w-2/12'>
+              <Popover.Root
+                key={key}
+                class='mb-5 w-full text-center font-bold leading-7 text-white lg:mb-0 lg:w-2/12'
+              >
                 <Popover.Panel>
                   <ul class='list-item w-60 list-inside space-y-2 rounded-md bg-gray-800 p-4 text-white shadow-md'>
                     {attribution.images.map((image, key) => (
                       <li key={key}>
-                        <a href={image.href} class='font-normal hover:underline' target='_blank'>
+                        <a
+                          href={image.href}
+                          class='font-normal hover:underline'
+                          target='_blank'
+                        >
                           {image.title}
                         </a>
                       </li>
@@ -77,11 +90,17 @@ export const Footer = component$(() => {
 
         <div class='right-14 top-40 flex flex-col justify-end gap-y-6 px-16 lg:absolute lg:flex-row lg:gap-x-5 lg:px-0'>
           <div class='flex flex-col gap-y-7 bg-white px-10 py-9 shadow-lg'>
-            <div class='text-lg font-bold leading-5 text-secondary-900'>co-IT.eu GmbH</div>
+            <div class='text-lg font-bold leading-5 text-secondary-900'>
+              co-IT.eu GmbH
+            </div>
 
             <div class='flex flex-col gap-y-1'>
-              <div class='text-lg font-normal leading-5 text-secondary-900'>Eisenbahnstr.15</div>
-              <div class='text-lg font-normal leading-5 text-secondary-900'>77855 Achern</div>
+              <div class='text-lg font-normal leading-5 text-secondary-900'>
+                Eisenbahnstr.15
+              </div>
+              <div class='text-lg font-normal leading-5 text-secondary-900'>
+                77855 Achern
+              </div>
             </div>
 
             <div class='flex flex-row gap-x-2 rounded bg-secondary-900 px-4 py-2 text-lg font-semibold leading-5 text-white'>
@@ -93,7 +112,9 @@ export const Footer = component$(() => {
           </div>
 
           <div class='flex flex-col gap-y-7 bg-white px-10 py-9 shadow-lg'>
-            <div class='text-lg font-bold leading-5 text-secondary-900'>Weitere co-IT Kanäle</div>
+            <div class='text-lg font-bold leading-5 text-secondary-900'>
+              Weitere co-IT Kanäle
+            </div>
 
             <div class='flex flex-row gap-x-7'>
               <a href='http://e.co-it.eu/youtube' target='_blank'>

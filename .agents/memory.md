@@ -11,3 +11,5 @@ Persistente, belastbare Erkenntnisse fuer AI-Coding in diesem Repository.
 - Fuer effiziente Kommunikation mit dem Agenten soll der lokale Skill `$caveman` genutzt werden, besonders bei laengeren Coding-Sessions und Status-Updates.
 - Branding-Farben und Design-Tokens sollen aus `tailwind.config.js` referenziert werden, statt sie in Agent-Dokumentation zu duplizieren.
 - `.agents/scratchpad.md` ist laufender Arbeitskontext und soll per `.gitignore` lokal bleiben.
+- 2026-06-30: Verteiler-/Detailseiten mit Artikellisten sollen eine generische `ArticlePage` und ein generisches `PageContent` nutzen; Header-Subheading und Background-Image gehoeren in das Content-Objekt.
+- 2026-06-30: Page-Content fuer Detailseiten soll lokal im jeweiligen Routenordner liegen; gemeinsame Helfer bleiben pro Hauptbereich in einer kleinen `shared.ts`.

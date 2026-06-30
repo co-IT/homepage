@@ -29,7 +29,7 @@ export const menuConfig: MenuConfig = {
       },
       items: [
         {
-          text: 'Leistungsbereiche',
+          text: 'Leistungen',
           isCategory: true,
 
           items: [

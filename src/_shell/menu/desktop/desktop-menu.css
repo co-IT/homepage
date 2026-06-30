@@ -1,18 +1,9 @@
-.desktop-menu-opacity-transition {
-  transition:
-    opacity 0.5s,
-    display 0.5s,
-    overlay 0.5s;
-
-  transition-behavior: allow-discrete;
-
-  opacity: 0;
-}
-
-.popover-showing {
-  opacity: 1;
-}
-
-.popover-closing {
-  opacity: 0;
+.desktop-menu-panel {
+  position: fixed;
+  top: 3.25rem;
+  left: 50%;
+  z-index: 40;
+  width: min(100%, 1280px);
+  padding-top: 1.5rem;
+  transform: translateX(-50%);
 }
