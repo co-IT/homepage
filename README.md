@@ -21,3 +21,7 @@
 ```bash
 pnpm build.server
 ```
+
+## Skills
+
+Skills are installed using [skills.sh](https://www.skills.sh/)
