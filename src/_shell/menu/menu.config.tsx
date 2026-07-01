@@ -1,12 +1,27 @@
 /* eslint-disable qwik/jsx-img */
-import { AnalysisIcon } from '../top-bar/icons/analysis-icon';
-import { ContractIcon } from '../top-bar/icons/contract-icon';
-import { FaqIcon } from '../top-bar/icons/faq-icon';
-import { LeadershipIcon } from '../top-bar/icons/leadership-icon';
-import { PeopleIcon } from '../top-bar/icons/people-icon';
-import { ServiceIcon } from '../top-bar/icons/service-icon';
-import { TargetIcon } from '../top-bar/icons/target-icon';
-import { ToolsIcon } from '../top-bar/icons/tools-icon';
+import { AiStrategyIcon } from '../top-bar/icons/ai-strategy-icon';
+import { AwarenessPortalIcon } from '../top-bar/icons/awareness-portal-icon';
+import { CompanyIcon } from '../top-bar/icons/company-icon';
+import { CyberSecurityIcon } from '../top-bar/icons/cyber-security-icon';
+import { EnergyIndustryIcon } from '../top-bar/icons/energy-industry-icon';
+import { HandcraftIndustryIcon } from '../top-bar/icons/handcraft-industry-icon';
+import { HealthcareIndustryIcon } from '../top-bar/icons/healthcare-industry-icon';
+import { InsuranceIndustryIcon } from '../top-bar/icons/insurance-industry-icon';
+import { ManagedServicesIcon } from '../top-bar/icons/managed-services-icon';
+import { ManufacturingIndustryIcon } from '../top-bar/icons/manufacturing-industry-icon';
+import { MicrosoftCloudIcon } from '../top-bar/icons/microsoft-cloud-icon';
+import { OnSiteServiceIcon } from '../top-bar/icons/on-site-service-icon';
+import { PasswordManagerIcon } from '../top-bar/icons/password-manager-icon';
+import { PhishingSimulationIcon } from '../top-bar/icons/phishing-simulation-icon';
+import { PublicSectorIcon } from '../top-bar/icons/public-sector-icon';
+import { RegionIcon } from '../top-bar/icons/region-icon';
+import { SecurityCheckIcon } from '../top-bar/icons/security-check-icon';
+import { ServiceIndustryIcon } from '../top-bar/icons/service-industry-icon';
+import { SoftwareDevelopmentIcon } from '../top-bar/icons/software-development-icon';
+import { TechnologyPartnerIcon } from '../top-bar/icons/technology-partner-icon';
+import { WebsiteBuilderIcon } from '../top-bar/icons/website-builder-icon';
+import { WholesaleIndustryIcon } from '../top-bar/icons/wholesale-industry-icon';
+import { WorkingMethodIcon } from '../top-bar/icons/working-method-icon';
 import type { MenuConfig } from './types';
 
 export const menuConfig: MenuConfig = {
@@ -39,37 +54,37 @@ export const menuConfig: MenuConfig = {
               text: 'IT-Service Ortenaukreis',
               description: 'Schnell, persönlich, vor Ort',
               path: '/leistungen/it-service-ortenaukreis',
-              icon: <ToolsIcon />
+              icon: <OnSiteServiceIcon />
             },
             {
               text: 'Managed Services',
               description: 'IT-Betrieb planbarer machen',
               path: '/leistungen/managed-services',
-              icon: <ServiceIcon />
+              icon: <ManagedServicesIcon />
             },
             {
               text: 'Microsoft 365 & Azure',
               description: 'Migration, Betrieb und Sicherheit',
               path: '/leistungen/microsoft-365-azure',
-              icon: <ContractIcon />
+              icon: <MicrosoftCloudIcon />
             },
             {
               text: 'Cyber-Sicherheit',
               description: 'E-Mail, Awareness und Systeme',
               path: '/leistungen/cyber-sicherheit',
-              icon: <TargetIcon />
+              icon: <CyberSecurityIcon />
             },
             {
               text: 'Web- & Softwareentwicklung',
               description: 'Anwendungen und Schnittstellen',
               path: '/leistungen/web-softwareentwicklung',
-              icon: <AnalysisIcon />
+              icon: <SoftwareDevelopmentIcon />
             },
             {
               text: 'Digital- & KI-Strategie',
               description: 'Roadmaps für sinnvolle Umsetzung',
               path: '/leistungen/digital-ki-strategie',
-              icon: <LeadershipIcon />
+              icon: <AiStrategyIcon />
             }
           ]
         }
@@ -103,31 +118,31 @@ export const menuConfig: MenuConfig = {
               text: 'Cyber-Awareness-Portal',
               description: 'Trainings, Nachweise und Simulationen',
               path: '/produkte-loesungen/cyber-awareness-portal',
-              icon: <TargetIcon />
+              icon: <AwarenessPortalIcon />
             },
             {
               text: 'Phishing-Simulationen',
               description: 'Risiken im Alltag sichtbar machen',
               path: '/produkte-loesungen/phishing-simulationen',
-              icon: <FaqIcon />
+              icon: <PhishingSimulationIcon />
             },
             {
               text: 'Passwort-Manager für Unternehmen',
               description: 'Zugänge kontrolliert verwalten',
               path: '/produkte-loesungen/passwort-manager-unternehmen',
-              icon: <ContractIcon />
+              icon: <PasswordManagerIcon />
             },
             {
               text: 'Sicherheitschecks',
               description: 'E-Mail, DNS und Webseite prüfen',
               path: '/produkte-loesungen/sicherheitschecks',
-              icon: <AnalysisIcon />
+              icon: <SecurityCheckIcon />
             },
             {
               text: 'Webseiten-Builder mit KI',
               description: 'Struktur und Inhalte schneller klären',
               path: '/produkte-loesungen/webseiten-builder-ki',
-              icon: <ToolsIcon />
+              icon: <WebsiteBuilderIcon />
             }
           ]
         }
@@ -161,49 +176,49 @@ export const menuConfig: MenuConfig = {
               text: 'Versicherungen',
               description: 'Vertrauen digital absichern',
               path: '/branchen/versicherungen',
-              icon: <ContractIcon />
+              icon: <InsuranceIndustryIcon />
             },
             {
               text: 'Energiesektor',
               description: 'Stabile IT für kritische Prozesse',
               path: '/branchen/energiesektor',
-              icon: <TargetIcon />
+              icon: <EnergyIndustryIcon />
             },
             {
               text: 'Gesundheitswesen',
               description: 'Sensible Daten verlässlich schützen',
               path: '/branchen/gesundheitswesen',
-              icon: <PeopleIcon />
+              icon: <HealthcareIndustryIcon />
             },
             {
               text: 'Großhandel',
               description: 'Schnittstellen und Abläufe beschleunigen',
               path: '/branchen/grosshandel',
-              icon: <AnalysisIcon />
+              icon: <WholesaleIndustryIcon />
             },
             {
               text: 'Lohnfertiger',
               description: 'Produktionsnahe Prozesse modernisieren',
               path: '/branchen/lohnfertiger',
-              icon: <ToolsIcon />
+              icon: <ManufacturingIndustryIcon />
             },
             {
               text: 'Handwerk',
               description: 'IT, die im Alltag funktioniert',
               path: '/branchen/handwerk',
-              icon: <ServiceIcon />
+              icon: <HandcraftIndustryIcon />
             },
             {
               text: 'Dienstleister',
               description: 'Cloud, Kommunikation und Software',
               path: '/branchen/dienstleister',
-              icon: <LeadershipIcon />
+              icon: <ServiceIndustryIcon />
             },
             {
               text: 'Behörden',
               description: 'Nachvollziehbare sichere Lösungen',
               path: '/branchen/behoerden',
-              icon: <FaqIcon />
+              icon: <PublicSectorIcon />
             }
           ]
         }
@@ -237,25 +252,25 @@ export const menuConfig: MenuConfig = {
               text: 'Unternehmen',
               description: 'IT, Software und Beratung aus einer Hand',
               path: '/ueber-uns/unternehmen',
-              icon: <PeopleIcon />
+              icon: <CompanyIcon />
             },
             {
               text: 'Region & Einsatzgebiet',
               description: 'Lokal vor Ort, digital deutschlandweit',
               path: '/ueber-uns/region-einsatzgebiet',
-              icon: <TargetIcon />
+              icon: <RegionIcon />
             },
             {
               text: 'Arbeitsweise',
               description: 'Analysieren, umsetzen, betreuen',
               path: '/ueber-uns/arbeitsweise',
-              icon: <AnalysisIcon />
+              icon: <WorkingMethodIcon />
             },
             {
               text: 'Technologien & Partner',
               description: 'Tragfähige Technologien sinnvoll einsetzen',
               path: '/ueber-uns/technologien-partner',
-              icon: <ToolsIcon />
+              icon: <TechnologyPartnerIcon />
             }
           ]
         }
