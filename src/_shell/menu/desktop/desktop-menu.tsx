@@ -101,7 +101,7 @@ export const MenuPopoverLink = component$<MenuPopoverLinkProps>(({ item }) => {
         onPointerEnter$={openMenu$}
         onPointerLeave$={scheduleCloseMenu$}
       >
-        <div class='grid grid-cols-[minmax(0,1fr)_auto] bg-white shadow-xl'>
+        <div class='desktop-menu-content bg-white shadow-xl'>
           <ul class='min-w-0 p-10'>
             {item.items!.map(item => {
               return (

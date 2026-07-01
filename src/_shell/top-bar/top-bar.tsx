@@ -23,10 +23,10 @@ export const TopBar = component$(() => {
           <div class='mr-auto'>
             <Logo />
           </div>
-          <div class='hidden md:block'>
+          <div class='hidden lg:block'>
             <DesktopMenu config={menuConfig} />
           </div>
-          <div class='md:hidden'>
+          <div class='lg:hidden'>
             <MobileMenu config={menuConfig} />
           </div>
         </section>

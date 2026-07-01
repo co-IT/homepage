@@ -31,14 +31,11 @@ export const CollapsibleAccordionItem = component$(
                 class='font-semibold text-secondary-900'
                 onClick$={() => onItemClick$?.()}
               >
-                Übersicht {item.text}
+                Übersicht
               </Link>
             )}
             {item.items?.map((category, index) => (
               <div key={`categoryItem-${index}`}>
-                <h4 class='mb-4 mt-2 font-semibold uppercase text-gray-800'>
-                  {category.text}
-                </h4>
                 <ul class='grid gap-2'>
                   {category.items?.map((subItem, index) => (
                     <li key={`subItem-${index}`}>
