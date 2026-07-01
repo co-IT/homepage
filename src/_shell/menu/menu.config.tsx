@@ -9,8 +9,6 @@ import { TargetIcon } from '../top-bar/icons/target-icon';
 import { ToolsIcon } from '../top-bar/icons/tools-icon';
 import type { MenuConfig } from './types';
 
-const navAdImageClass = 'h-[14.5rem] w-48 object-cover';
-
 export const menuConfig: MenuConfig = {
   items: [
     {
@@ -26,7 +24,7 @@ export const menuConfig: MenuConfig = {
             alt='Team bespricht IT-Leistungen an einem Tablet'
             width='193'
             height='233'
-            class={navAdImageClass}
+            class='h-[14.5rem] w-48 object-cover'
           />
         ),
         link: '/contact',
@@ -90,7 +88,7 @@ export const menuConfig: MenuConfig = {
             alt='Cyber-Awareness-Portal auf einem Bildschirm'
             width='193'
             height='233'
-            class={navAdImageClass}
+            class='h-[14.5rem] w-48 object-cover'
           />
         ),
         link: '/contact',
@@ -148,7 +146,7 @@ export const menuConfig: MenuConfig = {
             alt='Team prüft eine Lösung gemeinsam am Arbeitsplatz'
             width='193'
             height='233'
-            class={navAdImageClass}
+            class='h-[14.5rem] w-48 object-cover'
           />
         ),
         link: '/contact',
@@ -224,7 +222,7 @@ export const menuConfig: MenuConfig = {
             alt='co-IT Team'
             width='193'
             height='233'
-            class={navAdImageClass}
+            class='h-[14.5rem] w-48 object-cover'
           />
         ),
         link: '/contact',

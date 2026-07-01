@@ -1,5 +1,5 @@
 import type { Article } from '~/components/article-section/model';
-import type { PageContent } from '~/components/article-page';
+import type { PageContent } from './model';
 
 const placeholderImage = '/img/common/placeholder.svg';
 
