@@ -1,5 +1,5 @@
 import type { PageContent } from '~/components/article-page';
-import { createBackgroundImage, createImage } from '../shared';
+import { createBackgroundImage, createImage } from '~/components/article-page';
 
 const workshopImage = '/img/about/flip-chart-session.webp';
 

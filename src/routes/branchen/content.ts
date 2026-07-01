@@ -1,8 +1,5 @@
 import type { PageContent } from '~/components/article-page';
-import { createBackgroundImage, createImage } from './shared';
-
-const healthcareImage = '/img/cyber/cyber-portal/gesundheitswesen/header.webp';
-const servicesImage = '/img/solutions/header.webp';
+import { createBackgroundImage, createImage } from '~/components/article-page';
 
 export const branchenOverview: PageContent = {
   title: 'co-IT - Branchen',
@@ -42,7 +39,10 @@ export const branchenOverview: PageContent = {
       direction: 'right',
       heading: 'Sensible Daten brauchen verlässliche IT.',
       text: 'Arztpraxen, Apotheken und Gesundheitsbetriebe brauchen IT, die schützt, entlastet und den Betrieb nicht komplizierter macht. Wichtige Themen sind Datenschutz, sichere Kommunikation, Backups, Passwort-Management und pragmatischer IT-Service.',
-      image: createImage('Gesundheitswesen', healthcareImage),
+      image: createImage(
+        'Gesundheitswesen',
+        '/img/cyber/cyber-portal/gesundheitswesen/header.webp'
+      ),
       callToAction: {
         text: 'Mehr erfahren',
         href: '/branchen/gesundheitswesen/',
@@ -86,7 +86,7 @@ export const branchenOverview: PageContent = {
       direction: 'right',
       heading: 'Dienstleistung ist Kommunikation.',
       text: 'Dienstleistungsunternehmen leben von Kommunikation, Zusammenarbeit und zuverlässigen digitalen Prozessen. Cloud, Teams, SharePoint, sichere E-Mail, Projektstrukturen, Softwarelösungen und Managed Services schaffen dafür ein tragfähiges Fundament.',
-      image: createImage('Dienstleister', servicesImage),
+      image: createImage('Dienstleister', '/img/solutions/header.webp'),
       callToAction: {
         text: 'Mehr erfahren',
         href: '/branchen/dienstleister/',

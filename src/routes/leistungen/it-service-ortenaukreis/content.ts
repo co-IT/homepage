@@ -1,5 +1,5 @@
 import type { PageContent } from '~/components/article-page';
-import { createBackgroundImage, createImage } from '../shared';
+import { createBackgroundImage, createImage } from '~/components/article-page';
 
 export const itServiceOrtenaukreis: PageContent = {
   title: 'co-IT - IT-Service Ortenaukreis',
