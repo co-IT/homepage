@@ -15,3 +15,4 @@ Persistente, belastbare Erkenntnisse fuer AI-Coding in diesem Repository.
 - 2026-07-01: Page-Content fuer Detailseiten soll lokal im jeweiligen Routenordner liegen; gemeinsame ArticlePage-Bildhelfer gehoeren zur `src/components/article-page`-Komponente, nicht in Routen- oder Bereichs-`shared.ts` Dateien.
 - 2026-07-01: Bildpfad-Konstanten in `content.ts` nur verwenden, wenn derselbe Pfad in der jeweiligen Datei mehrfach genutzt wird; Einmalnutzungen inline setzen.
 - 2026-07-01: Topbar-/Navigationsicons sollen dem bestehenden Muster folgen: ein Icon pro `*.tsx` Datei unter `src/_shell/top-bar/icons`, keine Sammeldatei mit vielen Icon-Exports.
+- 2026-07-01: Der lokale Skill `$co-it-site-content-import` dokumentiert den Workflow, um Markdown-Navigations-/Content-Dateien in Routen, `ArticlePage`-Content, Top-Navigation, Footer/Content-Switch und passende Icons/Bilder zu ueberfuehren.

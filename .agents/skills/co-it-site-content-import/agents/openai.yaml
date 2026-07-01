@@ -1,0 +1,4 @@
+interface:
+  display_name: "co-IT Site Content Import"
+  short_description: "Markdown-Navigation in co-IT-Seiten umbauen"
+  default_prompt: "Use $co-it-site-content-import to import a website content markdown file into the co-IT homepage navigation and ArticlePage routes."
