@@ -5,28 +5,32 @@ import { YellowRightArrowIcon } from '../icons';
 export const ContentSwitch = component$(() => {
   const links = [
     {
-      textFirstLine: 'Lösungen',
-      textSecondLine: 'Alles aus einer Hand',
-      path: '/solutions',
-      image: '/img/content-switch/solutions.webp'
+      textFirstLine: 'Leistungen',
+      textSecondLine: 'IT, Sicherheit und Software',
+      path: '/leistungen',
+      image: '/img/landing-page/developers-reviewing-an-app-on-the-tablet.webp',
+      alt: 'Team bespricht IT-Leistungen an einem Tablet'
     },
     {
-      textFirstLine: 'Qualität',
-      textSecondLine: 'Auf den Punkt abgestimmt',
-      path: '/quality',
-      image: '/img/content-switch/quality.webp'
+      textFirstLine: 'Produkte & Lösungen',
+      textSecondLine: 'Digitale Lösungen für den Mittelstand',
+      path: '/produkte-loesungen',
+      image: '/img/cyber/cyber-portal/header.webp',
+      alt: 'Cyber-Awareness-Portal auf einem Bildschirm'
     },
     {
-      textFirstLine: 'Karriere',
-      textSecondLine: 'Geprägt durch Menschen',
-      path: '/career',
-      image: '/img/content-switch/career.webp'
+      textFirstLine: 'Branchen',
+      textSecondLine: 'IT im richtigen Kontext',
+      path: '/branchen',
+      image: '/img/about/team-reviewing-a-solution.webp',
+      alt: 'Team prüft eine Lösung gemeinsam am Arbeitsplatz'
     },
     {
       textFirstLine: 'Über uns',
-      textSecondLine: 'Motiviert von Werten',
-      path: '/about',
-      image: '/img/content-switch/about.webp'
+      textSecondLine: 'Pragmatischer Technologiepartner',
+      path: '/ueber-uns',
+      image: '/img/content-switch/about.webp',
+      alt: 'co-IT Team'
     }
   ];
 
@@ -49,7 +53,7 @@ export const ContentSwitch = component$(() => {
                   width='608'
                   height='300'
                   loading='lazy'
-                  alt='content'
+                  alt={link.alt}
                   class='hidden h-72 w-full object-cover opacity-50 md:block'
                 />
               </div>

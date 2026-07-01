@@ -7,3 +7,14 @@
   padding-top: 1.5rem;
   transform: translateX(-50%);
 }
+
+.desktop-menu-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(30rem, 34rem);
+}
+
+@media (max-width: 1240px) {
+  .desktop-menu-content {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

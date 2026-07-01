@@ -6,7 +6,7 @@ export const CategoryItem = component$(
     return (
       <>
         <h3 class='text-xl font-semibold text-gray-500'>{category.text}</h3>
-        <ul class='mt-8 grid grid-cols-2 gap-x-8 gap-y-2'>
+        <ul class='mt-8 grid grid-cols-[repeat(auto-fit,minmax(min(18rem,100%),1fr))] gap-x-8 gap-y-2'>
           {category.items?.map(item => {
             return (
               <li key={item.text}>
@@ -16,10 +16,10 @@ export const CategoryItem = component$(
                 >
                   {item.icon ? <span class='shrink-0'>{item.icon}</span> : null}
                   <div class='flex min-w-0 flex-col'>
-                    <h3 class='whitespace-nowrap text-xl font-semibold text-secondary-950'>
+                    <h3 class='break-words text-xl font-semibold leading-7 text-secondary-950'>
                       {item.text}
                     </h3>
-                    <p class='text-gray-500'>{item.description}</p>
+                    <p class='break-words text-gray-500'>{item.description}</p>
                   </div>
                 </a>
               </li>
