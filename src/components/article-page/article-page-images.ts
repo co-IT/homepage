@@ -20,28 +20,28 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
     'Team plant gemeinsam eine IT-Lösung an einem Besprechungstisch.'
   ),
   'Auswertung von Phishing-Simulationen': createArticleImageAsset(
-    'phishing-learning-moment.webp',
-    'Mitarbeiterin bespricht eine Phishing-Simulation mit einem IT-Berater am Arbeitsplatz.'
+    'phishing-analytics-evaluation.webp',
+    'Security-Analyst und Teamlead werten Ergebnisse einer Phishing-Simulation an Monitoren aus.'
   ),
   'Awareness und Phishing-Simulationen': createArticleImageAsset(
-    'awareness-poster-workshop.webp',
-    'Mitarbeitende bewerten Sicherheitsrisiken in einem Awareness-Workshop an einer Pinnwand.'
+    'awareness-team-training-table.webp',
+    'Mitarbeitende besprechen Sicherheitsrisiken in einem praxisnahen Awareness-Training.'
   ),
   Behörden: createArticleImageAsset(
-    'public-office-digital-form.webp',
-    'Verwaltungsmitarbeiterin digitalisiert ein Formular gemeinsam mit einem IT-Berater.'
+    'public-office-scanner-workflow.webp',
+    'Verwaltungsmitarbeiterin scannt Formulare in einem älteren Amt, während ein IT-Spezialist einen Arbeitsplatz betreut.'
   ),
   'Betreibbare Technologien': createArticleImageAsset(
-    'server-room-maintenance.webp',
-    'IT-Spezialist prüft Systeme in einem kompakten Serverraum mit einem Kunden.'
+    'server-cabinet-operability-check.webp',
+    'IT-Spezialist prüft betreibbare Systeme direkt an einem Serverschrank.'
   ),
   'Cloud-Prozesse für Dienstleister': createArticleImageAsset(
-    'service-company-cloud-workflow.webp',
-    'Dienstleistungsteam plant Cloud-Prozesse mit einem IT-Berater im Büro.'
+    'cloud-workflow-dashboard-discussion.webp',
+    'Dienstleistungsteam prüft Cloud-Prozesse an einem Dashboard mit einem IT-Berater.'
   ),
   Branchen: createArticleImageAsset(
-    'technology-stack-review.webp',
-    'Team bewertet technische Abläufe und Systemarchitektur an einem Bildschirm.'
+    'architecture-workshop-display.webp',
+    'Team ordnet technische Abläufe und Systemarchitektur an einem großen Display.'
   ),
   'Cyber-Awareness-Portal': createArticleImageAsset(
     'awareness-results-review.webp',
@@ -68,8 +68,8 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
     'Versicherungsmitarbeiterin bespricht einen digitalen Aktenprozess mit einem IT-Berater.'
   ),
   'Digitalisierung für Behörden': createArticleImageAsset(
-    'public-office-digital-form.webp',
-    'Verwaltungsmitarbeiterin und IT-Berater prüfen einen digitalen Formularprozess.'
+    'public-office-counter-digitization.webp',
+    'Mitarbeitende digitalisieren Formulare an einem Schalter in einem klassischen Amtsbüro.'
   ),
   'Digitalisierung im Energiesektor': createArticleImageAsset(
     'energy-radio-check.webp',
@@ -80,8 +80,8 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
     'Handwerker und IT-Berater prüfen einen digitalen Einsatzplan auf einem Tablet.'
   ),
   'Dokumentierbare IT-Sicherheit für Behörden': createArticleImageAsset(
-    'project-scope-cards.webp',
-    'Team ordnet Verantwortlichkeiten und Sicherheitsmaßnahmen mit Karten auf einem Tisch.'
+    'public-office-digital-form.webp',
+    'Verwaltungsmitarbeiterin verarbeitet Papierakten und digitale Formulare an einem Amtsarbeitsplatz.'
   ),
   'E-Mail-Sicherheit': createArticleImageAsset(
     'email-security-review.webp',
@@ -92,24 +92,24 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
     'IT-Berater unterstützt Mitarbeitende bei Zwei-Faktor-Authentifizierung am Smartphone.'
   ),
   Energiesektor: createArticleImageAsset(
-    'energy-radio-check.webp',
-    'Techniker mit Funkgerät bespricht stabile IT-Prozesse im Energiesektor.'
+    'energy-high-voltage-tablet.webp',
+    'Techniker mit Helmen prüfen ein Tablet vor einer Hochspannungsanlage.'
   ),
   Gesundheitswesen: createArticleImageAsset(
-    'healthcare-reception-it.webp',
-    'Medizinische Fachangestellte prüft Praxis-IT mit einem IT-Berater am Empfang.'
+    'healthcare-clinic-it-support.webp',
+    'Ärztin und medizinische Fachangestellte prüfen Praxis-IT mit einem IT-Spezialisten im Behandlungsraum.'
   ),
   Großhandel: createArticleImageAsset(
-    'wholesale-scanner-process.webp',
-    'Mitarbeiter im Großhandel scannt Ware neben einem IT-Berater mit Tablet.'
+    'wholesale-warehouse-scanner.webp',
+    'Lagermitarbeiter scannt Ware an Paletten, während eine Kollegin digitale Bestelldaten prüft.'
   ),
   'Handlungsempfehlungen aus Sicherheitschecks': createArticleImageAsset(
-    'security-report-review.webp',
-    'IT-Berater bespricht Ergebnisse eines Sicherheitschecks mit einem Kunden.'
+    'security-recommendation-priorities.webp',
+    'IT-Berater priorisiert konkrete Empfehlungen aus einem Sicherheitscheck mit einem Kunden.'
   ),
   Handwerk: createArticleImageAsset(
-    'craft-tablet-schedule.webp',
-    'Handwerker und IT-Berater besprechen digitale Planung am Werkstatttisch.'
+    'craft-roof-digital-plan.webp',
+    'Handwerker prüft einen digitalen Einsatzplan auf einem Tablet direkt auf einer Baustelle am Dach.'
   ),
   'IT-Betreuung im Gesundheitswesen': createArticleImageAsset(
     'healthcare-reception-it.webp',
@@ -124,36 +124,36 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
     'IT-Berater begrüßt eine Kundin am Eingang eines regionalen Unternehmens.'
   ),
   'IT-Sicherheit im Gesundheitswesen': createArticleImageAsset(
-    'healthcare-reception-it.webp',
-    'Praxispersonal und IT-Berater prüfen sichere digitale Abläufe am Empfang.'
+    'healthcare-access-control-workstation.webp',
+    'Praxispersonal nutzt sichere Anmeldung an einem Klinikarbeitsplatz mit Unterstützung eines IT-Spezialisten.'
   ),
   'KI-Einsatzbereiche im Mittelstand': createArticleImageAsset(
     'ai-document-automation.webp',
     'Mitarbeiterin testet Dokumentenautomatisierung mit einem IT-Berater am Scanner.'
   ),
   'KI-Roadmap und Compliance': createArticleImageAsset(
-    'ai-strategy-workshop.webp',
-    'Team diskutiert eine KI-Roadmap in einem strukturierten Workshop.'
+    'ai-roadmap-tablet-review.webp',
+    'Team prüft eine KI-Roadmap und Compliance-Schritte auf einem Tablet.'
   ),
   'Klare Einsatzgebiete': createArticleImageAsset(
-    'project-scope-cards.webp',
-    'Projektteam klärt Zuständigkeiten mit Karten und Zeitplan auf einem Tisch.'
+    'project-responsibility-table.webp',
+    'Projektteam klärt Einsatzgebiete und Verantwortlichkeiten an einem Arbeitstisch.'
   ),
   'Kontrolle über Zugangsdaten': createArticleImageAsset(
-    'password-manager-2fa.webp',
-    'Mitarbeitende prüfen sichere Zugänge mit Smartphone und Laptop.'
+    'password-manager-phone-onboarding.webp',
+    'Mitarbeitende prüfen sichere Zugangsdaten mit Smartphone, Laptop und Passwort-Manager.'
   ),
   'Legacy-Modernisierung': createArticleImageAsset(
     'legacy-archive-modernization.webp',
     'Mitarbeiterin hält einen alten Ordner, während ein Entwickler einen modernen Prozess zeigt.'
   ),
   'Lernen und Auswerten im Cyber-Awareness-Portal': createArticleImageAsset(
-    'awareness-results-review.webp',
-    'Verantwortliche werten Awareness-Fortschritte auf einem Laptop aus.'
+    'awareness-certificates-review.webp',
+    'Verantwortliche ordnen Nachweise und Zertifikate aus einem Cyber-Awareness-Portal.'
   ),
   Lohnfertiger: createArticleImageAsset(
-    'production-quality-tablet.webp',
-    'Produktionsteam prüft digitale Fertigungsdaten neben Maschinenbauteilen.'
+    'production-cnc-quality-control.webp',
+    'Mitarbeiter prüfen gefertigte Metallteile und Qualitätsdaten in einer Produktionshalle.'
   ),
   'Managed Services': createArticleImageAsset(
     'server-room-maintenance.webp',
@@ -164,24 +164,32 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
     'Berater erklärt eine Cloud-Migration an einem großen Bildschirm.'
   ),
   'Microsoft-365-Betrieb': createArticleImageAsset(
-    'managed-services-dashboard.webp',
-    'IT-Berater und Kunde prüfen Betriebsdaten auf Monitoren.'
+    'microsoft-admin-session.webp',
+    'IT-Berater und Kunde prüfen Microsoft-365-Administration an einem Arbeitsplatz.'
   ),
   'Microsoft-365-Migration': createArticleImageAsset(
-    'microsoft-cloud-migration.webp',
-    'Team bespricht eine Migration zu cloudbasierter Zusammenarbeit.'
+    'cloud-architecture-screen-review.webp',
+    'Team prüft eine Cloud-Architektur als Grundlage für eine Microsoft-365-Migration.'
   ),
   'Mittelstand verstehen': createArticleImageAsset(
     'mittelstand-it-consulting.webp',
     'IT-Berater bespricht pragmatische nächste Schritte mit einem mittelständischen Unternehmen.'
   ),
   'Nachweise im Cyber-Awareness-Portal': createArticleImageAsset(
-    'awareness-results-review.webp',
-    'Berater und Verantwortliche prüfen Nachweise aus einem Awareness-Portal.'
+    'awareness-progress-workshop-board.webp',
+    'Verantwortliche dokumentieren Fortschritte und Nachweise aus einem Awareness-Portal.'
   ),
   'Phishing-Simulationen': createArticleImageAsset(
-    'phishing-learning-moment.webp',
-    'Mitarbeiterin erlebt eine Phishing-Simulation als konstruktiven Lernmoment.'
+    'phishing-email-decision.webp',
+    'Mitarbeiterin erkennt eine verdächtige E-Mail am Arbeitsplatz und entscheidet über den nächsten Schritt.'
+  ),
+  'Passwort-Manager für Unternehmen': createArticleImageAsset(
+    'password-manager-security-key.webp',
+    'IT-Spezialist unterstützt eine Mitarbeiterin bei Passwort-Manager und Zwei-Faktor-Anmeldung mit Sicherheitsschlüssel.'
+  ),
+  'Produkte und Lösungen': createArticleImageAsset(
+    'digital-solutions-workshop.webp',
+    'Team bespricht digitale Lösungen an Laptops und Tablets in einem strukturierten Workshop.'
   ),
   'Produkte & Lösungen': createArticleImageAsset(
     'password-manager-2fa.webp',
@@ -196,100 +204,100 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
     'Mitarbeiterin reagiert auf eine realistische Phishing-Übung am Arbeitsplatz.'
   ),
   'Region und Einsatzgebiet': createArticleImageAsset(
-    'regional-client-entrance.webp',
-    'IT-Berater trifft eine Kundin am Eingang eines regionalen Unternehmens.'
+    'regional-office-handshake-view.webp',
+    'IT-Berater trifft einen regionalen Kunden in einem Unternehmensbüro.'
   ),
   'regionale IT-Betreuung': createArticleImageAsset(
-    'onsite-workstation-support.webp',
-    'IT-Techniker unterstützt eine Mitarbeiterin direkt an ihrem Arbeitsplatz.'
+    'regional-network-cabinet-service.webp',
+    'IT-Techniker prüft Netzwerktechnik bei einem regionalen Kunden vor Ort.'
   ),
   'regionalen IT-Service': createArticleImageAsset(
-    'network-switch-service.webp',
-    'IT-Techniker prüft Netzwerktechnik bei einem regionalen Kunden vor Ort.'
+    'onsite-desk-support-review.webp',
+    'IT-Techniker unterstützt einen regionalen Kunden direkt am Arbeitsplatz.'
   ),
   'Remote-Leistungen': createArticleImageAsset(
     'remote-support-home-office.webp',
     'IT-Berater leistet Remote-Support aus einem ruhigen Homeoffice.'
   ),
   'Schnittstellen im Großhandel': createArticleImageAsset(
-    'wholesale-scanner-process.webp',
-    'Großhandelsmitarbeiter scannt Ware während digitale Abläufe geprüft werden.'
+    'wholesale-conveyor-scanner-integration.webp',
+    'Großhandelsmitarbeiter prüft Scanner, Förderband und digitale Bestelldaten an einer Packstation.'
   ),
   'Sichere Kommunikation im Energiesektor': createArticleImageAsset(
-    'energy-radio-check.webp',
-    'Techniker prüft Kommunikationsgeräte mit einem IT-Berater im Energiesektor.'
+    'energy-control-room-radio.webp',
+    'Leitstellenmitarbeiter und IT-Spezialist prüfen Funkkommunikation im Energiesektor.'
   ),
   'Sicherheit für Produktionsdaten': createArticleImageAsset(
-    'production-quality-tablet.webp',
-    'Produktionsteam schützt Fertigungsdaten bei der Arbeit mit Tablet und Messwerkzeug.'
+    'production-machine-access-control.webp',
+    'Produktionsmitarbeiter nutzt sichere Anmeldung an einem Maschinenterminal neben CNC-Anlagen.'
   ),
   'Sicherheit für Versicherungen': createArticleImageAsset(
-    'insurance-folder-workflow.webp',
-    'Versicherungsmitarbeiterin und IT-Berater prüfen vertrauliche Aktenprozesse.'
+    'insurance-security-advisory-table.webp',
+    'Versicherungsmitarbeitende prüfen Sicherheitsmaßnahmen für vertrauliche digitale Prozesse.'
   ),
   'Sicherheit im Großhandel': createArticleImageAsset(
     'wholesale-scanner-process.webp',
     'Team im Lager prüft sichere digitale Abläufe mit Scanner und Tablet.'
   ),
   Sicherheitschecks: createArticleImageAsset(
-    'security-report-review.webp',
-    'IT-Berater erklärt Befunde eines Sicherheitschecks an einem Laptop.'
+    'security-dns-email-check.webp',
+    'IT-Spezialist prüft E-Mail- und DNS-Sicherheitskonfigurationen an einem technischen Arbeitsplatz.'
   ),
   'Skalierbare IT für Dienstleister': createArticleImageAsset(
-    'service-company-cloud-workflow.webp',
-    'Dienstleistungsteam plant skalierbare digitale Zusammenarbeit mit einem IT-Berater.'
+    'service-process-consulting.webp',
+    'Dienstleistungsteam plant skalierbare digitale Prozesse mit einem IT-Berater.'
   ),
   Softwaretechnologien: createArticleImageAsset(
-    'technology-stack-review.webp',
-    'Team bewertet Technologieoptionen an einem Architekturdiagramm.'
+    'technology-options-tablet-review.webp',
+    'Team bewertet Technologieoptionen an Tablet und Architekturdiagramm.'
   ),
   'stabilen IT-Betrieb': createArticleImageAsset(
-    'server-room-maintenance.webp',
-    'IT-Spezialist kontrolliert stabile Systeme in einem Serverraum.'
+    'operations-monitoring-room.webp',
+    'IT-Spezialisten prüfen Monitoring-Daten für einen stabilen IT-Betrieb.'
   ),
   'Technisch präzise arbeiten': createArticleImageAsset(
-    'network-switch-service.webp',
-    'IT-Techniker dokumentiert Netzwerkkabel bei einem Vor-Ort-Termin.'
+    'server-rack-technology-review.webp',
+    'IT-Techniker dokumentiert technische Systeme direkt an einem Serverschrank.'
   ),
   'Technologien und Partner': createArticleImageAsset(
     'technology-stack-review.webp',
-    'Berater und Kunde prüfen eine technische Systemarchitektur gemeinsam.'
+    'Berater und Kunde prüfen eine technische Systemarchitektur an einem großen Bildschirm.'
   ),
   Technologiepartner: createArticleImageAsset(
-    'technology-stack-review.webp',
-    'Team vergleicht Technologieoptionen an einem großen Bildschirm.'
+    'software-development-review.webp',
+    'Team vergleicht Technologieoptionen und Partnerlösungen an einem Bildschirm.'
   ),
   Unternehmen: createArticleImageAsset(
-    'team-solution-planning.webp',
-    'co-IT-Team plant gemeinsam eine kundenspezifische IT-Lösung.'
+    'company-team-laptop-planning.webp',
+    'co-IT-Team plant eine kundenspezifische IT-Lösung an Laptops.'
   ),
   'Über uns': createArticleImageAsset(
-    'team-solution-planning.webp',
-    'Team arbeitet gemeinsam an einer technischen Lösung in einem modernen Büro.'
+    'project-team-table-planning.webp',
+    'Team arbeitet gemeinsam an einer technischen Lösung an einem Projekttisch.'
   ),
   'Verantwortung in IT-Projekten': createArticleImageAsset(
     'project-responsibility-review.webp',
     'IT-Berater und Kundenteam klären Verantwortlichkeiten in einem Projekt.'
   ),
   Versicherungen: createArticleImageAsset(
-    'insurance-folder-workflow.webp',
-    'Versicherungsmitarbeiterin bespricht einen sicheren Aktenprozess mit einem IT-Berater.'
+    'insurance-claims-document-scan.webp',
+    'Versicherungsmitarbeiterin scannt Schadenakten und prüft einen digitalen Vorgang am Arbeitsplatz.'
   ),
   'Vor-Ort-Leistungen': createArticleImageAsset(
     'onsite-workstation-support.webp',
     'IT-Techniker hilft einer Mitarbeiterin direkt am Büroarbeitsplatz.'
   ),
   'Vor-Ort-Service für Handwerk': createArticleImageAsset(
-    'craft-tablet-schedule.webp',
-    'Handwerker und IT-Berater prüfen digitale Einsatzplanung in der Werkstatt.'
+    'craft-workshop-network-service.webp',
+    'IT-Techniker tauscht Netzwerktechnik in einer Werkstatt aus, während ein Handwerker zusieht.'
   ),
   'Web- und Softwareentwicklung': createArticleImageAsset(
     'software-prototype-user-test.webp',
     'Entwickler beobachtet einen Nutzertest mit einem App-Prototyp auf einem Tablet.'
   ),
   'Webseiten-Builder mit KI': createArticleImageAsset(
-    'website-touchscreen-draft.webp',
-    'Unternehmer und Berater prüfen einen Webseitenentwurf an einem Touchscreen.'
+    'website-sitemap-wall-workshop.webp',
+    'Unternehmerin und Berater strukturieren Webseiteninhalte mit Wireframes und Sitemap-Karten an einer Wand.'
   ),
   Webseitenentwurf: createArticleImageAsset(
     'website-touchscreen-draft.webp',
