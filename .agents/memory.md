@@ -16,3 +16,4 @@ Persistente, belastbare Erkenntnisse fuer AI-Coding in diesem Repository.
 - 2026-07-01: Bildpfad-Konstanten in `content.ts` nur verwenden, wenn derselbe Pfad in der jeweiligen Datei mehrfach genutzt wird; Einmalnutzungen inline setzen.
 - 2026-07-01: Topbar-/Navigationsicons sollen dem bestehenden Muster folgen: ein Icon pro `*.tsx` Datei unter `src/_shell/top-bar/icons`, keine Sammeldatei mit vielen Icon-Exports.
 - 2026-07-01: Der lokale Skill `$co-it-site-content-import` dokumentiert den Workflow, um Markdown-Navigations-/Content-Dateien in Routen, `ArticlePage`-Content, Top-Navigation, Footer/Content-Switch und passende Icons/Bilder zu ueberfuehren.
+- 2026-07-02: Artikelbilder sollen pro Artikel eindeutig sein, nicht mehrfach verwendet werden und deutlich variieren: unterschiedliche Arbeitsumgebungen, Gegenstaende, Taetigkeiten und Emotionen; Branchenbilder sollen konkrete Arbeitsalltag-Szenen der jeweiligen Branche zeigen.
