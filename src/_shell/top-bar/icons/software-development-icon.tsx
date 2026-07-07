@@ -7,9 +7,9 @@ export const SoftwareDevelopmentIcon = component$(() => {
         d='m18 16l4-4l-4-4M6 8l-4 4l4 4m8.5-12l-5 16'
         fill='none'
         stroke='#02024D'
-        strokeLinecap='round'
-        strokeLinejoin='round'
-        strokeWidth='2'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        stroke-width='2'
       />
     </svg>
   );
