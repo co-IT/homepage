@@ -8,8 +8,7 @@ export const behoerden: PageContent = {
   headerHeading: 'Behörden',
   headerSubheading: 'Nachvollziehbare sichere Lösungen',
   backgroundImage: createBackgroundImage('Behörden'),
-  contentHeading:
-    'IT-Sicherheit, Awareness und digitale Prozesse für öffentliche Einrichtungen',
+  contentHeading: 'IT-Sicherheit, Awareness und digitale Prozesse für öffentliche Einrichtungen',
   articles: [
     {
       direction: 'right',
@@ -27,7 +26,7 @@ export const behoerden: PageContent = {
       direction: 'right',
       heading: 'Digitalisierung mit klarer Verantwortung.',
       text: 'Öffentliche Einrichtungen benötigen Lösungen, die fachliche Anforderungen, Datenschutz, Beschaffung und Betrieb zusammenbringen. Wir unterstützen bei Konzeption, Umsetzung und Weiterentwicklung digitaler Prozesse mit Blick auf langfristige Wartbarkeit.',
-      image: createImage('Digitalisierung für Behörden')
+      image: createImage('Verantwortung in IT-Projekten')
     }
   ]
 };

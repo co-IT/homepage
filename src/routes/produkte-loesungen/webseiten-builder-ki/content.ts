@@ -8,14 +8,16 @@ export const webseitenBuilderKi: PageContent = {
   headerHeading: 'Webseiten-Builder mit KI',
   headerSubheading: 'Struktur, Inhalt und Strategie',
   backgroundImage: createBackgroundImage('Webseiten-Builder mit KI'),
-  contentHeading:
-    'KI-gestützte Webseiten-Erstellung für moderne Unternehmensauftritte',
+  contentHeading: 'KI-gestützte Webseiten-Erstellung für moderne Unternehmensauftritte',
   articles: [
     {
       direction: 'right',
       heading: 'Eine gute Webseite beginnt nicht mit Design.',
       text: 'Viele Webseiten scheitern nicht an Farben oder Bildern, sondern an Struktur, Inhalt und Klarheit. Unser KI-gestützter Webseiten-Builder unterstützt dabei, aus Unternehmensinformationen, Leistungen und Zielgruppen eine saubere Seitenstruktur zu entwickeln.',
-      image: createImage('Webseiten-Builder mit KI')
+      image: {
+        src: '/img/article-pages/website-sitemap-wall-workshop.webp',
+        alt: 'Team strukturiert Webseiteninhalte mit Sitemap-Karten an einer Wand.'
+      }
     },
     {
       direction: 'left',

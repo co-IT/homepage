@@ -11,8 +11,8 @@ export default component$(() => {
       heading: 'Wir meistern Komplexität im Team',
       text: 'Unsere T-Shaped Professionals flankieren ihr Tiefenwissen mit ausgewähltem Breitenwissen. Diesen Gedanken haben wir auf Unternehmensebene konsequent weitergedacht, indem wir gezielt Kompetenzen einzelner Mitarbeiter aufeinander abstimmen. Beispielsweise bleibt ein Haus, bei dem lediglich die Eingangstür, nicht aber die Fenster verschlossen sind, unsicher. Darum haben wir sowohl im IT-Service-Management als auch in der Softwareentwicklung zertifizierte Sicherheitsexperten.',
       image: {
-        src: '/img/about/flip-chart-session.webp',
-        alt: 'Two colleagues working on the flip chart'
+        src: '/img/article-pages/technology-stack-review.webp',
+        alt: 'Team bespricht eine technische Lösung im Detail.'
       }
     },
     {
@@ -20,8 +20,8 @@ export default component$(() => {
       heading: 'Wir verstehen Soft Skills als Must-haves',
       text: 'Nur als Team lässt sich wirklich Großes und Nachhaltiges erreichen. Daher sind wir davon überzeugt, dass Soft Skills genauso entwickelt werden müssen wie das fachliche Tiefenwissen. Bereits in unserem Einstellungsprozess stellen wir sicher, dass unsere Mitarbeiter gerne kommunizieren, verantwortungsbewusst und aufgrund ihrer Empathie maximal teamfähig sind. Rhetoriktrainings durch linguistische Psychologen und Textcoachings durch professionelle Redakteure sind Beispiele, wie wir unsere Mitarbeiter zusätzlich entwickeln.',
       image: {
-        src: '/img/quality/team-up.webp',
-        alt: 'Two colleagues checking the state of their work.'
+        src: '/img/article-pages/project-team-table-planning.webp',
+        alt: 'Team plant gemeinsam eine Aufgabe am Besprechungstisch.'
       }
     },
     {
@@ -29,8 +29,8 @@ export default component$(() => {
       heading: 'Wir legen den Finger in die Wunde',
       text: 'Um das Business zu verstehen, müssen wir Menschen verstehen! Wenn beispielsweise eine Software für das Wissensmanagement - wie ein Unternehmenswiki - eingeführt werden soll, stellen wir die Frage nach der Bereitschaft der Angestellten Ihr wertvolles Wissen zu teilen. Hierfür sind sichere Arbeitsplätze und eine echte Vertrauenskultur Voraussetzung.',
       image: {
-        src: '/img/quality/two-men-standing-in-front-of-a-monitor.webp',
-        alt: 'Two colleagues checking the state of their work.'
+        src: '/img/article-pages/project-responsibility-review.webp',
+        alt: 'Team klärt Verantwortlichkeiten an einem Besprechungstisch.'
       }
     },
     {
@@ -38,8 +38,8 @@ export default component$(() => {
       heading: 'Wir wollen Probleme durchdringen',
       text: 'Veränderung braucht Orientierung, Orientierung braucht Richtung und Richtung braucht ein Ziel. Darum treten wir gerne einen Schritt zurück und hinterfragen technische Wünsche. Ist es tatsächlich der Hammer, den ein Kunde braucht, oder ist es der Nagel in der Wand, um das Bild aufzuhängen?',
       image: {
-        src: '/img/quality/on-man-looking-over-the-sea.webp',
-        alt: 'A team of two learning together'
+        src: '/img/article-pages/project-scope-cards.webp',
+        alt: 'Team definiert den Umfang eines Projekts auf Karten.'
       }
     }
   ];
@@ -62,8 +62,7 @@ export const head: DocumentHead = {
     },
     {
       name: 'keywords',
-      content:
-        'Qualität, Teamarbeit, T-Shaped-Professionals, Abgestimmt auf den Punkt, IT-Lösung'
+      content: 'Qualität, Teamarbeit, T-Shaped-Professionals, Abgestimmt auf den Punkt, IT-Lösung'
     }
   ],
 

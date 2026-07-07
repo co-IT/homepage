@@ -9,12 +9,8 @@ export const produkteLoesungenOverview: PageContent = {
     'Digitale Lösungen für Cyber-Awareness, Phishing-Simulationen, Passwort-Management, Sicherheitschecks und KI-gestützte Webseiten-Strukturen.',
   headerHeading: 'Produkte & Lösungen',
   headerSubheading: 'Sicherheit, Effizienz und moderne Arbeitsprozesse',
-  backgroundImage: createBackgroundImage(
-    'Produkte und Lösungen',
-    cyberPortalImage
-  ),
-  contentHeading:
-    'Digitale Lösungen für Sicherheit, Effizienz und moderne Arbeitsprozesse',
+  backgroundImage: createBackgroundImage('Produkte und Lösungen', cyberPortalImage),
+  contentHeading: 'Digitale Lösungen für Sicherheit, Effizienz und moderne Arbeitsprozesse',
   contentText:
     'Unsere Produkte und Lösungen entstehen aus wiederkehrenden Anforderungen im IT-Betrieb, in der Cyber-Sicherheit und in der Digitalisierung mittelständischer Unternehmen. Sie sind standardisiert genug, um wirtschaftlich einsetzbar zu sein, und flexibel genug, um sich an konkrete Unternehmenssituationen anzupassen.',
   articles: [
@@ -22,7 +18,7 @@ export const produkteLoesungenOverview: PageContent = {
       direction: 'right',
       heading: 'Awareness, die nicht bei der Schulung endet.',
       text: 'Das co-IT Cyber-Awareness-Portal bündelt Schulungen, Prüfungen, Zertifikate, Erinnerungen und Phishing-Simulationen in einer strukturierten Plattform. Unternehmen, Versicherer und Partner können Sicherheitsbewusstsein messbar aufbauen und Fortschritte nachvollziehbar dokumentieren.',
-      image: createImage('Cyber-Awareness-Portal', cyberPortalImage),
+      image: createImage('Awareness und Phishing-Simulationen'),
       callToAction: {
         text: 'Mehr erfahren',
         href: '/produkte-loesungen/cyber-awareness-portal/',
@@ -33,10 +29,7 @@ export const produkteLoesungenOverview: PageContent = {
       direction: 'left',
       heading: 'Phishing-Risiken sichtbar machen.',
       text: 'Realistische Phishing-Simulationen zeigen, wie Angriffsmuster im Arbeitsalltag wirken und wo Unsicherheiten entstehen. Statt Schuldzuweisungen geht es um Erkenntnis: Welche Muster treten auf, welche Meldewege fehlen und welche Schulungs- oder Prozessmaßnahmen sind sinnvoll?',
-      image: createImage(
-        'Phishing-Simulationen',
-        '/img/cyber/cyber-portal/white-label/phishing-simulationen.webp'
-      ),
+      image: createImage('Phishing-Simulationen', '/img/cyber/cyber-portal/white-label/phishing-simulationen.webp'),
       callToAction: {
         text: 'Mehr erfahren',
         href: '/produkte-loesungen/phishing-simulationen/',
@@ -47,10 +40,10 @@ export const produkteLoesungenOverview: PageContent = {
       direction: 'right',
       heading: 'Passwörter im Griff. Zugänge unter Kontrolle.',
       text: 'Ein professionell eingeführter Passwort-Manager reduziert die Gefahr schwacher, wiederverwendeter oder kompromittierter Zugangsdaten. Auf Basis von Vaultwarden schaffen wir eine zentrale, kontrollierbare und alltagstaugliche Lösung für Teams und Organisationen.',
-      image: createImage(
-        'Passwort-Manager für Unternehmen',
-        '/img/products/passwort-manager/header.webp'
-      ),
+      image: {
+        src: '/img/article-pages/passwort-management-digitale-identitaeten-detail.webp',
+        alt: 'IT-Sicherheitsberater und Ansprechpartnerin pruefen Passwort-Tresore, Zugangsdaten und eine Zwei-Faktor-Bestaetigung an Laptop und Smartphone.'
+      },
       callToAction: {
         text: 'Mehr erfahren',
         href: '/produkte-loesungen/passwort-manager-unternehmen/',

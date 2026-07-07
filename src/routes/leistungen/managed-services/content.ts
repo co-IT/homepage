@@ -14,7 +14,10 @@ export const managedServices: PageContent = {
       direction: 'right',
       heading: 'Ihre IT läuft. Planbarer.',
       text: 'Proaktiver Betrieb statt reaktive Feuerwehr. Wir überwachen Ihre Systeme, erkennen Probleme, bevor sie spürbar werden und halten Ihre IT-Umgebung durch strukturiertes Patch-Management aktuell.',
-      image: createImage('Managed Services')
+      image: {
+        src: '/img/article-pages/server-cabinet-operability-check.webp',
+        alt: 'IT-Spezialist prüft Systeme direkt an einem Serverschrank.'
+      }
     },
     {
       direction: 'left',

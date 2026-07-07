@@ -16,7 +16,7 @@ export const dienstleister: PageContent = {
       direction: 'right',
       heading: 'Dienstleistung ist Kommunikation.',
       text: 'Dienstleister arbeiten mit Terminen, Dokumenten, Kundendaten, Angeboten, Projekten und Abstimmungen. Wenn Kommunikation unsicher, unstrukturiert oder technisch instabil ist, leidet die Qualität der Leistung.',
-      image: createImage('Dienstleister', servicesImage)
+      image: createImage('Dienstleister')
     },
     {
       direction: 'left',

@@ -1,22 +1,20 @@
 import type { PageContent } from '~/components/article-page';
 import { createBackgroundImage, createImage } from '~/components/article-page';
 
-const regionImage = '/img/about/team-waling-in-the-nature.webp';
-
 export const regionEinsatzgebiet: PageContent = {
   title: 'co-IT - Region & Einsatzgebiet',
   metaDescription:
     'IT-Service im Ortenaukreis und digitale Leistungen deutschlandweit mit klarer Trennung zwischen Vor-Ort-Service und remote skalierbaren Leistungen.',
   headerHeading: 'Region & Einsatzgebiet',
   headerSubheading: 'Lokal vor Ort, digital deutschlandweit',
-  backgroundImage: createBackgroundImage('Region und Einsatzgebiet', regionImage),
+  backgroundImage: createBackgroundImage('Region und Einsatzgebiet'),
   contentHeading: 'IT-Service im Ortenaukreis, digitale Leistungen deutschlandweit',
   articles: [
     {
       direction: 'right',
       heading: 'Lokal, wo Nähe zählt.',
       text: 'Für Vor-Ort-Leistungen sind wir im Ortenaukreis und rund um Achern im Einsatz. Wenn Hardware eingerichtet, Netzwerke geprüft, Arbeitsplätze aufgebaut oder Systeme physisch gewartet werden müssen, ist regionale Nähe ein echter Vorteil.',
-      image: createImage('Region und Einsatzgebiet', regionImage)
+      image: createImage('Region und Einsatzgebiet')
     },
     {
       direction: 'left',

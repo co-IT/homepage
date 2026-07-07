@@ -1,25 +1,20 @@
 import type { PageContent } from '~/components/article-page';
 import { createBackgroundImage, createImage } from '~/components/article-page';
 
-const technologyImage = '/img/about/team-reviewing-a-solution.webp';
-
 export const technologienPartner: PageContent = {
   title: 'co-IT - Technologien & Partner',
   metaDescription:
     'Technologien und Partner der co-IT: Microsoft 365, Azure, Angular, .NET, Node.js, Sicherheitslösungen und passende Open-Source-Komponenten.',
   headerHeading: 'Technologien & Partner',
   headerSubheading: 'Tragfähige Technologien sinnvoll einsetzen',
-  backgroundImage: createBackgroundImage(
-    'Technologien und Partner',
-    technologyImage
-  ),
+  backgroundImage: createBackgroundImage('Technologien und Partner'),
   contentHeading: 'Technologien, die wir einsetzen, verstehen und betreiben',
   articles: [
     {
       direction: 'right',
       heading: 'Kein Tool-Flickenteppich.',
       text: 'Wir wählen Technologien nicht nach Trend, sondern nach Wartbarkeit, Sicherheit, Verfügbarkeit von Know-how und langfristiger Betreibbarkeit. Dazu gehören Microsoft 365, Azure, moderne Webtechnologien, etablierte Sicherheitslösungen und Open-Source-Komponenten, wenn sie technisch und organisatorisch passen.',
-      image: createImage('Technologien und Partner', technologyImage)
+      image: createImage('Technologien und Partner')
     },
     {
       direction: 'left',

@@ -1,8 +1,7 @@
 import type { PageContent } from '~/components/article-page';
 import { createBackgroundImage, createImage } from '~/components/article-page';
 
-const phishingImage =
-  '/img/cyber/cyber-portal/white-label/phishing-simulationen.webp';
+const phishingImage = '/img/cyber/cyber-portal/white-label/phishing-simulationen.webp';
 
 export const phishingSimulationen: PageContent = {
   title: 'co-IT - Phishing-Simulationen',
@@ -17,7 +16,7 @@ export const phishingSimulationen: PageContent = {
       direction: 'right',
       heading: 'Trainieren, bevor es ernst wird.',
       text: 'Phishing-Simulationen zeigen, wie anfällig ein Unternehmen für täuschend echte Angriffe ist - ohne echten Schaden zu verursachen. Mitarbeitende erleben realistische Szenarien, treffen Entscheidungen im Arbeitsalltag und erhalten direktes Feedback.',
-      image: createImage('Phishing-Simulationen', phishingImage)
+      image: createImage('Phishing-Simulationen')
     },
     {
       direction: 'left',

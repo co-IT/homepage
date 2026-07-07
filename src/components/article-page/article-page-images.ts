@@ -49,7 +49,7 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
   ),
   'Cyber-Sicherheit': createArticleImageAsset(
     'awareness-poster-workshop.webp',
-    'Mitarbeitende ordnen Sicherheitsrisiken in einem praxisnahen Workshop ein.'
+    'IT-Berater erklärt einem Team typische Sicherheitsrisiken und Schutzmassnahmen an einem grossen Bildschirm.'
   ),
   Dienstleister: createArticleImageAsset(
     'service-company-cloud-workflow.webp',
@@ -85,11 +85,11 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
   ),
   'E-Mail-Sicherheit': createArticleImageAsset(
     'email-security-review.webp',
-    'IT-Spezialist erklärt einer Mitarbeiterin sichere E-Mail-Einstellungen am Laptop.'
+    'IT-Berater und Kundin pruefen E-Mail-Sicherheitsprotokolle wie SPF, DKIM und DMARC an zwei Bildschirmen.'
   ),
   'Einführung von Passwort-Management': createArticleImageAsset(
-    'password-manager-2fa.webp',
-    'IT-Berater unterstützt Mitarbeitende bei Zwei-Faktor-Authentifizierung am Smartphone.'
+    'passwort-manager-strukturierte-einfuehrung.webp',
+    'IT-Berater bespricht mit zwei Ansprechpartnern die strukturierte Einfuehrung eines Passwort-Managers mit Migrationsplan und Schulungsunterlagen.'
   ),
   Energiesektor: createArticleImageAsset(
     'energy-high-voltage-tablet.webp',
@@ -140,8 +140,8 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
     'Projektteam klärt Einsatzgebiete und Verantwortlichkeiten an einem Arbeitstisch.'
   ),
   'Kontrolle über Zugangsdaten': createArticleImageAsset(
-    'password-manager-phone-onboarding.webp',
-    'Mitarbeitende prüfen sichere Zugangsdaten mit Smartphone, Laptop und Passwort-Manager.'
+    'passwort-management-zugriffsrechte-kontrolle.webp',
+    'IT-Experte und Kundin pruefen Rollen, Freigaben, Team-Sammlungen und Sicherheitsrichtlinien in einem Passwort-Management-Dashboard.'
   ),
   'Legacy-Modernisierung': createArticleImageAsset(
     'legacy-archive-modernization.webp',
@@ -160,16 +160,16 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
     'IT-Spezialist kontrolliert Systeme in einem Serverraum mit einer Kundin.'
   ),
   'Microsoft 365 und Azure': createArticleImageAsset(
-    'microsoft-cloud-migration.webp',
-    'Berater erklärt eine Cloud-Migration an einem großen Bildschirm.'
+    'microsoft-365-overview-admin.webp',
+    'IT-Berater erklärt Microsoft-365- und Azure-Dienste an einem großen Dashboard.'
   ),
   'Microsoft-365-Betrieb': createArticleImageAsset(
-    'microsoft-admin-session.webp',
-    'IT-Berater und Kunde prüfen Microsoft-365-Administration an einem Arbeitsplatz.'
+    'microsoft-365-operations-admin.webp',
+    'IT-Berater und Kundin prüfen Microsoft-365-Administration, Lizenzen und Azure-Kosten an einem Dashboard.'
   ),
   'Microsoft-365-Migration': createArticleImageAsset(
-    'cloud-architecture-screen-review.webp',
-    'Team prüft eine Cloud-Architektur als Grundlage für eine Microsoft-365-Migration.'
+    'microsoft-365-migration-plan.webp',
+    'IT-Berater und Kundin prüfen einen Microsoft-365-Migrationsplan mit Pilot-, Test-, Rollback- und Stabilisierungsphasen an zwei Bildschirmen.'
   ),
   'Mittelstand verstehen': createArticleImageAsset(
     'mittelstand-it-consulting.webp',
@@ -184,8 +184,8 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
     'Mitarbeiterin erkennt eine verdächtige E-Mail am Arbeitsplatz und entscheidet über den nächsten Schritt.'
   ),
   'Passwort-Manager für Unternehmen': createArticleImageAsset(
-    'password-manager-security-key.webp',
-    'IT-Spezialist unterstützt eine Mitarbeiterin bei Passwort-Manager und Zwei-Faktor-Anmeldung mit Sicherheitsschlüssel.'
+    'passwort-management-digitale-identitaeten.webp',
+    'IT-Sicherheitsberater und Ansprechpartnerin pruefen digitale Identitaeten, geschuetzte Zugangsdaten und Passwort-Risiken an einem Dashboard.'
   ),
   'Produkte und Lösungen': createArticleImageAsset(
     'digital-solutions-workshop.webp',
@@ -285,7 +285,7 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
   ),
   'Vor-Ort-Leistungen': createArticleImageAsset(
     'onsite-workstation-support.webp',
-    'IT-Techniker hilft einer Mitarbeiterin direkt am Büroarbeitsplatz.'
+    'IT-Techniker prüft Arbeitsplatz, Peripherie und Netzwerktechnik direkt beim Kunden vor Ort.'
   ),
   'Vor-Ort-Service für Handwerk': createArticleImageAsset(
     'craft-workshop-network-service.webp',
@@ -293,7 +293,7 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
   ),
   'Web- und Softwareentwicklung': createArticleImageAsset(
     'software-prototype-user-test.webp',
-    'Entwickler beobachtet einen Nutzertest mit einem App-Prototyp auf einem Tablet.'
+    'Entwickler und Kundin prüfen eine individuelle Webanwendung mit Schnittstellen- und Prozesslogik.'
   ),
   'Webseiten-Builder mit KI': createArticleImageAsset(
     'website-sitemap-wall-workshop.webp',
@@ -321,7 +321,7 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
   ),
   'proaktiven IT-Betrieb': createArticleImageAsset(
     'managed-services-dashboard.webp',
-    'IT-Berater prüft Monitoring-Daten mit einem Kunden im Büro.'
+    'IT-Berater und Kundin planen Schutzmaßnahmen an einem Whiteboard, während Monitoring-Dashboards im Hintergrund laufen.'
   )
 };
 

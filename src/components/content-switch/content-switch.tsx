@@ -8,44 +8,38 @@ export const ContentSwitch = component$(() => {
       textFirstLine: 'Leistungen',
       textSecondLine: 'IT, Sicherheit und Software',
       path: '/leistungen',
-      image: '/img/landing-page/developers-reviewing-an-app-on-the-tablet.webp',
-      alt: 'Team bespricht IT-Leistungen an einem Tablet'
+      image: '/img/article-pages/server-rack-technology-review.webp',
+      alt: 'IT-Techniker dokumentiert technische Systeme direkt an einem Serverschrank.'
     },
     {
       textFirstLine: 'Produkte & Lösungen',
       textSecondLine: 'Digitale Lösungen für den Mittelstand',
       path: '/produkte-loesungen',
-      image: '/img/cyber/cyber-portal/header.webp',
-      alt: 'Cyber-Awareness-Portal auf einem Bildschirm'
+      image: '/img/article-pages/product-solutions-workshop.webp',
+      alt: 'Team bespricht digitale Lösungen an einem Besprechungstisch mit Laptops.'
     },
     {
       textFirstLine: 'Branchen',
       textSecondLine: 'IT im richtigen Kontext',
       path: '/branchen',
-      image: '/img/about/team-reviewing-a-solution.webp',
-      alt: 'Team prüft eine Lösung gemeinsam am Arbeitsplatz'
+      image: '/img/article-pages/technology-stack-review.webp',
+      alt: 'Berater und Kunde prüfen eine technische Systemarchitektur an einem großen Bildschirm.'
     },
     {
       textFirstLine: 'Über uns',
       textSecondLine: 'Pragmatischer Technologiepartner',
       path: '/ueber-uns',
-      image: '/img/content-switch/about.webp',
-      alt: 'co-IT Team'
+      image: '/img/article-pages/company-team-laptop-planning.webp',
+      alt: 'co-IT-Team plant eine kundenspezifische IT-Lösung an Laptops.'
     }
   ];
 
   return (
     <>
-      <h2 class='mb-4 text-center text-xl font-bold md:mb-28 md:text-4xl'>
-        Das könnte Sie auch interessieren
-      </h2>
+      <h2 class='mb-4 text-center text-xl font-bold md:mb-28 md:text-4xl'>Das könnte Sie auch interessieren</h2>
       <div class='flex flex-col gap-y-0 lg:gap-y-14'>
         {links.map((link, key) => (
-          <Link
-            href={link.path}
-            key={key}
-            class={`z-0 flex flex-row ${key % 2 !== 0 ? 'justify-end' : ''}`}
-          >
+          <Link href={link.path} key={key} class={`z-0 flex flex-row ${key % 2 !== 0 ? 'justify-end' : ''}`}>
             <div class='relative lg:w-6/12 '>
               <div class='bg-secondary-900'>
                 <img
@@ -64,8 +58,7 @@ export const ContentSwitch = component$(() => {
                 `}
               >
                 <div class='my-auto'>
-                  {link.textFirstLine} |{' '}
-                  <span class='font-semibold'>{link.textSecondLine}</span>
+                  {link.textFirstLine} | <span class='font-semibold'>{link.textSecondLine}</span>
                 </div>
                 <div class='pl-3 md:pl-0'>
                   <YellowRightArrowIcon />
