@@ -64,58 +64,45 @@ const contactActions = [
 
 export const ContactPossibilitiesGrid = component$(() => {
   return (
-    <div class='relative isolate w-full'>
-      <div
-        aria-hidden='true'
-        class='pointer-events-none absolute left-1/2 top-0 -z-10 h-48 w-[22rem] -translate-x-1/2 rounded-full bg-primary/10 blur-3xl sm:w-[30rem]'
-      />
+    <div class='w-full'>
+      <div class='mx-auto max-w-4xl text-center'>
+        <h2 class='text-3xl font-bold tracking-tight text-secondary-900 sm:text-4xl lg:text-5xl'>
+          Bereit für den nächsten Schritt?
+        </h2>
 
-      <div class='rounded-[2.5rem] border border-secondary-900/5 bg-gradient-to-b from-white to-slate-50 px-4 py-10 shadow-[0_28px_80px_rgba(2,2,77,0.08)] sm:px-8 sm:py-12 lg:px-12 lg:py-16'>
-        <div class='mx-auto max-w-4xl text-center'>
-          <div class='mx-auto mb-6 h-2 w-20 rounded-full bg-primary shadow-[0_0_0_8px_rgba(255,193,56,0.14)]' />
+        <p class='mx-auto mt-5 max-w-3xl text-lg leading-8 text-secondary-900/75 sm:text-xl'>
+          In einem kurzen Gespräch klären wir, was Sie brauchen und wie wir Sie unterstützen können.
+        </p>
+      </div>
 
-          <h2 class='text-3xl font-bold tracking-tight text-secondary-900 sm:text-4xl lg:text-5xl'>
-            Bereit für den nächsten Schritt?
-          </h2>
+      <div class='mt-10 grid items-stretch gap-5 md:grid-cols-2 lg:grid-cols-3'>
+        {contactActions.map(action => {
+          const Icon = action.icon;
 
-          <p class='mx-auto mt-5 max-w-3xl text-lg leading-8 text-secondary-900/75 sm:text-xl'>
-            In einem kurzen Gespräch klären wir, was Sie brauchen und wie wir Sie unterstützen können.
-          </p>
-        </div>
+          return (
+            <article
+              key={action.title}
+              class='group flex h-full flex-col rounded-none bg-white px-5 py-5 text-center shadow-[0_14px_32px_rgba(2,2,77,0.08)] ring-1 ring-secondary-900/5 transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_45px_rgba(2,2,77,0.12)]'
+            >
+              <div class='bg-primary/12 group-hover:bg-primary/16 mx-auto flex h-28 w-28 items-center justify-center rounded-full text-primary transition duration-300 sm:h-32 sm:w-32'>
+                <Icon class='h-12 w-12 sm:h-14 sm:w-14' />
+              </div>
 
-        <div class='mt-12 grid items-stretch gap-6 md:grid-cols-2 lg:grid-cols-3'>
-          {contactActions.map(action => {
-            const Icon = action.icon;
+              <p class='mx-auto mt-5 max-w-xs text-base leading-7 text-secondary-900/80'>{action.description}</p>
 
-            return (
-              <article
-                key={action.title}
-                class='group flex h-full flex-col rounded-[2rem] bg-white px-6 py-8 text-center shadow-[0_18px_45px_rgba(2,2,77,0.08)] ring-1 ring-secondary-900/5 transition duration-300 hover:-translate-y-1 hover:shadow-[0_28px_60px_rgba(2,2,77,0.12)]'
-              >
-                <div class='bg-primary/12 group-hover:bg-primary/16 mx-auto flex h-36 w-36 items-center justify-center rounded-full text-primary transition duration-300 sm:h-40 sm:w-40'>
-                  <Icon class='h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem]' />
-                </div>
-
-                <h3 class='mt-8 text-2xl font-bold text-secondary-900'>{action.title}</h3>
-
-                <p class='mx-auto mt-5 max-w-sm text-base leading-8 text-secondary-900/80 lg:text-lg'>
-                  {action.description}
-                </p>
-
-                <div class='mt-auto pt-8'>
-                  <a
-                    href={action.href}
-                    target={action.external ? '_blank' : undefined}
-                    rel={action.external ? 'noreferrer' : undefined}
-                    class='inline-flex w-full items-center justify-center rounded-2xl bg-primary px-6 py-4 text-lg font-semibold text-secondary-900 shadow-[0_12px_30px_rgba(255,193,56,0.28)] transition duration-300 hover:brightness-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary-900 focus-visible:ring-offset-2'
-                  >
-                    {action.buttonLabel}
-                  </a>
-                </div>
-              </article>
-            );
-          })}
-        </div>
+              <div class='mt-5'>
+                <a
+                  href={action.href}
+                  target={action.external ? '_blank' : undefined}
+                  rel={action.external ? 'noreferrer' : undefined}
+                  class='inline-flex w-full items-center justify-center rounded-2xl bg-primary px-5 py-3.5 text-base font-semibold text-secondary-900 shadow-[0_10px_24px_rgba(255,193,56,0.26)] transition duration-300 hover:brightness-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary-900 focus-visible:ring-offset-2'
+                >
+                  {action.buttonLabel}
+                </a>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </div>
   );
