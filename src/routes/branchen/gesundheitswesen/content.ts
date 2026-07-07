@@ -10,14 +10,13 @@ export const gesundheitswesen: PageContent = {
   headerHeading: 'Gesundheitswesen',
   headerSubheading: 'Sensible Daten verlässlich schützen',
   backgroundImage: createBackgroundImage('Gesundheitswesen', healthcareImage),
-  contentHeading:
-    'IT und Cyber-Sicherheit für Arztpraxen, Apotheken und Gesundheitsbetriebe',
+  contentHeading: 'IT und Cyber-Sicherheit für Arztpraxen, Apotheken und Gesundheitsbetriebe',
   articles: [
     {
       direction: 'right',
       heading: 'Sensible Daten brauchen verlässliche IT.',
       text: 'Im Gesundheitswesen geht es nicht nur um Technik, sondern um Vertrauen, Verfügbarkeit und Datenschutz. Patientendaten, Praxisabläufe, Kommunikation und digitale Anwendungen müssen geschützt und gleichzeitig alltagstauglich bleiben.',
-      image: createImage('Gesundheitswesen', healthcareImage)
+      image: createImage('Gesundheitswesen')
     },
     {
       direction: 'left',

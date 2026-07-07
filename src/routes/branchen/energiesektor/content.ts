@@ -14,7 +14,10 @@ export const energiesektor: PageContent = {
       direction: 'right',
       heading: 'Wenn Systeme ausfallen, betrifft es mehr als den Betrieb.',
       text: 'Der Energiesektor ist auf stabile IT, sichere Kommunikation und belastbare Prozesse angewiesen. Störungen haben nicht nur interne Auswirkungen, sondern können Kunden, Partner und Versorgungsketten betreffen.',
-      image: createImage('Energiesektor')
+      image: {
+        src: '/img/article-pages/energiesektor-systemausfall-versorgung.png',
+        alt: 'Umspannwerk und Energieinfrastruktur als Sinnbild fuer stabile Versorgung, sichere Netze und belastbare Betriebsprozesse.'
+      }
     },
     {
       direction: 'left',

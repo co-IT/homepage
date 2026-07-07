@@ -14,7 +14,10 @@ export const sicherheitschecks: PageContent = {
       direction: 'right',
       heading: 'Wissen, wo Sie stehen. Bevor es jemand anderes herausfindet.',
       text: 'Unser standardisierter Sicherheitscheck analysiert Ihre E-Mail-Infrastruktur, DNS-Konfiguration und Webseite auf bekannte Schwachstellen und Fehlkonfigurationen. Das Ergebnis ist ein strukturierter Bericht mit konkreten Handlungsempfehlungen.',
-      image: createImage('Sicherheitschecks')
+      image: {
+        src: '/img/article-pages/security-report-review.webp',
+        alt: 'IT-Berater prüft einen Sicherheitsbericht mit priorisierten Befunden.'
+      }
     },
     {
       direction: 'left',

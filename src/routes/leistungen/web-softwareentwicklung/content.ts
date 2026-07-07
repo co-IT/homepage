@@ -8,14 +8,16 @@ export const webSoftwareentwicklung: PageContent = {
   headerHeading: 'Web- & Softwareentwicklung',
   headerSubheading: 'Software, die passt',
   backgroundImage: createBackgroundImage('Web- und Softwareentwicklung'),
-  contentHeading:
-    'Web- und Softwareentwicklung für digitale Geschäftsprozesse',
+  contentHeading: 'Web- und Softwareentwicklung für digitale Geschäftsprozesse',
   articles: [
     {
       direction: 'right',
       heading: 'Software, die passt. Nicht Software, die man anpassen muss.',
       text: 'Standardsoftware erreicht ihre Grenzen genau dort, wo Ihr Geschäftsprozess individuell wird. Wir entwickeln webbasierte Anwendungen, Portale, Schnittstellen und Backend-Systeme, die auf Ihre Abläufe zugeschnitten sind - wartbar, skalierbar und langfristig tragfähig.',
-      image: createImage('Web- und Softwareentwicklung')
+      image: {
+        src: '/img/article-pages/software-prototype-user-test.webp',
+        alt: 'Entwickler und Kundin prüfen eine individuelle Webanwendung mit Schnittstellen- und Prozesslogik.'
+      }
     },
     {
       direction: 'left',

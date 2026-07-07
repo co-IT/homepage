@@ -16,7 +16,7 @@ export const unternehmen: PageContent = {
       direction: 'right',
       heading: 'Betrieb, Entwicklung und Beratung aus einer Hand.',
       text: 'Die co-IT.eu GmbH ist aus der Verbindung von IT-Betrieb, Softwareentwicklung und Beratung entstanden. Genau diese Mischung prägt bis heute unsere Arbeit: Wir denken nicht nur in Tickets, nicht nur in Code und nicht nur in Strategiefolien - sondern in funktionierenden Lösungen für reale Unternehmensprozesse.',
-      image: createImage('Unternehmen', teamImage)
+      image: createImage('Über uns')
     },
     {
       direction: 'left',

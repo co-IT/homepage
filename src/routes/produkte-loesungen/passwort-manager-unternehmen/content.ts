@@ -1,7 +1,5 @@
 import type { PageContent } from '~/components/article-page';
-import { createBackgroundImage, createImage } from '~/components/article-page';
-
-const passwordManagerImage = '/img/products/passwort-manager/header.webp';
+import { createImage } from '~/components/article-page';
 
 export const passwortManagerUnternehmen: PageContent = {
   title: 'co-IT - Passwort-Manager für Unternehmen',
@@ -9,21 +7,20 @@ export const passwortManagerUnternehmen: PageContent = {
     'Sicheres Passwort-Management für Teams und Organisationen auf Basis von Vaultwarden mit Einführung, Struktur und Schulung.',
   headerHeading: 'Passwort-Manager für Unternehmen',
   headerSubheading: 'Zugänge sicher verwalten',
-  backgroundImage: createBackgroundImage(
-    'Passwort-Manager für Unternehmen',
-    passwordManagerImage
-  ),
-  contentHeading:
-    'Sicheres Passwort-Management für Teams und Organisationen',
+  backgroundImage: {
+    source: '/img/article-pages/passwort-management-digitale-identitaeten-detail.webp',
+    alt: 'IT-Sicherheitsberater und Ansprechpartnerin pruefen Passwort-Tresore, Zugangsdaten und eine Zwei-Faktor-Bestaetigung an Laptop und Smartphone.'
+  },
+  contentHeading: 'Sicheres Passwort-Management für Teams und Organisationen',
   articles: [
     {
       direction: 'right',
       heading: 'Digitale Identitäten sicher im Griff.',
       text: 'Wiederverwendete, zu kurze oder im Browser gespeicherte Passwörter sind kein kleines Komfortproblem - sie sind ein Geschäftsrisiko. Ein professioneller Passwort-Manager reduziert die Gefahr kompromittierter Zugangsdaten.',
-      image: createImage(
-        'Passwort-Manager für Unternehmen',
-        passwordManagerImage
-      )
+      image: {
+        src: '/img/article-pages/passwort-management-digitale-identitaeten-detail.webp',
+        alt: 'IT-Sicherheitsberater und Ansprechpartnerin pruefen Passwort-Tresore, Zugangsdaten und eine Zwei-Faktor-Bestaetigung an Laptop und Smartphone.'
+      }
     },
     {
       direction: 'left',

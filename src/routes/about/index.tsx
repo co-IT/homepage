@@ -12,8 +12,8 @@ export default component$(() => {
       heading: 'Für Veränderungen begeistern',
       text: 'Das Meistern neuer Herausforderungen sehen wir als größte Hürde für kleine und mittelständische Unternehmen. Deshalb wollen wir helfen Veränderung als Chance wahrzunehmen und Erneuerungen zu etwas Positivem machen. Uns prägen Werte wie Pflichtgefühl und Kollegialität. Daher gehört der ehrliche und verbindliche Handschlag für unsere Mitarbeiter auch in der digitalen Welt dazu.',
       image: {
-        src: '/img/about/flip-chart-session.webp',
-        alt: 'article'
+        src: '/img/article-pages/team-solution-planning.webp',
+        alt: 'Team plant gemeinsam Veränderungen und nächste Schritte.'
       }
     },
     {
@@ -21,8 +21,8 @@ export default component$(() => {
       heading: 'Zusammen mehr erreichen',
       text: 'Wir haben den Anspruch Ihnen Spitzenleistungen zu bieten. Uns ist bewusst, dass es dafür eine partnerschaftliche Zusammenarbeit auf Augenhöhe braucht. Die Technologie kommt dabei zum Schluss. Zuerst analysieren wir daher gemeinsam Ihre fachlichen Bedürfnisse und unternehmensspezifischen Hintergrund. Erst im Anschluss bringen wir unser technisches Tiefen- und prozessuales Breitenwissen ein, um Ihre Geschäftsprozesse bestmöglich umzusetzen.\n Unsere Philosophie ist darauf ausgerichtet Qualitätskriterien für modernes, effektives und angenehmes Arbeiten umzusetzen, damit wir in einem kontinuierlichen Verbesserungsprozess die Weichen sukzessive auf nachhaltige, erfolgreiche Veränderung stellen. Regelmäßig bedarf es dafür nicht nur das Wissen darüber, was funktioniert, sondern eben auch was nicht funktioniert.',
       image: {
-        src: '/img/about/team-waling-in-the-nature.webp',
-        alt: 'article'
+        src: '/img/article-pages/project-team-table-planning.webp',
+        alt: 'Team arbeitet gemeinsam an einer Lösung am Tisch.'
       }
     },
     {
@@ -30,8 +30,8 @@ export default component$(() => {
       heading: 'Uns prägt Faszination',
       text: 'Speziellen Wert legen wir deshalb auf die Auswahl unserer Mitarbeiter. Wir wissen, dass Faszination und Leidenschaft zu Höchstleistungen motivieren und wo diese sind, ist Kollegialität auch nicht weit. Die gute Zusammenarbeit hat besondere Vorteile für Sie: Lösungen können entlang der gesamten Wertschöpfungskette entwickelt werden. Der Übergang von der Prozessanalyse über das Bereitstellen der zuverlässigen Infrastruktur bis hin zur individuellen Softwareentwicklung geschieht nahtlos und liefert Ihnen einen echten Mehrwert.',
       image: {
-        src: '/img/about/team-reviewing-a-solution.webp',
-        alt: 'article'
+        src: '/img/article-pages/technology-stack-review.webp',
+        alt: 'Team prüft eine technische Lösung gemeinsam.'
       }
     }
   ];
@@ -56,8 +56,7 @@ export const head: DocumentHead = {
     },
     {
       name: 'keywords',
-      content:
-        'Über uns, Mut, Kollegialität, Hingabe, Veränderungen, IT-Welt, Positiv'
+      content: 'Über uns, Mut, Kollegialität, Hingabe, Veränderungen, IT-Welt, Positiv'
     }
   ],
   frontmatter: {

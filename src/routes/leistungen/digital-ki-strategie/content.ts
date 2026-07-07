@@ -8,14 +8,16 @@ export const digitalKiStrategie: PageContent = {
   headerHeading: 'Digital- & KI-Strategie',
   headerSubheading: 'KI sinnvoll nutzen',
   backgroundImage: createBackgroundImage('Digital- und KI-Strategie'),
-  contentHeading:
-    'Digital- und KI-Strategie für Wachstum, Effizienz und Modernisierung',
+  contentHeading: 'Digital- und KI-Strategie für Wachstum, Effizienz und Modernisierung',
   articles: [
     {
       direction: 'right',
       heading: 'KI sinnvoll einsetzen statt nur ausprobieren.',
       text: 'Viele Unternehmen experimentieren mit KI-Tools, ohne zu wissen, wo sie wirklich Wert schaffen. Wir helfen Ihnen, sinnvolle Einsatzbereiche auf Basis Ihrer Prozesse, Datengrundlage und strategischen Ziele zu bewerten - nicht auf Basis von Hype.',
-      image: createImage('Digital- und KI-Strategie')
+      image: {
+        src: '/img/article-pages/ai-strategy-workshop.webp',
+        alt: 'Beratungsteam bespricht KI-Einsatzbereiche in einem Workshop.'
+      }
     },
     {
       direction: 'left',

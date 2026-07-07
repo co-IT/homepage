@@ -9,18 +9,14 @@ export const cyberAwarenessPortal: PageContent = {
     'Awareness-Trainings, Prüfungen, Zertifikate und Phishing-Simulationen in einer Plattform für messbares Sicherheitsbewusstsein.',
   headerHeading: 'Cyber-Awareness-Portal',
   headerSubheading: 'Awareness und Phishing-Simulationen',
-  backgroundImage: createBackgroundImage(
-    'Cyber-Awareness-Portal',
-    cyberPortalImage
-  ),
-  contentHeading:
-    'Awareness-Trainings und Phishing-Simulationen in einer Plattform',
+  backgroundImage: createBackgroundImage('Cyber-Awareness-Portal', cyberPortalImage),
+  contentHeading: 'Awareness-Trainings und Phishing-Simulationen in einer Plattform',
   articles: [
     {
       direction: 'right',
       heading: 'Sensibilisierung, die im Alltag wirkt.',
       text: 'Das co-IT Cyber-Awareness-Portal bündelt Schulungen, Prüfungen, Erinnerungen und Phishing-Simulationen in einer Plattform für messbares Sicherheitsbewusstsein - automatisiert, skalierbar und mandantenfähig.',
-      image: createImage('Cyber-Awareness-Portal', cyberPortalImage)
+      image: createImage('Cyber-Awareness-Portal')
     },
     {
       direction: 'left',
