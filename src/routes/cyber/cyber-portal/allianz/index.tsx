@@ -332,18 +332,17 @@ export default component$(() => {
           <div class='flex flex-wrap items-center gap-4 rounded-3xl'>
             <section class='flex flex-wrap gap-4'>
               <span class='text-xl font-bold'>Anzahl Empfänger</span>
-              <input
-                type='number'
-                bind:value={userCountSig}
-                onKeyUp$={() => {
-                  if (+userCountSig.value < 0) {
+                <input
+                  type='number'
+                  bind:value={userCountSig}
+                  onKeyUp$={() => {
+                    if (+userCountSig.value < 0) {
                     userCountSig.value = '1';
                   }
                 }}
-                required
-                value='10'
-                min='1'
-                max='6000'
+                  required
+                  min='1'
+                  max='6000'
                 class='border-b border-secondary-900 text-center'
               />
             </section>

@@ -1,5 +1,4 @@
 import { component$ } from '@builder.io/qwik';
-import { LinkCallToAction } from '../link-call-to-action';
 export const TeamSection = component$(() => {
   return (
     <div class='relative flex flex-col '>
@@ -16,11 +15,6 @@ export const TeamSection = component$(() => {
           ."
         </div>
 
-        <div class='my-12 flex justify-center'>
-          <LinkCallToAction href='http://karriere.co-it.eu/' target='_blank'>
-            Jetzt bewerben
-          </LinkCallToAction>
-        </div>
       </div>
       <div class='mx-auto max-w-[1920px] bg-secondary-900'>
         <img

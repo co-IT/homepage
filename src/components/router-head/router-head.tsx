@@ -24,13 +24,13 @@ export const RouterHead = component$(() => {
         <link key={key} {...link} />
       ))}
 
-      {head.styles.map((style, key) => (
-        <style
-          key={key}
-          {...style.props}
-          dangerouslySetInnerHTML={style.style}
-        />
-      ))}
+      {head.styles.map((style, key) => {
+        return (
+          <style key={key} {...style.props}>
+            {style.style}
+          </style>
+        );
+      })}
     </>
   );
 });

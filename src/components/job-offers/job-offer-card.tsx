@@ -1,6 +1,6 @@
 import { component$ } from '@builder.io/qwik';
-import type { JobOfferCompact } from '../../routes/career/model';
 import { LinkCallToAction } from '../link-call-to-action';
+import type { JobOfferCompact } from './job-offers-grid.props';
 
 export interface JobOfferCardProps {
   jobOffer: JobOfferCompact;
