@@ -1,5 +1,10 @@
-import type { JobOfferCompact } from '../../routes/career/model';
-
 export interface JobOffersGridProps {
   jobOffers: JobOfferCompact[];
+}
+
+export interface JobOfferCompact {
+  title: string;
+  offerUrl: string;
+  tags?: string[];
+  location: string;
 }

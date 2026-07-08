@@ -1,6 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 
-export const CareerIcon = component$(() => {
+export const WorkIcon = component$(() => {
   return (
     <svg
       width='58'
