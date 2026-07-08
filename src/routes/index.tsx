@@ -24,18 +24,26 @@ export default component$(() => {
         >
           <section q:slot='article' class='flex flex-col space-y-4'>
             <h2 class='text-xl font-bold md:text-4xl'>
-              <HeadingSegmentSecondary text='Denken Sie auch in' />
+              <HeadingSegmentSecondary text='Auf den' />
               &nbsp;
-              <HeadingSegmentSecondary800 text='ganzheitlichen Lösungen?' />
+              <HeadingSegmentSecondary800 text='Punkt.' />
+              &nbsp;
+              <HeadingSegmentSecondary text='Aber nicht nur' />
+              &nbsp;
+              <HeadingSegmentSecondary800 text='punktuell.' />
             </h2>
             <p class='pb-4 leading-7'>
-              Dann sind unsere eingespielten Teams aus "High Performern" genau
-              das Richtige für Sie. Unser Selbstverständnis geht weit über das
-              eines Softwareherstellers oder eines IT-Systemhauses hinaus: Wir
-              bieten Ihnen vollumfängliche Lösungen statt punktueller
-              Einzelleistungen.
+              Wir unterstützen Unternehmen dort, wo IT im Alltag Wirkung zeigen
+              muss: im stabilen Betrieb, bei sicheren Systemen und bei digitalen
+              Vorhaben, die nicht nur technisch funktionieren, sondern zum
+              Unternehmen passen. Dabei betrachten wir nicht nur einzelne
+              Aufgaben, sondern auch die Zusammenhänge dahinter – persönlich
+              vom ersten Handschlag an und verlässlich in der langfristigen
+              Betreuung.
             </p>
-            <LinkCallToAction href='/about'>Lösung anfragen</LinkCallToAction>
+            <LinkCallToAction href='/leistungen'>
+              Leistungen ansehen
+            </LinkCallToAction>
           </section>
         </ContentOverlapPortrait>
       </Section>
@@ -47,30 +55,57 @@ export default component$(() => {
 
       <Section backgroundColor='gray'>
         <VideoOverlapLandscape
-          youTubeVideoId='fpPjn58ONrI'
+          youTubeVideoId='QVArEtvAGsk'
           class='container mx-auto'
         >
           <section class='flex flex-col space-y-4'>
             <h2 class='text-xl font-bold md:text-4xl'>
-              <HeadingSegmentSecondary text='Machen' />
+              <HeadingSegmentSecondary text='Eine Idee auf die' />
               &nbsp;
-              <HeadingSegmentSecondary800 text='Menschen' />
-              &nbsp;
-              <HeadingSegmentSecondary text='für Sie auch den' />
-              &nbsp;
-              <HeadingSegmentSecondary800 text='Unterschied?' />
+              <HeadingSegmentSecondary800 text='Straße gebracht' />
             </h2>
             <p class='pb-4 leading-7'>
-              Dann haben wir für Sie echte Game Changer in unseren Reihen.
-              Motiviert durch den Fachkräftemangel, rekrutieren wir mit eigenen
-              HR-Spezialisten und qualitätsgetriebenem Auswahlprozess unsere
-              Talente. Dank unserer werteorientierten Unternehmenskultur und
-              unserer teamzentrierten Lösungsmentalität halten und entwickeln
-              wir unsere Mitarbeiter.
+              Wie arbeitet die Werkstatt von morgen? Bei unserem Partner, der
+              Werbas GmbH, durften wir unsere Lösungskompetenz entlang der
+              gesamten Wertschöpfungskette einbringen: von der Prozessanalyse
+              bis zur individuellen Softwareentwicklung. Heraus kam das neue
+              Werkstattmanagementsystem Werkstatt.NXT.
             </p>
-            <LinkCallToAction href='/quality'>Mehr erfahren</LinkCallToAction>
+            <LinkCallToAction href='/produkte-loesungen'>
+              Mehr zu Produkten & Lösungen
+            </LinkCallToAction>
           </section>
         </VideoOverlapLandscape>
+      </Section>
+
+      <div class='md:mb-48'></div>
+
+      <Section>
+        <ContentOverlapPortrait
+          image={{
+            source: '/img/article-pages/mittelstand-it-consulting.webp',
+            alternateText:
+              'IT-Berater trifft einen regionalen Kunden in einem Unternehmensbüro.'
+          }}
+        >
+          <section q:slot='article' class='flex flex-col space-y-4'>
+            <h2 class='text-xl font-bold md:text-4xl'>
+              <HeadingSegmentSecondary text='IT, die zu Ihrer' />
+              &nbsp;
+              <HeadingSegmentSecondary800 text='Branche passt.' />
+            </h2>
+            <p class='pb-4 leading-7'>
+              Ob Handwerk, Gesundheitswesen, Großhandel, Versicherung,
+              Lohnfertigung oder Dienstleistung: Gute IT beginnt mit Verständnis
+              für Abläufe, Risiken und Prioritäten. Deshalb betrachten wir
+              Technik immer im Kontext Ihrer Branche und nicht nur als einzelne
+              Maßnahme.
+            </p>
+            <LinkCallToAction href='/branchen'>
+              Branchen ansehen
+            </LinkCallToAction>
+          </section>
+        </ContentOverlapPortrait>
       </Section>
     </>
   );
