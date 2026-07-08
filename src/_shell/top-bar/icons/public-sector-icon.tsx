@@ -2,10 +2,15 @@ import { component$ } from '@builder.io/qwik';
 
 export const PublicSectorIcon = component$(() => {
   return (
-    <svg width='58' height='58' viewBox='0 0 58 58' fill='none' xmlns='http://www.w3.org/2000/svg'>
-      <path d='M29 4L53 16V22H5V16L29 4Z' fill='#02024D' />
-      <path d='M10 26H17V45H10V26ZM23 26H30V45H23V26ZM36 26H43V45H36V26Z' fill='#02024D' />
-      <path d='M6 48H52V54H6V48Z' fill='#02024D' />
+    <svg xmlns='http://www.w3.org/2000/svg' width='58' height='58' viewBox='0 0 24 24' fill='none'>
+      <path
+        fill='none'
+        stroke='#02024D'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        stroke-width='2'
+        d='M10 18v-7m1.12-8.802a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949zM14 18v-7m4 7v-7M3 22h18M6 18v-7'
+      />
     </svg>
   );
 });

@@ -14,12 +14,9 @@ export const TopBar = component$(() => {
         document:onScroll$={() => {
           changeBgSig.value = window.scrollY > 5;
         }}
-        class={[
-          'fixed z-50 w-full p-3 transition duration-300',
-          changeBgSig.value ? 'bg-secondary-950' : ''
-        ]}
+        class={['fixed z-50 w-full p-3 transition duration-300', changeBgSig.value ? 'bg-secondary-950' : '']}
       >
-        <section class='container mx-auto flex justify-center'>
+        <section class='container mx-auto flex items-center justify-center'>
           <div class='mr-auto'>
             <Logo />
           </div>

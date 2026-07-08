@@ -1,37 +1,35 @@
 import type { QwikIntrinsicElements } from '@builder.io/qwik';
 import { component$ } from '@builder.io/qwik';
 
-const iconStrokeProps = {
-  fill: 'none',
-  stroke: 'currentColor',
-  strokeLinecap: 'round',
-  strokeLinejoin: 'round',
-  strokeWidth: '1.75'
-} as const;
-
-const CalendarOutlineIcon = (props: QwikIntrinsicElements['svg']) => (
-  <svg viewBox='0 0 24 24' aria-hidden='true' {...props}>
-    <rect {...iconStrokeProps} x='3.5' y='5.25' width='17' height='15.25' rx='2.5' />
-    <path {...iconStrokeProps} d='M7.5 3.25V7.25' />
-    <path {...iconStrokeProps} d='M16.5 3.25V7.25' />
-    <path {...iconStrokeProps} d='M3.5 9.25H20.5' />
-    <path {...iconStrokeProps} d='M8.25 14.5L10.75 17L15.75 12' />
+const CalendarFilledIcon = (props: QwikIntrinsicElements['svg']) => (
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true' {...props}>
+    <g fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'>
+      <path d='M8 2v4m8-4v4' />
+      <rect width='18' height='18' x='3' y='4' rx='2' />
+      <path d='M3 10h18M9 16l2 2l4-4' />
+    </g>
   </svg>
 );
 
-const PhoneOutlineIcon = (props: QwikIntrinsicElements['svg']) => (
-  <svg viewBox='0 0 24 24' aria-hidden='true' {...props}>
+const PhoneFilledIcon = (props: QwikIntrinsicElements['svg']) => (
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true' {...props}>
     <path
-      {...iconStrokeProps}
-      d='M2.25 6.75C2.25 15.035 8.964 21.75 17.25 21.75H18.75C19.371 21.75 19.875 21.246 19.875 20.625L20.391 13.365C20.435 12.744 19.931 12.24 19.31 12.24L16.588 11.333C16.03 11.147 15.42 11.31 15.03 11.724L13.393 13.361C11.712 12.68 10.32 11.288 9.639 9.607L11.276 7.97C11.69 7.58 11.853 6.97 11.667 6.412L10.76 3.69C10.76 3.069 10.256 2.565 9.635 2.609L3.375 3.125C2.754 3.169 2.25 3.673 2.25 4.294V6.75Z'
+      fill='none'
+      stroke='currentColor'
+      stroke-linecap='round'
+      stroke-linejoin='round'
+      stroke-width='2'
+      d='M13 2a9 9 0 0 1 9 9m-9-5a5 5 0 0 1 5 5m-4.168 5.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384'
     />
   </svg>
 );
 
-const MailOutlineIcon = (props: QwikIntrinsicElements['svg']) => (
-  <svg viewBox='0 0 24 24' aria-hidden='true' {...props}>
-    <rect {...iconStrokeProps} x='3.5' y='5.5' width='17' height='13' rx='2.5' />
-    <path {...iconStrokeProps} d='M4.25 6.75L12 12.25L19.75 6.75' />
+const MailFilledIcon = (props: QwikIntrinsicElements['svg']) => (
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true' {...props}>
+    <g fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'>
+      <path d='m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7' />
+      <rect width='20' height='16' x='2' y='4' rx='2' />
+    </g>
   </svg>
 );
 
@@ -42,7 +40,7 @@ const contactActions = [
     buttonLabel: 'Termin buchen',
     href: 'https://calendly.com/uli-armbruster/videokonferenz-30min',
     external: true,
-    icon: CalendarOutlineIcon
+    icon: CalendarFilledIcon
   },
   {
     title: 'Anrufen',
@@ -50,7 +48,7 @@ const contactActions = [
     buttonLabel: 'Jetzt anrufen',
     href: 'tel:+49721935163052',
     external: false,
-    icon: PhoneOutlineIcon
+    icon: PhoneFilledIcon
   },
   {
     title: 'E-Mail schreiben',
@@ -58,7 +56,7 @@ const contactActions = [
     buttonLabel: 'E-Mail senden',
     href: 'mailto:angebot@co-IT.eu',
     external: false,
-    icon: MailOutlineIcon
+    icon: MailFilledIcon
   }
 ] as const;
 

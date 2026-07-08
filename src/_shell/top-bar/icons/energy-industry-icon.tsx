@@ -2,10 +2,15 @@ import { component$ } from '@builder.io/qwik';
 
 export const EnergyIndustryIcon = component$(() => {
   return (
-    <svg width='58' height='58' viewBox='0 0 58 58' fill='none' xmlns='http://www.w3.org/2000/svg'>
-      <path d='M31 3L12 31H27L22 55L46 23H31V3Z' fill='#02024D' />
-      <path d='M7 48H18V54H7V48Z' fill='#02024D' />
-      <path d='M40 48H51V54H40V48Z' fill='#02024D' />
+    <svg xmlns='http://www.w3.org/2000/svg' width='58' height='58' viewBox='0 0 24 24' fill='none'>
+      <path
+        fill='none'
+        stroke='#02024D'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        stroke-width='2'
+        d='M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z'
+      />
     </svg>
   );
 });
