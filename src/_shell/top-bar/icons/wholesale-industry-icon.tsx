@@ -2,9 +2,12 @@ import { component$ } from '@builder.io/qwik';
 
 export const WholesaleIndustryIcon = component$(() => {
   return (
-    <svg width='58' height='58' viewBox='0 0 58 58' fill='none' xmlns='http://www.w3.org/2000/svg'>
-      <path d='M6 12H24V28H6V12ZM34 12H52V28H34V12ZM20 32H38V50H20V32Z' fill='#02024D' />
-      <path d='M24 20H34V24H24V20ZM29 28H33V32H29V28ZM14 28H18V41H20V45H14V28Z' fill='#02024D' />
+    <svg xmlns='http://www.w3.org/2000/svg' width='58' height='58' viewBox='0 0 24 24' fill='none'>
+      <g fill='none' stroke='#02024D' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'>
+        <path d='M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2m10 0H9m10 0h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14' />
+        <circle cx='17' cy='18' r='2' />
+        <circle cx='7' cy='18' r='2' />
+      </g>
     </svg>
   );
 });

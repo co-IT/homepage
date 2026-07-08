@@ -2,9 +2,12 @@ import { component$ } from '@builder.io/qwik';
 
 export const TechnologyPartnerIcon = component$(() => {
   return (
-    <svg width='58' height='58' viewBox='0 0 58 58' fill='none' xmlns='http://www.w3.org/2000/svg'>
-      <path d='M17 8H24V20H17V8ZM34 8H41V20H34V8ZM18 20H40C40 28.3 35.8 34.2 30 36.2V45H43V53H15V45H28V36.2C22.2 34.2 18 28.3 18 20Z' fill='#02024D' />
-      <path d='M5 24H18V30H5V24ZM40 24H53V30H40V24Z' fill='#02024D' />
+    <svg xmlns='http://www.w3.org/2000/svg' width='58' height='58' viewBox='0 0 24 24' fill='none'>
+      <g fill='none' stroke='#02024D' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'>
+        <path d='m11 17l2 2a1 1 0 1 0 3-3' />
+        <path d='m14 14l2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4' />
+        <path d='m21 3l1 11h-2M3 3L2 14l6.5 6.5a1 1 0 1 0 3-3M3 4h8' />
+      </g>
     </svg>
   );
 });

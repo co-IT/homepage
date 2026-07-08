@@ -2,9 +2,15 @@ import { component$ } from '@builder.io/qwik';
 
 export const ManufacturingIndustryIcon = component$(() => {
   return (
-    <svg width='58' height='58' viewBox='0 0 58 58' fill='none' xmlns='http://www.w3.org/2000/svg'>
-      <path d='M5 53V24L19 31V24L33 31V11H45V53H5ZM12 39V45H18V39H12ZM24 39V45H30V39H24ZM36 39V45H42V39H36Z' fill='#02024D' />
-      <path d='M46 6H34L36 2H44L46 6Z' fill='#02024D' />
+    <svg xmlns='http://www.w3.org/2000/svg' width='58' height='58' viewBox='0 0 24 24' fill='none'>
+      <path
+        fill='none'
+        stroke='#02024D'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        stroke-width='2'
+        d='M12 16h.01M16 16h.01M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2zm5-3h.01'
+      />
     </svg>
   );
 });
