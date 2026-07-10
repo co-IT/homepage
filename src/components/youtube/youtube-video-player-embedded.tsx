@@ -6,6 +6,7 @@ import Thumb from '~/media/youtube-player/thumb.webp?jsx';
 export interface YoutubeVideoPlayerEmbeddedProps {
   youTubeVideoId: string;
   class?: string;
+  placeholderImageSrc?: string;
 }
 
 export const YoutubeVideoPlayerEmbedded = component$(
@@ -31,12 +32,23 @@ export const YoutubeVideoPlayerEmbedded = component$(
           <iframe
             loading='lazy'
             src={`https://www.youtube-nocookie.com/embed/${props.youTubeVideoId}`}
-            class={`mx-auto mb-5 aspect-video border-0 ${props.class} bg-black`}
+            class={`block aspect-video w-full border-0 ${props.class ?? ''}`}
           />
         ) : (
-          <div class='relative'>
-            <Thumb class='mx-auto' />
-            <div class='absolute left-0 top-0 mx-auto mb-5 grid aspect-video h-full w-full place-items-center content-center gap-y-6 border-0 bg-black/30 text-white backdrop-blur-md'>
+          <div class='relative overflow-hidden bg-black'>
+            {props.placeholderImageSrc ? (
+              <img
+                src={props.placeholderImageSrc}
+                alt=''
+                aria-hidden='true'
+                width='1322'
+                height='683'
+                class='block aspect-video w-full scale-[1.02] object-cover blur-[2px]'
+              />
+            ) : (
+              <Thumb class='block w-full' />
+            )}
+            <div class='absolute inset-0 grid place-items-center content-center gap-y-6 bg-black/30 text-white backdrop-blur-md'>
               <p class='mb-4 px-6 text-center font-bold'>
                 Durch das Abspielen von Videos stimmen Sie den{' '}
                 <a

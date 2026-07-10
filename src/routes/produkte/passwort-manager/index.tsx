@@ -1,5 +1,10 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
+import { VideoOverlapLandscape } from '~/components/content-overlap';
+import {
+  HeadingSegmentSecondary,
+  HeadingSegmentSecondary800
+} from '~/components/heading-segment';
 import { CheckCurvedIcon, LockCheckCurvedIcon } from '~/components/icons';
 import { LinkCallToAction } from '~/components/link-call-to-action';
 import { Section } from '~/components/section';
@@ -83,6 +88,11 @@ const videos: YouTubeVideo[] = [
   }
 ];
 
+const featuredVideo = {
+  id: 'O-3f1oCZJfU',
+  title: 'Geführter Rundgang'
+};
+
 const sendFeatures = [
   {
     heading: 'Löschdatum festlegen',
@@ -109,6 +119,37 @@ const sendFeatures = [
 export default component$(() => {
   return (
     <>
+      <Section id='videos'>
+        <div class='grid gap-8'>
+          <VideoOverlapLandscape
+            youTubeVideoId={featuredVideo.id}
+            placeholderImageSrc='/img/products/passwort-manager/video-placeholder.png'
+            class='container mx-auto'
+          >
+            <section class='flex flex-col space-y-6'>
+              <h3 class='max-w-4xl text-3xl font-bold leading-tight md:text-5xl'>
+                <HeadingSegmentSecondary text='Passwort-Manager in der' />{' '}
+                <HeadingSegmentSecondary800 text='Praxis' />
+              </h3>
+              <p class='max-w-4xl text-lg leading-9 text-secondary-900'>
+                In unserem geführten Rundgang zeigen wir, wie geschäftliche
+                Zugänge zentral, sicher und nachvollziehbar verwaltet werden.
+                Anhand typischer Alltagssituationen sehen Sie, wie Passwörter,
+                sensible Informationen und Berechtigungen sauber organisiert
+                werden: vom Onboarding über sichere Freigaben bis zum
+                Offboarding. So wird aus einzelnen Zugangsdaten ein klar
+                geregelter und sicherer Unternehmensprozess.
+              </p>
+              <div>
+                <LinkCallToAction href='/contact'>
+                  Passwort-Manager anfragen
+                </LinkCallToAction>
+              </div>
+            </section>
+          </VideoOverlapLandscape>
+        </div>
+      </Section>
+
       <Section id='sicherheit_trifft_einfachheit'>
         <div class='flex flex-wrap items-start gap-8'>
           <section>
@@ -244,18 +285,6 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section id='videos'>
-        <div class='grid gap-8'>
-          <header>
-            <h2 class='text-4xl font-bold'>
-              <a href='#videos'>Demos unserer Lösung</a>
-            </h2>
-          </header>
-
-          <YouTubeVideoGrid videos={videos} />
-        </div>
-      </Section>
-
       <Section
         id='zusatzfunktion_sichere_datenuebermittlung'
         backgroundColor='gray'
@@ -298,6 +327,13 @@ export default component$(() => {
               </div>
             ))}
           </div>
+        </div>
+      </Section>
+
+      <Section>
+        <div class='grid gap-4'>
+          <h3 class='text-2xl font-bold'>Weitere Demos</h3>
+          <YouTubeVideoGrid videos={videos} />
         </div>
       </Section>
     </>
