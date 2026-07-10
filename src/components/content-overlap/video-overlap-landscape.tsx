@@ -9,19 +9,25 @@ import { YoutubeVideoPlayerEmbedded } from '../youtube/youtube-video-player-embe
  */
 
 export const VideoOverlapLandscape = component$(
-  (props: { youTubeVideoId: string } & QwikIntrinsicElements['div']) => {
-    const { youTubeVideoId, ...divProps } = props;
+  (
+    props: {
+      youTubeVideoId: string;
+      placeholderImageSrc?: string;
+    } & QwikIntrinsicElements['div']
+  ) => {
+    const { youTubeVideoId, placeholderImageSrc, ...divProps } = props;
     return (
       <div {...divProps}>
         <article class='grid-grid-rows-3 grid auto-rows-min md:grid-cols-8'>
           {/* Text Slot */}
-          <div class='z-10 row-start-3 mx-3 -translate-y-[11em] self-center bg-white pb-10 pl-5 pr-5 pt-10 drop-shadow-2xl md:col-span-6 md:col-start-3 md:row-start-1 md:-translate-y-0 md:p-14 xl:-translate-x-20'>
+          <div class='z-10 row-start-3 mx-3 -translate-y-[11em] self-center bg-white pb-10 pl-5 pr-5 pt-10 drop-shadow-2xl md:mx-0 md:col-span-6 md:col-start-3 md:row-start-1 md:-translate-y-0 md:p-14 xl:-translate-x-20'>
             <Slot></Slot>
           </div>
           {/* Video */}
           <div class='z-20 row-start-1 aspect-video w-full -translate-y-8 border-0 md:col-span-6 md:col-start-3 md:row-start-2 md:-translate-x-8 xl:-translate-x-28'>
             <YoutubeVideoPlayerEmbedded
               youTubeVideoId={youTubeVideoId}
+              placeholderImageSrc={placeholderImageSrc}
               class='w-full'
             ></YoutubeVideoPlayerEmbedded>
           </div>
