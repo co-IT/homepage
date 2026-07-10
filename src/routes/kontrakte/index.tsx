@@ -58,6 +58,12 @@ export default component$(() => {
 
 export const head: DocumentHead = {
   title: 'co-IT - Kontrakte',
+  meta: [
+    {
+      name: 'robots',
+      content: 'noindex,nofollow'
+    }
+  ],
 
   frontmatter: {
     header: {

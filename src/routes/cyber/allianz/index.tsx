@@ -276,6 +276,12 @@ export default component$(() => {
 
 export const head: DocumentHead = {
   title: 'co-IT - Ihre Marke als Cyber-Produkt',
+  meta: [
+    {
+      name: 'robots',
+      content: 'noindex,nofollow'
+    }
+  ],
 
   frontmatter: {
     header: {

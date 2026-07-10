@@ -278,6 +278,10 @@ export const head: DocumentHead = {
   title: 'co-IT - Ihre Marke, Ihr Cyber-Produkt!',
   meta: [
     {
+      name: 'robots',
+      content: 'noindex,nofollow'
+    },
+    {
       name: 'description',
       content:
         'Ihr Portal für individuelle digitale Sicherheit. Praxisrelevante Kurse und erstklassige Phishing-Simulationen - auf Sie zugeschnitten und mit Ihrem Branding.'

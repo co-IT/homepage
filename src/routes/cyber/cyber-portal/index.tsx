@@ -507,6 +507,10 @@ export const head: DocumentHead = {
   title: 'co-IT - Cyber Portal: Stärken Sie Ihre digitale Sicherheit!',
   meta: [
     {
+      name: 'robots',
+      content: 'noindex,nofollow'
+    },
+    {
       name: 'description',
       content:
         'Mehr digitale Sicherheit durch praxisrelevantes Wissen und hochwertige Phishing-Simulationen, um sich in der digitalen Welt sicher zu fühlen und zu sein.'
