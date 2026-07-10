@@ -1,13 +1,3 @@
 User-agent: *
-Disallow: /kontrakte/
-Disallow: /cyber/cyber-portal/
-Disallow: /cyber/cyber-portal/allianz/
-Disallow: /cyber/cyber-portal/gesundheitswesen/
-Disallow: /cyber/ihre-marke/
-Disallow: /cyber/phishing/
-Disallow: /cyber/allianz/
-Disallow: /cyber/cyber-lounge/
-Disallow: /produkte/passwort-manager/
-Disallow: /cyber/cyber-portal/release-notes/
 
 Sitemap: https://www.example.de/sitemap.xml
