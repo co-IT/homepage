@@ -345,6 +345,10 @@ export const head: DocumentHead = {
   title: 'co-IT - Passwort-Manager',
   meta: [
     {
+      name: 'robots',
+      content: 'noindex,nofollow'
+    },
+    {
       name: 'description',
       content:
         'Ein zentrales Passwortmanagement, das Ihre sensiblen Daten schützt, höchste Sicherheitsansprüche erfüllt und gleichzeitig Ihre individuellen Prozesse abbildet.'
