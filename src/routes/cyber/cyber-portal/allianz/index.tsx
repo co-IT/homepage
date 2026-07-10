@@ -536,6 +536,12 @@ export default component$(() => {
 
 export const head: DocumentHead = {
   title: 'co-IT - Cyber Portal',
+  meta: [
+    {
+      name: 'robots',
+      content: 'noindex,nofollow'
+    }
+  ],
 
   frontmatter: {
     header: {
