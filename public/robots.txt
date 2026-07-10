@@ -7,5 +7,7 @@ Disallow: /cyber/ihre-marke/
 Disallow: /cyber/phishing/
 Disallow: /cyber/allianz/
 Disallow: /cyber/cyber-lounge/
+Disallow: /produkte/passwort-manager/
+Disallow: /cyber/cyber-portal/release-notes/
 
 Sitemap: https://www.example.de/sitemap.xml
