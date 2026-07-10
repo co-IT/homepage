@@ -120,13 +120,13 @@ export default component$(() => {
   return (
     <>
       <Section id='videos'>
-        <div class='grid gap-8'>
+        <div class='grid gap-4 md:gap-6'>
           <VideoOverlapLandscape
             youTubeVideoId={featuredVideo.id}
             placeholderImageSrc='/img/products/passwort-manager/video-placeholder.png'
             class='container mx-auto'
           >
-            <section class='flex flex-col space-y-6'>
+            <section class='flex flex-col space-y-4'>
               <h3 class='max-w-4xl text-3xl font-bold leading-tight md:text-5xl'>
                 <HeadingSegmentSecondary text='Passwort-Manager in der' />{' '}
                 <HeadingSegmentSecondary800 text='Praxis' />
@@ -140,17 +140,18 @@ export default component$(() => {
                 Offboarding. So wird aus einzelnen Zugangsdaten ein klar
                 geregelter und sicherer Unternehmensprozess.
               </p>
-              <div>
-                <LinkCallToAction href='/contact'>
-                  Passwort-Manager anfragen
-                </LinkCallToAction>
-              </div>
             </section>
           </VideoOverlapLandscape>
+
+          <div class='-mt-12 flex justify-center md:-mt-16 md:ml-[calc(25%-2rem)] md:w-3/4 xl:-mt-20 xl:ml-[calc(25%-7rem)]'>
+            <LinkCallToAction href='/contact'>
+              Passwort-Manager anfragen
+            </LinkCallToAction>
+          </div>
         </div>
       </Section>
 
-      <Section id='sicherheit_trifft_einfachheit'>
+      <Section id='sicherheit_trifft_einfachheit' backgroundColor='gray'>
         <div class='flex flex-wrap items-start gap-8'>
           <section>
             <LockCheckCurvedIcon />
@@ -179,7 +180,7 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section id='so_verstehen_wir_sicherheit' backgroundColor='gray'>
+      <Section id='so_verstehen_wir_sicherheit'>
         <div class='flex flex-wrap items-start gap-8'>
           <section>
             <LockCheckCurvedIcon />
@@ -228,7 +229,7 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section id='leistungsumfang'>
+      <Section id='leistungsumfang' backgroundColor='gray'>
         <div class='grid gap-12'>
           <header class='flex items-center gap-8'>
             <h2 class='text-4xl font-bold'>
@@ -261,7 +262,7 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section id='funktionen' backgroundColor='gray'>
+      <Section id='funktionen'>
         <div class='grid gap-8'>
           <header>
             <h2 class='text-4xl font-bold'>
