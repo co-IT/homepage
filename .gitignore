@@ -9,6 +9,7 @@
 
 # Development
 node_modules
+.pnpm-store
 
 # Cache
 .cache
