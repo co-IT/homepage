@@ -5,6 +5,9 @@ on:
   push:
     branches: ['beta']
 
+env:
+  ORIGIN: https://beta.co-IT.eu
+
 jobs:
   deploy:
     name: 🎉 Deploy
@@ -28,6 +31,8 @@ jobs:
         run: pnpm install
 
       - name: 🛠️ Build app
+        env:
+          ORIGIN: ${{ env.ORIGIN }}
         run: pnpm build --prod
 
       - name: 🎨 Check formatting
