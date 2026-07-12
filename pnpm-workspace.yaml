@@ -2,7 +2,7 @@ allowBuilds:
   esbuild: true
   sharp: true
 
-minimumReleaseAge: 0
+minimumReleaseAge: 1440 #24h
 
 supportedArchitectures:
   os:
