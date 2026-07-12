@@ -3,6 +3,8 @@ import { resolve } from 'node:path';
 import { staticAdapter } from '@builder.io/qwik-city/adapters/static/vite';
 import { extendConfig } from '@builder.io/qwik-city/vite';
 import baseConfig from '../../vite.config';
+import { getOrigin } from './get-origin';
+import { robotsTxtPlugin } from './robots-txt-plugin';
 
 const sitemapExcludedPaths = new Set([
   '/kontrakte/',
@@ -63,6 +65,8 @@ const filterSitemapPlugin = () => {
 };
 
 export default extendConfig(baseConfig, () => {
+  const origin = getOrigin();
+
   return {
     build: {
       ssr: true,
@@ -72,7 +76,11 @@ export default extendConfig(baseConfig, () => {
     },
     plugins: [
       staticAdapter({
-        origin: 'https://co-IT.eu'
+        origin
+      }),
+      robotsTxtPlugin({
+        userAgent: '*',
+        sitemap: `${origin}/sitemap.xml`
       }),
       filterSitemapPlugin()
     ]

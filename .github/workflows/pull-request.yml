@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
   pull_request:
 
+env:
+  ORIGIN: https://beta.co-IT.eu
+
 jobs:
   check:
     name: 🕵️‍♂️ Check
@@ -27,6 +30,8 @@ jobs:
         run: pnpm install
 
       - name: 🛠️ Build app
+        env:
+          ORIGIN: ${{ env.ORIGIN }}
         run: pnpm build --prod
 
       - name: 🎨 Check formatting
