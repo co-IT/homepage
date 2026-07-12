@@ -4,3 +4,6 @@
 *.
 dist
 node_modules
+package-lock.yaml
+skills-lock.json
+.agents/skills
