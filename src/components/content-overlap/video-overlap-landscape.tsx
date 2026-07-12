@@ -20,7 +20,7 @@ export const VideoOverlapLandscape = component$(
       <div {...divProps}>
         <article class='grid-grid-rows-3 grid auto-rows-min md:grid-cols-8'>
           {/* Text Slot */}
-          <div class='z-10 row-start-3 mx-3 -translate-y-[11em] self-center bg-white pb-10 pl-5 pr-5 pt-10 drop-shadow-2xl md:mx-0 md:col-span-6 md:col-start-3 md:row-start-1 md:-translate-y-0 md:p-14 xl:-translate-x-20'>
+          <div class='z-10 row-start-3 mx-3 -translate-y-[11em] self-center bg-white pb-10 pl-5 pr-5 pt-10 drop-shadow-2xl md:col-span-6 md:col-start-3 md:row-start-1 md:mx-0 md:-translate-y-0 md:p-14 xl:-translate-x-20'>
             <Slot></Slot>
           </div>
           {/* Video */}

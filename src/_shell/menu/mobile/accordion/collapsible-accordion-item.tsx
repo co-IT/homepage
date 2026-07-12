@@ -11,49 +11,43 @@ type CollapsibleAccordionItemProps = {
   onItemClick$?: QRL<() => void>;
 };
 
-export const CollapsibleAccordionItem = component$(
-  ({ key, item, onItemClick$ }: CollapsibleAccordionItemProps) => {
-    return (
-      <Accordion.Item key={key} class='border-b'>
-        <Accordion.Header as='h3'>
-          <Accordion.Trigger class='group flex w-full items-center justify-between py-4 text-left'>
-            <span class='font-bold text-secondary-900'>{item.text}</span>
-            <span class='pl-2'>
-              <CaretIcon class='ease transition-transform duration-500 group-aria-expanded:rotate-180 group-aria-expanded:transform' />
-            </span>
-          </Accordion.Trigger>
-        </Accordion.Header>
-        <Accordion.Content class=' accordion-animation-1 overflow-hidden'>
-          <div class='grid gap-2 pb-4 pl-2'>
-            {item.path && (
-              <Link
-                href={item.path}
-                class='font-semibold text-secondary-900'
-                onClick$={() => onItemClick$?.()}
-              >
-                Übersicht
-              </Link>
-            )}
-            {item.items?.map((category, index) => (
-              <div key={`categoryItem-${index}`}>
-                <ul class='grid gap-2'>
-                  {category.items?.map((subItem, index) => (
-                    <li key={`subItem-${index}`}>
-                      <Link
-                        href={subItem.path}
-                        class='font-semibold text-secondary-900'
-                        onClick$={() => onItemClick$?.()}
-                      >
-                        {subItem.text}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </Accordion.Content>
-      </Accordion.Item>
-    );
-  }
-);
+export const CollapsibleAccordionItem = component$(({ key, item, onItemClick$ }: CollapsibleAccordionItemProps) => {
+  return (
+    <Accordion.Item key={key} class='border-b'>
+      <Accordion.Header as='h3'>
+        <Accordion.Trigger class='group flex w-full items-center justify-between py-4 text-left'>
+          <span class='font-bold text-secondary-900'>{item.text}</span>
+          <span class='pl-2'>
+            <CaretIcon class='ease transition-transform duration-500 group-aria-expanded:rotate-180 group-aria-expanded:transform' />
+          </span>
+        </Accordion.Trigger>
+      </Accordion.Header>
+      <Accordion.Content class='accordion-animation-1 overflow-hidden'>
+        <div class='grid gap-2 pb-4 pl-2'>
+          {item.path && (
+            <Link href={item.path} class='font-semibold text-secondary-900' onClick$={() => onItemClick$?.()}>
+              Übersicht
+            </Link>
+          )}
+          {item.items?.map((category, index) => (
+            <div key={`categoryItem-${index}`}>
+              <ul class='grid gap-2'>
+                {category.items?.map((subItem, index) => (
+                  <li key={`subItem-${index}`}>
+                    <Link
+                      href={subItem.path}
+                      class='font-semibold text-secondary-900'
+                      onClick$={() => onItemClick$?.()}
+                    >
+                      {subItem.text}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </Accordion.Content>
+    </Accordion.Item>
+  );
+});

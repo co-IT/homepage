@@ -1,22 +1,8 @@
 import { component$ } from '@builder.io/qwik';
 
 export const CyberLoungeLogo = component$(() => (
-  <svg
-    width='114'
-    height='51'
-    viewBox='0 0 114 51'
-    fill='none'
-    xmlns='http://www.w3.org/2000/svg'
-  >
-    <mask
-      id='mask0_1_68'
-      style='mask-type:luminance'
-      maskUnits='userSpaceOnUse'
-      x='0'
-      y='0'
-      width='114'
-      height='28'
-    >
+  <svg width='114' height='51' viewBox='0 0 114 51' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <mask id='mask0_1_68' style='mask-type:luminance' maskUnits='userSpaceOnUse' x='0' y='0' width='114' height='28'>
       <path d='M0 0H113.891V28H0V0Z' fill='white' />
     </mask>
     <g mask='url(#mask0_1_68)'>

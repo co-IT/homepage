@@ -10,20 +10,14 @@ type CollapsibleAccordionItemProps = {
   onItemClick$?: QRL<() => void>;
 };
 
-export const LinkAccordionItem = component$(
-  ({ key, item, onItemClick$ }: CollapsibleAccordionItemProps) => {
-    return (
-      <Accordion.Item class='border-b py-4' key={key}>
-        <Accordion.Header as='h3'>
-          <Link
-            href={item.path}
-            class='font-bold text-secondary-900'
-            onClick$={() => onItemClick$?.()}
-          >
-            {item.text}
-          </Link>
-        </Accordion.Header>
-      </Accordion.Item>
-    );
-  }
-);
+export const LinkAccordionItem = component$(({ key, item, onItemClick$ }: CollapsibleAccordionItemProps) => {
+  return (
+    <Accordion.Item class='border-b py-4' key={key}>
+      <Accordion.Header as='h3'>
+        <Link href={item.path} class='font-bold text-secondary-900' onClick$={() => onItemClick$?.()}>
+          {item.text}
+        </Link>
+      </Accordion.Header>
+    </Accordion.Item>
+  );
+});

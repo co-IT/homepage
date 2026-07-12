@@ -7,18 +7,11 @@ export type SectionProps = QwikIntrinsicElements['section'] & {
 
 export const Section = component$((props: SectionProps) => {
   const appearance: 'bg-white' | 'bg-gray-100' =
-    props.backgroundColor === 'white'
-      ? 'bg-white'
-      : props.backgroundColor === 'gray'
-        ? 'bg-gray-100'
-        : 'bg-white';
+    props.backgroundColor === 'white' ? 'bg-white' : props.backgroundColor === 'gray' ? 'bg-gray-100' : 'bg-white';
 
   return (
     <>
-      <section
-        id={props.id}
-        class={`${appearance} px-4  py-12 md:px-0 md:py-24`}
-      >
+      <section id={props.id} class={`${appearance} px-4 py-12 md:px-0 md:py-24`}>
         <div class='container mx-auto'>
           <Slot />
         </div>

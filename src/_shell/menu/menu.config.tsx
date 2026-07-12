@@ -229,8 +229,7 @@ export const menuConfig: MenuConfig = {
       path: '/ueber-uns',
       ad: {
         headline: 'co-IT kennenlernen',
-        description:
-          'Pragmatischer Technologiepartner für Mittelstand, IT-Betrieb, Softwareentwicklung und Beratung.',
+        description: 'Pragmatischer Technologiepartner für Mittelstand, IT-Betrieb, Softwareentwicklung und Beratung.',
         image: (
           <img
             src='/img/about/team.webp'

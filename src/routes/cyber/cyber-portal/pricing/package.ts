@@ -1,5 +1,5 @@
 export enum Package {
-    Starter = 'Starter',
-    Profi = 'Profi',
-    Experte = 'Experte'
+  Starter = 'Starter',
+  Profi = 'Profi',
+  Experte = 'Experte'
 }

@@ -3,15 +3,9 @@ import type { DocumentHead } from '@builder.io/qwik-city';
 
 import { Section } from '~/components/section';
 
-import {
-  ContentOverlapPortrait,
-  VideoOverlapLandscape
-} from '~/components/content-overlap';
+import { ContentOverlapPortrait, VideoOverlapLandscape } from '~/components/content-overlap';
 
-import {
-  HeadingSegmentSecondary,
-  HeadingSegmentSecondary800
-} from '~/components/heading-segment';
+import { HeadingSegmentSecondary, HeadingSegmentSecondary800 } from '~/components/heading-segment';
 
 import { ihreMarkeFeatures, ihreMarkeVideos } from './resources';
 
@@ -29,39 +23,31 @@ export default component$(() => {
       <Section id='hervorstechen-anderssein' backgroundColor='gray'>
         <ContentOverlapPortrait
           image={{
-            source:
-              '/img/cyber/cyber-portal/white-label/hervorstechen-anders-sein.webp',
+            source: '/img/cyber/cyber-portal/white-label/hervorstechen-anders-sein.webp',
             alternateText: '3 Holzklötze die aufeinandergestapelt sind'
           }}
         >
           <section q:slot='article' class='flex flex-col space-y-4'>
             <LinkedHeading href='#hervorstechen-anderssein'>
-              <HeadingSegmentSecondary text='Hervorstechen,' />{' '}
-              <HeadingSegmentSecondary800 text='Anderssein' />
+              <HeadingSegmentSecondary text='Hervorstechen,' /> <HeadingSegmentSecondary800 text='Anderssein' />
             </LinkedHeading>
             <p class='pb-4 leading-7'>
-              Was macht ihr Geschäft aus? Gehen Sie für Ihre Kunden gerne einen
-              Schritt weiter als sie müssten? Gehen Sie gerne neue Wege? Haben
-              Sie innovative Produkte? Jedes Unternehmen wird für das, was es
-              auszeichnet und abhebt, als Marke wahrgenommen. Diese
-              Einzigartigkeit in der digitalen Welt auszudrücken, sollte ebenso
+              Was macht ihr Geschäft aus? Gehen Sie für Ihre Kunden gerne einen Schritt weiter als sie müssten? Gehen
+              Sie gerne neue Wege? Haben Sie innovative Produkte? Jedes Unternehmen wird für das, was es auszeichnet und
+              abhebt, als Marke wahrgenommen. Diese Einzigartigkeit in der digitalen Welt auszudrücken, sollte ebenso
               einzigartig sein.
             </p>
             <p class='pb-4 leading-7'>
-              Nutzen Sie dafür unser Cyber-Produkt: Es bietet Ihren Kunden einen
-              Raum, um nachhaltiges Praxiswissen auf verständliche Weise zu
-              erlernen, dieses mit intensiven Prüfungen und realistischen
-              Simulationen zu festigen und dabei Lernfortschritte systematisch
-              sicherzustellen.
+              Nutzen Sie dafür unser Cyber-Produkt: Es bietet Ihren Kunden einen Raum, um nachhaltiges Praxiswissen auf
+              verständliche Weise zu erlernen, dieses mit intensiven Prüfungen und realistischen Simulationen zu
+              festigen und dabei Lernfortschritte systematisch sicherzustellen.
             </p>
             <p class='pb-4 leading-7'>
-              <strong>Wir transportieren Ihre Marke auf moderne Weise</strong>,
-              indem wir unsere Lösung in ihrem firmeneigenen Branding und auf
-              Ihre Kundenbedürfnisse zugeschnitten betreiben. Erweitern Sie es
-              optional mit eigenen Inhalten oder lassen Sie uns dedizierte
-              Cyber-Werkzeuge für Ihre Anwender einbauen. Machen Sie Werbung mit
-              ihrem Cyber-Produkt, binden Sie langjährige Bestandskunden noch
-              enger oder steigern Sie Ihre Verkäufe mit kostenfreien Zugängen.
+              <strong>Wir transportieren Ihre Marke auf moderne Weise</strong>, indem wir unsere Lösung in ihrem
+              firmeneigenen Branding und auf Ihre Kundenbedürfnisse zugeschnitten betreiben. Erweitern Sie es optional
+              mit eigenen Inhalten oder lassen Sie uns dedizierte Cyber-Werkzeuge für Ihre Anwender einbauen. Machen Sie
+              Werbung mit ihrem Cyber-Produkt, binden Sie langjährige Bestandskunden noch enger oder steigern Sie Ihre
+              Verkäufe mit kostenfreien Zugängen.
             </p>
           </section>
         </ContentOverlapPortrait>
@@ -71,25 +57,20 @@ export default component$(() => {
         <VideoOverlapLandscape youTubeVideoId='KSSDqIIikvQ'>
           <section class='flex flex-col space-y-4'>
             <LinkedHeading href='#beispiel_wuerttembergische'>
-              <HeadingSegmentSecondary text='Beispiel' />{' '}
-              <HeadingSegmentSecondary800 text='Württembergische' />
+              <HeadingSegmentSecondary text='Beispiel' /> <HeadingSegmentSecondary800 text='Württembergische' />
             </LinkedHeading>
             <p class='leading-7'>
-              Die Württembergische Versicherung bietet beispielsweise allen
-              Versicherungsnehmern, die eine Cyber-Versicherung für Schäden aus
-              Ransomware-Angriffen abschließen, einen kostenlosen Zugang zum
-              „Cyber Portal“.
+              Die Württembergische Versicherung bietet beispielsweise allen Versicherungsnehmern, die eine
+              Cyber-Versicherung für Schäden aus Ransomware-Angriffen abschließen, einen kostenlosen Zugang zum „Cyber
+              Portal“.
               <br />
-              Unser Cyber-Produkt wurde in enger Absprache für die Bedarfe der
-              Versicherungsnehmer adaptiert und{' '}
-              <a href='https://wuerttembergische.co-IT.eu'>hier</a>{' '}
-              bereitgestellt. Die Württembergische verbindet dabei das
-              Notwendige mit dem Nützlichen:
-              <br /> Sie reduzieren Cyber-Risiken in den versicherten
-              Unternehmen und heben sich von anderen Versicherern ab.
+              Unser Cyber-Produkt wurde in enger Absprache für die Bedarfe der Versicherungsnehmer adaptiert und{' '}
+              <a href='https://wuerttembergische.co-IT.eu'>hier</a> bereitgestellt. Die Württembergische verbindet dabei
+              das Notwendige mit dem Nützlichen:
+              <br /> Sie reduzieren Cyber-Risiken in den versicherten Unternehmen und heben sich von anderen
+              Versicherern ab.
               <br />
-              Schauen Sie selbst, was die Württembergische ihren
-              Versicherungsnehmern bietet.
+              Schauen Sie selbst, was die Württembergische ihren Versicherungsnehmern bietet.
             </p>
           </section>
         </VideoOverlapLandscape>
@@ -102,27 +83,19 @@ export default component$(() => {
           </LinkedHeading>
 
           <p class='mx-auto max-w-xl leading-7'>
-            Unsere Cyber-Plattform bietet Ihnen von Haus aus{' '}
-            <strong>6 Kurse</strong> mit praktischen Fähigkeiten und
-            essenziellem Wissen für den sicheren Umgang in der digitalen Welt.
-            In <strong>4 Examen</strong> mit anspruchsvollen, interaktiven
-            Prüfungen können Ihre Kunden bzw. deren Mitarbeiter das Gelernte
-            festigen. Abgerundet wird die Leistung mit dem{' '}
-            <strong>Werkzeugkasten</strong>, der unter anderem die eigene
+            Unsere Cyber-Plattform bietet Ihnen von Haus aus <strong>6 Kurse</strong> mit praktischen Fähigkeiten und
+            essenziellem Wissen für den sicheren Umgang in der digitalen Welt. In <strong>4 Examen</strong> mit
+            anspruchsvollen, interaktiven Prüfungen können Ihre Kunden bzw. deren Mitarbeiter das Gelernte festigen.
+            Abgerundet wird die Leistung mit dem <strong>Werkzeugkasten</strong>, der unter anderem die eigene
             Passwortsicherheit prüfen kann.
             <br />
-            Das besondere Highlight sind unsere{' '}
-            <strong>Phishing-Simulationen</strong>, mit denen Mitarbeiter
-            kontinuierlich sensibilisiert werden. Damit können Ihre Kunden Cyber
-            Risiken erheblich reduzieren und gleichzeitig wichtige
-            IT-Richtlinien (z.B. NIS 2) umsetzen.
+            Das besondere Highlight sind unsere <strong>Phishing-Simulationen</strong>, mit denen Mitarbeiter
+            kontinuierlich sensibilisiert werden. Damit können Ihre Kunden Cyber Risiken erheblich reduzieren und
+            gleichzeitig wichtige IT-Richtlinien (z.B. NIS 2) umsetzen.
             <br />
             Machen Sie sich mit der folgenden Videoserie selbst einen Eindruck.
           </p>
-          <LinkCallToAction
-            href='https://e.co-it.eu/cyber-paket-vorstellung'
-            target='_blank'
-          >
+          <LinkCallToAction href='https://e.co-it.eu/cyber-paket-vorstellung' target='_blank'>
             Termin für Demo vereinbaren
           </LinkCallToAction>
           <YouTubeVideoGrid videos={ihreMarkeVideos} />
@@ -133,41 +106,33 @@ export default component$(() => {
         <VideoOverlapLandscape youTubeVideoId='nWwjjQj0HNw'>
           <section class='flex flex-col space-y-4'>
             <LinkedHeading href='#ihre-marke'>
-              <HeadingSegmentSecondary text='Ihre Marke,' />{' '}
-              <HeadingSegmentSecondary800 text='Ihr Geschäftsmodell' />
+              <HeadingSegmentSecondary text='Ihre Marke,' /> <HeadingSegmentSecondary800 text='Ihr Geschäftsmodell' />
             </LinkedHeading>
             <p class='leading-7'>
-              Die folgenden Beispiele sollen Ihnen als Denkanstoß dienen, wie
-              Sie Ihre Marke mit unserer Cyber-Plattform digitalisieren können:
+              Die folgenden Beispiele sollen Ihnen als Denkanstoß dienen, wie Sie Ihre Marke mit unserer Cyber-Plattform
+              digitalisieren können:
             </p>
             <p class='leading-7'>
-              <strong>Kanzleien</strong> könnten ihren Mandanten ein Produkt an
-              die Hand geben, um sie für Cyber-Risiken zu sensibilisieren.
-              Gleichzeitig ließen sich dort gezielt Ihre Inhalte zu Datenschutz
-              und Arbeitssicherheit multimedial platzieren.
+              <strong>Kanzleien</strong> könnten ihren Mandanten ein Produkt an die Hand geben, um sie für Cyber-Risiken
+              zu sensibilisieren. Gleichzeitig ließen sich dort gezielt Ihre Inhalte zu Datenschutz und
+              Arbeitssicherheit multimedial platzieren.
             </p>
             <p class='leading-7'>
-              Als <strong>Branchenverband</strong> wäre eine eigene Instanz
-              unserer Cyber-Lösung denkbar, bei der Sie Ihren Mitgliedern ein
-              effektives Werkzeug zur Einhaltung von Gesetzen und Richtlinien
-              zur Verfügung stellen. Auf unserer Seite fürs Gesundheitswesen
-              zeigen wir, wie spezifische Phishing-Simulationen und Anleitungen
-              für Apotheken aussehen könnten.
+              Als <strong>Branchenverband</strong> wäre eine eigene Instanz unserer Cyber-Lösung denkbar, bei der Sie
+              Ihren Mitgliedern ein effektives Werkzeug zur Einhaltung von Gesetzen und Richtlinien zur Verfügung
+              stellen. Auf unserer Seite fürs Gesundheitswesen zeigen wir, wie spezifische Phishing-Simulationen und
+              Anleitungen für Apotheken aussehen könnten.
             </p>
             <p class='leading-7'>
-              Als <strong>Agentur, Makler oder Vertreter</strong> kann unsere
-              Cyber-Plattform für Sie einen Weg darstellen, um sich von
-              Mitbewerbern abzuheben und einen Alleinstellungsmerkmal zu
-              schaffen.
+              Als <strong>Agentur, Makler oder Vertreter</strong> kann unsere Cyber-Plattform für Sie einen Weg
+              darstellen, um sich von Mitbewerbern abzuheben und einen Alleinstellungsmerkmal zu schaffen.
             </p>
             <p class='leading-7'>
-              Wir, die co-IT.eu GmbH, bieten unseren großen Kunden bei Abschluss
-              eines Rahmenvertrags Zugang zu unserer Cyber-Instanz namens „Cyber
-              Lounge“ an. Je nach finanziellem Umfang des Abschlusses erhalten
-              unsere Klienten rabattierte oder kostenlose Zugänge. Wir stellen
-              dort unter anderem Videokurse für die bei uns gekauften Lösungen
-              (z.B. für die Passwort-Management-Software) bereit. Zudem bieten
-              wir individuelle Auswertungen zu den Phishing-Simulationen an.
+              Wir, die co-IT.eu GmbH, bieten unseren großen Kunden bei Abschluss eines Rahmenvertrags Zugang zu unserer
+              Cyber-Instanz namens „Cyber Lounge“ an. Je nach finanziellem Umfang des Abschlusses erhalten unsere
+              Klienten rabattierte oder kostenlose Zugänge. Wir stellen dort unter anderem Videokurse für die bei uns
+              gekauften Lösungen (z.B. für die Passwort-Management-Software) bereit. Zudem bieten wir individuelle
+              Auswertungen zu den Phishing-Simulationen an.
             </p>
           </section>
         </VideoOverlapLandscape>
@@ -178,45 +143,34 @@ export default component$(() => {
           <div class='mx-auto flex flex-col items-start gap-8 rounded-md bg-white p-4 shadow-md'>
             <NoBrandLogo class='mx-auto' />
             <ProductFeatureList features={ihreMarkeFeatures} />
-            <LinkCallToAction
-              href='https://e.co-it.eu/cyber-paket-vorstellung'
-              target='_blank'
-            >
+            <LinkCallToAction href='https://e.co-it.eu/cyber-paket-vorstellung' target='_blank'>
               Termin vereinbaren
             </LinkCallToAction>
           </div>
           <section class='flex max-w-md flex-col gap-4 px-4'>
             <LinkedHeading href='#individuelle_loesung'>
-              <HeadingSegmentSecondary text='Erweitern,' />{' '}
-              <HeadingSegmentSecondary800 text='Individualisieren' />
+              <HeadingSegmentSecondary text='Erweitern,' /> <HeadingSegmentSecondary800 text='Individualisieren' />
             </LinkedHeading>
-            <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
-              Unsere Cyber-Plattform wurde so konzipiert, dass wir Ihr Corporate
-              Design darauf anwenden, es mit Ihren Inhalten füllen und es für
-              Sie und Ihre Kunden um sinnvolle Funktionen erweitern können.
+            <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80'>
+              Unsere Cyber-Plattform wurde so konzipiert, dass wir Ihr Corporate Design darauf anwenden, es mit Ihren
+              Inhalten füllen und es für Sie und Ihre Kunden um sinnvolle Funktionen erweitern können.
             </p>
-            <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
-              Fangen Sie doch mit einer Schnittstelle an, über welche Sie
-              automatisiert Kunden freischalten oder Einladungen mit
-              individuellen Rabattcodes verschicken können.
+            <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80'>
+              Fangen Sie doch mit einer Schnittstelle an, über welche Sie automatisiert Kunden freischalten oder
+              Einladungen mit individuellen Rabattcodes verschicken können.
             </p>
-            <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
-              Als nächstes könnten Sie eine Ihrer Leistungen in unserem
-              Werkzeugkasten platzieren. Bieten Sie vielleicht
-              vollautomatisierte Gutachten oder Risikobewertungen an, so
-              integrieren wir diese gerne für Sie.
+            <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80'>
+              Als nächstes könnten Sie eine Ihrer Leistungen in unserem Werkzeugkasten platzieren. Bieten Sie vielleicht
+              vollautomatisierte Gutachten oder Risikobewertungen an, so integrieren wir diese gerne für Sie.
             </p>
-            <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
-              Haben Sie relevante Inhalte für Ihre Zielgruppe, zum Beispiel weil
-              Sie Beratungsleistung erbringen, dann können wir mit Ihnen
-              gemeinsam das Wissen in Form von multimedialen Kursen einsteuern.
-              Optional können mit Ihnen Prüfungen einbauen, was z.B. bei
-              Compliance-Richtlinien sehr nützlich sein kann.
+            <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80'>
+              Haben Sie relevante Inhalte für Ihre Zielgruppe, zum Beispiel weil Sie Beratungsleistung erbringen, dann
+              können wir mit Ihnen gemeinsam das Wissen in Form von multimedialen Kursen einsteuern. Optional können mit
+              Ihnen Prüfungen einbauen, was z.B. bei Compliance-Richtlinien sehr nützlich sein kann.
             </p>
-            <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
-              In jedem Fall ist es immer möglich für Sie, ganz individuell, Ihre
-              Wünsche umzusetzen. Unser Entwicklerteam freut sich über jede
-              Herausforderung.
+            <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80'>
+              In jedem Fall ist es immer möglich für Sie, ganz individuell, Ihre Wünsche umzusetzen. Unser
+              Entwicklerteam freut sich über jede Herausforderung.
             </p>
           </section>
         </div>
@@ -225,47 +179,35 @@ export default component$(() => {
       <Section id='passwort-manager_fuer_unternehmen'>
         <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#passwort-manager_fuer_unternehmen'>
-            <HeadingSegmentSecondary text='Passwort-Manager' />{' '}
-            <HeadingSegmentSecondary800 text='für Unternehmen' />
+            <HeadingSegmentSecondary text='Passwort-Manager' /> <HeadingSegmentSecondary800 text='für Unternehmen' />
           </LinkedHeading>
 
           <p class='max-w-xl pb-4 leading-7'>
-            Neben praktischem Wissen wollen und brauchen Menschen auch smarte,
-            digitale Werkzeuge. Als Lösungsanbieter wollen wir erprobte Lösungen
-            für ganzheitliche Sicherheit anbieten. Aus unserer täglichen Arbeit
-            mit und für unsere Kunden entwickeln wir Ansätze, mit denen sich
-            betriebliche Prozesse und Richtlinien auf moderne und
-            anwenderfreundliche Art umsetzen lassen. Passend zu unserem
-            E-Learning Kurs "Endlich sichere Passwörter" und dem zugehörigen
-            Examen bieten Ihnen das passende Werkzeug.
+            Neben praktischem Wissen wollen und brauchen Menschen auch smarte, digitale Werkzeuge. Als Lösungsanbieter
+            wollen wir erprobte Lösungen für ganzheitliche Sicherheit anbieten. Aus unserer täglichen Arbeit mit und für
+            unsere Kunden entwickeln wir Ansätze, mit denen sich betriebliche Prozesse und Richtlinien auf moderne und
+            anwenderfreundliche Art umsetzen lassen. Passend zu unserem E-Learning Kurs "Endlich sichere Passwörter" und
+            dem zugehörigen Examen bieten Ihnen das passende Werkzeug.
           </p>
 
-          <LinkCallToAction href='/produkte/passwort-manager'>
-            Mehr erfahren
-          </LinkCallToAction>
+          <LinkCallToAction href='/produkte/passwort-manager'>Mehr erfahren</LinkCallToAction>
         </section>
       </Section>
 
       <Section id='sie_wollen_ihre_anwender_schulen' backgroundColor='gray'>
         <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#sie_wollen_ihre_anwender_schulen'>
-            Sie wollen <HeadingSegmentSecondary800 text='Ihre Anwender ' />{' '}
-            schulen?
+            Sie wollen <HeadingSegmentSecondary800 text='Ihre Anwender ' /> schulen?
           </LinkedHeading>
 
           <p class='max-w-xl'>
-            Für Kunden, die persönliche Schulung zu schätzen wissen, flankieren
-            wir unsere Phishing-Simulationen und unseren E-Learning Kurs "Sicher
-            per E-Mail kommunizieren" mit maßgeschneiderten Anwenderschulungen -
-            vor Ort und remote. Natürlich vermitteln wir darin Ihre
-            betriebsspezifischen Richtlinien zum Umgang mit potenziell
+            Für Kunden, die persönliche Schulung zu schätzen wissen, flankieren wir unsere Phishing-Simulationen und
+            unseren E-Learning Kurs "Sicher per E-Mail kommunizieren" mit maßgeschneiderten Anwenderschulungen - vor Ort
+            und remote. Natürlich vermitteln wir darin Ihre betriebsspezifischen Richtlinien zum Umgang mit potenziell
             schädlichen E-Mails und zum Verhalten bei einem Sicherheitsvorfall.
           </p>
 
-          <LinkCallToAction
-            href='https://e.co-IT.eu/cyber/schulung'
-            target='_blank'
-          >
+          <LinkCallToAction href='https://e.co-IT.eu/cyber/schulung' target='_blank'>
             Vereinbaren Sie einen Gesprächstermin
           </LinkCallToAction>
         </div>
@@ -288,8 +230,7 @@ export const head: DocumentHead = {
     },
     {
       name: 'keywords',
-      content:
-        'Cyber-Produkt, Digitale Sicherheit, Praxisrelevante Kurse, Phishing-Simulationen, Branding'
+      content: 'Cyber-Produkt, Digitale Sicherheit, Praxisrelevante Kurse, Phishing-Simulationen, Branding'
     }
   ],
 

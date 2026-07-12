@@ -8,8 +8,7 @@ export const leistungenOverview: PageContent = {
   headerHeading: 'Leistungen',
   headerSubheading: 'IT, Sicherheit, Software und Strategie',
   backgroundImage: createBackgroundImage('IT-Leistungen'),
-  contentHeading:
-    'IT-Leistungen für Betrieb, Sicherheit, Software und Strategie',
+  contentHeading: 'IT-Leistungen für Betrieb, Sicherheit, Software und Strategie',
   contentText:
     'IT-Probleme entstehen selten isoliert. Ein Microsoft-365-Thema berührt Sicherheit, ein Softwareprojekt den späteren Betrieb, eine Digitalstrategie die vorhandene Infrastruktur. Deshalb verbinden wir IT-Service, Managed Services, Cyber-Sicherheit, Softwareentwicklung und Beratung in einem abgestimmten Leistungsangebot für kleine und mittelständische Unternehmen.',
   articles: [

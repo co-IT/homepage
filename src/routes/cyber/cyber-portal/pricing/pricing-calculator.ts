@@ -1,4 +1,4 @@
-import { Package } from "./package";
+import { Package } from './package';
 
 export class PricingCalculator {
   public static calculatePricePerUserPerMonth(users: number, durationMonths: number, pkg: Package): number {
