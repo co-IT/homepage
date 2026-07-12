@@ -1,4 +1,4 @@
-/* eslint-disable qwik/jsx-img */
+ 
 import { component$, useSignal } from '@builder.io/qwik';
 import { Logo } from '~/components/logo';
 import { DesktopMenu } from '../menu/desktop';

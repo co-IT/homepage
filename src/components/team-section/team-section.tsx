@@ -1,4 +1,5 @@
 import { component$ } from '@builder.io/qwik';
+
 export const TeamSection = component$(() => {
   return (
     <div class='relative flex flex-col '>
@@ -18,12 +19,12 @@ export const TeamSection = component$(() => {
       </div>
       <div class='mx-auto max-w-[1920px] bg-secondary-900'>
         <img
-          class='min-h-[350px]'
+          class='min-h-[350px] w-full object-cover'
+          alt='Picture showing the whole team at co-IT'
           loading='lazy'
           src='/img/about/team.webp'
           width='1920'
           height='601'
-          alt='Picture showing the whole team at co-IT'
           style='mask-image: linear-gradient(0deg, rgba(2, 2, 52, 0.6), rgba(2, 2, 52, 0.6)); object-fit: cover;'
         />
       </div>

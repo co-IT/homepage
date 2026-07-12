@@ -86,10 +86,6 @@ export default component$(() => {
     const userCount = track(() => userCountSig.value);
     const discount = track(() => discountSig.value);
 
-    if (userCount === undefined || discount === undefined) {
-      return;
-    }
-
     updatePrices(+userCount);
 
     function updatePrices(userCount: number) {
