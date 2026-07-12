@@ -1,23 +1,10 @@
-import {
-  component$,
-  useComputed$,
-  useSignal,
-  useStore,
-  useStyles$,
-  useTask$
-} from '@builder.io/qwik';
+import { component$, useComputed$, useSignal, useStore, useStyles$, useTask$ } from '@builder.io/qwik';
 
 import { Section } from '~/components/section';
 
-import {
-  ContentOverlapPortrait,
-  VideoOverlapLandscape
-} from '~/components/content-overlap';
+import { ContentOverlapPortrait, VideoOverlapLandscape } from '~/components/content-overlap';
 
-import {
-  HeadingSegmentSecondary,
-  HeadingSegmentSecondary800
-} from '~/components/heading-segment';
+import { HeadingSegmentSecondary, HeadingSegmentSecondary800 } from '~/components/heading-segment';
 import { LinkCallToAction } from '~/components/link-call-to-action';
 
 import { ShieldCheckmarkIcon } from '~/components/icons/shield-checkmark-icon';
@@ -109,23 +96,17 @@ export default component$(() => {
     function updatePrices(userCount: number) {
       const basePrice = calculateBasePrice(userCount);
 
-      pricingTier.starter.pricePerUserPerMonth =
-        basePrice - basePrice * discount;
+      pricingTier.starter.pricePerUserPerMonth = basePrice - basePrice * discount;
 
-      pricingTier.starter.pricePerMonth =
-        pricingTier.starter.pricePerUserPerMonth * userCount;
+      pricingTier.starter.pricePerMonth = pricingTier.starter.pricePerUserPerMonth * userCount;
 
-      pricingTier.professional.pricePerUserPerMonth =
-        basePrice * 1.3 - basePrice * 1.3 * discount;
+      pricingTier.professional.pricePerUserPerMonth = basePrice * 1.3 - basePrice * 1.3 * discount;
 
-      pricingTier.professional.pricePerYearMonth =
-        pricingTier.professional.pricePerUserPerMonth * userCount;
+      pricingTier.professional.pricePerYearMonth = pricingTier.professional.pricePerUserPerMonth * userCount;
 
-      pricingTier.expert.pricePerUserPerMonth =
-        basePrice * 2 - basePrice * 2 * discount;
+      pricingTier.expert.pricePerUserPerMonth = basePrice * 2 - basePrice * 2 * discount;
 
-      pricingTier.expert.pricePerMonth =
-        pricingTier.expert.pricePerUserPerMonth * userCount;
+      pricingTier.expert.pricePerMonth = pricingTier.expert.pricePerUserPerMonth * userCount;
     }
 
     function calculateBasePrice(wantedUsers: number) {
@@ -172,13 +153,7 @@ export default component$(() => {
       return price;
     }
 
-    function calculatePointOnLine(
-      x1: number,
-      y1: number,
-      x2: number,
-      y2: number,
-      x: number
-    ) {
+    function calculatePointOnLine(x1: number, y1: number, x2: number, y2: number, x: number) {
       let slope = (y2 - y1) / (x2 - x1);
       if (isNaN(slope)) slope = 0;
       const yIntercept = y1 - slope * x1;
@@ -202,13 +177,11 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Antrieb' />
             </LinkedHeading>
             <p class='pb-4 leading-7'>
-              Wir wollen Ihnen die fachliche Kompetenz, die praktischen
-              Fähigkeiten und das notwendige Wissen vermitteln, damit Sie sich
-              in der digitalen Welt sicher zu fühlen und sicher sind. Die Cyber
-              Lounge bietet Ihnen und Ihren Anwendern einen Raum, um
-              nachhaltiges Praxiswissen auf verständliche Weise zu erlernen,
-              dieses mit intensiven Prüfungen und realistischen Simulationen zu
-              festigen und dabei Lernfortschritte systematisch sicherzustellen.
+              Wir wollen Ihnen die fachliche Kompetenz, die praktischen Fähigkeiten und das notwendige Wissen
+              vermitteln, damit Sie sich in der digitalen Welt sicher zu fühlen und sicher sind. Die Cyber Lounge bietet
+              Ihnen und Ihren Anwendern einen Raum, um nachhaltiges Praxiswissen auf verständliche Weise zu erlernen,
+              dieses mit intensiven Prüfungen und realistischen Simulationen zu festigen und dabei Lernfortschritte
+              systematisch sicherzustellen.
             </p>
           </section>
         </ContentOverlapPortrait>
@@ -219,24 +192,18 @@ export default component$(() => {
           <section class='flex flex-col space-y-4'>
             <LinkedHeading href='#leistungen'>Leistungen</LinkedHeading>
             <p class='leading-7'>
-              Bei der Cyber Lounge handelt es sich um eine Plattform, in dem der
-              Fokus auf hochwertige Phishing-Simulationen, praxisrelevantes
-              Wissen und leicht zu bedienenden Funktionen gelegt wird.
+              Bei der Cyber Lounge handelt es sich um eine Plattform, in dem der Fokus auf hochwertige
+              Phishing-Simulationen, praxisrelevantes Wissen und leicht zu bedienenden Funktionen gelegt wird.
               <br />
-              Die Cyber Lounge bietet Ihnen sechs Kurse mit praktischen
-              Fähigkeiten und essenziellem Wissen für den sicheren Umgang in der
-              digitalen Welt. In vier Examen mit anspruchsvollen, interaktiven
-              Prüfungen können Ihre Anwender das Gelernte festigen. Abgerundet
-              wird die Leistung mit dem Werkzeugkasten, der unter anderem die
-              eigene Passwortsicherheit prüfen kann.
+              Die Cyber Lounge bietet Ihnen sechs Kurse mit praktischen Fähigkeiten und essenziellem Wissen für den
+              sicheren Umgang in der digitalen Welt. In vier Examen mit anspruchsvollen, interaktiven Prüfungen können
+              Ihre Anwender das Gelernte festigen. Abgerundet wird die Leistung mit dem Werkzeugkasten, der unter
+              anderem die eigene Passwortsicherheit prüfen kann.
               <br />
-              Die Cyber Lounge bietet Ihnen <strong>sechs Kurse</strong> mit
-              insgesamt <strong>26 Lektionen</strong> mit praktischen
-              Fähigkeiten und essenziellem Wissen für den sicheren Umgang in der
-              digitalen Welt. In vier Examen mit anspruchsvollen, interaktiven
-              Prüfungen können Ihre Anwender das Gelernte festigen. Abgerundet
-              wird die Leistung mit dem Werkzeugkasten, der unter anderem die
-              eigene Passwortsicherheit prüfen kann.
+              Die Cyber Lounge bietet Ihnen <strong>sechs Kurse</strong> mit insgesamt <strong>26 Lektionen</strong> mit
+              praktischen Fähigkeiten und essenziellem Wissen für den sicheren Umgang in der digitalen Welt. In vier
+              Examen mit anspruchsvollen, interaktiven Prüfungen können Ihre Anwender das Gelernte festigen. Abgerundet
+              wird die Leistung mit dem Werkzeugkasten, der unter anderem die eigene Passwortsicherheit prüfen kann.
             </p>
           </section>
         </VideoOverlapLandscape>
@@ -246,29 +213,23 @@ export default component$(() => {
         <VideoOverlapLandscape youTubeVideoId='FjThxiKBApc'>
           <section class='flex flex-col space-y-4'>
             <LinkedHeading href='#ihr_plus_an_sicherheit'>
-              <HeadingSegmentSecondary text='Ihr' />{' '}
-              <HeadingSegmentSecondary800 text='Plus' />{' '}
-              <HeadingSegmentSecondary text='an' />{' '}
-              <HeadingSegmentSecondary800 text='Sicherheit' />
+              <HeadingSegmentSecondary text='Ihr' /> <HeadingSegmentSecondary800 text='Plus' />{' '}
+              <HeadingSegmentSecondary text='an' /> <HeadingSegmentSecondary800 text='Sicherheit' />
             </LinkedHeading>
             <section>
               <p class='leading-7'>
-                Mit den Phishing-Paketen setzen Sie in Ihrem Unternehmen neue
-                Maßstäbe hinsichtlich des Sicherheitsbewusstseins Ihrer
-                Mitarbeiter.
+                Mit den Phishing-Paketen setzen Sie in Ihrem Unternehmen neue Maßstäbe hinsichtlich des
+                Sicherheitsbewusstseins Ihrer Mitarbeiter.
                 <br />
-                Die Phishing-Mails durchlaufen in einer Testgruppe aus mehreren
-                Unternehmen mit über 300 Anwendern einem Praxischeck. Mit Hilfe
-                eines linguistischen Psychologen werden die Anwender sprachlich
-                subtil zum Öffnen der betrügerischen Mails bewegt.
+                Die Phishing-Mails durchlaufen in einer Testgruppe aus mehreren Unternehmen mit über 300 Anwendern einem
+                Praxischeck. Mit Hilfe eines linguistischen Psychologen werden die Anwender sprachlich subtil zum Öffnen
+                der betrügerischen Mails bewegt.
                 <br />
-                Flankiert wird der Erstellungsprozess von unserer generativen
-                KI. Mit diesen Maßnahmen stellen wir sicher, dass unsere
-                Phishing-Simulationen nur schwer als solche zu erkennen sind.
+                Flankiert wird der Erstellungsprozess von unserer generativen KI. Mit diesen Maßnahmen stellen wir
+                sicher, dass unsere Phishing-Simulationen nur schwer als solche zu erkennen sind.
                 <br />
                 <br />
-                Die Ergebnisse unserer Testgruppe werden in unterschiedliche{' '}
-                <strong>Klickquoten</strong> unterteilt:
+                Die Ergebnisse unserer Testgruppe werden in unterschiedliche <strong>Klickquoten</strong> unterteilt:
               </p>
               <ul>
                 <li>
@@ -285,9 +246,8 @@ export default component$(() => {
                 </li>
               </ul>
               <p>
-                Mit der hohen Qualität unserer Phishing-Simulationen schützen
-                Sie sich und Ihr Unternehmen vor modernen, KI-gestützten
-                Phishing-Angriffen, wie sie immer häufiger auftreten.
+                Mit der hohen Qualität unserer Phishing-Simulationen schützen Sie sich und Ihr Unternehmen vor modernen,
+                KI-gestützten Phishing-Angriffen, wie sie immer häufiger auftreten.
               </p>
             </section>
           </section>
@@ -301,48 +261,32 @@ export default component$(() => {
           </LinkedHeading>
 
           <p class='leading-7'>
-            Hier finden Sie alle Informationen zu den erweiterten Paketen auf
-            einen Blick. <br /> Der Konfigurator unterstützt Sie bei der Auswahl
-            des passenden Pakets.
+            Hier finden Sie alle Informationen zu den erweiterten Paketen auf einen Blick. <br /> Der Konfigurator
+            unterstützt Sie bei der Auswahl des passenden Pakets.
           </p>
 
           <div class='flex flex-wrap items-center gap-4 rounded-3xl'>
             <section class='flex flex-wrap gap-4'>
               <span class='text-xl font-bold'>Anzahl Empfänger</span>
-                <input
-                  type='number'
-                  bind:value={userCountSig}
-                  onKeyUp$={() => {
-                    if (+userCountSig.value < 0) {
+              <input
+                type='number'
+                bind:value={userCountSig}
+                onKeyUp$={() => {
+                  if (+userCountSig.value < 0) {
                     userCountSig.value = '1';
                   }
                 }}
-                  required
-                  min='1'
-                  max='6000'
+                required
+                min='1'
+                max='6000'
                 class='border-b border-secondary-900 text-center'
               />
             </section>
             <section class='flex flex-wrap items-center gap-4'>
               <span class='text-xl font-bold'>Laufzeit</span>
-              <input
-                type='range'
-                bind:value={rangeValueSig}
-                required
-                min='1'
-                max='8'
-                step='1'
-              />
-              {durationInMonthSig.value === 1 && (
-                <small class='min-w-[4rem]'>
-                  {durationInMonthSig.value} Monat
-                </small>
-              )}
-              {durationInMonthSig.value > 1 && (
-                <small class='min-w-[4rem]'>
-                  {durationInMonthSig.value} Monate
-                </small>
-              )}
+              <input type='range' bind:value={rangeValueSig} required min='1' max='8' step='1' />
+              {durationInMonthSig.value === 1 && <small class='min-w-[4rem]'>{durationInMonthSig.value} Monat</small>}
+              {durationInMonthSig.value > 1 && <small class='min-w-[4rem]'>{durationInMonthSig.value} Monate</small>}
 
               <span
                 class={`${
@@ -372,11 +316,7 @@ export default component$(() => {
                   usersCount={+userCountSig.value}
                   pricePerUser={pricingTier.starter.pricePerUserPerMonth}
                 />
-                <LinkCallToAction
-                  href='https://forms.office.com/e/x9y2sJSm8P'
-                  target='_blank'
-                  class='mx-auto'
-                >
+                <LinkCallToAction href='https://forms.office.com/e/x9y2sJSm8P' target='_blank' class='mx-auto'>
                   Anfordern
                 </LinkCallToAction>
               </div>
@@ -399,11 +339,7 @@ export default component$(() => {
                   usersCount={+userCountSig.value}
                   pricePerUser={pricingTier.professional.pricePerUserPerMonth}
                 />
-                <LinkCallToAction
-                  href='https://forms.office.com/e/x9y2sJSm8P'
-                  target='_blank'
-                  class='mx-auto'
-                >
+                <LinkCallToAction href='https://forms.office.com/e/x9y2sJSm8P' target='_blank' class='mx-auto'>
                   Anfordern
                 </LinkCallToAction>
               </div>
@@ -425,11 +361,7 @@ export default component$(() => {
                   usersCount={+userCountSig.value}
                   pricePerUser={pricingTier.expert.pricePerUserPerMonth}
                 />
-                <LinkCallToAction
-                  href='https://forms.office.com/e/x9y2sJSm8P'
-                  target='_blank'
-                  class='mx-auto'
-                >
+                <LinkCallToAction href='https://forms.office.com/e/x9y2sJSm8P' target='_blank' class='mx-auto'>
                   Anfordern
                 </LinkCallToAction>
               </div>
@@ -446,22 +378,16 @@ export default component$(() => {
           </div>
           <section class='flex max-w-md flex-col gap-4 px-4'>
             <LinkedHeading href='#demozugang_anfragen'>
-              <HeadingSegmentSecondary text='Demozugang' />{' '}
-              <HeadingSegmentSecondary800 text='anfragen' />
+              <HeadingSegmentSecondary text='Demozugang' /> <HeadingSegmentSecondary800 text='anfragen' />
             </LinkedHeading>
-            <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
-              Testen Sie mit dem kostenfreien Demo-Paket bereits alle Vorteile
-              des Experten-Pakets. Für die kommenden 8 Wochen erhalten Sie 8
-              hochwertige Phishing-Simulationen. Diese E-Mails zeichnen sich
-              durch anspruchsvolle Sprache und präzise Semantik aus, verwenden
-              authentische Absenderadressen und beinhalten eine persönliche
+            <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80'>
+              Testen Sie mit dem kostenfreien Demo-Paket bereits alle Vorteile des Experten-Pakets. Für die kommenden 8
+              Wochen erhalten Sie 8 hochwertige Phishing-Simulationen. Diese E-Mails zeichnen sich durch anspruchsvolle
+              Sprache und präzise Semantik aus, verwenden authentische Absenderadressen und beinhalten eine persönliche
               Anrede, um die Authentizität zu steigern.
             </p>
 
-            <LinkCallToAction
-              href='https://forms.office.com/e/x9y2sJSm8P'
-              target='_blank'
-            >
+            <LinkCallToAction href='https://forms.office.com/e/x9y2sJSm8P' target='_blank'>
               Demozugang anfragen
             </LinkCallToAction>
           </section>
@@ -471,20 +397,15 @@ export default component$(() => {
       <Section id='fordern_sie_ihr_angebot_an'>
         <div class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#fordern_sie_ihr_angebot_an'>
-            Fordern Sie Ihr{' '}
-            <HeadingSegmentSecondary800 text='individuelles Angebot' /> an.
+            Fordern Sie Ihr <HeadingSegmentSecondary800 text='individuelles Angebot' /> an.
           </LinkedHeading>
 
           <p class='max-w-2xl'>
-            Sichern Sie sich Ihr maßgeschneidertes Angebot - unkompliziert und
-            in nur wenigen Schritten! Nach Ihrer Anfrage werden wir uns
-            persönlich bei Ihnen melden, um alle Details zu besprechen.
+            Sichern Sie sich Ihr maßgeschneidertes Angebot - unkompliziert und in nur wenigen Schritten! Nach Ihrer
+            Anfrage werden wir uns persönlich bei Ihnen melden, um alle Details zu besprechen.
           </p>
 
-          <LinkCallToAction
-            href='https://forms.office.com/e/x9y2sJSm8P'
-            target='_blank'
-          >
+          <LinkCallToAction href='https://forms.office.com/e/x9y2sJSm8P' target='_blank'>
             Jetzt Angebot anfordern
           </LinkCallToAction>
         </div>
@@ -493,24 +414,18 @@ export default component$(() => {
       <Section id='wichtig_fuer_cyber_verantwortliche' backgroundColor='gray'>
         <section class='flex flex-col gap-y-8 px-4 sm:items-center'>
           <LinkedHeading href='#wichtig_fuer_cyber_verantwortliche'>
-            Wichtig für{' '}
-            <HeadingSegmentSecondary800 text='Cyber-Verantwortliche' />
+            Wichtig für <HeadingSegmentSecondary800 text='Cyber-Verantwortliche' />
           </LinkedHeading>
 
           <p class='mx-auto max-w-xl leading-7'>
-            Die besten Phishing-Mails helfen nichts, wenn diese nicht den
-            Posteingang des Empfängers erreichen. Geben Sie deshalb unseren
-            E-Mail-Server und unsere Domains in Ihrer Firewall und in den
-            Postfächern frei. Nur dadurch können Sie sicherstellen, dass
-            Auswertungen zum Klickverhalten korrekt sind. Damit Sie schnell
-            starten können, haben wir für gängige Produkte wie Microsofts
-            "Exchange Server" Anleitungsvideos bereitgestellt.
+            Die besten Phishing-Mails helfen nichts, wenn diese nicht den Posteingang des Empfängers erreichen. Geben
+            Sie deshalb unseren E-Mail-Server und unsere Domains in Ihrer Firewall und in den Postfächern frei. Nur
+            dadurch können Sie sicherstellen, dass Auswertungen zum Klickverhalten korrekt sind. Damit Sie schnell
+            starten können, haben wir für gängige Produkte wie Microsofts "Exchange Server" Anleitungsvideos
+            bereitgestellt.
           </p>
 
-          <LinkCallToAction
-            href='https://e.co-it.eu/cyberportal-adminkonfiguration'
-            target='_blank'
-          >
+          <LinkCallToAction href='https://e.co-it.eu/cyberportal-adminkonfiguration' target='_blank'>
             Freigaberegeln anschauen
           </LinkCallToAction>
 
@@ -535,8 +450,7 @@ export const head: DocumentHead = {
     },
     {
       name: 'keywords',
-      content:
-        'Cyber Lounge, Digitale Sicherheit, Praxisrelevantes Wissen, Phishing-Simulationen, Digitale Welt'
+      content: 'Cyber Lounge, Digitale Sicherheit, Praxisrelevantes Wissen, Phishing-Simulationen, Digitale Welt'
     }
   ],
 

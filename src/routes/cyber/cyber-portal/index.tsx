@@ -25,7 +25,7 @@ import { LinkedHeading } from '~/components/link-heading';
 import { PricePerUsePerMonth } from '~/components/pricing/price-per-user-per-month';
 import { ProductFeatureList } from '~/components/product-feature-list';
 import { WuerttembergischeLogo } from '~/components/wuerttembergische/wuerttembergische_logo';
-import { Package } from "./pricing/package";
+import { Package } from './pricing/package';
 import { PricingCalculator } from './pricing/pricing-calculator';
 import style from './styles.css?inline';
 
@@ -152,7 +152,7 @@ export default component$(() => {
             <LinkedHeading href='#kostenfreie_basisversion'>
               <HeadingSegmentSecondary text='Kostenfreie' /> <HeadingSegmentSecondary800 text='Basisversion' />
             </LinkedHeading>
-            <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 '>
+            <p class='whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80'>
               Die kostenfreie Basisversion des Cyber Portals bietet Ihnen sechs Kurse mit praktischen Fähigkeiten und
               essenziellem Wissen für den sicheren Umgang in der digitalen Welt. In vier Examen mit anspruchsvollen,
               interaktiven Prüfungen können Ihre Anwender das Gelernte festigen. Abgerundet wird die Leistung mit dem
@@ -259,17 +259,17 @@ export default component$(() => {
           <div class='flex flex-wrap items-center gap-4 rounded-3xl'>
             <section class='flex flex-wrap gap-4'>
               <span class='text-xl font-bold'>Anzahl Empfänger</span>
-                <input
-                  type='number'
-                  bind:value={userCountSig}
-                  onKeyUp$={() => {
-                    if (+userCountSig.value < 0) {
+              <input
+                type='number'
+                bind:value={userCountSig}
+                onKeyUp$={() => {
+                  if (+userCountSig.value < 0) {
                     userCountSig.value = '1';
                   }
                 }}
-                  required
-                  min='1'
-                  max='6000'
+                required
+                min='1'
+                max='6000'
                 class='border-b border-secondary-900 text-center'
               />
             </section>

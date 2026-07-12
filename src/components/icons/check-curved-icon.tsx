@@ -1,24 +1,7 @@
 export const CheckCurvedIcon = () => (
-  <svg
-    width='44'
-    height='22'
-    viewBox='0 0 74 52'
-    fill='none'
-    xmlns='http://www.w3.org/2000/svg'
-  >
-    <mask
-      id='mask0_573_161'
-      style='mask-type:luminance'
-      maskUnits='userSpaceOnUse'
-      x='0'
-      y='0'
-      width='74'
-      height='52'
-    >
-      <path
-        d='M0.799805 0.599976H73.1998V51.5047H0.799805V0.599976Z'
-        fill='white'
-      />
+  <svg width='44' height='22' viewBox='0 0 74 52' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <mask id='mask0_573_161' style='mask-type:luminance' maskUnits='userSpaceOnUse' x='0' y='0' width='74' height='52'>
+      <path d='M0.799805 0.599976H73.1998V51.5047H0.799805V0.599976Z' fill='white' />
     </mask>
     <g mask='url(#mask0_573_161)'>
       <path

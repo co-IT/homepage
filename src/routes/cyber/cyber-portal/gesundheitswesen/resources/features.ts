@@ -42,8 +42,7 @@ export const gesundheitswesenFeatures: ProductFeature[] = [
   },
   {
     text: 'Unternehmenszertifikat',
-    detail:
-      'Dient als Nachweis der kontinuierlichen Sensibilisierung gegenüber Behörden'
+    detail: 'Dient als Nachweis der kontinuierlichen Sensibilisierung gegenüber Behörden'
   },
   {
     text: 'Dedizierte Anleitungen',
@@ -52,7 +51,6 @@ export const gesundheitswesenFeatures: ProductFeature[] = [
   },
   {
     text: 'Support: Telefon + E-Mail',
-    detail:
-      'Montag - Freitag zw. 9-16 Uhr mit Ausnahme gesetzlicher Feiertage in Baden-Württemberg.'
+    detail: 'Montag - Freitag zw. 9-16 Uhr mit Ausnahme gesetzlicher Feiertage in Baden-Württemberg.'
   }
 ];

@@ -2,7 +2,7 @@ import { component$ } from '@builder.io/qwik';
 
 export const TeamSection = component$(() => {
   return (
-    <div class='relative flex flex-col '>
+    <div class='relative flex flex-col'>
       <div class='absolute left-0 right-0 top-10 z-10'>
         <div class='leading-1 mx-auto max-w-5xl px-4 text-center font-normal text-white sm:text-base md:px-14 md:text-2xl lg:leading-10'>
           "Unsere Motivation ist es eine <span class='font-semibold text-primary'>aufgeschlossene Welt</span> zu
@@ -15,7 +15,6 @@ export const TeamSection = component$(() => {
           <span class='font-semibold text-primary'>Risiken mutig eingeht</span>
           ."
         </div>
-
       </div>
       <div class='mx-auto max-w-[1920px] bg-secondary-900'>
         <img

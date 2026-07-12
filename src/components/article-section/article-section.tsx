@@ -12,9 +12,7 @@ export const ArticleSection = component$((props: ArticleSectionProps) => {
       {props.articles.map((article, key) => (
         <div key={key}>
           <ArticleCard article={article} />
-          {key < props.articles.length - 1 && (
-            <hr class='my-10 lg:my-20' />
-          )}
+          {key < props.articles.length - 1 && <hr class='my-10 lg:my-20' />}
         </div>
       ))}
     </div>

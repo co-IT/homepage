@@ -2,13 +2,7 @@ import { component$ } from '@builder.io/qwik';
 
 export const TargetIcon = component$(() => {
   return (
-    <svg
-      width='58'
-      height='58'
-      viewBox='0 0 58 58'
-      fill='none'
-      xmlns='http://www.w3.org/2000/svg'
-    >
+    <svg width='58' height='58' viewBox='0 0 58 58' fill='none' xmlns='http://www.w3.org/2000/svg'>
       <path
         d='M55.5118 12.8475L50.6306 10.314L49.2712 5L37.84 14.1453L38.5813 17.0494L24.246 28.5424C23.3193 29.3459 23.134 30.7053 23.9369 31.6936C24.3697 32.2497 25.0489 32.5587 25.6671 32.5587C26.1615 32.5587 26.6558 32.3734 27.0881 32.0643L41.4235 20.5713L44.1424 21.9924L55.5118 12.8475Z'
         fill='#02024D'

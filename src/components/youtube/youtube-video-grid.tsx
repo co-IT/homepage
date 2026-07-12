@@ -30,13 +30,9 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
       .then(response =>
         response.ok
           ? response.text()
-          : Promise.reject(
-              `Bad response fetching YouTube Video Description ${videoDialog.videoPlaying.id}.`
-            )
+          : Promise.reject(`Bad response fetching YouTube Video Description ${videoDialog.videoPlaying.id}.`)
       )
-      .then(
-        markdown => (videoDialog.videoPlayingDescriptionMarkdown = markdown)
-      );
+      .then(markdown => (videoDialog.videoPlayingDescriptionMarkdown = markdown));
   });
 
   useTask$(({ track }) => {
@@ -58,13 +54,10 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
   const openVideoDialog$ = $((youTubeVideo: YouTubeVideo) => {
     videoDialog.videoPlaying = youTubeVideo;
 
-    const videoIndex = props.videos.findIndex(
-      video => youTubeVideo.id === video.id
-    );
+    const videoIndex = props.videos.findIndex(video => youTubeVideo.id === video.id);
 
     videoDialog.videoPlayingHasPredecessor = videoIndex > 0 ? true : false;
-    videoDialog.videoPlayingHasSuccessor =
-      videoIndex < props.videos.length - 1 ? true : false;
+    videoDialog.videoPlayingHasSuccessor = videoIndex < props.videos.length - 1 ? true : false;
 
     videoDialog.open = true;
   });
@@ -72,10 +65,7 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
   const closeVideoDialog$ = $(() => (videoDialog.open = false));
 
   const showPreviousVideo$ = $(() => {
-    const previousVideoIndex =
-      props.videos.findIndex(
-        video => video.id === videoDialog.videoPlaying.id
-      ) - 1;
+    const previousVideoIndex = props.videos.findIndex(video => video.id === videoDialog.videoPlaying.id) - 1;
     if (previousVideoIndex < 0) {
       return;
     }
@@ -90,10 +80,7 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
   });
 
   const showNextVideo$ = $(() => {
-    const nextVideoIndex =
-      props.videos.findIndex(
-        video => video.id === videoDialog.videoPlaying.id
-      ) + 1;
+    const nextVideoIndex = props.videos.findIndex(video => video.id === videoDialog.videoPlaying.id) + 1;
 
     if (nextVideoIndex > props.videos.length - 1) {
       return;
@@ -138,11 +125,8 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
             </i>
           </header>
 
-          <main
-            class='grid space-y-8 overflow-hidden'
-            style='grid-template-columns 1fr; grid-template-rows: auto 1fr '
-          >
-            <div class='bg-black '>
+          <main class='grid space-y-8 overflow-hidden' style='grid-template-columns 1fr; grid-template-rows: auto 1fr '>
+            <div class='bg-black'>
               {videoDialog.open && (
                 <YoutubeVideoPlayerEmbedded
                   youTubeVideoId={videoDialog.videoPlaying.id}
@@ -168,9 +152,7 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
               </div>
 
               <div class='my-auto flex flex-col gap-y-1'>
-                <div class='hidden text-lg font-normal leading-4 text-secondary-900 sm:block'>
-                  Zum vorigen Thema
-                </div>
+                <div class='hidden text-lg font-normal leading-4 text-secondary-900 sm:block'>Zum vorigen Thema</div>
               </div>
             </button>
 
@@ -180,9 +162,7 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
               class='flex cursor-pointer flex-row gap-x-5 hover:opacity-75 disabled:opacity-50'
             >
               <div class='my-auto flex flex-col gap-y-1'>
-                <div class='hidden text-lg font-normal leading-4 text-secondary-900 sm:block'>
-                  Zum nächsten Thema
-                </div>
+                <div class='hidden text-lg font-normal leading-4 text-secondary-900 sm:block'>Zum nächsten Thema</div>
               </div>
 
               <BlueCircleArrowIcon />

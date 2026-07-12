@@ -1,13 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
-import {
-  ContentOverlapPortrait,
-  VideoOverlapLandscape
-} from '~/components/content-overlap';
-import {
-  HeadingSegmentSecondary,
-  HeadingSegmentSecondary800
-} from '~/components/heading-segment';
+import { ContentOverlapPortrait, VideoOverlapLandscape } from '~/components/content-overlap';
+import { HeadingSegmentSecondary, HeadingSegmentSecondary800 } from '~/components/heading-segment';
 import { LinkCallToAction } from '~/components/link-call-to-action';
 import { Section } from '~/components/section';
 
@@ -17,8 +11,7 @@ export default component$(() => {
       <Section>
         <ContentOverlapPortrait
           image={{
-            source:
-              '/img/landing-page/developers-reviewing-an-app-on-the-tablet.webp',
+            source: '/img/landing-page/developers-reviewing-an-app-on-the-tablet.webp',
             alternateText: '2 Developers checking an App on a tablet'
           }}
         >
@@ -33,17 +26,12 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='punktuell.' />
             </h2>
             <p class='pb-4 leading-7'>
-              Wir unterstützen Unternehmen dort, wo IT im Alltag Wirkung zeigen
-              muss: im stabilen Betrieb, bei sicheren Systemen und bei digitalen
-              Vorhaben, die nicht nur technisch funktionieren, sondern zum
-              Unternehmen passen. Dabei betrachten wir nicht nur einzelne
-              Aufgaben, sondern auch die Zusammenhänge dahinter – persönlich
-              vom ersten Handschlag an und verlässlich in der langfristigen
-              Betreuung.
+              Wir unterstützen Unternehmen dort, wo IT im Alltag Wirkung zeigen muss: im stabilen Betrieb, bei sicheren
+              Systemen und bei digitalen Vorhaben, die nicht nur technisch funktionieren, sondern zum Unternehmen
+              passen. Dabei betrachten wir nicht nur einzelne Aufgaben, sondern auch die Zusammenhänge dahinter –
+              persönlich vom ersten Handschlag an und verlässlich in der langfristigen Betreuung.
             </p>
-            <LinkCallToAction href='/leistungen'>
-              Leistungen ansehen
-            </LinkCallToAction>
+            <LinkCallToAction href='/leistungen'>Leistungen ansehen</LinkCallToAction>
           </section>
         </ContentOverlapPortrait>
       </Section>
@@ -54,10 +42,7 @@ export default component$(() => {
       <div class='md:mb-48'></div>
 
       <Section backgroundColor='gray'>
-        <VideoOverlapLandscape
-          youTubeVideoId='QVArEtvAGsk'
-          class='container mx-auto'
-        >
+        <VideoOverlapLandscape youTubeVideoId='QVArEtvAGsk' class='container mx-auto'>
           <section class='flex flex-col space-y-4'>
             <h2 class='text-xl font-bold md:text-4xl'>
               <HeadingSegmentSecondary text='Eine Idee auf die' />
@@ -65,15 +50,11 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Straße gebracht' />
             </h2>
             <p class='pb-4 leading-7'>
-              Wie arbeitet die Werkstatt von morgen? Bei unserem Partner, der
-              Werbas GmbH, durften wir unsere Lösungskompetenz entlang der
-              gesamten Wertschöpfungskette einbringen: von der Prozessanalyse
-              bis zur individuellen Softwareentwicklung. Heraus kam das neue
-              Werkstattmanagementsystem Werkstatt.NXT.
+              Wie arbeitet die Werkstatt von morgen? Bei unserem Partner, der Werbas GmbH, durften wir unsere
+              Lösungskompetenz entlang der gesamten Wertschöpfungskette einbringen: von der Prozessanalyse bis zur
+              individuellen Softwareentwicklung. Heraus kam das neue Werkstattmanagementsystem Werkstatt.NXT.
             </p>
-            <LinkCallToAction href='/produkte-loesungen'>
-              Mehr zu Produkten & Lösungen
-            </LinkCallToAction>
+            <LinkCallToAction href='/produkte-loesungen'>Mehr zu Produkten & Lösungen</LinkCallToAction>
           </section>
         </VideoOverlapLandscape>
       </Section>
@@ -84,8 +65,7 @@ export default component$(() => {
         <ContentOverlapPortrait
           image={{
             source: '/img/article-pages/mittelstand-it-consulting.webp',
-            alternateText:
-              'IT-Berater trifft einen regionalen Kunden in einem Unternehmensbüro.'
+            alternateText: 'IT-Berater trifft einen regionalen Kunden in einem Unternehmensbüro.'
           }}
         >
           <section q:slot='article' class='flex flex-col space-y-4'>
@@ -95,15 +75,11 @@ export default component$(() => {
               <HeadingSegmentSecondary800 text='Branche passt.' />
             </h2>
             <p class='pb-4 leading-7'>
-              Ob Handwerk, Gesundheitswesen, Großhandel, Versicherung,
-              Lohnfertigung oder Dienstleistung: Gute IT beginnt mit Verständnis
-              für Abläufe, Risiken und Prioritäten. Deshalb betrachten wir
-              Technik immer im Kontext Ihrer Branche und nicht nur als einzelne
-              Maßnahme.
+              Ob Handwerk, Gesundheitswesen, Großhandel, Versicherung, Lohnfertigung oder Dienstleistung: Gute IT
+              beginnt mit Verständnis für Abläufe, Risiken und Prioritäten. Deshalb betrachten wir Technik immer im
+              Kontext Ihrer Branche und nicht nur als einzelne Maßnahme.
             </p>
-            <LinkCallToAction href='/branchen'>
-              Branchen ansehen
-            </LinkCallToAction>
+            <LinkCallToAction href='/branchen'>Branchen ansehen</LinkCallToAction>
           </section>
         </ContentOverlapPortrait>
       </Section>
@@ -121,8 +97,7 @@ export const head: DocumentHead = {
     },
     {
       name: 'keywords',
-      content:
-        'co-IT, Premiumlösungen, IT-Anforderungen, Herausforderungen, Softwareentwicklung, IT-Service-Management'
+      content: 'co-IT, Premiumlösungen, IT-Anforderungen, Herausforderungen, Softwareentwicklung, IT-Service-Management'
     }
   ],
 

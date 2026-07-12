@@ -32,7 +32,7 @@ export default {
         gray: colors.gray,
         white: colors.white
       }
-    },
+    }
   },
   plugins: [
     plugin(({ addBase, theme }) => {

@@ -1,24 +1,7 @@
 export const LockCheckCurvedIcon = () => (
-  <svg
-    width='96'
-    height='79'
-    viewBox='0 0 96 79'
-    fill='none'
-    xmlns='http://www.w3.org/2000/svg'
-  >
-    <mask
-      id='mask0_0_1'
-      style='mask-type:luminance'
-      maskUnits='userSpaceOnUse'
-      x='42'
-      y='41'
-      width='54'
-      height='38'
-    >
-      <path
-        d='M42.4326 41.0573H96.0003V78.8594H42.4326V41.0573Z'
-        fill='white'
-      />
+  <svg width='96' height='79' viewBox='0 0 96 79' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <mask id='mask0_0_1' style='mask-type:luminance' maskUnits='userSpaceOnUse' x='42' y='41' width='54' height='38'>
+      <path d='M42.4326 41.0573H96.0003V78.8594H42.4326V41.0573Z' fill='white' />
     </mask>
     <g mask='url(#mask0_0_1)'>
       <path
@@ -26,19 +9,8 @@ export const LockCheckCurvedIcon = () => (
         fill='#FEC137'
       />
     </g>
-    <mask
-      id='mask1_0_1'
-      style='mask-type:luminance'
-      maskUnits='userSpaceOnUse'
-      x='0'
-      y='0'
-      width='62'
-      height='76'
-    >
-      <path
-        d='M0.510742 0.0729218H61.3024V75.8125H0.510742V0.0729218Z'
-        fill='white'
-      />
+    <mask id='mask1_0_1' style='mask-type:luminance' maskUnits='userSpaceOnUse' x='0' y='0' width='62' height='76'>
+      <path d='M0.510742 0.0729218H61.3024V75.8125H0.510742V0.0729218Z' fill='white' />
     </mask>
     <g mask='url(#mask1_0_1)'>
       <path

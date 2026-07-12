@@ -10,9 +10,7 @@ export const InfoPopover = component$((props: InfoPopoverProps) => {
   return (
     <Popover.Root floating='bottom'>
       <Popover.Panel>
-        <div class='w-60 rounded-md bg-gray-800 p-4 text-white shadow-md'>
-          {props.text}
-        </div>
+        <div class='w-60 rounded-md bg-gray-800 p-4 text-white shadow-md'>{props.text}</div>
       </Popover.Panel>
       <Popover.Trigger>
         <InfoIcon />

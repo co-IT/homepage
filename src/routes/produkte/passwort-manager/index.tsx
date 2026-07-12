@@ -1,10 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { VideoOverlapLandscape } from '~/components/content-overlap';
-import {
-  HeadingSegmentSecondary,
-  HeadingSegmentSecondary800
-} from '~/components/heading-segment';
+import { HeadingSegmentSecondary, HeadingSegmentSecondary800 } from '~/components/heading-segment';
 import { CheckCurvedIcon, LockCheckCurvedIcon } from '~/components/icons';
 import { LinkCallToAction } from '~/components/link-call-to-action';
 import { Section } from '~/components/section';
@@ -128,25 +125,19 @@ export default component$(() => {
           >
             <section class='flex flex-col space-y-4'>
               <h3 class='max-w-4xl text-3xl font-bold leading-tight md:text-5xl'>
-                <HeadingSegmentSecondary text='Passwort-Manager in der' />{' '}
-                <HeadingSegmentSecondary800 text='Praxis' />
+                <HeadingSegmentSecondary text='Passwort-Manager in der' /> <HeadingSegmentSecondary800 text='Praxis' />
               </h3>
               <p class='max-w-4xl text-lg leading-9 text-secondary-900'>
-                In unserem geführten Rundgang zeigen wir, wie geschäftliche
-                Zugänge zentral, sicher und nachvollziehbar verwaltet werden.
-                Anhand typischer Alltagssituationen sehen Sie, wie Passwörter,
-                sensible Informationen und Berechtigungen sauber organisiert
-                werden: vom Onboarding über sichere Freigaben bis zum
-                Offboarding. So wird aus einzelnen Zugangsdaten ein klar
-                geregelter und sicherer Unternehmensprozess.
+                In unserem geführten Rundgang zeigen wir, wie geschäftliche Zugänge zentral, sicher und nachvollziehbar
+                verwaltet werden. Anhand typischer Alltagssituationen sehen Sie, wie Passwörter, sensible Informationen
+                und Berechtigungen sauber organisiert werden: vom Onboarding über sichere Freigaben bis zum Offboarding.
+                So wird aus einzelnen Zugangsdaten ein klar geregelter und sicherer Unternehmensprozess.
               </p>
             </section>
           </VideoOverlapLandscape>
 
           <div class='-mt-12 flex justify-center md:-mt-16 md:ml-[calc(25%-2rem)] md:w-3/4 xl:-mt-20 xl:ml-[calc(25%-7rem)]'>
-            <LinkCallToAction href='/contact'>
-              Passwort-Manager anfragen
-            </LinkCallToAction>
+            <LinkCallToAction href='/contact'>Passwort-Manager anfragen</LinkCallToAction>
           </div>
         </div>
       </Section>
@@ -158,23 +149,17 @@ export default component$(() => {
           </section>
           <section class='grid gap-2'>
             <h2 class='text-4xl font-bold'>
-              <a href='#sicherheit_trifft_einfachheit'>
-                Sicherheit trifft Einfachheit
-              </a>
+              <a href='#sicherheit_trifft_einfachheit'>Sicherheit trifft Einfachheit</a>
             </h2>
             <p class='max-w-3xl text-xl leading-8 xl:max-w-6xl'>
-              Was haben das On-/Offboarding von Mitarbeitern, die Vielfalt an
-              betrieblichen Arbeitsgeräten und die Datenschutz-Grundverordnung
-              gemeinsam? Sie erfordern eine möglichst flexible, besonders
-              anwenderfreundliche, maximal sichere und unternehmensweite
-              Organisation Ihrer Zugänge.
+              Was haben das On-/Offboarding von Mitarbeitern, die Vielfalt an betrieblichen Arbeitsgeräten und die
+              Datenschutz-Grundverordnung gemeinsam? Sie erfordern eine möglichst flexible, besonders
+              anwenderfreundliche, maximal sichere und unternehmensweite Organisation Ihrer Zugänge.
               <br />
               <br />
-              Mit unserem Verständnis für Unternehmensstrukturen und unserer
-              technisch hochmodernen Lösung etablieren wir mit Ihnen gemeinsam
-              ein zentrales Passwortmanagement, das Ihre sensiblen Daten
-              schützt, höchste Sicherheitsansprüche erfüllt und gleichzeitig
-              Ihre individuellen Prozesse abbildet.
+              Mit unserem Verständnis für Unternehmensstrukturen und unserer technisch hochmodernen Lösung etablieren
+              wir mit Ihnen gemeinsam ein zentrales Passwortmanagement, das Ihre sensiblen Daten schützt, höchste
+              Sicherheitsansprüche erfüllt und gleichzeitig Ihre individuellen Prozesse abbildet.
             </p>
           </section>
         </div>
@@ -187,29 +172,22 @@ export default component$(() => {
           </section>
           <section class='grid gap-2'>
             <h2 class='text-4xl font-bold'>
-              <a href='#so_verstehen_wir_sicherheit'>
-                So verstehen wir Sicherheit
-              </a>
+              <a href='#so_verstehen_wir_sicherheit'>So verstehen wir Sicherheit</a>
             </h2>
             <p class='max-w-3xl text-xl leading-8 xl:max-w-6xl'>
-              Ob ein Unternehmen gesund aufgestellt ist, erkennen Sie nicht
-              durch einen Blick auf dessen Webseite. Sie müssen in das
-              Unternehmen reinschauen, mit den Beteiligten sprechen und Interna
-              sichten.
+              Ob ein Unternehmen gesund aufgestellt ist, erkennen Sie nicht durch einen Blick auf dessen Webseite. Sie
+              müssen in das Unternehmen reinschauen, mit den Beteiligten sprechen und Interna sichten.
               <br />
               <br />
-              Das Gleiche gilt für Software: Die Sicherheit lässt sich nur durch
-              den Blick in den Programmcode bewerten. Deshalb setzen wir auf
-              eine quelloffene, sogenannte <strong>„Open Source“</strong>-
-              Lösung, die von Sicherheitsexperten gesichtet und mit
-              Schwarmintelligenz der Tausenden von Entwicklern verbessert werden
+              Das Gleiche gilt für Software: Die Sicherheit lässt sich nur durch den Blick in den Programmcode bewerten.
+              Deshalb setzen wir auf eine quelloffene, sogenannte <strong>„Open Source“</strong>- Lösung, die von
+              Sicherheitsexperten gesichtet und mit Schwarmintelligenz der Tausenden von Entwicklern verbessert werden
               kann.
               <br />
               <br />
-              Gleichzeitig halten wir digitale Identitäten für so sensibel und
-              schützenswert, dass sie in Deutschland gespeichert werden sollten
-              und nicht in die Hände von Konzernen gehören. Darum ermöglichen
-              wir Ihnen die Auswahl zwischen <strong>drei Betriebsmodi</strong>:
+              Gleichzeitig halten wir digitale Identitäten für so sensibel und schützenswert, dass sie in Deutschland
+              gespeichert werden sollten und nicht in die Hände von Konzernen gehören. Darum ermöglichen wir Ihnen die
+              Auswahl zwischen <strong>drei Betriebsmodi</strong>:
             </p>
             <ul class='list-inside list-disc text-xl'>
               <li>
@@ -220,9 +198,8 @@ export default component$(() => {
             </ul>
             <br />
             <p class='max-w-3xl text-xl leading-8 xl:max-w-6xl'>
-              Wir nutzen dafür keine fertigen Dienste von Cloudanbietern,
-              sondern provisionieren unser Produkt selbst auf dem angemieteten
-              Server im Rechenzentrum.{' '}
+              Wir nutzen dafür keine fertigen Dienste von Cloudanbietern, sondern provisionieren unser Produkt selbst
+              auf dem angemieteten Server im Rechenzentrum.{' '}
               <strong>Damit behalten Sie die maximale Datenautonomie.</strong>
             </p>
           </section>
@@ -252,10 +229,7 @@ export default component$(() => {
           </div>
 
           <div class='mx-auto'>
-            <LinkCallToAction
-              href='https://e.co-it.eu/passwort-mgmt/nutzungsbedingungen'
-              target='_blank'
-            >
+            <LinkCallToAction href='https://e.co-it.eu/passwort-mgmt/nutzungsbedingungen' target='_blank'>
               Unsere Nutzungsbedingungen
             </LinkCallToAction>
           </div>
@@ -286,32 +260,24 @@ export default component$(() => {
         </div>
       </Section>
 
-      <Section
-        id='zusatzfunktion_sichere_datenuebermittlung'
-        backgroundColor='gray'
-      >
+      <Section id='zusatzfunktion_sichere_datenuebermittlung' backgroundColor='gray'>
         <div class='grid gap-8'>
           <header class='flex items-center gap-8'>
             <h2 class='text-4xl font-bold'>
-              <a href='#zusatzfunktion_sichere_datenuebermittlung'>
-                Zusatzfunktion: Sichere Datenübermittlung
-              </a>
+              <a href='#zusatzfunktion_sichere_datenuebermittlung'>Zusatzfunktion: Sichere Datenübermittlung</a>
             </h2>
           </header>
 
           <p class='max-w-5xl text-xl leading-8'>
-            Buchen Sie die Option für sichere Datenübermittlung dazu. Damit ist
-            es Ihnen möglich Inhalte, z.B. Texte oder Dateien, als sichere Links
-            an Ihre Geschäftspartner zu verschicken. Seien es vertrauliche
-            Unterlagen für Ihren Wirtschaftsprüfer, Zugänge an externe
-            Dienstleister oder sensible Kreditkartendaten an Ihre Mitarbeiter.
+            Buchen Sie die Option für sichere Datenübermittlung dazu. Damit ist es Ihnen möglich Inhalte, z.B. Texte
+            oder Dateien, als sichere Links an Ihre Geschäftspartner zu verschicken. Seien es vertrauliche Unterlagen
+            für Ihren Wirtschaftsprüfer, Zugänge an externe Dienstleister oder sensible Kreditkartendaten an Ihre
+            Mitarbeiter.
             <br />
             <br />
-            Nutzen Sie Einmal-Links: Hat ihre Vertrauensperson den Link geöffnet
-            und den Inhalt gelesen bzw. heruntergeladen, wird der Link
-            automatisch ungültig. Kommen Angreifer in Besitz der Links, z.B.
-            weil das E-Mail-Konto des Empfängers gehackt wurde, sind diese
-            wertlos.
+            Nutzen Sie Einmal-Links: Hat ihre Vertrauensperson den Link geöffnet und den Inhalt gelesen bzw.
+            heruntergeladen, wird der Link automatisch ungültig. Kommen Angreifer in Besitz der Links, z.B. weil das
+            E-Mail-Konto des Empfängers gehackt wurde, sind diese wertlos.
           </p>
 
           <h3 class='text-xl font-semibold'>Alle Funktionen im Überblick</h3>

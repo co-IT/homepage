@@ -19,10 +19,7 @@ export const DesktopMenu = component$(({ config }: DesktopMenuProps) => {
         <ul class='flex gap-12'>
           {config.items.map(item => {
             return (
-              <li
-                key={item.text}
-                class='flex items-center font-semibold text-white'
-              >
+              <li key={item.text} class='flex items-center font-semibold text-white'>
                 {item.items && <MenuPopoverLink item={item} />}
                 {!item.items && (
                   <a
@@ -74,15 +71,9 @@ export const MenuPopoverLink = component$<MenuPopoverLinkProps>(({ item }) => {
       onBlur$={scheduleCloseMenu$}
     >
       <div
-        class={`flex items-center font-semibold ${
-          isOpenSig.value ? 'text-primary' : 'text-white hover:text-primary'
-        }`}
+        class={`flex items-center font-semibold ${isOpenSig.value ? 'text-primary' : 'text-white hover:text-primary'}`}
       >
-        {item.path ? (
-          <a href={item.path}>{item.text}</a>
-        ) : (
-          <span>{item.text}</span>
-        )}
+        {item.path ? <a href={item.path}>{item.text}</a> : <span>{item.text}</span>}
         <span class='pl-2'>
           <ShevronIcon
             class={`ease font-bold transition-transform duration-300 ${
@@ -94,9 +85,7 @@ export const MenuPopoverLink = component$<MenuPopoverLinkProps>(({ item }) => {
 
       <div
         class={`desktop-menu-panel w-full transition-opacity duration-150 ${
-          isOpenSig.value
-            ? 'pointer-events-auto visible opacity-100'
-            : 'pointer-events-none invisible opacity-0'
+          isOpenSig.value ? 'pointer-events-auto visible opacity-100' : 'pointer-events-none invisible opacity-0'
         }`}
         onPointerEnter$={openMenu$}
         onPointerLeave$={scheduleCloseMenu$}

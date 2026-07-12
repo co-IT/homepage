@@ -40,7 +40,7 @@ export const ContentSwitch = component$(() => {
       <div class='flex flex-col gap-y-0 lg:gap-y-14'>
         {links.map((link, key) => (
           <Link href={link.path} key={key} class={`z-0 flex flex-row ${key % 2 !== 0 ? 'justify-end' : ''}`}>
-            <div class='relative lg:w-6/12 '>
+            <div class='relative lg:w-6/12'>
               <div class='bg-secondary-900'>
                 <img
                   src={link.image}
@@ -54,8 +54,7 @@ export const ContentSwitch = component$(() => {
               <div
                 class={`${
                   key % 2 === 0 ? 'lg:left-[70%]' : 'lg:right-[70%]'
-                } mb-5 flex w-full justify-between bg-white  p-6 text-base font-bold leading-7 shadow-2xl lg:absolute lg:top-[30%] lg:p-10 lg:text-2xl 
-                `}
+                } mb-5 flex w-full justify-between bg-white p-6 text-base font-bold leading-7 shadow-2xl lg:absolute lg:top-[30%] lg:p-10 lg:text-2xl`}
               >
                 <div class='my-auto'>
                   {link.textFirstLine} | <span class='font-semibold'>{link.textSecondLine}</span>

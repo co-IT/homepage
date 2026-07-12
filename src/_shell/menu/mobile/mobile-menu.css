@@ -1,11 +1,9 @@
 .accordion-animation-1[data-state='open'] {
-  animation: 500ms cubic-bezier(0.87, 0, 0.13, 1) 0s 1 normal forwards
-    accordion-open;
+  animation: 500ms cubic-bezier(0.87, 0, 0.13, 1) 0s 1 normal forwards accordion-open;
 }
 
 .accordion-animation-1[data-state='closed'] {
-  animation: 500ms cubic-bezier(0.87, 0, 0.13, 1) 0s 1 normal forwards
-    accordion-close;
+  animation: 500ms cubic-bezier(0.87, 0, 0.13, 1) 0s 1 normal forwards accordion-close;
 }
 
 .sheet::backdrop {

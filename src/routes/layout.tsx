@@ -28,8 +28,7 @@ export default component$(() => {
         </Section>
 
         <Section>
-          {!documentHead.frontmatter.footer
-            ?.disableContactPossibilitiesGrid && <ContactPossibilitiesGrid />}
+          {!documentHead.frontmatter.footer?.disableContactPossibilitiesGrid && <ContactPossibilitiesGrid />}
         </Section>
       </main>
 

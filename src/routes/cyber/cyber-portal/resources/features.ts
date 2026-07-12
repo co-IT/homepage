@@ -3,8 +3,7 @@ import type { ProductFeature } from '~/components/product-feature-list';
 export const wuerttembergischeFeatures: ProductFeature[] = [
   {
     text: '8 Phishing-E-Mails',
-    detail:
-      'Pro Jahr werden 8 Phishing-Mails an die Anwender des Cyber Portals versandt.'
+    detail: 'Pro Jahr werden 8 Phishing-Mails an die Anwender des Cyber Portals versandt.'
   },
   {
     text: 'Sprachniveau: Hoch',
@@ -53,19 +52,17 @@ export const wuerttembergischeFeatures: ProductFeature[] = [
   },
   {
     text: 'Randomisierung: Keine',
-    detail:
-      'Alle Anwender erhalten zur gleichen Zeit die gleiche Phishing-E-Mail.'
+    detail: 'Alle Anwender erhalten zur gleichen Zeit die gleiche Phishing-E-Mail.'
   },
   {
     text: 'Individuelles Pausieren: Nein',
-    detail:
-      'Entscheiden Sie pro Anwender, ob dieser Phishing-Simulationen erhalten soll oder nicht.'
+    detail: 'Entscheiden Sie pro Anwender, ob dieser Phishing-Simulationen erhalten soll oder nicht.'
   },
   {
     text: 'Unternehmensstatistik: Keine Fremdvergleiche',
     detail:
       'In den Unternehmensstatistiken sind in einigen Paketen Vergleiche mit Unternehmen der gleichen Branche bzw. mit allen registrierten Unternehmen möglich.'
-  },
+  }
 ];
 
 export const starterFeatures: ProductFeature[] = [
@@ -116,13 +113,11 @@ export const starterFeatures: ProductFeature[] = [
   },
   {
     text: 'Individuelles Pausieren: Nein',
-    detail:
-      'Entscheiden Sie pro Anwender, ob dieser Phishing-Simulationen erhalten soll oder nicht.'
+    detail: 'Entscheiden Sie pro Anwender, ob dieser Phishing-Simulationen erhalten soll oder nicht.'
   },
   {
     text: 'Abstimmen über neue Funktionen',
-    detail:
-      'Ihre Stimme zählt: Sie können regelmäßig über die Priorisierung von neuen Funktionen mit abstimmen.'
+    detail: 'Ihre Stimme zählt: Sie können regelmäßig über die Priorisierung von neuen Funktionen mit abstimmen.'
   },
   {
     text: 'Historische Daten: unbegrenzt',
@@ -195,18 +190,15 @@ export const profiFeatures: ProductFeature[] = [
   },
   {
     text: 'Randomisierung: Zufällig',
-    detail:
-      'Alle Anwender erhalten die gleiche Simulation, aber zu zufälligen Zeiten über Tage verteilt'
+    detail: 'Alle Anwender erhalten die gleiche Simulation, aber zu zufälligen Zeiten über Tage verteilt'
   },
   {
     text: 'Individuelles Pausieren: Ja',
-    detail:
-      'Entscheiden Sie pro Anwender, ob dieser Phishing-Simulationen erhalten soll oder nicht.'
+    detail: 'Entscheiden Sie pro Anwender, ob dieser Phishing-Simulationen erhalten soll oder nicht.'
   },
   {
     text: 'Abstimmung über neue Funktionen',
-    detail:
-      'Ihre Stimme zählt: Sie können regelmäßig über die Priorisierung von neuen Funktionen abstimmen.'
+    detail: 'Ihre Stimme zählt: Sie können regelmäßig über die Priorisierung von neuen Funktionen abstimmen.'
   },
   {
     text: 'Historische Daten: unbegrenzt',
@@ -279,18 +271,15 @@ export const expertFeatures: ProductFeature[] = [
   },
   {
     text: 'Randomisierung: überraschend ',
-    detail:
-      'Alle Anwender erhalten unterschiedliche Simulationen zu unterschiedlichen Zeiten.'
+    detail: 'Alle Anwender erhalten unterschiedliche Simulationen zu unterschiedlichen Zeiten.'
   },
   {
     text: 'Individuelles Pausieren: Ja',
-    detail:
-      'Entscheiden Sie pro Anwender, ob dieser Phishing-Simulationen erhalten soll oder nicht.'
+    detail: 'Entscheiden Sie pro Anwender, ob dieser Phishing-Simulationen erhalten soll oder nicht.'
   },
   {
     text: 'Abstimmung über neue Funktionen',
-    detail:
-      'Ihre Stimme zählt: Sie können regelmäßig über die Priorisierung von neuen Funktionen abstimmen.'
+    detail: 'Ihre Stimme zählt: Sie können regelmäßig über die Priorisierung von neuen Funktionen abstimmen.'
   },
   {
     text: 'Historische Daten: unbegrenzt',
@@ -343,7 +332,6 @@ export const expertFeatures: ProductFeature[] = [
   },
   {
     text: 'Telefonischer Support',
-    detail:
-      'Montag - Freitag zw. 9-16 Uhr mit Ausnahme gesetzlicher Feiertage in Baden-Württemberg.'
+    detail: 'Montag - Freitag zw. 9-16 Uhr mit Ausnahme gesetzlicher Feiertage in Baden-Württemberg.'
   }
 ];

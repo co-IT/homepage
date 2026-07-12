@@ -22,8 +22,7 @@ export const ihreMarkeFeatures: ProductFeature[] = [
   },
   {
     text: 'Randomisierung: überraschend',
-    detail:
-      'Alle Anwender erhalten unterschiedliche Simulationen zu unterschiedlichen Zeiten.'
+    detail: 'Alle Anwender erhalten unterschiedliche Simulationen zu unterschiedlichen Zeiten.'
   },
   {
     text: 'Absender: Authentisch',
