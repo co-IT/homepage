@@ -63,14 +63,14 @@ Wichtige Befehle:
 - Voller Build: `pnpm build`
 - Typecheck: `pnpm build.types`
 - Lint: `pnpm lint`
-- Format-Check: `pnpm fmt.check`
-- Formatieren: `pnpm fmt`
+- Format-Check: `pnpm format.check`
+- Formatieren: `pnpm format`
 
 Vor Abschluss einer Code-Aenderung, soweit passend:
 
 1. `pnpm build.types`
 2. `pnpm lint`
-3. `pnpm fmt.check`
+3. `pnpm format.check`
 4. Bei UI-/Routing-Aenderungen zusaetzlich lokal starten und visuell pruefen.
 
 ## Code-Stil
