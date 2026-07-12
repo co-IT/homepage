@@ -30,6 +30,12 @@ jobs:
       - name: 🛠️ Build app
         run: pnpm build --prod
 
+      - name: 🎨 Check formatting
+        run: pnpm format.check
+
+      - name: 🧹 Lint
+        run: pnpm lint
+
       - name: 🔑 Azure Login
         uses: azure/login@v1
         with:
