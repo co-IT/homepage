@@ -4,11 +4,7 @@ import baseConfig from '../../vite.config';
 import { getOrigin } from './get-origin';
 import { robotsTxtPlugin } from './robots-txt-plugin';
 
-const sitemapExcludedPaths = [
-  '/kontrakte/',
-  '/cyber/*',
-  '/produkte/passwort-manager/',
-] as const;
+const sitemapExcludedPaths = ['/kontrakte/', '/cyber/*', '/produkte/passwort-manager/'] as const;
 
 export default extendConfig(baseConfig, () => {
   const origin = getOrigin();
