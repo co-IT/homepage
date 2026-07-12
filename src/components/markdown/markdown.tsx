@@ -1,5 +1,5 @@
 import type { QwikIntrinsicElements } from '@builder.io/qwik';
-import { component$, useStore, useVisibleTask$ } from '@builder.io/qwik';
+import { component$, useStore, useTask$ } from '@builder.io/qwik';
 
 import rehypeSanitize from 'rehype-sanitize';
 import rehypeStringify from 'rehype-stringify';
@@ -14,15 +14,15 @@ export const Markdown = component$(
 
     const store = useStore({ html: '', markdown });
 
-    useVisibleTask$(({ track }) => {
-      track(() => props.markdown);
+    useTask$(({ track }) => {
+      track(() => markdown);
 
       unified()
         .use(remarkParse)
         .use(remarkRehype)
         .use(rehypeSanitize)
         .use(rehypeStringify)
-        .process(props.markdown)
+        .process(markdown)
         .then(html => (store.html = String(html)));
     });
 

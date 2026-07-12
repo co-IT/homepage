@@ -14,7 +14,11 @@ export const MapCard = component$((props: MapProps) => {
       <div class='flex w-full flex-row justify-center'>
         <div class='relative '>
           <a href={props.googleMapsLink} target='_blank'>
-            <img src={props.map} alt='map' class='h-64' />
+            <img
+              src={props.map}
+              alt='map'
+              class='h-64 object-cover'
+            />
           </a>
           <div class='absolute -left-[16%] -top-[12%] flex flex-col gap-y-7 bg-white px-10 py-9 shadow-xl'>
             <div class='text-lg font-bold leading-5 text-secondary-900'>

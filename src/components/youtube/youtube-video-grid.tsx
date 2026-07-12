@@ -1,4 +1,5 @@
-import { $, component$, useStore, useVisibleTask$ } from '@builder.io/qwik';
+import { $, component$, useStore, useTask$ } from '@builder.io/qwik';
+import { isBrowser } from '@builder.io/qwik/build';
 import { BlackCloseIcon, BlueCircleArrowIcon } from '../icons';
 import { Markdown } from '../markdown';
 import type { YouTubeVideo } from './model';
@@ -16,8 +17,12 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
     videoPlayingDescriptionMarkdown: ''
   });
 
-  useVisibleTask$(({ track }) => {
+  useTask$(({ track }) => {
     track(() => videoDialog.videoPlaying);
+
+    if (!isBrowser) {
+      return;
+    }
 
     fetch(
       `${location.protocol}//${location.host}/markdown/youtube-video-descriptions/${videoDialog.videoPlaying.id}.md`
@@ -34,8 +39,12 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
       );
   });
 
-  useVisibleTask$(({ track }) => {
+  useTask$(({ track }) => {
     track(() => videoDialog.open);
+
+    if (!isBrowser) {
+      return;
+    }
 
     const [body] = document.getElementsByTagName('body');
 
