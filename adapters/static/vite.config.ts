@@ -27,7 +27,8 @@ export default extendConfig(baseConfig, () => {
       }),
       robotsTxtPlugin({
         userAgent: '*',
-        excludedRoutes: seoExcludedRoutes,
+        //excludedRoutes: seoExcludedRoutes,
+        excludedRoutes: [],
         robotsPath: 'dist/robots.txt',
         sitemapURL: `${origin}/sitemap.xml`
       })
