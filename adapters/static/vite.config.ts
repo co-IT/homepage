@@ -18,8 +18,8 @@ export default extendConfig(baseConfig, () => {
     },
     plugins: [
       staticAdapter({
-        origin,
-        exclude: [...sitemapExcludedPaths]
+        origin
+        //exclude: [...sitemapExcludedPaths]
       }),
       robotsTxtPlugin({
         userAgent: '*',
