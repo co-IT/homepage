@@ -13,7 +13,7 @@ export const microsoft365Azure: PageContent = {
     {
       direction: 'right',
       heading: 'Microsoft im Griff. Von Azure bis Teams.',
-      text: 'Microsoft 365 und Azure sind heute das Rückgrat moderner KMU-IT - aber nur, wenn sie richtig konfiguriert, sicher betrieben und kontinuierlich gewartet werden. Wir begleiten Sie von der Migration bis zum laufenden Betrieb.',
+      text: 'Microsoft 365 und Azure sind für viele kleine und mittelständische Unternehmen das Fundament moderner Zusammenarbeit. Wir sorgen dafür, dass Sie jederzeit den Überblick behalten: über Nutzer, Sicherheit und Systeme. Von der Migration über sichere Grundeinstellungen bis zum laufenden Betrieb von Teams, SharePoint, Exchange, Backup, Lizenzmanagement und Azure.',
       image: createImage('Microsoft 365 und Azure')
     },
     {
