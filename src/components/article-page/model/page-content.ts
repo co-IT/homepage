@@ -5,11 +5,12 @@ export interface PageContent {
   metaDescription: string;
   headerHeading: string;
   headerSubheading: string;
+  headerTeaser?: string;
   backgroundImage: {
     source: string;
     alt: string;
   };
-  contentHeading: string;
+  contentHeading?: string;
   contentText?: string;
   articles: Article[];
 }

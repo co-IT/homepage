@@ -52,7 +52,7 @@ export const menuConfig: MenuConfig = {
           items: [
             {
               text: 'IT-Service Ortenaukreis',
-              description: 'Schnell, persönlich, vor Ort',
+              description: 'Schnell. Persönlich. Vor Ort.',
               path: '/leistungen/it-service-ortenaukreis',
               icon: <OnSiteServiceIcon />
             },
@@ -157,11 +157,11 @@ export const menuConfig: MenuConfig = {
           'Wir betrachten IT, Sicherheit und Software immer im Kontext Ihrer Abläufe, Risiken und Prioritäten.',
         image: (
           <img
-            src='/img/about/team-reviewing-a-solution.webp'
-            alt='Team prüft eine Lösung gemeinsam am Arbeitsplatz'
+            src='/img/article-pages/project-responsibility-review.webp'
+            alt='Berater und Kundenteam besprechen Anforderungen, Prioritäten und Verantwortlichkeiten an einem Whiteboard.'
             width='193'
             height='233'
-            class='h-[14.5rem] w-48 object-cover'
+            class='h-[14.5rem] w-48 object-cover object-[58%_center]'
           />
         ),
         link: '/contact',

@@ -6,13 +6,13 @@ export const microsoft365Azure: PageContent = {
   metaDescription:
     'Microsoft 365 und Azure für Unternehmen: Migration, sichere Konfiguration, Teams, SharePoint, Exchange, Backup, Lizenzen und Betrieb.',
   headerHeading: 'Microsoft 365 & Azure',
-  headerSubheading: 'Von Teams bis Azure',
+  headerSubheading: 'Von Azure bis Teams',
   backgroundImage: createBackgroundImage('Microsoft 365 und Azure'),
   contentHeading: 'Microsoft 365 und Azure für Unternehmen',
   articles: [
     {
       direction: 'right',
-      heading: 'Microsoft im Griff. Von Teams bis Azure.',
+      heading: 'Microsoft im Griff. Von Azure bis Teams.',
       text: 'Microsoft 365 und Azure sind heute das Rückgrat moderner KMU-IT - aber nur, wenn sie richtig konfiguriert, sicher betrieben und kontinuierlich gewartet werden. Wir begleiten Sie von der Migration bis zum laufenden Betrieb.',
       image: createImage('Microsoft 365 und Azure')
     },

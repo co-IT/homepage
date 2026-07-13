@@ -14,5 +14,6 @@ export interface Article {
   text: string;
   enumeration?: string[];
   image: QwikIntrinsicElements['img'];
+  imageLabel?: string;
   callToAction?: ArticleCallToAction;
 }

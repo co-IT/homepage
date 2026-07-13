@@ -285,7 +285,7 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
   ),
   'Vor-Ort-Leistungen': createArticleImageAsset(
     'onsite-workstation-support.webp',
-    'IT-Techniker prüft Arbeitsplatz, Peripherie und Netzwerktechnik direkt beim Kunden vor Ort.'
+    'IT-Techniker verbindet eine Dockingstation am Arbeitsplatz, während eine Kundin den Vor-Ort-Service begleitet.'
   ),
   'Vor-Ort-Service für Handwerk': createArticleImageAsset(
     'craft-workshop-network-service.webp',
