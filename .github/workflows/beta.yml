@@ -7,6 +7,8 @@ on:
 
 env:
   ORIGIN: https://beta.co-IT.eu
+  PUBLIC_SEO_EXCLUDED_ROUTES: |
+    /*
 
 jobs:
   deploy:

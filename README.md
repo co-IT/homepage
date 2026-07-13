@@ -22,6 +22,25 @@
 pnpm build.server
 ```
 
+## Build environment
+
+The static build uses environment variables to generate canonical URLs, the sitemap and robots directives.
+
+- `ORIGIN` defines the public origin of the deployment, for example `https://co-IT.eu` or `https://beta.co-IT.eu`. It is used for absolute sitemap URLs and canonical output. CI builds require this variable.
+- `PUBLIC_SEO_EXCLUDED_ROUTES` defines routes that should still be built, but excluded from SEO indexing. Matching routes are removed from `dist/sitemap.xml`, receive a `noindex,nofollow` robots meta tag and are written as `Disallow` entries to `dist/robots.txt`.
+
+`PUBLIC_SEO_EXCLUDED_ROUTES` can be comma-separated or line-separated. Use `/*` to exclude the whole deployment, for example on beta environments.
+
+Examples:
+
+```bash
+ORIGIN='https://co-IT.eu' PUBLIC_SEO_EXCLUDED_ROUTES='/kontrakte/,/cyber/*,/produkte/passwort-manager/' pnpm build --prod
+```
+
+```bash
+ORIGIN='https://beta.co-IT.eu' PUBLIC_SEO_EXCLUDED_ROUTES='/*' pnpm build --prod
+```
+
 ## Skills
 
 Skills are installed using [skills.sh](https://www.skills.sh/)

@@ -2,12 +2,21 @@ import { promises as fs } from 'node:fs';
 import { resolve } from 'node:path';
 import type { Plugin } from 'vite';
 
+const toDisallowPath = (route: string) => route.replace('*', '');
+
 type RobotsTxtPluginOptions = {
   userAgent: string;
-  sitemap: string;
+  excludedRoutes: readonly string[];
+  robotsPath?: string;
+  sitemapURL: string;
 };
 
-export const robotsTxtPlugin = ({ userAgent, sitemap }: RobotsTxtPluginOptions): Plugin => {
+export const robotsTxtPlugin = ({
+  userAgent,
+  excludedRoutes,
+  robotsPath = 'dist/robots.txt',
+  sitemapURL
+}: RobotsTxtPluginOptions): Plugin => {
   return {
     name: 'robots-txt',
     enforce: 'post',
@@ -15,13 +24,18 @@ export const robotsTxtPlugin = ({ userAgent, sitemap }: RobotsTxtPluginOptions):
     closeBundle: {
       sequential: true,
       async handler() {
-        const robotsPath = resolve(process.cwd(), 'dist', 'robots.txt');
+        const absoluteRobotsPath = resolve(process.cwd(), robotsPath);
+        const disallowedPaths = excludedRoutes.map(toDisallowPath).filter(route => route.length > 0);
+        const disallowLines = disallowedPaths.map(route => `Disallow: ${route}`);
+        const allowLine = disallowedPaths.includes('/') ? undefined : 'Allow: /';
+        const rules = [allowLine, ...disallowLines].filter(Boolean).join('\n');
         const robots = `User-agent: ${userAgent}
+${rules}
 
-Sitemap: ${sitemap}
+Sitemap: ${sitemapURL}
 `;
 
-        await fs.writeFile(robotsPath, robots, 'utf8');
+        await fs.writeFile(absoluteRobotsPath, robots, 'utf8');
       }
     }
   };

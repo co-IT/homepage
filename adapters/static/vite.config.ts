@@ -1,13 +1,14 @@
 import { staticAdapter } from '@builder.io/qwik-city/adapters/static/vite';
 import { extendConfig } from '@builder.io/qwik-city/vite';
+import { parseSeoExcludedRoutes } from '../../src/seo/excluded-routes';
 import baseConfig from '../../vite.config';
+import { filterSitemapPlugin } from './filter-sitemap-plugin';
 import { getOrigin } from './get-origin';
 import { robotsTxtPlugin } from './robots-txt-plugin';
 
-const sitemapExcludedPaths = ['/kontrakte/', '/cyber/*', '/produkte/passwort-manager/'] as const;
-
 export default extendConfig(baseConfig, () => {
   const origin = getOrigin();
+  const seoExcludedRoutes = parseSeoExcludedRoutes(process.env.PUBLIC_SEO_EXCLUDED_ROUTES);
 
   return {
     build: {
@@ -19,11 +20,16 @@ export default extendConfig(baseConfig, () => {
     plugins: [
       staticAdapter({
         origin
-        //exclude: [...sitemapExcludedPaths]
+      }),
+      filterSitemapPlugin({
+        excludedRoutes: seoExcludedRoutes,
+        sitemapPath: 'dist/sitemap.xml'
       }),
       robotsTxtPlugin({
         userAgent: '*',
-        sitemap: `${origin}/sitemap.xml`
+        excludedRoutes: seoExcludedRoutes,
+        robotsPath: 'dist/robots.txt',
+        sitemapURL: `${origin}/sitemap.xml`
       })
     ]
   };
