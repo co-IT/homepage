@@ -7,6 +7,10 @@ on:
 
 env:
   ORIGIN: https://co-IT.eu
+  PUBLIC_SEO_EXCLUDED_ROUTES: |
+    /kontrakte/
+    /cyber/*
+    /produkte/passwort-manager/
 
 jobs:
   deploy:
