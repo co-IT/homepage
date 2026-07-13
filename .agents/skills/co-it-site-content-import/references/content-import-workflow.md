@@ -133,7 +133,7 @@ Each imported main section becomes a top-level nav item:
       items: [
         {
           text: 'IT-Service Ortenaukreis',
-          description: 'Schnell, persönlich, vor Ort',
+          description: 'Schnell. Persönlich. Vor Ort.',
           path: '/leistungen/it-service-ortenaukreis',
           icon: <OnSiteServiceIcon />
         }

@@ -24,3 +24,11 @@ Persistente, belastbare Erkenntnisse fuer AI-Coding in diesem Repository.
 - 2026-07-10: Die neue inhaltliche Zielstruktur der Website ist deutschsprachig und basiert auf Bereichen wie `/leistungen/`, `/produkte-loesungen/` und `/branchen/`; aeltere Parallelstrukturen wie `/about/` oder `/solutions/` gelten als Altstruktur und sollen SEO-seitig nicht gleichrangig neben der neuen Struktur bestehen bleiben.
 - 2026-07-10: Alte Karriere-bezogene Pfade wie `/career/`, `/karriere/`, `/jobs/` und `/recruitee/` sollen auf `/ueber-uns/` weiterleiten statt als 404/410 behandelt zu werden.
 - 2026-07-13: SEO-Ausschluesse sollen Build und Indexierung trennen: alle Routen werden gebaut; `filterSitemapPlugin`, `robotsTxtPlugin` und der globale `RouterHead` nutzen dieselbe Exclude-Liste aus `PUBLIC_SEO_EXCLUDED_ROUTES` (komma- oder zeilengetrennte Pfade, z.B. `/*` fuer Staging). Keine Hostnamen oder Stage-Schalter in der SEO-Exclude-Logik.
+- 2026-07-13: Der Claim soll einheitlich als `Schnell. Persoenlich. Vor Ort.` geschrieben werden, nicht mit Kommas.
+- 2026-07-13: `ArticlePage`-Seiten duerfen ohne `contentHeading` auskommen; der Intro-Block soll nur bei tatsaechlichem Heading oder Introtext gerendert werden.
+- 2026-07-13: Auf der Leistungen-Uebersicht sollen Artikelbilder ein dezentes Overlay mit dem jeweiligen Navigationstitel tragen.
+- 2026-07-13: Content-Page-Heroes duerfen einen Teaser direkt im Header tragen; auf `Leistungen` soll der Absatz wie auf der Startseite im Hero unter gelbem Subtitel und weissem Seitentitel stehen.
+- 2026-07-13: Bild-Overlays auf der Leistungen-Uebersicht sollen je nach Artikelrichtung gespiegelt ausgerichtet sein: bei rechts liegenden Bildern rechtsbuendig, bei links liegenden linksbuendig.
+- 2026-07-13: Der Hero-Teaser auf `Leistungen` soll kurz und praegnant bleiben, nicht als langer Fliesstextblock wirken.
+- 2026-07-13: Der Hero-Teaser auf `Leistungen` soll sich in der Breite an der darunterliegenden Content-Flaeche orientieren.
+- 2026-07-13: Die Branchen-Kachel im Desktop-Menue soll ein professionelles, kontextbezogenes Beratungsbild statt eines lockeren Teamfotos nutzen.

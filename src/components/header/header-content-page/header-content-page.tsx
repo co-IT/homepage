@@ -12,7 +12,7 @@ export const HeaderContentPage = component$((props: HeaderContentPageProps) => {
 
       {props.teaser && (
         <div class='bg-secondary-900 md:bg-opacity-0'>
-          <p class='p-8 text-lg leading-8 tracking-wider text-white md:text-xl md:font-semibold md:leading-10 md:[text-shadow:0_4px_8px_rgba(0,0,0,0.8)]'>
+          <p class='w-full max-w-[75rem] px-8 py-8 text-lg leading-8 tracking-wider text-white md:text-xl md:font-semibold md:leading-10 md:[text-shadow:0_4px_8px_rgba(0,0,0,0.8)] lg:px-10'>
             {props.teaser}
           </p>
         </div>

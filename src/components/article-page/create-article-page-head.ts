@@ -15,7 +15,8 @@ export const createArticlePageHead = (page: PageContent): DocumentHead => ({
       configuration: {
         backgroundImage: page.backgroundImage,
         heading: page.headerHeading,
-        headingAccent: page.headerSubheading
+        headingAccent: page.headerSubheading,
+        teaser: page.headerTeaser
       }
     }
   }

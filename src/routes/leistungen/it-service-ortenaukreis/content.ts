@@ -4,16 +4,15 @@ import { createBackgroundImage, createImage } from '~/components/article-page';
 export const itServiceOrtenaukreis: PageContent = {
   title: 'co-IT - IT-Service Ortenaukreis',
   metaDescription:
-    'Regionaler IT-Service im Ortenaukreis für Unternehmen rund um Achern, Sasbach, Renchen, Kappelrodeck, Appenweier und Bühl.',
+    'Regionaler IT-Service im Ortenaukreis für Unternehmen rund um Achern, Sasbach, Renchen, Kappelrodeck, Appenweier und Offenburg.',
   headerHeading: 'IT-Service Ortenaukreis',
-  headerSubheading: 'Schnell, persönlich, vor Ort',
+  headerSubheading: 'Schnell. Persönlich. Vor Ort.',
   backgroundImage: createBackgroundImage('IT-Service im Ortenaukreis'),
-  contentHeading: 'IT-Service im Ortenaukreis für Unternehmen',
   articles: [
     {
       direction: 'right',
       heading: 'Schnell. Persönlich. Vor Ort.',
-      text: 'Wenn IT-Systeme streiken, zählt jede Minute. Unser lokales Team ist im Raum Achern ansässig und in der gesamten Ortenau für Sie im Einsatz - von Sasbach über Renchen und Kappelrodeck bis Appenweier, Bühl und umliegende Orte. Kein endloses Ferndiagnose-Ping-Pong, sondern ein Techniker, der Ihre Infrastruktur kennt und bei Bedarf direkt vor Ort unterstützt.',
+      text: 'Wenn IT-Systeme streiken, zählt jede Minute. Unser Team sitzt in Achern und unterstützt Unternehmen im gesamten Ortenaukreis – unter anderem in Sasbach, Renchen, Kappelrodeck, Oberkirch, Appenweier und Offenburg. Kein endloses Ferndiagnose-Ping-Pong, sondern ein Techniker, der Ihre Infrastruktur kennt und bei Bedarf direkt vor Ort unterstützt.',
       image: createImage('regionalen IT-Service')
     },
     {
