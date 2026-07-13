@@ -20,7 +20,10 @@ export const microsoft365Azure: PageContent = {
       direction: 'left',
       heading: 'Migration ohne Stillstand.',
       text: 'Fehlkonfigurationen bei Exchange-Migrationen, unsichere Tenant-Einstellungen, fehlende Zugriffsregeln oder unklare Lizenzmodelle sind häufige Stolpersteine. Wir planen, testen und migrieren mit klarer Dokumentation und möglichst geringer Unterbrechung im Tagesgeschäft.',
-      image: createImage('Microsoft-365-Migration')
+      image: {
+        src: '/img/article-pages/microsoft-365-migration-exchange-tenant-detail.png',
+        alt: 'IT-Berater verfolgt eine Microsoft-365-Migration mit Exchange-, Tenant- und Prozessschritten an zwei Monitoren.'
+      }
     },
     {
       direction: 'right',
