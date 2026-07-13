@@ -1,0 +1,7 @@
+/dist
+/node_modules
+.Dockerfile
+/server
+.agents
+.github
+.tmp
