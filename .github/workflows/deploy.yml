@@ -49,6 +49,15 @@ jobs:
         run: |
           printf 'DOMAIN=domain=%s\n' '${{ env.CANONICAL_DOMAIN }}' >> "$GITHUB_ENV"
           printf 'ORIGIN=%s\n' '${{ env.CANONICAL_DOMAIN }}' >> "$GITHUB_ENV"
+
+          {
+            printf 'PUBLIC_SEO_EXCLUDED_ROUTES<<EOF\n'
+            printf  '/kontrakte/\n'
+            printf '/cyber/*'\n'
+            printf '/produkte/passwort-manager/\n'
+            printf 'EOF\n'
+          } >> "$GITHUB_ENV"
+
           {
             printf 'BASE_RULES<<EOF\n'
 
@@ -65,6 +74,13 @@ jobs:
         run: |
           printf 'DOMAIN=domain=beta.%s\n' '${{ env.CANONICAL_DOMAIN }}' >> "$GITHUB_ENV"
           printf 'ORIGIN=beta.%s\n' '${{ env.CANONICAL_DOMAIN }}' >> "$GITHUB_ENV"
+
+          {
+            printf 'PUBLIC_SEO_EXCLUDED_ROUTES<<EOF\n'
+            printf  '/*\n'
+            printf 'EOF\n'
+          } >> "$GITHUB_ENV"
+
           {
             printf 'BASE_RULES<<EOF\n'
 
@@ -140,6 +156,7 @@ jobs:
           build-args: |
             NODE_VERSION=${{ steps.node-version.outputs.VERSION }}
             ORIGIN=${{ env.ORIGIN }}
+            PUBLIC_SEO_EXCLUDED_ROUTES=${{ env.PUBLIC_SEO_EXCLUDED_ROUTES }}
             GIT_SHA=${{ env.GIT_SHA }}
             GIT_REF_NAME=${{ env.GIT_REF_NAME }}
 

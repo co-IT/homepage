@@ -2,7 +2,9 @@ ARG NODE_VERSION
 
 FROM --platform=$BUILDPLATFORM node:${NODE_VERSION:?Required} AS build
 ARG ORIGIN
+ARG PUBLIC_SEO_EXCLUDED_ROUTES
 ENV ORIGIN=https://${ORIGIN:?Required}
+ENV PUBLIC_SEO_EXCLUDED_ROUTES = ${PUBLIC_SEO_EXCLUDED_ROUTES:?Required}
 WORKDIR /app
 
 # Prepare dependency installation.
