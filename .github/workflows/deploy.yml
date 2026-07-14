@@ -139,6 +139,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
             NODE_VERSION=${{ steps.node-version.outputs.VERSION }}
+            ORIGIN=${{ env.DOMAIN }}}}
             GIT_SHA=${{ env.GIT_SHA }}
             GIT_REF_NAME=${{ env.GIT_REF_NAME }}
 

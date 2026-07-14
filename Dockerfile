@@ -1,7 +1,8 @@
 ARG NODE_VERSION
 
 FROM --platform=$BUILDPLATFORM node:${NODE_VERSION:?Required} AS build
-
+ARG ORIGIN
+ENV ORIGIN=https://${ORIGIN:?Required}
 WORKDIR /app
 
 # Prepare dependency installation.
