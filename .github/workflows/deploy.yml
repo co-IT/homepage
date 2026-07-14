@@ -53,7 +53,7 @@ jobs:
           {
             printf 'PUBLIC_SEO_EXCLUDED_ROUTES<<EOF\n'
             printf  '/kontrakte/\n'
-            printf '/cyber/*'\n'
+            printf '/cyber/*\n'
             printf '/produkte/passwort-manager/\n'
             printf 'EOF\n'
           } >> "$GITHUB_ENV"
