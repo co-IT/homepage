@@ -134,6 +134,7 @@ jobs:
             type=raw,value=latest,enable={{ is_default_branch }}
           labels: |
             traefik.http.routers.${{ github.event.repository.name }}-${{ github.ref_name }}.entrypoints=https
+            traefik.http.routers.${{ github.event.repository.name }}-${{ github.ref_name }}.middlewares=security-headers-web@file
 
             ${{ env.DOMAIN }}
             ${{ env.BASE_RULES }}
