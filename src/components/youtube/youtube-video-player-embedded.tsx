@@ -30,8 +30,9 @@ export const YoutubeVideoPlayerEmbedded = component$((props: YoutubeVideoPlayerE
       {hasVisitorAgreedToYouTubeTermsOfUse.value ? (
         <iframe
           loading='lazy'
-          src={`https://www.youtube-nocookie.com/embed/${props.youTubeVideoId}`}
+          src={`https://www.youtube-nocookie.com/embed/${props.youTubeVideoId}?rel=0`}
           class={`block aspect-video w-full border-0 ${props.class ?? ''}`}
+          allow="fullscreen; clipboard-write"
         />
       ) : (
         <div class='relative overflow-hidden bg-black'>
