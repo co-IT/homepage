@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
   "name": "co-IT | Inspire to Change",
   "short_name": "co-IT",
-  "start_url": "https://co-IT.eu",
+  "start_url": "/?utm_source=pwa",
   "display": "standalone",
   "description": "Die offizielle Homepage der co-IT.eu GmbH.",
   "icons": [
