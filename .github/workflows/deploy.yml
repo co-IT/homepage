@@ -157,7 +157,7 @@ jobs:
           build-args: |
             NODE_VERSION=${{ steps.node-version.outputs.VERSION }}
             ORIGIN=${{ env.ORIGIN }}
-            PUBLIC_SEO_EXCLUDED_ROUTES="${{ env.PUBLIC_SEO_EXCLUDED_ROUTES }}"
+            PUBLIC_SEO_EXCLUDED_ROUTES=${{ env.PUBLIC_SEO_EXCLUDED_ROUTES }}
             GIT_SHA=${{ env.GIT_SHA }}
             GIT_REF_NAME=${{ env.GIT_REF_NAME }}
 
