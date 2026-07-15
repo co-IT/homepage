@@ -126,11 +126,11 @@ export const YouTubeVideoGrid = component$((props: YouTubeVideoGridProps) => {
           </header>
 
           <main class='grid space-y-8 overflow-hidden' style='grid-template-columns 1fr; grid-template-rows: auto 1fr '>
-            <div class='bg-black grid place-items-center'>
+            <div class='grid place-items-center bg-black'>
               {videoDialog.open && (
                 <YoutubeVideoPlayerEmbedded
                   youTubeVideoId={videoDialog.videoPlaying.id}
-                  class='xl:h-[500px] 2xl:h-[600px] xl:w-[1000px] 2xl:w-[1400px]'
+                  class='xl:h-[500px] xl:w-[1000px] 2xl:h-[600px] 2xl:w-[1400px]'
                 />
               )}
             </div>
