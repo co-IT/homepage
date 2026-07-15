@@ -15,7 +15,7 @@ RUN npm install --global pnpm
 
 # Install dependencies.
 RUN pnpm install
-
+RUN printenv
 RUN pnpm build --prod
 
 FROM nginx:alpine AS runtime
