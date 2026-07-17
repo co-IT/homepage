@@ -24,9 +24,6 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
 
         <div class='grid gap-6'>
           <div class='rounded border border-secondary-900/10 bg-white px-5 py-6 shadow-[0_18px_40px_-30px_rgba(2,2,77,0.3)]'>
-            <div class='mb-3 text-sm font-semibold uppercase tracking-[0.14em] text-secondary-900/60'>
-              Beispiel {activeIndexSig.value + 1} von {totalExamples}
-            </div>
             <h3 class='text-2xl font-bold leading-8 text-secondary-900'>{activeExample.title}</h3>
             <p class='mt-4 whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80'>
               {activeExample.text}
