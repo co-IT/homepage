@@ -28,7 +28,7 @@ export const cyberSicherheit: PageContent = {
     {
       direction: 'right',
       heading: 'Sicherheit wirkt besser, wenn sie intern verstanden wird.',
-      text: 'Technische Schutzmaßnahmen entfalten erst dann ihren vollen Nutzen, wenn Verantwortliche und Mitarbeitende nachvollziehen können, was sie bewirken und warum sie eingeführt werden. Deshalb verbinden wir technische Härtung mit verständlicher Erklärung, Awareness-Trainings, Phishing-Simulationen, Passwort-Management und sauberem Feedback. Sicherheitsverhalten wird so messbar und entwickelbar, ohne aus Lernen einen Vorwurf zu machen.',
+      text: 'Technische Schutzmaßnahmen entfalten erst dann ihren vollen Nutzen, wenn Verantwortliche und Mitarbeitende nachvollziehen können, was sie bewirken und warum sie eingeführt werden. Deshalb verbinden wir technische Härtung mit verständlicher Erklärung, Awareness-Trainings, Phishing-Simulationen, Passwort-Management und sauberem Feedback. Sicherheitsverhalten wird so messbar und entwickelbar, ohne aus Lernen einen Vorwurf zu machen - und die Ergebnisse können in konkrete organisatorische und technische Maßnahmen übersetzt werden.',
       image: {
         src: '/img/article-pages/cyber-awareness-measurable-dashboard.webp',
         alt: 'IT-Berater bespricht mit zwei Kunden messbare Awareness-Ergebnisse und Sicherheitskennzahlen an einem grossen Dashboard.'
