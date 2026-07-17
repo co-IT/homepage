@@ -6,14 +6,14 @@ export const sicherheitschecks: PageContent = {
   metaDescription:
     'Sicherheitschecks für E-Mail, DNS und Webseiten mit verständlichem Bericht und priorisierten Handlungsempfehlungen.',
   headerHeading: 'Sicherheitschecks',
-  headerSubheading: 'Konfiguration verstehen, Risiken priorisieren',
+  headerSubheading: 'E-Mail, DNS und Webseite prüfen',
   backgroundImage: createBackgroundImage('Sicherheitschecks'),
   contentHeading: 'Sicherheitschecks für E-Mail, DNS und Webseite',
   articles: [
     {
       direction: 'right',
       heading: 'Wissen, wo Sie stehen. Bevor es jemand anderes herausfindet.',
-      text: 'Unser Sicherheitscheck analysiert Ihre E-Mail-Infrastruktur, DNS-Konfiguration und Webseite auf bekannte Schwachstellen, Fehlkonfigurationen und ungenutzte Schutzpotenziale. Das Ziel ist kein rein technischer Schnelltest, sondern eine belastbare Grundlage für Entscheidungen: Was ist bereits gut, wo bestehen reale Risiken und welche Schritte sollten als Nächstes folgen?',
+      text: 'Unser standardisierter Sicherheitscheck analysiert Ihre E-Mail-Infrastruktur, DNS-Konfiguration und Webseite auf bekannte Schwachstellen und Fehlkonfigurationen. Das Ergebnis ist ein strukturierter Bericht mit konkreten Handlungsempfehlungen.',
       image: {
         src: '/img/article-pages/security-report-review.webp',
         alt: 'IT-Berater prüft einen Sicherheitsbericht mit priorisierten Befunden.'
@@ -21,14 +21,14 @@ export const sicherheitschecks: PageContent = {
     },
     {
       direction: 'left',
-      heading: 'Was geprüft wird und warum das im Alltag zählt.',
-      text: 'Im E-Mail-Bereich prüfen wir unter anderem SPF, DKIM, DMARC, MTA-STS, TLS-RPT, DANE und DNSSEC. Dabei betrachten wir nicht nur Sollwerte, sondern auch die reale Mailstrecke mit angebundenen Diensten und Sonderfällen. Hinzu kommen DNS-Konfigurationen, veraltete Einträge, HTTPS-Einstellungen, Security-Header und sichtbare technische Risiken Ihrer Webseite.',
+      heading: 'Was geprüft wird.',
+      text: 'E-Mail: SPF, DKIM, DMARC, MTA-STS, TLS-RPT, DANE und DNSSEC. DNS: auffällige Konfigurationen, veraltete Einträge und potenzielle Schwachstellen. Webseite: HTTPS-Konfiguration, Security-Header und sichtbare technische Risiken.',
       image: createImage('Prüfumfang von Sicherheitschecks')
     },
     {
       direction: 'right',
-      heading: 'Aus Befunden werden priorisierte nächste Schritte.',
-      text: 'Ein guter Sicherheitsbericht muss technisch korrekt und intern nutzbar sein. Deshalb formulieren wir Befunde so, dass technische Verantwortliche direkt handeln können und Geschäftsführung, Datenschutz oder Compliance die Auswirkungen nachvollziehen. Wenn sinnvoll, empfehlen wir auch eine gestufte Umsetzung, etwa zuerst im Testmodus zu beobachten und Schutzmaßnahmen anschließend gezielt zu verschärfen.',
+      heading: 'Aus Befunden werden nächste Schritte.',
+      text: 'Ein guter Sicherheitsbericht muss technisch korrekt und intern nutzbar sein. Deshalb formulieren wir Befunde so, dass technische Verantwortliche handeln können und Geschäftsführung, Datenschutz oder Compliance die Risiken nachvollziehen können.',
       image: createImage('Handlungsempfehlungen aus Sicherheitschecks')
     }
   ]
