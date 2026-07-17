@@ -6,14 +6,14 @@ export const cyberSicherheit: PageContent = {
   metaDescription:
     'Cyber-Sicherheit für E-Mail, Mitarbeitende und Systeme mit E-Mail-Härtung, Awareness, Phishing-Simulationen und Sicherheitschecks.',
   headerHeading: 'Cyber-Sicherheit',
-  headerSubheading: 'Technik härten. Menschen mitnehmen.',
+  headerSubheading: 'Verständlich und wirksam',
   backgroundImage: createBackgroundImage('Cyber-Sicherheit'),
   contentHeading: 'Cyber-Sicherheit für E-Mail, Mitarbeitende und Systeme',
   articles: [
     {
       direction: 'right',
-      heading: 'Viele Sicherheitsprobleme beginnen mit einer scheinbar normalen E-Mail.',
-      text: 'Viele Angriffe beginnen nicht im Serverraum, sondern mit einer glaubwürdigen Absenderadresse, einem schwachen Passwort oder einer falschen Entscheidung unter Zeitdruck. Gerade bei E-Mails zeigt sich schnell, wie nah technische Konfiguration, Zustellbarkeit und menschliches Verhalten zusammenhängen. Wer nur einzelne Schutzbausteine aktiviert, ohne den Gesamtprozess zu betrachten, lässt oft weiterhin kritische Lücken offen.',
+      heading: 'Viele Angriffe beginnen nicht im Serverraum.',
+      text: 'Viele Angriffe beginnen nicht im Serverraum, sondern mit einer glaubwürdigen E-Mail, einem schwachen Passwort oder einer falschen Entscheidung unter Zeitdruck. Firewalls und Antivirensoftware allein schützen nicht gegen Social Engineering, kompromittierte Zugangsdaten und organisatorische Schwachstellen.',
       image: {
         src: '/img/article-pages/cyber-phishing-password-risk.webp',
         alt: 'Mitarbeiter prüft eine verdaechtige E-Mail und Passwortwarnungen an seinem Arbeitsplatz.'
@@ -21,8 +21,8 @@ export const cyberSicherheit: PageContent = {
     },
     {
       direction: 'left',
-      heading: 'E-Mail-Sicherheit muss zur tatsächlichen Systemlandschaft passen.',
-      text: 'Wir prüfen und härten Ihre E-Mail-Infrastruktur mit SPF, DKIM, DMARC, MTA-STS, TLS-RPT, DANE und DNSSEC. Entscheidend ist dabei nicht nur die Liste der Protokolle, sondern wie diese mit Ihrer realen Umgebung zusammenspielen, etwa mit Versanddiensten, Sicherheitsgateways oder bestehenden Mailrouten. Gute Absicherung entsteht deshalb oft schrittweise: messen, berichten, prüfen, nachschärfen und erst dann konsequent durchsetzen.',
+      heading: 'E-Mail-Sicherheit auf technischer Ebene.',
+      text: 'Wir prüfen und härten Ihre E-Mail-Infrastruktur mit SPF, DKIM, DMARC, MTA-STS, TLS-RPT, DANE und DNSSEC. Diese Protokolle reduzieren das Risiko von Spoofing, Manipulation und Fehlkonfigurationen und schaffen eine belastbare Grundlage für sichere Kommunikation.',
       image: createImage('E-Mail-Sicherheit')
     },
     {
