@@ -21,14 +21,14 @@ export const energiesektor: PageContent = {
     },
     {
       direction: 'left',
-      heading: 'Sicherheit für kritische Kommunikation und Betriebsprozesse.',
-      text: 'Energieunternehmen stehen im Fokus professioneller Angriffe. Phishing, Zugangsdatenmissbrauch und Fehlkonfigurationen in Cloud- oder E-Mail-Systemen können erhebliche Folgen haben. Wir unterstützen mit Sicherheitschecks, Awareness und Managed Services.',
+      heading: 'Sicherheitsmaßnahmen müssen zur bestehenden Betriebslandschaft passen.',
+      text: 'Energieunternehmen stehen im Fokus professioneller Angriffe. Phishing, Zugangsdatenmissbrauch und Fehlkonfigurationen in Cloud-, DNS- oder E-Mail-Systemen können erhebliche Folgen haben. Wir unterstützen mit Sicherheitschecks, Awareness und Managed Services - immer mit Blick darauf, wie bestehende Dienste, Sicherheitslösungen und Kommunikationswege tatsächlich zusammenspielen.',
       image: createImage('Sichere Kommunikation im Energiesektor')
     },
     {
       direction: 'right',
-      heading: 'Digitalisierung mit Verantwortungsbewusstsein.',
-      text: 'Neue digitale Prozesse müssen Effizienz schaffen, ohne Risiken zu erhöhen. Wir helfen dabei, Modernisierung, Compliance und technische Umsetzbarkeit zusammenzuführen - von Microsoft 365 und Azure über individuelle Software bis zur KI-gestützten Prozessanalyse.',
+      heading: 'Digitalisierung mit sauber dokumentierten Prozessen.',
+      text: 'Neue digitale Prozesse müssen Effizienz schaffen, ohne Risiken zu erhöhen. Wir helfen dabei, Modernisierung, Compliance und technische Umsetzbarkeit zusammenzuführen - von Microsoft 365 und Azure über individuelle Software bis zur KI-gestützten Prozessanalyse. Gerade bei stufenweisen Veränderungen sind klare Verantwortlichkeiten, Dokumentation und belastbare Tests entscheidend.',
       image: createImage('Digitalisierung im Energiesektor')
     }
   ]
