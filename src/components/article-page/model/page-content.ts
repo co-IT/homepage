@@ -1,4 +1,4 @@
-import type { Article } from '~/components/article-section/model';
+import type { ArticleSectionBlock } from '~/components/article-section/model';
 
 export interface PageContent {
   title: string;
@@ -12,5 +12,5 @@ export interface PageContent {
   };
   contentHeading?: string;
   contentText?: string;
-  articles: Article[];
+  articles: ArticleSectionBlock[];
 }
