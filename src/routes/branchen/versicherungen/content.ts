@@ -19,13 +19,13 @@ export const versicherungen: PageContent = {
     {
       direction: 'left',
       heading: 'Kommunikation absichern und Auffälligkeiten früh erkennen.',
-      text: 'Phishing, Social Engineering und kompromittierte Zugangsdaten treffen Versicherungen besonders hart, weil Kommunikation oft auf Vertrauen basiert. Awareness-Portale, Phishing-Simulationen, Passwort-Management und E-Mail-Sicherheitschecks helfen, Risiken früher sichtbar zu machen und technische Schutzmaßnahmen nachvollziehbar zu verschärfen.',
+      text: 'Phishing, Social Engineering und kompromittierte Zugangsdaten treffen Versicherungen besonders hart, weil Kommunikation oft auf Vertrauen basiert. Awareness-Portale, Phishing-Simulationen, Passwort-Management und E-Mail-Sicherheitschecks helfen, Risiken früher sichtbar zu machen und technische Schutzmaßnahmen nachvollziehbar zu verschärfen. Gleichzeitig lassen sich solche Maßnahmen auch als strukturierte Leistung für Geschäftskunden einsetzen und sauber auswerten.',
       image: createImage('Sicherheit für Versicherungen')
     },
     {
       direction: 'right',
       heading: 'Digitale Prozesse mit Nachweisbarkeit.',
-      text: 'Ob Schulungsnachweise, Sicherheitsberichte, Portale, Dokumentenflüsse oder individuelle Softwarelösungen: Versicherungen brauchen nachvollziehbare und dokumentierte Prozesse, die intern, gegenüber Partnern und gegenüber Aufsicht erklärbar bleiben. Genau dort entfalten klar strukturierte Systeme und belastbare Integrationen ihren Wert.',
+      text: 'Ob Schulungsnachweise, Sicherheitsberichte, Portale, Dokumentenflüsse oder individuelle Softwarelösungen: Versicherungen brauchen nachvollziehbare und dokumentierte Prozesse, die intern, gegenüber Partnern und gegenüber Aufsicht erklärbar bleiben. Genau dort entfalten klar strukturierte Systeme und belastbare Integrationen ihren Wert - auch wenn Phishing-Simulationen, Ergebnisse und Folgemaßnahmen transparent dokumentiert werden sollen.',
       image: createImage('Digitale Versicherungsprozesse')
     }
   ]

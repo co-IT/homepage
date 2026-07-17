@@ -21,13 +21,13 @@ export const gesundheitswesen: PageContent = {
     {
       direction: 'left',
       heading: 'Sicherheit und Prozesse müssen den Praxisalltag entlasten.',
-      text: 'Arztpraxen, Apotheken und Gesundheitsdienstleister haben wenig Zeit für komplexe IT-Projekte. IT darf den Praxisalltag nicht zusätzlich belasten. Deshalb setzen wir auf klare Maßnahmen wie sichere E-Mail-Konfiguration, Passwort-Management, strukturierte Backups, Awareness-Schulungen und betreute Microsoft-Umgebungen - immer mit Blick darauf, wie Mitarbeitende tatsächlich arbeiten.',
+      text: 'Arztpraxen, Apotheken und Gesundheitsdienstleister haben wenig Zeit für komplexe IT-Projekte. IT darf den Praxisalltag nicht zusätzlich belasten. Deshalb setzen wir auf klare Maßnahmen wie sichere E-Mail-Konfiguration, Passwort-Management, strukturierte Backups, Awareness-Schulungen und betreute Microsoft-Umgebungen - immer mit Blick darauf, wie Mitarbeitende tatsächlich arbeiten. Gerade bei zentralen Praxisadressen wie info@ kann schon ein kleiner Kreis von Mitarbeitenden einen Großteil der externen Kommunikation verantworten.',
       image: createImage('IT-Sicherheit im Gesundheitswesen')
     },
     {
       direction: 'right',
       heading: 'Auch Fachanwendungen und Dokumentenflüsse müssen sauber zusammenspielen.',
-      text: 'Neben der klassischen Betreuung werden im Gesundheitswesen oft mehrere Systeme parallel genutzt - etwa für Kommunikation, Dokumente, Verwaltung oder Abrechnung. Wenn Informationen zwischen diesen Anwendungen nicht sauber fließen, entstehen unnötige Rückfragen und Mehrarbeit. Wir helfen dabei, solche Abläufe technisch und organisatorisch sinnvoll aufeinander abzustimmen.',
+      text: 'Neben der klassischen Betreuung werden im Gesundheitswesen oft mehrere Systeme parallel genutzt - etwa für Kommunikation, Dokumente, Verwaltung oder Abrechnung. Wenn Informationen zwischen diesen Anwendungen nicht sauber fließen, entstehen unnötige Rückfragen und Mehrarbeit. Wir helfen dabei, solche Abläufe technisch und organisatorisch sinnvoll aufeinander abzustimmen. Dazu gehört auch, phishing-anfällige Kommunikationssituationen branchentypisch zu betrachten und gezielt zu trainieren.',
       image: createImage('IT-Betreuung im Gesundheitswesen')
     }
   ]
