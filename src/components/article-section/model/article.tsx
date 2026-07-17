@@ -25,4 +25,16 @@ export interface ArticleTextBlock {
   text: string;
 }
 
-export type ArticleSectionBlock = Article | ArticleTextBlock;
+export interface ArticlePracticeExample {
+  title: string;
+  text: string;
+}
+
+export interface ArticlePracticeSliderBlock {
+  type: 'practice-slider';
+  heading: string;
+  intro?: string;
+  examples: ArticlePracticeExample[];
+}
+
+export type ArticleSectionBlock = Article | ArticleTextBlock | ArticlePracticeSliderBlock;
