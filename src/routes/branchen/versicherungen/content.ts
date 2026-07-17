@@ -27,6 +27,12 @@ export const versicherungen: PageContent = {
       heading: 'Digitale Prozesse mit Nachweisbarkeit.',
       text: 'Ob Schulungsnachweise, Sicherheitsberichte, Portale, Dokumentenflüsse oder individuelle Softwarelösungen: Versicherungen brauchen nachvollziehbare und dokumentierte Prozesse, die intern, gegenüber Partnern und gegenüber Aufsicht erklärbar bleiben. Genau dort entfalten klar strukturierte Systeme und belastbare Integrationen ihren Wert - auch wenn Phishing-Simulationen, Ergebnisse und Folgemaßnahmen transparent dokumentiert werden sollen.',
       image: createImage('Digitale Versicherungsprozesse')
+    },
+    {
+      direction: 'left',
+      heading: 'Aus der Praxis',
+      text: 'Für die Geschäftskunden einer namhaften deutschen Versicherung setzen wir Phishing-Simulationen als strukturierte Leistung ein. Dabei greifen wir auf bestehende Szenarien für unterschiedliche Branchen und Unternehmensgrößen zurück und passen Inhalte bei Bedarf gezielt an den jeweiligen Unternehmenskontext an. Die Ergebnisse werden datenschutzkonform ausgewertet und in konkrete Maßnahmen übersetzt - von gezielten Schulungen über klare Prüfmerkmale bis hin zu organisatorischen und technischen Empfehlungen.',
+      image: createImage('Awareness und Phishing-Simulationen')
     }
   ]
 };

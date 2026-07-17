@@ -33,3 +33,4 @@ Persistente, belastbare Erkenntnisse fuer AI-Coding in diesem Repository.
 - 2026-07-13: Der Hero-Teaser auf `Leistungen` soll sich in der Breite an der darunterliegenden Content-Flaeche orientieren.
 - 2026-07-13: Die Branchen-Kachel im Desktop-Menue soll ein professionelles, kontextbezogenes Beratungsbild statt eines lockeren Teamfotos nutzen.
 - 2026-07-17: Erfahrungsbasierte Detailseiten sollen oben drei Hauptbloecke behalten; zusaetzliche konkrete Beispiele koennen darunter als `Aus der Praxis`-Slider erscheinen, ohne sichtbare Zaehlerzeile wie `Beispiel X von Y`.
+- 2026-07-17: Wenn fuer eine Seite nur ein belastbares Praxisbeispiel vorliegt, soll `Aus der Praxis` ohne Slider als normaler Inhaltsblock aufgebaut werden.
