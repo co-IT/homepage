@@ -47,8 +47,8 @@ jobs:
       - name: Build Traefik base rules when building the default branch
         if: env.IS_DEFAULT_BRANCH == 'true'
         run: |
-          printf 'DOMAIN=domain=%s\n' '${{ env.CANONICAL_DOMAIN }}' >> "$GITHUB_ENV"
-          printf 'ORIGIN=%s\n' '${{ env.CANONICAL_DOMAIN }}' >> "$GITHUB_ENV"
+          printf 'DOMAIN=domain=www.%s\n' '${{ env.CANONICAL_DOMAIN }}' >> "$GITHUB_ENV"
+          printf 'ORIGIN=www.%s\n' '${{ env.CANONICAL_DOMAIN }}' >> "$GITHUB_ENV"
 
           {
             printf 'PUBLIC_SEO_EXCLUDED_ROUTES<<EOF\n'
@@ -93,7 +93,6 @@ jobs:
 
       - name: Build Traefik redirect rules to canonical domain
         if: env.IS_DEFAULT_BRANCH == 'true'
-        #https?://co-it\\.eu(/?)(.*)
         run: |
           {
             printf 'REDIRECT_RULES<<EOF\n'
