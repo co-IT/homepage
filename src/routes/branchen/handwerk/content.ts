@@ -13,19 +13,19 @@ export const handwerk: PageContent = {
     {
       direction: 'right',
       heading: 'Handwerk braucht IT, die funktioniert.',
-      text: 'Im Handwerk muss IT vor allem den Betrieb unterstützen. Angebote, Aufträge, Zeiterfassung, Kommunikation, Geräte, Drucker, mobile Arbeit und Abrechnung müssen zuverlässig laufen.',
+      text: 'Im Handwerk muss IT vor allem den Betrieb unterstützen. Angebote, Aufträge, Zeiterfassung, Kommunikation, Geräte, Drucker, mobile Arbeit und Abrechnung müssen zuverlässig laufen. Wenn Daten doppelt erfasst werden oder ein einfacher Ablauf stockt, fehlt diese Zeit direkt auf der Baustelle, in der Werkstatt oder im Büro.',
       image: createImage('Handwerk')
     },
     {
       direction: 'left',
-      heading: 'Vor Ort, wenn es erforderlich ist.',
-      text: 'Gerade bei kleineren Betrieben ist schnelle Hilfe entscheidend. Wir unterstützen im Ortenaukreis bei Arbeitsplätzen, Netzwerken, Druckern, Servern, Telefonie und Hardware. Alles, was remote gelöst werden kann, lösen wir effizient aus der Ferne.',
+      heading: 'Wenn Daten doppelt erfasst werden, wird es teuer.',
+      text: 'Gerade im Handwerk hängen Zeiterfassung, Auftragsabwicklung, Dokumente und Abrechnung eng zusammen. Müssen Informationen manuell übertragen oder nachgepflegt werden, steigt der Aufwand schnell unnötig an. Wir helfen dabei, solche Brüche zu reduzieren - pragmatisch, verständlich und passend zur tatsächlichen Arbeitsweise im Betrieb.',
       image: createImage('Vor-Ort-Service für Handwerk')
     },
     {
       direction: 'right',
-      heading: 'Digitalisierung ohne Überforderung.',
-      text: 'Nicht jeder Betrieb braucht sofort eine große Digitalstrategie. Oft reichen klare nächste Schritte: sichere Passwörter, Microsoft 365, strukturierte Backups, bessere Zusammenarbeit, mobile Verfügbarkeit oder eine moderne Webseite.',
+      heading: 'Digitalisierung in brauchbaren Schritten.',
+      text: 'Nicht jeder Betrieb braucht sofort eine große Digitalstrategie. Oft reichen klare nächste Schritte: sichere Passwörter, Microsoft 365, strukturierte Backups, mobile Verfügbarkeit, bessere Zusammenarbeit oder eine sinnvoll angebundene Fachanwendung. Wichtig ist, dass neue Lösungen im Alltag entlasten und nicht zusätzliche Komplexität erzeugen.',
       image: createImage('Digitalisierung im Handwerk')
     }
   ]

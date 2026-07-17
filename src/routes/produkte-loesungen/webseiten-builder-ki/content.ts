@@ -12,8 +12,8 @@ export const webseitenBuilderKi: PageContent = {
   articles: [
     {
       direction: 'right',
-      heading: 'Eine gute Webseite beginnt nicht mit Design.',
-      text: 'Viele Webseiten scheitern nicht an Farben oder Bildern, sondern an Struktur, Inhalt und Klarheit. Unser KI-gestützter Webseiten-Builder unterstützt dabei, aus Unternehmensinformationen, Leistungen und Zielgruppen eine saubere Seitenstruktur zu entwickeln.',
+      heading: 'Eine gute Webseite beginnt mit verwertbaren Quellen.',
+      text: 'Viele Webseiten scheitern nicht an Farben oder Bildern, sondern an verteilten Informationen, unklaren Schwerpunkten und fehlender Struktur. Unser KI-gestützter Webseiten-Builder hilft dabei, aus bestehenden Seitentexten, internen Dokumenten, Leistungsbeschreibungen, Erfahrungsberichten und Referenzen eine belastbare inhaltliche Grundlage aufzubauen.',
       image: {
         src: '/img/article-pages/website-sitemap-wall-workshop.webp',
         alt: 'Team strukturiert Webseiteninhalte mit Sitemap-Karten an einer Wand.'
@@ -21,14 +21,14 @@ export const webseitenBuilderKi: PageContent = {
     },
     {
       direction: 'left',
-      heading: 'Schnell zum ersten belastbaren Entwurf.',
-      text: 'Statt wochenlang mit leeren Seiten, unklaren Menüpunkten und verstreuten Inhalten zu arbeiten, entsteht ein erster strukturierter Webseitenentwurf deutlich schneller. KI hilft bei Gliederung, Formulierung und Variantenbildung; die fachliche Prüfung und strategische Einordnung bleiben bewusst beim Menschen.',
+      heading: 'Aus verstreuten Inhalten wird ein belastbarer Erstentwurf.',
+      text: 'Statt wochenlang zwischen alten Textdateien, Notizen, Interviews und Menüideen hin und her zu springen, entsteht schnell ein erster strukturierter Entwurf für Navigation, Seitentypen und Textschwerpunkte. KI hilft bei Gliederung, Formulierung und Variantenbildung. Die fachliche Prüfung, Priorisierung und Zielgruppenanpassung bleiben bewusst beim Menschen.',
       image: createImage('Webseitenentwurf mit KI')
     },
     {
       direction: 'right',
-      heading: 'Struktur, Inhalt und Strategie zusammenbringen.',
-      text: 'Der Nutzen liegt nicht nur im schnelleren Schreiben. Entscheidend ist, dass Leistungen, Zielgruppen, Navigation, Suchintentionen und interne Verlinkung gemeinsam betrachtet werden. So entsteht ein Auftritt, der Orientierung bietet.',
+      heading: 'KI schreibt vor. Menschen entscheiden.',
+      text: 'Der Nutzen liegt nicht nur im schnelleren Schreiben. Entscheidend ist, dass Leistungen, Zielgruppen, Navigation, Suchintentionen und interne Verlinkung gemeinsam betrachtet werden und dass Erfahrungswissen aus echten Projekten in die Texte einfließt. So entsteht kein generischer KI-Text, sondern ein Auftritt, der fachlich passt und Orientierung bietet.',
       image: createImage('Webseitenstrategie mit KI')
     }
   ]
