@@ -19,13 +19,13 @@ export const behoerden: PageContent = {
     {
       direction: 'left',
       heading: 'Sicherheit verständlich und dokumentierbar machen.',
-      text: 'Awareness-Schulungen, Phishing-Simulationen, E-Mail-Sicherheitschecks und Passwort-Management helfen, Risiken sichtbar und steuerbar zu machen. Ergebnisse müssen technisch korrekt, intern erklärbar und dokumentierbar sein.',
+      text: 'Awareness-Schulungen, Phishing-Simulationen, E-Mail-Sicherheitschecks und Passwort-Management helfen, Risiken sichtbar und steuerbar zu machen. Ergebnisse müssen technisch korrekt, intern erklärbar und dokumentierbar sein. Gerade bei schrittweisen Sicherheitsmaßnahmen ist es wichtig, Wirkung und Auswirkungen nachvollziehbar belegen zu können.',
       image: createImage('Dokumentierbare IT-Sicherheit für Behörden')
     },
     {
       direction: 'right',
-      heading: 'Digitalisierung mit klarer Verantwortung.',
-      text: 'Öffentliche Einrichtungen benötigen Lösungen, die fachliche Anforderungen, Datenschutz, Beschaffung und Betrieb zusammenbringen. Wir unterstützen bei Konzeption, Umsetzung und Weiterentwicklung digitaler Prozesse mit Blick auf langfristige Wartbarkeit.',
+      heading: 'Digitalisierung entlang echter Verwaltungsabläufe.',
+      text: 'Öffentliche Einrichtungen benötigen Lösungen, die fachliche Anforderungen, Datenschutz, Beschaffung und Betrieb zusammenbringen. Wir unterstützen bei Konzeption, Umsetzung und Weiterentwicklung digitaler Prozesse mit Blick auf langfristige Wartbarkeit - und mit dem Anspruch, dass Fachbereiche die entstehenden Abläufe im Alltag wirklich mittragen können.',
       image: createImage('Verantwortung in IT-Projekten')
     }
   ]

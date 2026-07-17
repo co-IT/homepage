@@ -12,8 +12,8 @@ export const digitalKiStrategie: PageContent = {
   articles: [
     {
       direction: 'right',
-      heading: 'KI sinnvoll einsetzen statt nur ausprobieren.',
-      text: 'Viele Unternehmen experimentieren mit KI-Tools, ohne zu wissen, wo sie wirklich Wert schaffen. Wir helfen Ihnen, sinnvolle Einsatzbereiche auf Basis Ihrer Prozesse, Datengrundlage und strategischen Ziele zu bewerten - nicht auf Basis von Hype.',
+      heading: 'KI ist sinnvoll, wenn sie an echte Arbeit andockt.',
+      text: 'Viele Unternehmen probieren KI-Tools aus, ohne vorher zu klären, welche Aufgaben im Alltag wirklich Zeit, Nerven oder Geld kosten. Wir schauen deshalb zuerst auf Prozesse, Informationsquellen und Verantwortlichkeiten. Erst daraus ergibt sich, ob KI bei Recherche, Dokumentation, Datenaufbereitung, Kommunikation oder Softwareentwicklung tatsächlich einen sinnvollen Beitrag leisten kann.',
       image: {
         src: '/img/article-pages/ai-strategy-workshop.webp',
         alt: 'Beratungsteam bespricht KI-Einsatzbereiche in einem Workshop.'
@@ -21,14 +21,14 @@ export const digitalKiStrategie: PageContent = {
     },
     {
       direction: 'left',
-      heading: 'Wo KI im Mittelstand wirklich funktioniert.',
-      text: 'Dokumentenverarbeitung, Kundenkommunikation, interne Wissensbasen, Qualitätsprüfung, Angebotsprozesse, Recherche, Klassifikation und Prozessautomatisierung sind Bereiche, in denen KI im KMU-Umfeld messbare Effizienzgewinne erzielen kann.',
+      heading: 'Prozesse zuerst, Werkzeuge danach.',
+      text: 'Gerade im Mittelstand zeigt sich schnell, wo KI praktisch helfen kann: bei Dokumenten, wiederkehrenden Auswertungen, internen Wissensbasen, Angebotsprozessen, Klassifikation, Recherche oder der Vorbereitung von Inhalten. Der größte Hebel entsteht aber erst dann, wenn klar ist, welche Daten vorhanden sind, welche Fachregeln gelten und an welcher Stelle der menschliche Blick unverzichtbar bleibt.',
       image: createImage('KI-Einsatzbereiche im Mittelstand')
     },
     {
       direction: 'right',
-      heading: 'Strategie ohne Compliance ist keine Strategie.',
-      text: 'Wir prüfen geeignete Prozesse, notwendige Daten, bestehende Risiken, Compliance-Anforderungen und technische Voraussetzungen. Daraus entsteht kein abstraktes Strategiepapier, sondern eine priorisierte Roadmap mit konkreten Maßnahmen, Verantwortlichkeiten und realistischem Umsetzungsrahmen.',
+      heading: 'Produktiv nutzen, ohne die Kontrolle zu verlieren.',
+      text: 'Wir prüfen geeignete Prozesse, notwendige Daten, Risiken, Compliance-Anforderungen und technische Voraussetzungen. Daraus entsteht keine abstrakte KI-Folie, sondern eine priorisierte Roadmap mit klaren Leitplanken für Validierung, Verantwortlichkeiten und Einführung. So kann KI auch in Analyse, Dokumentation oder Code-Erstellung unternehmensnah genutzt werden, ohne dass fachliche Kontrolle verloren geht.',
       image: createImage('KI-Roadmap und Compliance')
     }
   ]

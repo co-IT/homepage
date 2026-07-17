@@ -18,8 +18,8 @@ export const microsoft365Azure: PageContent = {
     },
     {
       direction: 'left',
-      heading: 'Migration ohne Stillstand.',
-      text: 'Fehlkonfigurationen bei Exchange-Migrationen, unsichere Tenant-Einstellungen, fehlende Zugriffsregeln oder unklare Lizenzmodelle sind häufige Stolpersteine. Wir planen, testen und migrieren mit klarer Dokumentation und möglichst geringer Unterbrechung im Tagesgeschäft.',
+      heading: 'Migration mit Blick auf die tatsächliche Systemlandschaft.',
+      text: 'Fehlkonfigurationen bei Exchange-Migrationen, unsichere Tenant-Einstellungen, fehlende Zugriffsregeln oder unklare Lizenzmodelle sind häufige Stolpersteine. Hinzu kommen oft bestehende Mailrouten, Drittanbieter-Dienste, Sicherheitslösungen oder gewachsene Freigabeprozesse. Wir planen, testen und migrieren deshalb mit klarer Dokumentation und möglichst geringer Unterbrechung im Tagesgeschäft.',
       image: {
         src: '/img/article-pages/microsoft-365-migration-exchange-tenant-detail.png',
         alt: 'IT-Berater verfolgt eine Microsoft-365-Migration mit Exchange-, Tenant- und Prozessschritten an zwei Monitoren.'
@@ -27,8 +27,8 @@ export const microsoft365Azure: PageContent = {
     },
     {
       direction: 'right',
-      heading: 'Damit Microsoft 365 nicht nebenbei verwaltet wird.',
-      text: 'Nach der Migration beginnt die eigentliche Arbeit: Lizenzmanagement, Benutzerverwaltung, Teams-Administration, SharePoint-Strukturen, Rollen- und Rechtekonzepte, Backup und Azure-Kostenkontrolle. Wir verbinden Administration mit sicherem Betrieb.',
+      heading: 'Nach der Migration beginnt die Betriebsdisziplin.',
+      text: 'Nach der Migration beginnt die eigentliche Arbeit: Lizenzmanagement, Benutzerverwaltung, Teams-Administration, SharePoint-Strukturen, Rollen- und Rechtekonzepte, Backup, Zustellbarkeit und Azure-Kostenkontrolle. Wir verbinden Administration mit sicherem Betrieb, damit Microsoft 365 nicht nebenbei verwaltet wird, sondern verlässlich trägt.',
       image: createImage('Microsoft-365-Betrieb')
     }
   ]
