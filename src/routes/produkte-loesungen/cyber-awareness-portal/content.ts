@@ -15,19 +15,19 @@ export const cyberAwarenessPortal: PageContent = {
     {
       direction: 'right',
       heading: 'Sensibilisierung, die im Alltag wirkt.',
-      text: 'Das co-IT Cyber-Awareness-Portal bündelt Schulungen, Prüfungen, Erinnerungen und Phishing-Simulationen in einer Plattform für messbares Sicherheitsbewusstsein - automatisiert, skalierbar und mandantenfähig. So wird aus einzelnen Maßnahmen ein nachvollziehbarer Lernprozess statt einer einmaligen Pflichtübung.',
+      text: 'Das co-IT Cyber-Awareness-Portal bündelt Schulungen, Prüfungen, Erinnerungen und Phishing-Simulationen in einer Plattform für messbares Sicherheitsbewusstsein - automatisiert, skalierbar und mandantenfähig. So wird aus einzelnen Maßnahmen ein nachvollziehbarer Lernprozess statt einer einmaligen Pflichtübung, auch wenn unterschiedliche Zielgruppen oder Branchen eigene Schwerpunkte brauchen.',
       image: createImage('Cyber-Awareness-Portal')
     },
     {
       direction: 'left',
       heading: 'Lernen, simulieren, auswerten.',
-      text: 'Kurse, Prüfungen, Zertifikate, Erinnerungen und Simulationen greifen in einer Plattform ineinander. Verantwortliche sehen, welche Inhalte abgeschlossen wurden, wie sich Klickraten entwickeln und wo weiterer Handlungsbedarf besteht. Ergebnisse bleiben damit nicht nur messbar, sondern auch intern erklärbar und dokumentierbar.',
+      text: 'Kurse, Prüfungen, Zertifikate, Erinnerungen und Simulationen greifen in einer Plattform ineinander. Verantwortliche sehen, welche Inhalte abgeschlossen wurden, wie sich Klickraten entwickeln und wo weiterer Handlungsbedarf besteht. Ergebnisse bleiben damit nicht nur messbar, sondern auch intern erklärbar und dokumentierbar - bis hin zu gezielten Nachschulungen für besonders exponierte Rollen.',
       image: createImage('Lernen und Auswerten im Cyber-Awareness-Portal')
     },
     {
       direction: 'right',
       heading: 'Nachweise schaffen, Fortschritt sichtbar machen.',
-      text: 'Das Portal eignet sich für einzelne Unternehmen ebenso wie für Partner- und White-Label-Szenarien. Ob interne Sensibilisierung, Versicherungsnehmer-Portal oder branchenspezifisches Schulungsangebot: Die Plattform lässt sich strukturiert einsetzen, an bestehende Prozesse anbinden und mit klaren Nachweisen für Audits, Partner oder interne Anforderungen verbinden.',
+      text: 'Das Portal eignet sich für einzelne Unternehmen ebenso wie für Partner- und White-Label-Szenarien. Ob interne Sensibilisierung, Versicherungsnehmer-Portal oder branchenspezifisches Schulungsangebot: Die Plattform lässt sich strukturiert einsetzen, an bestehende Prozesse anbinden und mit klaren Nachweisen für Audits, Partner oder interne Anforderungen verbinden. Das ist besonders hilfreich, wenn Simulationen und Maßnahmen nachvollziehbar dokumentiert werden sollen.',
       image: createImage('Nachweise im Cyber-Awareness-Portal')
     }
   ]
