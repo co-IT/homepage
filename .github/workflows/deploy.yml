@@ -93,6 +93,7 @@ jobs:
 
       - name: Build Traefik redirect rules to canonical domain
         if: env.IS_DEFAULT_BRANCH == 'true'
+        #https?://co-it\\.eu(/?)(.*)
         run: |
           {
             printf 'REDIRECT_RULES<<EOF\n'
@@ -100,8 +101,9 @@ jobs:
             printf 'traefik.http.routers.%s-redirect-canonical.entrypoints=https\n' \
                    '${{ github.event.repository.name }}'
 
-            printf 'traefik.http.routers.%s-redirect-canonical.rule=Host(`www.%s`)\n' \
+            printf 'traefik.http.routers.%s-redirect-canonical.rule=Host(`%s`) || Host(`www.%s`)\n' \
                    '${{ github.event.repository.name }}' \
+                   '${{ env.CANONICAL_DOMAIN }}' \
                    '${{ env.CANONICAL_DOMAIN }}'
 
             printf 'traefik.http.routers.%s-redirect-canonical.middlewares=%s-redirect-canonical\n' \
@@ -111,10 +113,10 @@ jobs:
             printf 'traefik.http.middlewares.%s-redirect-canonical.redirectregex.permanent=true\n' \
                    '${{ github.event.repository.name }}'
 
-            printf 'traefik.http.middlewares.%s-redirect-canonical.redirectregex.regex=^https?://.*?/(.*)\n' \
+            printf 'traefik.http.middlewares.%s-redirect-canonical.redirectregex.regex=^https?://co-it\\.eu(/?.*)\n' \
                    '${{ github.event.repository.name }}'
 
-            printf 'traefik.http.middlewares.%s-redirect-canonical.redirectregex.replacement=https://%s/${1}\n' \
+            printf 'traefik.http.middlewares.%s-redirect-canonical.redirectregex.replacement=https://www.%s/${1}\n' \
                    '${{ github.event.repository.name }}' \
                    '${{ env.CANONICAL_DOMAIN }}'
 
