@@ -9,6 +9,7 @@ export interface ArticleCallToAction {
 }
 
 export interface Article {
+  type?: 'article';
   direction: 'left' | 'right';
   heading: string;
   text: string;
@@ -17,3 +18,11 @@ export interface Article {
   imageLabel?: string;
   callToAction?: ArticleCallToAction;
 }
+
+export interface ArticleTextBlock {
+  type: 'text';
+  heading: string;
+  text: string;
+}
+
+export type ArticleSectionBlock = Article | ArticleTextBlock;
