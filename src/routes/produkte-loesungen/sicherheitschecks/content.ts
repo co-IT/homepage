@@ -22,7 +22,7 @@ export const sicherheitschecks: PageContent = {
     {
       direction: 'left',
       heading: 'Was geprüft wird.',
-      text: 'E-Mail: SPF, DKIM, DMARC, MTA-STS, TLS-RPT, DANE und DNSSEC. DNS: auffällige Konfigurationen, veraltete Einträge und potenzielle Schwachstellen. Webseite: HTTPS-Konfiguration, Security-Header und sichtbare technische Risiken.',
+      text: 'Wir prüfen, ob Ihre E-Mail-Kommunikation technisch sauber abgesichert ist - von SPF, DKIM und DMARC bis zu MTA-STS, TLS-RPT, DANE und DNSSEC. Dazu kommen Ihre DNS-Einträge, auffällige oder veraltete Konfigurationen sowie Ihre Webseite mit Blick auf HTTPS, Security-Header und von außen sichtbare technische Risiken. So entsteht kein reiner Protokoll-Check, sondern ein realistisches Bild Ihrer Angriffsfläche.',
       image: createImage('Prüfumfang von Sicherheitschecks')
     },
     {
