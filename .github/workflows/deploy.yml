@@ -61,10 +61,9 @@ jobs:
           {
             printf 'BASE_RULES<<EOF\n'
 
-            printf 'traefik.http.routers.%s-%s.rule=Host(`www.%s`) || Host(`%s`)\n' \
+            printf 'traefik.http.routers.%s-%s.rule=Host(`www.%s`)\n' \
                     '${{ github.event.repository.name }}' \
                     '${{ github.ref_name }}' \
-                    '${{ env.CANONICAL_DOMAIN }}' \
                     '${{ env.CANONICAL_DOMAIN }}'
 
             printf 'EOF\n'
@@ -101,9 +100,8 @@ jobs:
             printf 'traefik.http.routers.%s-redirect-canonical.entrypoints=https\n' \
                    '${{ github.event.repository.name }}'
 
-            printf 'traefik.http.routers.%s-redirect-canonical.rule=Host(`%s`) || Host(`www.%s`)\n' \
+            printf 'traefik.http.routers.%s-redirect-canonical.rule=Host(`%s`)\n' \
                    '${{ github.event.repository.name }}' \
-                   '${{ env.CANONICAL_DOMAIN }}' \
                    '${{ env.CANONICAL_DOMAIN }}'
 
             printf 'traefik.http.routers.%s-redirect-canonical.middlewares=%s-redirect-canonical\n' \
