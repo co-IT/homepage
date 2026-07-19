@@ -61,9 +61,10 @@ jobs:
           {
             printf 'BASE_RULES<<EOF\n'
 
-            printf 'traefik.http.routers.%s-%s.rule=Host(`%s`)\n' \
+            printf 'traefik.http.routers.%s-%s.rule=Host(`www.%s`) || Host(`%s`)\n' \
                     '${{ github.event.repository.name }}' \
                     '${{ github.ref_name }}' \
+                    '${{ env.CANONICAL_DOMAIN }}' \
                     '${{ env.CANONICAL_DOMAIN }}'
 
             printf 'EOF\n'
