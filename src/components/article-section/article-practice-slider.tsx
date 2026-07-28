@@ -39,12 +39,12 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
                   onClick$={() =>
                     (activeIndexSig.value = activeIndexSig.value === 0 ? totalExamples - 1 : activeIndexSig.value - 1)
                   }
-                  class='absolute left-2 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-secondary-900 text-white shadow-[0_14px_30px_-18px_rgba(2,2,77,0.55)] transition-opacity hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-900 md:left-5 md:h-11 md:w-11'
+                  class='absolute left-2 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-secondary-900/15 bg-white/90 text-secondary-900/70 shadow-[0_10px_24px_-18px_rgba(2,2,77,0.28)] transition-colors hover:border-secondary-900/25 hover:text-secondary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-900 md:left-5 md:h-10 md:w-10'
                   aria-label='Vorheriges Praxisbeispiel anzeigen'
                 >
                   <svg
-                    width='18'
-                    height='18'
+                    width='16'
+                    height='16'
                     viewBox='0 0 18 18'
                     fill='none'
                     xmlns='http://www.w3.org/2000/svg'
@@ -53,7 +53,7 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
                     <path
                       d='M11.25 3.75L6 9L11.25 14.25'
                       stroke='currentColor'
-                      stroke-width='2.2'
+                      stroke-width='1.9'
                       stroke-linecap='round'
                       stroke-linejoin='round'
                     />
@@ -65,12 +65,12 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
                   onClick$={() =>
                     (activeIndexSig.value = activeIndexSig.value === totalExamples - 1 ? 0 : activeIndexSig.value + 1)
                   }
-                  class='absolute right-2 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-secondary-900 text-white shadow-[0_14px_30px_-18px_rgba(2,2,77,0.55)] transition-opacity hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-900 md:right-5 md:h-11 md:w-11'
+                  class='absolute right-2 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-secondary-900/15 bg-white/90 text-secondary-900/70 shadow-[0_10px_24px_-18px_rgba(2,2,77,0.28)] transition-colors hover:border-secondary-900/25 hover:text-secondary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-900 md:right-5 md:h-10 md:w-10'
                   aria-label='Nächstes Praxisbeispiel anzeigen'
                 >
                   <svg
-                    width='18'
-                    height='18'
+                    width='16'
+                    height='16'
                     viewBox='0 0 18 18'
                     fill='none'
                     xmlns='http://www.w3.org/2000/svg'
@@ -79,7 +79,7 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
                     <path
                       d='M6.75 3.75L12 9L6.75 14.25'
                       stroke='currentColor'
-                      stroke-width='2.2'
+                      stroke-width='1.9'
                       stroke-linecap='round'
                       stroke-linejoin='round'
                     />
