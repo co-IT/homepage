@@ -27,6 +27,10 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
     'awareness-team-training-table.webp',
     'Mitarbeitende besprechen Sicherheitsrisiken in einem praxisnahen Awareness-Training.'
   ),
+  'Sensibilisierung und Phishing-Simulationen': createArticleImageAsset(
+    'awareness-team-training-table.webp',
+    'Mitarbeitende besprechen Sicherheitsrisiken in einer praxisnahen Sensibilisierung mit Phishing-Bezug.'
+  ),
   Behörden: createArticleImageAsset(
     'public-office-scanner-workflow.webp',
     'Verwaltungsmitarbeiterin scannt Formulare in einem älteren Amt, während ein IT-Spezialist einen Arbeitsplatz betreut.'
@@ -46,6 +50,10 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
   'Cyber-Awareness-Portal': createArticleImageAsset(
     'awareness-results-review.webp',
     'Verantwortliche prüfen Lernfortschritte eines Cyber-Awareness-Portals mit einem IT-Berater.'
+  ),
+  'Cyber Lounge': createArticleImageAsset(
+    'awareness-results-review.webp',
+    'Verantwortliche prüfen Lernfortschritte der Cyber Lounge mit einem IT-Berater.'
   ),
   'Cyber-Sicherheit': createArticleImageAsset(
     'awareness-poster-workshop.webp',
@@ -151,6 +159,10 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
     'awareness-certificates-review.webp',
     'Verantwortliche ordnen Nachweise und Zertifikate aus einem Cyber-Awareness-Portal.'
   ),
+  'Lernen und Auswerten in der Cyber Lounge': createArticleImageAsset(
+    'awareness-certificates-review.webp',
+    'Verantwortliche ordnen Nachweise und Zertifikate aus der Cyber Lounge.'
+  ),
   Lohnfertiger: createArticleImageAsset(
     'production-cnc-quality-control.webp',
     'Mitarbeiter prüfen gefertigte Metallteile und Qualitätsdaten in einer Produktionshalle.'
@@ -178,6 +190,10 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
   'Nachweise im Cyber-Awareness-Portal': createArticleImageAsset(
     'awareness-progress-workshop-board.webp',
     'Verantwortliche dokumentieren Fortschritte und Nachweise aus einem Awareness-Portal.'
+  ),
+  'Nachweise in der Cyber Lounge': createArticleImageAsset(
+    'awareness-progress-workshop-board.webp',
+    'Verantwortliche dokumentieren Fortschritte und Nachweise aus der Cyber Lounge.'
   ),
   'Phishing-Simulationen': createArticleImageAsset(
     'phishing-email-decision.webp',
