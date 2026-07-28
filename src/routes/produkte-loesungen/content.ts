@@ -19,6 +19,7 @@ export const produkteLoesungenOverview: PageContent = {
       heading: 'Awareness, die nicht bei der Schulung endet.',
       text: 'Das co-IT Cyber-Awareness-Portal bündelt Schulungen, Prüfungen, Zertifikate, Erinnerungen und Phishing-Simulationen in einer strukturierten Plattform. Unternehmen, Versicherer und Partner können Sicherheitsbewusstsein messbar aufbauen und Fortschritte nachvollziehbar dokumentieren.',
       image: createImage('Awareness und Phishing-Simulationen'),
+      imageLabel: 'Cyber-Awareness-Portal',
       callToAction: {
         text: 'Mehr erfahren',
         href: '/produkte-loesungen/cyber-awareness-portal/',
@@ -30,6 +31,7 @@ export const produkteLoesungenOverview: PageContent = {
       heading: 'Phishing-Risiken sichtbar machen.',
       text: 'Realistische Phishing-Simulationen zeigen, wie Angriffsmuster im Arbeitsalltag wirken und wo Unsicherheiten entstehen. Statt Schuldzuweisungen geht es um Erkenntnis: Welche Muster treten auf, welche Meldewege fehlen und welche Schulungs- oder Prozessmaßnahmen sind sinnvoll?',
       image: createImage('Phishing-Simulationen', '/img/cyber/cyber-portal/white-label/phishing-simulationen.webp'),
+      imageLabel: 'Phishing-Simulationen',
       callToAction: {
         text: 'Mehr erfahren',
         href: '/produkte-loesungen/phishing-simulationen/',
@@ -44,6 +46,7 @@ export const produkteLoesungenOverview: PageContent = {
         src: '/img/article-pages/passwort-management-digitale-identitaeten-detail.webp',
         alt: 'IT-Sicherheitsberater und Ansprechpartnerin pruefen Passwort-Tresore, Zugangsdaten und eine Zwei-Faktor-Bestaetigung an Laptop und Smartphone.'
       },
+      imageLabel: 'Passwort-Manager für Unternehmen',
       callToAction: {
         text: 'Mehr erfahren',
         href: '/produkte-loesungen/passwort-manager-unternehmen/',
@@ -55,6 +58,7 @@ export const produkteLoesungenOverview: PageContent = {
       heading: 'Wissen, wo Sie stehen. Bevor es jemand anderes herausfindet.',
       text: 'Unsere Sicherheitschecks prüfen E-Mail-Infrastruktur, DNS-Konfiguration und Webseite auf bekannte Schwachstellen und Fehlkonfigurationen. Das Ergebnis ist ein verständlicher Bericht mit technischen Befunden und priorisierten Empfehlungen.',
       image: createImage('Sicherheitschecks'),
+      imageLabel: 'Sicherheitschecks',
       callToAction: {
         text: 'Mehr erfahren',
         href: '/produkte-loesungen/sicherheitschecks/',
@@ -66,6 +70,7 @@ export const produkteLoesungenOverview: PageContent = {
       heading: 'Eine gute Webseite beginnt nicht mit Design.',
       text: 'Der KI-gestützte Webseiten-Builder unterstützt Unternehmen dabei, schneller zu einer klaren Struktur, verständlichen Texten und einer konsistenten Navigation zu kommen - als Grundlage für einen fachlich passenden Unternehmensauftritt.',
       image: createImage('Webseiten-Builder mit KI'),
+      imageLabel: 'Webseiten-Builder mit KI',
       callToAction: {
         text: 'Mehr erfahren',
         href: '/produkte-loesungen/webseiten-builder-ki/',
