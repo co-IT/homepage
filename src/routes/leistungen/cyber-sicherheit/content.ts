@@ -13,7 +13,7 @@ export const cyberSicherheit: PageContent = {
     {
       direction: 'right',
       heading: 'Viele Angriffe beginnen nicht im Serverraum.',
-      text: 'Viele Angriffe beginnen nicht im Serverraum, sondern mit einer glaubwürdigen E-Mail, einem schwachen Passwort oder einer falschen Entscheidung unter Zeitdruck. Firewalls und Antivirensoftware allein schützen nicht gegen Social Engineering, kompromittierte Zugangsdaten und organisatorische Schwachstellen.',
+      text: 'Viele Angriffe beginnen nicht im Serverraum, sondern mit einer glaubwürdigen E-Mail, einem schwachen Passwort oder einer falschen Entscheidung unter Zeitdruck. Gerade bei gewachsenen Strukturen zeigt sich in der Praxis immer wieder, dass Firewalls und Antivirensoftware allein nicht gegen Social Engineering, kompromittierte Zugangsdaten oder missbrauchte Absenderidentitäten schützen. Wir schauen deshalb nicht nur auf einzelne Systeme, sondern auf den tatsächlichen Kommunikationsalltag im Unternehmen.',
       image: {
         src: '/img/article-pages/cyber-phishing-password-risk.webp',
         alt: 'Mitarbeiter prüft eine verdaechtige E-Mail und Passwortwarnungen an seinem Arbeitsplatz.'
@@ -22,13 +22,13 @@ export const cyberSicherheit: PageContent = {
     {
       direction: 'left',
       heading: 'E-Mail-Sicherheit auf technischer Ebene.',
-      text: 'Wir prüfen und härten Ihre E-Mail-Infrastruktur mit SPF, DKIM, DMARC, MTA-STS, TLS-RPT, DANE und DNSSEC. Diese Protokolle reduzieren das Risiko von Spoofing, Manipulation und Fehlkonfigurationen und schaffen eine belastbare Grundlage für sichere Kommunikation.',
+      text: 'Wir prüfen und härten Ihre E-Mail-Infrastruktur mit Maßnahmen wie SPF, DKIM, DMARC, MTA-STS, TLS-RPT, DANE und DNSSEC. In der Praxis geht es dabei selten um eine ideale Blaupause, sondern um eine schrittweise Härtung, die zu vorhandenen Dienstleistern, bestehenden Versandwegen und realen Abhängigkeiten passt. So entstehen keine abstrakten Sicherheitskonzepte, sondern belastbare Verbesserungen, die Missbrauch spürbar erschweren und die Grundlage für verlässliche Kommunikation stärken.',
       image: createImage('E-Mail-Sicherheit')
     },
     {
       direction: 'right',
       heading: 'Sicherheit wirkt besser, wenn sie intern verstanden wird.',
-      text: 'Technische Schutzmaßnahmen entfalten erst dann ihren vollen Nutzen, wenn Verantwortliche und Mitarbeitende nachvollziehen können, was sie bewirken und warum sie eingeführt werden. Deshalb verbinden wir technische Härtung mit verständlicher Erklärung, Awareness-Trainings, Phishing-Simulationen, Passwort-Management und sauberem Feedback. Sicherheitsverhalten wird so messbar und entwickelbar, ohne aus Lernen einen Vorwurf zu machen - und die Ergebnisse können in konkrete organisatorische und technische Maßnahmen übersetzt werden.',
+      text: 'Technische Schutzmaßnahmen entfalten erst dann ihren vollen Nutzen, wenn Verantwortliche und Mitarbeitende nachvollziehen können, was sie bewirken und warum sie eingeführt werden. Deshalb verbinden wir technische Härtung mit verständlicher Erklärung, Awareness-Trainings, Phishing-Simulationen, Passwort-Management und sauberem Feedback. In Projekten zeigt sich immer wieder: Wenn Auswirkungen, Grenzen und nächste Schritte klar eingeordnet sind, lassen sich auch schrittweise Sicherheitsmaßnahmen intern besser mittragen und wirksamer weiterentwickeln.',
       image: {
         src: '/img/article-pages/cyber-awareness-measurable-dashboard.webp',
         alt: 'IT-Berater bespricht mit zwei Kunden messbare Awareness-Ergebnisse und Sicherheitskennzahlen an einem grossen Dashboard.'

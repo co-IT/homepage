@@ -15,19 +15,19 @@ export const phishingSimulationen: PageContent = {
     {
       direction: 'right',
       heading: 'Trainieren, bevor es ernst wird.',
-      text: 'Phishing-Simulationen zeigen, wie anfällig ein Unternehmen für täuschend echte Angriffe ist - ohne echten Schaden zu verursachen. Mitarbeitende erleben realistische Szenarien, treffen Entscheidungen im Arbeitsalltag und erhalten direktes Feedback. So werden Risiken sichtbar, bevor ein echter Vorfall entsteht. Unsere Erfahrung zeigt dabei immer wieder: Selbst allgemeine Kampagnen erreichen oft überraschend hohe Klickraten.',
+      text: 'Phishing-Simulationen zeigen, wie anfällig ein Unternehmen für täuschend echte Angriffe ist - ohne echten Schaden zu verursachen. Mitarbeitende erleben realistische Szenarien, treffen Entscheidungen im Arbeitsalltag und erhalten direktes Feedback. So werden Risiken sichtbar, bevor ein echter Vorfall entsteht. Unsere Erfahrung zeigt dabei immer wieder: Selbst allgemeine Kampagnen erreichen oft überraschend hohe Klickraten, wenn Neugier, Zeitdruck oder Unsicherheit gezielt angesprochen werden.',
       image: createImage('Phishing-Simulationen')
     },
     {
       direction: 'left',
       heading: 'Branchentypische Szenarien statt plumper Testmails.',
-      text: 'Gute Simulationen orientieren sich an echten Kommunikationsmustern: Lieferanteninformationen, interne Freigaben, Paketbenachrichtigungen, Rechnungen, Bewerbungsmails oder gefälschte Portale. Bei Bedarf werden die Inhalte gezielt auf Unternehmen, Branche und typische Anlässe zugeschnitten - bis hin zu ähnlich geschriebenen Domains, plausiblen Absenderidentitäten oder mehrstufigen Angriffsszenarien.',
+      text: 'Gute Simulationen orientieren sich an echten Kommunikationsmustern: Lieferanteninformationen, interne Freigaben, Paketbenachrichtigungen, Rechnungen, Bewerbungsmails oder gefälschte Portale. Bei Bedarf werden die Inhalte gezielt auf Unternehmen, Branche und typische Anlässe zugeschnitten - bis hin zu ähnlich geschriebenen Domains, plausiblen Absenderidentitäten oder mehrstufigen Angriffsszenarien. Gerade in Arztpraxen oder kleinen Teams mit zentralen E-Mail-Adressen ist das wichtig, weil wenige Personen dort einen besonders großen Teil der externen Kommunikation verantworten.',
       image: createImage('Realistische Phishing-Szenarien')
     },
     {
       direction: 'right',
       heading: 'Aus Klicks werden konkrete Maßnahmen.',
-      text: 'Die Frage ist nicht, ob ein Klick passiert, sondern wann - und was daraus gelernt wird. Im Fokus stehen dabei keine einzelnen Personen, sondern erkennbare Muster: Zeitdruck, Autorität, Neugier, Unsicherheit oder fehlende Meldewege. Aus den Ergebnissen leiten wir konkrete Maßnahmen für Schulungen, Prozesse und Technik ab - zum Beispiel gezielte Nachschulungen, klarere Prüfmerkmale, Notfallpläne oder technische Anpassungen in der E-Mail-Darstellung.',
+      text: 'Die Frage ist nicht, ob ein Klick passiert, sondern wann - und was daraus gelernt wird. Im Fokus stehen dabei keine einzelnen Personen, sondern erkennbare Muster: Zeitdruck, Autorität, Neugier, Unsicherheit oder fehlende Meldewege. Aus den Ergebnissen leiten wir konkrete Maßnahmen für Schulungen, Prozesse und Technik ab - zum Beispiel gezielte Nachschulungen für besonders exponierte Rollen, klarere Prüfmerkmale, Notfallpläne oder technische Anpassungen in der E-Mail-Darstellung. So bleibt eine Simulation nicht bei einer Zahl stehen, sondern führt zu spürbaren Verbesserungen im Alltag.',
       image: createImage('Auswertung von Phishing-Simulationen')
     },
     {
