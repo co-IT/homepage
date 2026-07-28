@@ -13,7 +13,7 @@ export const webSoftwareentwicklung: PageContent = {
     {
       direction: 'right',
       heading: 'Erst die Arbeit verstehen. Dann die Software entwickeln.',
-      text: 'Viele Softwareprojekte scheitern nicht an der Technik, sondern an falschen Annahmen über den Arbeitsalltag. Deshalb sprechen wir nicht nur mit Projektverantwortlichen, sondern mit den Mitarbeitenden, die den Prozess später wirklich leben. So entstehen Webanwendungen, Portale und interne Werkzeuge, die nicht an einer PowerPoint-Prozessgrafik ausgerichtet sind, sondern an der gelebten Praxis im Unternehmen.',
+      text: 'Viele Softwareprojekte scheitern nicht an der Technik, sondern an falschen Annahmen über den Arbeitsalltag. Deshalb sprechen wir nicht nur mit Projektverantwortlichen, sondern mit den Mitarbeitenden, die den Prozess später wirklich leben. So entstehen Webanwendungen, Portale und interne Werkzeuge, die nicht an einer PowerPoint-Prozessgrafik ausgerichtet sind, sondern an der gelebten Praxis im Unternehmen. Gerade Ausnahmen, Sonderfälle und informelle Zwischenschritte entscheiden oft darüber, ob eine Lösung später wirklich entlastet oder im Alltag umgangen wird.',
       image: {
         src: '/img/article-pages/software-prototype-user-test.webp',
         alt: 'Entwickler und Kundin prüfen eine individuelle Webanwendung mit Schnittstellen- und Prozesslogik.'
@@ -22,13 +22,13 @@ export const webSoftwareentwicklung: PageContent = {
     {
       direction: 'left',
       heading: 'Systeme verbinden. Medienbrüche beseitigen.',
-      text: 'Besonders viel Potenzial steckt oft nicht in einer komplett neuen Anwendung, sondern in sauber verbundenen Systemen. Wir entwickeln Schnittstellen und ETL-Prozesse zwischen Warenwirtschaft, CRM, Dokumentenmanagement, Telefonie, Zeiterfassung und Lohnbuchhaltung, damit Daten nicht mehrfach erfasst, kopiert oder manuell übertragen werden müssen. So werden aus Einzellösungen durchgängige digitale Geschäftsprozesse.',
+      text: 'Besonders viel Potenzial steckt oft nicht in einer komplett neuen Anwendung, sondern in sauber verbundenen Systemen. Wir entwickeln Schnittstellen und ETL-Prozesse zwischen Warenwirtschaft, CRM, Dokumentenmanagement, Telefonie, Zeiterfassung und Lohnbuchhaltung, damit Daten nicht mehrfach erfasst, kopiert oder manuell übertragen werden müssen. In der Praxis reicht das von direkt aus dem CRM gestarteter Telefonie bis zur automatisierten Übernahme von Abwesenheiten oder der revisionssicheren Archivierung großer Dokumentenmengen. So werden aus Einzellösungen durchgängige digitale Geschäftsprozesse.',
       image: createImage('Softwaretechnologien')
     },
     {
       direction: 'right',
       heading: 'Modernisierung mit Rücksicht auf das Tagesgeschäft.',
-      text: 'Gewachsene Anwendungen lassen sich selten einfach abschalten und ersetzen. Bestehende Daten, Nummernkreise, Folgeprozesse, Versandabläufe oder Rückfallwege müssen mitgedacht werden. Wir modernisieren deshalb schrittweise, testen reale Prozessvarianten und validieren kritische Funktionen früh, damit neue Lösungen nicht nur moderner aussehen, sondern im Betrieb auch zuverlässig tragen.',
+      text: 'Gewachsene Anwendungen lassen sich selten einfach abschalten und ersetzen. Bestehende Daten, Nummernkreise, Folgeprozesse, Versandabläufe oder Rückfallwege müssen mitgedacht werden. Wir modernisieren deshalb schrittweise, testen reale Prozessvarianten und validieren kritische Funktionen früh - etwa wenn Webshop, Warenwirtschaft und Versand zusammenspielen oder elektronische Rechnungen nicht nur inhaltlich, sondern auch formal korrekt funktionieren müssen. So sehen neue Lösungen nicht nur moderner aus, sondern tragen im Betrieb auch zuverlässig.',
       image: createImage('Legacy-Modernisierung')
     },
     {

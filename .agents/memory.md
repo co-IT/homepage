@@ -38,3 +38,4 @@ Persistente, belastbare Erkenntnisse fuer AI-Coding in diesem Repository.
 - 2026-07-28: Fuer das Produkt an der URL `/produkte-loesungen/cyber-awareness-portal/` soll sprachlich `Cyber Lounge` als Name bevorzugt werden; `Awareness` soll moeglichst unpraegnant bleiben und in Texten eher durch `Sensibilisierung` bzw. klaren Nutzensprache ersetzt werden.
 - 2026-07-28: Fuer die Produktbeschreibung der `Cyber Lounge` wird die Formulierung `... buendelt Schulungen, Phishing-Simulationen und nachvollziehbare Nachweise in einer Plattform fuer praxisnahe Sensibilisierung ...` gegenueber Varianten mit `Erinnerungen` bevorzugt.
 - 2026-07-28: Erfahrungsberichte im Bereich Cyber-Sicherheit sollen eher vertrauensbildend und beratungsnah formuliert sein, nicht zu technisch.
+- 2026-07-28: Bestehende Erfahrungsberichte sollen moeglichst auch in die Haupttexte passender Seiten einfließen und nicht nur in separaten `Aus der Praxis`-Bloecken stehen.

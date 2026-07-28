@@ -13,19 +13,19 @@ export const grosshandel: PageContent = {
     {
       direction: 'right',
       heading: 'Großhandel lebt von Geschwindigkeit.',
-      text: 'Bestellungen, Lagerbestände, Beschaffung, Kundenkommunikation und Rechnungsprozesse müssen zuverlässig ineinandergreifen. Fehlende Artikel bedeuten verlorenen Umsatz, während zu hohe Bestände Kapital binden und Lagerfläche belasten. Gleichzeitig müssen Einkaufsteams große Sortimente überblicken, Lieferzeiten einplanen und auf Veränderungen schnell reagieren. Dafür braucht es Systeme, die Informationen nicht nur speichern, sondern Entscheidungen im Tagesgeschäft sinnvoll unterstützen und wiederkehrende Abläufe verlässlich tragen.',
+      text: 'Bestellungen, Lagerbestände, Beschaffung, Kundenkommunikation und Rechnungsprozesse müssen zuverlässig ineinandergreifen. Fehlende Artikel bedeuten verlorenen Umsatz, während zu hohe Bestände Kapital binden und Lagerfläche belasten. Gleichzeitig müssen Einkaufsteams große Sortimente überblicken, Lieferzeiten einplanen und auf Veränderungen schnell reagieren. In der Praxis geht es dabei nicht selten um zehntausende Artikel, begrenzte Einkaufskapazitäten und die Frage, welche Entscheidungen sinnvoll vorbereitet werden können. Dafür braucht es Systeme, die Informationen nicht nur speichern, sondern Entscheidungen im Tagesgeschäft wirksam unterstützen.',
       image: createImage('Großhandel')
     },
     {
       direction: 'left',
       heading: 'Warenwirtschaft entlang der tatsächlichen Prozesse.',
-      text: 'Standardisierte ERP- und Warenwirtschaftssysteme passen nicht immer zu den gewachsenen Abläufen eines Großhändlers. Wir entwickeln und erweitern Systeme gemeinsam mit den Fachabteilungen und richten sie an den tatsächlichen Arbeitsweisen aus. Dazu gehören unter anderem Sortimentssteuerung, Beschaffungsplanung, Webshop-Anbindung, Versandprozesse, Qualitätssicherung und die Integration weiterer Fachanwendungen. So entsteht keine isolierte Software, sondern ein durchgängiger digitaler Geschäftsprozess, der auch bestehende Zuständigkeiten und Folgeprozesse sinnvoll einbindet.',
+      text: 'Standardisierte ERP- und Warenwirtschaftssysteme passen nicht immer zu den gewachsenen Abläufen eines Großhändlers. Wir entwickeln und erweitern Systeme gemeinsam mit den Fachabteilungen und richten sie an den tatsächlichen Arbeitsweisen aus. Dazu gehören unter anderem Sortimentssteuerung, Beschaffungsplanung, Webshop-Anbindung, Versandprozesse, Qualitätssicherung und die Integration weiterer Fachanwendungen. Gerade bei Modernisierungen ist wichtig, dass bestehende Nummernkreise, Historien, Rückfallwege und spätere Finanzbuchhaltungsprozesse mitgedacht werden. So entsteht keine isolierte Software, sondern ein durchgängiger digitaler Geschäftsprozess, der auch bestehende Zuständigkeiten und Folgeprozesse sinnvoll einbindet.',
       image: createImage('Schnittstellen im Großhandel')
     },
     {
       direction: 'right',
       heading: 'Systeme verbinden, Qualität sichern, Risiken reduzieren.',
-      text: 'Wenn Artikelstammdaten, Preise und Bestände in mehreren Systemen getrennt gepflegt werden, entstehen unnötiger Aufwand und veraltete Informationen. Gleichzeitig reichen bei vielen Produkten rein technische Stammdaten nicht aus, weil konkrete Varianten, Prüfanforderungen und bereits gelieferte Ausführungen berücksichtigt werden müssen. Wir verbinden Warenwirtschaft, Webshop und weitere Anwendungen so, dass Abläufe nicht nur schneller, sondern auch verlässlicher werden. Ergänzend helfen Sicherheitsmaßnahmen dabei, operative Risiken in Einkauf, Rechnungsprüfung und Lieferantenkommunikation besser abzusichern.',
+      text: 'Wenn Artikelstammdaten, Preise und Bestände in mehreren Systemen getrennt gepflegt werden, entstehen unnötiger Aufwand und veraltete Informationen. Gleichzeitig reichen bei vielen Produkten rein technische Stammdaten nicht aus, weil konkrete Varianten, Prüfanforderungen und bereits gelieferte Ausführungen berücksichtigt werden müssen. Wir verbinden Warenwirtschaft, Webshop und weitere Anwendungen so, dass Abläufe nicht nur schneller, sondern auch verlässlicher werden - vom Versand bis zur revisionssicheren Ablage geschäftsrelevanter Dokumente. Ergänzend helfen Sicherheitsmaßnahmen dabei, operative Risiken in Einkauf, Rechnungsprüfung und Lieferantenkommunikation besser abzusichern.',
       image: createImage('Sicherheit im Großhandel')
     },
     {
