@@ -100,7 +100,7 @@ export const menuConfig: MenuConfig = {
         image: (
           <img
             src='/img/cyber/cyber-portal/header.webp'
-            alt='Cyber-Awareness-Portal auf einem Bildschirm'
+            alt='Cyber Lounge auf einem Bildschirm'
             width='193'
             height='233'
             class='h-[14.5rem] w-48 object-cover'
@@ -115,8 +115,8 @@ export const menuConfig: MenuConfig = {
           isCategory: true,
           items: [
             {
-              text: 'Cyber-Awareness-Portal',
-              description: 'Trainings, Nachweise und Simulationen',
+              text: 'Cyber Lounge',
+              description: 'Sensibilisierung, Nachweise und Simulationen',
               path: '/produkte-loesungen/cyber-awareness-portal',
               icon: <AwarenessPortalIcon />
             },
