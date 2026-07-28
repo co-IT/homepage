@@ -85,7 +85,7 @@ export const ArticleCard = component$((props: ArticleCardProps) => {
           </div>
 
           {props.article.callToAction && showBelowCallToAction && (
-            <div class='flex justify-center px-10 pt-2 lg:px-0'>
+            <div class='flex justify-center px-10 pt-8 md:-mb-24 lg:px-0'>
               <LinkCallToAction
                 href={props.article.callToAction.href}
                 aria-label={props.article.callToAction.ariaLabel}
@@ -135,7 +135,7 @@ export const ArticleCard = component$((props: ArticleCardProps) => {
           </div>
 
           {props.article.callToAction && showBelowCallToAction && (
-            <div class='flex justify-center px-10 pt-2 lg:px-0'>
+            <div class='flex justify-center px-10 pt-8 md:-mb-24 lg:px-0'>
               <LinkCallToAction
                 href={props.article.callToAction.href}
                 aria-label={props.article.callToAction.ariaLabel}
