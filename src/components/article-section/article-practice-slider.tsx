@@ -26,8 +26,8 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
         <div class='grid gap-6'>
           {isCarouselNavigation ? (
             <div class='grid gap-4'>
-              <div class='relative'>
-                <div class='rounded border border-secondary-900/10 bg-white px-12 py-6 shadow-[0_18px_40px_-30px_rgba(2,2,77,0.3)] md:px-14 lg:px-16'>
+              <div class='relative px-6 md:px-8'>
+                <div class='rounded border border-secondary-900/10 bg-white px-8 py-6 shadow-[0_18px_40px_-30px_rgba(2,2,77,0.3)] md:px-14 lg:px-16'>
                   <h3 class='text-2xl font-bold leading-8 text-secondary-900'>{activeExample.title}</h3>
                   <p class='mt-4 whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80'>
                     {activeExample.text}
@@ -39,7 +39,7 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
                   onClick$={() =>
                     (activeIndexSig.value = activeIndexSig.value === 0 ? totalExamples - 1 : activeIndexSig.value - 1)
                   }
-                  class='absolute left-2 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-secondary-900/15 bg-white/90 text-secondary-900/70 shadow-[0_10px_24px_-18px_rgba(2,2,77,0.28)] transition-colors hover:border-secondary-900/25 hover:text-secondary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-900 md:left-5 md:h-10 md:w-10'
+                  class='absolute left-0 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-secondary-900/15 bg-white/90 text-secondary-900/70 shadow-[0_10px_24px_-18px_rgba(2,2,77,0.28)] transition-colors hover:border-secondary-900/25 hover:text-secondary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-900 md:h-10 md:w-10'
                   aria-label='Vorheriges Praxisbeispiel anzeigen'
                 >
                   <svg
@@ -65,7 +65,7 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
                   onClick$={() =>
                     (activeIndexSig.value = activeIndexSig.value === totalExamples - 1 ? 0 : activeIndexSig.value + 1)
                   }
-                  class='absolute right-2 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-secondary-900/15 bg-white/90 text-secondary-900/70 shadow-[0_10px_24px_-18px_rgba(2,2,77,0.28)] transition-colors hover:border-secondary-900/25 hover:text-secondary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-900 md:right-5 md:h-10 md:w-10'
+                  class='absolute right-0 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-secondary-900/15 bg-white/90 text-secondary-900/70 shadow-[0_10px_24px_-18px_rgba(2,2,77,0.28)] transition-colors hover:border-secondary-900/25 hover:text-secondary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-900 md:h-10 md:w-10'
                   aria-label='Nächstes Praxisbeispiel anzeigen'
                 >
                   <svg
