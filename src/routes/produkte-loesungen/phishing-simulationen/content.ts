@@ -38,15 +38,15 @@ export const phishingSimulationen: PageContent = {
       examples: [
         {
           title: 'Versicherungskontext mit dokumentierbaren Ergebnissen.',
-          text: 'Phishing-Simulationen werden unter anderem für Geschäftskunden einer namhaften deutschen Versicherung eingesetzt. Dabei greifen wir auf bestehende Szenarien für unterschiedliche Branchen und Unternehmensgrößen zurück und passen diese bei Bedarf an den konkreten Unternehmenskontext an. So entstehen belastbare Auswertungen und nachvollziehbare Maßnahmen statt einer generischen Einmalaktion.'
+          text: 'Phishing-Simulationen werden unter anderem für Geschäftskunden einer namhaften deutschen Versicherung eingesetzt. Dabei greifen wir auf bestehende Szenarien für unterschiedliche Branchen und Unternehmensgrößen zurück und passen diese bei Bedarf an den konkreten Unternehmenskontext an. So entstehen belastbare Auswertungen und nachvollziehbare Maßnahmen statt einer generischen Einmalaktion. Der Mehrwert liegt vor allem darin, dass Ergebnisse nicht isoliert stehen bleiben, sondern als Grundlage für konkrete nächste Schritte in Kommunikation, Schulung und technischer Absicherung dienen.'
         },
         {
           title: 'Arztpraxen mit zentraler E-Mail-Adresse gezielt absichern.',
-          text: 'In Arztpraxen läuft eingehende externe Kommunikation oft über zentrale Adressen wie info@. Dadurch tragen wenige Personen einen großen Teil der E-Mail-Verantwortung. Für solche Konstellationen entwickeln wir branchenspezifische Szenarien, etwa angebliche Kontaktaufnahmen einer fiktiven Apotheke, und leiten daraus gezielte Schulungen für die zuständigen Mitarbeitenden ab.'
+          text: 'In Arztpraxen läuft eingehende externe Kommunikation oft über zentrale Adressen wie info@. Dadurch tragen wenige Personen einen großen Teil der E-Mail-Verantwortung. Für solche Konstellationen entwickeln wir branchenspezifische Szenarien, etwa angebliche Kontaktaufnahmen einer fiktiven Apotheke, und leiten daraus gezielte Schulungen für die zuständigen Mitarbeitenden ab. So wird nicht allgemein ins Blaue hinein trainiert, sondern genau an den Situationen, die im Praxisalltag tatsächlich auftreten können.'
         },
         {
           title: 'Spear-Phishing mit ähnlicher Domain realistisch nachbilden.',
-          text: 'In einem weiteren Praxisbeispiel wurde ein großer Pharmakonzern über eine ähnlich aussehende Domain nachgeahmt und mit einer vermeintlichen Warnung zu einem weit verbreiteten Medikament verbunden. Aus der Auswertung entstanden konkrete Prüfhinweise zu E-Mail-Adressen, ein Notfallplan für Fehlhandlungen und die technische Empfehlung, eingehende Nachrichten standardmäßig als reinen Text anzuzeigen.'
+          text: 'In einem weiteren Praxisbeispiel wurde ein großer Pharmakonzern über eine ähnlich aussehende Domain nachgeahmt und mit einer vermeintlichen Warnung zu einem weit verbreiteten Medikament verbunden. Aus der Auswertung entstanden konkrete Prüfhinweise zu E-Mail-Adressen, ein Notfallplan für Fehlhandlungen und die technische Empfehlung, eingehende Nachrichten standardmäßig als reinen Text anzuzeigen. Gerade solche realitätsnahen Szenarien helfen dabei, Unsicherheiten sichtbar zu machen und Schutzmaßnahmen so abzuleiten, dass sie im Ernstfall auch tatsächlich greifen.'
         }
       ]
     }

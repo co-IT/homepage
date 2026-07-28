@@ -39,19 +39,19 @@ export const webSoftwareentwicklung: PageContent = {
       examples: [
         {
           title: 'CRM und Telefonie direkt zusammenbringen.',
-          text: 'In einem Projekt wurde ein CRM-System mit einem CTI-Client verbunden. Telefonnummern mussten dadurch nicht mehr 30- bis 80-mal pro Arbeitstag manuell abgetippt werden, sondern konnten direkt aus dem CRM an die Telefonie übergeben werden. Das sparte laut interner Einschätzung pro Mitarbeitendem täglich rund 20 bis 30 Minuten und wurde abteilungsübergreifend sehr positiv aufgenommen.'
+          text: 'In einem Projekt wurde ein CRM-System mit einem CTI-Client verbunden. Telefonnummern mussten dadurch nicht mehr 30- bis 80-mal pro Arbeitstag manuell abgetippt werden, sondern konnten direkt aus dem CRM an die Telefonie übergeben werden. Das sparte laut interner Einschätzung pro Mitarbeitendem täglich rund 20 bis 30 Minuten und wurde abteilungsübergreifend sehr positiv aufgenommen. Darüber hinaus blieben Gespräche enger am Kundenkontext, weil relevante Informationen bereits beim Anrufstart verfügbar waren und nicht erst zusammengesucht werden mussten.'
         },
         {
           title: 'Abwesenheiten automatisiert in die Lohnbuchhaltung übernehmen.',
-          text: 'Für einen Import aus der Zeiterfassung in die Lohnbuchhaltung wurde eine fachlich differenzierte Logik für unterschiedliche Abwesenheitsarten umgesetzt. Dadurch entfielen jeden Monat ein bis zwei manuelle Arbeitstage für die Datenerfassung, gleichzeitig sank die Fehleranfälligkeit bei der Lohnvorbereitung deutlich.'
+          text: 'Für einen Import aus der Zeiterfassung in die Lohnbuchhaltung wurde eine fachlich differenzierte Logik für unterschiedliche Abwesenheitsarten umgesetzt. Dadurch entfielen jeden Monat ein bis zwei manuelle Arbeitstage für die Datenerfassung, gleichzeitig sank die Fehleranfälligkeit bei der Lohnvorbereitung deutlich. Entscheidend war dabei nicht nur die Automatisierung selbst, sondern die saubere fachliche Abbildung der bestehenden Regeln, damit die Lösung im Alltag wirklich belastbar bleibt.'
         },
         {
           title: 'Geschäftsdokumente revisionssicher archivieren.',
-          text: 'Für ein Warenwirtschaftssystem wurde eine Schnittstelle zu einem Dokumentenmanagementsystem umgesetzt, über die rund 500.000 Dokumente pro Jahr automatisiert und revisionssicher archiviert werden. Wichtige Unterlagen sind damit schneller auffindbar und verschwinden nicht mehr in unstrukturierten Postfächern.'
+          text: 'Für ein Warenwirtschaftssystem wurde eine Schnittstelle zu einem Dokumentenmanagementsystem umgesetzt, über die rund 500.000 Dokumente pro Jahr automatisiert und revisionssicher archiviert werden. Wichtige Unterlagen sind damit schneller auffindbar und verschwinden nicht mehr in unstrukturierten Postfächern. Das verbessert nicht nur die Suche, sondern schafft auch mehr Verlässlichkeit bei Freigaben, Rückfragen und späteren Nachweisen innerhalb der Prozesskette.'
         },
         {
           title: 'Webshop, Warenwirtschaft und Versand gemeinsam modernisieren.',
-          text: 'In einem Migrationsprojekt wurden Webshop, Warenwirtschaft und Versand so weiterentwickelt, dass manuelle Exporte, Copy-and-paste-Schritte und unnötige Systemwechsel reduziert werden konnten. Gleichzeitig blieben bestehende Historien, Nummernkreise und ein sinnvoller Rückfallweg auf das alte Verfahren erhalten.'
+          text: 'In einem Migrationsprojekt wurden Webshop, Warenwirtschaft und Versand so weiterentwickelt, dass manuelle Exporte, Copy-and-paste-Schritte und unnötige Systemwechsel reduziert werden konnten. Gleichzeitig blieben bestehende Historien, Nummernkreise und ein sinnvoller Rückfallweg auf das alte Verfahren erhalten. So ließ sich die Modernisierung schrittweise in den laufenden Betrieb einführen, ohne wichtige Folgeprozesse oder bestehende Verantwortlichkeiten aus dem Gleichgewicht zu bringen.'
         }
       ]
     }

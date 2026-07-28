@@ -38,15 +38,15 @@ export const dienstleister: PageContent = {
       examples: [
         {
           title: 'Telefonie direkt aus dem CRM starten.',
-          text: 'Durch die Integration eines CTI-Clients in ein CRM-System mussten Telefonnummern nicht mehr vielfach pro Tag manuell abgetippt werden. Stattdessen konnte der Anruf direkt aus dem Kundenkontext gestartet werden. Das sparte pro Mitarbeitendem täglich rund 20 bis 30 Minuten und wurde teamübergreifend sehr gut angenommen.'
+          text: 'Durch die Integration eines CTI-Clients in ein CRM-System mussten Telefonnummern nicht mehr vielfach pro Tag manuell abgetippt werden. Stattdessen konnte der Anruf direkt aus dem Kundenkontext gestartet werden. Das sparte pro Mitarbeitendem täglich rund 20 bis 30 Minuten und wurde teamübergreifend sehr gut angenommen. Gleichzeitig verringerte sich die Zahl kleiner Unterbrechungen im Arbeitsablauf, weil Wechsel zwischen Bildschirm, Telefonanlage und Kundendaten deutlich seltener nötig waren.'
         },
         {
           title: 'Abwesenheiten automatisch in die Lohnbuchhaltung übertragen.',
-          text: 'Ein Import aus der Zeiterfassung ersetzte die monatliche manuelle Übertragung unterschiedlicher Abwesenheitsarten in die Lohnbuchhaltung. Dadurch entfielen ein bis zwei manuelle Arbeitstage pro Monat, während Fehler und nachträgliche Lohnkorrekturen deutlich reduziert wurden.'
+          text: 'Ein Import aus der Zeiterfassung ersetzte die monatliche manuelle Übertragung unterschiedlicher Abwesenheitsarten in die Lohnbuchhaltung. Dadurch entfielen ein bis zwei manuelle Arbeitstage pro Monat, während Fehler und nachträgliche Lohnkorrekturen deutlich reduziert wurden. Besonders hilfreich war dabei, dass unterschiedliche Regeln für Urlaub, Krankheit oder Sonderfälle sauber berücksichtigt wurden und die monatliche Vorbereitung dadurch verlässlicher ablief.'
         },
         {
           title: 'Dokumente revisionssicher archivieren.',
-          text: 'Für ein Warenwirtschaftssystem wurde eine Schnittstelle zu einem Dokumentenmanagementsystem umgesetzt, über die rund 500.000 Geschäftsdokumente pro Jahr automatisiert archiviert werden. Unterlagen lassen sich dadurch deutlich schneller finden und bleiben nachvollziehbar an der richtigen Stelle verfügbar.'
+          text: 'Für ein Warenwirtschaftssystem wurde eine Schnittstelle zu einem Dokumentenmanagementsystem umgesetzt, über die rund 500.000 Geschäftsdokumente pro Jahr automatisiert archiviert werden. Unterlagen lassen sich dadurch deutlich schneller finden und bleiben nachvollziehbar an der richtigen Stelle verfügbar. Das entlastet nicht nur die Suche im Alltag, sondern verbessert auch Abstimmungen mit Kunden, Rückfragen aus Projekten und die Nachvollziehbarkeit über mehrere Beteiligte hinweg.'
         }
       ]
     }
