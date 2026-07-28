@@ -6,6 +6,7 @@ export interface ArticleCallToAction {
   ariaLabel?: string;
   title?: string;
   target?: QwikIntrinsicElements['a']['target'];
+  placement?: 'inline' | 'below';
 }
 
 export interface Article {

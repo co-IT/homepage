@@ -34,7 +34,8 @@ export const sicherheitschecks: PageContent = {
         text: 'Sicherheitscheck anfragen',
         href: 'mailto:info@co-it.eu?subject=Anfrage%20Sicherheitscheck&body=Guten%20Tag%2C%0D%0A%0D%0Aich%20interessiere%20mich%20f%C3%BCr%20einen%20Sicherheitscheck.%0D%0A%0D%0AFirma%3A%0D%0AAnsprechpartner%3A%0D%0ABetroffene%20Domain%3A%0D%0A%0D%0AMit%20freundlichen%20Gr%C3%BC%C3%9Fen',
         ariaLabel: 'Sicherheitscheck per E-Mail anfragen',
-        title: 'Sicherheitscheck anfragen'
+        title: 'Sicherheitscheck anfragen',
+        placement: 'below'
       }
     }
   ]

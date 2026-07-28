@@ -46,74 +46,106 @@ const ArticleImage = component$((props: { article: Article }) => {
 });
 
 export const ArticleCard = component$((props: ArticleCardProps) => {
+  const showBelowCallToAction = props.article.callToAction?.placement === 'below';
+
   return (
     <>
       {props.article.direction == 'right' ? (
-        <div class='flex flex-col gap-x-12 lg:flex-row lg:px-10'>
-          <div class='flex w-full flex-col gap-y-5'>
-            <div class='flex flex-col gap-y-4'>
-              <HeadingArticle text={props.article.heading} />
-              <div class='mt-4 w-full lg:hidden'>
-                <ArticleImage article={props.article} />
+        <div class='flex flex-col gap-y-8'>
+          <div class='flex flex-col gap-x-12 lg:flex-row lg:px-10'>
+            <div class='flex w-full flex-col gap-y-5'>
+              <div class='flex flex-col gap-y-4'>
+                <HeadingArticle text={props.article.heading} />
+                <div class='mt-4 w-full lg:hidden'>
+                  <ArticleImage article={props.article} />
+                </div>
               </div>
+
+              <p class='whitespace-pre-line px-10 text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 lg:px-0'>
+                {props.article.text}
+              </p>
+
+              {props.article.callToAction && !showBelowCallToAction && (
+                <div class='px-10 pt-2 lg:px-0'>
+                  <LinkCallToAction
+                    href={props.article.callToAction.href}
+                    aria-label={props.article.callToAction.ariaLabel}
+                    title={props.article.callToAction.title}
+                    target={props.article.callToAction.target}
+                  >
+                    {props.article.callToAction.text}
+                  </LinkCallToAction>
+                </div>
+              )}
             </div>
 
-            <p class='whitespace-pre-line px-10 text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 lg:px-0'>
-              {props.article.text}
-            </p>
-
-            {props.article.callToAction && (
-              <div class='px-10 pt-2 lg:px-0'>
-                <LinkCallToAction
-                  href={props.article.callToAction.href}
-                  aria-label={props.article.callToAction.ariaLabel}
-                  title={props.article.callToAction.title}
-                  target={props.article.callToAction.target}
-                >
-                  {props.article.callToAction.text}
-                </LinkCallToAction>
-              </div>
-            )}
+            <div class='hidden w-full lg:block'>
+              <ArticleImage article={props.article} />
+            </div>
           </div>
 
-          <div class='hidden w-full lg:block'>
-            <ArticleImage article={props.article} />
-          </div>
+          {props.article.callToAction && showBelowCallToAction && (
+            <div class='flex justify-center px-10 pt-2 lg:px-0'>
+              <LinkCallToAction
+                href={props.article.callToAction.href}
+                aria-label={props.article.callToAction.ariaLabel}
+                title={props.article.callToAction.title}
+                target={props.article.callToAction.target}
+              >
+                {props.article.callToAction.text}
+              </LinkCallToAction>
+            </div>
+          )}
         </div>
       ) : (
-        <div class='flex flex-col gap-x-12 lg:flex-row lg:px-10'>
-          <div class='hidden w-full lg:block'>
-            <ArticleImage article={props.article} />
-          </div>
-
-          <div class='flex w-full flex-col gap-y-5'>
-            <div class='flex flex-col gap-y-4'>
-              <div class='mx-auto h-1 w-10 bg-primary lg:mx-0' />
-              <div class='px-6 text-center text-3xl font-bold leading-8 text-secondary-900 lg:px-0 lg:text-left lg:text-4xl lg:leading-10'>
-                {props.article.heading}
-              </div>
-              <div class='mt-4 w-full lg:hidden'>
-                <ArticleImage article={props.article} />
-              </div>
+        <div class='flex flex-col gap-y-8'>
+          <div class='flex flex-col gap-x-12 lg:flex-row lg:px-10'>
+            <div class='hidden w-full lg:block'>
+              <ArticleImage article={props.article} />
             </div>
 
-            <p class='whitespace-pre-line px-10 text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 lg:px-0'>
-              {props.article.text}
-            </p>
-
-            {props.article.callToAction && (
-              <div class='px-10 pt-2 lg:px-0'>
-                <LinkCallToAction
-                  href={props.article.callToAction.href}
-                  aria-label={props.article.callToAction.ariaLabel}
-                  title={props.article.callToAction.title}
-                  target={props.article.callToAction.target}
-                >
-                  {props.article.callToAction.text}
-                </LinkCallToAction>
+            <div class='flex w-full flex-col gap-y-5'>
+              <div class='flex flex-col gap-y-4'>
+                <div class='mx-auto h-1 w-10 bg-primary lg:mx-0' />
+                <div class='px-6 text-center text-3xl font-bold leading-8 text-secondary-900 lg:px-0 lg:text-left lg:text-4xl lg:leading-10'>
+                  {props.article.heading}
+                </div>
+                <div class='mt-4 w-full lg:hidden'>
+                  <ArticleImage article={props.article} />
+                </div>
               </div>
-            )}
+
+              <p class='whitespace-pre-line px-10 text-left text-base font-normal leading-7 tracking-normal text-black opacity-80 lg:px-0'>
+                {props.article.text}
+              </p>
+
+              {props.article.callToAction && !showBelowCallToAction && (
+                <div class='px-10 pt-2 lg:px-0'>
+                  <LinkCallToAction
+                    href={props.article.callToAction.href}
+                    aria-label={props.article.callToAction.ariaLabel}
+                    title={props.article.callToAction.title}
+                    target={props.article.callToAction.target}
+                  >
+                    {props.article.callToAction.text}
+                  </LinkCallToAction>
+                </div>
+              )}
+            </div>
           </div>
+
+          {props.article.callToAction && showBelowCallToAction && (
+            <div class='flex justify-center px-10 pt-2 lg:px-0'>
+              <LinkCallToAction
+                href={props.article.callToAction.href}
+                aria-label={props.article.callToAction.ariaLabel}
+                title={props.article.callToAction.title}
+                target={props.article.callToAction.target}
+              >
+                {props.article.callToAction.text}
+              </LinkCallToAction>
+            </div>
+          )}
         </div>
       )}
     </>
