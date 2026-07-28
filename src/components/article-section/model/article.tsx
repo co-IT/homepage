@@ -34,6 +34,7 @@ export interface ArticlePracticeSliderBlock {
   type: 'practice-slider';
   heading: string;
   intro?: string;
+  navigationStyle?: 'default' | 'carousel';
   examples: ArticlePracticeExample[];
 }
 
