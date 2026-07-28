@@ -26,9 +26,11 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
         <div class='grid gap-6'>
           {isCarouselNavigation ? (
             <div class='grid gap-4'>
-              <div class='relative px-6 md:px-8'>
-                <div class='rounded border border-secondary-900/10 bg-white px-8 py-6 shadow-[0_18px_40px_-30px_rgba(2,2,77,0.3)] md:px-14 lg:px-16'>
-                  <h3 class='text-2xl font-bold leading-8 text-secondary-900'>{activeExample.title}</h3>
+              <div class='relative'>
+                <div class='rounded border border-secondary-900/10 bg-white px-20 py-10 shadow-[0_18px_40px_-30px_rgba(2,2,77,0.3)] md:px-28 lg:px-36'>
+                  <h3 class='max-w-4xl text-2xl font-bold leading-8 text-secondary-900 md:text-[2.05rem] md:leading-[1.35]'>
+                    {activeExample.title}
+                  </h3>
                   <p class='mt-4 whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80'>
                     {activeExample.text}
                   </p>
@@ -39,12 +41,12 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
                   onClick$={() =>
                     (activeIndexSig.value = activeIndexSig.value === 0 ? totalExamples - 1 : activeIndexSig.value - 1)
                   }
-                  class='absolute left-0 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-secondary-900/15 bg-white/90 text-secondary-900/70 shadow-[0_10px_24px_-18px_rgba(2,2,77,0.28)] transition-colors hover:border-secondary-900/25 hover:text-secondary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-900 md:h-10 md:w-10'
+                  class='absolute left-3 top-1/2 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full border border-secondary-900/15 bg-white text-secondary-900/75 shadow-[0_16px_36px_-28px_rgba(2,2,77,0.28)] transition-colors hover:border-secondary-900/25 hover:text-secondary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-900 md:left-4'
                   aria-label='Vorheriges Praxisbeispiel anzeigen'
                 >
                   <svg
-                    width='16'
-                    height='16'
+                    width='22'
+                    height='22'
                     viewBox='0 0 18 18'
                     fill='none'
                     xmlns='http://www.w3.org/2000/svg'
@@ -53,7 +55,7 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
                     <path
                       d='M11.25 3.75L6 9L11.25 14.25'
                       stroke='currentColor'
-                      stroke-width='1.9'
+                      stroke-width='1.8'
                       stroke-linecap='round'
                       stroke-linejoin='round'
                     />
@@ -65,12 +67,12 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
                   onClick$={() =>
                     (activeIndexSig.value = activeIndexSig.value === totalExamples - 1 ? 0 : activeIndexSig.value + 1)
                   }
-                  class='absolute right-0 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-secondary-900/15 bg-white/90 text-secondary-900/70 shadow-[0_10px_24px_-18px_rgba(2,2,77,0.28)] transition-colors hover:border-secondary-900/25 hover:text-secondary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-900 md:h-10 md:w-10'
+                  class='absolute right-3 top-1/2 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full border border-secondary-900/15 bg-white text-secondary-900/75 shadow-[0_16px_36px_-28px_rgba(2,2,77,0.28)] transition-colors hover:border-secondary-900/25 hover:text-secondary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-900 md:right-4'
                   aria-label='Nächstes Praxisbeispiel anzeigen'
                 >
                   <svg
-                    width='16'
-                    height='16'
+                    width='22'
+                    height='22'
                     viewBox='0 0 18 18'
                     fill='none'
                     xmlns='http://www.w3.org/2000/svg'
@@ -79,7 +81,7 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
                     <path
                       d='M6.75 3.75L12 9L6.75 14.25'
                       stroke='currentColor'
-                      stroke-width='1.9'
+                      stroke-width='1.8'
                       stroke-linecap='round'
                       stroke-linejoin='round'
                     />
@@ -87,16 +89,22 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
                 </button>
               </div>
 
-              <div class='flex items-center justify-center gap-3' aria-hidden='true'>
+              <div class='flex items-center justify-center gap-6'>
                 {props.article.examples.map((example, index) => (
-                  <span
+                  <button
                     key={example.title}
+                    type='button'
+                    onClick$={() => (activeIndexSig.value = index)}
                     class={{
-                      'h-3 w-3 rounded-full transition-colors': true,
-                      'bg-secondary-900': activeIndexSig.value === index,
-                      'bg-secondary-900/20': activeIndexSig.value !== index
+                      'flex h-10 w-10 items-center justify-center rounded-full text-2xl leading-none transition-colors': true,
+                      'bg-secondary-900 font-semibold text-white': activeIndexSig.value === index,
+                      'bg-transparent font-medium text-black hover:text-secondary-900': activeIndexSig.value !== index
                     }}
-                  />
+                    aria-label={`Praxisbeispiel ${index + 1} anzeigen`}
+                    aria-pressed={activeIndexSig.value === index}
+                  >
+                    {index + 1}
+                  </button>
                 ))}
               </div>
             </div>
