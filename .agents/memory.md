@@ -33,6 +33,7 @@ Persistente, belastbare Erkenntnisse fuer AI-Coding in diesem Repository.
 - 2026-07-13: Der Hero-Teaser auf `Leistungen` soll sich in der Breite an der darunterliegenden Content-Flaeche orientieren.
 - 2026-07-13: Die Branchen-Kachel im Desktop-Menue soll ein professionelles, kontextbezogenes Beratungsbild statt eines lockeren Teamfotos nutzen.
 - 2026-07-17: Erfahrungsbasierte Detailseiten sollen oben drei Hauptbloecke behalten; zusaetzliche konkrete Beispiele koennen darunter als `Aus der Praxis`-Slider erscheinen, ohne sichtbare Zaehlerzeile wie `Beispiel X von Y`.
+- 2026-07-28: `Aus der Praxis`-Slider sollen global die Karussell-Variante mit ueberlappenden, gefuellten Pfeilbuttons, ruhiger Nummern-Navigation und stabiler Hoehe beim Wechsel nutzen.
 - 2026-07-28: Die Uebersicht `Produkte & Loesungen` soll dieselben Bild-Overlays mit Navigationstiteln wie `Leistungen` nutzen; Produkt-Unterseiten sollen dort moeglichst im einheitlichen `ArticlePage`-Stil liegen.
 - 2026-07-28: Fuer das Produkt an der URL `/produkte-loesungen/cyber-awareness-portal/` soll sprachlich `Cyber Lounge` als Name bevorzugt werden; `Awareness` soll moeglichst unpraegnant bleiben und in Texten eher durch `Sensibilisierung` bzw. klaren Nutzensprache ersetzt werden.
 - 2026-07-28: Fuer die Produktbeschreibung der `Cyber Lounge` wird die Formulierung `... buendelt Schulungen, Phishing-Simulationen und nachvollziehbare Nachweise in einer Plattform fuer praxisnahe Sensibilisierung ...` gegenueber Varianten mit `Erinnerungen` bevorzugt.

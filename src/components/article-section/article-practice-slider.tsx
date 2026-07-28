@@ -10,7 +10,7 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
   const activeIndexSig = useSignal(0);
   const totalExamples = props.article.examples.length;
   const activeExample = props.article.examples[activeIndexSig.value];
-  const isCarouselNavigation = props.article.navigationStyle === 'carousel';
+  const isCarouselNavigation = props.article.navigationStyle !== 'default';
 
   return (
     <div class={isCarouselNavigation ? 'w-full px-6 lg:px-10' : 'mx-auto max-w-5xl px-6 lg:px-10'}>
