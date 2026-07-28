@@ -22,7 +22,7 @@ export const sicherheitschecks: PageContent = {
     {
       direction: 'left',
       heading: 'Was wir konkret prüfen.',
-      text: 'Wir prüfen, ob Ihre E-Mail-Kommunikation von außen sauber abgesichert ist, ob Ihre Domain-Konfiguration vermeidbare Risiken enthält und ob Ihr Webauftritt grundlegende Sicherheitsstandards erfüllt. Dazu gehören unter anderem Schutzmechanismen wie SPF, DKIM und DMARC, aber auch weiterführende Absicherungen wie MTA-STS, TLS-RPT, DANE oder DNSSEC. Zusätzlich betrachten wir auffällige, veraltete oder widersprüchliche DNS-Einträge sowie öffentlich sichtbare Schwächen Ihrer Webseite, etwa bei HTTPS oder Security-Headern. So entsteht ein realistisches Bild der Bereiche, in denen Vertrauen, Zustellbarkeit und Sicherheit unnötig gefährdet sein können.',
+      text: 'Wir schauen, ob Ihre geschäftliche E-Mail-Kommunikation zuverlässig geschützt ist, ob Ihre Internet-Domain unnötige Risiken birgt und ob Ihr Webauftritt die wichtigsten Sicherheitsanforderungen erfüllt. Dabei prüfen wir unter anderem, ob E-Mails vertrauenswürdig zugestellt werden, ob Ihre Domain sauber abgesichert ist und ob Ihre Webseite nach außen vermeidbare Schwachstellen zeigt. Auch veraltete oder widersprüchliche Einstellungen nehmen wir in den Blick. So entsteht ein verständliches Bild davon, wo Handlungsbedarf besteht und wie sich Sicherheit, Erreichbarkeit und Vertrauen gezielt verbessern lassen.',
       image: createImage('Prüfumfang von Sicherheitschecks')
     },
     {
