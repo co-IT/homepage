@@ -27,8 +27,8 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
           {isCarouselNavigation ? (
             <div class='grid gap-4'>
               <div class='relative'>
-                <div class='rounded border border-secondary-900/10 bg-white px-20 py-10 shadow-[0_18px_40px_-30px_rgba(2,2,77,0.3)] md:px-28 lg:px-36'>
-                  <h3 class='max-w-4xl text-2xl font-bold leading-8 text-secondary-900 md:text-[2.05rem] md:leading-[1.35]'>
+                <div class='rounded border border-secondary-900/10 bg-white px-16 py-10 shadow-[0_18px_40px_-30px_rgba(2,2,77,0.3)] md:px-24 lg:px-28'>
+                  <h3 class='text-2xl font-bold leading-8 text-secondary-900 md:text-[2.05rem] md:leading-[1.35]'>
                     {activeExample.title}
                   </h3>
                   <p class='mt-4 whitespace-pre-line text-left text-base font-normal leading-7 tracking-normal text-black opacity-80'>
