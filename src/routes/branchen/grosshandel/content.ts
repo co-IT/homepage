@@ -36,15 +36,15 @@ export const grosshandel: PageContent = {
       examples: [
         {
           title: 'Mehr als 50.000 Artikel effizient steuern.',
-          text: 'Für eine mittelständische Unternehmensgruppe entwickelten wir ein Warenwirtschaftssystem, mit dem mehr als 50.000 Artikel weiterhin von einem Einkaufsteam aus vier bis fünf Personen betreut werden konnten. Das System erkannte umsatzrelevante Produkte fortlaufend, berücksichtigte Lieferzeiten und unterstützte eine vorausschauende Beschaffung. Dadurch traten akute Deckungslücken nur noch selten auf, überhöhte Bestände wurden reduziert und die Rohmarge verbesserte sich laut internen Auswertungen innerhalb weniger Jahre spürbar.'
+          text: 'Für eine mittelständische Unternehmensgruppe entwickelten wir ein Warenwirtschaftssystem, mit dem mehr als 50.000 Artikel weiterhin von einem Einkaufsteam aus vier bis fünf Personen betreut werden konnten. Das System erkannte umsatzrelevante Produkte fortlaufend, berücksichtigte Lieferzeiten und unterstützte eine vorausschauende Beschaffung. Gleichzeitig wurden typische Routineentscheidungen besser vorbereitet, sodass sich das Team stärker auf Ausnahmen, Lieferengpässe und Sortimentsfragen konzentrieren konnte. Dadurch traten akute Deckungslücken nur noch selten auf, überhöhte Bestände wurden reduziert und die Rohmarge verbesserte sich laut internen Auswertungen innerhalb weniger Jahre spürbar.'
         },
         {
           title: 'Webshop, Warenwirtschaft und Versand zusammenführen.',
-          text: 'In einem Migrationsprojekt wurden Webshop, bestehende Warenwirtschaft und Versandprozesse so weiterentwickelt, dass manuelle Exporte, Copy-and-paste-Schritte und wiederholte Systemwechsel gezielt reduziert werden konnten. Gleichzeitig blieben bestehende Nummernkreise, Historien und ein sinnvoller Rückfallweg auf das alte Verfahren erhalten. Das schafft nicht nur technische Fortschritte, sondern auch mehr Kontrolle und Sicherheit im laufenden Betrieb.'
+          text: 'In einem Migrationsprojekt wurden Webshop, bestehende Warenwirtschaft und Versandprozesse so weiterentwickelt, dass manuelle Exporte, Copy-and-paste-Schritte und wiederholte Systemwechsel gezielt reduziert werden konnten. Gleichzeitig blieben bestehende Nummernkreise, Historien und ein sinnvoller Rückfallweg auf das alte Verfahren erhalten. Gerade im laufenden Tagesgeschäft war das wichtig, weil neue Abläufe dadurch eingeführt werden konnten, ohne die Versandfähigkeit oder den Kundenservice unnötig zu gefährden. Das schafft nicht nur technische Fortschritte, sondern auch mehr Kontrolle und Sicherheit im laufenden Betrieb.'
         },
         {
           title: 'Geschäftsdokumente revisionssicher und auffindbar machen.',
-          text: 'Für ein Warenwirtschaftssystem wurde eine Schnittstelle zu einem Dokumentenmanagementsystem umgesetzt, über die heute rund 500.000 Geschäftsdokumente pro Jahr automatisiert und revisionssicher archiviert werden. Dadurch entfällt die unstrukturierte Ablage in Postfächern, Dokumente lassen sich deutlich schneller finden und wichtige Abläufe werden besser nachvollziehbar.'
+          text: 'Für ein Warenwirtschaftssystem wurde eine Schnittstelle zu einem Dokumentenmanagementsystem umgesetzt, über die heute rund 500.000 Geschäftsdokumente pro Jahr automatisiert und revisionssicher archiviert werden. Dadurch entfällt die unstrukturierte Ablage in Postfächern, Dokumente lassen sich deutlich schneller finden und wichtige Abläufe werden besser nachvollziehbar. Das erleichtert nicht nur die tägliche Arbeit in Einkauf und Verwaltung, sondern auch Rückfragen, Freigaben und spätere Nachweise gegenüber Kunden oder Prüfinstanzen.'
         }
       ]
     }
