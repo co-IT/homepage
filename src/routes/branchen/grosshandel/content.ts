@@ -31,7 +31,6 @@ export const grosshandel: PageContent = {
     {
       type: 'practice-slider',
       heading: 'Aus der Praxis',
-      navigationStyle: 'carousel',
       intro:
         'Einige typische Beispiele zeigen, wie Prozessdigitalisierung im Großhandel konkret aussehen kann - von Beschaffung und Warenwirtschaft bis zu Schnittstellen und Dokumentenflüssen.',
       examples: [
