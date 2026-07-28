@@ -6,7 +6,7 @@ const cyberPortalImage = '/img/cyber/cyber-portal/header.webp';
 export const produkteLoesungenOverview: PageContent = {
   title: 'co-IT - Produkte & Lösungen',
   metaDescription:
-    'Digitale Lösungen für Cyber-Awareness, Phishing-Simulationen, Passwort-Management, Sicherheitschecks und KI-gestützte Webseiten-Strukturen.',
+    'Digitale Lösungen für Sensibilisierung, Phishing-Simulationen, Passwort-Management, Sicherheitschecks und KI-gestützte Webseiten-Strukturen.',
   headerHeading: 'Produkte & Lösungen',
   headerSubheading: 'Sicherheit, Effizienz und moderne Arbeitsprozesse',
   backgroundImage: createBackgroundImage('Produkte und Lösungen', cyberPortalImage),
@@ -16,14 +16,14 @@ export const produkteLoesungenOverview: PageContent = {
   articles: [
     {
       direction: 'right',
-      heading: 'Awareness, die nicht bei der Schulung endet.',
-      text: 'Das co-IT Cyber-Awareness-Portal bündelt Schulungen, Prüfungen, Zertifikate, Erinnerungen und Phishing-Simulationen in einer strukturierten Plattform. Unternehmen, Versicherer und Partner können Sicherheitsbewusstsein messbar aufbauen und Fortschritte nachvollziehbar dokumentieren.',
-      image: createImage('Awareness und Phishing-Simulationen'),
-      imageLabel: 'Cyber-Awareness-Portal',
+      heading: 'Sensibilisierung, die im Alltag ankommt.',
+      text: 'Die Cyber Lounge bündelt Schulungen, Phishing-Simulationen und nachvollziehbare Nachweise in einer Plattform für praxisnahe Sensibilisierung. Unternehmen, Versicherer und Partner stärken damit Sicherheitsbewusstsein, schaffen Transparenz und machen Fortschritte nachvollziehbar.',
+      image: createImage('Sensibilisierung und Phishing-Simulationen'),
+      imageLabel: 'Cyber Lounge',
       callToAction: {
         text: 'Mehr erfahren',
         href: '/produkte-loesungen/cyber-awareness-portal/',
-        ariaLabel: 'Mehr über das Cyber-Awareness-Portal erfahren'
+        ariaLabel: 'Mehr über die Cyber Lounge erfahren'
       }
     },
     {

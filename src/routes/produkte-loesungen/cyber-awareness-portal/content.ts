@@ -4,31 +4,31 @@ import { createBackgroundImage, createImage } from '~/components/article-page';
 const cyberPortalImage = '/img/cyber/cyber-portal/header.webp';
 
 export const cyberAwarenessPortal: PageContent = {
-  title: 'co-IT - Cyber-Awareness-Portal',
+  title: 'co-IT - Cyber Lounge',
   metaDescription:
-    'Awareness-Trainings, Prüfungen, Zertifikate und Phishing-Simulationen in einer Plattform für messbares Sicherheitsbewusstsein.',
-  headerHeading: 'Cyber-Awareness-Portal',
-  headerSubheading: 'Awareness und Phishing-Simulationen',
-  backgroundImage: createBackgroundImage('Cyber-Awareness-Portal', cyberPortalImage),
-  contentHeading: 'Awareness-Trainings und Phishing-Simulationen in einer Plattform',
+    'Die Cyber Lounge bündelt Schulungen, Phishing-Simulationen und nachvollziehbare Nachweise in einer Plattform für praxisnahe Sensibilisierung.',
+  headerHeading: 'Cyber Lounge',
+  headerSubheading: 'Sensibilisierung und Phishing-Simulationen',
+  backgroundImage: createBackgroundImage('Cyber Lounge', cyberPortalImage),
+  contentHeading: 'Schulungen, Phishing-Simulationen und Nachweise in einer Plattform',
   articles: [
     {
       direction: 'right',
-      heading: 'Sensibilisierung, die im Alltag wirkt.',
-      text: 'Das co-IT Cyber-Awareness-Portal bündelt Schulungen, Prüfungen, Erinnerungen und Phishing-Simulationen in einer Plattform für messbares Sicherheitsbewusstsein - automatisiert, skalierbar und mandantenfähig. So wird aus einzelnen Maßnahmen ein nachvollziehbarer Lernprozess statt einer einmaligen Pflichtübung, auch wenn unterschiedliche Zielgruppen oder Branchen eigene Schwerpunkte brauchen.',
-      image: createImage('Cyber-Awareness-Portal')
+      heading: 'Sensibilisierung, die im Arbeitsalltag wirkt.',
+      text: 'Die Cyber Lounge bündelt Schulungen, Phishing-Simulationen und nachvollziehbare Nachweise in einer Plattform für praxisnahe Sensibilisierung. So wird aus einzelnen Maßnahmen ein strukturierter Lernprozess, der Sicherheitsbewusstsein stärkt und im Arbeitsalltag verankert.',
+      image: createImage('Cyber Lounge')
     },
     {
       direction: 'left',
       heading: 'Lernen, simulieren, auswerten.',
-      text: 'Kurse, Prüfungen, Zertifikate, Erinnerungen und Simulationen greifen in einer Plattform ineinander. Verantwortliche sehen, welche Inhalte abgeschlossen wurden, wie sich Klickraten entwickeln und wo weiterer Handlungsbedarf besteht. Ergebnisse bleiben damit nicht nur messbar, sondern auch intern erklärbar und dokumentierbar - bis hin zu gezielten Nachschulungen für besonders exponierte Rollen.',
-      image: createImage('Lernen und Auswerten im Cyber-Awareness-Portal')
+      text: 'Schulungen, Simulationen und Nachweise greifen in einer Plattform ineinander. Verantwortliche sehen, welche Inhalte abgeschlossen wurden, wie sich Ergebnisse entwickeln und wo weiterer Handlungsbedarf besteht. So bleiben Maßnahmen nicht nur messbar, sondern auch intern erklärbar und gezielt weiterentwickelbar.',
+      image: createImage('Lernen und Auswerten in der Cyber Lounge')
     },
     {
       direction: 'right',
       heading: 'Nachweise schaffen, Fortschritt sichtbar machen.',
-      text: 'Das Portal eignet sich für einzelne Unternehmen ebenso wie für Partner- und White-Label-Szenarien. Ob interne Sensibilisierung, Versicherungsnehmer-Portal oder branchenspezifisches Schulungsangebot: Die Plattform lässt sich strukturiert einsetzen, an bestehende Prozesse anbinden und mit klaren Nachweisen für Audits, Partner oder interne Anforderungen verbinden. Das ist besonders hilfreich, wenn Simulationen und Maßnahmen nachvollziehbar dokumentiert werden sollen.',
-      image: createImage('Nachweise im Cyber-Awareness-Portal')
+      text: 'Die Cyber Lounge eignet sich für einzelne Unternehmen ebenso wie für Partner- und White-Label-Szenarien. Ob interne Sensibilisierung, Partnerlösung oder branchenspezifisches Angebot: Die Plattform lässt sich strukturiert einsetzen, an bestehende Prozesse anbinden und mit klaren Nachweisen für interne Anforderungen, Audits oder Partner verbinden.',
+      image: createImage('Nachweise in der Cyber Lounge')
     }
   ]
 };
