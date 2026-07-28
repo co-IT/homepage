@@ -25,9 +25,9 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
 
         <div class='grid gap-6'>
           {isCarouselNavigation ? (
-            <div class='grid gap-4'>
-              <div class='relative'>
-                <div class='rounded border border-secondary-900/10 bg-white px-20 py-10 shadow-[0_18px_40px_-30px_rgba(2,2,77,0.3)] md:px-24 lg:px-28'>
+            <div class='grid gap-5'>
+              <div class='relative rounded border border-secondary-900/10 bg-white px-14 py-10 shadow-[0_18px_40px_-30px_rgba(2,2,77,0.3)] sm:px-16 md:min-h-[21rem] md:px-20 lg:px-24'>
+                <div class='flex min-h-[17rem] flex-col justify-start md:min-h-[19rem]'>
                   <h3 class='text-2xl font-bold leading-8 text-secondary-900 md:text-[2.05rem] md:leading-[1.35]'>
                     {activeExample.title}
                   </h3>
@@ -41,7 +41,7 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
                   onClick$={() =>
                     (activeIndexSig.value = activeIndexSig.value === 0 ? totalExamples - 1 : activeIndexSig.value - 1)
                   }
-                  class='absolute left-3 top-1/2 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full border border-secondary-900/15 bg-white text-secondary-900/75 shadow-[0_16px_36px_-28px_rgba(2,2,77,0.28)] transition-colors hover:border-secondary-900/25 hover:text-secondary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-900 md:left-4'
+                  class='absolute left-0 top-1/2 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-secondary-900 text-white shadow-[0_18px_34px_-22px_rgba(2,2,77,0.55)] transition-opacity hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-900 md:h-14 md:w-14'
                   aria-label='Vorheriges Praxisbeispiel anzeigen'
                 >
                   <svg
@@ -55,7 +55,7 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
                     <path
                       d='M11.25 3.75L6 9L11.25 14.25'
                       stroke='currentColor'
-                      stroke-width='1.8'
+                      stroke-width='1.9'
                       stroke-linecap='round'
                       stroke-linejoin='round'
                     />
@@ -67,7 +67,7 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
                   onClick$={() =>
                     (activeIndexSig.value = activeIndexSig.value === totalExamples - 1 ? 0 : activeIndexSig.value + 1)
                   }
-                  class='absolute right-3 top-1/2 flex h-14 w-14 -translate-y-1/2 items-center justify-center rounded-full border border-secondary-900/15 bg-white text-secondary-900/75 shadow-[0_16px_36px_-28px_rgba(2,2,77,0.28)] transition-colors hover:border-secondary-900/25 hover:text-secondary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-900 md:right-4'
+                  class='absolute right-0 top-1/2 flex h-12 w-12 -translate-y-1/2 translate-x-1/2 items-center justify-center rounded-full bg-secondary-900 text-white shadow-[0_18px_34px_-22px_rgba(2,2,77,0.55)] transition-opacity hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-900 md:h-14 md:w-14'
                   aria-label='Nächstes Praxisbeispiel anzeigen'
                 >
                   <svg
@@ -81,7 +81,7 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
                     <path
                       d='M6.75 3.75L12 9L6.75 14.25'
                       stroke='currentColor'
-                      stroke-width='1.8'
+                      stroke-width='1.9'
                       stroke-linecap='round'
                       stroke-linejoin='round'
                     />
@@ -96,9 +96,11 @@ export const ArticlePracticeSlider = component$((props: ArticlePracticeSliderPro
                     type='button'
                     onClick$={() => (activeIndexSig.value = index)}
                     class={{
-                      'flex h-10 w-10 items-center justify-center rounded-full text-2xl leading-none transition-colors': true,
-                      'bg-secondary-900 font-semibold text-white': activeIndexSig.value === index,
-                      'bg-transparent font-medium text-black hover:text-secondary-900': activeIndexSig.value !== index
+                      'flex h-10 w-10 items-center justify-center rounded-full border text-2xl leading-none transition-colors': true,
+                      'border-secondary-900/20 bg-transparent font-semibold text-secondary-900':
+                        activeIndexSig.value === index,
+                      'hover:border-secondary-900/12 border-transparent bg-transparent font-medium text-black/75 hover:text-secondary-900':
+                        activeIndexSig.value !== index
                     }}
                     aria-label={`Praxisbeispiel ${index + 1} anzeigen`}
                     aria-pressed={activeIndexSig.value === index}
