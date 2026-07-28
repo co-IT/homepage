@@ -33,6 +33,11 @@ export const cyberSicherheit: PageContent = {
         src: '/img/article-pages/cyber-awareness-measurable-dashboard.webp',
         alt: 'IT-Berater bespricht mit zwei Kunden messbare Awareness-Ergebnisse und Sicherheitskennzahlen an einem grossen Dashboard.'
       }
+    },
+    {
+      type: 'text',
+      heading: 'Aus der Praxis',
+      text: 'Gerade bei sensiblen Themen wie E-Mail-Sicherheit zeigt sich der Wert guter Beratung darin, technische Maßnahmen so aufzubauen, dass sie wirksam sind und zugleich für den Kunden nachvollziehbar bleiben.\n\nE-Mail-Sicherheit verständlich und wirksam verbessern.\n\nEin Maschinenbauunternehmen stellte fest, dass seine Domain für täuschend echte Absender genutzt wurde. Gemeinsam mit dem Kunden haben wir die bestehende Situation Schritt für Schritt eingeordnet, passende Schutzmaßnahmen aufgebaut und die jeweiligen Auswirkungen verständlich erklärt. So konnte nicht nur die technische Absicherung deutlich verbessert werden, sondern auch das Vertrauen in die eigene E-Mail-Kommunikation wachsen. Nach der Umsetzung ging der Missbrauch zurück, und wichtige Nachrichten wurden nach Kundenaussage wieder zuverlässiger zugestellt.'
     }
   ]
 };
