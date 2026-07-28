@@ -6,14 +6,14 @@ export const sicherheitschecks: PageContent = {
   metaDescription:
     'Sicherheitschecks für E-Mail, DNS und Webseiten mit verständlichem Bericht und priorisierten Handlungsempfehlungen.',
   headerHeading: 'Sicherheitschecks',
-  headerSubheading: 'E-Mail, DNS und Webseite prüfen',
+  headerSubheading: 'Schwachstellen erkennen. Risiken verständlich einordnen.',
   backgroundImage: createBackgroundImage('Sicherheitschecks'),
-  contentHeading: 'Sicherheitschecks für E-Mail, DNS und Webseite',
+  contentHeading: 'Sicherheitschecks für E-Mail, Domain und Webauftritt',
   articles: [
     {
       direction: 'right',
-      heading: 'Wissen, wo Sie stehen. Bevor es jemand anderes herausfindet.',
-      text: 'Unser standardisierter Sicherheitscheck analysiert Ihre E-Mail-Infrastruktur, DNS-Konfiguration und Webseite auf bekannte Schwachstellen und Fehlkonfigurationen. Das Ergebnis ist ein strukturierter Bericht mit konkreten Handlungsempfehlungen.',
+      heading: 'Sicher erkennen, wo Risiken bestehen.',
+      text: 'Unser strukturierter Sicherheitscheck untersucht Ihre E-Mail-Absicherung, Ihre Domain-Konfiguration und Ihren Webauftritt auf typische Schwachstellen, Fehlkonfigurationen und unnötige Angriffsflächen. Sie erhalten keinen unübersichtlichen Technikbericht, sondern eine verständliche Auswertung mit klar priorisierten Empfehlungen. So wird sichtbar, was akut wichtig ist, was verbessert werden sollte und welche Themen zunächst nachrangig sind.',
       image: {
         src: '/img/article-pages/security-report-review.webp',
         alt: 'IT-Berater prüft einen Sicherheitsbericht mit priorisierten Befunden.'
@@ -21,14 +21,14 @@ export const sicherheitschecks: PageContent = {
     },
     {
       direction: 'left',
-      heading: 'Was geprüft wird.',
-      text: 'Wir prüfen, ob Ihre E-Mail-Kommunikation technisch sauber abgesichert ist - von SPF, DKIM und DMARC bis zu MTA-STS, TLS-RPT, DANE und DNSSEC. Dazu kommen Ihre DNS-Einträge, auffällige oder veraltete Konfigurationen sowie Ihre Webseite mit Blick auf HTTPS, Security-Header und von außen sichtbare technische Risiken. So entsteht kein reiner Protokoll-Check, sondern ein realistisches Bild Ihrer Angriffsfläche.',
+      heading: 'Was wir konkret prüfen.',
+      text: 'Wir prüfen, ob Ihre E-Mail-Kommunikation von außen sauber abgesichert ist, ob Ihre Domain-Konfiguration vermeidbare Risiken enthält und ob Ihr Webauftritt grundlegende Sicherheitsstandards erfüllt. Dazu gehören unter anderem Schutzmechanismen wie SPF, DKIM und DMARC, aber auch weiterführende Absicherungen wie MTA-STS, TLS-RPT, DANE oder DNSSEC. Zusätzlich betrachten wir auffällige, veraltete oder widersprüchliche DNS-Einträge sowie öffentlich sichtbare Schwächen Ihrer Webseite, etwa bei HTTPS oder Security-Headern. So entsteht ein realistisches Bild der Bereiche, in denen Vertrauen, Zustellbarkeit und Sicherheit unnötig gefährdet sein können.',
       image: createImage('Prüfumfang von Sicherheitschecks')
     },
     {
       direction: 'right',
       heading: 'Aus Befunden werden nächste Schritte.',
-      text: 'Ein guter Sicherheitsbericht muss technisch korrekt und intern nutzbar sein. Deshalb formulieren wir Befunde so, dass technische Verantwortliche handeln können und Geschäftsführung, Datenschutz oder Compliance die Risiken nachvollziehen können.',
+      text: 'Ein Sicherheitscheck ist nur dann hilfreich, wenn aus den Ergebnissen sinnvolle Maßnahmen entstehen. Deshalb bereiten wir alle Befunde so auf, dass technische Verantwortliche direkt handeln können und Geschäftsführung, Datenschutz oder Compliance die Tragweite nachvollziehen können. Sie erhalten eine verständliche Einordnung, eine Priorisierung nach Dringlichkeit und konkrete Empfehlungen für die nächsten Schritte statt einer bloßen Liste technischer Hinweise.',
       image: createImage('Handlungsempfehlungen aus Sicherheitschecks')
     }
   ]
