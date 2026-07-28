@@ -125,7 +125,7 @@ export default component$(() => {
           >
             <section class='flex flex-col space-y-4'>
               <h3 class='max-w-4xl text-3xl font-bold leading-tight md:text-5xl'>
-                <HeadingSegmentSecondary text='Passwort-Manager in der' /> <HeadingSegmentSecondary800 text='Praxis' />
+                <HeadingSegmentSecondary text='In der' /> <HeadingSegmentSecondary800 text='Praxis' />
               </h3>
               <p class='max-w-4xl text-lg leading-9 text-secondary-900'>
                 In unserem geführten Rundgang zeigen wir, wie geschäftliche Zugänge zentral, sicher und nachvollziehbar
