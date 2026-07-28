@@ -1,9 +1,11 @@
-import { component$ } from '@builder.io/qwik';
-import { ArticlePage, createArticlePageHead } from '~/components/article-page';
-import { passwortManagerUnternehmen } from './content';
+import type { DocumentHead, DocumentHeadValue } from '@builder.io/qwik-city';
+import { head as passwortManagerHead } from '../../produkte/passwort-manager';
 
-export default component$(() => {
-  return <ArticlePage page={passwortManagerUnternehmen} />;
-});
+export { default } from '../../produkte/passwort-manager';
 
-export const head = createArticlePageHead(passwortManagerUnternehmen);
+const headWithoutInheritedRobotsMeta = passwortManagerHead as DocumentHeadValue;
+
+export const head: DocumentHead = {
+  ...headWithoutInheritedRobotsMeta,
+  meta: headWithoutInheritedRobotsMeta.meta?.filter(meta => meta.name?.toLowerCase() !== 'robots')
+};
