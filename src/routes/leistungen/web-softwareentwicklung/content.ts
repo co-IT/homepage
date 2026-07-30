@@ -52,6 +52,10 @@ export const webSoftwareentwicklung: PageContent = {
         {
           title: 'Webshop, Warenwirtschaft und Versand gemeinsam modernisieren.',
           text: 'In einem Migrationsprojekt wurden Webshop, Warenwirtschaft und Versand so weiterentwickelt, dass manuelle Exporte, Copy-and-paste-Schritte und unnötige Systemwechsel reduziert werden konnten. Gleichzeitig blieben bestehende Historien, Nummernkreise und ein sinnvoller Rückfallweg auf das alte Verfahren erhalten. So ließ sich die Modernisierung schrittweise in den laufenden Betrieb einführen, ohne wichtige Folgeprozesse oder bestehende Verantwortlichkeiten aus dem Gleichgewicht zu bringen.'
+        },
+        {
+          title: 'Komplexe Policenlogik nachvollziehbar in Software abbilden.',
+          text: 'Für eine namhafte deutsche Versicherung entwickelten wir einen Cyber-Policen-Manager, mit dem komplexe Beitragslogiken, Selbstbehalte, Deckungssummen und unterschiedliche Vertragsvarianten innerhalb eines Vorgangs abgebildet werden können. Die fachliche Herausforderung lag vor allem darin, bestehende versicherungsmathematische Regeln aus Unterlagen und Beispielrechnungen zu rekonstruieren und zuverlässig in Software zu überführen. Das Ergebnis beschleunigte Kalkulation und Dokumentenerstellung deutlich und machte Variantenberechnungen im Tagesgeschäft wesentlich einfacher.'
         }
       ]
     }
