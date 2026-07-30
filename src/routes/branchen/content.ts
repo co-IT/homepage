@@ -15,7 +15,7 @@ export const branchenOverview: PageContent = {
     {
       direction: 'right',
       heading: 'Vertrauen ist Ihr Geschäftsmodell.',
-      text: 'Versicherungen arbeiten mit sensiblen Kundendaten, hohem Vertrauensanspruch und vielen digitalen Kommunikationswegen. Awareness-Portale, Phishing-Simulationen, Sicherheitschecks und dokumentierbare Prozesse helfen, Risiken sichtbar und steuerbar zu machen.',
+      text: 'Versicherungen arbeiten mit sensiblen Kundendaten, hohem Vertrauensanspruch und vielen digitalen Kommunikationswegen. Schulungsportale, Phishing-Simulationen, Sicherheitschecks und nachvollziehbare Fachprozesse helfen, Risiken sichtbar und steuerbar zu machen. Gerade dort, wo dokumentierte Nachweise, klare Abläufe und individuelle Fachlogik zusammenkommen, entfalten digitale Lösungen ihren besonderen Wert.',
       image: createImage('Sicherheit für Versicherungen'),
       callToAction: {
         text: 'Mehr erfahren',

@@ -38,7 +38,7 @@ export const leistungenOverview: PageContent = {
     {
       direction: 'right',
       heading: 'Microsoft 365 richtig betreiben.',
-      text: 'Microsoft 365 und Azure sind für viele kleine und mittelständische Unternehmen das Fundament moderner Zusammenarbeit. Wir unterstützen bei Migration, sicheren Grundeinstellungen, Benutzerverwaltung, Teams, SharePoint, Exchange, Backup, Lizenzmanagement und Azure-Betrieb.',
+      text: 'Microsoft 365 und Azure sind für viele kleine und mittelständische Unternehmen das Fundament moderner Zusammenarbeit. Wir unterstützen bei Migration, sicheren Grundeinstellungen, Benutzerverwaltung, Teams, SharePoint und Exchange. Dabei geht es nicht nur um Technik, sondern auch um Postfachstrukturen, Zuständigkeiten, Zustellbarkeit und die saubere Einbindung in bestehende Abläufe wie Support, Bestellungen oder ERP-Prozesse.',
       image: createImage('Microsoft 365 und Azure'),
       imageLabel: 'Microsoft 365 & Azure',
       callToAction: {
@@ -50,7 +50,7 @@ export const leistungenOverview: PageContent = {
     {
       direction: 'left',
       heading: 'Cyber-Sicherheit verständlich und wirksam machen.',
-      text: 'Angriffe beginnen häufig mit E-Mails, schwachen Passwörtern, Fehlkonfigurationen oder unsicheren Entscheidungen im Arbeitsalltag. Wir verbinden technische Schutzmaßnahmen mit Awareness, Phishing-Simulationen, Passwort-Management und verständlichen Sicherheitschecks.',
+      text: 'Angriffe beginnen häufig mit E-Mails, schwachen Passwörtern, Fehlkonfigurationen oder unsicheren Entscheidungen im Arbeitsalltag. Wir verbinden technische Schutzmaßnahmen mit Schulungen, Phishing-Simulationen, Passwort-Management und verständlichen Sicherheitschecks. So entstehen keine isolierten Einzelmaßnahmen, sondern nachvollziehbare Verbesserungen für Kommunikation, Mitarbeitende und Systeme.',
       image: createImage('Cyber-Sicherheit'),
       imageLabel: 'Cyber-Sicherheit',
       callToAction: {
