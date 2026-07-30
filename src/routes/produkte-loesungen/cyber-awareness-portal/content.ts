@@ -1,7 +1,5 @@
 import type { PageContent } from '~/components/article-page';
-import { createBackgroundImage, createImage } from '~/components/article-page';
-
-const cyberPortalImage = '/img/cyber/cyber-portal/header.webp';
+import { createImage } from '~/components/article-page';
 
 export const cyberAwarenessPortal: PageContent = {
   title: 'co-IT - Cyber Lounge',
@@ -9,7 +7,10 @@ export const cyberAwarenessPortal: PageContent = {
     'Die Cyber Lounge bündelt Schulungen, Phishing-Simulationen und nachvollziehbare Nachweise in einer Plattform für praxisnahe Sensibilisierung.',
   headerHeading: 'Cyber Lounge',
   headerSubheading: 'Sensibilisierung und Phishing-Simulationen',
-  backgroundImage: createBackgroundImage('Cyber Lounge', cyberPortalImage),
+  backgroundImage: {
+    source: '/img/article-pages/cyber-lounge-sensibilisierung-workshop.png',
+    alt: 'Drei Personen besprechen Auswertungen und Lernfortschritte der Cyber Lounge an einem grossen Bildschirm.'
+  },
   contentHeading: 'Schulungen, Phishing-Simulationen und Nachweise in einer Plattform',
   articles: [
     {
