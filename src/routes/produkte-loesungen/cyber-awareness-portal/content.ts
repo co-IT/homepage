@@ -34,15 +34,15 @@ export const cyberAwarenessPortal: PageContent = {
       type: 'practice-slider',
       heading: 'Aus der Praxis',
       intro:
-        'Praxisnahe Sensibilisierung zeigt ihren Wert erst dann, wenn sie in unterschiedlichen Unternehmensgrößen funktioniert, Ergebnisse nachvollziehbar macht und Verantwortliche im Alltag entlastet. Zwei Beispiele aus der Praxis zeigen, wie Schulungen, Simulationen und Nachweise in einem gemeinsamen Rahmen sinnvoll zusammengeführt werden können.',
+        'Praxisnahe Sensibilisierung zeigt ihren Wert erst dann, wenn sie in unterschiedlichen Unternehmensgrößen funktioniert, Ergebnisse nachvollziehbar macht und Verantwortliche im Alltag entlastet. Zwei Beispiele zeigen, wie solche Anforderungen konkret zusammenfinden.',
       examples: [
         {
-          title: 'Anforderungen aus dem Versicherungsumfeld in eine nutzbare Plattform übersetzen.',
-          text: 'In einem Projekt für eine namhafte deutsche Versicherung wurde ein E-Learning-Portal entwickelt, das Versicherungsnehmern im Rahmen ihres Vertrags zur Verfügung gestellt wird. Die Herausforderung bestand darin, Anforderungen aus Versicherungsbedingungen in konkrete und alltagstaugliche Funktionen zu übersetzen. So mussten Schulungen, Prüfungen, Phishing-Simulationen und Vorlagen so aufbereitet werden, dass sie für sehr unterschiedliche Unternehmensgrößen nutzbar bleiben. Das Beispiel zeigt, wie aus allgemeinen Anforderungen eine strukturierte Plattform entstehen kann, die Sensibilisierung planbar, nachvollziehbar und dauerhaft umsetzbar macht.'
+          title: 'Portal für fast 1.000 Versicherungsnehmer nutzbar gemacht.',
+          text: 'Im Umfeld von Cyber-Policen wurde ein E-Learning-Portal aufgebaut, das von fast 1.000 Versicherungsnehmern und mehreren Zehntausend Anwendern genutzt wird. Die Plattform verbindet Schulungspläne, Lerninhalte, Prüfungen, Vorlagen und Phishing-Simulationen in einem strukturierten Ablauf. Entscheidend war dabei, dass das Angebot sowohl für kleine Unternehmen mit wenigen Beschäftigten als auch für große Organisationen mit mehreren Tausend Nutzern praktikabel bleibt. So entsteht kein loses Schulungsangebot, sondern ein belastbarer Prozess für Sensibilisierung und Nachweisbarkeit.'
         },
         {
-          title: 'Nachweise und Auswertungen für viele Anwender übersichtlich nutzbar machen.',
-          text: 'Im Versicherungskontext zeigte sich außerdem, wie wichtig nachvollziehbare Auswertungen und dokumentierte Nachweise sind, wenn sehr viele Anwender und Unternehmen betreut werden. Schulungsstände, Prüfergebnisse und weitere Maßnahmen dürfen dann nicht in einzelnen Insellösungen verstreut sein. Erst wenn diese Informationen gebündelt vorliegen, können Verantwortliche Entwicklungen sinnvoll einordnen, Handlungsbedarf erkennen und nächste Schritte gezielt ableiten. Genau darin liegt der praktische Wert einer Plattform, die Schulungen, Simulationen und Dokumentation in einem gemeinsamen Rahmen zusammenführt.'
+          title: 'Cyber-Risiken verständlich und greifbar vermitteln.',
+          text: 'Die Plattform wurde nicht nur für Schulung und Nachweis konzipiert, sondern auch dafür, Cyber-Risiken für Versicherungsnehmer verständlich darzustellen. Dadurch kann sie im Kundengespräch als unterstützendes Werkzeug eingesetzt werden, wenn erklärt werden soll, welche Anforderungen an Sensibilisierung, Passwortverhalten oder Phishing-Prävention praktisch relevant sind. Der Mehrwert liegt damit nicht nur in den Inhalten selbst, sondern auch darin, dass Sicherheitsanforderungen nachvollziehbar vermittelt und mit konkreten Funktionen hinterlegt werden können.'
         }
       ]
     }
