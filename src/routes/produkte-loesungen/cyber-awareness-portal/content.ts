@@ -16,7 +16,10 @@ export const cyberAwarenessPortal: PageContent = {
       direction: 'right',
       heading: 'Sensibilisierung, die im Arbeitsalltag wirkt.',
       text: 'Die Cyber Lounge bündelt Schulungen, Phishing-Simulationen und nachvollziehbare Nachweise in einer Plattform für praxisnahe Sensibilisierung. Dabei geht es nicht nur um einzelne Lerninhalte, sondern um einen strukturierten Ablauf, der im Unternehmensalltag funktioniert: Schulungspläne, wiederkehrende Auffrischungen, Prüfungen und begleitende Vorlagen greifen sinnvoll zusammen. So entsteht ein belastbarer Prozess, mit dem Unternehmen Sicherheitsanforderungen nicht nur vermitteln, sondern auch organisatorisch besser verankern können.',
-      image: createImage('Cyber Lounge')
+      image: {
+        src: '/img/article-pages/cyber-lounge-sensibilisierung-workshop.png',
+        alt: 'Drei Personen besprechen Auswertungen und Lernfortschritte der Cyber Lounge an einem grossen Bildschirm.'
+      }
     },
     {
       direction: 'left',
