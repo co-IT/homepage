@@ -331,8 +331,8 @@ export const head: DocumentHead = {
       type: 'content-page',
       configuration: {
         backgroundImage: {
-          source: '/img/article-pages/passwort-management-zugriffsrechte-kontrolle.webp',
-          alt: 'Zwei Personen pruefen Rollen, Freigaben und Sicherheitsrichtlinien in einer Passwort-Management-Oberflaeche an zwei Monitoren.'
+          source: '/img/products/passwort-manager/header-bitwarden-ui.png',
+          alt: 'Zwei Personen pruefen eine Passwort-Management-Oberflaeche mit Tresoransicht und Sicherheits-Dashboard an zwei Monitoren.'
         },
         heading: 'Passwort-Manager für Unternehmen',
         headingAccent: 'Digitale Identitäten sicher organisieren.'
