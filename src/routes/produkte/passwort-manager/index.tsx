@@ -331,8 +331,8 @@ export const head: DocumentHead = {
       type: 'content-page',
       configuration: {
         backgroundImage: {
-          source: '/img/products/passwort-manager/header.webp',
-          alt: 'Two team mates checking an App on the tablet.'
+          source: '/img/article-pages/passwort-management-zugriffsrechte-kontrolle.webp',
+          alt: 'Zwei Personen pruefen Rollen, Freigaben und Sicherheitsrichtlinien in einer Passwort-Management-Oberflaeche an zwei Monitoren.'
         },
         heading: 'Passwort-Manager für Unternehmen',
         headingAccent: 'Digitale Identitäten sicher organisieren.'
