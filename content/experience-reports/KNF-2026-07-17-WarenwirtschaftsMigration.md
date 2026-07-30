@@ -14,14 +14,14 @@ Auch der Versand erforderte mehrere manuelle Schritte und Systemwechsel. Versand
 
 Die Modernisierung wurde zusätzlich durch mehrere fachliche und technische Anforderungen erschwert:
 
-* Bestehende Kunden- und Debitorennummern durften nicht überschrieben werden, damit Zuordnungen und Historien erhalten bleiben.
-* Die neue Lösung sollte möglichst ohne dauerhaftes Abo-Modell auskommen.
-* Der Kunde und die co-IT.eu GmbH sollten die Kontrolle über das System behalten und Anpassungen sowie eigene Erweiterungen selbst vornehmen können.
-* Die Anbindung des Versanddienstleisters sollte direkt in der neuen Warenwirtschaft erfolgen.
-* Gleichzeitig musste ein Rückfall auf das bestehende Exportverfahren möglich bleiben.
-* Eine spätere Anbindung an die Finanzbuchhaltung musste berücksichtigt werden.
-* Die Standardprozesse für Einkauf, Verkauf und Lagerhaltung sollten im Gesamtzusammenhang testbar bleiben.
-* Elektronische Rechnungen mussten nicht nur strukturierte, valide Rechnungsdaten enthalten. Auch das zugehörige PDF musste vollständig valide sein.
+- Bestehende Kunden- und Debitorennummern durften nicht überschrieben werden, damit Zuordnungen und Historien erhalten bleiben.
+- Die neue Lösung sollte möglichst ohne dauerhaftes Abo-Modell auskommen.
+- Der Kunde und die co-IT.eu GmbH sollten die Kontrolle über das System behalten und Anpassungen sowie eigene Erweiterungen selbst vornehmen können.
+- Die Anbindung des Versanddienstleisters sollte direkt in der neuen Warenwirtschaft erfolgen.
+- Gleichzeitig musste ein Rückfall auf das bestehende Exportverfahren möglich bleiben.
+- Eine spätere Anbindung an die Finanzbuchhaltung musste berücksichtigt werden.
+- Die Standardprozesse für Einkauf, Verkauf und Lagerhaltung sollten im Gesamtzusammenhang testbar bleiben.
+- Elektronische Rechnungen mussten nicht nur strukturierte, valide Rechnungsdaten enthalten. Auch das zugehörige PDF musste vollständig valide sein.
 
 Gerade die elektronische Rechnung erwies sich als besondere technische Herausforderung. Bei der Prüfung der vorgesehenen Open-Source-Warenwirtschaft zeigte sich, dass das erzeugte PDF zunächst nicht valide war.
 
@@ -33,11 +33,11 @@ Auf dieser Grundlage wurde ein flexibel anpassbares Open-Source-Warenwirtschafts
 
 Für die Datenmigration wurden Exporte aus dem bisherigen Warenwirtschaftssystem und dem Webshop analysiert, aufbereitet und im Zielsystem getestet. Folgende Daten lassen sich bereits reproduzierbar importieren:
 
-* Artikel
-* Kunden
-* Bestände
-* Kategorien
-* Artikelfilter
+- Artikel
+- Kunden
+- Bestände
+- Kategorien
+- Artikelfilter
 
 Für die Verwaltung von Kunden- und Debitorennummern entwickelte die co-IT.eu GmbH eine eigene Erweiterung. Sie verwaltet Kundennummern direkt an den Kontakten, bietet einen konfigurierbaren Nummernkreis und ermittelt sowohl die nächste freie als auch die nächste fortlaufende Nummer.
 

@@ -34,10 +34,10 @@ Zuvor waren Angebote, Aufträge, Rechnungen und weitere Geschäftsdokumente ledi
 
 ### Ergebnis
 
-* Umsetzung der gesetzlichen Anforderungen an die Archivierung
-* Automatisierte Ablage von rund 500.000 Dokumenten pro Jahr
-* Deutlich bessere Auffindbarkeit geschäftsrelevanter Unterlagen
-* Wegfall einer unstrukturierten Ablage in E-Mail-Postfächern
+- Umsetzung der gesetzlichen Anforderungen an die Archivierung
+- Automatisierte Ablage von rund 500.000 Dokumenten pro Jahr
+- Deutlich bessere Auffindbarkeit geschäftsrelevanter Unterlagen
+- Wegfall einer unstrukturierten Ablage in E-Mail-Postfächern
 
 ## Integration von CRM und Software-Telefonie
 
@@ -49,10 +49,10 @@ Nach der Integration kann die Telefonnummer direkt aus dem CRM an den CTI-Client
 
 ### Ergebnis
 
-* Wegfall des manuellen Abtippens von Telefonnummern
-* Geschätzte Zeitersparnis von 20 bis 30 Minuten pro Mitarbeiter und Arbeitstag
-* Abteilungsübergreifende Nutzung durch alle Sachbearbeiter
-* Sehr positive Bewertung in einer Mitarbeiterbefragung
+- Wegfall des manuellen Abtippens von Telefonnummern
+- Geschätzte Zeitersparnis von 20 bis 30 Minuten pro Mitarbeiter und Arbeitstag
+- Abteilungsübergreifende Nutzung durch alle Sachbearbeiter
+- Sehr positive Bewertung in einer Mitarbeiterbefragung
 
 Die Zeitersparnis beruht auf einer internen Schätzung. Eine separate Zeitmessung wurde nicht durchgeführt.
 
@@ -66,19 +66,19 @@ Der neue Import wird in der Regel zweimal monatlich durchgeführt: vor der Meldu
 
 Die fachliche Logik unterscheidet unterschiedliche Abwesenheitsarten, unter anderem:
 
-* Erholungsurlaub
-* unbezahlter Urlaub
-* Kind krank
-* Arbeitsunfähigkeit ohne Bescheinigung
-* Arbeitsunfähigkeit mit Bescheinigung
+- Erholungsurlaub
+- unbezahlter Urlaub
+- Kind krank
+- Arbeitsunfähigkeit ohne Bescheinigung
+- Arbeitsunfähigkeit mit Bescheinigung
 
 ### Ergebnis
 
-* Einsparung von ein bis zwei manuellen Arbeitstagen pro Monat
-* Reduzierung fehleranfälliger Datenerfassungen
-* Weniger nachträgliche Lohnkorrekturen
-* Fachlich differenzierte Verarbeitung unterschiedlicher Abwesenheitsarten
-* Verlässlicher, wiederholbarer Importprozess
+- Einsparung von ein bis zwei manuellen Arbeitstagen pro Monat
+- Reduzierung fehleranfälliger Datenerfassungen
+- Weniger nachträgliche Lohnkorrekturen
+- Fachlich differenzierte Verarbeitung unterschiedlicher Abwesenheitsarten
+- Verlässlicher, wiederholbarer Importprozess
 
 # Ergebnis für die Kunden
 
@@ -86,12 +86,12 @@ Durch die Integration bestehender Fachanwendungen entstehen durchgängige digita
 
 Die Vorteile unterscheiden sich je nach Anwendungsfall:
 
-* Erfüllung gesetzlicher Anforderungen
-* geringerer manueller Arbeitsaufwand
-* weniger Übertragungs- und Erfassungsfehler
-* höhere Prozessgeschwindigkeit
-* bessere Datenqualität
-* höhere Akzeptanz bei den Anwendern
-* bessere Nachvollziehbarkeit und Wiederholbarkeit der Abläufe
+- Erfüllung gesetzlicher Anforderungen
+- geringerer manueller Arbeitsaufwand
+- weniger Übertragungs- und Erfassungsfehler
+- höhere Prozessgeschwindigkeit
+- bessere Datenqualität
+- höhere Akzeptanz bei den Anwendern
+- bessere Nachvollziehbarkeit und Wiederholbarkeit der Abläufe
 
 Der entscheidende Erfolgsfaktor ist das gemeinsame Verständnis des tatsächlichen Geschäftsprozesses. Erst wenn die gelebte Praxis der Anwender vollständig berücksichtigt wird, kann eine technische Integration entstehen, die dauerhaft zuverlässig funktioniert und im Arbeitsalltag tatsächlich entlastet.
