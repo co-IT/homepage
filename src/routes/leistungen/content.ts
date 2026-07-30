@@ -61,8 +61,8 @@ export const leistungenOverview: PageContent = {
     },
     {
       direction: 'right',
-      heading: 'Software, die einfach passt.',
-      text: 'Wenn Standardsoftware nicht mehr zu Ihren Abläufen passt, entwickeln wir individuelle Webanwendungen, Schnittstellen, Portale und Backend-Systeme, die Prozesse vereinfachen und langfristig wartbar bleiben.',
+      heading: 'Wenn Prozesse mehr als Standard brauchen.',
+      text: 'Nicht jeder Ablauf lässt sich sinnvoll in fertige Software pressen. Wenn Fachlogik, Schnittstellen, Ausnahmen oder gewachsene Prozesse mehr brauchen, entwickeln wir individuelle Webanwendungen, Portale und Backend-Systeme, die sich an Ihrem Arbeitsalltag orientieren. So entstehen Lösungen, die Medienbrüche reduzieren, bestehende Systeme sauber anbinden und auch dann tragfähig bleiben, wenn Anforderungen komplexer werden.',
       image: createImage('Web- und Softwareentwicklung'),
       imageLabel: 'Web- & Softwareentwicklung',
       callToAction: {
