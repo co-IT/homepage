@@ -12,12 +12,12 @@ export const produkteLoesungenOverview: PageContent = {
   backgroundImage: createBackgroundImage('Produkte und Lösungen', cyberPortalImage),
   contentHeading: 'Digitale Lösungen für Sicherheit, Effizienz und moderne Arbeitsprozesse',
   contentText:
-    'Unsere Produkte und Lösungen entstehen aus wiederkehrenden Anforderungen im IT-Betrieb, in der Cyber-Sicherheit und in der Digitalisierung mittelständischer Unternehmen. Sie sind standardisiert genug, um wirtschaftlich einsetzbar zu sein, und flexibel genug, um sich an konkrete Unternehmenssituationen anzupassen.',
+    'Unsere Produkte und Lösungen entstehen aus wiederkehrenden Anforderungen in der Cyber-Sicherheit, im IT-Betrieb und in der Digitalisierung mittelständischer Unternehmen. Sie bündeln typische Aufgaben wie Schulung, Nachweisbarkeit, Passwortschutz, Sicherheitsprüfung oder inhaltliche Strukturierung so, dass sie wirtschaftlich einsetzbar und zugleich an konkrete Unternehmenssituationen anpassbar bleiben.',
   articles: [
     {
       direction: 'right',
       heading: 'Sensibilisierung, die im Alltag ankommt.',
-      text: 'Die Cyber Lounge bündelt Schulungen, Phishing-Simulationen und nachvollziehbare Nachweise in einer Plattform für praxisnahe Sensibilisierung. Unternehmen, Versicherer und Partner stärken damit Sicherheitsbewusstsein, schaffen Transparenz und machen Fortschritte nachvollziehbar.',
+      text: 'Die Cyber Lounge bündelt Schulungen, Phishing-Simulationen und nachvollziehbare Nachweise in einer Plattform für praxisnahe Sensibilisierung. Unternehmen, Versicherer und Partner können damit Schulungspläne, Auswertungen und organisatorische Nachweise in einem strukturierten Ablauf zusammenführen. So werden Fortschritte nicht nur sichtbar, sondern auch im Alltag besser steuerbar.',
       image: createImage('Sensibilisierung und Phishing-Simulationen'),
       imageLabel: 'Cyber Lounge',
       callToAction: {
