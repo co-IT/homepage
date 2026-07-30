@@ -22,7 +22,7 @@ export const cyberSicherheit: PageContent = {
     {
       direction: 'left',
       heading: 'E-Mail-Sicherheit auf technischer Ebene.',
-      text: 'Wir prüfen und härten Ihre E-Mail-Infrastruktur mit Maßnahmen wie SPF, DKIM, DMARC, MTA-STS, TLS-RPT, DANE und DNSSEC. In der Praxis geht es dabei selten um eine ideale Blaupause, sondern um eine schrittweise Härtung, die zu vorhandenen Dienstleistern, bestehenden Versandwegen und realen Abhängigkeiten passt. So entstehen keine abstrakten Sicherheitskonzepte, sondern belastbare Verbesserungen, die Missbrauch spürbar erschweren und die Grundlage für verlässliche Kommunikation stärken.',
+      text: 'Wir prüfen und härten Ihre E-Mail-Infrastruktur mit Maßnahmen wie SPF, DKIM, DMARC, MTA-STS, TLS-RPT, DANE und DNSSEC. In der Praxis geht es dabei selten um eine ideale Blaupause, sondern um eine schrittweise Härtung, die zu vorhandenen Dienstleistern, bestehenden Versandwegen und realen Abhängigkeiten passt. Gerade bei Migrationen oder gewachsenen Postfachstrukturen zeigt sich, ob E-Mail-Sicherheit wirklich tragfähig umgesetzt wurde: nicht nur im DNS, sondern auch in Zustellbarkeit, Verantwortlichkeiten, Weiterleitungen und den Prozessen, die täglich über E-Mail laufen.',
       image: createImage('E-Mail-Sicherheit')
     },
     {
@@ -43,6 +43,10 @@ export const cyberSicherheit: PageContent = {
         {
           title: 'E-Mail-Sicherheit verständlich und wirksam verbessern.',
           text: 'Ein Maschinenbauunternehmen stellte fest, dass seine Domain für täuschend echte Absender genutzt wurde. Gemeinsam mit dem Kunden haben wir die bestehende Situation Schritt für Schritt eingeordnet, passende Schutzmaßnahmen aufgebaut und die jeweiligen Auswirkungen verständlich erklärt. So konnte nicht nur die technische Absicherung deutlich verbessert werden, sondern auch das Vertrauen in die eigene E-Mail-Kommunikation wachsen. Nach der Umsetzung ging der Missbrauch zurück, und wichtige Nachrichten wurden nach Kundenaussage wieder zuverlässiger zugestellt.'
+        },
+        {
+          title: 'E-Mail-Sicherheit nicht isoliert, sondern im echten Betrieb absichern.',
+          text: 'In einem Migrationsprojekt zu Microsoft 365 zeigte sich, dass E-Mail-Sicherheit nicht bei einzelnen DNS-Einträgen endet. Erst wenn Postfachstruktur, Weiterleitungen, Zustellbarkeit, Domainkonfiguration und angebundene Geschäftsprozesse gemeinsam betrachtet werden, entsteht eine Lösung, die im Alltag wirklich trägt. Genau dieser Blick auf Technik und Betriebsrealität verhindert, dass Sicherheit nur formal vorhanden ist, aber im laufenden Betrieb neue Schwächen entstehen.'
         }
       ]
     }
