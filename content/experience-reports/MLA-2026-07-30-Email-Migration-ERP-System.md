@@ -1,41 +1,45 @@
 # Details
 
 - Bericht von: Mario Lausch
-- Datum: 30.07.2026
-- Thema: E-Mail Migration und Anbindung an modernes ERP System
+- Datum: 03.08.2026
+- Thema: E-Mail-Migration und Integration in die Warenwirtschaft
 
 # Kundenreferenz
 
 ## Herausforderung
 
-Im Zuge der Einführung eines neuen ERP-Systems sollte auch die bestehende E-Mail-Infrastruktur des Kunden modernisiert werden. Bis dahin wurden die E-Mail-Postfächer über IONOS betrieben; ein Microsoft-365-Tenant war noch nicht vorhanden.
+Im Rahmen der Einführung von Odoo als neuem Warenwirtschaftssystem musste bei einem produzierenden Betrieb auch die bestehende E-Mail-Infrastruktur neu organisiert werden. Zuvor nutzte das Unternehmen bei IONOS ein bis zwei zentrale Postfächer, in denen mehrere Mitarbeitende gemeinsam arbeiteten. Personalisierte Konten gab es nicht.
 
-Die Umstellung war eng mit dem zukünftigen Einsatz des ERP-Systems verbunden. Dieses verfügt über Schnittstellen zu Microsoft 365 beziehungsweise Exchange Online und soll E-Mails an Kunden und Lieferanten versenden sowie eingehende Nachrichten für den Kundensupport und die Bestellabwicklung verarbeiten.
+Aus dem Status einer Nachricht ließ sich nicht zuverlässig erkennen, ob sie bereits vollständig bearbeitet worden war. Eine geöffnete E-Mail konnte beispielsweise einen Auftrag, eine Kundenanfrage oder eine Rückfrage enthalten. Es war jedoch nicht unmittelbar nachvollziehbar, ob der Auftrag bereits im Altsystem angelegt, eine Anfrage beantwortet oder eine Rückfrage an einen anderen Bereich im Betrieb weitergegeben worden war. Ebenso war häufig nicht ersichtlich, wer einen Bearbeitungsschritt übernommen hatte.
 
-Ein wesentlicher Teil der Bestellungen geht weiterhin per E-Mail ein. Dies betrifft insbesondere B2B-Kunden, die nicht über den Online-Shop bestellen. Deshalb mussten die bisherigen E-Mail-Adressen und sämtliche vorhandenen Nachrichten nach der Migration weiterhin verfügbar sein. Für die Benutzer sollte der Wechsel ohne wahrnehmbare Probleme erfolgen.
+Hinzu kam, dass Informationen aus eingehenden Bestellungen manuell in das bisherige Warenwirtschaftssystem übertragen werden mussten. Kundendaten, Aufträge und einzelne Auftragspositionen wurden von Hand erfasst. Dadurch konnten Übertragungs- und Eingabefehler entstehen oder einzelne Positionen übersehen werden. Fehlerhafte Kunden-, Adress- oder Bestelldaten konnten sich anschließend auf die weitere Auftragsbearbeitung und Auslieferung auswirken.
 
-Auch die Organisation der Postfächer sollte überarbeitet werden. Mehrere Mitarbeitende arbeiteten zuvor gemeinsam in einem oder zwei zentralen Postfächern. Dadurch war nicht immer eindeutig erkennbar, wer eine Nachricht bereits bearbeitet hatte oder dafür zuständig war. Zudem fehlten persönliche E-Mail-Adressen, die für individuelle Benutzerkonten und benutzerspezifische Berechtigungen in anderen Systemen benötigt werden.
+Für die Umstellung musste deshalb nicht nur die vorhandene E-Mail-Kommunikation erhalten bleiben. Benötigt wurde auch eine neue Struktur aus persönlichen und gemeinsam genutzten Postfächern, die sich in die Arbeitsabläufe des Unternehmens und in das neue Warenwirtschaftssystem integrieren ließ.
 
 ## Lösung
 
-Die co-IT.eu GmbH bereitete den neuen Microsoft-365-Tenant vor dem Migrationstermin vollständig vor. Wir legten sämtliche Benutzerkonten sowie die vorgesehenen persönlichen und geteilten Postfächer zunächst unter einer vorläufigen Domain an. Dadurch konnten die grundlegende Konfiguration bereits vor der eigentlichen Domainumstellung geprüft werden.
+Die co-IT.eu GmbH bereitete den neuen Microsoft-365-Tenant zunächst unter einer alternativen Domain vor. Gemeinsam mit dem Kunden wurde festgelegt, welche Benutzerkonten künftig benötigt werden, welche geteilten Postfächer eingerichtet werden sollen und welche Mitarbeitenden Zugriff auf die jeweiligen Postfächer erhalten.
 
-Anschließend importierten wir die vorhandenen E-Mails in die vorbereiteten Postfächer. Am Umstellungstag übertrugen wir die Domains von IONOS zu INWX und banden sie anschließend in den Microsoft-365-Tenant ein.
+Die persönlichen Konten, geteilten Postfächer und Zugriffsrechte wurden unter der alternativen Domain vollständig angelegt und vor der eigentlichen Umstellung getestet. Die Aufteilung orientierte sich an den bestehenden Prozessen und Zuständigkeiten des Kunden.
 
-Bereits während der Vorbereitung testeten wir die eingerichteten Konten und Postfächer unter der vorläufigen Domain. Nach der Migration prüften wir erneut sämtliche Postfächer und Weiterleitungen sowie den Versand und Empfang von E-Mails. Zusätzlich analysierten wir die SMTP-Protokolle, um die korrekte Verarbeitung der Nachrichten zu kontrollieren.
+Am Tag der Umstellung wurden der DNS-Server und die bisherige Domain von IONOS zu einem neuen DNS-Anbieter übertragen. Anschließend wurde die Domain in Microsoft 365 eingerichtet. Den bereits vorbereiteten Benutzerkonten wurden die bisherigen E-Mail-Adressen hinzugefügt. Die vorhandenen Postfachinhalte wurden per IMAP-Import von IONOS nach Microsoft 365 übertragen.
 
-Parallel dazu entwickelte die co-IT.eu GmbH gemeinsam mit dem Kunden eine neue Postfachstruktur. Jeder Benutzer erhielt ein persönliches Postfach. Für gemeinsam bearbeitete Aufgaben, darunter Kundenanfragen und per E-Mail eingehende Bestellungen, wurden geteilte Postfächer eingerichtet, auf die jeweils die zuständigen Personen zugreifen können.
+Darüber hinaus konfigurierten wir die E-Mail- und DNS-Infrastruktur nach aktuellem Stand der Technik. Dazu gehörten unter anderem SPF, DKIM, DMARC und DNSSEC. Neben der technischen Absicherung prüften wir auch die Zustellbarkeit der ausgehenden E-Mails. Zustellbarkeitstests zeigten, dass die vorgenommenen Einstellungen die Wahrscheinlichkeit einer erfolgreichen Zustellung an die Kundenpostfächer erhöhten.
 
-Die E-Mail-Sicherheit wurde ebenfalls neu konfiguriert. Umgesetzt wurden SPF, DKIM, DMARC, DNSSEC und MTA-STS. DMARC-Berichte und TLS-Berichte auf Basis von TLSRPT werden zentral gesammelt und analysiert.
+Die E-Mail-Kommunikation wurde zugleich in das Warenwirtschaftssystem integriert. Eingehende Nachrichten werden dort automatisch dem vorhandenen Kunden, Auftrag oder Vorgang zugeordnet.
 
-Ergänzend wurden Funktionen zum Schutz vor Spam und Phishing, zur Sicherung der Microsoft-365-Konten und Postfächer sowie zur revisionssicheren Archivierung der E-Mails eingerichtet. Die co-IT.eu GmbH beriet den Kunden außerdem bei der Auswahl zusätzlicher, langfristig nutzbarer Domains, darunter Domains mit der Endung „.gmbh“.
+Antworten werden direkt aus dem Warenwirtschaftssystem als reguläre E-Mail an den Kunden versendet. Die Mitarbeitenden müssen dafür Outlook nicht öffnen. Ein- und ausgehende Nachrichten sowie die vorgenommenen Bearbeitungsschritte bleiben in der Historie des jeweiligen Kunden, Auftrags oder Vorgangs dokumentiert.
 
 ## Ergebnis
 
-Die Umstellung auf Microsoft 365 und Exchange Online erfolgte nahtlos. Versand und Empfang über die bisherigen E-Mail-Adressen funktionierten nach der Migration weiterhin, und die vorhandenen E-Mails standen in den neuen Postfächern vollständig zur Verfügung. Bei den Prüfungen nach der Umstellung wurden keine konkreten Fehler festgestellt.
+Nach der Umstellung ist nachvollziehbar, welche Vorgänge noch offen sind, wer sie übernommen hat und welche Bearbeitungsschritte bereits erfolgt sind. Die vollständige Historie zeigt, wer an einem Vorgang gearbeitet hat und welchen aktuellen Stand er besitzt.
 
-Der Kunde arbeitet inzwischen mit persönlichen und geteilten Postfächern. Gemeinsam bearbeitete Nachrichten, darunter Kundenanfragen und Bestellungen per E-Mail, können damit klarer zugeordnet werden. Gleichzeitig verfügt jeder Benutzer über eine eigene E-Mail-Adresse.
+Die Mitarbeitenden müssen nicht mehr anhand geöffneter Nachrichten oder durch interne Abstimmungen klären, ob eine Anfrage bereits bearbeitet, ein Auftrag erfasst oder eine Rückfrage weitergegeben wurde. Die Kundenkommunikation kann direkt im zugehörigen Vorgang im Warenwirtschaftssystem bearbeitet werden.
 
-Diese persönlichen Adressen bilden außerdem die Grundlage für individuelle Konten in weiteren Anwendungen, beispielsweise in einem Passwortmanager oder in Systemen, in denen Rechte benutzerspezifisch vergeben werden.
+Ein wesentlicher Vorteil besteht darin, dass Bestell-, Kunden- und Auftragsdaten nicht mehr manuell aus E-Mails in die Warenwirtschaft übertragen werden müssen. Die zuvor bestehende Fehlerquelle durch Vertippen, übersehene Positionen oder falsch übernommene Angaben entfällt damit. Dadurch werden Fehllieferungen oder Probleme bei der Zustellung vermieden, die auf fehlerhaft übertragene Bestell- oder Adressdaten zurückzuführen wären. Für die Kunden des Unternehmens bedeutet dies eine zuverlässigere Auftragsbearbeitung und eine höhere Zufriedenheit.
 
-Für die Anwender änderte sich die technische Grundlage der E-Mail-Kommunikation, ohne dass während der Migration Ausfälle oder andere Probleme auftraten. Die Postfächer werden nun über Microsoft 365 beziehungsweise Exchange Online betrieben.
+Zugleich wird weniger Zeit für die Organisation von Zuständigkeiten und Bearbeitungsständen benötigt. Die Mitarbeitenden können sich stärker auf die eigentliche Bearbeitung der Kundenanfragen und Aufträge konzentrieren.
+
+Die Zustellbarkeitstests bestätigten außerdem eine verbesserte technische Zustellung der ausgehenden E-Mails. Durch die vorgenommenen E-Mail- und DNS-Einstellungen erreichen Nachrichten mit höherer Wahrscheinlichkeit die vorgesehenen Kundenpostfächer.
+
+Die vorbereitete Umstellung der E-Mail-Infrastruktur verlief ohne technische Probleme oder Ausfallzeiten und blieb für den Kunden im Arbeitsalltag nahezu unbemerkt. Die Geschäftsführung bewertete die neue Lösung insgesamt sehr positiv.
