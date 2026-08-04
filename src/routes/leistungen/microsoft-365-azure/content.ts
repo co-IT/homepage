@@ -19,7 +19,7 @@ export const microsoft365Azure: PageContent = {
     {
       direction: 'left',
       heading: 'Migration mit Blick auf die tatsächliche Systemlandschaft.',
-      text: 'Fehlkonfigurationen bei Exchange-Migrationen, unsichere Tenant-Einstellungen, unklare Lizenzmodelle oder lückenhafte Berechtigungskonzepte sind häufige Stolpersteine. In der Praxis hängen an einer Migration aber oft noch deutlich mehr Themen: bestehende Domains, historische E-Mails, gemeinsam genutzte Postfächer, ERP-Schnittstellen, Bestellprozesse und Supportabläufe. Wir planen, testen und migrieren deshalb so, dass nicht nur die Technik umzieht, sondern die Kommunikation im Unternehmen stabil bleibt und bestehende Arbeitsprozesse nach der Umstellung besser statt komplizierter funktionieren.',
+      text: 'Bei Microsoft-365-Migrationen geht es oft nicht nur um Postfächer, Domains und technische Grundeinstellungen. In vielen Unternehmen hängen daran zentrale Sammelpostfächer, historische E-Mails, unklare Bearbeitungszuständigkeiten und Prozessschritte, die bis in Warenwirtschaft, Bestellwesen oder Support reichen. Wir planen, testen und migrieren deshalb so, dass nicht nur die Technik umzieht, sondern Kommunikation, Verantwortlichkeiten und angeschlossene Arbeitsabläufe nach der Umstellung stabil und nachvollziehbar weiterlaufen.',
       image: {
         src: '/img/article-pages/microsoft-365-migration-exchange-tenant-detail.png',
         alt: 'IT-Berater verfolgt eine Microsoft-365-Migration mit Exchange-, Tenant- und Prozessschritten an zwei Monitoren.'
@@ -28,7 +28,7 @@ export const microsoft365Azure: PageContent = {
     {
       direction: 'right',
       heading: 'Nach der Migration beginnt die Betriebsdisziplin.',
-      text: 'Nach der Migration beginnt die eigentliche Arbeit: persönliche und geteilte Postfächer sauber strukturieren, Zuständigkeiten klarer machen, SPF, DKIM, DMARC und weitere Schutzmechanismen korrekt betreiben sowie Exchange Online sinnvoll in bestehende Abläufe einbinden. Gerade wenn E-Mails für Support, Bestellungen oder ERP-Prozesse relevant sind, muss der Betrieb verlässlich tragen. Wir verbinden deshalb Administration, Sicherheit und Prozessverständnis, damit Microsoft 365 nicht nur eingeführt, sondern im Alltag dauerhaft sauber genutzt werden kann.',
+      text: 'Nach der Migration beginnt der eigentliche Betriebsnutzen: Postfächer müssen zu den realen Zuständigkeiten passen, eingehende Nachrichten sauber bearbeitet werden können und E-Mail-Kommunikation darf nicht als loses Nebensystem neben der Warenwirtschaft weiterlaufen. Gleichzeitig sorgen SPF, DKIM, DMARC, DNSSEC und weitere Schutzmechanismen dafür, dass Sicherheit und Zustellbarkeit nicht dem Zufall überlassen bleiben. So wird Microsoft 365 nicht nur technisch eingeführt, sondern als verlässlicher Teil der täglichen Arbeitsprozesse nutzbar gemacht.',
       image: createImage('Microsoft-365-Betrieb')
     },
     {
@@ -39,7 +39,7 @@ export const microsoft365Azure: PageContent = {
       examples: [
         {
           title: 'E-Mail-Migration mit ERP-Anbindung ohne spürbare Unterbrechung.',
-          text: 'Bei einem Kunden wurde im Zuge eines neuen ERP-Systems auch die bestehende E-Mail-Infrastruktur modernisiert und nach Microsoft 365 überführt. Die Herausforderung bestand nicht nur in der Migration der Postfächer, sondern auch darin, bisherige E-Mail-Adressen, historische Nachrichten, gemeinsam genutzte Postfächer und die künftige ERP-Anbindung sauber mitzudenken. Zusätzlich wurden persönliche und geteilte Postfächer neu strukturiert, damit Zuständigkeiten klarer werden. Nach der Umstellung blieben Versand, Empfang und vorhandene E-Mails verfügbar, ohne dass für die Anwender spürbare Probleme auftraten.'
+          text: 'Bei einem produzierenden Betrieb wurde mit der Einführung eines neuen Warenwirtschaftssystems auch die bestehende E-Mail-Infrastruktur neu organisiert und nach Microsoft 365 überführt. Zuvor arbeiteten mehrere Mitarbeitende in zentralen Sammelpostfächern, ohne dass Bearbeitungsstände und Verantwortlichkeiten immer klar nachvollziehbar waren. Im Zuge der Umstellung wurden persönliche und geteilte Postfächer neu strukturiert, bisherige Adressen und vorhandene Nachrichten migriert und die E-Mail-Kommunikation direkt in die Warenwirtschaft eingebunden. Dadurch müssen Bestell-, Kunden- und Auftragsdaten nicht mehr manuell aus E-Mails übertragen werden, Bearbeitungsschritte bleiben nachvollziehbar und die Umstellung verlief im Arbeitsalltag nahezu unbemerkt.'
         },
         {
           title: 'E-Mail-Betrieb nach der Migration sicherer und klarer aufgestellt.',
