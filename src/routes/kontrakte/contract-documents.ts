@@ -95,9 +95,15 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
         name: 'Nutzungsbedingungen',
         versions: [
           {
+            version: '1.3',
+            validFrom: '12.08.2026',
+            validTo: undefined,
+            url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Nutzungsbedingungen_v1.3.pdf'
+          },
+          {
             version: '1.2',
             validFrom: '29.10.2025',
-            validTo: undefined,
+            validTo: '12.08.2026',
             url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Nutzungsbedingungen_v1.2.pdf'
           },
           {
@@ -118,9 +124,15 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
         name: 'Datenschutzerklärung',
         versions: [
           {
+            version: '1.3',
+            validFrom: '12.08.2026',
+            validTo: undefined,
+            url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Datenschutzerklaerung_v1.3.pdf'
+          },
+          {
             version: '1.2',
             validFrom: '29.10.2025',
-            validTo: undefined,
+            validTo: '12.08.2026',
             url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Datenschutzerklärung_v1.2.pdf'
           },
           {
