@@ -103,7 +103,7 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
           {
             version: '1.2',
             validFrom: '29.10.2025',
-            validTo: '12.08.2026',
+            validTo: '11.08.2026',
             url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Nutzungsbedingungen_v1.2.pdf'
           },
           {
@@ -132,7 +132,7 @@ export const contractDocumentsByCategory: ContractDocumentsByCategory = [
           {
             version: '1.2',
             validFrom: '29.10.2025',
-            validTo: '12.08.2026',
+            validTo: '11.08.2026',
             url: 'https://dl.co-it.eu/kontrakte/Cyber_Portal_Datenschutzerklärung_v1.2.pdf'
           },
           {
