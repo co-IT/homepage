@@ -27,7 +27,7 @@ export const phishingSimulationen: PageContent = {
     {
       direction: 'right',
       heading: 'Aus Klicks werden konkrete Maßnahmen.',
-      text: 'Die Frage ist nicht, ob ein Klick passiert, sondern wann - und was daraus gelernt wird. Im Fokus stehen dabei keine einzelnen Personen, sondern erkennbare Muster: Zeitdruck, Autorität, Neugier, Unsicherheit oder fehlende Meldewege. Aus den Ergebnissen leiten wir konkrete Maßnahmen für Schulungen, Prozesse und Technik ab - zum Beispiel gezielte Nachschulungen für besonders exponierte Rollen, klarere Prüfmerkmale, Notfallpläne oder technische Anpassungen in der E-Mail-Darstellung. So bleibt eine Simulation nicht bei einer Zahl stehen, sondern führt zu spürbaren Verbesserungen im Alltag.',
+      text: 'Ein Klick passiert selten zufällig. Meist gibt es einen Auslöser: eine scheinbar bekannte Adresse, ein glaubwürdiger Anlass, eine dringende Bitte oder ein Ablauf, der im Alltag ganz selbstverständlich wirkt. Genau darin liegt der eigentliche Erkenntnisgewinn einer Phishing-Simulation. Sie zeigt nicht nur, dass eine Nachricht funktioniert, sondern warum sie funktioniert. Wird auf Autorität reagiert, auf Zeitdruck, auf Routine oder auf eine Situation, in der niemand lange prüfen will? Erst wenn diese Muster sichtbar werden, lässt sich gezielt daran arbeiten. So wird aus einer Simulation keine abstrakte Kennzahl, sondern eine belastbare Grundlage für bessere Abläufe, klarere Prüfmerkmale und mehr Sicherheit im Arbeitsalltag.',
       image: createImage('Auswertung von Phishing-Simulationen')
     },
     {
