@@ -217,7 +217,7 @@ const articleImageAssets: Partial<Record<string, ArticlePageImageAsset>> = {
   ),
   'Realistische Phishing-Szenarien': createArticleImageAsset(
     'phishing-learning-moment.webp',
-    'Mitarbeiterin reagiert auf eine realistische Phishing-Übung am Arbeitsplatz.'
+    'Screenshot einer realistischen Phishing-E-Mail mit gefaelschter Sicherheitswarnung und Entscheidungsoptionen.'
   ),
   'Region und Einsatzgebiet': createArticleImageAsset(
     'regional-office-handshake-view.webp',
