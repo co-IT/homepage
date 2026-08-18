@@ -20,8 +20,8 @@ export const phishingSimulationen: PageContent = {
     },
     {
       direction: 'left',
-      heading: 'Branchentypische Szenarien statt plumper Testmails.',
-      text: 'Gute Simulationen orientieren sich an echten Kommunikationsmustern: Lieferanteninformationen, interne Freigaben, Paketbenachrichtigungen, Rechnungen, Bewerbungsmails oder gefälschte Portale. Bei Bedarf werden die Inhalte gezielt auf Unternehmen, Branche und typische Anlässe zugeschnitten - bis hin zu ähnlich geschriebenen Domains, plausiblen Absenderidentitäten oder mehrstufigen Angriffsszenarien. Gerade in Arztpraxen oder kleinen Teams mit zentralen E-Mail-Adressen ist das wichtig, weil wenige Personen dort einen besonders großen Teil der externen Kommunikation verantworten.',
+      heading: 'Realistische Phishing-Szenarien für den Arbeitsalltag.',
+      text: 'Gute Phishing-Simulationen orientieren sich an realen Kommunikationsmustern im Arbeitsalltag: Lieferanteninformationen, interne Freigaben, Paketbenachrichtigungen, Rechnungen, Bewerbungsmails oder gefälschte Portale. Bei Bedarf werden die Inhalte gezielt auf Unternehmen, Branche und typische Anlässe zugeschnitten, bis hin zu ähnlich geschriebenen Domains, glaubwürdigen Absenderidentitäten oder mehrstufigen Angriffsszenarien. Gerade in Arztpraxen oder kleinen Teams mit zentralen E-Mail-Adressen ist das besonders wichtig, weil dort oft wenige Personen einen großen Teil der externen Kommunikation verantworten.',
       image: createImage('Realistische Phishing-Szenarien')
     },
     {
