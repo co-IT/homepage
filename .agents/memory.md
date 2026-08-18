@@ -41,3 +41,4 @@ Persistente, belastbare Erkenntnisse fuer AI-Coding in diesem Repository.
 - 2026-07-28: Erfahrungsberichte im Bereich Cyber-Sicherheit sollen eher vertrauensbildend und beratungsnah formuliert sein, nicht zu technisch.
 - 2026-07-28: Bestehende Erfahrungsberichte sollen moeglichst auch in die Haupttexte passender Seiten einfließen und nicht nur in separaten `Aus der Praxis`-Bloecken stehen.
 - 2026-08-10: Lucide-Icons in `src/_shell/top-bar/icons` sollen einen kurzen Copyright-/Lizenzhinweis pro Datei tragen; die Details liegen zentral in `src/_shell/top-bar/icons/NOTICE.md` und die Impressumsseite nennt die Lucide-Lizenz ebenfalls kurz.
+- 2026-08-18: Bei iterativen Bild- und Feinanpassungen sollen bis zur ausdruecklichen Freigabe des finalen Stands keine weiteren lokalen Commits erstellt werden; Zwischenstaende bleiben uncommitted.
