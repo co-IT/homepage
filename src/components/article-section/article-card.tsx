@@ -1,5 +1,4 @@
 import { component$ } from '@builder.io/qwik';
-import { HeadingArticle } from '../heading-article';
 import { LinkCallToAction } from '../link-call-to-action';
 import type { Article } from './model';
 
@@ -55,7 +54,10 @@ export const ArticleCard = component$((props: ArticleCardProps) => {
           <div class='flex flex-col gap-x-12 lg:flex-row lg:px-10'>
             <div class='flex w-full flex-col gap-y-5'>
               <div class='flex flex-col gap-y-4'>
-                <HeadingArticle text={props.article.heading} />
+                <div class='mx-auto h-1 w-10 bg-primary lg:mx-0' />
+                <div class='px-6 text-center text-3xl font-bold leading-8 text-secondary-900 lg:px-0 lg:text-left lg:text-4xl lg:leading-10'>
+                  {props.article.heading}
+                </div>
                 <div class='mt-4 w-full lg:hidden'>
                   <ArticleImage article={props.article} />
                 </div>
